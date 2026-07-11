@@ -44,17 +44,21 @@ Rule: **I never write the sentence you say.** Beats are skeleton; the muscle is 
 
 ## Segment file header
 
-Every `slides/segments/<player>.md` starts with this metadata comment so we can
+Every `slides/segments/<id>.md` starts with this metadata comment so we can
 track state at a glance:
 
 ```
 <!-- SEGMENT
 id: asml
-part: 5 — Equipment
+act: IV — The Fab Tour
+tier: P            # P protagonist · T tragedy · D duel · E ensemble · C cards (see curriculum.md)
 angle: "ASML isn't a chip company — it's the single most concentrated chokepoint in the world economy."   # YOU OWN THIS LINE
-runtime: ~5 min
+runtime: ~8 min
 status: draft | angle-locked | redlined | recorded
-diagrams: [litho-chain, euv-light-path]
+seeds: [multi-patterning, euv-export-license]     # planted here, pays off later
+pays_off: []                                      # seeds from earlier segments cashed here
+stamps: [asml, zeiss]                             # chokepoint stamps earned on screen
+diagrams: [flow-strip, euv-light-path]
 sources: research/asml.md
 -->
 ```
@@ -62,9 +66,43 @@ sources: research/asml.md
 `status` values: `draft` (I built it) → `angle-locked` (you approved the angle) →
 `redlined` (you edited beats) → `recorded` (in the can).
 
+`seeds` / `pays_off` mirror the Seed→Payoff Ledger in `curriculum.md`. **Redline rule:
+never cut a beat that carries a seed whose payoff lives in another segment** — move it,
+don't delete it.
+
+## The persistent devices (course-wide conventions)
+
+Defined in `STRATEGY.md`; implemented as recurring slide patterns:
+
+- **Map navigator**: every segment's first slide shows the master map with this
+  segment's region lit (`diagrams/map/…` states). No company is introduced without
+  its location lighting up.
+- **Scoreboard**: major players get the identical stat block — revenue · gross margin ·
+  market share · moat-in-one-line · years-to-replace — always dated ("as of Q2 2026").
+  Keep it a consistent slide layout so comparison becomes a visual rhythm.
+- **Chokepoint stamps**: when a segment proves a single point of failure, the slide
+  shows the Board gaining that stamp (states in `diagrams/board/`).
+- **Money Bar**: acts end with the running price-waterfall of the one chip; equipment
+  and EDA enter as "amortized tolls," flagged honestly as estimates/ranges.
+- **Flow Strip**: all Act IV players enter on the deposit→litho→etch→implant→CMP→measure
+  ribbon with their step glowing.
+- **Numbers with handles**: beat-sheet rule — no headline number without a physical
+  analogy in FACT AMMO.
+- **Simplification hedges**: where a teach compresses contested detail, FACT AMMO
+  includes a one-line "direction of the lie" hedge you can voice.
+
 ## Diagram convention
 
-One file per diagram in `diagrams/prompts/<id>.md`:
+Two kinds of diagrams:
+
+**1. Structural diagrams are code.** The master map (and its lighting states), the
+journey bar, the flow strip, the chokepoint board, the money bar — anything that must
+stay pixel-consistent across many slides — is a hand-authored SVG committed to
+`diagrams/rendered/<id>.svg` and referenced directly (`![](/diagrams/rendered/<id>.svg)`).
+Diffable, regenerable, no image model in the loop.
+
+**2. Decorative one-offs may stay GPT-image.** One file per prompt in
+`diagrams/prompts/<id>.md`:
 
 ```
 # <id>
@@ -76,9 +114,9 @@ PROMPT:
 <the full text you paste into GPT-image>
 ```
 
-You generate, save the PNG to `diagrams/rendered/<id>.png`, and the slide
-(`![](/diagrams/rendered/<id>.png)`) picks it up. Regenerating a diagram never
-touches the script.
+You generate, save the PNG to `diagrams/rendered/<id>.png`, and the slide picks it
+up. Regenerating a diagram never touches the script. If a slide references a PNG that
+doesn't exist yet, the SVG placeholder (or nothing) renders — decks must always build.
 
 ## Fact-checking convention
 
