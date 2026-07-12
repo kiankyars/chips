@@ -50,49 +50,21 @@ LINE THAT LANDS:
 
 # The confession
 
-<div class="text-2xl italic leading-relaxed mt-8 text-center">
+<div class="text-2xl italic leading-relaxed mt-6 text-center">
 "It's not the shortage of AI chips.<br>
 It's the shortage of our <b>CoWoS</b> capacity."
 </div>
 
-<div class="text-center opacity-60 mt-4">— TSMC Chairman Mark Liu, Sept 2023</div>
+<div class="text-center opacity-60 mt-3">— TSMC Chairman Mark Liu, Sept 2023</div>
 
-<div class="grid grid-cols-2 gap-8 mt-12">
-<div class="border-2 border-gray-400 rounded-lg p-4 text-center">
-<div class="text-lg">GPUs "considerably harder to get than drugs"</div>
-<div class="text-sm opacity-60 mt-2">— Elon Musk, May 2023</div>
-</div>
-<div class="border-2 border-gray-400 rounded-lg p-4 text-center">
-<div class="text-3xl font-bold">36–52 weeks</div>
-<div class="text-sm opacity-60 mt-2">H100 lead times, through 2023</div>
-</div>
-</div>
-
-<!--
-BEATS:
-- Resolve the mystery with the quote. The head of the world's most important foundry stood up in Sept 2023 and said the quiet part: the shortage wasn't the chip, it was the packaging slot. Every H100 needed a CoWoS slot; TSMC had wafers to spare and no way to assemble them fast enough.
-- Land the street-level version: up to a year's wait, a CEO comparing GPU procurement to a drug deal — all gated by an acronym nobody outside the industry had heard.
-- Set up the reframe: to understand why a "last step" became THE step, you have to know what packaging used to be — and how far it fell before it climbed.
-FACT AMMO:
-- Mark Liu, Sept 2023 (SEMICON Taiwan, to Nikkei): "It's not the shortage of AI chips. It's the shortage of our CoWoS capacity." [research/packaging §CoWoS, §fact-ammo]
-- Musk, WSJ CEO Council May 2023: GPUs "considerably harder to get than drugs." [research/packaging §CoWoS]
-- H100 lead times ~36–52 weeks through 2023. [research/packaging §CoWoS]
-LINE THAT LANDS:
-- "The most important sentence in the AI boom was a foundry chairman admitting the bottleneck was his gluing line."
--->
-
----
-
-# The step nobody wanted
-
-<div class="grid grid-cols-3 gap-6 mt-8 text-center">
+<div class="grid grid-cols-3 gap-6 mt-10 text-center">
 <div>
 <div class="text-4xl font-bold">1963</div>
-<div class="text-sm opacity-60 mt-2">Fairchild opens the first Asian assembly plant — a converted rubber-shoe factory in Kowloon</div>
+<div class="text-sm opacity-60 mt-2">packaging offshored first — a converted rubber-shoe factory in Kowloon</div>
 </div>
 <div>
-<div class="text-4xl font-bold">120 M</div>
-<div class="text-sm opacity-60 mt-2">devices shipped from it in year one — packaging was offshored before almost anything else</div>
+<div class="text-4xl font-bold">the "dumb" step</div>
+<div class="text-sm opacity-60 mt-2">glue the die down, wire-bond, encase in epoxy — the industry's low-status bin</div>
 </div>
 <div>
 <div class="text-4xl font-bold">near 7nm</div>
@@ -100,20 +72,19 @@ LINE THAT LANDS:
 </div>
 </div>
 
-<div class="text-center text-lg opacity-80 mt-10">
-The industry's low-status outsourcing bin became the step that decides who gets AI compute.
-</div>
-
 <!--
 BEATS:
-- Tell the fall: packaging was the "dumb" last step — glue the die down, wire-bond gold threads to pins, encase in black epoxy. So the industry shipped it offshore first, chasing cheap labor. Fairchild's 1963 plant was literally a converted rubber-shoe factory in Hong Kong; then Singapore, then Penang in 1971 — the origin of Asia's whole electronics-assembly belt.
-- Name the caste system it created: front-end fabs = high-tech, high-margin; back-end assembly & test = labor arbitrage. The OSAT industry was born as the throwaway bin.
-- Land the inversion: value migrated back up. A CoWoS packaging wafer now reportedly prices near a 7nm logic wafer — and TSMC took the most valuable packaging in-house. The worthless step is now ~8% of TSMC's revenue and climbing.
+- Resolve the mystery with the quote. The head of the world's most important foundry stood up in Sept 2023 and said the quiet part: the shortage wasn't the chip, it was the packaging slot. Every H100 needed a CoWoS slot; TSMC had wafers to spare and no way to assemble them fast enough. Street version: up to a year's wait, Musk calling GPUs harder to get than drugs — all gated by an acronym nobody outside the industry had heard.
+- Now the reframe, in one arc: this was supposed to be the boring last step. Packaging was the "dumb" job — glue the die down, wire-bond gold threads, encase in black epoxy — so the industry shipped it offshore FIRST, chasing cheap labor. Fairchild's 1963 plant was literally a converted rubber-shoe factory in Hong Kong. It created a caste system: front-end fabs = high-tech, high-margin; back-end assembly = labor arbitrage. The OSAT industry was born as the throwaway bin.
+- Land the inversion: value climbed back. A CoWoS packaging wafer now reportedly prices near a 7nm logic wafer, and TSMC took the most valuable packaging in-house. The worthless step is now ~8% of TSMC revenue and rising — and it's the gate that decides who gets AI compute.
 FACT AMMO:
-- Fairchild's first SE Asian assembly plant, 1963: a converted rubber-shoe factory in Kowloon, Hong Kong; shipped 120M devices in year one. Penang, Malaysia followed in 1971. [research/packaging §what packaging was vs what it is]
+- Mark Liu, Sept 2023 (SEMICON Taiwan, to Nikkei): "It's not the shortage of AI chips. It's the shortage of our CoWoS capacity." [research/packaging §CoWoS, §fact-ammo]
+- Musk, WSJ CEO Council May 2023: GPUs "considerably harder to get than drugs"; H100 lead times ~36–52 weeks through 2023. [research/packaging §CoWoS]
+- Fairchild's first SE Asian assembly plant, 1963: a converted rubber-shoe factory in Kowloon, Hong Kong; shipped 120M devices in year one; Penang followed 1971. [research/packaging §what packaging was vs what it is]
 - Advanced packaging market ≈ $45B (2024) → $79.4B (2030), Yole, 9.4% CAGR. [research/packaging §what packaging was vs what it is]
 - A CoWoS packaging wafer reportedly prices near a 7nm logic wafer; advanced packaging ≈ 8% of TSMC revenue 2025, >10% expected 2026. [research/packaging §what packaging was vs what it is]
 LINE THAT LANDS:
+- "The most important sentence in the AI boom was a foundry chairman admitting the bottleneck was his gluing line."
 - "It started in a shoe factory. It ends up costing as much as the chip."
 -->
 
