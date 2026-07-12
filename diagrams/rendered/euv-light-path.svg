@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 470" font-family="Inter, -apple-system, sans-serif">
+<rect width="1920" height="470" fill="#ffffff"/>
+<text x="960" y="60" text-anchor="middle" font-size="30" font-weight="800" fill="#1e293b">HOW EUV LIGHT IS MADE</text>
+<circle cx="180" cy="240" r="86" fill="#fef3c7" stroke="#f59e0b" stroke-width="3"/>
+<text x="180" y="228" text-anchor="middle" font-size="22" font-weight="700" fill="#1e293b">Trumpf CO₂ laser</text>
+<text x="180" y="258" text-anchor="middle" font-size="17" fill="#475569">fires twice per droplet</text>
+<line x1="276" y1="240" x2="464" y2="240" stroke="#475569" stroke-width="3.5" />
+<polygon points="464,240 452.12984377594,245.3008858897744 452.12984377594,234.6991141102256" fill="#475569"/>
+<circle cx="560" cy="240" r="86" fill="#fef9c3" stroke="#ca8a04" stroke-width="3"/>
+<text x="560" y="228" text-anchor="middle" font-size="22" font-weight="700" fill="#1e293b">Tin droplets</text>
+<text x="560" y="258" text-anchor="middle" font-size="17" fill="#475569">~50,000 / second</text>
+<line x1="656" y1="240" x2="844" y2="240" stroke="#475569" stroke-width="3.5" />
+<polygon points="844,240 832.12984377594,245.3008858897744 832.12984377594,234.6991141102256" fill="#475569"/>
+<circle cx="940" cy="240" r="86" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+<text x="940" y="228" text-anchor="middle" font-size="22" font-weight="700" fill="#1e293b">Plasma flash</text>
+<text x="940" y="258" text-anchor="middle" font-size="17" fill="#475569">13.5 nm light</text>
+<line x1="1036" y1="240" x2="1224" y2="240" stroke="#475569" stroke-width="3.5" />
+<polygon points="1224,240 1212.12984377594,245.3008858897744 1212.12984377594,234.6991141102256" fill="#475569"/>
+<circle cx="1320" cy="240" r="86" fill="#dbeafe" stroke="#3b82f6" stroke-width="3"/>
+<text x="1320" y="228" text-anchor="middle" font-size="22" font-weight="700" fill="#1e293b">Zeiss mirrors</text>
+<text x="1320" y="258" text-anchor="middle" font-size="17" fill="#475569">flattest objects on Earth</text>
+<line x1="1416" y1="240" x2="1604" y2="240" stroke="#475569" stroke-width="3.5" />
+<polygon points="1604,240 1592.12984377594,245.3008858897744 1592.12984377594,234.6991141102256" fill="#475569"/>
+<circle cx="1700" cy="240" r="86" fill="#dcfce7" stroke="#22c55e" stroke-width="3"/>
+<text x="1700" y="228" text-anchor="middle" font-size="22" font-weight="700" fill="#1e293b">Wafer</text>
+<text x="1700" y="258" text-anchor="middle" font-size="17" fill="#475569">pattern printed</text>
+<text x="960" y="420" text-anchor="middle" font-size="20" fill="#475569">a droplet of molten tin, hit mid-flight by a laser, twice — vaporized into plasma that shines at 13.5 nanometers</text>
+</svg>

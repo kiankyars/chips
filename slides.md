@@ -25,36 +25,135 @@ Applications · Data Centers · Energy · <b>Chips</b> · Models
 
 <!--
 BEATS:
-- One sentence: every AI model bottoms out in a chip, and that chip bottoms out in a handful of companies almost nobody can name.
-- Frame the series (Jensen's five layers) and that this is episode one.
-LINE THAT LANDS:
-- "By the end of this you'll understand the most important industry on Earth better than 99% of the people investing in it."
+- This is the title card only. The real open is the cold-open segment that follows.
+- Frame the series (Jensen's five layers) and that this is episode one, on the Chips layer.
 -->
+
+---
+src: ./slides/segments/cold-open.md
+---
 
 ---
 layout: section
 ---
 
-# Part 0 — The whole board
+# Part 1 — The Impossible Object
+## Act I · what the object is, and why it shattered an industry
 
 ---
-
-# The semiconductor value chain
-
-![map](/diagrams/rendered/industry-map.png)
-
-<!--
-BEATS:
-- Don't explain it yet — just let them feel the scale. We'll walk every box.
-- Point out the four colors = four archetypes (fabless / IDM / foundry / equipment).
-FACT AMMO:
-- This is a >$600B/yr industry sitting under a multi-trillion-dollar AI buildout.
--->
-
+src: ./slides/segments/foundations.md
 ---
 
-<!-- Segments are imported below in curriculum order. Add a `src:` block per segment as it's built. -->
+---
+src: ./slides/segments/great-unbundling.md
+---
+
+---
+layout: section
+---
+
+# Part 2 — The Blueprint
+## Act II · Santa Clara: the chip is designed before it is built
+
+---
+src: ./slides/segments/nvidia.md
+---
+
+---
+src: ./slides/segments/eda.md
+---
+
+---
+src: ./slides/segments/arm-riscv.md
+---
+
+---
+src: ./slides/segments/fabless-field.md
+---
+
+---
+layout: section
+---
+
+# Part 3 — The Island
+## Act III · the file crosses the Pacific to be made
+
+---
+src: ./slides/segments/tsmc.md
+---
+
+---
+src: ./slides/segments/intel.md
+---
+
+---
+src: ./slides/segments/foundries-field.md
+---
+
+---
+layout: section
+---
+
+# Part 4 — The Fab Tour
+## Act IV · three months, a thousand steps, one wafer
+
+---
+src: ./slides/segments/life-of-a-wafer.md
+---
 
 ---
 src: ./slides/segments/asml.md
+---
+
+---
+src: ./slides/segments/equipment-dep-etch.md
+---
+
+---
+src: ./slides/segments/kla.md
+---
+
+---
+src: ./slides/segments/materials.md
+---
+
+---
+layout: section
+---
+
+# Interlude — The Other 90%
+## most chips never touch the leading edge
+
+---
+src: ./slides/segments/other-90.md
+---
+
+---
+layout: section
+---
+
+# Part 5 — Memory & the Assembly
+## Act V · a chip that can compute but cannot remember
+
+---
+src: ./slides/segments/memory-hbm.md
+---
+
+---
+src: ./slides/segments/packaging.md
+---
+
+---
+layout: section
+---
+
+# Part 6 — The Board Is the World
+## Act VI · the finished map, re-read as a map of leverage
+
+---
+src: ./slides/segments/geopolitics.md
+---
+
+---
+src: ./slides/segments/synthesis.md
 ---
