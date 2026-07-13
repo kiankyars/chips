@@ -29,7 +29,7 @@ BEATS:
 - Tee up the angle: the deeper down the supply chain you go, the more concentrated it gets — fabs are dozens, equipment is a handful, materials is often two companies, one company, or one town. And most of that floor is Japanese.
 FACT AMMO:
 - Global semiconductor materials market: $73.2B in 2025, a record, +6.8% YoY [research/materials §the layer in numbers]. Split: wafer-fab materials $45.8B, packaging materials $27.4B [research/materials §the layer in numbers].
-- Japanese companies hold roughly HALF of the whole materials market (~48–56% by count) [research/materials §the layer in numbers] <!-- VERIFY: exact % varies by source/year -->.
+- Japanese companies hold roughly HALF of the whole materials market (~48–56% by count) [research/materials §the layer in numbers] [VERIFY: exact % varies by source/year].
 - The kicker to open on: Japan's share of chip *making* fell from ~50% in the late 1980s to ~9% today — but it kept the materials layer underneath everyone else's fabs [research/materials §the layer in numbers].
 LINE THAT LANDS:
 - "Japan lost the chip war above the floorboards. Then it quietly kept the basement."
@@ -72,10 +72,10 @@ BEATS:
 - Then the lock-in punchline: swapping a qualified fab chemical is ~1–2 years of testing. So shares are sticky in peacetime — and there is no quick substitute when something breaks.
 FACT AMMO:
 - Photoresist: Japan ~90% of the market (US Commerce figure), ~95% of EUV resist; players JSR, Tokyo Ohka Kogyo (TOK), Shin-Etsu, Sumitomo, Fujifilm [research/materials §photoresist].
-- EUV mask blank = ultra-low-expansion glass + 40+ alternating Si/Mo layers (a mirror, not a transparency — nothing transmits EUV); Hoya + AGC (both Japanese) ≈ 93% of the market [research/materials §photomasks & blanks] <!-- VERIFY: Hoya/AGC split disputed -->. The entire EUV blank market was ~$194M in 2024 — all of AI silicon stands on a sub-$200M market [research/materials §photomasks & blanks].
+- EUV mask blank = ultra-low-expansion glass + 40+ alternating Si/Mo layers (a mirror, not a transparency — nothing transmits EUV); Hoya + AGC (both Japanese) ≈ 93% of the market [research/materials §photomasks & blanks] [VERIFY: Hoya/AGC split disputed]. The entire EUV blank market was ~$194M in 2024 — all of AI silicon stands on a sub-$200M market [research/materials §photomasks & blanks].
 - CMP slurry+pad market ~$2.9B (2024); Entegris became slurry leader by buying CMC Materials for $6.5B (closed ~$6.0B, Jul 2022); DuPont holds >50% of CMP pads [research/materials §CMP].
 - Wafer purity handle: electronic-grade silicon is "eleven nines" — 99.999999999% pure, ~one foreign atom per hundred billion; routinely called the purest material humans mass-produce [research/materials §silicon wafers].
-- Requalification lock-in ~1–2 years [research/materials §risks] <!-- VERIFY: typical qual duration -->.
+- Requalification lock-in ~1–2 years [research/materials §risks] [VERIFY: typical qual duration].
 - Numbers-with-handles: the whole EUV mask-blank market is smaller than a single mid-size office tower's price — yet nothing gets printed without it.
 - Simplification hedge (direction of the lie): I'm listing one or two names per step; each of these has a tail of smaller suppliers — but at the *leading edge* the concentration really is this brutal, not less.
 LINE THAT LANDS:
@@ -155,7 +155,7 @@ BEATS:
 - Zoom out to the layer: the entire consumed-materials layer is a $73.2B/yr global business — and yet, as the bar shows, most of a finished accelerator's price still gets captured DOWNSTREAM: TSMC's wafer margin, HBM, and packaging, which we haven't tolled yet. Materials is the layer everything depends on and almost nobody's margin lives in.
 - Keep the bar honest: the big gray block on the right is "to be filled in later acts" — don't imply we've priced the chip yet.
 FACT AMMO:
-- Blank polished 300mm wafer ~$100–200; processed 3nm wafer priced ~$19,500; diced chips can be worth $50k–several hundred thousand — a ~100–1,000× value multiplication on a ~$150 disc [research/materials §silicon wafers] <!-- VERIFY: end-product retail math depends on die/product mix -->.
+- Blank polished 300mm wafer ~$100–200; processed 3nm wafer priced ~$19,500; diced chips can be worth $50k–several hundred thousand — a ~100–1,000× value multiplication on a ~$150 disc [research/materials §silicon wafers] [VERIFY: end-product retail math depends on die/product mix].
 - Materials market $73.2B in 2025 (wafer-fab $45.8B + packaging $27.4B) [research/materials §the layer in numbers, §advanced packaging materials].
 - Context anchor for the eventual total: a GB300 NVL72 rack runs ~$3.7–4.0M [research/nvidia §the one chip] — the downstream acts (TSMC, HBM, packaging) carry the big line items; materials + equipment is the thin, load-bearing slice near the bottom.
 - Simplification hedge (direction of the lie): splitting the ~$19,500 into "equipment vs materials vs TSMC margin" is genuinely fuzzy — treat the 20% slice as a defensible estimate, not a quote. If anything the materials-only share is smaller than people guess; the leverage is in concentration, not dollars.

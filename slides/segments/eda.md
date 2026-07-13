@@ -78,7 +78,7 @@ BEATS:
 - Land the cost ladder: this is why design got expensive — and why the software that does it is unskippable.
 FACT AMMO:
 - Verification ≈ 50%+ of total project time, stable for a decade; even design engineers spend ~40–47% of their own time verifying (Wilson Research / Siemens) [research/eda §What EDA is].
-- Design cost by node (IBS): 28nm ~$40M → 7nm ~$217M → 5nm ~$416–449M → 3nm ~$581–590M → 2nm ~$724M [research/eda §What EDA is] <!-- VERIFY: IBS figures vary by vintage/source; use as order-of-magnitude -->. Handle: the 2nm design bill alone rivals a Hollywood blockbuster slate — spent before any manufacturing.
+- Design cost by node (IBS): 28nm ~$40M → 7nm ~$217M → 5nm ~$416–449M → 3nm ~$581–590M → 2nm ~$724M [research/eda §What EDA is] [VERIFY: IBS figures vary by vintage/source; use as order-of-magnitude]. Handle: the 2nm design bill alone rivals a Hollywood blockbuster slate — spent before any manufacturing.
 - GDSII = literally the blueprint file the foundry prints [research/eda §What EDA is].
 - Simplification hedge: the real flow is dozens of loops and hundreds of tools — five boxes is the honest cartoon; the lie's direction is "it's far messier and more iterative than this."
 LINE THAT LANDS:
@@ -121,12 +121,12 @@ BEATS:
 - Siemens EDA is the card, not a third profile: one sentence on Calibre — even chips designed on Synopsys or Cadence tools clear Siemens' checker before a fab will print them.
 - The kicker beat: both companies' AI now designs chips — and the duel's newest front is agentic AI flows.
 FACT AMMO:
-- Shares: Synopsys ~31%, Cadence ~30%, Siemens EDA ~13% — three companies ≈ ~74% of the market [research/eda §The triopoly & market shares] <!-- VERIFY: share cuts differ by analyst (EDA-only vs EDA+IP); some sources claim big-3 >90% of advanced-node digital flow seats — verify before using the 90% line -->.
-- Synopsys: founded 1986, Aart de Geus, Design Compiler; CEO today Sassine Ghazi [research/eda §Synopsys] <!-- VERIFY: light-check founding details before recording -->. Cadence: formed 1988 (SDA + ECAD merger); CEO Anirudh Devgan [research/eda §Cadence] <!-- VERIFY: light-check founding details -->.
+- Shares: Synopsys ~31%, Cadence ~30%, Siemens EDA ~13% — three companies ≈ ~74% of the market [research/eda §The triopoly & market shares] [VERIFY: share cuts differ by analyst (EDA-only vs EDA+IP); some sources claim big-3 >90% of advanced-node digital flow seats — verify before using the 90% line].
+- Synopsys: founded 1986, Aart de Geus, Design Compiler; CEO today Sassine Ghazi [research/eda §Synopsys] [VERIFY: light-check founding details before recording]. Cadence: formed 1988 (SDA + ECAD merger); CEO Anirudh Devgan [research/eda §Cadence] [VERIFY: light-check founding details].
 - Ansys: closed July 17, 2025, ~$34.9B ($17.6B cash + $17.1B stock) [research/eda §Synopsys].
 - Arm + Synopsys = 66% of the $8.5B design-IP market (2024, IPnest); Synopsys dominates wired-interface IP [research/eda §Synopsys].
 - Palladium Z3: up to 48B gates, >2× prior capacity, runs on NVIDIA BlueField DPUs [research/eda §Cadence]. Handle: NVIDIA hardware helps verify future NVIDIA designs — AI designing the chips AI runs on.
-- Mentor Graphics: founded 1981, acquired by Siemens for $4.5B (closed March 2017); Calibre ~85%+ installed base in physical sign-off [research/eda §Siemens EDA] <!-- VERIFY: 85% figure is analyst/SemiAnalysis framing, not audited -->.
+- Mentor Graphics: founded 1981, acquired by Siemens for $4.5B (closed March 2017); Calibre ~85%+ installed base in physical sign-off [research/eda §Siemens EDA] [VERIFY: 85% figure is analyst/SemiAnalysis framing, not audited].
 - AI flows: Synopsys DSO.ai — first 100 commercial AI-driven tape-outs by Feb 2023; Cadence Cerebrus — up to 10× engineering productivity; 2026 frontier is agentic (Cadence AgentStack) [research/eda §AI in EDA].
 LINE THAT LANDS:
 - "Cadence's emulator runs on NVIDIA chips, and NVIDIA's chips are designed on Cadence software. AI is now designing the chips that AI runs on."
@@ -229,7 +229,7 @@ FACT AMMO:
 - July 2, 2025: restrictions rescinded as part of the US–China framework deal trading export relief for Chinese rare-earth exports [research/eda §Geopolitics]. Handle: chip software literally traded against minerals.
 - The stakes: China ≈ $814M / 11.5% of Synopsys FY25 revenue + $680M / 13% of Cadence — cutting China off costs the big three roughly $1.5B/yr, but denies China the design layer of a $792B industry [research/eda §Geopolitics].
 - Counter-lever: China's SAMR cleared Synopsys–Ansys July 14, 2025 — one day before the deal deadline — with divestitures + 10 years of behavioral remedies [research/eda §Synopsys]. Line: "The US controls the software; China discovered it controls the permission slip."
-- China's build-out: self-sufficiency passed ~10% in 2024; Empyrean is world #4 (~$168M revenue); Huawei claims a 14nm-class toolchain — mature nodes, never externally verified [research/eda §Geopolitics] <!-- VERIFY: Huawei claim never externally verified — keep the hedge if voiced -->.
+- China's build-out: self-sufficiency passed ~10% in 2024; Empyrean is world #4 (~$168M revenue); Huawei claims a 14nm-class toolchain — mature nodes, never externally verified [research/eda §Geopolitics] [VERIFY: Huawei claim never externally verified — keep the hedge if voiced].
 - Arm handoff number (for the cliffhanger only): royalty on ~99% of smartphones — cite from the arm-riscv pack when that segment is built; curriculum row carries it.
 LINE THAT LANDS:
 - "In May 2025 one letter switched off China's access to chip-design software. Six weeks later, a rare-earths deal switched it back on. Software is now traded against minerals."

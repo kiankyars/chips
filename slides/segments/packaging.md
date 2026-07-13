@@ -197,7 +197,7 @@ BEATS:
 FACT AMMO:
 - CoWoS = Chip-on-Wafer-on-Substrate, 2.5D; first volume with Xilinx FPGAs by 2013 — a decade as a niche. [research/packaging §CoWoS]
 - Capacity (wafers/month, year-end): ~13–15k (2023) → ~35–40k (2024) → ~75–80k (2025) → ~120–140k target (2026) ≈ 10× in three years. [research/packaging §CoWoS]
-- Total CoWoS demand ≈ 370k wafers (2024) → ~670k (2025) → ~1M (2026); supply-demand gap narrowing from ~20% to ~10% by end-2026. [research/packaging §CoWoS] <!-- VERIFY: annual demand figures are Silicon Analysts estimates, partly paywalled -->
+- Total CoWoS demand ≈ 370k wafers (2024) → ~670k (2025) → ~1M (2026); supply-demand gap narrowing from ~20% to ~10% by end-2026. [research/packaging §CoWoS] [VERIFY: annual demand figures are Silicon Analysts estimates, partly paywalled]
 - Handle: a 10× capacity build in three years that never once caught up with its own order book. [research/packaging §fact-ammo]
 - Simplification hedge: CoWoS was "the binding constraint most of the time," not the only one — HBM and substrates co-bottlenecked at moments. [research/packaging §risks]
 LINE THAT LANDS:
@@ -232,7 +232,7 @@ BEATS:
 - Then the frontier of stacking: hybrid bonding. Instead of solder micro-bumps, you polish copper pads and fuse them copper-to-copper directly — TSMC's SoIC. Pitch has gone 9µm → 6µm in production, heading to 4.5µm. Orders of magnitude more connections, shorter and lower-power. AMD's MI300 does BOTH — stacks compute on I/O via SoIC, then mounts the stack on CoWoS. They call it 3.5D.
 - Two proofs it's real and here: the first hybrid-bonded chip anyone could buy was AMD's 3D V-Cache gaming CPU in 2022. And HBM4's base die is now made by TSMC on a 12nm LOGIC process — the bottom of a memory stack coming from a logic foundry. The memory/foundry boundary is dissolving inside the package.
 FACT AMMO:
-- UCIe founded March 2022 by Intel, AMD, Arm, TSMC, Samsung, ASE, Google, Meta, Microsoft, Qualcomm; Nvidia/Alibaba joined within months; 100+ members since. [research/packaging §chiplets] <!-- VERIFY: current 2026 member count -->
+- UCIe founded March 2022 by Intel, AMD, Arm, TSMC, Samsung, ASE, Google, Meta, Microsoft, Qualcomm; Nvidia/Alibaba joined within months; 100+ members since. [research/packaging §chiplets] [VERIFY: current 2026 member count]
 - CoWoS-S ≈ 2,500mm² interposer (~2.5–3× reticle); CoWoS-L uses embedded silicon bridges (LSI), scaling toward ~6× reticle. [research/packaging §CoWoS]
 - Blackwell = CoWoS-L; Nvidia secured >70% of 2025 CoWoS-L capacity; 2024 delay was a packaging-level (interposer/bridge) respin. [research/packaging §CoWoS]
 - TSMC SoIC hybrid bonding: 9µm (N7 era) → 6µm in HVM today → 4.5µm by ~2029; AMD MI300 = SoIC stack on CoWoS ("3.5D"). [research/packaging §3D stacking & hybrid bonding]

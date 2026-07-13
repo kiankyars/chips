@@ -79,8 +79,8 @@ BEATS:
 FACT AMMO:
 - Blank polished 300mm wafer ≈ $100–200 [research/materials §wafers]. Handle: sneaker money.
 - Eleven nines = 99.999999999% pure ≈ one wrong atom per hundred billion — roughly one typo in a library of ~200,000 novels [research/foundations §sand to wafer].
-- Wafer supply oligopoly: ~5 companies (Shin-Etsu, SUMCO, GlobalWafers, Siltronic, SK Siltron) control ~85–90% of the market <!-- VERIFY: current share split --> ; Shin-Etsu + SUMCO alone supply more than half of world volume <!-- VERIFY: precise combined share, commonly cited ~50–60% --> [research/materials §wafers].
-- Mask set: 60–100 masks, ~$5–15M per design at 5/3nm; a single EUV mask runs $500k–1M <!-- VERIFY: some estimates put 2nm-era sets at $20–30M+ --> [research/materials §photomasks].
+- Wafer supply oligopoly: ~5 companies (Shin-Etsu, SUMCO, GlobalWafers, Siltronic, SK Siltron) control ~85–90% of the market [VERIFY: current share split] ; Shin-Etsu + SUMCO alone supply more than half of world volume [VERIFY: precise combined share, commonly cited ~50–60%] [research/materials §wafers].
+- Mask set: 60–100 masks, ~$5–15M per design at 5/3nm; a single EUV mask runs $500k–1M [VERIFY: some estimates put 2nm-era sets at $20–30M+] [research/materials §photomasks].
 - Spare (optional origin story): the crystal-pulling method every wafer starts with — Czochralski, 1916 — was discovered when a chemist dipped his pen into molten tin instead of his inkwell and pulled out a single crystal [research/materials §wafers].
 LINE THAT LANDS:
 - "The purest object in the building arrives for the price of sneakers. The stencils to print on it cost more than the truck that delivered them."
@@ -141,9 +141,9 @@ BEATS:
 FACT AMMO:
 - Japan holds ~90% of global photoresist (US Dept. of Commerce figure); ~95% of EUV photoresists at the leading edge. Players: JSR, Tokyo Ohka Kogyo (TOK), Shin-Etsu, Sumitomo, Fujifilm [research/materials §photoresist].
 - JSR — world's largest resist maker (~27% share) — was taken private in 2024 by Japan's government-backed JIC for ~$6.4B: Tokyo treats photoresist as a sovereign asset [research/materials §photoresist].
-- EUV mask blanks: Hoya + AGC (both Japanese) ≈ 93% of the market <!-- VERIFY: Hoya/AGC split disputed between sources; combined ~93% is the sourced figure --> — and the whole EUV blank market was only ~$194M in 2024: a sub-$200M market all of AI silicon stands on [research/materials §photomasks].
-- Japanese companies hold roughly half of the entire semiconductor materials market (~48–56% depending on count) <!-- VERIFY: exact % varies by source/year --> ; chip-making share fell ~50% (late 1980s) → ~9% [research/materials §layer in numbers].
-- Handle: materials are consumables — unlike a machine, bought again every single day a fab runs, and locked in by ~1–2-year requalification cycles <!-- VERIFY: typical qual duration --> [research/materials §risks].
+- EUV mask blanks: Hoya + AGC (both Japanese) ≈ 93% of the market [VERIFY: Hoya/AGC split disputed between sources; combined ~93% is the sourced figure] — and the whole EUV blank market was only ~$194M in 2024: a sub-$200M market all of AI silicon stands on [research/materials §photomasks].
+- Japanese companies hold roughly half of the entire semiconductor materials market (~48–56% depending on count) [VERIFY: exact % varies by source/year] ; chip-making share fell ~50% (late 1980s) → ~9% [research/materials §layer in numbers].
+- Handle: materials are consumables — unlike a machine, bought again every single day a fab runs, and locked in by ~1–2-year requalification cycles [VERIFY: typical qual duration] [research/materials §risks].
 LINE THAT LANDS:
 - "Japan lost the chip war of the 1990s — and kept the ground everyone else fights on."
 -->
@@ -179,8 +179,8 @@ BEATS:
 - Now cash the "three months" from the opener: fabs average 1–1.5 days per mask layer. ~80 layers × ~a day and a half = your quarter of a year. Most of a wafer's life is spent standing in line.
 - Quiet plant for the next segment: notice EUV's job in that middle number — one exposure doing what used to take several. Hold it.
 FACT AMMO:
-- FEOL = transistors in silicon; BEOL = 15+ layers of copper interconnect above <!-- VERIFY: exact metal-layer count per node; N5-class ~15 commonly cited --> [research/foundations §process flow].
-- A modern chip has tens of km of wire <!-- VERIFY: km-of-wire figure --> [research/foundations §process flow].
+- FEOL = transistors in silicon; BEOL = 15+ layers of copper interconnect above [VERIFY: exact metal-layer count per node; N5-class ~15 commonly cited] [research/foundations §process flow].
+- A modern chip has tens of km of wire [VERIFY: km-of-wire figure] [research/foundations §process flow].
 - TSMC N5 ≈ 81 mask layers (N7 ≈ 87); without EUV, N5 would have needed ~115 — EUV's single exposure replaces multi-patterning [research/foundations §process flow].
 - Cycle time: 1–1.5 days per mask layer — that's where ~3 months comes from; most of it is queueing [research/foundations §process flow].
 - Simplification hedge: mask counts vary by node and design; the FEOL-then-BEOL split is cleaner in the telling than on the line (some steps interleave).
@@ -222,11 +222,11 @@ BEATS:
 - Yield learning is the whole business model: every wafer teaches the process, D₀ falls, and more of a $20B fab turns into sellable dies. TSMC's N2 defect density was already lower than N3/N5/N7 at the same stage — the moat, in numbers form.
 - Forward-plant: somebody has to FIND a 100nm particle on a 300mm wafer. There's a company whose entire business is that. Two segments away.
 FACT AMMO:
-- Cleanroom classes: ISO 1 = ≤10 particles ≥0.1µm per m³; urban outdoor air ≈ 35,000,000 particles ≥0.5µm per m³ (≈ ISO 9). Fab bays run ~ISO 3–5 with ISO 1–2 mini-environments (FOUPs) around the wafers; hospital operating rooms are typically only ~ISO 6–7 <!-- VERIFY: OR ISO class range + fab bay class ranges before quoting a specific multiplier --> [research/foundations §yield & cleanrooms].
+- Cleanroom classes: ISO 1 = ≤10 particles ≥0.1µm per m³; urban outdoor air ≈ 35,000,000 particles ≥0.5µm per m³ (≈ ISO 9). Fab bays run ~ISO 3–5 with ISO 1–2 mini-environments (FOUPs) around the wafers; hospital operating rooms are typically only ~ISO 6–7 [VERIFY: OR ISO class range + fab bay class ranges before quoting a specific multiplier] [research/foundations §yield & cleanrooms].
 - Die yield ≈ e^(−A·D₀) (Poisson); D₀ ≈ 0.1 defects/cm² ≈ ~90% yield on a typical mobile-sized die = "mature node" [research/foundations §yield & cleanrooms].
 - Killer particle: ~100 nm ≈ 1/1000th a hair's width at ~20nm pitches [research/foundations §yield & cleanrooms].
 - TSMC disclosed N2 defect density lower than N3/N5/N7 at the same stage of development [research/foundations §yield & cleanrooms].
-- N2 wafer ≈ $30,000 — analyst estimate, TSMC never publishes prices (hedge every use); ≈ $240/gram ≈ roughly double gold by weight <!-- VERIFY: gold ~$110–160/g range in 2026 before using --> [research/foundations §wafer prices].
+- N2 wafer ≈ $30,000 — analyst estimate, TSMC never publishes prices (hedge every use); ≈ $240/gram ≈ roughly double gold by weight [VERIFY: gold ~$110–160/g range in 2026 before using] [research/foundations §wafer prices].
 - Simplification hedge: e^(−A·D₀) is the textbook Poisson model — real foundry yield models are proprietary and more nuanced; the robust part is the shape: exponential in area.
 LINE THAT LANDS:
 - "Three months ago it was melted sand. Now it's worth twice its weight in gold — and a speck a thousandth of a hair wide turns part of it back into sand."

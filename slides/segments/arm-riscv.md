@@ -66,7 +66,7 @@ FACT AMMO:
 - >99% of smartphones sold contain Arm CPUs (Arm's own 20-F) [research/arm-riscv §Arm: model & numbers].
 - 350B+ cumulative chips — handle: 40+ chips for every human alive; 22M+ developers build on Arm — roughly the population of Taiwan [research/arm-riscv §Arm: model & numbers].
 - License fee ~$1M–$10M upfront; royalty typically ~1–2% of chip selling price [research/arm-riscv §Arm: model & numbers].
-- Run-rate ~30B chips/yr → blended royalty ≈ ~9¢ per chip <!-- VERIFY: derived figure; Arm stopped reporting quarterly chip counts (last hard: 28.6B FY23) --> — handle: less than a postage stamp, on nearly every processor on Earth [research/arm-riscv §Arm: model & numbers].
+- Run-rate ~30B chips/yr → blended royalty ≈ ~9¢ per chip [VERIFY: derived figure; Arm stopped reporting quarterly chip counts (last hard: 28.6B FY23)] — handle: less than a postage stamp, on nearly every processor on Earth [research/arm-riscv §Arm: model & numbers].
 - FY26 (ended Mar 2026): revenue $4.92B (+23%) — royalty $2.61B + licensing $2.31B; third straight 20%+ year since IPO [research/arm-riscv §Arm: model & numbers].
 - Market cap July 2026: ~$320–346B ≈ 65× revenue — the market is pricing a tax on computing itself [research/arm-riscv §Arm: model & numbers].
 - Origin color (optional 10s): founded Nov 1990 — 12 Acorn engineers + $3M from Apple (for the Newton) + VLSI, in a converted 17th-century barn outside Cambridge [research/arm-riscv §Arm: history].
@@ -148,9 +148,9 @@ FACT AMMO:
 - Born UC Berkeley 2010 (Asanović, Patterson); spec free to implement — but licensing a finished SiFive/Andes core still costs money [research/arm-riscv §RISC-V].
 - Nvidia ships ~1 billion RISC-V cores/yr (2024) as management/controller cores inside GPUs; July 2025: CUDA supports RISC-V host CPUs [research/arm-riscv §RISC-V]. Handle: Arm's would-be killer already outships most ISAs in history — and you've never knowingly used one.
 - Western Digital: own RISC-V cores (SweRV, open-sourced), moving its ~2B-controllers/yr portfolio over [research/arm-riscv §RISC-V].
-- RVA23 profile (baseline for app-class software compat) only ratified Oct 2024 <!-- VERIFY: RVA23 ratification date -->; Android support on-again off-again <!-- VERIFY: Google pulled RISC-V from Android common kernel 2024, status since -->; no RISC-V phone or volume server CPU ships in the West as of mid-2026 [research/arm-riscv §RISC-V].
+- RVA23 profile (baseline for app-class software compat) only ratified Oct 2024 [VERIFY: RVA23 ratification date]; Android support on-again off-again [VERIFY: Google pulled RISC-V from Android common kernel 2024, status since]; no RISC-V phone or volume server CPU ships in the West as of mid-2026 [research/arm-riscv §RISC-V].
 - Forecasts, honestly framed: Omdia ~17B chips ≈ 25% of processors by 2030; SHD: RISC-V IP revenue only ~$2B by 2031 — vs Arm's $2.3B licensing TODAY; RISC-V Intl's "25% already" claim (Jan 2026) counts penny embedded cores — advocacy [research/arm-riscv §Does RISC-V threaten Arm?].
-- Even Arm's customers hedge: Quintauris JV (Qualcomm, NXP, Bosch, Infineon, Nordic, ST) pooling RISC-V for automotive <!-- VERIFY: Quintauris membership/status 2026 --> [research/arm-riscv §Does RISC-V threaten Arm?].
+- Even Arm's customers hedge: Quintauris JV (Qualcomm, NXP, Bosch, Infineon, Nordic, ST) pooling RISC-V for automotive [VERIFY: Quintauris membership/status 2026] [research/arm-riscv §Does RISC-V threaten Arm?].
 - Hedge (direction of the lie): "RISC-V is winning embedded" compresses a messy picture — volume ≠ revenue; it's penny-royalty territory Arm barely monetized anyway [research/arm-riscv §Does RISC-V threaten Arm?].
 LINE THAT LANDS:
 - "RISC-V is eating the part of the market Arm never got rich on. The war for the profitable core — the phone in your pocket — hasn't started yet."
@@ -177,8 +177,8 @@ FACT AMMO:
 - RISC-V International relocated Delaware → Switzerland (announced late 2019) so US export politics couldn't gate the spec [research/arm-riscv §RISC-V].
 - China's build-out: XiangShan (Chinese Academy of Sciences' open high-perf core, aimed at Arm-class IP); Alibaba T-Head XuanTie — server-grade C930 shipping 2025; 2025: first national-level Beijing policy backing RISC-V adoption [research/arm-riscv §RISC-V].
 - ~70 Chinese companies in RISC-V International — 3rd-largest national bloc (EU ~87, US ~77); PRC firms incl. Entity-Listed ones sit on the board [research/arm-riscv §RISC-V].
-- US lawmakers have pushed BIS since 2023 to restrict RISC-V collaboration (latest: Sept 2025 Senate letter); CSIS counter: restricting a global published spec just hands China the steering wheel. No RISC-V-specific rule enacted as of 2026-07 <!-- VERIFY: confirm no BIS RISC-V rule issued by recording date --> [research/arm-riscv §RISC-V].
-- Arm's own exposure: Arm China is quasi-independent, a mid-teens % of revenue <!-- VERIFY: current Arm China revenue share (was ~17% around IPO) --> [research/arm-riscv §Risks (Arm)].
+- US lawmakers have pushed BIS since 2023 to restrict RISC-V collaboration (latest: Sept 2025 Senate letter); CSIS counter: restricting a global published spec just hands China the steering wheel. No RISC-V-specific rule enacted as of 2026-07 [VERIFY: confirm no BIS RISC-V rule issued by recording date] [research/arm-riscv §RISC-V].
+- Arm's own exposure: Arm China is quasi-independent, a mid-teens % of revenue [VERIFY: current Arm China revenue share (was ~17% around IPO)] [research/arm-riscv §Risks (Arm)].
 LINE THAT LANDS:
 - "Export controls can stop a machine at a border. They cannot stop a PDF. That's why Beijing's chip plan has a Swiss address."
 -->

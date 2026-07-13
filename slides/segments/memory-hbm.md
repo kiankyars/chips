@@ -125,7 +125,7 @@ BEATS:
 FACT AMMO:
 - Fab economics: ~2 yrs, >$15B; swings routinely exceed ±50%. [research/memory-hbm §memory-vs-logic]
 - 2022–23 bust: DRAM/NAND ≈ halved; supplier inventories ~31 weeks [1][2]. 2025–26 boom: conventional DRAM contracts +93–98% QoQ (1Q26) [3][4]. [research/memory-hbm §memory-vs-logic]
-- Consolidation: dozens (1980s–90s) → 3 makers ≈ 90% of DRAM. Handle: the survivors aren't the smartest — they're the ones who kept spending when it hurt. [research/memory-hbm §memory-vs-logic] <!-- VERIFY: exact combined big-3 share; ~89.8% in 1Q26 per Counterpoint [5] -->
+- Consolidation: dozens (1980s–90s) → 3 makers ≈ 90% of DRAM. Handle: the survivors aren't the smartest — they're the ones who kept spending when it hurt. [research/memory-hbm §memory-vs-logic] [VERIFY: exact combined big-3 share; ~89.8% in 1Q26 per Counterpoint [5]]
 LINE THAT LANDS:
 - "In logic, the moat is knowing something nobody else knows. In memory, the moat is surviving the winter that kills everybody else."
 -->
@@ -169,8 +169,8 @@ BEATS:
 - Then the twist that opens the war: in Q1 2025 the crown moved again — but for the first time it stayed inside Korea. Not a foreign rival — Samsung's neighbor, SK hynix, on the strength of one bet: HBM. The lesson is identical every time: the crown goes to whoever keeps spending when incumbents flinch. Which is exactly the playbook China is running from below right now.
 FACT AMMO:
 - Intel 1103 (1970), best-selling chip by 1972; DRAM built Intel. Hedge: Intel's literal first product was the 3101 SRAM (1969) — "Intel's first product was DRAM" slightly overstates; the 1103 was its first hit. [64] [research/memory-hbm §history]
-- Japan ~75–80% of world DRAM late '80s; 1985 crash drove Intel out of DRAM; 1986 US–Japan Semiconductor Agreement. [research/memory-hbm §history] <!-- VERIFY: exact Japan peak share; DRAM patent Dennard IBM 1966–68 -->
-- Samsung #1 in DRAM 1992 ("Tokyo Declaration," entered 1983), held 33 years until SK hynix took it Q1 2025 [7]. Elpida bankrupt 2012 (→ Micron); Qimonda dead 2009. [research/memory-hbm §history] <!-- VERIFY: Elpida/Qimonda dates -->
+- Japan ~75–80% of world DRAM late '80s; 1985 crash drove Intel out of DRAM; 1986 US–Japan Semiconductor Agreement. [research/memory-hbm §history] [VERIFY: exact Japan peak share; DRAM patent Dennard IBM 1966–68]
+- Samsung #1 in DRAM 1992 ("Tokyo Declaration," entered 1983), held 33 years until SK hynix took it Q1 2025 [7]. Elpida bankrupt 2012 (→ Micron); Qimonda dead 2009. [research/memory-hbm §history] [VERIFY: Elpida/Qimonda dates]
 LINE THAT LANDS:
 - "Four times now the memory crown has changed hands. Every single time, it moved during a crash — to the one company brave or crazy enough to keep building while the price was falling."
 -->
@@ -244,7 +244,7 @@ FACT AMMO:
 - 8/12/16 dies thinned to tens of microns, stacked, TSV-connected on a base die; on a silicon interposer (TSMC CoWoS) mm from the GPU. [20] [research/memory-hbm §HBM-deep-dive]
 - Bus: 1024–2048 bits/stack vs 64/DDR channel. Handle: TSVs = elevator shafts drilled through every floor of the tower. [research/memory-hbm §memory-wall, §HBM-deep-dive]
 - History: JEDEC 2013; first chips SK hynix 2013 (with AMD); first product AMD Fiji / Radeon Fury X, 2015. [20] [research/memory-hbm §HBM-deep-dive]
-- Assembly is the differentiator: SK hynix MR-MUF molding vs Samsung TC-NCF film — SK hynix's yield edge here is a core reason it leads. [research/memory-hbm §HBM-deep-dive] <!-- VERIFY: current-gen process details; well-documented for HBM3/3E era -->
+- Assembly is the differentiator: SK hynix MR-MUF molding vs Samsung TC-NCF film — SK hynix's yield edge here is a core reason it leads. [research/memory-hbm §HBM-deep-dive] [VERIFY: current-gen process details; well-documented for HBM3/3E era]
 LINE THAT LANDS:
 - "You can't widen the road, so you move memory into the apartment upstairs — and run two thousand cables to its front door."
 -->
@@ -285,7 +285,7 @@ FACT AMMO:
 - BOM share: H100 SXM ~41% (~$1,350 of ~$3,320); B200 ~45% (~$2.9k of ~$6.4k); B300 >50% [37][38]. Handle: the memory costs more than the processor it serves. [research/memory-hbm §HBM-deep-dive]
 - Sells like logic: qualified, negotiated, presold 12–24 mo; SK hynix + Micron sold out through cal-2026; Samsung sold out 2026 by Oct 2025 [34][35][36]. HBM4 custom base die → semi-custom. [research/memory-hbm §HBM-deep-dive]
 - Price: historically ~3–5× per bit over DDR5; HBM3E ≈ $13–17/GB early 2026 [29][30]. Hedge: DDR5 profitability expected to surpass HBM3E in 2026 [31]. [research/memory-hbm §HBM-deep-dive]
-- HBM ~a fifth of all DRAM wafer capacity in 2026. [research/memory-hbm §HBM-deep-dive] <!-- VERIFY: ~20–23% circulating; find TrendForce primary -->
+- HBM ~a fifth of all DRAM wafer capacity in 2026. [research/memory-hbm §HBM-deep-dive] [VERIFY: ~20–23% circulating; find TrendForce primary]
 LINE THAT LANDS:
 - "Memory used to be the thing you bought last and cheapest. On an AI chip it's now the single most expensive part — and you have to book it two years out."
 -->
@@ -326,7 +326,7 @@ BEATS:
 FACT AMMO:
 - SK hynix: DRAM crown Q1 2025 (Samsung's 1st loss since 1992) [7]; Nvidia's main HBM supplier since H100; HBM ~56.4% 1Q26 (own F-1), ~62% mid-2025 [11][12]. [research/memory-hbm §players-shares]
 - Samsung: failed Nvidia HBM3E qual ~18 months (thermal/power) [39]; passed 12-layer HBM3E Sept 2025 [39][40]; regained DRAM #1 in 4Q25 as legacy prices spiked [9]. [research/memory-hbm §players-shares, §Samsung-saga]
-- Micron: HBM 2% (2023) → ~19–21%, passed Samsung by some trackers in 2025 [12]; HBM4 high-volume for Nvidia [58]. [research/memory-hbm §players-shares] <!-- VERIFY: trackers disagree on Samsung-vs-Micron #2 ordering in 1H26 -->
+- Micron: HBM 2% (2023) → ~19–21%, passed Samsung by some trackers in 2025 [12]; HBM4 high-volume for Nvidia [58]. [research/memory-hbm §players-shares] [VERIFY: trackers disagree on Samsung-vs-Micron #2 ordering in 1H26]
 - All three certified for Vera Rubin HBM4 — Jensen at GTC Taipei, June 1 2026; Rubin ships from summer 2026 [13][24]. Nvidia HBM4 allocation est.: SK hynix ~60–70%, Samsung ~25–30%, Micron the rest [13]. [research/memory-hbm §HBM-deep-dive]
 - Architectural break for HBM4: base die moves to LOGIC nodes — SK hynix's base die fabbed by TSMC (12nm-class); Samsung fabs its own on 4nm (only turnkey supplier) [22][23]. [research/memory-hbm §HBM-deep-dive]
 LINE THAT LANDS:
@@ -385,7 +385,7 @@ FACT AMMO:
 - SK hynix FY25: revenue ₩97.15T, OP ₩47.21T (49% margin — beat Samsung's whole company), net ₩42.95T [54]. 1Q26: revenue ₩52.58T, OP ₩37.61T (72% margin) [55]. DRAM 28.8%, HBM ~56.4% [5][11]. [research/memory-hbm §financials, §players-shares]
 - Samsung 1Q26: memory revenue ₩74.8T (~$51B, all-time high); DS revenue ₩81.7T, OP ₩53.7T (~66% margin, ~48× YoY) [41][61][62]. DRAM 38.6% (#1) [6]. [research/memory-hbm §financials, §players-shares]
 - Micron FQ3-26 (Mar–May 2026): revenue $41.46B (>entire FY25; 4.5× year-ago), GAAP GM 84.6%, net $28.24B; guides FQ4 ~$50B ±1B at ~86% GM [58]. DRAM 22.4%, HBM ~19–21% [5][12]. [research/memory-hbm §financials, §players-shares]
-- Years-to-replace: proposed ~5+ yrs for HBM leadership; China credible on commodity DRAM by ~2027, "not an AI-memory threat this decade" [49]. [research/memory-hbm §China] <!-- VERIFY: years-to-replace is a proposed editorial figure for synthesis to finalize; margin labels differ by company (SK hynix/Samsung = operating, Micron = gross) — keep the labels honest on screen -->
+- Years-to-replace: proposed ~5+ yrs for HBM leadership; China credible on commodity DRAM by ~2027, "not an AI-memory threat this decade" [49]. [research/memory-hbm §China] [VERIFY: years-to-replace is a proposed editorial figure for synthesis to finalize; margin labels differ by company (SK hynix/Samsung = operating, Micron = gross) — keep the labels honest on screen]
 LINE THAT LANDS:
 - "An 85% gross margin, from the company that sells the most commodity product in the industry. When memory prints software margins, you are not looking at a healthy market — you're looking at a shortage."
 -->
@@ -419,8 +419,8 @@ BEATS:
 - Why it happened — connect it to the trade ratio you flagged two slides ago: HBM and AI-server DRAM ate the wafers at 3:1, the big-3 had cut legacy capacity in the 2023 bust, then hyperscalers panic-prebought on multi-year lock-ins. That's why a laptop's RAM roughly quadrupled in six months — your PC is bidding against Microsoft for the same wafer.
 - Now the hedge that's the emotional core — voice it, don't bury it: why did Samsung's stock fall on a record? Because in memory, record profits are how every crash begins. Record prices → record capex → the 2027–28 glut candidate. Every prior supercycle ended in oversupply; TrendForce's own curve peaks in 2027. The bulls say presold multi-year AI contracts make this one different. That claim has never been tested through a downturn.
 FACT AMMO:
-- TrendForce: DRAM $165.7B 2025 (+73%) → $404.3B 2026E (+144%); NAND +112% to $147.3B; total memory $551.6B 2026E, peaking ~$842.7B 2027 [48]. [research/memory-hbm §supercycle] <!-- VERIFY: 2026–27 are forecasts; treat as scenario, not fact -->
-- Data centers ~70% of memory output 2026 vs ~20–30% in 2022 [4][45]. [research/memory-hbm §supercycle] <!-- VERIFY: secondary sources; find primary -->
+- TrendForce: DRAM $165.7B 2025 (+73%) → $404.3B 2026E (+144%); NAND +112% to $147.3B; total memory $551.6B 2026E, peaking ~$842.7B 2027 [48]. [research/memory-hbm §supercycle] [VERIFY: 2026–27 are forecasts; treat as scenario, not fact]
+- Data centers ~70% of memory output 2026 vs ~20–30% in 2022 [4][45]. [research/memory-hbm §supercycle] [VERIFY: secondary sources; find primary]
 - Micron FQ3-26 $41.5B > entire FY25; 84.6% GM [58]. Samsung Q2'26 prelim: OP ₩89.4T (~$59B), ~19× YoY, ~₩1T/day; stock −7% on capex fears [63]. SK hynix Nasdaq ADR Jul 10 2026, ~$28–29.4B, largest ever (tops Alibaba $21.8B) [56][11]. [research/memory-hbm §financials]
 - Fuse: 1 HBM wafer ≈ 3 PC-DRAM wafers not made [32][43]; laptop RAM ~quadrupled in six months. [research/memory-hbm §HBM-deep-dive, §fact-ammo]
 - Hedge: record price → record capex (DRAM capex ~$53.7B 2025 → ~$61.3B 2026) → 2027–28 glut candidate; every prior cycle ended in glut; presold LTAs untested [65][48]. [research/memory-hbm §risks]

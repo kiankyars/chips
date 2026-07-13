@@ -84,7 +84,10 @@ handoff into the next segment (write it as a question the next segment answers).
 
 1. **Every number comes from a research pack**, cited in FACT AMMO as
    `[research/<pack> §section]`. No invented numbers. If the pack entry carries
-   `<!-- VERIFY -->`, carry the tag forward next to the number.
+   a VERIFY tag, carry it forward next to the number — but inside a beat block
+   write it as `[VERIFY: ... ]` (square brackets), NEVER `<!-- VERIFY -->`.
+   HTML comments cannot nest: a `<!-- VERIFY -->` inside the `<!-- ... -->` note
+   block closes the note early and spills your beats onto the visible slide.
 2. **Beats are skeleton, never script** (AUTHORING.md). Lines-that-land are
    offers, not requirements.
 3. **Numbers with handles**: every headline number in FACT AMMO gets a physical

@@ -88,7 +88,7 @@ FACT AMMO:
 - 600–1,000+ process steps per wafer; ~3–4 months from bare silicon to finished circuits [research/kla §teachable].
 - The excursion story: drift undetected at step 400 → failure at step 1,000 → months of WIP suspect (framing; the step/cycle numbers are sourced) [research/kla §teachable].
 - 1% yield improvement ≈ "millions of dollars per week" for a high-volume device (eInnoSys, mirroring McKinsey); McKinsey example — one maker losing ~$68M to yield loss, a program delivered +10% yield in six months [research/kla §teachable].
-- $100M handle (arithmetic, each input checkable): a ~$18,500 3nm wafer <!-- VERIFY: widely reported TSMC N3 figure, not officially confirmed --> × ~50k wafer-starts/month × 12 × 1% ≈ ~$100M+/yr per yield point [research/kla §teachable].
+- $100M handle (arithmetic, each input checkable): a ~$18,500 3nm wafer [VERIFY: widely reported TSMC N3 figure, not officially confirmed] × ~50k wafer-starts/month × 12 × 1% ≈ ~$100M+/yr per yield point [research/kla §teachable].
 - New fabs start at 30–50% yield and take 18–24 months of hunting defect sources to climb above 80% — ramping yield faster is the whole game [research/kla §teachable].
 - Simplification hedge (direction of the lie): "step 400 / step 1,000" is illustrative — real excursions are flagged by statistical process control across many tools, not one dramatic miss; but the structural point (long cycle time = enormous exposed WIP) is exactly right.
 LINE THAT LANDS:
@@ -135,8 +135,8 @@ FACT AMMO:
 - Intensity rises: smaller features → smaller killer defects; EUV + multipatterning → more layers that must align; bigger die + HBM → less redundancy, higher cost per defect (KLA's own framing) [research/kla §teachable, §market position].
 - Share: ~56–58% of process control (56% third-party [4], ~58% KLA investor day [5]); ~7× nearest competitor, +360 bps since 2021; nearest rival AMAT only ~10%; reticle inspection 80%+, patterned-wafer 75–80% [research/kla §market position].
 - Growth proof point: in CY2025 KLA took #1 in advanced wafer-level-packaging process control — share up 14 points, revenue up ~70% YoY [research/kla §market position].
-- China aside: 43% of revenue (FY2024) → 33% (FY2025) → 24% (March 2026 qtr), partly post-boom, partly "more stringent U.S. export controls" [research/kla §geopolitics]. Dec-2024 BIS rules guided to cut ~$500M of CY2025 revenue <!-- VERIFY: exact guidance figure/breakdown -->.
-- Process control ≈ 10%+ of total WFE spend and rising <!-- VERIFY: analyst figures vary ~9–11% --> [research/kla §market position].
+- China aside: 43% of revenue (FY2024) → 33% (FY2025) → 24% (March 2026 qtr), partly post-boom, partly "more stringent U.S. export controls" [research/kla §geopolitics]. Dec-2024 BIS rules guided to cut ~$500M of CY2025 revenue [VERIFY: exact guidance figure/breakdown].
+- Process control ≈ 10%+ of total WFE spend and rising [VERIFY: analyst figures vary ~9–11%] [research/kla §market position].
 - Simplification hedge: "20nm defect" is a stand-in — the killer-defect size tracks the node and the layer; the robust claim is the ratio (defect-to-wafer), not the exact nanometers.
 LINE THAT LANDS:
 - "Find one golf ball on a field 600 kilometers wide — in an hour, for every wafer that walks in."
@@ -173,7 +173,7 @@ BEATS:
 - Hand off into materials: the wafer's last measurement passes. We've now met every MACHINE in the fab — deposit, litho, etch, implant, polish, measure. But machines are only half a fab. Every one of those steps ATE something — resist, gases, slurries, blank plates, ultrapure everything. So: what was all this made FROM? Down one more floor, into the Japanese basement.
 FACT AMMO:
 - FY2025: revenue $12.16B; GAAP net income $4.06B; GAAP gross margin ≈ 61%; FCF $3.75B; services $2.68B (~22%) [research/kla §financials].
-- Q3 FY2026 (latest reported): non-GAAP gross margin 62.2%, non-GAAP operating margin 42.6% — highest margins of the big-5 WFE makers, vs ASML 52.8% gross margin in 2025 (AMAT/Lam high-40s, TEL mid-40s <!-- VERIFY: exact AMAT/Lam/TEL current GMs -->) [research/kla §financials].
+- Q3 FY2026 (latest reported): non-GAAP gross margin 62.2%, non-GAAP operating margin 42.6% — highest margins of the big-5 WFE makers, vs ASML 52.8% gross margin in 2025 (AMAT/Lam high-40s, TEL mid-40s [VERIFY: exact AMAT/Lam/TEL current GMs]) [research/kla §financials].
 - Services $775M = 23% of revenue, +16% YoY; 2026 tracks to the 17th consecutive year of services growth — the annuity under the cyclical tool business [research/kla §financials].
 - Process control is somewhat countercyclical — fabs measure more when yields are bad — but not immune to the WFE cycle [research/kla §risks].
 - Investor-day trajectory: 13–17% revenue CAGR through CY2030; WFE market seen at $215B ± $20B by 2030; >90% of FCF returned [research/kla §financials].

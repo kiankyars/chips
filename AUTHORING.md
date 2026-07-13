@@ -120,6 +120,14 @@ doesn't exist yet, the SVG placeholder (or nothing) renders — decks must alway
 
 ## Fact-checking convention
 
-Anything I'm not fully confident on is tagged inline as `<!-- VERIFY: ... -->` in
-the fact pack so we never ship a number on vibes. Sourced facts carry a `[n]`
-footnote pointing at the source list at the bottom of each `research/` file.
+Anything I'm not fully confident on is tagged so we never ship a number on vibes.
+Sourced facts carry a `[n]` footnote pointing at the source list at the bottom of
+each `research/` file.
+
+- **In `research/` packs**, the tag is an HTML comment: `<!-- VERIFY: ... -->`.
+- **In `slides/segments/` beat sheets**, the tag must be `[VERIFY: ... ]` (square
+  brackets), NEVER `<!-- VERIFY -->`. The beats already live inside a `<!-- ... -->`
+  speaker-note block, and **HTML comments cannot nest** — an inner `<!-- ... -->`
+  closes the note block early and dumps the rest of your beats onto the visible
+  slide. Square brackets stay safely hidden inside the note. (This is enforced;
+  a nested `<!-- VERIFY` inside a note is a build-visible bug.)

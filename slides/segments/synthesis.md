@@ -86,7 +86,7 @@ BEATS:
 - Then the rest: TSMC takes two slices (the logic dies AND the CoWoS packaging — the company on the board twice, paid twice), a sliver to the Japanese substrate, a sliver to assembly and test.
 - The honesty beat — voice it: these are analyst estimates and an illustrative split; Nvidia publishes no price, and only HBM's >50% BOM share is firmly sourced. The bar is a map, not an invoice. And the amortized tolls — EDA, ASML, the blank wafer — don't show up as line items but are hiding inside every number above.
 FACT AMMO:
-- Street price ~$50k+/GPU; rack ~$3.7–4.0M (Loop Capital) to $6–6.5M configured — all third-party estimates, Nvidia publishes no list price. [research/nvidia §the-one-chip] <!-- VERIFY: wide estimate range; flag as estimate on screen -->
+- Street price ~$50k+/GPU; rack ~$3.7–4.0M (Loop Capital) to $6–6.5M configured — all third-party estimates, Nvidia publishes no list price. [research/nvidia §the-one-chip] [VERIFY: wide estimate range; flag as estimate on screen]
 - Nvidia gross margin ~75% (74.9% GAAP Q1 FY27; FY26 full-year 71.1%, depressed by China charges). [research/nvidia §financials]
 - HBM = >50% of a B300's build cost (H100 ~41% / ~$1,350 of ~$3,320; B200 ~45% / ~$2.9k of ~$6.4k; B300 >50%). Handle: the memory costs more than the GPU die it feeds. [research/memory-hbm §HBM economics]
 - TSMC appears twice: logic wafer (custom 4NP, 5nm-class) ~$18k/wafer-class, and CoWoS packaging wafers now price NEAR a 7nm logic wafer. [research/tsmc §pricing; research/packaging §what-it-became]
@@ -166,11 +166,11 @@ BEATS:
 - Walk the bottom, and note the contrast that makes the point: HBM is only ~5 years — not because it's easy, but because three companies already do it (SK Hynix, Micron, Samsung all qualified for Rubin). A monopoly's replacement clock is long; an oligopoly's is short. And OSAT is ~2 years — anyone with capex and labor, which is exactly why China starts there.
 - Tie it to the money: the players at the top of THIS table are the players at the top of the margin ladder. The market has already run this calculation for you. Margin is the world telling you, in dollars, how long you'd be stuck without each of these companies.
 FACT AMMO:
-- ASML/Zeiss ~15–20: 100% of EUV, Zeiss the only EUV optics on Earth, >100,000 parts, ~85% outsourced across ~17 countries — recreating it ≈ recreating the whole ecosystem. [research/asml §the moat, §the machine] <!-- VERIFY: 15–20 is a proposed figure; pack calls it "the textbook chokepoint" but assigns no number -->
+- ASML/Zeiss ~15–20: 100% of EUV, Zeiss the only EUV optics on Earth, >100,000 parts, ~85% outsourced across ~17 countries — recreating it ≈ recreating the whole ecosystem. [research/asml §the moat, §the machine] [VERIFY: 15–20 is a proposed figure; pack calls it "the textbook chokepoint" but assigns no number]
 - TSMC ~10+: Intel-scale fabs + ASML allocation + PDK/IP ecosystem + ~30 yrs yield learning. [research/tsmc §the moat & market share]
 - EDA ~10: 30–40 yrs of tool code + per-node foundry co-certification + workforce training lock-in; new entrants "aren't in the room." [research/eda §the moat]
 - Nvidia ~10: a competitive chip is a ~3–5 yr problem (AMD exists), but CUDA is ~20 yrs of software + years of HBM/CoWoS pre-booked. [research/nvidia §the moat]
-- Japan materials ~5–10: ~90% of photoresist (~95% at EUV), near-total EUV mask blanks — chemistry moats measured in decades. [research/materials §photoresist, §what-it-is] <!-- VERIFY: proposed range; chokepoint #5 on the board -->
+- Japan materials ~5–10: ~90% of photoresist (~95% at EUV), near-total EUV mask blanks — chemistry moats measured in decades. [research/materials §photoresist, §what-it-is] [VERIFY: proposed range; chokepoint #5 on the board]
 - KLA ~7: ~7× nearest competitor, reticle inspection ~80%+, 40-yr BBP legacy — a soft chokepoint, not on the seven board. [research/kla §market position]
 - SK Hynix / HBM ~5: MR-MUF yield edge + qual cycles of quarters (Samsung needed ~18 months) — but a 3-supplier oligopoly, not a monopoly, which SHORTENS the clock. [research/memory-hbm §HBM economics, §Samsung saga]
 - OSAT ~2: labor + capex, low barriers; Chinese OSATs (JCET +19% YoY, state-backed) climbing fast. [research/packaging §OSATs]

@@ -56,7 +56,7 @@ BEATS:
 - Do the light path fast (the diagram carries it): tin droplet → laser → plasma → 13.5nm light → Zeiss mirrors → wafer.
 - Then pivot hard: the machine is a marvel, but everyone's already made that video. The reason ASML matters is economic, not mechanical.
 FACT AMMO:
-- ~50,000 tin droplets/sec, 13.5nm light [research/asml.md §the machine]. <!-- VERIFY: droplet rate -->
+- ~50,000 tin droplets/sec, 13.5nm light [research/asml.md §the machine]. [VERIFY: droplet rate]
 LINE THAT LANDS:
 - "Everyone shows you the fireworks. Nobody explains why one company owns the match."
 -->
@@ -116,7 +116,7 @@ BEATS:
 - The real product isn't the scanner — it's the only supply chain on Earth that can assemble it. 85% is sourced; ASML integrates.
 - Zeiss is the sharpest sub-chokepoint: the mirrors are effectively single-source. If ASML is the world's chokepoint, Zeiss is ASML's.
 FACT AMMO:
-- >100,000 parts, ~17 countries, ~15% in-house [research/asml.md §the machine]. <!-- VERIFY: part-count figures vary 5k–100k+ depending on what's counted -->
+- >100,000 parts, ~17 countries, ~15% in-house [research/asml.md §the machine]. [VERIFY: part-count figures vary 5k–100k+ depending on what's counted]
 - Zeiss mirror analogy: scaled to the size of Germany, the largest bump would be under 1mm [research/asml.md §the machine].
 LINE THAT LANDS:
 - "ASML's real product isn't a machine. It's the only supply chain on Earth that can build this machine."
@@ -162,7 +162,7 @@ BEATS:
 - What a leading-edge monopoly looks like on a P&L: ~53% gross margin, a backlog measured in years, EUV growing ~40% on the AI buildout.
 - The backlog is the tell — customers pre-commit billions because there's no alternative and no shelf. And the machines never really leave: installed-base service is a recurring annuity on top.
 FACT AMMO:
-- All figures: research/asml.md §FY2025 [1][2][3]. <!-- VERIFY: refresh to latest 2026 quarter before recording — Q2 2026 due ~mid-July -->
+- All figures: research/asml.md §FY2025 [1][2][3]. [VERIFY: refresh to latest 2026 quarter before recording — Q2 2026 due ~mid-July]
 LINE THAT LANDS:
 - "A monopoly on the leading edge looks like a 53% margin and a waiting list."
 -->
@@ -195,7 +195,7 @@ BEATS:
 - The next generation is the most expensive production tool ever sold — how we push below 2nm. Whoever installs these first leads the next node.
 - SEED multi-patterning: when you can't get (or can't buy) EUV, you fake finer features by exposing a layer several times. It works — but it's the expensive, low-yield workaround. This word comes back when we get to China and SMIC.
 FACT AMMO:
-- EXE:5200-class, ~$400M, NA 0.55 vs 0.33, <12 installed [research/asml.md §High-NA]. <!-- VERIFY: throughput (~175–220 wph) and exact install count -->
+- EXE:5200-class, ~$400M, NA 0.55 vs 0.33, <12 installed [research/asml.md §High-NA]. [VERIFY: throughput (~175–220 wph) and exact install count]
 LINE THAT LANDS:
 - "There's a way to make advanced chips without EUV. It's called doing it the hard way, and it's the story of China's whole chip program."
 -->

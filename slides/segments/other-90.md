@@ -63,8 +63,8 @@ BEATS:
 - These chips are built on process nodes introduced 15 to 40 years ago. The technology we just spent half an hour on is irrelevant to them.
 FACT AMMO:
 - Whole semi market 2025 ~$772B (+22%), forecast ~$975B in 2026 — but growth is almost all AI/memory/logic; this layer grows single digits: analog +7% (2025), +10% (2026e) [research/idm-analog §The layer in numbers].
-- Analog market ~$85–95B (2025); I'm rounding to ~$90B [research/idm-analog §The layer in numbers]. <!-- VERIFY: exact WSTS analog dollar figure for 2025 -->
-- MCU market ~$30B (2025); estimates cluster $27–40B, no clean official split [research/idm-analog §The layer in numbers]. <!-- VERIFY: tighter Omdia/Yole MCU-only figure -->
+- Analog market ~$85–95B (2025); I'm rounding to ~$90B [research/idm-analog §The layer in numbers]. [VERIFY: exact WSTS analog dollar figure for 2025]
+- MCU market ~$30B (2025); estimates cluster $27–40B, no clean official split [research/idm-analog §The layer in numbers]. [VERIFY: tighter Omdia/Yole MCU-only figure]
 - Power semiconductors ~$55B incl. power ICs (2025) [research/idm-analog §The layer in numbers].
 SIMPLIFICATION HEDGE:
 - "The other 90%" is a slogan about VOLUME and ubiquity, not dollars — by revenue the leading edge is now a big share because AI chips are so expensive. The honest claim: by unit count and by where-they-show-up-in-your-life, mature chips dominate.
@@ -102,7 +102,7 @@ FACT AMMO:
 - A car contains ~1,000–3,500 chips: "more than a thousand" is the safe floor; typical modern car ~1,400–1,500; loaded EVs up to ~3,500 [research/idm-analog §The layer in numbers].
 - 2021 shortage: $210B lost auto revenue + 7.7M vehicles of lost production, in 2021 alone (AlixPartners) [research/idm-analog §The layer in numbers].
 - Cents-priced chips idled $40k-vehicle assembly lines [research/idm-analog §Fact ammo].
-- EV semiconductor content ≈ 2–3× ICE: ~$500–600/combustion car vs ~$1,500+/EV [research/idm-analog §The layer in numbers]. <!-- VERIFY: secondary source, worth pulling McKinsey/Infineon -->
+- EV semiconductor content ≈ 2–3× ICE: ~$500–600/combustion car vs ~$1,500+/EV [research/idm-analog §The layer in numbers]. [VERIFY: secondary source, worth pulling McKinsey/Infineon]
 - Even #1-in-automotive Infineon holds only 13.5% share (2024) — the chokepoint is the category (old fabs, long qualification cycles), not one firm [research/idm-analog §The layer in numbers].
 LINE THAT LANDS:
 - "A chip that costs less than a cup of coffee shut down factories building $40,000 trucks."
@@ -152,11 +152,11 @@ BEATS:
 FACT AMMO:
 - Precision analog gets worse when shrunk; optimal nodes 180nm–45nm, introduced 15–40 years ago (180nm debuted ~1999); no EUV, no $20B fab [research/idm-analog §Teachable: analog vs digital].
 - Old fabs depreciated → $0.30 chip can carry 60%+ gross margin [research/idm-analog §Teachable: analog vs digital].
-- Analog design is transistor-by-transistor craft, ~decade-long apprenticeship [research/idm-analog §Teachable]. <!-- VERIFY: qualitative, standard industry view -->
+- Analog design is transistor-by-transistor craft, ~decade-long apprenticeship [research/idm-analog §Teachable]. [VERIFY: qualitative, standard industry view]
 - 20-year availability: ST guarantees it on popular auto MCUs [research/idm-analog §Teachable]; TI product life "10–15 years and often longer"; NXP 10–15 yr; Microchip effectively never-obsolete [research/idm-analog §Teachable].
 - TI 300mm-on-trailing-node: 300mm = ~2.3× chips/wafer → ~40% lower cost per unpackaged chip vs 200mm rivals [research/idm-analog §Texas Instruments].
 - TI announced >$60B / seven US fabs (Jun 2025) — largest foundational-semiconductor investment in US history, ~60k jobs; goal >95% wafers internal; ~80,000 products; Apple signed for the Sherman site [research/idm-analog §Texas Instruments].
-- TI FY2025 revenue $17.68B (+13%); analog segment $14.0B (+15%); world #1 analog at ~18–20%, about 2× #2 [research/idm-analog §Texas Instruments]. <!-- VERIFY: analog share figure -->
+- TI FY2025 revenue $17.68B (+13%); analog segment $14.0B (+15%); world #1 analog at ~18–20%, about 2× #2 [research/idm-analog §Texas Instruments]. [VERIFY: analog share figure]
 SIMPLIFICATION HEDGE:
 - Direction of the lie on the moat: TI's is real but it's a scale/capex/catalog moat, not a physics one. Unlike ASML, this is exactly the moat China is racing to replicate first — cheap mature fabs are the easiest thing on the whole map to copy.
 LINE THAT LANDS:
@@ -224,9 +224,9 @@ BEATS:
 FACT AMMO:
 - Infineon FY2025 ~€14.7B (roughly flat); world #1 power semis (~20 years); #1 automotive at 13.5% (2024); bought GaN Systems for $830M; targets ~€1.5B AI-server-power revenue in FY2026 [research/idm-analog §Infineon].
 - STMicro FY2025 $11.8B, −11.1% YoY (worst of the group), gross margin 33.9%; first mass-market EV SiC inverter = 2018 Tesla Model 3, 48 SiC dies from Catania, Sicily; 27.5% held by a 50/50 French–Italian government vehicle [research/idm-analog §STMicroelectronics].
-- NXP FY2025 $12.27B, −3%; GAAP gross margin 54.7%; ex-Philips; automotive ~55–60% of revenue; #1 automotive radar (Yole); co-invented NFC, owns MIFARE, supplies e-passport chips [research/idm-analog §NXP]. <!-- VERIFY: exact 2025 auto share ≈57% -->
-- Renesas FY2025 ¥1,321B (≈$8.8B), −2%; automotive ~48% of revenue, −9%; formed from Hitachi+Mitsubishi (2003) + NEC Electronics (2010); March 2021 Naka fab fire deepened the global car-production crisis [research/idm-analog §Renesas]. <!-- VERIFY: Naka fire recovery timeline (~100 days) before citing specifics -->
-- ADI FY2025 $11.0B, +17%; #2 analog, high-performance end (converters/amps at dollars, GM ~68–70% non-GAAP); built by acquisition — Linear ($14.8B, 2017), Maxim ($21B, 2021) [research/idm-analog §Analog Devices]. <!-- VERIFY: ADI GM, #2 share ~12–13%, deal values -->
+- NXP FY2025 $12.27B, −3%; GAAP gross margin 54.7%; ex-Philips; automotive ~55–60% of revenue; #1 automotive radar (Yole); co-invented NFC, owns MIFARE, supplies e-passport chips [research/idm-analog §NXP]. [VERIFY: exact 2025 auto share ≈57%]
+- Renesas FY2025 ¥1,321B (≈$8.8B), −2%; automotive ~48% of revenue, −9%; formed from Hitachi+Mitsubishi (2003) + NEC Electronics (2010); March 2021 Naka fab fire deepened the global car-production crisis [research/idm-analog §Renesas]. [VERIFY: Naka fire recovery timeline (~100 days) before citing specifics]
+- ADI FY2025 $11.0B, +17%; #2 analog, high-performance end (converters/amps at dollars, GM ~68–70% non-GAAP); built by acquisition — Linear ($14.8B, 2017), Maxim ($21B, 2021) [research/idm-analog §Analog Devices]. [VERIFY: ADI GM, #2 share ~12–13%, deal values]
 - Fragmentation: no ASML-style chokepoint; #1-in-auto Infineon only 13.5% [research/idm-analog §The layer in numbers].
 - (Optional cycle beat) 2023–25 was the deepest analog/auto downturn in a decade; recovery is now real but two-speed — auto semi +11% YoY Q1-2026 (Bernstein), TI's "analog awakening" guidance; ST and Renesas autos still lagging [research/idm-analog §Cycle status].
 SIMPLIFICATION HEDGE:

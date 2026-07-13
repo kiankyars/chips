@@ -41,7 +41,7 @@ BEATS:
 - Drop the scale hook fast, then move on — the story here is the design, not the stock.
 FACT AMMO:
 - ~$5.1T market cap as of July 2026 — first company ever to $4T (Jul 2025), first to $5T three months later (Oct 2025). Handle: it took 30 years to reach $1T, then three MONTHS to add the fourth-to-fifth trillion. [research/nvidia §what-they-are]
-- Q1 FY27 revenue: $81.6B in a single quarter — more than Nvidia's entire fiscal-2024 YEAR. [research/nvidia §financials] <!-- VERIFY: FY24 total $60.9B, from memory -->
+- Q1 FY27 revenue: $81.6B in a single quarter — more than Nvidia's entire fiscal-2024 YEAR. [research/nvidia §financials] [VERIFY: FY24 total $60.9B, from memory]
 LINE THAT LANDS:
 - "Everything you're about to see — the island, the machines, the memory war — exists because of a file written in Santa Clara."
 -->
@@ -160,10 +160,10 @@ BEATS:
 - The accident pays off: 2012, Hinton's Toronto lab trains AlexNet on two consumer GeForce GTX 580s and blows away the ImageNet benchmark. Deep learning = matrix math = exactly what GPUs do. Nvidia pivots hard — Huang hand-delivers the first DGX-1 supercomputer to OpenAI in 2016. Then ChatGPT.
 - Land the moat: twenty years later, ~every AI framework targets CUDA. Competitors don't have to clone a chip — they have to clone an ECOSYSTEM: 4M+ developers, two decades of libraries, tooling, StackOverflow answers.
 FACT AMMO:
-- CUDA launched 2006; 4M+ registered developers. [research/nvidia §the-moat] <!-- VERIFY: some Nvidia materials say "6M developers" — pick one figure -->
+- CUDA launched 2006; 4M+ registered developers. [research/nvidia §the-moat] [VERIFY: some Nvidia materials say "6M developers" — pick one figure]
 - AlexNet trained on two consumer GeForce GTX 580s — gaming cards. [research/nvidia §history]
 - Handle for the ecosystem: the chip is clonable in years; the 20-year pile of software on top is the part with no shortcut.
-- Data center went from ~$15B (FY2023) to $193.7B (FY2026) — gaming, once the whole company, is now ~7% of revenue. [research/nvidia §history, §financials] <!-- VERIFY: FY23 DC $15.0B, from memory -->
+- Data center went from ~$15B (FY2023) to $193.7B (FY2026) — gaming, once the whole company, is now ~7% of revenue. [research/nvidia §history, §financials] [VERIFY: FY23 DC $15.0B, from memory]
 LINE THAT LANDS:
 - "Nvidia's competitors are trying to clone a chip. The moat is that they'd have to clone twenty years of software."
 -->
@@ -191,7 +191,7 @@ FACT AMMO:
 - GAAP gross margin 74.9% (Q1 FY27); FY2026 GAAP net income $120.1B on $215.9B revenue — a ~56% NET margin. [research/nvidia §financials]
 - Simplification hedge: FY2026 full-year GAAP gross margin was 71.1%, depressed by China write-down charges — "~75%" is the current run rate, not the trough. [research/nvidia §financials]
 - ~90% of AI accelerators by revenue (2025 est.); forecasts see 75–85% by end-2026 as custom chips ramp — a falling share of an exploding pie. [research/nvidia §what-they-are, §the-moat]
-- Networking alone: $14.8B in Q1 FY27, +199% YoY — a Cisco-sized business hiding inside Nvidia. [research/nvidia §financials] <!-- VERIFY: Cisco quarterly rev ~$14B comparison, from memory -->
+- Networking alone: $14.8B in Q1 FY27, +199% YoY — a Cisco-sized business hiding inside Nvidia. [research/nvidia §financials] [VERIFY: Cisco quarterly rev ~$14B comparison, from memory]
 - Handle: the ~75% margin is the "AI tax" — every company in the boom pays it on the way in. [research/nvidia §fact-ammo]
 LINE THAT LANDS:
 - "Hardware revenue, software margins. That's the whole magic trick."
@@ -277,7 +277,7 @@ BEATS:
 - Closer — what you now know (15–30s): a GPU is a throughput machine and AI is matrix math, which is why the gaming chip won; the moat is CUDA, not silicon; the margin is software economics on hardware revenue; and Nvidia owns no factories — the design is finished, but the chip does not exist yet.
 - Cliffhanger into `eda`: before this file can become 208 billion transistors, someone has to draw them. No human hand can. Two companies — and only two — own the software that designs the designs.
 FACT AMMO:
-- Rack price: GB300 NVL72 ~$3.7–4.0M (Loop Capital, from Apple's ~$1B/250-rack order); other industry sources $6–6.5M configured. Implied per-GPU street price ~$50k+. [research/nvidia §the-one-chip] <!-- VERIFY: wide estimate range; pick one framing and flag as estimate on screen -->
+- Rack price: GB300 NVL72 ~$3.7–4.0M (Loop Capital, from Apple's ~$1B/250-rack order); other industry sources $6–6.5M configured. Implied per-GPU street price ~$50k+. [research/nvidia §the-one-chip] [VERIFY: wide estimate range; pick one framing and flag as estimate on screen]
 - ~75% gross margin (Q1 FY27 GAAP 74.9%) — the labeled slice. [research/nvidia §financials]
 - Honesty flag to voice: all price figures are third-party estimates — Nvidia publishes no list price; the bar is a map, not an invoice.
 - Order-book stakes for what's downstream: ~$1 trillion in cumulative Blackwell + Rubin orders through 2027 (Huang, GTC Mar 2026). [research/nvidia §financials]

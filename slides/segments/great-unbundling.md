@@ -66,7 +66,7 @@ BEATS:
 FACT AMMO:
 - Fab cost ~$4M early 1970s → $20B+ today; up ~5,000× [research/foundations §Moore's Law & the two exponentials].
 - Rock's law: leading-edge fab cost doubles ~every 4 years [research/foundations §Moore's Law & the two exponentials].
-- Funnel: 130nm ~25-26 players (2001) → 90nm ~17 → 45nm ~12 → 22nm ~6 → 14nm ~4 → 3nm/2nm just 3 (TSMC, Samsung, Intel) [research/foundations §the consolidation funnel]. <!-- VERIFY: exact counts differ by source (IBS/BCG/McKinsey); lock one chart before recording -->
+- Funnel: 130nm ~25-26 players (2001) → 90nm ~17 → 45nm ~12 → 22nm ~6 → 14nm ~4 → 3nm/2nm just 3 (TSMC, Samsung, Intel) [research/foundations §the consolidation funnel]. [VERIFY: exact counts differ by source (IBS/BCG/McKinsey); lock one chart before recording]
 - Handle: "the machine that makes the cheapest objects ever manufactured is the most expensive factory ever built." [research/foundations §fact ammo]
 LINE THAT LANDS:
 - "The funnel isn't a mystery. It's the cost curve flipped upside down."
@@ -140,7 +140,7 @@ FACT AMMO:
 - Chang: ~25 years at TI, learning-curve pricing; recruited by Taiwan (minister K.T. Li); TSMC incorporated 21 Feb 1987, Hsinchu [research/tsmc §History].
 - Startup capital ~NT$1.4B (~US$50M-class): Taiwan's Development Fund 48.3%, Philips 27.5%, rest from Taiwanese industrial families (no US chip firm would invest); first fab leased from ITRI, process licensed from Philips 2-3 generations behind [research/tsmc §History].
 - The product = "manufacture for everyone, compete with no one" — the customer's trust IS the business model [research/tsmc §History].
-- Chang's age: foundations pack says 56 at founding; tsmc pack says 54 at 1985 recruitment. <!-- VERIFY: Chang b. July 1931 → ~55 at Feb-1987 incorporation; reconcile the "54/56" figures before recording -->
+- Chang's age: foundations pack says 56 at founding; tsmc pack says 54 at 1985 recruitment. [VERIFY: Chang b. July 1931 → ~55 at Feb-1987 incorporation; reconcile the "54/56" figures before recording]
 LINE THAT LANDS:
 - "He didn't build a better chip company. He deleted a step from everyone else's — and charged them for it."
 -->
@@ -182,7 +182,7 @@ BEATS:
 - Tease the margin ladder (DO NOT resolve it): each role skims a different slice of the chip's final price. Pose the question — where does the money actually pool? That's the thread we pull for the rest of the episode; we rank the ladder at the very end.
 FACT AMMO:
 - The unbundling created the fabless industry: Nvidia (1993), Qualcomm, Broadcom, Marvell, Apple silicon — none needed a fab [research/tsmc §History; research/foundations §the great unbundling].
-- Margin-ladder taste (tease only): a leading-edge foundry sells a 2nm wafer for ~$30,000 [research/foundations §wafer prices] <!-- VERIFY: analyst estimate, TSMC never publishes prices --> — and the "commodity" manufacturer runs ~60% gross margin (TSMC FY2025 59.9%, Q1 2026 66.2%) [research/tsmc §financials]. Where the margin actually pools is the question `synthesis` answers.
+- Margin-ladder taste (tease only): a leading-edge foundry sells a 2nm wafer for ~$30,000 [research/foundations §wafer prices] [VERIFY: analyst estimate, TSMC never publishes prices] — and the "commodity" manufacturer runs ~60% gross margin (TSMC FY2025 59.9%, Q1 2026 66.2%) [research/tsmc §financials]. Where the margin actually pools is the question `synthesis` answers.
 SIMPLIFICATION HEDGE (direction of the lie):
 - The four overlap at the edges — Samsung is an IDM that ALSO runs a foundry; Intel is becoming one too. Present them as archetypes/roles a company plays, not walls between companies. "A company can wear more than one of these hats."
 LINE THAT LANDS:

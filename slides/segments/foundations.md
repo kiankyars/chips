@@ -31,7 +31,7 @@ BEATS:
 FACT AMMO:
 - The object: ~200B+ transistors on two reticle-limit dies fused with a 10 TB/s link (Blackwell B200 class) [research/foundations §transistor].
 - Optional impossibility hook: it's carved out of the purest solid humans make — 11N silicon, one wrong atom per 100 billion, refined from ordinary quartz [research/foundations §sand to wafer].
-- Stakes (light touch — cold-open owns these): the AI buildout behind this chip is a >$600B/yr hyperscaler capex line for 2026 [research/foundations §industry aggregates] <!-- VERIFY: hyperscaler 2026 capex >$600B, est. $690–725B post-Q1 -->.
+- Stakes (light touch — cold-open owns these): the AI buildout behind this chip is a >$600B/yr hyperscaler capex line for 2026 [research/foundations §industry aggregates] [VERIFY: hyperscaler 2026 capex >$600B, est. $690–725B post-Q1].
 LINE THAT LANDS:
 - "By the end of these eight minutes, this chip is going to look less like a product and more like a crime scene — and every clue points at the same seven companies."
 -->
@@ -67,7 +67,7 @@ BEATS:
 - Series = AND, parallel = OR; CMOS pairs an n- and p-type so one always blocks — near-zero power except when it flips. That's why chips sip power until you make them think.
 FACT AMMO:
 - MOSFET = source/drain/gate; gate field opens a channel [research/foundations §transistor].
-- Gate oxide ~1–2 nm at modern nodes [research/foundations §transistor] <!-- VERIFY: effective gate-dielectric thickness; high-k stacks complicate the "atoms" count -->.
+- Gate oxide ~1–2 nm at modern nodes [research/foundations §transistor] [VERIFY: effective gate-dielectric thickness; high-k stacks complicate the "atoms" count].
 - NAND = 4 transistors; CMOS = near-zero static current [research/foundations §transistor].
 - Handle: the insulating oxide is only a few atoms thick — thinner than the thing it's insulating is wide.
 SIMPLIFICATION HEDGE:
@@ -107,10 +107,10 @@ FACT AMMO:
 - Intel 4004 (1971): 2,300 transistors, 10µm [research/foundations §transistor].
 - H100 (2022): 80B, TSMC 4N, ~814mm² [research/foundations §transistor].
 - Blackwell B200 (2024): 208B across two reticle-limit dies [research/foundations §transistor].
-- Rubin (GTC 2026): ~336B across two dies, TSMC 3nm-class [research/foundations §transistor] <!-- VERIFY: 336B from early GTC-2026 coverage; confirm vs Nvidia official spec sheet -->.
+- Rubin (GTC 2026): ~336B across two dies, TSMC 3nm-class [research/foundations §transistor] [VERIFY: 336B from early GTC-2026 coverage; confirm vs Nvidia official spec sheet].
 - 4004→Rubin ≈ 146M× (computed) [research/foundations §transistor].
 - Cerebras WSE-3 (2024): 4T transistors, 46,225mm², 900k cores [research/foundations §transistor].
-- Apple A17 Pro (2023): ~19B, first 3nm phone chip [research/foundations §transistor] <!-- VERIFY: Apple keynote figure -->.
+- Apple A17 Pro (2023): ~19B, first 3nm phone chip [research/foundations §transistor] [VERIFY: Apple keynote figure].
 LINE THAT LANDS:
 - "If cars had improved like this since 1971, your Toyota would do a hundred million miles an hour."
 -->
@@ -149,7 +149,7 @@ BEATS:
 - Plant lightly: the object is mostly logic, but it's useless without memory strapped next to it. Hold that thought — a whole act pays it off later.
 FACT AMMO:
 - Logic = billions of CMOS switches [research/foundations §transistor].
-- Memory is behaving like a commodity right now: 2026 memory forecast >$800B, roughly +250% YoY on an AI/HBM supercycle [research/foundations §industry aggregates] <!-- VERIFY: WSTS Spring 2026 memory >$800B, price-led -->.
+- Memory is behaving like a commodity right now: 2026 memory forecast >$800B, roughly +250% YoY on an AI/HBM supercycle [research/foundations §industry aggregates] [VERIFY: WSTS Spring 2026 memory >$800B, price-led].
 SIMPLIFICATION HEDGE:
 - Direction of the lie: "memory" here squashes SRAM, DRAM and NAND — three different cell designs and three different industries — into one box. True enough for now; the memory act splits them.
 LINE THAT LANDS:
@@ -191,7 +191,7 @@ FACT AMMO:
 - 23nm ≈ 42 lattice units (lattice const 0.543nm, computed) [research/foundations §what a node really is].
 - Density: N5 ~138 MTr/mm²; N3E up to ~215 MTr/mm² (densest library) [research/foundations §what a node really is].
 - N2 vs N3E: +15% density, 10–15% faster at same power, or 25–30% less power at same speed [research/foundations §what a node really is].
-- Naming decoupled from gate length ~late 1990s [research/foundations §what a node really is] <!-- VERIFY: exact decoupling era, ~0.35µm vs ~45nm depending on metric -->.
+- Naming decoupled from gate length ~late 1990s [research/foundations §what a node really is] [VERIFY: exact decoupling era, ~0.35µm vs ~45nm depending on metric].
 SIMPLIFICATION HEDGE:
 - Direction of the lie: those density numbers are the densest possible library; a real chip averages far lower — the H100 works out to ~98 MTr/mm² on a 5nm-class node (computed) [research/foundations §what a node really is].
 LINE THAT LANDS:
@@ -284,9 +284,9 @@ BEATS:
 FACT AMMO:
 - Die yield ≈ e^(−A·D₀); D₀ ≈ 0.1/cm² ≈ ~90% on a mobile-sized die [research/foundations §yield & cleanrooms].
 - Killer particle ~100nm ≈ 1/1000th a hair's width, on ~20nm pitches [research/foundations §yield & cleanrooms].
-- Cleanroom ISO 1 = ≤10 particles ≥0.1µm/m³; urban air ≈ 35,000,000 ≥0.5µm/m³ (≈ISO 9); wafers sit in ISO 1–2 mini-environments [research/foundations §yield & cleanrooms] <!-- VERIFY: OR ISO class range + fab bay class before quoting a specific "cleaner than an OR" multiplier -->.
+- Cleanroom ISO 1 = ≤10 particles ≥0.1µm/m³; urban air ≈ 35,000,000 ≥0.5µm/m³ (≈ISO 9); wafers sit in ISO 1–2 mini-environments [research/foundations §yield & cleanrooms] [VERIFY: OR ISO class range + fab bay class before quoting a specific "cleaner than an OR" multiplier].
 - TSMC N2 defect density lower than N3/N5/N7 at the same stage of development [research/foundations §yield & cleanrooms].
-- Context (forward-ref to life-of-a-wafer): a leading-edge wafer runs ~500–1,000+ steps over ~3 months, and every die is printed simultaneously [research/foundations §process flow]. A leading-edge wafer ≈ $30,000 (N2, analyst est.) [research/foundations §wafer prices] <!-- VERIFY: N2 ~$30k/wafer; NOTE per-die dollar figure not in pack -->.
+- Context (forward-ref to life-of-a-wafer): a leading-edge wafer runs ~500–1,000+ steps over ~3 months, and every die is printed simultaneously [research/foundations §process flow]. A leading-edge wafer ≈ $30,000 (N2, analyst est.) [research/foundations §wafer prices] [VERIFY: N2 ~$30k/wafer; NOTE per-die dollar figure not in pack].
 SIMPLIFICATION HEDGE:
 - Direction of the lie: real yield math adds clustering and redundancy; Poisson is the honest first-order picture, and it already tells you why huge dies terrify a CFO.
 SEED: yield — planted here, cashed in life-of-a-wafer → kla → intel → chiplets in packaging.
@@ -335,7 +335,7 @@ FACT AMMO:
 - Density still rising: N5 ~138 → N3E ~215 MTr/mm² [research/foundations §what a node really is].
 - Answer = parallelism → multicore → GPUs → the AI era [research/foundations §Moore's Law & the two exponentials].
 SIMPLIFICATION HEDGE:
-- Direction of the lie / present both sides: cost-per-transistor is contested. Bear case (IBS/Handel Jones): it stopped falling at 28nm ~2012. Bull case (TSMC/Intel): system-level perf/watt/$ keeps improving and designers keep migrating — revealed preference [research/foundations §Moore's Law & the two exponentials] <!-- VERIFY: pin a current 2025–26 authoritative pro-scaling cost source before recording this side -->.
+- Direction of the lie / present both sides: cost-per-transistor is contested. Bear case (IBS/Handel Jones): it stopped falling at 28nm ~2012. Bull case (TSMC/Intel): system-level perf/watt/$ keeps improving and designers keep migrating — revealed preference [research/foundations §Moore's Law & the two exponentials] [VERIFY: pin a current 2025–26 authoritative pro-scaling cost source before recording this side].
 LINE THAT LANDS:
 - "The reason AI runs on a graphics card is that in 2005, single chips stopped getting faster — so we stopped building one genius and started building an army."
 -->
@@ -397,11 +397,11 @@ BEATS:
 - Cliffhanger into great-unbundling: one man looked at this exact curve in the 1980s and drew the only possible conclusion — split the industry in two. That's the next segment.
 FACT AMMO:
 - Rock's law: leading-edge fab cost doubles ~every 4 years [research/foundations §Moore's Law & the two exponentials].
-- Curve: early 1970s ~$4M (~$31M in 2024$) → mid-1980s ~$100M → mid-1990s ~$1B → ~2015 ~$14B → 2020s $10–20B+ [research/foundations §Moore's Law & the two exponentials] <!-- VERIFY: $100M mid-80s and $1B mid-90s are order-of-magnitude, pin sources -->.
-- Samsung Taylor, TX ~$25B; TSMC Arizona ~$65B for first three fabs (of a stated ~$165B US total) [research/foundations §Moore's Law & the two exponentials] <!-- VERIFY: TSMC AZ figures vs March 2025 announcement + updates -->.
+- Curve: early 1970s ~$4M (~$31M in 2024$) → mid-1980s ~$100M → mid-1990s ~$1B → ~2015 ~$14B → 2020s $10–20B+ [research/foundations §Moore's Law & the two exponentials] [VERIFY: $100M mid-80s and $1B mid-90s are order-of-magnitude, pin sources].
+- Samsung Taylor, TX ~$25B; TSMC Arizona ~$65B for first three fabs (of a stated ~$165B US total) [research/foundations §Moore's Law & the two exponentials] [VERIFY: TSMC AZ figures vs March 2025 announcement + updates].
 - One High-NA EUV scanner ≈ $400M [research/foundations §Moore's Law & the two exponentials (see asml.md)].
 - ~5,000× fab-cost increase since the early 1970s [research/foundations §Moore's Law & the two exponentials].
-- Consolidation funnel: 130nm (~2001) ~25 players → 3 at 3/2nm (TSMC, Samsung, Intel) [research/foundations §consolidation funnel] <!-- VERIFY: exact counts vary by IBS/BCG/McKinsey chart; lock one chart -->.
+- Consolidation funnel: 130nm (~2001) ~25 players → 3 at 3/2nm (TSMC, Samsung, Intel) [research/foundations §consolidation funnel] [VERIFY: exact counts vary by IBS/BCG/McKinsey chart; lock one chart].
 - Handle: cheapest objects ever made, most expensive factory ever built.
 SIMPLIFICATION HEDGE:
 - Direction of the lie: the bars are on a log scale on purpose — a straight-ish climb here means an EXPONENTIAL in dollars. And "$20B+" is a single fab; whole campuses run much higher.

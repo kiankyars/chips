@@ -56,7 +56,7 @@ BEATS:
 - Three impossibility facts, fast, each with a physical handle. Don't explain them yet — let them feel absurd.
 - Transistor count vs stars; the price/power of a single rack; the scale of money pointed at it.
 FACT AMMO:
-- 208B transistors on the B300 package [research/nvidia §the one chip]. Rack ~$4M, ~135kW ≈ 110 US homes [research/nvidia §the one chip]. ~$600B hyperscaler 2026 capex [research/foundations §industry aggregates]. <!-- VERIFY: capex figure — refresh before recording -->
+- 208B transistors on the B300 package [research/nvidia §the one chip]. Rack ~$4M, ~135kW ≈ 110 US homes [research/nvidia §the one chip]. ~$600B hyperscaler 2026 capex [research/foundations §industry aggregates]. [VERIFY: capex figure — refresh before recording]
 LINE THAT LANDS:
 - "One transistor for every star in our galaxy — on a chip the size of a coaster."
 -->

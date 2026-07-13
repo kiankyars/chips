@@ -60,9 +60,9 @@ BEATS:
 - Then the punchline gap: it isn't even a real 3. TSMC has 72.3% of the foundry market; number two, Samsung — one of the largest companies on Earth — has 6.5%. That's an 11-to-1 gap, and it's still WIDENING (TSMC 70.4% → 72.3% in one quarter).
 - Why it widens by default (the learning-curve trap): yield improves with cumulative wafer volume — Wright's law. Whoever runs the most wafers learns fastest, gets the lowest cost, wins the next big customer, runs even more wafers. The leader compounds; the followers starve.
 FACT AMMO:
-- Funnel counts: 130nm ~25–26 (2001) → 90nm ~17 → 65nm ~14 → 45nm ~12 → 32nm ~9 → 22nm ~6 → 14nm ~4 → 7/5nm 3 → 3/2nm still 3 [research/foundations §consolidation funnel]. <!-- VERIFY: exact counts differ by source (IBS/BCG); lock one chart before recording -->
+- Funnel counts: 130nm ~25–26 (2001) → 90nm ~17 → 65nm ~14 → 45nm ~12 → 32nm ~9 → 22nm ~6 → 14nm ~4 → 7/5nm 3 → 3/2nm still 3 [research/foundations §consolidation funnel]. [VERIFY: exact counts differ by source (IBS/BCG); lock one chart before recording]
 - The gap: TSMC 72.3% vs Samsung 6.5% = ~11:1; TSMC share rose 70.4→72.3% in one quarter — concentration, not catch-up [research/foundries-field §market share picture].
-- A leading-edge node costs ~$20–30B+ (R&D + fab) per generation [research/foundries-field §why #2 keeps failing]. <!-- VERIFY: per-node cost framing --> Fab cost is up ~5,000× since the early 1970s [research/foundations §two exponentials].
+- A leading-edge node costs ~$20–30B+ (R&D + fab) per generation [research/foundries-field §why #2 keeps failing]. [VERIFY: per-node cost framing] Fab cost is up ~5,000× since the early 1970s [research/foundations §two exponentials].
 HANDLE:
 - ~25 → 3 = the field lost a company for roughly every node shrink. The graph that made your phone faster is the same graph that killed the competition.
 SIMPLIFICATION HEDGE:
@@ -107,9 +107,9 @@ BEATS:
 - RAPIDUS (subsidy as a business model): Japan wants back in at 2nm. Private money is symbolic (~$50M); the ~$16B is government. Working pilot transistors, no customer, no revenue ever. The honest odds: land yield AND cost AND customers simultaneously — something no new entrant has done at the leading edge since the 1990s.
 - SMIC (plant the IOU, don't detonate): #3 in the world, and the most politically loaded name in the episode. Made a 7nm chip with no EUV. But its whole record year is four weeks of TSMC. Say the seed out loud and move on: "China gets its own act."
 FACT AMMO:
-- Samsung: #2 at 6.5% (1Q26), drifted down from ~8% [1]; first 3nm GAA June 2022, beat TSMC ~3 yrs; ~20% yield, Qualcomm to TSMC N3 FinFET [3][4] <!-- VERIFY: all Samsung yield numbers are leaks/analyst estimates, never official -->; op losses ~KRW 2.5T/5.3T/6T for 2023/24/25 ≈ $10B+ [12]; TSMC 59.9% GM 2025 [20]; Tesla $16.5B AI6 deal July 2025 [7][8]; memory record ~KRW 20T op profit 4Q25 pays the tuition [13]. [research/foundries-field §Samsung Foundry]
+- Samsung: #2 at 6.5% (1Q26), drifted down from ~8% [1]; first 3nm GAA June 2022, beat TSMC ~3 yrs; ~20% yield, Qualcomm to TSMC N3 FinFET [3][4] [VERIFY: all Samsung yield numbers are leaks/analyst estimates, never official]; op losses ~KRW 2.5T/5.3T/6T for 2023/24/25 ≈ $10B+ [12]; TSMC 59.9% GM 2025 [20]; Tesla $16.5B AI6 deal July 2025 [7][8]; memory record ~KRW 20T op profit 4Q25 pays the tuition [13]. [research/foundries-field §Samsung Foundry]
 - GF: halted 7nm Aug 27 2018, $2–4B ramp math, business decision [16][17]; FY2025 rev $6.79B, net income $888M, GM 24.9% [19]; IBM paid GF ~$1.5B in 2015 [15]. [research/foundries-field §GlobalFoundries]
-- Rapidus: founded Aug 2022, 8 backers ~¥7.3B (~$50M) symbolic [32]; state support ~¥2.35T (~$16B) by early 2026 [34][37] <!-- VERIFY: totals vary ¥2.35T vs ¥2.9T by counting method -->; pilot line Apr 1 2025, mass production target 2H FY2027; no anchor customer as of mid-2026 [36] <!-- VERIFY: customer status moves fast, re-check before recording -->. [research/foundries-field §Rapidus]
+- Rapidus: founded Aug 2022, 8 backers ~¥7.3B (~$50M) symbolic [32]; state support ~¥2.35T (~$16B) by early 2026 [34][37] [VERIFY: totals vary ¥2.35T vs ¥2.9T by counting method]; pilot line Apr 1 2025, mass production target 2H FY2027; no anchor customer as of mid-2026 [36] [VERIFY: customer status moves fast, re-check before recording]. [research/foundries-field §Rapidus]
 - SMIC: #3 at 5.1% [1]; Entity List since Dec 18 2020, no EUV [23]; Huawei Mate 60 Pro SMIC 7nm N+2 without EUV, Aug 2023 [24]; record year $9.33B ≈ ~4 weeks of TSMC ($122.4B/yr) [20][25]. [research/foundries-field §SMIC]
 HANDLE:
 - IBM's $1.5B: someone paid you to take their factory — the reverse of a bidding war — and a decade later that same capability is a national-security asset.
@@ -150,8 +150,8 @@ BEATS:
 - The reveal that flips intuition: manufacturing is one of the SMALLER slices of a GPU's price. A leading-edge wafer is ~$18–30k reportedly, TSMC keeps ~60% of it as gross margin — real money, but small next to Nvidia's cut and the memory bill still coming.
 - So why did we just spend 25 minutes on it? Because it's the slice only THREE companies on Earth can produce at all — and only one of them profitably. Scarcity, not size, is why the foundry is a chokepoint. Memory and packaging (the gray remainder) land in Act V.
 FACT AMMO:
-- Per-GPU street price ~$50k+ (rack ~$3.7–6.5M) — all third-party estimates, Nvidia lists no price [research/nvidia §the rack / price] <!-- VERIFY: wide estimate range; flag on screen -->.
-- Leading-edge wafer reportedly N5 ~$18k, N3 ~$20k, N2 ~$30k, A16 ~$45k per 300mm wafer [research/tsmc §pricing; research/foundations §wafer pricing] <!-- VERIFY: wafer prices never officially disclosed — say "reportedly" -->.
+- Per-GPU street price ~$50k+ (rack ~$3.7–6.5M) — all third-party estimates, Nvidia lists no price [research/nvidia §the rack / price] [VERIFY: wide estimate range; flag on screen].
+- Leading-edge wafer reportedly N5 ~$18k, N3 ~$20k, N2 ~$30k, A16 ~$45k per 300mm wafer [research/tsmc §pricing; research/foundations §wafer pricing] [VERIFY: wafer prices never officially disclosed — say "reportedly"].
 - TSMC gross margin 59.9% (FY2025) → 66.2% (Q1 2026) [research/tsmc §financials].
 SIMPLIFICATION HEDGE:
 - Direction of the lie: the bar's proportions are illustrative — no one publishes a clean per-chip BOM. The order (Nvidia's margin biggest, manufacturing modest, memory large and rising) is what's solid; treat the widths as estimates.

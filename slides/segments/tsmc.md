@@ -40,7 +40,7 @@ BEATS:
 - Tee up the angle (above) in your own words: this segment is about a company that wins by refusing to compete.
 FACT AMMO:
 - TSMC = Taiwan Semiconductor Manufacturing Company, Hsinchu, Taiwan — the world's first and largest pure-play foundry; it never sells a chip under its own name [research/tsmc §what-they-are].
-- ~90% of the world's most advanced chips (≤7nm-class) come from this one company [research/tsmc §what-they-are]. <!-- VERIFY: contested on definitions — for merchant-market chips at ≤7nm, ~90% is fair; counting Intel/Samsung internal capacity it's lower. Voice the hedge if you use it here; the full hedge lands on the stamp slide. -->
+- ~90% of the world's most advanced chips (≤7nm-class) come from this one company [research/tsmc §what-they-are]. [VERIFY: contested on definitions — for merchant-market chips at ≤7nm, ~90% is fair; counting Intel/Samsung internal capacity it's lower. Voice the hedge if you use it here; the full hedge lands on the stamp slide.]
 LINE THAT LANDS:
 - "Every company in the last act had a secret in common: none of them can build anything. This is the company that builds it all."
 -->
@@ -70,8 +70,8 @@ BEATS:
 - 21 Feb 1987: TSMC incorporated in Hsinchu. This is a man in his mid-fifties — the age executives retire — starting over on an island with no chip industry, with borrowed money and borrowed technology.
 - Land the absurdity: the American chip industry looked at this and laughed. "Real men have fabs" — Jerry Sanders, AMD. In 1987, every serious chip company designed AND manufactured. Chang's heresy: fabrication itself could be the whole product.
 FACT AMMO:
-- Recruited 1985, age 54; TSMC incorporated 21 Feb 1987 [research/tsmc §history]. <!-- VERIFY: exact age at founding — pack gives 54 at 1985 recruitment, making him 55–56 in Feb 1987; curriculum says "founding at 56". Pin down before recording. -->
-- Startup capital ~NT$1.4B (~US$50M-class): Executive Yuan Development Fund 48.3%, Philips 27.5%, rest arm-twisted from Taiwanese industrial families [research/tsmc §history]. <!-- VERIFY: exact initial capital varies NT$1.3–1.4B across sources; ownership splits well attested. -->
+- Recruited 1985, age 54; TSMC incorporated 21 Feb 1987 [research/tsmc §history]. [VERIFY: exact age at founding — pack gives 54 at 1985 recruitment, making him 55–56 in Feb 1987; curriculum says "founding at 56". Pin down before recording.]
+- Startup capital ~NT$1.4B (~US$50M-class): Executive Yuan Development Fund 48.3%, Philips 27.5%, rest arm-twisted from Taiwanese industrial families [research/tsmc §history]. [VERIFY: exact initial capital varies NT$1.3–1.4B across sources; ownership splits well attested.]
 - First fab leased from ITRI; Philips process 2–3 generations behind the leaders [research/tsmc §history].
 - Handle: the seed money was ~$50M-class — TSMC now spends that roughly every eight hours on capex ($52–56B/yr ≈ ~$150M/day) [research/tsmc §financials].
 LINE THAT LANDS:
@@ -108,7 +108,7 @@ BEATS:
 - Explain the machine's actual product: customers send designs, TSMC returns processed wafers. What it really sells is a process + PDK + qualified IP + yield. The customer owns the design; TSMC owns the recipe.
 - The structural trick: pure-play means Apple's and Qualcomm's and Nvidia's secrets sit in the same buildings without conflict. Samsung — which competes with its own customers in phones and memory — structurally cannot offer that. This is why "we compete with no one" is a moat, not a slogan.
 - The lock-in layer: Open Innovation Platform (since 2008) — PDKs, Synopsys/Cadence flows, validated Arm IP. The whole industry's toolchain assumes TSMC first; porting a taped-out design elsewhere is expensive. Callback to the EDA segment: the duopoly's software ships TSMC-ready.
-- And the fabless industry exists BECAUSE this exists: Nvidia (1993), Qualcomm, Broadcom, Apple silicon — none ever needed a fab. Jensen Huang's startup got capacity because Morris Chang personally answered his letter. <!-- VERIFY: the Jensen letter / Chang phone-call anecdote is oft-told by both men — check exact wording before using. -->
+- And the fabless industry exists BECAUSE this exists: Nvidia (1993), Qualcomm, Broadcom, Apple silicon — none ever needed a fab. Jensen Huang's startup got capacity because Morris Chang personally answered his letter. [VERIFY: the Jensen letter / Chang phone-call anecdote is oft-told by both men — check exact wording before using.]
 FACT AMMO:
 - Pure-play definition, PDK/IP/yield as the product, customer-owns-design [research/tsmc §what-they-are].
 - OIP since 2008; ecosystem lock-in; trust vs Samsung's conflict [research/tsmc §moat].
@@ -148,7 +148,7 @@ BEATS:
 FACT AMMO:
 - Flywheel mechanics: more wafers → defect data → yield ramp → wins design [research/tsmc §moat].
 - Capex: $40.9B (2025); $52–56B budget (2026), 70–80% leading edge [research/tsmc §financials]. Handle: ~$150M every single day — more than most competitors' TOTAL annual revenue, spent yearly [research/tsmc §fact-ammo].
-- R&D ~US$8B/yr [research/tsmc §moat]. <!-- VERIFY: 2025 R&D ≈ NT$250B (~US$8B) — check annual report. -->
+- R&D ~US$8B/yr [research/tsmc §moat]. [VERIFY: 2025 R&D ≈ NT$250B (~US$8B) — check annual report.]
 - Chang's TI background in learning-curve pricing [research/tsmc §history].
 - Simplification hedge: yield learning isn't the ONLY moat (trust + ecosystem lock-in do real work) — the flywheel is the engine, those are the transmission.
 LINE THAT LANDS:
@@ -178,10 +178,10 @@ Newest-node wafer revenue, FY2025: <b>3nm = 24%</b> — the newest node is where
 BEATS:
 - Cash the IOU from the fabless montage: we said Apple's real chip story lives here. This is it.
 - Apple went sole-source on iPhone processors at TSMC in the mid-2010s and never left; the entire Apple-silicon line — every iPhone, every Mac — is fabbed by TSMC.
-- The mechanism that matters: Apple pays to be FIRST onto each new node — effectively reserving the leading edge at launch. That's not a purchase order, it's an alliance: Apple funds the ramp, TSMC delivers a node nobody else has yet, and both get a moat. <!-- VERIFY: the "Apple buys out the first year of each new node" mechanism is standard industry telling but NOT in the pack — confirm and source before recording, or soften to "Apple has led the ramp of recent nodes." -->
+- The mechanism that matters: Apple pays to be FIRST onto each new node — effectively reserving the leading edge at launch. That's not a purchase order, it's an alliance: Apple funds the ramp, TSMC delivers a node nobody else has yet, and both get a moat. [VERIFY: the "Apple buys out the first year of each new node" mechanism is standard industry telling but NOT in the pack — confirm and source before recording, or soften to "Apple has led the ramp of recent nodes."]
 - Then the 2025 twist — the guard change: Nvidia overtook Apple as customer #1 (~19% vs ~17% of revenue, ~$23.4B) for the first time in over a decade. Inside TSMC's own ledger you can watch the phone era hand power to the AI era: HPC was 58% of 2025 revenue; smartphone, 29%.
 FACT AMMO:
-- Apple ~17% of FY2025 revenue (NT$645B); Nvidia ~19% (~US$23.4B), overtook Apple for the first time in over a decade [research/tsmc §moat]. <!-- VERIFY: analyst estimates from supply-chain data — TSMC only discloses anonymized >10% customers. -->
+- Apple ~17% of FY2025 revenue (NT$645B); Nvidia ~19% (~US$23.4B), overtook Apple for the first time in over a decade [research/tsmc §moat]. [VERIFY: analyst estimates from supply-chain data — TSMC only discloses anonymized >10% customers.]
 - Sole-source on iPhone processors, mid-2010s [research/tsmc §history].
 - Node mix FY2025: 3nm 24%, 5nm 36%, 7nm 14% → advanced ≤7nm = 74% of wafer revenue [research/tsmc §financials].
 - Platform mix FY2025: HPC 58% (+48% YoY), smartphone 29% [research/tsmc §financials].
@@ -216,8 +216,8 @@ BEATS:
 FACT AMMO:
 - N3: 6% of wafer revenue Q3 2023 → ~24–28% through 2025–26; fastest-monetizing node ever; N3 GM crosses corporate average during 2026 [research/tsmc §tech].
 - N2: first GAA nanosheet node, HVM Q4 2025, Fab 20 Hsinchu + Fab 22 Kaohsiung, "good yield"; vs N3E ~10–15% faster iso-power or ~25–30% lower power [research/tsmc §tech].
-- N2 ramp: ~50k wafers/month exiting 2025 → ~120–130k wpm by end-2026 [research/tsmc §tech]. <!-- VERIFY: capacity figures are supply-chain estimates, not TSMC-official. -->
-- N2P volume H2 2026; A16 = Super Power Rail / backside power, "volume production on track H2 2026" per Jan 2026 call, but Apr 2026 symposium coverage frames real volume as 2027 [research/tsmc §tech]. <!-- VERIFY: treat A16 as "late 2026 start, real volume 2027." -->
+- N2 ramp: ~50k wafers/month exiting 2025 → ~120–130k wpm by end-2026 [research/tsmc §tech]. [VERIFY: capacity figures are supply-chain estimates, not TSMC-official.]
+- N2P volume H2 2026; A16 = Super Power Rail / backside power, "volume production on track H2 2026" per Jan 2026 call, but Apr 2026 symposium coverage frames real volume as 2027 [research/tsmc §tech]. [VERIFY: treat A16 as "late 2026 start, real volume 2027."]
 - A14 2028 (~10–15% perf or ~25–30% power vs N2), no backside power until A14P 2029; A12/A13 ~2029, still no High-NA [research/tsmc §tech].
 - Cost physics: capex per 1k wpm "substantially higher" N3→N2→A14 (CFO, Jan 2026) [research/tsmc §tech].
 LINE THAT LANDS:
@@ -249,7 +249,7 @@ BEATS:
 - The hikes: reported ~5–10% increases across ALL advanced nodes in 2026 — the nodes that are 74% of wafer revenue — plus reported plans to raise 2nm pricing four years running. Framed as paying for overseas fabs, tariffs, currency.
 - Then the proof that beats every rumor — the P&L: gross margin 59.9% in 2025 → 66.2% in Q1 2026, net margin 50.5%, WHILE spending $40B+/yr on fabs. If customers had anywhere else to go, those numbers could not both be true. The margins are the confession.
 FACT AMMO:
-- Reported wafer prices: N2 ~$30k, A16 ~$45k [research/tsmc §pricing]. <!-- VERIFY: never officially disclosed — widely-reported supply-chain figures; always say "reportedly." --> N3 ~$20k and N4/N5 ~$18k-class also from §pricing. <!-- VERIFY: the pack's source attribution for the N3/N5 figures is weaker than for N2/A16 (the cited article headline covers only N2/A16) — double-check the $18k/$20k numbers specifically before recording. -->
+- Reported wafer prices: N2 ~$30k, A16 ~$45k [research/tsmc §pricing]. [VERIFY: never officially disclosed — widely-reported supply-chain figures; always say "reportedly."] N3 ~$20k and N4/N5 ~$18k-class also from §pricing. [VERIFY: the pack's source attribution for the N3/N5 figures is weaker than for N2/A16 (the cited article headline covers only N2/A16) — double-check the $18k/$20k numbers specifically before recording.]
 - ~5–10% hikes across all advanced nodes (74% of wafer revenue); 2nm increases planned four consecutive years [research/tsmc §pricing].
 - GM 59.9% FY25 → 66.2% Q1 2026; net margin 50.5% (net income NT$572.5B, +58% YoY); Q1 revenue $35.90B, +40.6% YoY [research/tsmc §financials].
 - Handle: 50.5 cents kept of every dollar — software-company margins earned in the most capital-intensive factories ever built [research/tsmc §fact-ammo].
@@ -274,8 +274,8 @@ BEATS:
 - Stamp it. Board goes to 2 of 7. Chokepoint #2: no substitute inside five years — the scoreboard will say ten.
 - Voice the honesty hedge on the 90%: it's contested on definitions — count Intel's and Samsung's internal capacity and "advanced" gets murkier. For chips SOLD on the open market at ≤7nm-class, ~90% is fair.
 FACT AMMO:
-- Only three attempt leading edge; Samsung 3nm GAA yield issues cost flagship customers <!-- VERIFY: Samsung 3nm yield reporting is all unofficial. -->; Intel capacity mostly internal [research/tsmc §moat].
-- ~90% of ≤7nm-class merchant output; higher still at ≤5nm/3nm — Apple, Nvidia, AMD, Qualcomm, MediaTek, Broadcom all fab flagships at TSMC [research/tsmc §moat]. <!-- VERIFY: precise ≤5nm % — analysts put TSMC at ~90–95% of advanced-node production; no single audited number exists. -->
+- Only three attempt leading edge; Samsung 3nm GAA yield issues cost flagship customers [VERIFY: Samsung 3nm yield reporting is all unofficial.]; Intel capacity mostly internal [research/tsmc §moat].
+- ~90% of ≤7nm-class merchant output; higher still at ≤5nm/3nm — Apple, Nvidia, AMD, Qualcomm, MediaTek, Broadcom all fab flagships at TSMC [research/tsmc §moat]. [VERIFY: precise ≤5nm % — analysts put TSMC at ~90–95% of advanced-node production; no single audited number exists.]
 - Hedge source: the definitional dissent is real and useful — cite it if challenged [research/tsmc §what-they-are, source 35].
 LINE THAT LANDS (optional — mild tease of stamp #7):
 - "Remember this name on the board. It's the only company in this episode that will appear on it twice."
@@ -346,11 +346,11 @@ BEATS:
 FACT AMMO:
 - Arizona: US$165B — six fabs + two advanced-packaging plants + R&D center; Fab 1 HVM since Q4 2024 on N4, yields comparable to Taiwan; Fab 2 HVM pulled forward to H2 2027 (N3); Fab 3 = N2/A16 end-of-decade; >2,000-acre "GIGAFAB cluster" [research/tsmc §footprint].
 - Arizona subsidiary: US$514M profit in Q1 2026 — more than all of 2025 [research/tsmc §footprint].
-- Eventually ~30% of ≤2nm capacity planned for Arizona (C.C. Wei) [research/tsmc §footprint]. <!-- VERIFY: March 2025 statement; re-check exact wording. -->
+- Eventually ~30% of ≤2nm capacity planned for Arizona (C.C. Wei) [research/tsmc §footprint]. [VERIFY: March 2025 statement; re-check exact wording.]
 - Kumamoto (JASM, + Sony/Denso/Toyota): Fab 1 in volume since late 2024, 12/16/22/28nm; Fab 2 started Oct 2025 (~$13.9B), possible re-scope to 6nm/4nm, production ~end-2027 at earliest [research/tsmc §footprint].
 - Dresden (ESMC: TSMC 70% + Bosch/Infineon/NXP 10% each): €10B+, 12–28nm auto/industrial, ~40k wpm target, equipment move-in H2 2026, production ~late 2027 [research/tsmc §footprint].
 - Taiwan: N2 HVM only in Hsinchu + Kaohsiung; A14 Taiwan-first; up to 10 fabs under construction/starting in Taiwan in 2026 [research/tsmc §footprint].
-- Margin cost of going global: overseas fabs dilute gross margin 2–3pp/yr in 2026 [research/tsmc §risks]. <!-- VERIFY: later-years 3–4pp figure is from earlier calls; 2026's 2–3pp is confirmed. -->
+- Margin cost of going global: overseas fabs dilute gross margin 2–3pp/yr in 2026 [research/tsmc §risks]. [VERIFY: later-years 3–4pp figure is from earlier calls; 2026's 2–3pp is confirmed.]
 LINE THAT LANDS:
 - "Arizona is a $165 billion insurance policy. But you don't put the crown jewels in the safety-deposit box — you keep them where you live."
 -->
@@ -376,7 +376,7 @@ BEATS:
 - The one thing you can't engineer for — say it in one sentence, both edges: they call it the "silicon shield" — the island is too valuable to attack; and the same indispensability is exactly why Washington AND Beijing both want this capability moved. Then STOP.
 - Do NOT detonate: no wargame, no scenarios, no invasion talk. Explicitly promise the return: "we come back to this at the end, when you can see the whole board."
 FACT AMMO:
-- ~90% of ≤7nm-class chips from one island 130km off the Chinese coast [research/tsmc §footprint]. <!-- VERIFY: 90% definitional hedge as before. -->
+- ~90% of ≤7nm-class chips from one island 130km off the Chinese coast [research/tsmc §footprint]. [VERIFY: 90% definitional hedge as before.]
 - 3 Apr 2024 M7.4 Hualien quake: >70% of tools recovered within 10 hours, full operation ~3 days, loss NT$3B (~US$92M); Jan 2025 M6.4 cost NT$5.3B net of insurance; base isolation + automatic tool shutdown [research/tsmc §footprint].
 - Silicon-shield logic and its dark twin, one line each [research/tsmc §footprint].
 LINE THAT LANDS:
