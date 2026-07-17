@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: asml
 act: IV — The Fab Tour
@@ -12,9 +16,6 @@ diagrams: [flow-expose, euv-light-path, board-5]
 sources: research/asml.md
 -->
 
----
-layout: section
----
 
 # The Printing Press
 

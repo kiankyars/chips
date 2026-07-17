@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: geopolitics
 act: VI — The Board Is the World
@@ -13,9 +17,6 @@ sources: research/geopolitics.md
 swappable: true    # export rules move monthly — ONE topic per slide, NO cross-slide dependencies; any single slide can be re-recorded without touching its neighbors
 -->
 
----
-layout: section
----
 
 # The Board Is the World
 
@@ -69,7 +70,7 @@ LINE THAT LANDS:
 
 ---
 
-# Export control is just chess on this board
+# Four levers control the chip supply chain
 
 <div class="grid grid-cols-2 gap-6 mt-8">
 <div class="border-2 border-gray-400 rounded-lg p-5">

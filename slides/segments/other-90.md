@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: other-90
 act: INTERLUDE — The Other 90%
@@ -12,9 +16,6 @@ diagrams: [map-manufacture]
 sources: research/idm-analog.md
 -->
 
----
-layout: section
----
 
 # The Other 90%
 

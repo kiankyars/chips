@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: fabless-field
 act: II — The Blueprint
@@ -12,9 +16,6 @@ diagrams: [map-design]                # Money Bar is inline HTML per BUILDING §
 sources: research/fabless-field.md, research/nvidia.md
 -->
 
----
-layout: section
----
 
 # The Crowd Design Freed
 

@@ -1,25 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 150" font-family="Inter, -apple-system, sans-serif">
-<rect width="1920" height="150" fill="#ffffff"/>
-<rect x="68" y="40" width="264" height="70" rx="35" fill="#dcfce7" stroke="#22c55e" stroke-width="2.5"/>
-<text x="200" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="600" fill="#1e293b">✓ SAND</text>
-<line x1="338" y1="75" x2="366" y2="75" stroke="#22c55e" stroke-width="3.5" />
-<polygon points="366,75 354.12984377594,80.3008858897744 354.12984377594,69.6991141102256" fill="#22c55e"/>
-<rect x="372" y="40" width="264" height="70" rx="35" fill="#dcfce7" stroke="#22c55e" stroke-width="2.5"/>
-<text x="504" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="600" fill="#1e293b">✓ DESIGN</text>
-<line x1="642" y1="75" x2="670" y2="75" stroke="#22c55e" stroke-width="3.5" />
-<polygon points="670,75 658.12984377594,80.3008858897744 658.12984377594,69.6991141102256" fill="#22c55e"/>
-<rect x="676" y="40" width="264" height="70" rx="35" fill="#dbeafe" stroke="#3b82f6" stroke-width="4"/>
-<text x="808" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="800" fill="#1e293b">FAB</text>
-<line x1="946" y1="75" x2="974" y2="75" stroke="#94a3b8" stroke-width="3.5" />
-<polygon points="974,75 962.12984377594,80.3008858897744 962.12984377594,69.6991141102256" fill="#94a3b8"/>
-<rect x="980" y="40" width="264" height="70" rx="35" fill="#f8fafc" stroke="#94a3b8" stroke-width="2.5"/>
-<text x="1112" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="600" fill="#94a3b8">MEMORY</text>
-<line x1="1250" y1="75" x2="1278" y2="75" stroke="#94a3b8" stroke-width="3.5" />
-<polygon points="1278,75 1266.12984377594,80.3008858897744 1266.12984377594,69.6991141102256" fill="#94a3b8"/>
-<rect x="1284" y="40" width="264" height="70" rx="35" fill="#f8fafc" stroke="#94a3b8" stroke-width="2.5"/>
-<text x="1416" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="600" fill="#94a3b8">PACKAGE</text>
-<line x1="1554" y1="75" x2="1582" y2="75" stroke="#94a3b8" stroke-width="3.5" />
-<polygon points="1582,75 1570.12984377594,80.3008858897744 1570.12984377594,69.6991141102256" fill="#94a3b8"/>
-<rect x="1588" y="40" width="264" height="70" rx="35" fill="#f8fafc" stroke="#94a3b8" stroke-width="2.5"/>
-<text x="1720" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="600" fill="#94a3b8">DATA CENTER</text>
+<rect width="1920" height="150" fill="#080c14"/>
+<rect x="68" y="40" width="264" height="70" rx="35" fill="#10382f" stroke="#34d399" stroke-width="2.5"/>
+<text x="200" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="600" fill="#f8fafc">✓ SAND</text>
+<line x1="338" y1="75" x2="366" y2="75" stroke="#34d399" stroke-width="3.5" />
+<polygon points="366,75 354.12984377594,80.3008858897744 354.12984377594,69.6991141102256" fill="#34d399"/>
+<rect x="372" y="40" width="264" height="70" rx="35" fill="#10382f" stroke="#34d399" stroke-width="2.5"/>
+<text x="504" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="600" fill="#f8fafc">✓ DESIGN</text>
+<line x1="642" y1="75" x2="670" y2="75" stroke="#34d399" stroke-width="3.5" />
+<polygon points="670,75 658.12984377594,80.3008858897744 658.12984377594,69.6991141102256" fill="#34d399"/>
+<rect x="676" y="40" width="264" height="70" rx="35" fill="#102a4f" stroke="#60a5fa" stroke-width="4"/>
+<text x="808" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="800" fill="#f8fafc">FAB</text>
+<line x1="946" y1="75" x2="974" y2="75" stroke="#526078" stroke-width="3.5" />
+<polygon points="974,75 962.12984377594,80.3008858897744 962.12984377594,69.6991141102256" fill="#526078"/>
+<rect x="980" y="40" width="264" height="70" rx="35" fill="#111827" stroke="#526078" stroke-width="2.5"/>
+<text x="1112" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="600" fill="#526078">MEMORY</text>
+<line x1="1250" y1="75" x2="1278" y2="75" stroke="#526078" stroke-width="3.5" />
+<polygon points="1278,75 1266.12984377594,80.3008858897744 1266.12984377594,69.6991141102256" fill="#526078"/>
+<rect x="1284" y="40" width="264" height="70" rx="35" fill="#111827" stroke="#526078" stroke-width="2.5"/>
+<text x="1416" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="600" fill="#526078">PACKAGE</text>
+<line x1="1554" y1="75" x2="1582" y2="75" stroke="#526078" stroke-width="3.5" />
+<polygon points="1582,75 1570.12984377594,80.3008858897744 1570.12984377594,69.6991141102256" fill="#526078"/>
+<rect x="1588" y="40" width="264" height="70" rx="35" fill="#111827" stroke="#526078" stroke-width="2.5"/>
+<text x="1720" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="600" fill="#526078">DATA CENTER</text>
 </svg>

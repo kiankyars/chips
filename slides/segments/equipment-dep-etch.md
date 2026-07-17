@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: equipment-dep-etch
 act: IV — The Fab Tour
@@ -12,9 +16,6 @@ diagrams: [map-equipment, flow-deposit, flow-etch, flow-coat]
 sources: research/equipment-dep-etch.md
 -->
 
----
-layout: section
----
 
 # The Sculptors
 
@@ -247,7 +248,7 @@ LINE THAT LANDS:
 
 ---
 
-# What you now know
+# 3D chips shifted value to deposition and etch
 
 <div class="grid grid-cols-2 gap-10 mt-6 items-center">
 <div class="text-2xl leading-relaxed">

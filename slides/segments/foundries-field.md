@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: foundries-field
 act: III — The Island
@@ -12,9 +16,6 @@ diagrams: [cost-curve]         # reuses foundations' Act I cost curve as the fun
 sources: research/foundries-field.md, research/foundations.md
 -->
 
----
-layout: section
----
 
 # The Rest of the Grid
 
@@ -73,7 +74,7 @@ LINE THAT LANDS:
 
 ---
 
-# The three who stayed (and one who walked)
+# Three foundries stayed. GlobalFoundries walked.
 
 <div class="grid grid-cols-2 gap-4 mt-4 text-sm">
 

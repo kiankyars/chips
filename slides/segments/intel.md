@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: intel
 act: III — The Island
@@ -12,9 +16,6 @@ diagrams: [map-manufacture]
 sources: research/intel.md
 -->
 
----
-layout: section
----
 
 # INTEL
 

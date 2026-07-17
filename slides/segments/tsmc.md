@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: tsmc
 act: III — The Island
@@ -12,9 +16,6 @@ diagrams: [map-manufacture, journey-3, board-2]
 sources: research/tsmc.md
 -->
 
----
-layout: section
----
 
 # TSMC
 
@@ -385,7 +386,7 @@ LINE THAT LANDS:
 
 ---
 
-# What you now know
+# TSMC turned yield into a monopoly
 
 <div class="text-xl mt-10 leading-relaxed">
 

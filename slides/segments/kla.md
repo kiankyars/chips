@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: kla
 act: IV — The Fab Tour
@@ -12,9 +16,6 @@ diagrams: [flow-measure, map-equipment]
 sources: research/kla.md
 -->
 
----
-layout: section
----
 
 # The Inspector
 

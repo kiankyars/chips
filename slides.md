@@ -8,18 +8,29 @@ drawings:
   persist: false
 transition: slide-left
 mdc: true
+colorSchema: dark
+layout: cover
+class: title-slide
 fonts:
   sans: Inter
   mono: JetBrains Mono
 ---
 
+<div class="title-visual" aria-hidden="true">
+  <img src="/assets/oxidized-silicon-wafer.jpg" alt="">
+</div>
+
+<div class="title-kicker">THE FIVE LAYERS OF AI · 01</div>
+
 # CHIPS
 
-## The Five Layers of the Cake of AI — Episode 1
+<div class="title-subtitle">One accelerator. Sand to data center.</div>
 
-The most comprehensive breakdown of the semiconductor industry.
+<div class="title-journey">
+  <span>SAND</span><span>DESIGN</span><span>FAB</span><span>MEMORY</span><span>PACKAGE</span>
+</div>
 
-<div class="abs-br m-6 text-sm opacity-50">
+<div class="title-series">
 Applications · Data Centers · Energy · <b>Chips</b> · Models
 </div>
 
@@ -35,6 +46,7 @@ src: ./slides/segments/cold-open.md
 
 ---
 layout: section
+class: act-divider act-one
 ---
 
 # Part 1 — The Impossible Object
@@ -50,6 +62,7 @@ src: ./slides/segments/great-unbundling.md
 
 ---
 layout: section
+class: act-divider act-two
 ---
 
 # Part 2 — The Blueprint
@@ -73,6 +86,7 @@ src: ./slides/segments/fabless-field.md
 
 ---
 layout: section
+class: act-divider act-three
 ---
 
 # Part 3 — The Island
@@ -92,6 +106,7 @@ src: ./slides/segments/foundries-field.md
 
 ---
 layout: section
+class: act-divider act-four
 ---
 
 # Part 4 — The Fab Tour
@@ -119,6 +134,7 @@ src: ./slides/segments/materials.md
 
 ---
 layout: section
+class: act-divider act-interlude
 ---
 
 # Interlude — The Other 90%
@@ -130,6 +146,7 @@ src: ./slides/segments/other-90.md
 
 ---
 layout: section
+class: act-divider act-five
 ---
 
 # Part 5 — Memory & the Assembly
@@ -145,6 +162,7 @@ src: ./slides/segments/packaging.md
 
 ---
 layout: section
+class: act-divider act-six
 ---
 
 # Part 6 — The Board Is the World

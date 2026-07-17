@@ -4,8 +4,10 @@
   "type": "module",
   "scripts": {
     "dev": "slidev slides.md --open",
+    "diagrams": "node diagrams/src/generate.mjs",
     "build": "slidev build slides.md",
-    "export": "slidev export slides.md"
+    "export": "slidev export slides.md",
+    "check": "npm run diagrams && node scripts/check-course.mjs && npm run build"
   },
   "devDependencies": {
     "@slidev/cli": "^0.50.0",

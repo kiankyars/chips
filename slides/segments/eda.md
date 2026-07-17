@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: eda
 act: II — The Blueprint
@@ -12,9 +16,6 @@ diagrams: [map-design, board-1]
 sources: research/eda.md
 -->
 
----
-layout: section
----
 
 # The Invisible Duopoly
 

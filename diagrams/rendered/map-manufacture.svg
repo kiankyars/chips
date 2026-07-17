@@ -1,187 +1,187 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" font-family="Inter, -apple-system, sans-serif">
-<rect width="1920" height="1080" fill="#ffffff"/>
-<g opacity="0.13"><rect x="330" y="52" width="1010" height="130" rx="14" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="7 5" opacity="0.65"/>
-<text x="344" y="40" font-size="24" font-weight="800" letter-spacing="2" fill="#f59e0b">EQUIPMENT — the toolmakers</text>
-<rect x="348" y="82" width="150" height="70" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2.5"/>
-<text x="423" y="117" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="700" fill="#1e293b">ASML</text>
-<text x="494" y="88" text-anchor="end" font-size="20.900000000000002" fill="#dc2626">★★</text>
-<rect x="511" y="82" width="150" height="70" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2.5"/>
-<text x="586" y="105.125" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#1e293b">Applied</text>
-<text x="586" y="128.875" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#1e293b">Materials</text>
+<rect width="1920" height="1080" fill="#080c14"/>
+<g opacity="0.13"><rect x="330" y="52" width="1010" height="130" rx="14" fill="none" stroke="#fbbf24" stroke-width="2" stroke-dasharray="7 5" opacity="0.65"/>
+<text x="344" y="40" font-size="24" font-weight="800" letter-spacing="2" fill="#fbbf24">EQUIPMENT — the toolmakers</text>
+<rect x="348" y="82" width="150" height="70" rx="10" fill="#3b2b10" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="423" y="117" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="700" fill="#f8fafc">ASML</text>
+<text x="494" y="88" text-anchor="end" font-size="20.900000000000002" fill="#fb7185">★★</text>
+<rect x="511" y="82" width="150" height="70" rx="10" fill="#3b2b10" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="586" y="105.125" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#f8fafc">Applied</text>
+<text x="586" y="128.875" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#f8fafc">Materials</text>
 
-<rect x="674" y="82" width="150" height="70" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2.5"/>
-<text x="749" y="105.125" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#1e293b">Lam</text>
-<text x="749" y="128.875" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#1e293b">Research</text>
+<rect x="674" y="82" width="150" height="70" rx="10" fill="#3b2b10" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="749" y="105.125" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#f8fafc">Lam</text>
+<text x="749" y="128.875" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#f8fafc">Research</text>
 
-<rect x="837" y="82" width="150" height="70" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2.5"/>
-<text x="912" y="105.125" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#1e293b">Tokyo</text>
-<text x="912" y="128.875" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#1e293b">Electron</text>
+<rect x="837" y="82" width="150" height="70" rx="10" fill="#3b2b10" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="912" y="105.125" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#f8fafc">Tokyo</text>
+<text x="912" y="128.875" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#f8fafc">Electron</text>
 
-<rect x="1000" y="82" width="150" height="70" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2.5"/>
-<text x="1075" y="117" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#1e293b">KLA</text>
+<rect x="1000" y="82" width="150" height="70" rx="10" fill="#3b2b10" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="1075" y="117" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#f8fafc">KLA</text>
 
-<rect x="1163" y="82" width="150" height="70" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2.5"/>
-<text x="1238" y="105.125" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#1e293b">ASM</text>
-<text x="1238" y="128.875" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#1e293b">Intl</text>
+<rect x="1163" y="82" width="150" height="70" rx="10" fill="#3b2b10" stroke="#fbbf24" stroke-width="2.5"/>
+<text x="1238" y="105.125" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#f8fafc">ASM</text>
+<text x="1238" y="128.875" text-anchor="middle" dominant-baseline="central" font-size="19" font-weight="500" fill="#f8fafc">Intl</text>
 </g>
-<g opacity="0.13"><rect x="330" y="222" width="1010" height="106" rx="14" fill="none" stroke="#ca8a04" stroke-width="2" stroke-dasharray="7 5" opacity="0.65"/>
-<text x="344" y="210" font-size="24" font-weight="800" letter-spacing="2" fill="#ca8a04">MATERIALS</text>
-<rect x="348" y="244" width="150" height="62" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2.5"/>
-<text x="423" y="257.375" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#1e293b">Shin-Etsu</text>
-<text x="423" y="278.625" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#1e293b">SUMCO</text>
-<text x="423" y="297.875" text-anchor="middle" dominant-baseline="central" font-size="12.24" fill="#475569">wafers</text>
+<g opacity="0.13"><rect x="330" y="222" width="1010" height="106" rx="14" fill="none" stroke="#eab308" stroke-width="2" stroke-dasharray="7 5" opacity="0.65"/>
+<text x="344" y="210" font-size="24" font-weight="800" letter-spacing="2" fill="#eab308">MATERIALS</text>
+<rect x="348" y="244" width="150" height="62" rx="10" fill="#342f10" stroke="#eab308" stroke-width="2.5"/>
+<text x="423" y="257.375" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#f8fafc">Shin-Etsu</text>
+<text x="423" y="278.625" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#f8fafc">SUMCO</text>
+<text x="423" y="297.875" text-anchor="middle" dominant-baseline="central" font-size="12.24" fill="#a8b3c7">wafers</text>
 
-<rect x="511" y="244" width="150" height="62" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2.5"/>
-<text x="586" y="268" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#1e293b">JSR · TOK</text>
-<text x="586" y="287.25" text-anchor="middle" dominant-baseline="central" font-size="12.24" fill="#475569">photoresist</text>
-<text x="657" y="250" text-anchor="end" font-size="18.700000000000003" fill="#dc2626">★</text>
-<rect x="674" y="244" width="150" height="62" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2.5"/>
-<text x="749" y="268" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#1e293b">Hoya</text>
-<text x="749" y="287.25" text-anchor="middle" dominant-baseline="central" font-size="12.24" fill="#475569">mask blanks</text>
-<text x="820" y="250" text-anchor="end" font-size="18.700000000000003" fill="#dc2626">★</text>
-<rect x="837" y="244" width="150" height="62" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2.5"/>
-<text x="912" y="268" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#1e293b">Carl Zeiss SMT</text>
-<text x="912" y="287.25" text-anchor="middle" dominant-baseline="central" font-size="12.24" fill="#475569">EUV optics</text>
-<text x="983" y="250" text-anchor="end" font-size="18.700000000000003" fill="#dc2626">★</text>
-<rect x="1000" y="244" width="150" height="62" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2.5"/>
-<text x="1075" y="268" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#1e293b">gases · slurries</text>
-<text x="1075" y="287.25" text-anchor="middle" dominant-baseline="central" font-size="12.24" fill="#475569">Linde · Entegris</text>
+<rect x="511" y="244" width="150" height="62" rx="10" fill="#342f10" stroke="#eab308" stroke-width="2.5"/>
+<text x="586" y="268" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#f8fafc">JSR · TOK</text>
+<text x="586" y="287.25" text-anchor="middle" dominant-baseline="central" font-size="12.24" fill="#a8b3c7">photoresist</text>
+<text x="657" y="250" text-anchor="end" font-size="18.700000000000003" fill="#fb7185">★</text>
+<rect x="674" y="244" width="150" height="62" rx="10" fill="#342f10" stroke="#eab308" stroke-width="2.5"/>
+<text x="749" y="268" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#f8fafc">Hoya</text>
+<text x="749" y="287.25" text-anchor="middle" dominant-baseline="central" font-size="12.24" fill="#a8b3c7">mask blanks</text>
+<text x="820" y="250" text-anchor="end" font-size="18.700000000000003" fill="#fb7185">★</text>
+<rect x="837" y="244" width="150" height="62" rx="10" fill="#342f10" stroke="#eab308" stroke-width="2.5"/>
+<text x="912" y="268" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#f8fafc">Carl Zeiss SMT</text>
+<text x="912" y="287.25" text-anchor="middle" dominant-baseline="central" font-size="12.24" fill="#a8b3c7">EUV optics</text>
+<text x="983" y="250" text-anchor="end" font-size="18.700000000000003" fill="#fb7185">★</text>
+<rect x="1000" y="244" width="150" height="62" rx="10" fill="#342f10" stroke="#eab308" stroke-width="2.5"/>
+<text x="1075" y="268" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#f8fafc">gases · slurries</text>
+<text x="1075" y="287.25" text-anchor="middle" dominant-baseline="central" font-size="12.24" fill="#a8b3c7">Linde · Entegris</text>
 
-<rect x="1163" y="244" width="150" height="62" rx="10" fill="#fef9c3" stroke="#ca8a04" stroke-width="2.5"/>
-<text x="1238" y="268" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#1e293b">Ajinomoto</text>
-<text x="1238" y="287.25" text-anchor="middle" dominant-baseline="central" font-size="12.24" fill="#475569">ABF substrate</text>
+<rect x="1163" y="244" width="150" height="62" rx="10" fill="#342f10" stroke="#eab308" stroke-width="2.5"/>
+<text x="1238" y="268" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#f8fafc">Ajinomoto</text>
+<text x="1238" y="287.25" text-anchor="middle" dominant-baseline="central" font-size="12.24" fill="#a8b3c7">ABF substrate</text>
 
-<line x1="837" y1="244" x2="470" y2="156" stroke="#ca8a04" stroke-width="3.5" stroke-dasharray="5 5"/>
-<polygon points="470,156 482.77898083952243,153.61302519847433 480.30693902601945,163.9225632161515" fill="#ca8a04"/></g>
-<g opacity="0.13"><line x1="650" y1="330" x2="650" y2="392" stroke="#f59e0b" stroke-width="3.5" />
-<polygon points="650,392 644.6991141102255,380.12984377594 655.3008858897745,380.12984377594" fill="#f59e0b"/>
-<line x1="1000" y1="330" x2="1000" y2="392" stroke="#f59e0b" stroke-width="3.5" />
-<polygon points="1000,392 994.6991141102255,380.12984377594 1005.3008858897745,380.12984377594" fill="#f59e0b"/>
-<line x1="835" y1="182" x2="835" y2="218" stroke="#f59e0b" stroke-width="2" />
-<polygon points="835,218 829.6991141102255,206.12984377594 840.3008858897745,206.12984377594" fill="#f59e0b"/></g>
-<g opacity="0.55"><rect x="36" y="420" width="268" height="610" rx="14" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="7 5" opacity="0.65"/>
-<text x="50" y="408" font-size="24" font-weight="800" letter-spacing="2" fill="#3b82f6">DESIGN</text>
-<text x="58" y="448" font-size="17" font-weight="700" letter-spacing="1.5" fill="#475569">EDA</text>
-<rect x="54" y="458" width="232" height="40" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2.5"/>
-<text x="170" y="478" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#1e293b">Synopsys</text>
-<text x="282" y="464" text-anchor="end" font-size="19.8" fill="#dc2626">★</text>
-<rect x="54" y="504" width="232" height="40" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2.5"/>
-<text x="170" y="524" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#1e293b">Cadence</text>
-<text x="282" y="510" text-anchor="end" font-size="19.8" fill="#dc2626">★</text>
-<rect x="54" y="550" width="232" height="40" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2.5"/>
-<text x="170" y="570" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">Siemens EDA</text>
+<line x1="837" y1="244" x2="470" y2="156" stroke="#eab308" stroke-width="3.5" stroke-dasharray="5 5"/>
+<polygon points="470,156 482.77898083952243,153.61302519847433 480.30693902601945,163.9225632161515" fill="#eab308"/></g>
+<g opacity="0.13"><line x1="650" y1="330" x2="650" y2="392" stroke="#fbbf24" stroke-width="3.5" />
+<polygon points="650,392 644.6991141102255,380.12984377594 655.3008858897745,380.12984377594" fill="#fbbf24"/>
+<line x1="1000" y1="330" x2="1000" y2="392" stroke="#fbbf24" stroke-width="3.5" />
+<polygon points="1000,392 994.6991141102255,380.12984377594 1005.3008858897745,380.12984377594" fill="#fbbf24"/>
+<line x1="835" y1="182" x2="835" y2="218" stroke="#fbbf24" stroke-width="2" />
+<polygon points="835,218 829.6991141102255,206.12984377594 840.3008858897745,206.12984377594" fill="#fbbf24"/></g>
+<g opacity="0.55"><rect x="36" y="420" width="268" height="610" rx="14" fill="none" stroke="#60a5fa" stroke-width="2" stroke-dasharray="7 5" opacity="0.65"/>
+<text x="50" y="408" font-size="24" font-weight="800" letter-spacing="2" fill="#60a5fa">DESIGN</text>
+<text x="58" y="448" font-size="17" font-weight="700" letter-spacing="1.5" fill="#a8b3c7">EDA</text>
+<rect x="54" y="458" width="232" height="40" rx="10" fill="#102a4f" stroke="#60a5fa" stroke-width="2.5"/>
+<text x="170" y="478" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#f8fafc">Synopsys</text>
+<text x="282" y="464" text-anchor="end" font-size="19.8" fill="#fb7185">★</text>
+<rect x="54" y="504" width="232" height="40" rx="10" fill="#102a4f" stroke="#60a5fa" stroke-width="2.5"/>
+<text x="170" y="524" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#f8fafc">Cadence</text>
+<text x="282" y="510" text-anchor="end" font-size="19.8" fill="#fb7185">★</text>
+<rect x="54" y="550" width="232" height="40" rx="10" fill="#102a4f" stroke="#60a5fa" stroke-width="2.5"/>
+<text x="170" y="570" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">Siemens EDA</text>
 
-<text x="58" y="616" font-size="17" font-weight="700" letter-spacing="1.5" fill="#475569">IP</text>
-<rect x="54" y="626" width="232" height="40" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2.5"/>
-<text x="170" y="646" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">Arm</text>
+<text x="58" y="616" font-size="17" font-weight="700" letter-spacing="1.5" fill="#a8b3c7">IP</text>
+<rect x="54" y="626" width="232" height="40" rx="10" fill="#102a4f" stroke="#60a5fa" stroke-width="2.5"/>
+<text x="170" y="646" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">Arm</text>
 
-<rect x="54" y="672" width="232" height="40" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2.5"/>
-<text x="170" y="692" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">RISC-V</text>
+<rect x="54" y="672" width="232" height="40" rx="10" fill="#102a4f" stroke="#60a5fa" stroke-width="2.5"/>
+<text x="170" y="692" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">RISC-V</text>
 
-<text x="58" y="738" font-size="17" font-weight="700" letter-spacing="1.5" fill="#475569">FABLESS</text>
-<rect x="54" y="748" width="232" height="40" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2.5"/>
-<text x="170" y="768" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#1e293b">Nvidia</text>
+<text x="58" y="738" font-size="17" font-weight="700" letter-spacing="1.5" fill="#a8b3c7">FABLESS</text>
+<rect x="54" y="748" width="232" height="40" rx="10" fill="#102a4f" stroke="#60a5fa" stroke-width="2.5"/>
+<text x="170" y="768" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#f8fafc">Nvidia</text>
 
-<rect x="54" y="794" width="232" height="40" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2.5"/>
-<text x="170" y="814" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">AMD</text>
+<rect x="54" y="794" width="232" height="40" rx="10" fill="#102a4f" stroke="#60a5fa" stroke-width="2.5"/>
+<text x="170" y="814" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">AMD</text>
 
-<rect x="54" y="840" width="232" height="40" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2.5"/>
-<text x="170" y="860" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">Apple</text>
+<rect x="54" y="840" width="232" height="40" rx="10" fill="#102a4f" stroke="#60a5fa" stroke-width="2.5"/>
+<text x="170" y="860" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">Apple</text>
 
-<rect x="54" y="886" width="232" height="40" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2.5"/>
-<text x="170" y="906" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">Qualcomm</text>
+<rect x="54" y="886" width="232" height="40" rx="10" fill="#102a4f" stroke="#60a5fa" stroke-width="2.5"/>
+<text x="170" y="906" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">Qualcomm</text>
 
-<rect x="54" y="932" width="232" height="40" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2.5"/>
-<text x="170" y="952" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">Broadcom · Marvell</text>
+<rect x="54" y="932" width="232" height="40" rx="10" fill="#102a4f" stroke="#60a5fa" stroke-width="2.5"/>
+<text x="170" y="952" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">Broadcom · Marvell</text>
 
-<rect x="54" y="978" width="232" height="40" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2.5"/>
-<text x="170" y="998" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">MediaTek</text>
+<rect x="54" y="978" width="232" height="40" rx="10" fill="#102a4f" stroke="#60a5fa" stroke-width="2.5"/>
+<text x="170" y="998" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">MediaTek</text>
 
-<line x1="304" y1="700" x2="372" y2="700" stroke="#3b82f6" stroke-width="3.5" />
-<polygon points="372,700 360.12984377594,705.3008858897745 360.12984377594,694.6991141102255" fill="#3b82f6"/></g>
-<g opacity="1"><rect x="376" y="420" width="560" height="610" rx="14" fill="none" stroke="#22c55e" stroke-width="2" stroke-dasharray="7 5" opacity="0.65"/>
-<text x="390" y="408" font-size="24" font-weight="800" letter-spacing="2" fill="#22c55e">MANUFACTURE</text>
-<text x="398" y="466" font-size="17" font-weight="700" letter-spacing="1.5" fill="#475569">FOUNDRIES</text>
-<rect x="394" y="480" width="250" height="46" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2.5"/>
-<text x="519" y="503" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#1e293b">TSMC</text>
-<text x="640" y="486" text-anchor="end" font-size="19.8" fill="#dc2626">★★</text>
-<rect x="394" y="536" width="250" height="46" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2.5"/>
-<text x="519" y="559" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">Samsung Foundry</text>
+<line x1="304" y1="700" x2="372" y2="700" stroke="#60a5fa" stroke-width="3.5" />
+<polygon points="372,700 360.12984377594,705.3008858897745 360.12984377594,694.6991141102255" fill="#60a5fa"/></g>
+<g opacity="1"><rect x="376" y="420" width="560" height="610" rx="14" fill="none" stroke="#34d399" stroke-width="2" stroke-dasharray="7 5" opacity="0.65"/>
+<text x="390" y="408" font-size="24" font-weight="800" letter-spacing="2" fill="#34d399">MANUFACTURE</text>
+<text x="398" y="466" font-size="17" font-weight="700" letter-spacing="1.5" fill="#a8b3c7">FOUNDRIES</text>
+<rect x="394" y="480" width="250" height="46" rx="10" fill="#10382f" stroke="#34d399" stroke-width="2.5"/>
+<text x="519" y="503" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#f8fafc">TSMC</text>
+<text x="640" y="486" text-anchor="end" font-size="19.8" fill="#fb7185">★★</text>
+<rect x="394" y="536" width="250" height="46" rx="10" fill="#10382f" stroke="#34d399" stroke-width="2.5"/>
+<text x="519" y="559" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">Samsung Foundry</text>
 
-<rect x="394" y="592" width="250" height="46" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2.5"/>
-<text x="519" y="615" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">Intel Foundry</text>
+<rect x="394" y="592" width="250" height="46" rx="10" fill="#10382f" stroke="#34d399" stroke-width="2.5"/>
+<text x="519" y="615" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">Intel Foundry</text>
 
-<rect x="394" y="648" width="250" height="46" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2.5"/>
-<text x="519" y="671" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">GlobalFoundries</text>
+<rect x="394" y="648" width="250" height="46" rx="10" fill="#10382f" stroke="#34d399" stroke-width="2.5"/>
+<text x="519" y="671" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">GlobalFoundries</text>
 
-<rect x="394" y="704" width="250" height="46" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2.5"/>
-<text x="519" y="727" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">SMIC</text>
+<rect x="394" y="704" width="250" height="46" rx="10" fill="#10382f" stroke="#34d399" stroke-width="2.5"/>
+<text x="519" y="727" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">SMIC</text>
 
-<rect x="394" y="760" width="250" height="46" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2.5"/>
-<text x="519" y="783" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">UMC · Rapidus</text>
+<rect x="394" y="760" width="250" height="46" rx="10" fill="#10382f" stroke="#34d399" stroke-width="2.5"/>
+<text x="519" y="783" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">UMC · Rapidus</text>
 
-<text x="682" y="466" font-size="17" font-weight="700" letter-spacing="1.5" fill="#475569">IDM / ANALOG</text>
-<rect x="678" y="480" width="234" height="46" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2.5"/>
-<text x="795" y="503" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">Texas Instruments</text>
+<text x="682" y="466" font-size="17" font-weight="700" letter-spacing="1.5" fill="#a8b3c7">IDM / ANALOG</text>
+<rect x="678" y="480" width="234" height="46" rx="10" fill="#10382f" stroke="#34d399" stroke-width="2.5"/>
+<text x="795" y="503" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">Texas Instruments</text>
 
-<rect x="678" y="536" width="234" height="46" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2.5"/>
-<text x="795" y="559" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">Infineon</text>
+<rect x="678" y="536" width="234" height="46" rx="10" fill="#10382f" stroke="#34d399" stroke-width="2.5"/>
+<text x="795" y="559" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">Infineon</text>
 
-<rect x="678" y="592" width="234" height="46" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2.5"/>
-<text x="795" y="615" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">STMicro</text>
+<rect x="678" y="592" width="234" height="46" rx="10" fill="#10382f" stroke="#34d399" stroke-width="2.5"/>
+<text x="795" y="615" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">STMicro</text>
 
-<rect x="678" y="648" width="234" height="46" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2.5"/>
-<text x="795" y="671" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">NXP</text>
+<rect x="678" y="648" width="234" height="46" rx="10" fill="#10382f" stroke="#34d399" stroke-width="2.5"/>
+<text x="795" y="671" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">NXP</text>
 
-<rect x="678" y="704" width="234" height="46" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2.5"/>
-<text x="795" y="727" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">Analog Devices</text>
+<rect x="678" y="704" width="234" height="46" rx="10" fill="#10382f" stroke="#34d399" stroke-width="2.5"/>
+<text x="795" y="727" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">Analog Devices</text>
 
-<rect x="678" y="760" width="234" height="46" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2.5"/>
-<text x="795" y="783" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">Renesas</text>
+<rect x="678" y="760" width="234" height="46" rx="10" fill="#10382f" stroke="#34d399" stroke-width="2.5"/>
+<text x="795" y="783" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">Renesas</text>
 
-<line x1="936" y1="700" x2="1004" y2="700" stroke="#22c55e" stroke-width="3.5" />
-<polygon points="1004,700 992.12984377594,705.3008858897745 992.12984377594,694.6991141102255" fill="#22c55e"/></g>
-<g opacity="0.13"><rect x="1008" y="800" width="330" height="230" rx="14" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="7 5" opacity="0.65"/>
-<text x="1022" y="788" font-size="24" font-weight="800" letter-spacing="2" fill="#8b5cf6">MEMORY</text>
-<rect x="1026" y="824" width="142" height="52" rx="10" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2.5"/>
-<text x="1097" y="850" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#1e293b">Samsung</text>
+<line x1="936" y1="700" x2="1004" y2="700" stroke="#34d399" stroke-width="3.5" />
+<polygon points="1004,700 992.12984377594,705.3008858897745 992.12984377594,694.6991141102255" fill="#34d399"/></g>
+<g opacity="0.13"><rect x="1008" y="800" width="330" height="230" rx="14" fill="none" stroke="#a78bfa" stroke-width="2" stroke-dasharray="7 5" opacity="0.65"/>
+<text x="1022" y="788" font-size="24" font-weight="800" letter-spacing="2" fill="#a78bfa">MEMORY</text>
+<rect x="1026" y="824" width="142" height="52" rx="10" fill="#2d2050" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="1097" y="850" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#f8fafc">Samsung</text>
 
-<rect x="1182" y="824" width="142" height="52" rx="10" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2.5"/>
-<text x="1253" y="850" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="700" fill="#1e293b">SK Hynix</text>
-<text x="1320" y="830" text-anchor="end" font-size="18.700000000000003" fill="#dc2626">★</text>
-<rect x="1026" y="890" width="142" height="52" rx="10" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2.5"/>
-<text x="1097" y="916" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#1e293b">Micron</text>
+<rect x="1182" y="824" width="142" height="52" rx="10" fill="#2d2050" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="1253" y="850" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="700" fill="#f8fafc">SK Hynix</text>
+<text x="1320" y="830" text-anchor="end" font-size="18.700000000000003" fill="#fb7185">★</text>
+<rect x="1026" y="890" width="142" height="52" rx="10" fill="#2d2050" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="1097" y="916" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#f8fafc">Micron</text>
 
-<rect x="1182" y="890" width="142" height="52" rx="10" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2.5"/>
-<text x="1253" y="909" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="700" fill="#1e293b">HBM</text>
-<text x="1253" y="928.25" text-anchor="middle" dominant-baseline="central" font-size="12.24" fill="#475569">the AI bottleneck</text>
+<rect x="1182" y="890" width="142" height="52" rx="10" fill="#2d2050" stroke="#a78bfa" stroke-width="2.5"/>
+<text x="1253" y="909" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="700" fill="#f8fafc">HBM</text>
+<text x="1253" y="928.25" text-anchor="middle" dominant-baseline="central" font-size="12.24" fill="#a8b3c7">the AI bottleneck</text>
 
-<line x1="1173" y1="800" x2="1173" y2="756" stroke="#8b5cf6" stroke-width="3.5" />
-<polygon points="1173,756 1178.3008858897745,767.87015622406 1167.6991141102255,767.87015622406" fill="#8b5cf6"/></g>
-<g opacity="0.13"><rect x="1008" y="420" width="330" height="330" rx="14" fill="none" stroke="#f43f5e" stroke-width="2" stroke-dasharray="7 5" opacity="0.65"/>
-<text x="1022" y="408" font-size="24" font-weight="800" letter-spacing="2" fill="#f43f5e">PACKAGE &amp; TEST</text>
-<rect x="1026" y="448" width="294" height="64" rx="10" fill="#ffe4e6" stroke="#f43f5e" stroke-width="2.5"/>
-<text x="1173" y="473" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#1e293b">TSMC CoWoS</text>
-<text x="1173" y="493.5" text-anchor="middle" dominant-baseline="central" font-size="12.959999999999999" fill="#475569">advanced packaging</text>
-<text x="1316" y="454" text-anchor="end" font-size="19.8" fill="#dc2626">★</text>
-<rect x="1026" y="526" width="294" height="64" rx="10" fill="#ffe4e6" stroke="#f43f5e" stroke-width="2.5"/>
-<text x="1173" y="551" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">ASE · Amkor · JCET</text>
-<text x="1173" y="571.5" text-anchor="middle" dominant-baseline="central" font-size="12.959999999999999" fill="#475569">OSAT assembly</text>
+<line x1="1173" y1="800" x2="1173" y2="756" stroke="#a78bfa" stroke-width="3.5" />
+<polygon points="1173,756 1178.3008858897745,767.87015622406 1167.6991141102255,767.87015622406" fill="#a78bfa"/></g>
+<g opacity="0.13"><rect x="1008" y="420" width="330" height="330" rx="14" fill="none" stroke="#fb7185" stroke-width="2" stroke-dasharray="7 5" opacity="0.65"/>
+<text x="1022" y="408" font-size="24" font-weight="800" letter-spacing="2" fill="#fb7185">PACKAGE &amp; TEST</text>
+<rect x="1026" y="448" width="294" height="64" rx="10" fill="#441b2a" stroke="#fb7185" stroke-width="2.5"/>
+<text x="1173" y="473" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="700" fill="#f8fafc">TSMC CoWoS</text>
+<text x="1173" y="493.5" text-anchor="middle" dominant-baseline="central" font-size="12.959999999999999" fill="#a8b3c7">advanced packaging</text>
+<text x="1316" y="454" text-anchor="end" font-size="19.8" fill="#fb7185">★</text>
+<rect x="1026" y="526" width="294" height="64" rx="10" fill="#441b2a" stroke="#fb7185" stroke-width="2.5"/>
+<text x="1173" y="551" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">ASE · Amkor · JCET</text>
+<text x="1173" y="571.5" text-anchor="middle" dominant-baseline="central" font-size="12.959999999999999" fill="#a8b3c7">OSAT assembly</text>
 
-<rect x="1026" y="604" width="294" height="64" rx="10" fill="#ffe4e6" stroke="#f43f5e" stroke-width="2.5"/>
-<text x="1173" y="629" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#1e293b">Advantest · Teradyne</text>
-<text x="1173" y="649.5" text-anchor="middle" dominant-baseline="central" font-size="12.959999999999999" fill="#475569">test</text>
+<rect x="1026" y="604" width="294" height="64" rx="10" fill="#441b2a" stroke="#fb7185" stroke-width="2.5"/>
+<text x="1173" y="629" text-anchor="middle" dominant-baseline="central" font-size="18" font-weight="500" fill="#f8fafc">Advantest · Teradyne</text>
+<text x="1173" y="649.5" text-anchor="middle" dominant-baseline="central" font-size="12.959999999999999" fill="#a8b3c7">test</text>
 
-<line x1="1338" y1="585" x2="1420" y2="585" stroke="#f43f5e" stroke-width="3.5" />
-<polygon points="1420,585 1408.12984377594,590.3008858897745 1408.12984377594,579.6991141102255" fill="#f43f5e"/></g>
-<g opacity="0.13"><rect x="1424" y="500" width="460" height="170" rx="10" fill="#f1f5f9" stroke="#0f172a" stroke-width="2.5"/>
-<text x="1654" y="578" text-anchor="middle" dominant-baseline="central" font-size="30" font-weight="700" fill="#1e293b">AI DATA CENTERS</text>
-<text x="1654" y="613.5" text-anchor="middle" dominant-baseline="central" font-size="21.599999999999998" fill="#475569">the $600B/yr buildout</text>
+<line x1="1338" y1="585" x2="1420" y2="585" stroke="#fb7185" stroke-width="3.5" />
+<polygon points="1420,585 1408.12984377594,590.3008858897745 1408.12984377594,579.6991141102255" fill="#fb7185"/></g>
+<g opacity="0.13"><rect x="1424" y="500" width="460" height="170" rx="10" fill="#172033" stroke="#94a3b8" stroke-width="2.5"/>
+<text x="1654" y="578" text-anchor="middle" dominant-baseline="central" font-size="30" font-weight="700" fill="#f8fafc">AI DATA CENTERS</text>
+<text x="1654" y="613.5" text-anchor="middle" dominant-baseline="central" font-size="21.599999999999998" fill="#a8b3c7">the $600B/yr buildout</text>
 
-<text x="1654" y="710" text-anchor="middle" font-size="18" fill="#475569">…and every phone, car, and grid</text></g>
+<text x="1654" y="710" text-anchor="middle" font-size="18" fill="#a8b3c7">…and every phone, car, and grid</text></g>
 <g opacity="0.9">
-<text x="1424" y="86" font-size="20" fill="#dc2626" font-weight="700">★ = chokepoint</text>
-<text x="1424" y="114" font-size="17" fill="#475569">single point of failure for</text>
-<text x="1424" y="136" font-size="17" fill="#475569">the modern world</text>
+<text x="1424" y="86" font-size="20" fill="#fb7185" font-weight="700">★ = chokepoint</text>
+<text x="1424" y="114" font-size="17" fill="#a8b3c7">single point of failure for</text>
+<text x="1424" y="136" font-size="17" fill="#a8b3c7">the modern world</text>
 </g>
 </svg>

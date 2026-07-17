@@ -12,18 +12,20 @@ mkdirSync(OUT, { recursive: true })
 
 // ---------------------------------------------------------------- palette
 const C = {
-  ink: '#1e293b',
-  inkSoft: '#475569',
-  line: '#94a3b8',
-  bg: '#ffffff',
-  design: { fill: '#dbeafe', edge: '#3b82f6' },
-  manufacture: { fill: '#dcfce7', edge: '#22c55e' },
-  equipment: { fill: '#fef3c7', edge: '#f59e0b' },
-  materials: { fill: '#fef9c3', edge: '#ca8a04' },
-  memory: { fill: '#ede9fe', edge: '#8b5cf6' },
-  backend: { fill: '#ffe4e6', edge: '#f43f5e' },
-  datacenter: { fill: '#f1f5f9', edge: '#0f172a' },
-  star: '#dc2626',
+  ink: '#f8fafc',
+  inkSoft: '#a8b3c7',
+  line: '#526078',
+  bg: '#080c14',
+  surface: '#111827',
+  dangerFill: '#3a1720',
+  design: { fill: '#102a4f', edge: '#60a5fa' },
+  manufacture: { fill: '#10382f', edge: '#34d399' },
+  equipment: { fill: '#3b2b10', edge: '#fbbf24' },
+  materials: { fill: '#342f10', edge: '#eab308' },
+  memory: { fill: '#2d2050', edge: '#a78bfa' },
+  backend: { fill: '#441b2a', edge: '#fb7185' },
+  datacenter: { fill: '#172033', edge: '#94a3b8' },
+  star: '#fb7185',
 }
 
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -200,7 +202,7 @@ function journeyBar(active /* 0=none yet, 1..6 = stage index+1 */) {
     const x = x0 + i * (bw + gap)
     const done = active > i + 1
     const cur = active === i + 1
-    const fill = cur ? C.design.fill : done ? C.manufacture.fill : '#f8fafc'
+    const fill = cur ? C.design.fill : done ? C.manufacture.fill : C.surface
     const edge = cur ? C.design.edge : done ? C.manufacture.edge : C.line
     parts.push(`<rect x="${x}" y="40" width="${bw}" height="70" rx="35" fill="${fill}" stroke="${edge}" stroke-width="${cur ? 4 : 2.5}"/>
 <text x="${x + bw / 2}" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="${cur ? 800 : 600}" fill="${done || cur ? C.ink : C.line}">${done ? '✓ ' : ''}${s}</text>`)
@@ -229,7 +231,7 @@ function flowStrip(hot = [] /* array of step indices to highlight */) {
     const x = x0 + i * (bw + gap)
     const isHot = hot.includes(i)
     parts.push(`<g opacity="${hot.length && !isHot ? 0.35 : 1}">`)
-    parts.push(box(x, 70, bw, 92, name, { fill: isHot ? C.equipment.fill : '#f8fafc', edge: isHot ? C.equipment.edge : C.line, fs: 24, bold: isHot, sub }))
+    parts.push(box(x, 70, bw, 92, name, { fill: isHot ? C.equipment.fill : C.surface, edge: isHot ? C.equipment.edge : C.line, fs: 24, bold: isHot, sub }))
     parts.push('</g>')
     if (i < STEPS.length - 1) parts.push(arrow(x + bw + 3, 116, x + bw + gap - 3, 116, { color: C.line }))
   })
@@ -263,10 +265,10 @@ function board(filled /* 0..7 */) {
     const x = x0 + i * (bw + gap)
     const on = i < filled
     if (on) {
-      parts.push(box(x, 90, bw, 150, name, { fill: '#fee2e2', edge: C.star, fs: 22, bold: true, sub }))
+      parts.push(box(x, 90, bw, 150, name, { fill: C.dangerFill, edge: C.star, fs: 22, bold: true, sub }))
       parts.push(`<text x="${x + bw / 2}" y="270" text-anchor="middle" font-size="40" fill="${C.star}">★</text>`)
     } else {
-      parts.push(`<rect x="${x}" y="90" width="${bw}" height="150" rx="10" fill="#f8fafc" stroke="${C.line}" stroke-width="2.5" stroke-dasharray="8 6"/>
+      parts.push(`<rect x="${x}" y="90" width="${bw}" height="150" rx="10" fill="${C.surface}" stroke="${C.line}" stroke-width="2.5" stroke-dasharray="8 6"/>
 <text x="${x + bw / 2}" y="165" text-anchor="middle" dominant-baseline="central" font-size="54" font-weight="300" fill="${C.line}">?</text>`)
     }
   })
@@ -283,7 +285,7 @@ for (let k = 0; k <= 7; k++) writeFileSync(join(OUT, `board-${k}.svg`), board(k)
   const stops = [
     [180, 'Trumpf CO₂ laser', 'fires twice per droplet', C.equipment],
     [560, 'Tin droplets', '~50,000 / second', C.materials],
-    [940, 'Plasma flash', '13.5 nm light', { fill: '#fee2e2', edge: C.star }],
+    [940, 'Plasma flash', '13.5 nm light', { fill: C.dangerFill, edge: C.star }],
     [1320, 'Zeiss mirrors', 'flattest objects on Earth', C.design],
     [1700, 'Wafer', 'pattern printed', C.manufacture],
   ]

@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: nvidia
 act: II — The Blueprint
@@ -12,9 +16,6 @@ diagrams: [map-design, journey-2]
 sources: research/nvidia.md
 -->
 
----
-layout: section
----
 
 # The Designer
 
@@ -199,7 +200,7 @@ LINE THAT LANDS:
 
 ---
 
-# The bomb
+# Nvidia's product starts as a file
 
 <div class="text-center mt-10 text-3xl leading-relaxed">
 Nvidia owns<br>

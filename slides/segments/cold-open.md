@@ -1,3 +1,7 @@
+---
+layout: center
+---
+
 <!-- SEGMENT
 id: cold-open
 act: 0 — The Object
@@ -13,9 +17,6 @@ sources: research/nvidia.md, research/foundations.md
 note: BUILD AND RECORD LAST — this front-loads four promises (map, board, money bar, "seven"). Only lock it once every device has survived the build.
 -->
 
----
-layout: center
----
 
 # One object
 

@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: packaging
 act: V — Memory & The Assembly
@@ -12,11 +16,8 @@ diagrams: [map-backend, journey-5, journey-6, board-7]
 sources: research/packaging.md
 -->
 
----
-layout: section
----
 
-# The Twist
+# The bottleneck moved into the package
 
 <div class="text-xl opacity-70 mt-2">Act V — Memory & The Assembly · the back end</div>
 
@@ -48,7 +49,7 @@ LINE THAT LANDS:
 
 ---
 
-# The confession
+# TSMC ran out of CoWoS capacity
 
 <div class="text-2xl italic leading-relaxed mt-6 text-center">
 "It's not the shortage of AI chips.<br>

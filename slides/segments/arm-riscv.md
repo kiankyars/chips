@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: arm-riscv
 act: II — The Blueprint
@@ -12,9 +16,6 @@ diagrams: [map-design]
 sources: research/arm-riscv.md
 -->
 
----
-layout: section
----
 
 # Empire vs Insurgent
 

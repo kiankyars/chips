@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: life-of-a-wafer
 act: IV — The Fab Tour
@@ -12,9 +16,6 @@ diagrams: [map-equipment, journey-3, flow-strip, flow-coat, board-3, flow-expose
 sources: research/foundations.md, research/materials.md
 -->
 
----
-layout: section
----
 
 # ACT IV — THE FAB TOUR
 

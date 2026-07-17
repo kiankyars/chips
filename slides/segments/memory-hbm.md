@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: memory-hbm
 act: V — Memory & The Assembly
@@ -12,9 +16,6 @@ diagrams: [map-memory, journey-4, board-6]
 sources: research/memory-hbm.md
 -->
 
----
-layout: section
----
 
 # The Memory War
 

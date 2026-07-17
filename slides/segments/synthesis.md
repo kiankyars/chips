@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: synthesis
 act: VI — The Board Is the World
@@ -12,11 +16,8 @@ diagrams: [map-full, journey-6, board-7]
 sources: research/nvidia.md, research/memory-hbm.md, research/packaging.md, research/tsmc.md, research/eda.md, research/asml.md, research/kla.md, research/equipment-dep-etch.md, research/materials.md
 -->
 
----
-layout: section
----
 
-# Where the Value Pools
+# The value pools at the chokepoints
 
 <div class="text-xl opacity-70 mt-2">Act VI — the map, read one last time. As a money map.</div>
 
@@ -270,17 +271,17 @@ LINE THAT LANDS:
 layout: center
 ---
 
-# The whole board, in one sentence
+# Slow replacement creates the largest margins
 
 <div class="text-2xl leading-relaxed mt-8 max-w-4xl">
-The money pooled exactly where <b>replacement is slowest</b> —<br>
+The money pooled where <b>replacement takes the longest</b>:<br>
 in a Dutch optics partnership, an island foundry,<br>
 two design-software companies, and twenty years of CUDA.<br><br>
-<span class="opacity-70 text-xl">Not where the work was hardest. Where the world had no one else to call.</span>
+<span class="opacity-70 text-xl">Customers paid the largest premiums where no substitute existed.</span>
 </div>
 
 <div class="text-lg opacity-60 mt-12">
-And all of it — the whole impossible chain — is one layer of the cake.
+This whole chain is one layer of the cake.
 </div>
 
 <!--

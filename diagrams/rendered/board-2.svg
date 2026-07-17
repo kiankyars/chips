@@ -1,26 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 360" font-family="Inter, -apple-system, sans-serif">
-<rect width="1920" height="360" fill="#ffffff"/>
-<text x="960" y="52" text-anchor="middle" font-size="30" font-weight="800" letter-spacing="3" fill="#1e293b">THE CHOKEPOINT BOARD</text>
-<rect x="25" y="90" width="250" height="150" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
-<text x="150" y="144.25" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="700" fill="#1e293b">Synopsys</text>
-<text x="150" y="171.75" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="700" fill="#1e293b">+ Cadence</text>
-<text x="150" y="197.25" text-anchor="middle" dominant-baseline="central" font-size="15.84" fill="#475569">EDA</text>
+<rect width="1920" height="360" fill="#080c14"/>
+<text x="960" y="52" text-anchor="middle" font-size="30" font-weight="800" letter-spacing="3" fill="#f8fafc">THE CHOKEPOINT BOARD</text>
+<rect x="25" y="90" width="250" height="150" rx="10" fill="#3a1720" stroke="#fb7185" stroke-width="2.5"/>
+<text x="150" y="144.25" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="700" fill="#f8fafc">Synopsys</text>
+<text x="150" y="171.75" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="700" fill="#f8fafc">+ Cadence</text>
+<text x="150" y="197.25" text-anchor="middle" dominant-baseline="central" font-size="15.84" fill="#a8b3c7">EDA</text>
 
-<text x="150" y="270" text-anchor="middle" font-size="40" fill="#dc2626">★</text>
-<rect x="295" y="90" width="250" height="150" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
-<text x="420" y="158" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="700" fill="#1e293b">TSMC</text>
-<text x="420" y="183.5" text-anchor="middle" dominant-baseline="central" font-size="15.84" fill="#475569">leading-edge wafers</text>
+<text x="150" y="270" text-anchor="middle" font-size="40" fill="#fb7185">★</text>
+<rect x="295" y="90" width="250" height="150" rx="10" fill="#3a1720" stroke="#fb7185" stroke-width="2.5"/>
+<text x="420" y="158" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="700" fill="#f8fafc">TSMC</text>
+<text x="420" y="183.5" text-anchor="middle" dominant-baseline="central" font-size="15.84" fill="#a8b3c7">leading-edge wafers</text>
 
-<text x="420" y="270" text-anchor="middle" font-size="40" fill="#dc2626">★</text>
-<rect x="565" y="90" width="250" height="150" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="8 6"/>
-<text x="690" y="165" text-anchor="middle" dominant-baseline="central" font-size="54" font-weight="300" fill="#94a3b8">?</text>
-<rect x="835" y="90" width="250" height="150" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="8 6"/>
-<text x="960" y="165" text-anchor="middle" dominant-baseline="central" font-size="54" font-weight="300" fill="#94a3b8">?</text>
-<rect x="1105" y="90" width="250" height="150" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="8 6"/>
-<text x="1230" y="165" text-anchor="middle" dominant-baseline="central" font-size="54" font-weight="300" fill="#94a3b8">?</text>
-<rect x="1375" y="90" width="250" height="150" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="8 6"/>
-<text x="1500" y="165" text-anchor="middle" dominant-baseline="central" font-size="54" font-weight="300" fill="#94a3b8">?</text>
-<rect x="1645" y="90" width="250" height="150" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="8 6"/>
-<text x="1770" y="165" text-anchor="middle" dominant-baseline="central" font-size="54" font-weight="300" fill="#94a3b8">?</text>
-<text x="960" y="330" text-anchor="middle" font-size="24" fill="#475569">2/7 single points of failure found</text>
+<text x="420" y="270" text-anchor="middle" font-size="40" fill="#fb7185">★</text>
+<rect x="565" y="90" width="250" height="150" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5" stroke-dasharray="8 6"/>
+<text x="690" y="165" text-anchor="middle" dominant-baseline="central" font-size="54" font-weight="300" fill="#526078">?</text>
+<rect x="835" y="90" width="250" height="150" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5" stroke-dasharray="8 6"/>
+<text x="960" y="165" text-anchor="middle" dominant-baseline="central" font-size="54" font-weight="300" fill="#526078">?</text>
+<rect x="1105" y="90" width="250" height="150" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5" stroke-dasharray="8 6"/>
+<text x="1230" y="165" text-anchor="middle" dominant-baseline="central" font-size="54" font-weight="300" fill="#526078">?</text>
+<rect x="1375" y="90" width="250" height="150" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5" stroke-dasharray="8 6"/>
+<text x="1500" y="165" text-anchor="middle" dominant-baseline="central" font-size="54" font-weight="300" fill="#526078">?</text>
+<rect x="1645" y="90" width="250" height="150" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5" stroke-dasharray="8 6"/>
+<text x="1770" y="165" text-anchor="middle" dominant-baseline="central" font-size="54" font-weight="300" fill="#526078">?</text>
+<text x="960" y="330" text-anchor="middle" font-size="24" fill="#a8b3c7">2/7 single points of failure found</text>
 </svg>

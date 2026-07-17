@@ -59,6 +59,8 @@ npm install          # one time
 npm run dev          # live presentation at localhost:3030 (press F for fullscreen)
 npm run dev -- --presenter   # presenter view: slide + your beats side-by-side
 npm run export       # render slides.md -> dist PDF
+npm run diagrams     # regenerate every structural SVG
+npm run check        # regenerate diagrams, validate sources/assets, and build the deck
 ```
 
 ## Status

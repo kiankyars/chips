@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: great-unbundling
 act: I — The Impossible Object
@@ -12,9 +16,6 @@ diagrams: [map-full]      # FIRST full reveal of the master map — archetypes A
 sources: research/foundations.md, research/tsmc.md
 -->
 
----
-layout: section
----
 
 # Why the Industry Shattered
 

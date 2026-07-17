@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: materials
 act: IV — The Fab Tour
@@ -12,9 +16,6 @@ diagrams: [map-equipment, flow-strip]
 sources: research/materials.md
 -->
 
----
-layout: section
----
 
 # The Japanese Basement
 

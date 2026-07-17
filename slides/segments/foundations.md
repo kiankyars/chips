@@ -1,3 +1,7 @@
+---
+layout: section
+---
+
 <!-- SEGMENT
 id: foundations
 act: I — The Impossible Object
@@ -12,9 +16,6 @@ diagrams: [journey-1]                              # structural only; teardown v
 sources: research/foundations.md
 -->
 
----
-layout: section
----
 
 # The Impossible Object
 
