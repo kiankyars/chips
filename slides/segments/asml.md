@@ -1,125 +1,111 @@
 ---
-layout: section
+class: visual-sequence
+transition: fade
 ---
 
 <!-- SEGMENT
 id: asml
 act: IV — The Fab Tour
 tier: P
-angle: "ASML isn't a chip company — it's the single most concentrated chokepoint in the world economy. One company in one Dutch town decides which nations get to make advanced chips at all."   # YOU OWN THIS LINE — rewrite it in your voice
+angle: "ASML is the sole supplier of production EUV scanners and integrates critical modules from ZEISS, TRUMPF, and Cymer."
 runtime: ~8 min
 status: draft
 seeds: [multi-patterning, euv-export-license]
 pays_off: []
 stamps: [asml, zeiss]
-diagrams: [flow-expose, euv-light-path, board-5]
+diagrams: [asml-scanner-scale, asml-reticle-field-wafer, asml-euv-path, asml-supplier-modules, board-5]
 sources: research/asml.md
 -->
 
 
-# EUV lithography
+<div class="visual-sequence__kicker">EUV · physical scale</div>
 
-<div class="text-xl opacity-70 mt-2">Part 4 · Fabrication · lithography</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/asml-scanner-scale.svg" alt="A High-NA EUV scanner drawn beside a person, with its dimensions marked" />
+</div>
 
-![the wafer reaches lithography](/diagrams/rendered/flow-expose.svg)
+<div class="visual-sequence__caption">14 m × 4 m × 4 m · 150 tonnes · High-NA EXE platform</div>
+<div class="visual-sequence__source">ASML · High-NA EUV system specifications</div>
 
 <!--
 BEATS:
-- We're mid-tour, following one wafer. It has been coated in resist. Now it reaches the one step everything else exists to serve: EXPOSE — printing the pattern.
-- The machine that does it comes from one company. Not "mostly." One.
-LINE THAT LANDS:
-- "The wafer has arrived at the most expensive room in the building."
+- This is the current High-NA EXE platform at human scale: 14 metres long, 4 metres wide, 4 metres high and 150 tonnes.
+- It is not a photograph enlarged for effect; the figure and the machine use the dimensions ASML publishes.
+FACT AMMO:
+- ASML, official High-NA specifications: https://www.linkedin.com/posts/asml_time-to-nerd-out-here-are-some-key-specs-activity-7158450887667924992-iSIA
 -->
 
 ---
+class: visual-sequence
+transition: fade
+---
 
-# How an EUV scanner makes 13.5 nm light
+<div class="visual-sequence__kicker">Reticle → field → wafer</div>
 
-<div class="grid grid-cols-2 gap-8 mt-6 items-center">
-<div>
-
-![how EUV light is made](/diagrams/rendered/euv-light-path.svg)
-
-</div>
-<div class="text-lg opacity-80 leading-relaxed">
-
-A laser hits each molten-tin droplet twice. Roughly **50,000 droplets per second** produce **13.5 nm** plasma light, which Zeiss mirrors direct onto the wafer.
-
-<div class="text-sm opacity-60 mt-4">
-ASML is the only company that can supply this system at production scale.
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/asml-reticle-field-wafer.svg" alt="A reticle pattern reduced four times to one exposure field that is stepped across a 300 millimetre wafer" />
 </div>
 
-</div>
-</div>
+<div class="visual-sequence__caption">The reticle image shrinks 4× to one 26 × 33 mm field, repeated across a 300 mm wafer.</div>
+<div class="visual-sequence__source">ASML · TWINSCAN NXE:3400C and NXE:3600D</div>
 
 <!--
 BEATS:
-- Do the light path fast (the diagram carries it): tin droplet → laser → plasma → 13.5nm light → Zeiss mirrors → wafer.
-- Then pivot hard: the machine is a marvel, but everyone's already made that video. The reason ASML matters is economic, not mechanical.
+- The reticle does not contain an entire wafer. Its pattern is reduced four times to one maximum 26 by 33 millimetre field.
+- The scanner moves the wafer and repeats that exposure field across its 300 millimetre surface.
+- The 132 by 104 millimetre reticle-pattern dimensions shown here follow directly from the published 4× reduction and 33 by 26 millimetre wafer field.
 FACT AMMO:
-- ~50,000 tin droplets/sec, 13.5nm light [research/asml.md §the machine]. [VERIFY: droplet rate]
-LINE THAT LANDS:
-- "Everyone shows you the fireworks. Nobody explains why one company owns the match."
+- ASML, TWINSCAN NXE:3400C: https://www.asml.com/en/products/euv-lithography-systems/twinscan-nxe3400c
+- ASML, TWINSCAN NXE:3600D: https://www.asml.com/en/products/euv-lithography-systems/twinscan-nxe-3600d
 -->
 
 ---
+class: visual-sequence
+transition: fade
+---
 
-# ASML is the sole EUV supplier
+<div class="visual-sequence__kicker">One causal light path</div>
 
-<div class="grid grid-cols-2 gap-8 mt-8">
-<div class="text-center">
-<div class="text-8xl font-bold">100%</div>
-<div class="opacity-70 mt-2">of the world's EUV machines</div>
-</div>
-<div class="text-center">
-<div class="text-8xl font-bold">~83%</div>
-<div class="opacity-70 mt-2">of <i>all</i> lithography sales</div>
-</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/asml-euv-path.svg" alt="A laser strikes tin plasma and the resulting EUV light reflects from mirrors through a reticle to a wafer" />
 </div>
 
-<div class="text-sm opacity-60 mt-10 text-center">
-Canon and Nikon sell DUV systems. ASML is the only supplier of EUV lithography tools.
-</div>
+<div class="visual-sequence__caption">Tin plasma emits 13.5 nm light. Mirrors carry the pattern to the wafer.</div>
+<div class="visual-sequence__source">ASML · ZEISS SMT · EUV lithography principles</div>
 
 <!--
 BEATS:
-- EUV is required for every cutting-edge logic chip. ASML is the ONLY maker. This is not "market leader" — it's a literal monopoly on the leading edge.
-- Set the hook for the stamp: this is chokepoint #4.
+- TRUMPF's carbon-dioxide laser first flattens a molten-tin droplet, then vaporizes it. The plasma emits 13.5 nanometre EUV light.
+- Air and glass absorb EUV. The entire optical path therefore stays in vacuum and uses multilayer mirrors instead of lenses.
+- Illumination optics shape the light at the reticle; projection optics reduce the reflected pattern onto photoresist on the wafer.
 FACT AMMO:
-- 100% EUV share; ~83% of all litho incl. DUV [research/asml.md §monopoly].
-LINE THAT LANDS:
-- "There is ASML, or there is no advanced chip. That's the whole sentence."
+- ASML, Light and lasers: https://www.asml.com/en/technology/lithography-principles/light-and-lasers
+- ASML and Cymer, laser-produced plasma path: https://www.asml.com/en/news/press-releases/2009/asml-and-cymer-announce-advancement-in-euv-to-enable-manufacturing-of-integrated-circuits
+- ZEISS SMT, EUV lithography: https://www.zeiss.com/semiconductor-manufacturing-technology/inspiring-technology/euv-lithography.html
 -->
 
 ---
+class: visual-sequence
+transition: fade
+---
 
-# ASML integrates a specialized supplier network
+<div class="visual-sequence__kicker">The machine is an integrated supply chain</div>
 
-<div class="grid grid-cols-2 gap-6 mt-6">
-<div class="flex flex-col justify-center gap-3 text-lg">
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/asml-supplier-modules.svg" alt="Critical EUV modules supplied by TRUMPF, Cymer, ZEISS and ASML inside one integrated system" />
+</div>
 
-- **>100,000 parts**, sourced across **~17 countries**
-- ASML builds about **15%** in-house and integrates the rest
-- **Zeiss** is the sole supplier of EUV optics
-- **Trumpf** laser · **Cymer** (ASML-owned) light source
-
-</div>
-<div class="flex flex-col justify-center">
-<div class="border-l-4 border-amber-500 pl-4 text-lg leading-relaxed">
-A competitor would need to reproduce the supplier network and system-integration knowledge that ASML developed over 30+ years.
-</div>
-</div>
-</div>
+<div class="visual-sequence__caption">ASML integrates TRUMPF's laser, Cymer's source and ZEISS optics into one scanner.</div>
+<div class="visual-sequence__source">ASML · Making EUV: from lab to fab</div>
 
 <!--
 BEATS:
-- The real product isn't the scanner — it's the only supply chain on Earth that can assemble it. 85% is sourced; ASML integrates.
-- Zeiss is the sharpest sub-chokepoint: the mirrors are effectively single-source. If ASML is the world's chokepoint, Zeiss is ASML's.
+- ASML owns the system architecture and integration problem. It acquired Cymer, the San Diego source specialist, in 2013.
+- TRUMPF supplies the high-power carbon-dioxide laser. ZEISS supplies the collector, illumination and projection optics.
+- ASML also integrates reticle and wafer stages, sensors, control software and the calibrated vacuum system into one production tool.
 FACT AMMO:
-- >100,000 parts, ~17 countries, ~15% in-house [research/asml.md §the machine]. [VERIFY: part-count figures vary 5k–100k+ depending on what's counted]
-- Zeiss mirror analogy: scaled to the size of Germany, the largest bump would be under 1mm [research/asml.md §the machine].
-LINE THAT LANDS:
-- "ASML's real product isn't a machine. It's the only supply chain on Earth that can build this machine."
+- ASML, Making EUV: from lab to fab: https://www.asml.com/en/news/stories/2022/making-euv-lab-to-fab
+- ZEISS SMT, EUV lithography: https://www.zeiss.com/semiconductor-manufacturing-technology/inspiring-technology/euv-lithography.html
 -->
 
 ---

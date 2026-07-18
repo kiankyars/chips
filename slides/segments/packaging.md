@@ -12,7 +12,7 @@ status: draft
 seeds: []                                   # no new forward seed; hands the completed Board into geopolitics
 pays_off: [reticle-limit, yield]            # reticle-limit (from nvidia) cashed; yield chain returns as chiplets (foundations→life-of-a-wafer→kla→intel→HERE)
 stamps: [tsmc-cowos]                        # stamp #7 — the Board completes; TSMC's second, different monopoly
-diagrams: [map-backend, journey-5, journey-6, board-7]
+diagrams: [map-backend, journey-5, package-01-substrate, package-02-interposer, package-03-dies-and-hbm, package-04-complete]
 sources: research/packaging.md
 -->
 
@@ -205,164 +205,115 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence
+transition: fade
+---
 
-# Chiplet interconnects and hybrid bonding
+<div class="visual-sequence__kicker">Package assembly · 1 / 4</div>
 
-<div class="grid grid-cols-2 gap-8 mt-6">
-<div>
-<div class="text-sm opacity-60">CoWoS-L → ~6× reticle</div>
-<div class="text-lg mt-1">Blackwell uses CoWoS-L. Nvidia reserved <b>&gt;70%</b> of 2025 CoWoS-L capacity. A packaging issue caused its 2024 delay.</div>
-</div>
-<div>
-<div class="text-sm opacity-60">TSMC SoIC HYBRID BONDING</div>
-<div class="text-lg mt-1">Copper pads bond directly, without solder. Production pitch moved from <b>9µm to 6µm</b>; TSMC targets 4.5µm by ~2029. AMD's MI300 stacks compute on I/O before mounting it on CoWoS.</div>
-</div>
+<div class="visual-sequence__frame">
+
+![Locked top view of an organic accelerator substrate](/diagrams/rendered/package-01-substrate.svg)
+
 </div>
 
-<div class="grid grid-cols-3 gap-4 mt-8 text-center text-sm">
-<div class="border rounded p-3"><b>UCIe, 2022</b><div class="opacity-60 mt-1">Intel, AMD, Arm, TSMC, Samsung, and others standardized die-to-die links</div></div>
-<div class="border rounded p-3"><b>3D V-Cache, 2022</b><div class="opacity-60 mt-1">first mass-market consumer CPU with hybrid bonding</div></div>
-<div class="border rounded p-3"><b>HBM4 base die</b><div class="opacity-60 mt-1">TSMC makes a 12nm logic base die for SK hynix</div></div>
-</div>
+<div class="visual-sequence__caption">The package begins with an organic substrate that carries power and signals.</div>
+<div class="visual-sequence__source">Illustrative locked top view · not to scale</div>
 
 <!--
 BEATS:
-- Chiplets went from AMD's cost hack to the industry's default. In 2022 Intel, AMD, Arm, TSMC, Samsung and the hyperscalers founded UCIe — a die-to-die interconnect standard, the "PCIe of the package," meant to make chiplets mix-and-match. The monolith is officially over.
-- The scaling axis inside packaging is the interposer: CoWoS-S is one big silicon slab (caps ~2.5–3× reticle); CoWoS-L uses small silicon bridges embedded in organic, scaling toward ~6× reticle. Blackwell is CoWoS-L — and here's the twist inside the twist: Blackwell's 2024 delay was a PACKAGING-level respin (interposer/bridge redesign). First time a flagship chip's schedule slipped on the package, not the silicon. Packaging now carries tape-out-level risk.
-- Then the frontier of stacking: hybrid bonding. Instead of solder micro-bumps, you polish copper pads and fuse them copper-to-copper directly — TSMC's SoIC. Pitch has gone 9µm → 6µm in production, heading to 4.5µm. Orders of magnitude more connections, shorter and lower-power. AMD's MI300 does BOTH — stacks compute on I/O via SoIC, then mounts the stack on CoWoS. They call it 3.5D.
-- Two proofs it's real and here: the first hybrid-bonded chip anyone could buy was AMD's 3D V-Cache gaming CPU in 2022. And HBM4's base die is now made by TSMC on a 12nm LOGIC process — the bottom of a memory stack coming from a logic foundry. The memory/foundry boundary is dissolving inside the package.
+- Start at the bottom. The substrate is the circuit board beneath the circuit board: it fans power and signals from the package into the server motherboard.
+- Its insulating layers use Ajinomoto Build-up Film. Substrate manufacturers laminate that film into the package; assembly houses later attach and test the finished device.
+- Keep the camera fixed. Every following layer lands on this same footprint.
 FACT AMMO:
-- UCIe founded March 2022 by Intel, AMD, Arm, TSMC, Samsung, ASE, Google, Meta, Microsoft, Qualcomm; Nvidia/Alibaba joined within months; 100+ members since. [research/packaging §chiplets] [VERIFY: current 2026 member count]
-- CoWoS-S ≈ 2,500mm² interposer (~2.5–3× reticle); CoWoS-L uses embedded silicon bridges (LSI), scaling toward ~6× reticle. [research/packaging §CoWoS]
-- Blackwell = CoWoS-L; Nvidia secured >70% of 2025 CoWoS-L capacity; 2024 delay was a packaging-level (interposer/bridge) respin. [research/packaging §CoWoS]
-- TSMC SoIC hybrid bonding: 9µm (N7 era) → 6µm in HVM today → 4.5µm by ~2029; AMD MI300 = SoIC stack on CoWoS ("3.5D"). [research/packaging §3D stacking & hybrid bonding]
-- AMD 3D V-Cache (Ryzen 7 5800X3D, April 2022): 64MB SRAM die (41mm², N7) hybrid-bonded at 9µm pitch, ~2 TB/s — first hybrid-bonded chip consumers could buy. [research/packaging §3D stacking & hybrid bonding]
-- HBM4 base die made by TSMC on 12nm logic (SK hynix, mass production Feb 2026); Samsung counters on its own 4nm. [research/packaging §3D stacking & hybrid bonding]
-- Handle: chiplets turn chip design from sculpture (one perfect block) into Lego (snap together known-good bricks). [research/packaging §chiplets]
-LINE THAT LANDS:
-- "The chip stopped being carved and started being assembled — and TSMC owns the assembly line too."
+- Ajinomoto Build-up Film is used in more than 95% of advanced package substrates; Ibiden, Shinko, Unimicron, Nan Ya, and AT&S are major substrate makers. [research/packaging §substrates]
+- ASE, Amkor, and JCET lead outsourced assembly and test, while TSMC retains the highest-value CoWoS and SoIC work. [research/packaging §OSATs]
 -->
 
 ---
+class: visual-sequence
+transition: fade
+---
 
-# Packaging, test, and substrates
+<div class="visual-sequence__kicker">Package assembly · 2 / 4</div>
 
-<div class="grid grid-cols-3 gap-5 mt-6">
-<div class="border-2 border-gray-400 rounded-lg p-4">
-<div class="text-sm opacity-60">OUTSOURCED ASSEMBLY AND TEST</div>
-<div class="text-lg font-bold mt-1">ASE · Amkor · JCET</div>
-<div class="text-sm opacity-70 mt-2">ASE and Amkor gross margins: <b>~14–18%</b>, versus TSMC at <b>59.9%</b>.</div>
+<div class="visual-sequence__frame">
+
+![The same package view with a silicon interposer added](/diagrams/rendered/package-02-interposer.svg)
+
 </div>
-<div class="border-2 border-gray-400 rounded-lg p-4">
-<div class="text-sm opacity-60">AUTOMATED TEST EQUIPMENT</div>
-<div class="text-lg font-bold mt-1">Advantest · Teradyne</div>
-<div class="text-sm opacity-70 mt-2"><b>~80%+</b> of the market. A phone chip tests in &lt;1 min; a Blackwell package sits on the tester <b>20+ min</b>.</div>
-</div>
-<div class="border-2 border-gray-400 rounded-lg p-4">
-<div class="text-sm opacity-60">PACKAGE SUBSTRATE</div>
-<div class="text-lg font-bold mt-1">Ajinomoto ABF</div>
-<div class="text-sm opacity-70 mt-2">Ajinomoto's ABF insulates <b>&gt;95%</b> of advanced packages; reported margins exceed <b>50%</b>.</div>
-</div>
-</div>
+
+<div class="visual-sequence__caption">CoWoS adds a silicon wiring layer between the substrate and the dies.</div>
+<div class="visual-sequence__source">CoWoS: Chip on Wafer on Substrate · geometry simplified</div>
 
 <!--
 BEATS:
-- Three cards, quick, to fill in the ecosystem — and to make the value-migration argument stick.
-- OSATs (Outsourced Semiconductor Assembly & Test): the old back-end world. ASE (Taiwan, #1, ~$18.5B), Amkor (US, ~$6.3B), JCET (China, ~$5.0B, growing double-digit with state backing). But look at the margins: ~14% at Amkor, ~18% at ASE — versus TSMC's 59.9%. The high-value packaging (CoWoS, SoIC) stayed at the foundry; OSATs get the overflow and the mid-range. That IS the value-migration story in three numbers.
-- Onshoring note worth landing: Amkor is building a $7B campus in Arizona (production ~2028) — because "onshoring fabs" without onshoring packaging doesn't move Taiwan risk. Until it ramps, wafers fabbed in Arizona still fly to Taiwan to get packaged. The die isn't a product until it's packaged and tested.
-- TEST: you can't sell what you can't prove works. Automated test is an ~80%+ duopoly — Advantest (Japan) + Teradyne (US). Multi-die packaging exploded test demand: a phone SoC clears the tester in under a minute; a Blackwell-class package can sit there 20+ minutes — because one dead chiplet scraps a five-figure assembly, so you test every die before assembly and the whole thing after. Advantest just had a record year on the back of it.
-- SUBSTRATE: the best card in the deck. The package substrate — the "motherboard inside the package" — is built from ABF: Ajinomoto Build-up Film. Made by Ajinomoto, the Japanese company founded to sell MSG seasoning; the film grew out of its amino-acid chemistry. >95% market share, >50% margins. The seasoning company is a chip chokepoint.
+- The silicon interposer is the dense wiring plane. It can route the thousands of short connections that an organic circuit board cannot.
+- CoWoS means Chip on Wafer on Substrate: active dies sit on the interposer, and the interposer sits on the organic substrate shown in the first frame.
+- Blackwell uses CoWoS-L, which replaces one very large silicon slab with local silicon bridges embedded in a larger redistribution layer. The drawing keeps a single plane so the routing job remains legible.
 FACT AMMO:
-- OSAT top-10 2024 combined ≈ $41.6B (+3%). #1 ASE (Taiwan) $18.5B; #2 Amkor (US, HQ Tempe AZ) $6.3B; #3 JCET (China) $5.0B (+19.3%). [research/packaging §OSATs]
-- Gross margins 2025: Amkor ~14%, ASE ~17.7%, TSMC 59.9% — and TSMC packaging wafers price near 7nm logic wafers. [research/packaging §OSATs]
-- Amkor Arizona (Peoria): groundbreaking Oct 2025, investment expanded to $7B, ~3,000 jobs, production early 2028; anchors Apple + Nvidia. TSMC–Amkor 10-year US packaging agreement, June 2026. [research/packaging §OSATs]
-- Test = ~80%+ two-company market: Advantest (Japan) + Teradyne (US). [research/packaging §test]
-- Test time: phone SoC ~30–60s vs Blackwell-class >20 min; global tester market CY2025 ~$9B (+~50%); Advantest FY2025 sales ¥1,128.6B (+44.7%), op income ¥499.1B (+118.8%). [research/packaging §test]
-- ABF = Ajinomoto Build-up Film, launched ~1999, >95% global share, margins >50%; substrate makers who laminate it: Ibiden, Shinko, Unimicron, Nan Ya, AT&S. [research/packaging §substrates]
-- Handle (test tax): every extra minute on the tester at AI volumes = entire fleets of multi-million-dollar machines. [research/packaging §test]
-- Handle (substrate): the company that seasons your soup insulates >95% of the world's advanced chips. [research/packaging §fact-ammo]
-LINE THAT LANDS:
-- "The company that invented MSG is a single point of failure for artificial intelligence. That is not a joke."
+- CoWoS entered volume production with Xilinx FPGAs in 2013; AI accelerators turned it into constrained high-volume capacity. [research/packaging §CoWoS]
+- CoWoS-L uses embedded local silicon interconnects and can scale toward roughly six reticle fields. [research/packaging §CoWoS]
+- TSMC expanded CoWoS capacity roughly tenfold from the end of 2023 to its end-2026 target. [research/packaging §CoWoS]
+SIMPLIFICATION HEDGE:
+- This top view represents CoWoS-L as one continuous wiring plane. Production packages use redistribution layers and embedded local silicon bridges rather than one full silicon interposer.
 -->
 
 ---
+class: visual-sequence
+transition: fade
+---
 
-# Chokepoint #7: TSMC advanced packaging
+<div class="visual-sequence__kicker">Package assembly · 3 / 4</div>
 
-<div class="text-center mt-4">
+<div class="visual-sequence__frame">
 
-![chokepoint board — seventh and final stamp](/diagrams/rendered/board-7.svg)
+![Two GPU dies and eight HBM stacks added to the same package view](/diagrams/rendered/package-03-dies-and-hbm.svg)
 
 </div>
 
-<div class="text-center mt-6">
-<div class="text-3xl font-bold">TSMC leads both leading-edge foundry and CoWoS packaging.</div>
-<div class="text-lg opacity-70 mt-3">The company fabricates the logic dies and assembles the package.</div>
-</div>
+<div class="visual-sequence__caption">Two GPU dies and eight HBM stacks share the same high-density wiring plane.</div>
+<div class="visual-sequence__source">GB300-class component count · arrangement simplified</div>
 
 <!--
 BEATS:
-- Run the chokepoint criterion one last time, out loud: a single company or single-country cluster whose removal halts leading-edge AI-chip production within months, with no substitute inside five years. CoWoS/SoIC capacity is overwhelmingly TSMC, overwhelmingly in Taiwan, sold out for years, with OSATs only able to take the overflow. It qualifies. Stamp #7 — the Board is complete.
-- Land the line the whole course was built toward: TSMC appears on this board TWICE. Chokepoint #3 was TSMC the wafer foundry (~90% of leading-edge logic). Chokepoint #7 is TSMC the packager — a completely separate, second monopoly, in the same buildings. Onshoring one doesn't touch the other.
-- Note the honesty flag we owe the viewer: the Board is a judgment call. Alternates — Ajinomoto ABF, Advantest test, Shin-Etsu wafers — are real candidates and show up as honorable mentions later. The count of seven was locked before recording; that's the discipline, not a coincidence.
-- China plant for geopolitics: advanced packaging is far LESS export-controlled than EUV. Chinese OSATs (JCET, Tongfu) can climb this ladder even while locked out of leading-edge litho — chiplets partially substitute for nodes they can't build. Hold that.
+- Now place the active silicon. Blackwell crosses the reticle limit with two compute dies linked inside one package; eight HBM stacks sit millimeters away.
+- Each HBM stack needs a very wide interface. The interposer makes those thousands of connections short enough and dense enough to feed the GPU.
+- This is why the package is no longer a protective shell. It is part of the computer architecture.
 FACT AMMO:
-- Chokepoint criterion: single company/cluster whose removal halts leading-edge AI-chip production within months, no substitute in five years. [curriculum §The Seven Chokepoints]
-- #7 = TSMC (CoWoS packaging) — the same company as #3 (TSMC wafers), a second, different monopoly. [curriculum §The Seven Chokepoints]
-- CoWoS/SoIC capacity overwhelmingly in Taiwan; US back-end (Amkor Peoria) doesn't produce until ~2028. [research/packaging §risks]
-- Honorable-mention alternates (surface in synthesis): Ajinomoto ABF, Shin-Etsu wafers, Advantest test. [curriculum §The Seven Chokepoints]
-- China end-run: packaging far less export-controlled than EUV; JCET/Tongfu can climb the packaging ladder while locked out of litho. [research/packaging §risks]
-LINE THAT LANDS:
-- "Seven single points of failure. We promised you the number in minute one. Here it is complete — and one company got named twice."
+- Blackwell uses two reticle-limited compute dies with a 10 TB/s die-to-die link and 208 billion transistors in total. [research/packaging §why packaging became the frontier (a)]
+- A B200-class package carries eight HBM stacks; an HBM3-generation stack uses a 1,024-bit interface and roughly 1,700 signal lines. [research/packaging §why packaging became the frontier (c)]
+- Smaller known-good dies can improve yield and cost relative to one monolithic die. [research/packaging §why packaging became the frontier (b)]
+SIMPLIFICATION HEDGE:
+- Component positions and relative sizes are illustrative; the count and layer relationships are the teaching point.
 -->
 
 ---
+class: visual-sequence
+transition: fade
+---
 
-# A finished accelerator package
+<div class="visual-sequence__kicker">Package assembly · 4 / 4</div>
 
-<div class="grid grid-cols-2 gap-8 mt-4 items-center">
-<div>
+<div class="visual-sequence__frame">
 
-![journey bar — package complete, chip finished](/diagrams/rendered/journey-6.svg)
-
-<div class="text-lg mt-4 opacity-80">
-The package combines two GPU dies, eight HBM stacks, a silicon interposer, and an organic substrate.
-</div>
+![The completed accelerator package with its thermal lid](/diagrams/rendered/package-04-complete.svg)
 
 </div>
-<div>
 
-<div class="text-sm opacity-60 mb-2">ESTIMATED VALUE ALLOCATION · one GB300-class GPU</div>
-<div class="flex flex-col gap-1 text-xs font-bold text-center">
-  <div class="flex w-full h-10 rounded overflow-hidden">
-    <div class="bg-green-600 flex items-center justify-center" style="width:75%">Nvidia ~75%</div>
-    <div class="bg-gray-500 flex items-center justify-center" style="width:25%">estimated build cost ~25%</div>
-  </div>
-  <div class="flex w-full h-8 rounded overflow-hidden mt-1 opacity-90">
-    <div class="bg-blue-700 flex items-center justify-center" style="width:26%">TSMC dies</div>
-    <div class="bg-purple-700 flex items-center justify-center" style="width:30%">HBM memory</div>
-    <div class="bg-amber-600 flex items-center justify-center" style="width:22%">CoWoS + SoIC</div>
-    <div class="bg-rose-700 flex items-center justify-center" style="width:12%">substrate</div>
-    <div class="bg-teal-700 flex items-center justify-center" style="width:10%">OSAT + test</div>
-  </div>
-</div>
-<div class="text-xs opacity-50 mt-3">Illustrative allocation based on analyst estimates. Nvidia does not publish list prices or a GB300 bill of materials.</div>
-
-</div>
-</div>
+<div class="visual-sequence__caption">The lid closes over one accelerator built from separate logic and memory dies.</div>
+<div class="visual-sequence__source">Illustrative cutaway · TSMC CoWoS</div>
 
 <!--
 BEATS:
-- Fill the journey bar to 6. Every gate is behind us: SAND → DESIGN → FAB → MEMORY → PACKAGE. The chip is a chip. Return to the cold-open shot — the object we held up and called impossible in minute one now physically exists, and the viewer has met every company that touched it.
-- Run the Money Bar as a TEASER, not a verdict (be honest about this): back in the Nvidia segment we could only label one slice — Nvidia keeps ~75 cents of every dollar. Now the other ~25 has names on it: TSMC prints the dies, Korea/US stack the memory (the biggest single supplier line), TSMC packages it via CoWoS + SoIC (twice on the bar, like the board), the substrate makers laminate the Ajinomoto film, the OSATs and testers finish it.
-- CRITICAL honesty flag to voice: these widths are shape, not scale. Nobody publishes a GB300 bill of materials; every figure is a third-party estimate. The exact waterfall — who really keeps what — is the finale's job. This is a teaser of the argument, not the argument.
-- Closer — 20s "what you now know": packaging fell from a shoe factory to a caste system and climbed back to the frontier; four forces (reticle wall, yield, memory, cost) killed the monolith; CoWoS gated the boom and grew 10× and still sold out; the chip is now an assembly, and TSMC owns that too — twice on the board.
-- Cliffhanger into geopolitics: we now have a completed board — seven lights, every one proven. Hand it off as a loaded gun. Every light is a pressure point, and everyone — Washington, Beijing, Taipei, Tokyo, Amsterdam — knows exactly where they are.
+- The thermal lid completes the cutaway. The object now leaves advanced packaging as one accelerator even though it contains many separately fabricated pieces of silicon.
+- Known-good dies are tested before assembly, and the complete package is tested again. A Blackwell-class package can remain on automated test equipment for more than 20 minutes.
+- TSMC appears on the chokepoint board twice: it fabricates the leading-edge logic dies and separately controls the CoWoS capacity that assembles them with HBM. This package earns chokepoint number seven.
+- The journey is complete: sand became separate logic and memory dies, and packaging made them one usable device.
 FACT AMMO:
-- Journey complete: SAND → DESIGN → FAB → MEMORY → PACKAGE all lit (state 6). [curriculum, BUILDING §journey state]
-- Money Bar teaser: Nvidia keeps ~75% gross margin (labeled in the nvidia segment); the ~25% cost-of-goods is split across TSMC dies, HBM (the biggest single supplier line), CoWoS+SoIC packaging, substrate, OSAT+test. [research/nvidia §financials; research/packaging §OSATs, §substrates]
-- Honesty flag: all price splits are third-party estimates; Nvidia publishes no list price; bar widths are illustrative shape, final totals resolve in synthesis. [research/nvidia §the-one-chip; research/packaging §what packaging was vs what it is]
-LINE THAT LANDS:
-- "Every light on this board is a pressure point — and everyone knows exactly where they are."
-- "The impossible object from minute one is finished. Now watch what the world does when it realizes only one island can build it."
+- Advantest and Teradyne together supply more than 80% of automated test equipment; a Blackwell-class package can require more than 20 minutes of test time. [research/packaging §test]
+- Chokepoint #7 is TSMC advanced packaging, distinct from TSMC leading-edge wafer fabrication. [curriculum §The Seven Chokepoints]
+- CoWoS and SoIC capacity remains concentrated in Taiwan; major new US back-end capacity is not expected before Amkor's Arizona campus begins production around 2028. [research/packaging §risks]
+SIMPLIFICATION HEDGE:
+- The lid is rendered as a cutaway frame so the active components remain visible; a finished product would obscure most of the assembly.
 -->

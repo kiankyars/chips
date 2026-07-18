@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">Transistor gate geometry</title>
+<desc id="desc">A fixed cross-section shows how the gate controls a planar channel, a vertical fin, or stacked nanosheets.</desc>
+<defs>
+  <radialGradient id="spot" cx="50%" cy="48%" r="56%">
+    <stop offset="0%" stop-color="#17284a" stop-opacity="0.72"/>
+    <stop offset="70%" stop-color="#0b1220" stop-opacity="0.22"/>
+    <stop offset="100%" stop-color="#080c14" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="substrate" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#334155"/>
+    <stop offset="100%" stop-color="#253044"/>
+  </linearGradient>
+  <linearGradient id="gate" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#24528c"/>
+    <stop offset="100%" stop-color="#102a4f"/>
+  </linearGradient>
+  <filter id="controlGlow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="10" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#94a3b8" stroke-width="1" opacity="0.055"/>
+  </pattern>
+</defs>
+<rect width="1920" height="1080" fill="#080c14"/>
+<rect width="1920" height="1080" fill="url(#spot)"/>
+<rect width="1920" height="1080" fill="url(#grid)"/>
+<text x="960" y="104" text-anchor="middle" fill="#a8b3c7" font-size="25" font-weight="650" letter-spacing="5">CROSS-SECTION BENEATH THE GATE</text>
+<path d="M 380 906 H 1540" stroke="#526078" stroke-width="2" opacity="0.6"/>
+<rect x="380" y="650" width="1160" height="256" rx="8" fill="url(#substrate)" stroke="#526078" stroke-width="3"/>
+<path d="M 410 680 H 1510" stroke="#94a3b8" stroke-width="2" opacity="0.17"/>
+<rect x="852" y="318" width="216" height="332" rx="16" fill="#8a5b0b" stroke="#fbbf24" stroke-width="4"/>
+<path d="M 820 644 V 286 H 1100 V 644" fill="none" stroke="#67e8f9" stroke-width="38" stroke-linejoin="round" filter="url(#controlGlow)"/>
+<path d="M 674 650 V 238 Q 674 202 710 202 H 1210 Q 1246 202 1246 238 V 650 H 1100 V 286 H 820 V 650 Z" fill="url(#gate)" stroke="#60a5fa" stroke-width="4"/>
+<path d="M 852 318 H 1068 M 852 318 V 650 M 1068 318 V 650" fill="none" stroke="#fff3c4" stroke-width="4" opacity="0.62"/>
+<path d="M 1558 324 L 1244 350" fill="none" stroke="#60a5fa" stroke-width="2.5" opacity="0.82"/>
+<circle cx="1244" cy="350" r="5" fill="#60a5fa"/>
+<text x="1580" y="332" text-anchor="start" fill="#60a5fa" font-size="24" font-weight="700" letter-spacing="2">GATE</text>
+<path d="M 1558 510 L 1066 470" fill="none" stroke="#fbbf24" stroke-width="2.5" opacity="0.82"/>
+<circle cx="1066" cy="470" r="5" fill="#fbbf24"/>
+<text x="1580" y="518" text-anchor="start" fill="#fbbf24" font-size="24" font-weight="700" letter-spacing="2">CHANNEL</text>
+<path d="M 1558 782 L 1480 790" fill="none" stroke="#a8b3c7" stroke-width="2.5" opacity="0.82"/>
+<circle cx="1480" cy="790" r="5" fill="#a8b3c7"/>
+<text x="1580" y="790" text-anchor="start" fill="#a8b3c7" font-size="24" font-weight="700" letter-spacing="2">SILICON</text>
+</svg>

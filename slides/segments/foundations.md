@@ -200,53 +200,82 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence
+transition: fade
+---
 
-# Smaller transistors require tighter gate control
+<div class="visual-sequence__kicker">TRANSISTOR GEOMETRY · 1 / 3</div>
 
-<div class="grid grid-cols-4 gap-4 mt-10 text-center">
-<div>
-<div class="text-4xl font-bold">1</div>
-<div class="text-sm opacity-70 mt-1">PLANAR</div>
-<div class="text-xs opacity-50 mt-1">gate on top<br>1960s–2011</div>
-</div>
-<div>
-<div class="text-4xl font-bold">3</div>
-<div class="text-sm opacity-70 mt-1">FinFET</div>
-<div class="text-xs opacity-50 mt-1">stand it up<br>Intel 2011 · 22nm</div>
-</div>
-<div>
-<div class="text-4xl font-bold">4</div>
-<div class="text-sm opacity-70 mt-1">GAA / nanosheet</div>
-<div class="text-xs opacity-50 mt-1">wrap all sides<br>2022–2025</div>
-</div>
-<div>
-<div class="text-4xl font-bold opacity-50">n/p</div>
-<div class="text-sm opacity-70 mt-1">CFET</div>
-<div class="text-xs opacity-50 mt-1">n on top of p<br>~2032</div>
-</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/transistor-planar.svg" alt="Cross-section of a planar transistor with its gate above a flat channel" />
 </div>
 
-<div class="text-center text-lg mt-10 opacity-80">device geometry: <b>planar → fin → surrounding gate → stacked n/p transistors</b></div>
-
-<div class="text-sm opacity-60 mt-4 text-center">Each design gives the gate more control over the channel and reduces leakage.</div>
+<div class="visual-sequence__caption"><strong>Planar</strong><span>The gate controls the channel from above.</span></div>
+<div class="visual-sequence__source">Leading-edge transition to FinFETs began · 2011</div>
 
 <!--
 BEATS:
-- FinFET-to-GAA in ninety seconds — this is the fastest tour in the show, so keep the pace up.
-- One thread ties it all together: every generation wraps the gate around MORE of the channel, because leakage. Planar controls the switch from one side; below ~30nm the gate loses grip and current leaks even when it's "off."
-- FinFET (Intel, 2011): stand the channel up as a fin, gate wraps three sides — roughly half the power at the same speed.
-- GAA / nanosheet (2022–25): slice the fin into stacked sheets, gate wraps all four sides. Samsung first, but TSMC's N2 is the one that matters, in volume from Q4 2025. Intel's 18A adds backside power.
-- CFET is the 2030s move: stack the two transistors of a pair on top of each other. Don't dwell — just show the trajectory continues.
+- Keep the camera fixed for all three slides. The amber region is the channel; blue is the gate; cyan marks the gate-to-channel interface.
+- In a planar transistor, the gate controls the channel from the top surface. As the channel gets shorter, the gate has less control and current can leak even when the switch should be off.
+- Advance without changing the viewpoint: the next two structures increase the surface that the gate controls.
 FACT AMMO:
-- Planar 1960s–2011; loses grip below ~30nm-class (short-channel leakage) [research/foundations §device ladder].
-- FinFET: Intel, announced May 2011 at 22nm, shipped Ivy Bridge 2012; ~half the power vs 32nm planar [research/foundations §device ladder].
-- GAA first to production: Samsung 3nm "MBCFET," June 2022 [research/foundations §device ladder].
-- TSMC N2, first TSMC GAA node, volume production Q4 2025 [research/foundations §device ladder].
-- Intel 18A "RibbonFET" + PowerVia backside power, high-volume late 2025 / 2026 [research/foundations §device ladder].
-- CFET: imec roadmap, production candidate ~A7 node, ~2032–2033 [research/foundations §device ladder].
-- Handle: 1 side → 3 → 4 → stacked; it's the same reflex as tightening your grip on something slippery.
-LINE THAT LANDS:
-- "We ran out of ways to make the switch smaller, so we started making it three-dimensional. The transistor stopped being a drawing and became a sculpture."
+- Planar MOSFETs dominated leading-edge logic from the 1960s until FinFET adoption began in the 2011–12 generation; short-channel leakage becomes increasingly difficult below roughly the 30nm class [research/foundations §device ladder].
+SIMPLIFICATION HEDGE:
+- This is a cross-section beneath the gate. Source and drain sit in front of and behind the drawing, along the direction of current flow.
+-->
+
+---
+class: visual-sequence
+transition: fade
+---
+
+<div class="visual-sequence__kicker">TRANSISTOR GEOMETRY · 2 / 3</div>
+
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/transistor-finfet.svg" alt="Cross-section of a FinFET with its gate wrapped around the top and sides of a vertical silicon fin" />
+</div>
+
+<div class="visual-sequence__caption"><strong>FinFET</strong><span>Raise the channel; the gate now controls three sides.</span></div>
+<div class="visual-sequence__source">Intel 22nm announcement · 2011</div>
+
+<!--
+BEATS:
+- The same channel now stands upright as a fin. The gate crosses over it and controls the top and both sidewalls.
+- This geometry restored electrostatic control without requiring the channel to remain a flat shrinking strip.
+- Hold the image for a beat, then advance: the next step separates the fin into sheets.
+FACT AMMO:
+- Intel announced its 22nm FinFET in May 2011 and shipped Ivy Bridge in 2012 [research/foundations §device ladder].
+- Intel described roughly half the power at the same performance versus its 32nm planar process [research/foundations §device ladder].
+SIMPLIFICATION HEDGE:
+- The drawing isolates gate geometry; a production FinFET includes multiple fins, contacts, spacers, and additional material layers.
+-->
+
+---
+class: visual-sequence
+transition: fade
+---
+
+<div class="visual-sequence__kicker">TRANSISTOR GEOMETRY · 3 / 3</div>
+
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/transistor-gaa.svg" alt="Cross-section of a gate-all-around transistor with a gate surrounding three stacked silicon nanosheets" />
+</div>
+
+<div class="visual-sequence__caption"><strong>Gate-all-around</strong><span>Split the fin into sheets; the gate surrounds every channel.</span></div>
+<div class="visual-sequence__source">Samsung 3nm production · 2022</div>
+
+<!--
+BEATS:
+- The fin is divided into stacked nanosheets. Gate material reaches the top, bottom, and both sides of every sheet.
+- Samsung put a gate-all-around device into 3nm production in 2022. TSMC uses nanosheets for N2; Intel calls its version RibbonFET.
+- The sequence is the point: top surface, three sides, then all around. Each change gives the gate more control over a smaller channel.
+- CFET is the proposed next density move: stack n- and p-type transistors vertically. It is not shown because it changes circuit stacking, not the gate-control sequence on this screen.
+FACT AMMO:
+- Samsung began production of its 3nm MBCFET process in June 2022 [research/foundations §device ladder].
+- TSMC N2 is the company's first GAA node; Intel 18A combines RibbonFET with PowerVia backside power [research/foundations §device ladder].
+- Imec roadmaps place CFET as a candidate for roughly the 2032–2033 period [research/foundations §device ladder].
+SIMPLIFICATION HEDGE:
+- The gate is drawn as a cutaway so the nanosheets remain visible; in the device, gate material surrounds each sheet along the gated region.
 -->
 
 ---

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">High-NA EUV scanner at human scale</title>
+<desc id="desc">A 14 metre long, 4 metre high High-NA EUV scanner is shown beside a 1.75 metre person.</desc>
+<defs>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="9" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <marker id="arrow-cyan" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#67e8f9"/></marker>
+  <marker id="arrow-amber" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#fbbf24"/></marker>
+
+</defs>
+<rect width="1920" height="1080" fill="#05080e"/>
+<path d="M110 885H1780" stroke="#435168" stroke-width="3"/>
+<g><path d="M110 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M205 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M300 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M395 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M490 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M585 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M680 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M775 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M870 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M965 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M1060 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M1155 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M1250 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M1345 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M1440 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M1535 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M1630 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M1725 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/></g>
+<g>
+  <rect x="350" y="540" width="1120" height="320" rx="18" fill="#101827" stroke="#435168" stroke-width="4"/>
+  <path d="M376 778H1446" stroke="#435168" stroke-width="3"/>
+  <rect x="382" y="576" width="218" height="188" rx="10" fill="#1a2740" stroke="#60a5fa" stroke-width="3"/>
+  <circle cx="492" cy="670" r="52" fill="none" stroke="#60a5fa" stroke-width="4"/>
+  <path d="M636 588H948V764H636Z" fill="#151f31" stroke="#435168" stroke-width="3"/>
+  <path d="M976 574H1204V764H976Z" fill="#151f31" stroke="#435168" stroke-width="3"/>
+  <rect x="1234" y="590" width="200" height="174" rx="9" fill="#17263a" stroke="#67e8f9" stroke-width="3"/>
+  <g fill="#435168">
+    <rect x="402" y="804" width="186" height="28" rx="4"/>
+    <rect x="632" y="804" width="304" height="28" rx="4"/>
+    <rect x="980" y="804" width="210" height="28" rx="4"/>
+    <rect x="1234" y="804" width="200" height="28" rx="4"/>
+  </g>
+  <g fill="#9aa9bd" opacity="0.62">
+    <circle cx="664" cy="624" r="7"/><circle cx="698" cy="624" r="7"/><circle cx="732" cy="624" r="7"/>
+    <path d="M1014 634H1166M1014 666H1166M1014 698H1166" stroke="#9aa9bd" stroke-width="5"/>
+  </g>
+</g>
+<g fill="none" stroke="#f8fafc" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.92">
+  <circle cx="224" cy="743" r="17" fill="#f8fafc" stroke="none"/>
+  <path d="M224 767V827M184 799L224 785L263 809M224 827L194 885M224 827L258 885"/>
+</g>
+<path d="M350 456V484M350 470H1470M1470 456V484" fill="none" stroke="#67e8f9" stroke-width="3"/>
+<text x="910" y="446" fill="#67e8f9" font-size="30" font-weight="720" text-anchor="middle" letter-spacing="0">14 m</text>
+<path d="M1518 540H1546M1532 540V860M1518 860H1546" fill="none" stroke="#67e8f9" stroke-width="3"/>
+<text x="1562" y="709" fill="#67e8f9" font-size="30" font-weight="720" text-anchor="start" letter-spacing="0">4 m</text>
+<text x="224" y="928" fill="#9aa9bd" font-size="24" font-weight="560" text-anchor="middle" letter-spacing="0">1.75 m</text>
+<text x="390" y="840" fill="#9aa9bd" font-size="22" font-weight="700" text-anchor="start" letter-spacing="2.2">HIGH-NA EUV · EXE PLATFORM</text>
+<text x="1710" y="710" fill="#f8fafc" font-size="54" font-weight="740" text-anchor="middle" letter-spacing="0">150 t</text>
+<text x="1710" y="748" fill="#9aa9bd" font-size="22" font-weight="520" text-anchor="middle" letter-spacing="0">system weight</text>
+</svg>

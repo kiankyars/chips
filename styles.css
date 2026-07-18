@@ -273,6 +273,99 @@
   box-shadow: 0 0 10px rgba(103, 232, 249, 0.55);
 }
 
+/* Artifact-first scenes: the diagram is the slide; narration carries the prose. */
+.slidev-layout.visual-sequence {
+  padding: 0;
+  background-color: #05080e;
+  background-image:
+    radial-gradient(circle at 72% 36%, rgba(96, 165, 250, 0.055), transparent 38%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent 24%);
+}
+
+.slidev-layout.visual-sequence::before {
+  height: 2px;
+  background: linear-gradient(90deg, var(--chips-cyan), rgba(96, 165, 250, 0.58) 38%, transparent 72%);
+}
+
+.visual-sequence h1,
+.visual-sequence__kicker {
+  position: absolute;
+  z-index: 20;
+  top: 1.5rem;
+  left: 2.25rem;
+  max-width: 72%;
+  margin: 0;
+  color: rgba(213, 225, 240, 0.76);
+  font-size: 0.72rem;
+  font-weight: 720;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.visual-sequence__frame {
+  position: absolute;
+  z-index: 2;
+  inset: 2.55rem 1.2rem 3.15rem;
+  display: grid;
+  place-items: center;
+}
+
+.visual-sequence__frame p {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.visual-sequence__frame img,
+.visual-sequence > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: none;
+}
+
+.visual-sequence__caption {
+  position: absolute;
+  z-index: 20;
+  bottom: 2.2rem;
+  left: 2.25rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  max-width: 72%;
+  color: rgba(239, 246, 255, 0.94);
+  font-size: 1rem;
+  font-weight: 610;
+  line-height: 1.2;
+  letter-spacing: -0.018em;
+}
+
+.visual-sequence__caption strong {
+  color: var(--chips-cyan);
+  font-weight: 760;
+}
+
+.visual-sequence__source {
+  position: absolute;
+  z-index: 20;
+  right: 1.5rem;
+  bottom: 2.2rem;
+  max-width: 24%;
+  color: rgba(168, 179, 199, 0.58);
+  font-size: 0.52rem;
+  line-height: 1.25;
+  text-align: right;
+}
+
+.visual-sequence .course-chrome {
+  color: rgba(168, 179, 199, 0.46);
+}
+
+.visual-sequence .course-chrome__mark {
+  opacity: 0.55;
+}
+
 @media print {
   .slidev-layout {
     print-color-adjust: exact;

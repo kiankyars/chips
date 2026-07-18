@@ -14,8 +14,27 @@ Read order for a builder: `AUTHORING.md` → `STRATEGY.md` §3 → your row in
 - UnoCSS utility classes work in HTML (`<div class="grid grid-cols-2 gap-8">`).
 - Images: `![desc](/diagrams/rendered/<file>.svg)` — the `public/diagrams`
   symlink serves them.
-- Keep slides visual: big numbers, few words. ~1 slide per 45–60 s of runtime
+- Keep slides visual: one object, mechanism, comparison, or piece of evidence per
+  frame. Narration carries the explanation. ~1 slide per 45–60 s of runtime
   (an 8-min segment ≈ 8–11 slides).
+
+### Artifact-first visual sequences
+
+Use a locked-camera sequence when the teaching point is a physical change or
+assembly. Keep the object in the same position and change only the state being
+explained. The current reference sequences are:
+
+- planar → FinFET → gate-all-around
+- scanner scale → reticle/field/wafer → EUV path → supplier modules
+- substrate → interposer → logic/HBM → completed package
+
+Each frame uses `class: visual-sequence` and `transition: fade`. It has one
+short kicker, one factual caption, and an optional source tag. Do not add a
+second explanatory panel, cards, or a conventional title. Put the remaining
+argument in BEATS and FACT AMMO.
+
+Scene source belongs in `diagrams/src/scenes/` and must be called from
+`diagrams/src/generate.mjs`, so `npm run diagrams` reproduces every frame.
 
 ## Available structural SVGs (never hand-roll these)
 
@@ -26,6 +45,9 @@ Read order for a builder: `AUTHORING.md` → `STRATEGY.md` §3 → your row in
 | `flow-strip.svg` / `flow-<step>.svg` | steps: `deposit, coat, expose, etch, implant, polish, measure` |
 | `board-<n>.svg` | `0`…`7` chokepoint stamps, fills in earn order |
 | `euv-light-path.svg` | one state |
+| `transistor-*.svg` | planar, FinFET, and gate-all-around locked-camera states |
+| `asml-*.svg` | scanner scale, reticle field, EUV path, and supplier modules |
+| `package-*.svg` | substrate, interposer, dies/HBM, and completed package |
 
 **Map state per segment**: cold-open `dark` · great-unbundling `full` (first
 reveal) · Act II segments `design` · Act III + other-90 `manufacture` ·
@@ -47,8 +69,11 @@ memory-hbm → `board-6` · packaging → `board-7` (complete). geopolitics open
 segment's map state + one-line angle setup. The region lighting IS the "you are
 here."
 
-**2. Scoreboard (every major player).** Identical layout so comparison becomes
-rhythm — copy this structure exactly:
+**2. Evidence frame (every major player).** Lead with the artifact, process,
+factory, machine, or measured comparison that proves the point. A scoreboard is
+allowed only when the audience is actively comparing several companies on the
+same dimensions; it is not the default company-introduction slide. When a
+scoreboard is necessary, use this structure:
 
 ```html
 <div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
@@ -98,3 +123,7 @@ handoff into the next segment (write it as a question the next segment answers).
    them explicitly in beats, and list them in the segment header.
 6. **Angle is proposed, status is `draft`** — the creator owns the angle line.
 7. A builder writes ONLY its own `slides/segments/<id>.md`.
+8. **No unsupported grandeur or synthetic lists.** If a line cannot be shown,
+   measured, or sourced, keep it off the slide. Replace broad superlatives and
+   rhetorical three-item lists with the object or causal sequence that earns the
+   claim.

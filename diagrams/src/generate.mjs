@@ -7,6 +7,10 @@ import { mkdirSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
+import { generateAsmlScenes } from './scenes/asml.mjs'
+import { generatePackageScenes } from './scenes/package.mjs'
+import { generateTransistorScenes } from './scenes/transistor.mjs'
+
 const OUT = join(dirname(fileURLToPath(import.meta.url)), '..', 'rendered')
 mkdirSync(OUT, { recursive: true })
 
@@ -298,5 +302,9 @@ for (let k = 0; k <= 7; k++) writeFileSync(join(OUT, `board-${k}.svg`), board(k)
   parts.push(`<text x="960" y="420" text-anchor="middle" font-size="20" fill="${C.inkSoft}">a droplet of molten tin, hit mid-flight by a laser, twice — vaporized into plasma that shines at 13.5 nanometers</text>`)
   writeFileSync(join(OUT, 'euv-light-path.svg'), svgDoc(1920, 470, parts.join('\n')))
 }
+
+generateTransistorScenes(OUT)
+generateAsmlScenes(OUT)
+generatePackageScenes(OUT)
 
 console.log(`wrote SVGs to ${OUT}`)
