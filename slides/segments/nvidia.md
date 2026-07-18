@@ -17,9 +17,9 @@ sources: research/nvidia.md
 -->
 
 
-# The Designer
+# Nvidia designs the accelerator
 
-<div class="text-xl opacity-70 mt-2">Act II — The Blueprint · Santa Clara, California</div>
+<div class="text-xl opacity-70 mt-2">Chip architecture and software · Santa Clara, California</div>
 
 <div class="grid grid-cols-2 gap-8 mt-8 items-center">
 <div>
@@ -28,8 +28,8 @@ sources: research/nvidia.md
 
 </div>
 <div class="text-lg opacity-80 leading-relaxed">
-The chip starts as a file.<br>
-This is the company that writes it.
+Nvidia produces the chip design and software.<br>
+Manufacturing comes later.
 </div>
 </div>
 
@@ -55,17 +55,17 @@ LINE THAT LANDS:
 <div class="border-2 border-gray-400 rounded-lg p-6 text-center">
 <div class="text-6xl font-bold">~64–128</div>
 <div class="opacity-70 mt-2">powerful cores</div>
-<div class="text-sm opacity-60 mt-4">one thing after another, as fast as possible<br><b>a latency machine</b></div>
+<div class="text-sm opacity-60 mt-4">optimized for low-latency serial and branch-heavy work</div>
 </div>
 <div class="border-2 border-green-500 rounded-lg p-6 text-center">
 <div class="text-6xl font-bold">20,480</div>
 <div class="opacity-70 mt-2">simple cores</div>
-<div class="text-sm opacity-60 mt-4">the same operation on different data, all at once<br><b>a throughput machine</b></div>
+<div class="text-sm opacity-60 mt-4">optimized for high-throughput parallel operations</div>
 </div>
 </div>
 
 <div class="text-center text-lg opacity-70 mt-8">
-A neural network is stacked matrix multiplication. Matrix math is millions of independent multiply-adds — perfectly parallel.
+Neural-network workloads rely heavily on matrix multiplication, which GPUs divide across many cores.
 </div>
 
 <!--
@@ -83,7 +83,7 @@ LINE THAT LANDS:
 
 ---
 
-# The file, printed: GB300 "Blackwell Ultra"
+# GB300 Blackwell Ultra by the numbers
 
 <div class="grid grid-cols-3 gap-6 mt-8 text-center">
 <div>
@@ -102,12 +102,12 @@ LINE THAT LANDS:
 
 <div class="grid grid-cols-2 gap-6 mt-10">
 <div class="border-2 border-amber-500 rounded-lg p-4 text-center">
-<div class="font-bold">The die is as big as physics allows.</div>
-<div class="text-sm opacity-60 mt-1">So they used two. Hold that thought.</div>
+<div class="font-bold">Each compute die approaches the reticle limit.</div>
+<div class="text-sm opacity-60 mt-1">The package joins two compute dies.</div>
 </div>
 <div class="border-2 border-amber-500 rounded-lg p-4 text-center">
 <div class="font-bold">288 GB of memory at 8 TB/s.</div>
-<div class="text-sm opacity-60 mt-1">Feeding 20,480 cores is a bandwidth problem. Hold that thought.</div>
+<div class="text-sm opacity-60 mt-1">Eight HBM3E stacks keep the cores supplied with data.</div>
 </div>
 </div>
 
@@ -128,12 +128,12 @@ LINE THAT LANDS:
 
 ---
 
-# The real moat: CUDA
+# CUDA's 20-year software ecosystem
 
 <div class="grid grid-cols-4 gap-4 mt-10 text-center">
 <div>
 <div class="text-3xl font-bold">2006</div>
-<div class="text-sm opacity-60 mt-1">the bet: every gaming GPU doubles as a parallel computer</div>
+<div class="text-sm opacity-60 mt-1">CUDA launches for general-purpose GPU computing</div>
 </div>
 <div>
 <div class="text-3xl font-bold">2012</div>
@@ -145,7 +145,7 @@ LINE THAT LANDS:
 </div>
 <div>
 <div class="text-3xl font-bold">2022</div>
-<div class="text-sm opacity-60 mt-1">ChatGPT detonates demand</div>
+<div class="text-sm opacity-60 mt-1">ChatGPT drives a surge in AI-compute demand</div>
 </div>
 </div>
 
@@ -171,7 +171,7 @@ LINE THAT LANDS:
 
 ---
 
-# The mystery: ~75¢ of every dollar
+# Nvidia's gross margin is about 75%
 
 <div class="text-center mt-10">
 <div class="text-8xl font-bold">~75%</div>
@@ -179,8 +179,8 @@ LINE THAT LANDS:
 </div>
 
 <div class="text-center text-lg opacity-70 mt-10">
-A car maker runs ~20%. A normal chipmaker ~40–50%.<br>
-How does a <i>hardware</i> company keep 75 cents of every dollar?
+Typical chipmakers report roughly 40–50%.<br>
+CUDA switching costs, market share, and high-value systems support Nvidia's margin.
 </div>
 
 <!--
@@ -200,17 +200,17 @@ LINE THAT LANDS:
 
 ---
 
-# Nvidia's product starts as a file
+# Nvidia owns no semiconductor fabs
 
 <div class="text-center mt-10 text-3xl leading-relaxed">
-Nvidia owns<br>
-<span class="text-6xl font-bold">zero factories.</span>
+Nvidia designs chips and software,<br>
+<span class="text-5xl font-bold">then contracts out manufacturing.</span>
 </div>
 
 <div class="grid grid-cols-3 gap-6 mt-10 text-center text-sm opacity-70">
-<div>the dies?<br><b>printed by TSMC</b></div>
-<div>the memory?<br><b>SK Hynix / Micron / Samsung</b></div>
-<div>the package?<br><b>assembled by TSMC</b></div>
+<div>GPU dies<br><b>TSMC</b></div>
+<div>HBM<br><b>SK Hynix / Micron / Samsung</b></div>
+<div>advanced packaging<br><b>TSMC</b></div>
 </div>
 
 <!--
@@ -229,14 +229,14 @@ LINE THAT LANDS:
 
 ---
 
-# Scoreboard: Nvidia
+# Nvidia: financials and market position
 
 <div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
   <div class="grid grid-cols-5 gap-4 text-center">
     <div><div class="text-3xl font-bold">$215.9 B</div><div class="text-sm opacity-60">revenue FY26</div></div>
     <div><div class="text-3xl font-bold">~75%</div><div class="text-sm opacity-60">gross margin</div></div>
     <div><div class="text-3xl font-bold">~90%</div><div class="text-sm opacity-60">AI-accelerator share</div></div>
-    <div><div class="text-xl font-bold leading-tight mt-2">CUDA — rivals must clone a 20-year ecosystem, not a chip</div></div>
+<div><div class="text-xl font-bold leading-tight mt-2">CUDA: 20 years of libraries, tools, and developer adoption</div></div>
     <div><div class="text-3xl font-bold">~10 yrs</div><div class="text-sm opacity-60">to replace</div></div>
   </div>
   <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
@@ -257,18 +257,18 @@ FACT AMMO:
 
 ---
 
-# What's in the price of one chip?
+# Estimated economics of a GB300-class GPU
 
 <div class="mt-10">
   <div class="flex w-full h-16 rounded overflow-hidden text-sm font-bold text-center">
     <div class="bg-green-600 flex items-center justify-center" style="width:75%">Nvidia gross margin ~75%</div>
-    <div class="bg-gray-500 flex items-center justify-center" style="width:25%">~25% — paid to whom?</div>
+<div class="bg-gray-500 flex items-center justify-center" style="width:25%">estimated cost of revenue ~25%</div>
   </div>
-  <div class="text-xs opacity-50 mt-2">one GB300-class GPU · street price ~$50k+ (analyst estimates — Nvidia publishes no list price)</div>
+  <div class="text-xs opacity-50 mt-2">illustrative only · companywide margin applied to an analyst-estimated ~$50k GPU price</div>
 </div>
 
 <div class="text-2xl text-center mt-12 opacity-80">
-Who gets what slice?
+The next sections trace foundry, memory, packaging, and equipment costs.
 </div>
 
 <!--

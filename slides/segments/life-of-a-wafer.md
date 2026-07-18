@@ -17,9 +17,9 @@ sources: research/foundations.md, research/materials.md
 -->
 
 
-# ACT IV — THE FAB TOUR
+# Inside a leading-edge fab
 
-<div class="text-2xl opacity-80 mt-2">Three Months, a Thousand Steps</div>
+<div class="text-2xl opacity-80 mt-2">Three to four months and roughly 1,000 process steps</div>
 
 <div class="grid grid-cols-2 gap-8 mt-8 items-center">
 <div>
@@ -28,10 +28,10 @@ sources: research/foundations.md, research/materials.md
 
 </div>
 <div class="text-2xl leading-relaxed">
-One wafer.<br>
-<b>~1,000</b> steps.<br>
-<b>~3</b> months.<br>
-<span class="opacity-60 text-lg">Every company in this act owns one step.</span>
+A leading-edge wafer passes through<br>
+<b>roughly 1,000 process steps</b><br>
+over <b>three to four months</b>.<br>
+<span class="opacity-60 text-lg">The next sections follow its equipment and materials.</span>
 </div>
 </div>
 
@@ -52,7 +52,7 @@ LINE THAT LANDS:
 
 ---
 
-# Two deliveries
+# A wafer and a mask set enter the fab
 
 <div class="grid grid-cols-2 gap-10 mt-8">
 <div class="border-2 border-gray-400 rounded-lg p-6 text-center">
@@ -65,7 +65,7 @@ LINE THAT LANDS:
 <div class="border-2 border-gray-400 rounded-lg p-6 text-center">
 <div class="text-sm opacity-60 mb-2">THE MASKS</div>
 <div class="text-5xl font-bold">60–100</div>
-<div class="opacity-70 mt-2">stencils — one per layer</div>
+<div class="opacity-70 mt-2">patterned reticles — roughly one per mask level</div>
 <div class="text-lg mt-4">~<b>$5–15M</b> per design</div>
 <div class="text-sm opacity-60 mt-2">one EUV mask: $500k–1M</div>
 </div>
@@ -89,14 +89,14 @@ LINE THAT LANDS:
 
 ---
 
-# The loop
+# The fabrication cycle repeats for each layer
 
 ![flow strip: deposit → coat → expose → etch → implant → polish → measure](/diagrams/rendered/flow-strip.svg)
 
 <div class="grid grid-cols-3 gap-6 mt-10 text-center">
-<div><div class="text-4xl font-bold">1 pass</div><div class="text-sm opacity-60">= 1 layer</div></div>
-<div><div class="text-4xl font-bold">~80–120</div><div class="text-sm opacity-60">passes per wafer</div></div>
-<div><div class="text-4xl font-bold">0</div><div class="text-sm opacity-60">transistors placed by hand — all printed at once</div></div>
+<div><div class="text-4xl font-bold">1 mask level</div><div class="text-sm opacity-60">one lithography pattern</div></div>
+<div><div class="text-4xl font-bold">~80–120</div><div class="text-sm opacity-60">mask levels per design</div></div>
+<div><div class="text-4xl font-bold">billions</div><div class="text-sm opacity-60">features patterned across each wafer</div></div>
 </div>
 
 <!--
@@ -115,7 +115,7 @@ LINE THAT LANDS:
 
 ---
 
-# Step two — and we're already in Japan
+# Japan supplies the wafer, resist, and EUV mask blanks
 
 ![coat step glowing](/diagrams/rendered/flow-coat.svg)
 
@@ -129,7 +129,7 @@ LINE THAT LANDS:
 
 ![chokepoint board — third stamp](/diagrams/rendered/board-3.svg)
 
-<div class="text-lg mt-2"><b>STAMP #3 — Japan's materials cluster</b></div>
+<div class="text-lg mt-2"><b>CHOKEPOINT #3 · Japan's materials cluster</b></div>
 </div>
 
 <!--
@@ -151,18 +151,18 @@ LINE THAT LANDS:
 
 ---
 
-# ~80 layers: buildings, then streets
+# Transistors first, then 15+ layers of wiring
 
 <div class="grid grid-cols-2 gap-10 mt-8">
 <div class="border-2 border-gray-400 rounded-lg p-6">
 <div class="text-sm opacity-60">FEOL — front end of line</div>
-<div class="text-2xl font-bold mt-2">The buildings</div>
+<div class="text-2xl font-bold mt-2">Transistors</div>
 <div class="opacity-70 mt-2">the transistors themselves, built in the silicon</div>
 </div>
 <div class="border-2 border-gray-400 rounded-lg p-6">
 <div class="text-sm opacity-60">BEOL — back end of line</div>
-<div class="text-2xl font-bold mt-2">The streets — stacked above</div>
-<div class="opacity-70 mt-2">15+ layers of copper wiring, from nm-scale alleys to fat power highways</div>
+<div class="text-2xl font-bold mt-2">Interconnect</div>
+<div class="opacity-70 mt-2">15+ metal layers, from local signal wiring to wide power rails</div>
 </div>
 </div>
 
@@ -191,7 +191,7 @@ LINE THAT LANDS:
 
 ---
 
-# One particle, one dead die
+# A single particle can destroy a die
 
 <div class="grid grid-cols-2 gap-10 mt-6">
 <div>
@@ -200,19 +200,19 @@ LINE THAT LANDS:
 <div class="opacity-70">particles per m³ (ISO 1)</div>
 <div class="text-3xl font-bold mt-4 opacity-60">35,000,000</div>
 <div class="opacity-70">particles per m³ — city air</div>
-<div class="text-sm opacity-50 mt-2">cleaner than any operating room on Earth</div>
+<div class="text-sm opacity-50 mt-2">the wafer environment is ISO 1; operating rooms are typically ISO 6–7</div>
 </div>
 <div>
 <div class="text-sm opacity-60 mb-2">THE MATH</div>
 <div class="text-4xl font-bold">yield ≈ e<sup>−A·D₀</sup></div>
-<div class="opacity-70 mt-2">exponential in die area —<br>big AI dies are brutally exposed</div>
+<div class="opacity-70 mt-2">yield falls with die area<br>at a fixed defect density</div>
 <div class="text-2xl font-bold mt-4">~90%</div>
 <div class="opacity-70">phone-sized die at D₀ = 0.1/cm²</div>
 </div>
 </div>
 
 <div class="text-center text-lg mt-8 opacity-80">
-The wafer is now worth ~<b>$30,000</b> — about <b>twice its weight in gold</b>.
+Processing raises a blank wafer's value from roughly <b>$150</b> to about <b>$30,000</b>.
 </div>
 
 <!--
@@ -235,12 +235,12 @@ LINE THAT LANDS:
 
 ---
 
-# One of these steps is not like the others
+# Exposure requires the fab's most expensive tool
 
 ![expose step glowing](/diagrams/rendered/flow-expose.svg)
 
 <div class="text-2xl mt-10 text-center leading-relaxed">
-The most expensive room in the building is next.
+EUV scanners perform the exposure step and cost more than any other fab tool.
 </div>
 
 <!--

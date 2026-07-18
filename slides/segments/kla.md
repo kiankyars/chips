@@ -17,9 +17,9 @@ sources: research/kla.md
 -->
 
 
-# The Inspector
+# Inspection and metrology
 
-<div class="text-xl opacity-70 mt-2">Act IV · the fab tour reaches its last step — MEASURE</div>
+<div class="text-xl opacity-70 mt-2">Part 4 · Fabrication · inspection and metrology</div>
 
 <div class="grid grid-cols-[3fr_1fr] gap-6 mt-6 items-center">
 <div>
@@ -35,7 +35,7 @@ sources: research/kla.md
 </div>
 
 <div class="text-lg opacity-80 mt-4 text-center">
-The last machine on the strip deposits nothing, etches nothing, prints nothing. <b>It only looks.</b>
+KLA's inspection and metrology tools find defects and verify dimensions after process steps.
 </div>
 
 <!--
@@ -53,29 +53,29 @@ LINE THAT LANDS:
 
 ---
 
-# The immune system
+# In-line measurement limits the cost of process drift
 
 <div class="grid grid-cols-2 gap-10 mt-6">
 <div class="border-2 border-red-400/60 rounded-lg p-6">
-<div class="text-sm opacity-60 mb-2">THE HORROR</div>
+<div class="text-sm opacity-60 mb-2">WITHOUT IN-LINE MEASUREMENT</div>
 <div class="text-lg leading-relaxed">
 A process drifts at <b>step 400</b>.<br>
-Nobody notices until wafers fail test at <b>step 1,000</b>.
+The drift remains undetected until wafers fail test at <b>step 1,000</b>.
 </div>
 <div class="opacity-70 mt-3 text-sm">600–1,000+ steps · 3–4 months in the line — every wafer started in between is suspect.</div>
 </div>
 <div class="border-2 border-emerald-400/60 rounded-lg p-6">
-<div class="text-sm opacity-60 mb-2">THE FIX</div>
+<div class="text-sm opacity-60 mb-2">WITH IN-LINE MEASUREMENT</div>
 <div class="text-lg leading-relaxed">
-Measure <b>between every step</b>.<br>
+Measure after <b>critical steps</b>.<br>
 Catch the drift at <b>step 401</b>.
 </div>
-<div class="opacity-70 mt-3 text-sm">Quarantine one lot — instead of scrapping a quarter's output.</div>
+<div class="opacity-70 mt-3 text-sm">Early detection can limit the affected work-in-progress to one lot.</div>
 </div>
 </div>
 
 <div class="text-center text-2xl mt-8">
-One point of yield at a leading-edge fab ≈ <b>$100M / year</b>.
+At 50,000 wafer starts per month, one yield point is worth roughly <b>$100M / year</b>.
 </div>
 
 <!--
@@ -99,21 +99,21 @@ LINE THAT LANDS:
 
 ---
 
-# Find the golf ball — and it keeps getting harder
+# A 20 nm defect is tiny relative to a 300 mm wafer
 
 <div class="grid grid-cols-2 gap-10 mt-6 items-center">
 <div>
-<div class="text-sm opacity-60 mb-2">THE SEARCH</div>
+<div class="text-sm opacity-60 mb-2">SCALE COMPARISON</div>
 <div class="text-lg leading-relaxed">
-Scale a <b>20 nm defect</b> up to a <b>golf ball</b>, and the wafer becomes a disc <b>~600 km across</b>.
+At the same scale, a <b>20 nm defect</b> is comparable to a golf ball on a disc <b>~600 km across</b>.
 </div>
-<div class="opacity-70 mt-3">Find that one golf ball anywhere on it — <b>in about an hour, per wafer.</b></div>
+<div class="opacity-70 mt-3">Inspection takes about <b>one hour per wafer</b>.</div>
 </div>
 <div class="flex flex-col gap-2 text-lg">
-<div class="text-sm opacity-60 mb-1">AND EVERY NODE GETS WORSE</div>
+<div class="text-sm opacity-60 mb-1">WHY INSPECTION DEMAND RISES</div>
 <div>Smaller features → <b>smaller killer defects</b></div>
 <div>EUV + multipatterning → <b>more layers that must align</b></div>
-<div>Bigger AI die + HBM stacks → <b>less redundancy per defect</b></div>
+<div>Larger AI dies + HBM stacks → <b>more value at risk per defect</b></div>
 </div>
 </div>
 
@@ -146,22 +146,22 @@ LINE THAT LANDS:
 
 ---
 
-# The company that only measures
+# KLA leads process control
 
 <div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
   <div class="grid grid-cols-5 gap-4 text-center">
     <div><div class="text-3xl font-bold">$12.2B</div><div class="text-sm opacity-60">revenue FY25</div></div>
     <div><div class="text-3xl font-bold">~62%</div><div class="text-sm opacity-60">gross margin</div></div>
     <div><div class="text-3xl font-bold">56–58%</div><div class="text-sm opacity-60">market share</div></div>
-    <div><div class="text-lg font-bold leading-tight mt-1">owns yield learning — ~7× the nearest rival</div></div>
+    <div><div class="text-lg font-bold leading-tight mt-1">~7× the nearest rival in process control</div></div>
     <div><div class="text-3xl font-bold">~10 yrs</div><div class="text-sm opacity-60">to replace</div></div>
   </div>
   <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
 </div>
 
 <div class="text-center text-xl mt-8 leading-relaxed">
-<b>62%</b> gross margin — <b>ten points higher than ASML</b>, the machine monopoly everyone talks about.<br>
-<span class="opacity-60 text-lg">The company that only <i>measures</i> is the most profitable of them all.</span>
+At <b>~62%</b>, KLA's gross margin is about <b>ten points above ASML's</b><br>
+<span class="opacity-60 text-lg">and the highest among the five largest equipment vendors.</span>
 </div>
 
 <!--

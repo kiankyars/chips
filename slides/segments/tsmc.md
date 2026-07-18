@@ -19,7 +19,7 @@ sources: research/tsmc.md
 
 # TSMC
 
-<div class="text-xl opacity-70 mt-2">The Island Foundry</div>
+<div class="text-xl opacity-70 mt-2">The world's largest contract chip manufacturer</div>
 
 <div class="grid grid-cols-2 gap-8 mt-8 items-center">
 <div>
@@ -48,18 +48,18 @@ LINE THAT LANDS:
 
 ---
 
-# 1987: the bet nobody else would make
+# 1987: Taiwan backs a pure-play foundry
 
 <div class="grid grid-cols-2 gap-10 mt-8">
 <div>
 <div class="text-7xl font-bold">56</div>
-<div class="opacity-70 mt-2">Morris Chang's age, founding what becomes<br>the world's most important company</div>
+<div class="opacity-70 mt-2">Morris Chang's age when he founded<br>what became the world's largest foundry</div>
 </div>
 <div class="flex flex-col justify-center gap-3 text-lg">
 
 - **25 years at Texas Instruments** — ran the global chip business
 - Passed over for CEO. Recruited by **Taiwan's government**
-- Startup money: state fund **48.3%**, Philips **27.5%** — <b>no US chip company would invest</b>
+- Startup money: state fund **48.3%**, Philips **27.5%** — <b>US chipmakers declined to invest</b>
 - Process tech: licensed, **2–3 generations behind**
 
 </div>
@@ -81,28 +81,28 @@ LINE THAT LANDS:
 
 ---
 
-# "We compete with no one"
+# TSMC manufactures without competing with its customers
 
 <div class="grid grid-cols-2 gap-10 mt-8">
 <div class="text-lg leading-relaxed">
 <div class="font-bold text-2xl mb-4">What a foundry sells</div>
 
 - a **process recipe** (the node)
-- a **PDK** — the rulebook your tools design against
+- a **PDK** — process rules and device models used by EDA tools
 - **qualified IP** libraries
-- **yield** — the % of dies that live
+- **yield** — the percentage of dies that pass test
 
 </div>
 <div class="text-lg leading-relaxed">
-<div class="font-bold text-2xl mb-4">What it never sells</div>
+<div class="font-bold text-2xl mb-4">How TSMC avoids customer conflict</div>
 
-- a chip with its own name on it
-- your secrets to your rival —<br><span class="opacity-70">Apple, Nvidia, AMD, Qualcomm silicon<br>runs through the same fabs</span>
+- no branded processors of its own
+- customer designs remain confidential even when rival firms share the same fabs
 
 </div>
 </div>
 
-<div class="text-sm opacity-60 mt-8">The customer owns the design. TSMC owns the recipe. Trust IS the business model.</div>
+<div class="text-sm opacity-60 mt-8">TSMC manufactures customer designs without selling competing chips.</div>
 
 <!--
 BEATS:
@@ -119,13 +119,13 @@ LINE THAT LANDS:
 
 ---
 
-# The flywheel
+# Scale improves yield and funds the next node
 
 <div class="flex justify-center mt-10">
 <div class="text-2xl font-bold leading-loose text-center">
-MORE WAFERS → MORE DEFECT DATA → BETTER YIELD<br>
+HIGHER VOLUME → MORE DEFECT DATA → HIGHER YIELD<br>
 ↑ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ↓<br>
-MORE CAPEX ← MORE REVENUE ← WIN THE NEXT DESIGN
+MORE CAPACITY ← REINVESTED REVENUE ← NEW CUSTOMER DESIGNS
 </div>
 </div>
 
@@ -158,21 +158,21 @@ LINE THAT LANDS:
 
 ---
 
-# The IOU comes due: Apple
+# Apple led TSMC's advanced-node ramps
 
 <div class="grid grid-cols-2 gap-10 mt-8">
 <div>
 <div class="text-6xl font-bold">~17%</div>
-<div class="opacity-70 mt-2">of TSMC revenue = Apple<br><span class="text-sm">sole-source since the mid-2010s</span></div>
+<div class="opacity-70 mt-2">estimated FY2025 revenue from Apple<br><span class="text-sm">exclusive foundry supplier since the mid-2010s</span></div>
 </div>
 <div>
 <div class="text-6xl font-bold">~19%</div>
-<div class="opacity-70 mt-2">= Nvidia — <b>the new #1</b><br><span class="text-sm">first change of the guard in over a decade</span></div>
+<div class="opacity-70 mt-2">estimated FY2025 revenue from Nvidia<br><span class="text-sm">the largest customer by this estimate</span></div>
 </div>
 </div>
 
 <div class="text-sm opacity-60 mt-10">
-Newest-node wafer revenue, FY2025: <b>3nm = 24%</b> — the newest node is where flagship silicon lives, and one customer historically claims it first.
+<b>3nm = 24%</b> of FY2025 wafer revenue. Apple has historically led TSMC's first large-volume ramps on new nodes.
 </div>
 
 <!--
@@ -196,7 +196,7 @@ LINE THAT LANDS:
 
 <div class="mt-8 text-lg">
 <div class="grid grid-cols-4 gap-4 text-center">
-<div><div class="text-3xl font-bold">N3</div><div class="text-sm opacity-70 mt-1">ramped 2023–25<br>fastest-monetizing node ever</div></div>
+<div><div class="text-3xl font-bold">N3</div><div class="text-sm opacity-70 mt-1">ramped 2023–25<br>24% of FY2025 wafer revenue</div></div>
 <div><div class="text-3xl font-bold">N2</div><div class="text-sm opacity-70 mt-1">HVM since Q4 2025<br><b>first gate-all-around</b></div></div>
 <div><div class="text-3xl font-bold">A16</div><div class="text-sm opacity-70 mt-1">late 2026 → volume 2027<br><b>backside power</b></div></div>
 <div><div class="text-3xl font-bold">A14</div><div class="text-sm opacity-70 mt-1">2028<br>2nd-gen GAA</div></div>
@@ -204,8 +204,8 @@ LINE THAT LANDS:
 </div>
 
 <div class="text-sm opacity-60 mt-10 text-center">
-"2nm" measures nothing on the chip. The names lie about geometry — but they honestly rank generations.<br>
-Notably absent through 2029: <b>High-NA EUV</b>. TSMC keeps squeezing the older machines.
+"2nm" is a product generation, not a measured feature size.<br>
+TSMC plans no <b>High-NA EUV</b> in production through 2029; it is extending existing EUV tools.
 </div>
 
 <!--
@@ -227,7 +227,7 @@ LINE THAT LANDS:
 
 ---
 
-# Pricing power
+# Reported wafer prices rise with each new node
 
 <div class="grid grid-cols-4 gap-4 mt-10 text-center">
 <div><div class="text-4xl font-bold">~$18k</div><div class="text-sm opacity-70 mt-1">N5/N4 wafer</div></div>
@@ -240,7 +240,7 @@ LINE THAT LANDS:
 
 <div class="grid grid-cols-2 gap-8 mt-10 text-center">
 <div><div class="text-5xl font-bold">59.9% → 66.2%</div><div class="opacity-70 mt-2">gross margin, FY25 → Q1 2026</div></div>
-<div><div class="text-5xl font-bold">50.5¢</div><div class="opacity-70 mt-2">of every revenue dollar kept as net profit</div></div>
+<div><div class="text-5xl font-bold">50.5¢</div><div class="opacity-70 mt-2">of every Q1 2026 revenue dollar retained as net profit</div></div>
 </div>
 
 <!--
@@ -261,12 +261,12 @@ LINE THAT LANDS:
 
 ---
 
-# Chokepoint #2: earned
+# Chokepoint #2: leading-edge foundry capacity
 
 ![chokepoint board — 2 stamps](/diagrams/rendered/board-2.svg)
 
 <div class="text-xl mt-6 text-center">
-<b>TSMC — leading-edge logic.</b> ~90% of the world's most advanced chips, one company.
+<b>TSMC — leading-edge merchant logic.</b> An estimated ~90% of ≤7nm-class merchant output.
 </div>
 
 <!--
@@ -284,14 +284,14 @@ LINE THAT LANDS (optional — mild tease of stamp #7):
 
 ---
 
-# Scoreboard
+# TSMC financials and market share
 
 <div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
   <div class="grid grid-cols-5 gap-4 text-center">
     <div><div class="text-3xl font-bold">$122 B</div><div class="text-sm opacity-60">revenue FY25 (+36%)</div></div>
     <div><div class="text-3xl font-bold">59.9%</div><div class="text-sm opacity-60">gross margin FY25 (66.2% Q1'26)</div></div>
     <div><div class="text-3xl font-bold">72.3%</div><div class="text-sm opacity-60">global foundry share (Q1'26)</div></div>
-    <div><div class="text-xl font-bold leading-tight mt-2">everyone's trust + 30 years of yield learning</div></div>
+    <div><div class="text-xl font-bold leading-tight mt-2">pure-play model + 30 years of yield data</div></div>
     <div><div class="text-3xl font-bold">~10+ yrs</div><div class="text-sm opacity-60">to replace</div></div>
   </div>
   <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
@@ -317,12 +317,12 @@ LINE THAT LANDS:
 
 ---
 
-# Going global — sort of
+# Overseas fabs trail Taiwan's leading edge
 
 <div class="grid grid-cols-3 gap-6 mt-8 text-center">
 <div>
 <div class="text-3xl font-bold">Arizona</div>
-<div class="text-sm opacity-70 mt-2"><b>$165B</b> · six fabs planned<br>Fab 1 running N4 — <b>Taiwan-grade yields</b><br>profitable: $514M in Q1'26 alone</div>
+<div class="text-sm opacity-70 mt-2"><b>$165B</b> · six fabs planned<br>Fab 1 running N4 with <b>reported yields comparable to Taiwan</b><br>$514M profit in Q1'26</div>
 </div>
 <div>
 <div class="text-3xl font-bold">Kumamoto</div>
@@ -335,7 +335,7 @@ LINE THAT LANDS:
 </div>
 
 <div class="text-lg mt-10 text-center">
-And the leading edge? <b>N2 exists only in Taiwan.</b> Up to <b>10 new fabs</b> under construction there in 2026 alone.
+<b>N2 production remains in Taiwan.</b> Up to <b>10 new fabs</b> were under construction there in 2026.
 </div>
 
 <!--
@@ -358,16 +358,15 @@ LINE THAT LANDS:
 
 ---
 
-# One island
+# Leading-edge production remains concentrated in Taiwan
 
 <div class="text-3xl mt-14 leading-relaxed text-center">
-~90% of the world's most advanced chips<br>
-are made on one island<br>
-<b>130 km off the coast of China.</b>
+TSMC fabricates an estimated ~90% of ≤7 nm-class merchant logic,<br>
+with its most advanced production concentrated in <b>Taiwan</b>.
 </div>
 
 <div class="text-sm opacity-60 mt-12 text-center">
-Hold that thought. We return to it at the end — when the whole board is lit.
+This geographic concentration is central to the policy discussion in Part 6.
 </div>
 
 <!--
@@ -386,19 +385,19 @@ LINE THAT LANDS:
 
 ---
 
-# TSMC turned yield into a monopoly
+# TSMC leads advanced foundry manufacturing
 
 <div class="text-xl mt-10 leading-relaxed">
 
-- A file becomes silicon in **one place**, run by a company that **competes with no one**
-- Its moat is a **flywheel**: volume → yield → customers → capex → volume, compounding since 1987
-- It prices like a monopoly because it **is** one — stamp #2 of 7
+- TSMC manufactures customer designs without selling chips of its own
+- High production volume generates defect data, which improves yield and attracts the next design
+- TSMC holds 72.3% of foundry revenue and an estimated ~90% of ≤7nm-class merchant output
 
 </div>
 
 <div class="text-lg opacity-70 mt-12">
-But wait — TSMC only took the technology lead in ~2020.<br>
-<b>Who wore the crown for the fifty years before that?</b>
+TSMC overtook Intel in process technology around 2020.<br>
+<b>Intel had led the industry for roughly five decades.</b>
 </div>
 
 <!--

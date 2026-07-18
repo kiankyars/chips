@@ -17,9 +17,9 @@ sources: research/idm-analog.md
 -->
 
 
-# The Other 90%
+# Most chips use mature process nodes
 
-<div class="text-xl opacity-70 mt-2">The chips that never touch the leading edge</div>
+<div class="text-xl opacity-70 mt-2">Analog chips, microcontrollers, and power semiconductors</div>
 
 ![](/diagrams/rendered/map-manufacture.svg)
 
@@ -35,7 +35,7 @@ LINE THAT LANDS:
 
 ---
 
-# Almost none of it needed the leading edge
+# Analog and microcontrollers use mature nodes
 
 <div class="grid grid-cols-3 gap-8 mt-10 text-center">
 <div>
@@ -53,8 +53,8 @@ LINE THAT LANDS:
 </div>
 
 <div class="text-base opacity-70 mt-12 text-center leading-relaxed">
-Nodes <b>15–40 years old</b>. No EUV. No $20B fab.<br>
-The AI boom is almost all the growth — this layer just grows, quietly, single digits a year.
+These products use nodes introduced <b>15–40 years ago</b> and do not require EUV or leading-edge fab equipment.<br>
+AI accelerators and memory drove most 2025 growth; analog grew 7%.
 </div>
 
 <!--
@@ -75,7 +75,7 @@ LINE THAT LANDS:
 
 ---
 
-# The thirty-cent chip that stopped the world
+# Low-cost chip shortages idled car factories
 
 <div class="grid grid-cols-2 gap-10 mt-8">
 <div class="text-center">
@@ -89,8 +89,7 @@ LINE THAT LANDS:
 </div>
 
 <div class="text-base opacity-70 mt-12 text-center leading-relaxed">
-<b>7.7M vehicles</b> never built in 2021. Not because a GPU was missing —<br>
-because a chip that costs less than a cup of coffee was.
+Automakers produced <b>7.7M fewer vehicles</b> in 2021 because they could not source low-cost microcontrollers.
 </div>
 
 <!--
@@ -112,16 +111,16 @@ LINE THAT LANDS:
 
 ---
 
-# Moats measured in decades, not nanometers
+# Long product lives and depreciated fabs support analog margins
 
 <div class="grid grid-cols-2 gap-10 mt-6">
 
 <div class="flex flex-col justify-center gap-4 text-lg leading-relaxed">
 
-- **Moore's Law doesn't help.** Shrink a precision analog part and it gets *worse* — less voltage headroom, more noise, worse matching. The sweet spot is **180nm–45nm**, introduced 15–40 years ago.
-- **Old fabs are money printers.** Equipment long since paid off → a **$0.30** chip carries **60%+** gross margin.
-- **The design is craft.** Not synthesized from code — drawn transistor by transistor, learned over a decade under a senior.
-- **Same part for 20 years.** ST *guarantees* it.
+- **Shrinking can hurt analog performance.** Smaller nodes reduce voltage headroom and worsen noise and matching. Many precision parts use **180nm–45nm**.
+- **Old fabs are depreciated.** A **$0.30** chip can carry **60%+** gross margin.
+- **Engineers draw analog circuits transistor by transistor.** Training under experienced designers takes years.
+- **Products remain available for decades.** ST guarantees 20-year availability for some parts.
 
 </div>
 
@@ -129,14 +128,14 @@ LINE THAT LANDS:
 
 <div class="border-2 border-gray-400 rounded-lg p-5">
 <div class="text-2xl font-bold mb-1">Texas Instruments</div>
-<div class="text-sm opacity-60 mb-4">the one business worth stopping on</div>
+<div class="text-sm opacity-60 mb-4">300 mm manufacturing lowers unit cost</div>
 
 <div class="text-lg leading-relaxed">
-Runs <b>30-year-old designs</b> on the giant <b>300mm</b> wafers built for the leading edge.
+TI keeps decades-old analog products in production on <b>300 mm</b> wafers.
 </div>
 <div class="text-4xl font-bold mt-4">~40% cheaper</div>
-<div class="text-sm opacity-60">per chip · ~2.3× more chips per wafer · forever</div>
-<div class="text-sm opacity-70 mt-4">Then, bigger: <b>&gt;$60B</b>, seven US fabs — the largest foundational-chip investment in US history.</div>
+<div class="text-sm opacity-60">estimated cost per unpackaged chip vs 200 mm · ~2.3× the wafer area</div>
+<div class="text-sm opacity-70 mt-4">TI plans to invest <b>&gt;$60B</b> in seven US fabs.</div>
 </div>
 
 </div>
@@ -166,50 +165,50 @@ LINE THAT LANDS:
 
 ---
 
-# One world, six houses
+# Six large analog and embedded-chip suppliers
 
-<div class="grid grid-cols-3 gap-4 mt-6 text-sm">
+<div class="grid grid-cols-3 gap-3 mt-4 text-sm">
 
 <div class="border border-gray-400 rounded-lg p-3">
 <div class="font-bold text-lg">Texas Instruments</div>
 <div class="opacity-60">$17.7B · #1 analog</div>
-<div class="mt-2">The catalog king. 300mm cost moat, ~80,000 products, going &gt;$60B bigger in the US.</div>
+<div class="mt-2">About 80,000 products; 300 mm production lowers unit costs; more than $60B planned for seven US fabs.</div>
 </div>
 
 <div class="border border-gray-400 rounded-lg p-3">
 <div class="font-bold text-lg">Infineon</div>
 <div class="opacity-60">~€14.7B · #1 power</div>
-<div class="mt-2">Runs the world's power. #1 automotive at 13.5%. SiC + GaN. Now an AI data-center power play too.</div>
+<div class="mt-2">#1 in power and automotive semiconductors at 13.5% share; expanding SiC, GaN, and data-center power products.</div>
 </div>
 
 <div class="border border-gray-400 rounded-lg p-3">
 <div class="font-bold text-lg">STMicro</div>
 <div class="opacity-60">$11.8B · −11%</div>
-<div class="mt-2">Put silicon carbide in the 2018 Tesla Model 3 — from Catania, Sicily. Rough patch; FR/IT state-anchored.</div>
+<div class="mt-2">Supplied silicon-carbide power modules for the 2018 Tesla Model 3; France and Italy retain strategic stakes.</div>
 </div>
 
 <div class="border border-gray-400 rounded-lg p-3">
 <div class="font-bold text-lg">NXP</div>
 <div class="opacity-60">$12.3B · auto ~57%</div>
-<div class="mt-2">The car's nervous system. #1 auto radar. Invented NFC — the tap in every metro card and passport.</div>
+<div class="mt-2">About 57% of revenue comes from automotive; leads automotive radar and co-developed NFC.</div>
 </div>
 
 <div class="border border-gray-400 rounded-lg p-3">
 <div class="font-bold text-lg">Renesas</div>
 <div class="opacity-60">~$8.8B · Japan</div>
-<div class="mt-2">Auto-MCU champion (Hitachi+Mitsubishi+NEC). In 2021 one fab fire near Tokyo deepened the whole crisis.</div>
+<div class="mt-2">Formed from Hitachi, Mitsubishi, and NEC chip units; a 2021 fire at its Naka fab worsened the auto-chip shortage.</div>
 </div>
 
 <div class="border border-gray-400 rounded-lg p-3">
 <div class="font-bold text-lg">Analog Devices</div>
 <div class="opacity-60">$11.0B · +17%</div>
-<div class="mt-2">The high end — precision converters at dollars, not cents. #2 analog, built by buying Linear + Maxim.</div>
+<div class="mt-2">#2 in analog, focused on high-value precision converters; expanded through the Linear and Maxim acquisitions.</div>
 </div>
 
 </div>
 
-<div class="text-sm opacity-60 mt-6 text-center">
-No ASML here. Even the #1 in automotive holds 13.5%. The moat is the <i>category</i> — old fabs, long qualification — not any one firm.
+<div class="text-xs opacity-60 mt-3 text-center">
+Long qualification cycles constrain supplier switching.
 </div>
 
 <!--
@@ -238,16 +237,11 @@ LINE THAT LANDS:
 
 ---
 
-# Back to our chip
+# A processor still needs memory
 
 <div class="text-3xl mt-16 leading-relaxed">
-It's out of the fab.<br>
-<span class="opacity-60">And right now, it's useless.</span>
-</div>
-
-<div class="text-2xl mt-10 leading-relaxed">
-It can compute —<br>
-but it <b>cannot remember</b>.
+The fabricated GPU die needs nearby memory<br>
+to keep its cores supplied with data.
 </div>
 
 <!--

@@ -17,9 +17,9 @@ sources: research/eda.md
 -->
 
 
-# The Invisible Duopoly
+# The software behind chip design
 
-<div class="text-xl opacity-70 mt-2">Nobody draws chips</div>
+<div class="text-xl opacity-70 mt-2">Engineers design modern chips through EDA software</div>
 
 ![industry map — design region lit](/diagrams/rendered/map-design.svg)
 
@@ -37,7 +37,7 @@ LINE THAT LANDS:
 
 ---
 
-# Chips aren't drawn. They're compiled.
+# EDA converts hardware descriptions into chip layouts
 
 <div class="flex items-stretch gap-2 mt-10 text-center">
   <div class="flex-1 border-2 border-gray-400 rounded-lg p-3 flex flex-col justify-center">
@@ -52,24 +52,24 @@ LINE THAT LANDS:
   <div class="text-2xl opacity-40 self-center">→</div>
   <div class="flex-1 border-2 border-gray-400 rounded-lg p-3 flex flex-col justify-center">
     <div class="font-bold text-lg">PLACE & ROUTE</div>
-    <div class="text-xs opacity-60 mt-1">position every gate, draw every wire</div>
+<div class="text-xs opacity-60 mt-1">position gates and route interconnects</div>
   </div>
   <div class="text-2xl opacity-40 self-center">→</div>
   <div class="flex-1 border-2 border-amber-400 rounded-lg p-3 flex flex-col justify-center">
     <div class="font-bold text-lg">VERIFICATION</div>
-    <div class="text-xs opacity-60 mt-1">prove it works before you print</div>
+<div class="text-xs opacity-60 mt-1">simulate and verify before tape-out</div>
     <div class="text-xs font-bold mt-1">~50% of the project</div>
   </div>
   <div class="text-2xl opacity-40 self-center">→</div>
   <div class="flex-1 border-2 border-gray-400 rounded-lg p-3 flex flex-col justify-center">
     <div class="font-bold text-lg">TAPE-OUT</div>
-    <div class="text-xs opacity-60 mt-1">the GDSII file TSMC prints</div>
+<div class="text-xs opacity-60 mt-1">deliver layout data to the foundry</div>
   </div>
 </div>
 
 <div class="text-center mt-10">
   <span class="text-4xl font-bold">~$724M</span>
-  <span class="opacity-60 ml-3">to design one 2nm-class chip — before a single wafer is bought</span>
+<span class="opacity-60 ml-3">estimated design cost for one 2 nm-class chip, excluding manufacturing</span>
 </div>
 
 <!--
@@ -88,30 +88,29 @@ LINE THAT LANDS:
 
 ---
 
-# A 40-year duel
+# Synopsys, Cadence, and Siemens EDA
 
 <div class="grid grid-cols-2 gap-8 mt-6">
   <div class="border-2 border-gray-400 rounded-lg p-4">
     <div class="text-2xl font-bold">SYNOPSYS</div>
-    <div class="text-sm opacity-60 mb-3">est. 1986 — invented logic synthesis</div>
+<div class="text-sm opacity-60 mb-3">founded 1986 · early leader in logic synthesis</div>
     <div class="text-sm leading-relaxed">
-      The <b>compiler</b> company · digital front-end<br>
-      #2 chip-IP vendor on Earth (after Arm)<br>
-      Just swallowed Ansys — <b>$34.9B</b>, biggest deal in EDA history
+        Strengths: logic synthesis, digital design, and semiconductor IP<br>
+        Acquired Ansys for <b>$34.9B</b> in 2025
     </div>
   </div>
   <div class="border-2 border-gray-400 rounded-lg p-4">
     <div class="text-2xl font-bold">CADENCE</div>
-    <div class="text-sm opacity-60 mb-3">est. 1988 — owns analog & custom</div>
+<div class="text-sm opacity-60 mb-3">founded 1988 · strong in analog and custom design</div>
     <div class="text-sm leading-relaxed">
-      The <b>craftsman's</b> company · Virtuoso<br>
-      Palladium emulators: room-sized machines that <i>pretend to be your chip</i> — up to <b>48B gates</b>
+        Strengths: Virtuoso and hardware emulation<br>
+        Palladium emulators run pre-silicon designs at up to <b>48B gates</b>
     </div>
   </div>
 </div>
 
 <div class="border border-gray-400 rounded-lg p-3 mt-6 text-sm opacity-80">
-  <b>SIEMENS EDA</b> — the quiet third (~13%). Was Mentor Graphics, bought for $4.5B in 2017. Crown jewel: <b>Calibre</b> — the final sign-off check nearly every advanced chip passes, whoever's tools designed it.
+    <b>SIEMENS EDA</b> has roughly 13% market share. Its Calibre product is widely used for physical verification and sign-off.
 </div>
 
 <!--
@@ -135,34 +134,34 @@ LINE THAT LANDS:
 
 ---
 
-# The tollbooth
+# A $21B software market supports $792B in chip sales
 
-<div class="text-center mt-4 text-lg">
-  <b>$21B</b> of software gates <b>$792B</b> of silicon — <span class="opacity-60">under 3% of the industry's value, 100% of its existence</span>
+<div class="text-center mt-2 text-lg">
+  EDA revenue was about <b>$21B</b> in 2025, versus <b>$792B</b> in semiconductor sales.
 </div>
 
-<div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
+<div class="border-2 border-gray-400 rounded-lg p-3 mt-4">
   <div class="text-sm font-bold mb-1">SYNOPSYS</div>
   <div class="grid grid-cols-5 gap-4 text-center">
-    <div><div class="text-3xl font-bold">$7.1 B</div><div class="text-sm opacity-60">revenue FY25</div></div>
-    <div><div class="text-3xl font-bold">~77%</div><div class="text-sm opacity-60">gross margin</div></div>
-    <div><div class="text-3xl font-bold">~31%</div><div class="text-sm opacity-60">market share</div></div>
-    <div><div class="text-xl font-bold leading-tight mt-2">the industry's compiler — and its IP shop</div></div>
-    <div><div class="text-3xl font-bold">~15 yrs</div><div class="text-sm opacity-60">to replace</div></div>
+    <div><div class="text-2xl font-bold">$7.1 B</div><div class="text-sm opacity-60">revenue FY25</div></div>
+    <div><div class="text-2xl font-bold">~77%</div><div class="text-sm opacity-60">gross margin</div></div>
+    <div><div class="text-2xl font-bold">~31%</div><div class="text-sm opacity-60">market share</div></div>
+<div><div class="text-lg font-bold leading-tight mt-1">synthesis, digital design, and IP</div></div>
+    <div><div class="text-2xl font-bold">~15 yrs</div><div class="text-sm opacity-60">to replace</div></div>
   </div>
-  <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
+  <div class="text-xs opacity-40 text-right mt-1">as of Q2 2026</div>
 </div>
 
-<div class="border-2 border-gray-400 rounded-lg p-4 mt-4">
+<div class="border-2 border-gray-400 rounded-lg p-3 mt-3">
   <div class="text-sm font-bold mb-1">CADENCE</div>
   <div class="grid grid-cols-5 gap-4 text-center">
-    <div><div class="text-3xl font-bold">$5.3 B</div><div class="text-sm opacity-60">revenue FY25</div></div>
-    <div><div class="text-3xl font-bold">~86%</div><div class="text-sm opacity-60">gross margin</div></div>
-    <div><div class="text-3xl font-bold">~30%</div><div class="text-sm opacity-60">market share</div></div>
-    <div><div class="text-xl font-bold leading-tight mt-2">analog crown + machines that fake your chip</div></div>
-    <div><div class="text-3xl font-bold">~15 yrs</div><div class="text-sm opacity-60">to replace</div></div>
+    <div><div class="text-2xl font-bold">$5.3 B</div><div class="text-sm opacity-60">revenue FY25</div></div>
+    <div><div class="text-2xl font-bold">~86%</div><div class="text-sm opacity-60">gross margin</div></div>
+    <div><div class="text-2xl font-bold">~30%</div><div class="text-sm opacity-60">market share</div></div>
+<div><div class="text-lg font-bold leading-tight mt-1">analog/custom design and emulation</div></div>
+    <div><div class="text-2xl font-bold">~15 yrs</div><div class="text-sm opacity-60">to replace</div></div>
   </div>
-  <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
+  <div class="text-xs opacity-40 text-right mt-1">as of Q2 2026</div>
 </div>
 
 <!--
@@ -186,11 +185,11 @@ LINE THAT LANDS:
 layout: center
 ---
 
-# Chokepoint #1
+# Limited substitutes: leading-edge EDA
 
 ![chokepoint board — first stamp earned](/diagrams/rendered/board-1.svg)
 
-<div class="text-xl mt-6 text-center"><b>SYNOPSYS + CADENCE</b> — no chip exists without their software.</div>
+<div class="text-xl mt-6 text-center"><b>Synopsys and Cadence</b> dominate the certified toolchains used for leading-edge chip design.</div>
 
 <!--
 BEATS:
@@ -205,16 +204,16 @@ LINE THAT LANDS:
 
 ---
 
-# Software, weaponized
+# EDA export controls
 
 <div class="mt-8 flex flex-col gap-4 text-lg">
-  <div class="flex gap-4 items-baseline"><div class="w-40 font-bold shrink-0">Aug 2022</div><div>US bans design software for a transistor China <i>couldn't build yet</i> — a pre-emptive lock on 3nm</div></div>
-  <div class="flex gap-4 items-baseline"><div class="w-40 font-bold shrink-0">May 2025</div><div>One letter from Commerce switches off essentially <b>all</b> EDA sales to China</div></div>
-  <div class="flex gap-4 items-baseline"><div class="w-40 font-bold shrink-0">July 2, 2025</div><div>Switched back on — traded for <b>rare earths</b>. Total episode: ~6 weeks</div></div>
+<div class="flex gap-4 items-baseline"><div class="w-40 font-bold shrink-0">Aug 2022</div><div>US restricts EDA software designed for GAAFET development</div></div>
+<div class="flex gap-4 items-baseline"><div class="w-40 font-bold shrink-0">May 2025</div><div>Commerce imposes license requirements on most EDA sales to China</div></div>
+<div class="flex gap-4 items-baseline"><div class="w-40 font-bold shrink-0">July 2, 2025</div><div>Restrictions end under a framework covering rare-earth exports; duration about six weeks</div></div>
 </div>
 
 <div class="text-sm opacity-60 mt-10">
-Remember this lever. When we reach the chip war, it gets pulled again.
+The final section returns to EDA controls as part of US-China semiconductor policy.
 </div>
 
 <!--

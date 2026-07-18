@@ -19,7 +19,7 @@ sources: research/packaging.md
 
 # The bottleneck moved into the package
 
-<div class="text-xl opacity-70 mt-2">Act V — Memory & The Assembly · the back end</div>
+<div class="text-xl opacity-70 mt-2">Part 5 · Memory and packaging · back-end assembly</div>
 
 <div class="grid grid-cols-2 gap-8 mt-8 items-center">
 <div>
@@ -28,9 +28,8 @@ sources: research/packaging.md
 
 </div>
 <div class="text-2xl leading-relaxed">
-For two years<br>
-you could not buy a GPU.<br>
-<span class="opacity-60 text-lg">And it wasn't for lack of wafers.</span>
+During the 2023–25 shortage, TSMC had GPU wafers<br>
+but too little CoWoS capacity to assemble them.
 </div>
 </div>
 
@@ -64,12 +63,12 @@ It's the shortage of our <b>CoWoS</b> capacity."
 <div class="text-sm opacity-60 mt-2">packaging offshored first — a converted rubber-shoe factory in Kowloon</div>
 </div>
 <div>
-<div class="text-4xl font-bold">the "dumb" step</div>
-<div class="text-sm opacity-60 mt-2">glue the die down, wire-bond, encase in epoxy — the industry's low-status bin</div>
+<div class="text-4xl font-bold">conventional packaging</div>
+<div class="text-sm opacity-60 mt-2">die attach, wire bonding, and epoxy encapsulation; historically treated as low-value assembly</div>
 </div>
 <div>
 <div class="text-4xl font-bold">near 7nm</div>
-<div class="text-sm opacity-60 mt-2">what a CoWoS packaging wafer reportedly prices at today — like a leading-edge logic wafer</div>
+<div class="text-sm opacity-60 mt-2">reported CoWoS packaging-wafer price, comparable with a 7nm logic wafer</div>
 </div>
 </div>
 
@@ -91,26 +90,26 @@ LINE THAT LANDS:
 
 ---
 
-# Why the die had to break apart — reason one: the wall
+# Reticle limits forced Nvidia to use multiple dies
 
 <div class="grid grid-cols-3 gap-6 mt-8 text-center">
 <div>
 <div class="text-5xl font-bold">858 mm²</div>
-<div class="text-sm opacity-60 mt-2">26 × 33 mm — the biggest die any scanner can print in one shot</div>
+<div class="text-sm opacity-60 mt-2">maximum field for one standard EUV exposure</div>
 </div>
 <div>
 <div class="text-5xl font-bold">814 mm²</div>
-<div class="text-sm opacity-60 mt-2">Nvidia H100 — 95% of the way to the glass</div>
+<div class="text-sm opacity-60 mt-2">H100 die, 95% of the reticle field</div>
 </div>
 <div>
 <div class="text-5xl font-bold">2 dies</div>
-<div class="text-sm opacity-60 mt-2">Blackwell's answer — welded at 10 TB/s, 208B transistors</div>
+<div class="text-sm opacity-60 mt-2">Blackwell uses two dies linked at 10 TB/s; 208B transistors total</div>
 </div>
 </div>
 
 <div class="border-2 border-amber-500 rounded-lg p-4 mt-10 text-center">
-<div class="font-bold">Remember "the die is as big as physics allows"? This is where it pays off.</div>
-<div class="text-sm opacity-60 mt-1">High-NA EUV cuts the field in half again — 429 mm². Multi-die isn't a choice. It's geometry.</div>
+<div class="font-bold">H100 nearly filled a standard reticle field. Blackwell crossed the limit by using two dies.</div>
+<div class="text-sm opacity-60 mt-1">High-NA EUV halves the field to 429 mm², increasing the need for multi-die designs.</div>
 </div>
 
 <!--
@@ -130,28 +129,28 @@ LINE THAT LANDS:
 
 ---
 
-# Three more reasons the monolith died
+# Smaller dies also improve yield and cost
 
 <div class="grid grid-cols-3 gap-6 mt-8">
 <div class="border-2 border-gray-400 rounded-lg p-5">
 <div class="text-sm opacity-60">YIELD</div>
-<div class="text-2xl font-bold mt-1">Don't bet on one big die</div>
-<div class="text-sm opacity-70 mt-3">4 small dies cost <b>&lt;60%</b> of one big one — AMD's 41% cost cut. Throw away the bad brick, not the whole block.</div>
+<div class="text-2xl font-bold mt-1">Four smaller dies can cost less</div>
+<div class="text-sm opacity-70 mt-3">AMD estimated four small dies at <b>&lt;60%</b> of one monolith; a bad die no longer scraps the whole device.</div>
 </div>
 <div class="border-2 border-gray-400 rounded-lg p-5">
 <div class="text-sm opacity-60">MEMORY</div>
 <div class="text-2xl font-bold mt-1">HBM has to sit millimeters away</div>
-<div class="text-sm opacity-70 mt-3"><b>~1,700</b> signal lines per stack. A PCB can't route it — only a silicon interposer can.</div>
+<div class="text-sm opacity-70 mt-3"><b>~1,700</b> signal lines per stack. A conventional PCB cannot route that interface; this package uses a silicon interposer.</div>
 </div>
 <div class="border-2 border-gray-400 rounded-lg p-5">
 <div class="text-sm opacity-60">COST</div>
-<div class="text-2xl font-bold mt-1">Only put on N2 what needs N2</div>
+<div class="text-2xl font-bold mt-1">Use advanced nodes only for compute</div>
 <div class="text-sm opacity-70 mt-3">Compute on the newest node; I/O and cache on mature ones. Mix nodes in one package.</div>
 </div>
 </div>
 
 <div class="text-center text-lg opacity-80 mt-8">
-"Moore's Law didn't die — it moved into the package."
+Packaging now carries more of each generation's density and performance gains.
 </div>
 
 <!--
@@ -171,7 +170,7 @@ LINE THAT LANDS:
 
 ---
 
-# CoWoS — the acronym that gated the boom
+# CoWoS capacity grew about 10×
 
 <div class="grid grid-cols-4 gap-3 mt-8 text-center">
 <div><div class="text-3xl font-bold">~13–15k</div><div class="text-xs opacity-60 mt-1">wafers/mo · end-2023</div></div>
@@ -182,16 +181,16 @@ LINE THAT LANDS:
 
 <div class="text-center mt-8">
 <div class="text-6xl font-bold">≈ 10×</div>
-<div class="opacity-70 mt-2">in three years — and it was <i>still</i> sold out</div>
+<div class="opacity-70 mt-2">in three years; capacity remained sold out</div>
 </div>
 
 <div class="text-sm opacity-60 mt-8 text-center">
-<b>C</b>hip <b>o</b>n <b>W</b>afer <b>o</b>n <b>S</b>ubstrate: dies on a silicon interposer, on an organic substrate. Niche since 2013 — until AI.
+<b>C</b>hip <b>o</b>n <b>W</b>afer <b>o</b>n <b>S</b>ubstrate: dies and HBM on a silicon interposer mounted to an organic substrate. In production since 2013; demand accelerated with AI.
 </div>
 
 <!--
 BEATS:
-- Say what the acronym is, plainly: Chip-on-Wafer-on-Substrate. The dies and the HBM stacks are mounted on a silicon interposer (the fine-wiring layer from the last slide), which sits on an organic substrate. It's 2.5D packaging. TSMC first shipped it with Xilinx FPGAs, volume in 2013 — it sat as an expensive niche for a DECADE before AI made it the most fought-over capacity on Earth.
+- Say what the acronym is, plainly: Chip-on-Wafer-on-Substrate. The dies and HBM stacks sit on a silicon interposer, which sits on an organic substrate. TSMC first shipped CoWoS in volume with Xilinx FPGAs in 2013; AI demand turned it from a niche process into constrained capacity.
 - Walk the capacity ramp as the tell of the whole boom: ~13–15k wafers/month end-2023, doubling to ~35–40k, doubling again to ~75–80k, targeting ~120–140k by end-2026 — roughly 10× in three years. TSMC threw everything at it.
 - The gut-punch: even a 10× build was still sold out. Demand ran ahead the whole time — the supply-demand gap only narrowed from ~20% toward ~10% by end-2026. This one line of capacity is why the boom felt supply-starved for two straight years.
 - Honesty hedge (voice it): "CoWoS gated ALL AI supply" is directionally right for 2023–25, but HBM supply and later substrates were co-bottlenecks at various moments. Safer: CoWoS was the binding constraint most of the time.
@@ -207,23 +206,23 @@ LINE THAT LANDS:
 
 ---
 
-# Chiplets & the copper handshake
+# Chiplet interconnects and hybrid bonding
 
 <div class="grid grid-cols-2 gap-8 mt-6">
 <div>
 <div class="text-sm opacity-60">CoWoS-L → ~6× reticle</div>
-<div class="text-lg mt-1">Blackwell = CoWoS-L. Nvidia locked up <b>&gt;70%</b> of 2025 CoWoS-L capacity — and its 2024 slip was a <i>packaging</i> problem, not a die problem.</div>
+<div class="text-lg mt-1">Blackwell uses CoWoS-L. Nvidia reserved <b>&gt;70%</b> of 2025 CoWoS-L capacity. A packaging issue caused its 2024 delay.</div>
 </div>
 <div>
-<div class="text-sm opacity-60">HYBRID BONDING — TSMC SoIC</div>
-<div class="text-lg mt-1">Copper fused to copper, no solder. <b>9µm → 6µm</b> pitch today, 4.5µm by ~2029. AMD's MI300 stacks compute on I/O, <i>then</i> mounts it on CoWoS — "3.5D."</div>
+<div class="text-sm opacity-60">TSMC SoIC HYBRID BONDING</div>
+<div class="text-lg mt-1">Copper pads bond directly, without solder. Production pitch moved from <b>9µm to 6µm</b>; TSMC targets 4.5µm by ~2029. AMD's MI300 stacks compute on I/O before mounting it on CoWoS.</div>
 </div>
 </div>
 
 <div class="grid grid-cols-3 gap-4 mt-8 text-center text-sm">
-<div class="border rounded p-3"><b>UCIe, 2022</b><div class="opacity-60 mt-1">Intel, AMD, Arm, TSMC, Samsung + more — the "PCIe of the package"</div></div>
-<div class="border rounded p-3"><b>3D V-Cache, 2022</b><div class="opacity-60 mt-1">first hybrid-bonded chip normal people could buy</div></div>
-<div class="border rounded p-3"><b>HBM4 base die</b><div class="opacity-60 mt-1">now made by TSMC on 12nm logic — memory/foundry line dissolving</div></div>
+<div class="border rounded p-3"><b>UCIe, 2022</b><div class="opacity-60 mt-1">Intel, AMD, Arm, TSMC, Samsung, and others standardized die-to-die links</div></div>
+<div class="border rounded p-3"><b>3D V-Cache, 2022</b><div class="opacity-60 mt-1">first mass-market consumer CPU with hybrid bonding</div></div>
+<div class="border rounded p-3"><b>HBM4 base die</b><div class="opacity-60 mt-1">TSMC makes a 12nm logic base die for SK hynix</div></div>
 </div>
 
 <!--
@@ -246,23 +245,23 @@ LINE THAT LANDS:
 
 ---
 
-# The back end you never see
+# Packaging, test, and substrates
 
 <div class="grid grid-cols-3 gap-5 mt-6">
 <div class="border-2 border-gray-400 rounded-lg p-4">
-<div class="text-sm opacity-60">OSATs — the assembly bin</div>
+<div class="text-sm opacity-60">OUTSOURCED ASSEMBLY AND TEST</div>
 <div class="text-lg font-bold mt-1">ASE · Amkor · JCET</div>
-<div class="text-sm opacity-70 mt-2">Gross margins <b>~14–18%</b>. Against TSMC's <b>59.9%</b>. The value stayed at the foundry.</div>
+<div class="text-sm opacity-70 mt-2">ASE and Amkor gross margins: <b>~14–18%</b>, versus TSMC at <b>59.9%</b>.</div>
 </div>
 <div class="border-2 border-gray-400 rounded-lg p-4">
-<div class="text-sm opacity-60">TEST — the duopoly nobody noticed</div>
+<div class="text-sm opacity-60">AUTOMATED TEST EQUIPMENT</div>
 <div class="text-lg font-bold mt-1">Advantest · Teradyne</div>
 <div class="text-sm opacity-70 mt-2"><b>~80%+</b> of the market. A phone chip tests in &lt;1 min; a Blackwell package sits on the tester <b>20+ min</b>.</div>
 </div>
 <div class="border-2 border-gray-400 rounded-lg p-4">
-<div class="text-sm opacity-60">SUBSTRATE — the MSG company</div>
+<div class="text-sm opacity-60">PACKAGE SUBSTRATE</div>
 <div class="text-lg font-bold mt-1">Ajinomoto ABF</div>
-<div class="text-sm opacity-70 mt-2"><b>&gt;95%</b> of advanced packages insulated by film from the company that invented MSG — at <b>&gt;50%</b> margins.</div>
+<div class="text-sm opacity-70 mt-2">Ajinomoto's ABF insulates <b>&gt;95%</b> of advanced packages; reported margins exceed <b>50%</b>.</div>
 </div>
 </div>
 
@@ -288,7 +287,7 @@ LINE THAT LANDS:
 
 ---
 
-# Stamp #7 — the Board completes
+# Chokepoint #7: TSMC advanced packaging
 
 <div class="text-center mt-4">
 
@@ -297,8 +296,8 @@ LINE THAT LANDS:
 </div>
 
 <div class="text-center mt-6">
-<div class="text-3xl font-bold">TSMC is on this board <i>twice</i>.</div>
-<div class="text-lg opacity-70 mt-3">Once for the wafers. Once for the package. Two different monopolies, one company.</div>
+<div class="text-3xl font-bold">TSMC leads both leading-edge foundry and CoWoS packaging.</div>
+<div class="text-lg opacity-70 mt-3">The company fabricates the logic dies and assembles the package.</div>
 </div>
 
 <!--
@@ -319,7 +318,7 @@ LINE THAT LANDS:
 
 ---
 
-# The chip is done
+# A finished accelerator package
 
 <div class="grid grid-cols-2 gap-8 mt-4 items-center">
 <div>
@@ -327,17 +326,17 @@ LINE THAT LANDS:
 ![journey bar — package complete, chip finished](/diagrams/rendered/journey-6.svg)
 
 <div class="text-lg mt-4 opacity-80">
-The object we held up in minute one — two dies, eight memory stacks, an interposer, a substrate — is, at last, <b>real</b>.
+The package combines two GPU dies, eight HBM stacks, a silicon interposer, and an organic substrate.
 </div>
 
 </div>
 <div>
 
-<div class="text-sm opacity-60 mb-2">THE MONEY BAR SO FAR · one GB300-class GPU</div>
+<div class="text-sm opacity-60 mb-2">ESTIMATED VALUE ALLOCATION · one GB300-class GPU</div>
 <div class="flex flex-col gap-1 text-xs font-bold text-center">
   <div class="flex w-full h-10 rounded overflow-hidden">
     <div class="bg-green-600 flex items-center justify-center" style="width:75%">Nvidia ~75%</div>
-    <div class="bg-gray-500 flex items-center justify-center" style="width:25%">the ~25%, now named</div>
+    <div class="bg-gray-500 flex items-center justify-center" style="width:25%">estimated build cost ~25%</div>
   </div>
   <div class="flex w-full h-8 rounded overflow-hidden mt-1 opacity-90">
     <div class="bg-blue-700 flex items-center justify-center" style="width:26%">TSMC dies</div>
@@ -347,7 +346,7 @@ The object we held up in minute one — two dies, eight memory stacks, an interp
     <div class="bg-teal-700 flex items-center justify-center" style="width:10%">OSAT + test</div>
   </div>
 </div>
-<div class="text-xs opacity-50 mt-3">Shape, not scale — analyst estimates, no list prices exist. The exact waterfall totals in the finale.</div>
+<div class="text-xs opacity-50 mt-3">Illustrative allocation based on analyst estimates. Nvidia does not publish list prices or a GB300 bill of materials.</div>
 
 </div>
 </div>

@@ -17,14 +17,14 @@ sources: research/fabless-field.md, research/nvidia.md
 -->
 
 
-# The Crowd Design Freed
+# Major fabless chip designers
 
-<div class="text-xl opacity-70 mt-2">Nvidia is not alone at the drawing board. It's just first in line.</div>
+<div class="text-xl opacity-70 mt-2">AMD, Apple, Qualcomm, Broadcom, Marvell, and MediaTek also design chips without owning leading-edge fabs.</div>
 
 ![map — design lit](/diagrams/rendered/map-design.svg)
 
 <div class="text-sm opacity-60 mt-4">
-The design layer is <b>crowded</b>. Hold that word — it's the whole point of this segment.
+Design is distributed across many firms; leading-edge manufacturing is concentrated among three.
 </div>
 
 <!--
@@ -41,37 +41,37 @@ LINE THAT LANDS:
 
 ---
 
-# The field, in one breath
+# Six large fabless designers
 
-<div class="flex flex-col gap-3 mt-4">
+<div class="flex flex-col gap-2 mt-3">
 
-<div class="border-2 border-gray-400 rounded-lg px-5 py-3 grid grid-cols-[110px_1fr_150px] gap-4 items-center">
+<div class="border-2 border-gray-400 rounded-lg px-4 py-2 grid grid-cols-[210px_1fr_170px] gap-3 items-center">
   <div class="text-2xl font-bold">AMD</div>
-  <div class="text-sm leading-tight">The only firm fielding both a full x86 CPU line <b>and</b> a credible Nvidia-class AI GPU — the industry's designated second source. Lisa Su's ~300× turnaround.</div>
+<div class="text-xs leading-tight">x86 CPUs and Instinct AI accelerators; market value rose roughly 300× under Lisa Su from 2014 to mid-2026.</div>
   <div class="text-right"><div class="text-2xl font-bold">$34.6B</div><div class="text-xs opacity-60">FY25 rev · DC +32%</div></div>
 </div>
 
-<div class="border-2 border-blue-400 rounded-lg px-5 py-3 grid grid-cols-[110px_1fr_150px] gap-4 items-center">
+<div class="border-2 border-blue-400 rounded-lg px-4 py-2 grid grid-cols-[210px_1fr_170px] gap-3 items-center">
   <div class="text-2xl font-bold">Apple</div>
-  <div class="text-sm leading-tight">The biggest design force in this story sells <b>zero</b> chips — every die consumed in-house. Anchor tenant of every new node. <span class="opacity-70">IOU → full story lands at <b>TSMC</b>.</span></div>
-  <div class="text-right"><div class="text-2xl font-bold">~25%</div><div class="text-xs opacity-60">of TSMC's revenue</div></div>
+<div class="text-xs leading-tight">A-, M-, and C-series chips for Apple products; a major early customer for TSMC's advanced nodes.</div>
+  <div class="text-right"><div class="text-2xl font-bold">~17%</div><div class="text-xs opacity-60">of TSMC FY2025 revenue, est.</div></div>
 </div>
 
-<div class="border-2 border-gray-400 rounded-lg px-5 py-3 grid grid-cols-[110px_1fr_150px] gap-4 items-center">
+<div class="border-2 border-gray-400 rounded-lg px-4 py-2 grid grid-cols-[210px_1fr_170px] gap-3 items-center">
   <div class="text-2xl font-bold">Qualcomm</div>
-  <div class="text-sm leading-tight">Merchant king of premium Android — and a patent toll booth on nearly every phone on Earth. Gets paid twice: once for the chip, once for the patents.</div>
+<div class="text-xs leading-tight">Snapdragon processors plus cellular-patent licenses generate chip and royalty revenue.</div>
   <div class="text-right"><div class="text-2xl font-bold">$44.3B</div><div class="text-xs opacity-60">FY25 rev</div></div>
 </div>
 
-<div class="border-2 border-gray-400 rounded-lg px-5 py-3 grid grid-cols-[110px_1fr_150px] gap-4 items-center">
+<div class="border-2 border-gray-400 rounded-lg px-4 py-2 grid grid-cols-[210px_1fr_170px] gap-3 items-center">
   <div class="text-2xl font-bold leading-tight">Broadcom<br><span class="text-lg">+ Marvell</span></div>
-  <div class="text-sm leading-tight">The custom-silicon counterweight: they <b>arm every hyperscaler that wants out of Nvidia</b> — Google TPU, Meta MTIA, OpenAI, AWS Trainium — plus the Ethernet that replaces NVLink.</div>
+<div class="text-xs leading-tight">Custom accelerators and networking silicon for Google, Meta, OpenAI, AWS, and other large customers.</div>
   <div class="text-right"><div class="text-2xl font-bold">&gt;$100B</div><div class="text-xs opacity-60">AVGO AI rev, FY27 guided</div></div>
 </div>
 
-<div class="border-2 border-gray-400 rounded-lg px-5 py-3 grid grid-cols-[110px_1fr_150px] gap-4 items-center">
+<div class="border-2 border-gray-400 rounded-lg px-4 py-2 grid grid-cols-[210px_1fr_170px] gap-3 items-center">
   <div class="text-2xl font-bold">MediaTek</div>
-  <div class="text-sm leading-tight">The volume king — roughly one in three phones on Earth — long dismissed as "cheap," now co-designing Google's TPU and beating most rivals to TSMC 2nm.</div>
+<div class="text-xs leading-tight">Roughly one-third of smartphone application processors; expanding into custom AI silicon and TSMC's 2 nm process.</div>
   <div class="text-right"><div class="text-2xl font-bold">~38%</div><div class="text-xs opacity-60">of smartphone APs</div></div>
 </div>
 
@@ -139,33 +139,33 @@ CLOSER OF THE MONTAGE — snap back to the thesis:
 
 ---
 
-# Where the money actually sits
+# Illustrative economics of a GB300-class GPU
 
 <div class="text-sm opacity-70 mb-3">One GB300-class accelerator · ~$50k street price per GPU <span class="opacity-50">(analyst estimate — Nvidia publishes no list price)</span></div>
 
 <div class="w-full border-2 border-gray-400 rounded-lg overflow-hidden mt-2">
   <div class="flex h-16 text-white text-sm font-bold">
-    <div class="bg-green-700 flex items-center justify-center" style="width:75%">DESIGN LAYER — ~$37k <span class="opacity-70 font-normal ml-1">(~75% gross margin)</span></div>
-    <div class="bg-gray-500 flex items-center justify-center" style="width:25%">~$13k → downstream</div>
+<div class="bg-green-700 flex items-center justify-center" style="width:75%">Nvidia gross profit at current company margin: ~$37k</div>
+<div class="bg-gray-500 flex items-center justify-center" style="width:25%">estimated cost of revenue: ~$13k</div>
   </div>
 </div>
 
 <div class="grid grid-cols-2 gap-8 mt-6 text-sm">
 <div>
 
-**Tolled so far — the design layer**
-- Nvidia + the fabless crowd, gross margin **~75%** ·<br>EDA + Arm ride along as thin **amortized tolls** (~90%+ margin at the tool layer)
+**Reported economics**
+- Nvidia company gross margin: **~75%**
 
 </div>
 <div>
 
-**Still to be tolled — downstream** <span class="opacity-50">(next acts)</span>
-- 🏭 TSMC (the fab) · 🧠 HBM (memory) · 📦 CoWoS (packaging)
+**Major downstream suppliers**
+- TSMC manufacturing · HBM memory · CoWoS packaging
 
 </div>
 </div>
 
-<div class="text-xs opacity-40 mt-6">Values are analyst estimates; ranges only; the design/downstream split is illustrative. Marked ~ throughout.</div>
+<div class="text-xs opacity-40 mt-6">This is not a bill of materials. Nvidia does not disclose per-GPU supplier costs, and EDA and Arm costs are not public per-unit line items.</div>
 
 <!--
 BEATS:
@@ -185,15 +185,15 @@ LINE THAT LANDS:
 layout: center
 ---
 
-# A perfect blueprint. Zero factories.
+# Fabless designers depend on outside manufacturing
 
 <div class="text-lg opacity-80 mt-6 leading-relaxed max-w-2xl">
-Six designers. One file format. Not one of them can build what they just drew.
+These companies send completed chip layouts to foundries for manufacturing.
 </div>
 
 <div class="text-base opacity-60 mt-8">
-Every blueprint in this segment ends the same way — as a file, on a flight,<br>
-<b>~8,000 miles to a single island.</b>
+For leading-edge production, many of these designs<br>
+go to TSMC in Taiwan.
 </div>
 
 <!--

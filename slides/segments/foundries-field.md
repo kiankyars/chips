@@ -17,9 +17,9 @@ sources: research/foundries-field.md, research/foundations.md
 -->
 
 
-# The Rest of the Grid
+# Other leading-edge foundries
 
-<div class="text-xl opacity-70 mt-2">Everyone who tried to be TSMC — and why almost nobody is</div>
+<div class="text-xl opacity-70 mt-2">Samsung, Intel, and state-backed challengers</div>
 
 ![map manufacture](/diagrams/rendered/map-manufacture.svg){class="absolute bottom-4 right-4 w-40 opacity-80"}
 
@@ -36,7 +36,7 @@ LINE THAT LANDS:
 
 ---
 
-# The starting grid shrank to three
+# Leading-edge manufacturers: about 25 in 2001, three today
 
 <div class="grid grid-cols-9 gap-1 items-end mt-8 h-56 text-center text-xs">
   <div class="flex flex-col justify-end"><div class="bg-gray-400 rounded-t" style="height:100%"></div><div class="mt-2 font-bold">~25</div><div class="opacity-60">130nm<br>2001</div></div>
@@ -51,7 +51,7 @@ LINE THAT LANDS:
 </div>
 
 <div class="text-sm opacity-60 mt-6 text-center">
-Same curve as Act I — inverted. Every time the fab-cost exponential doubled, the grid halved.
+As leading-edge fab costs rose, the number of manufacturers fell from about 25 to three.
 </div>
 
 <!--
@@ -74,28 +74,28 @@ LINE THAT LANDS:
 
 ---
 
-# Three foundries stayed. GlobalFoundries walked.
+# Samsung persists; GlobalFoundries exited; states fund new entrants
 
 <div class="grid grid-cols-2 gap-4 mt-4 text-sm">
 
 <div class="border-2 border-gray-400 rounded-lg p-4">
-<div class="text-lg font-bold">Samsung Foundry — #2, and bleeding for it</div>
-<div class="mt-2 opacity-80">Beat TSMC to the GAA transistor by ~3 years (first 3nm GAA, 2022) — and lost the node anyway (~20% yield; Qualcomm walked). ~$10B+ of losses over three years while TSMC ran a 59.9% margin. Kept alive by memory profits upstairs + a $16.5B Tesla anchor deal.</div>
+<div class="text-lg font-bold">Samsung Foundry — #2 by revenue</div>
+<div class="mt-2 opacity-80">Samsung introduced 3 nm GAA in 2022, about three years before TSMC. Reported yield near 20% led Qualcomm to move designs elsewhere. The foundry business lost an estimated $10B+ over three years; memory profits and a $16.5B Tesla order fund continued investment.</div>
 </div>
 
 <div class="border-2 border-gray-400 rounded-lg p-4">
-<div class="text-lg font-bold">GlobalFoundries — the one who quit</div>
-<div class="mt-2 opacity-80">Stopped 7nm cold in 2018 — a business call, not a failure. Retreated to mature/specialty nodes. Result: small, steady, <i>profitable</i> (~$6.8B rev, ~25% margin). In 2015, IBM <b>paid GF ~$1.5B</b> to take its chip factories away.</div>
+<div class="text-lg font-bold">GlobalFoundries — exited the leading edge</div>
+<div class="mt-2 opacity-80">GlobalFoundries canceled its 7 nm program in 2018 and focused on mature and specialty nodes. It reported $6.8B revenue and a 24.9% gross margin in FY2025. IBM paid the company about $1.5B to take over its fabs in 2015.</div>
 </div>
 
 <div class="border-2 border-gray-400 rounded-lg p-4">
-<div class="text-lg font-bold">Rapidus — the government moonshot</div>
-<div class="mt-2 opacity-80">Japan's 2nm bet. Private backers put in a symbolic ~$50M; Tokyo has put in ~¥2.35T (~$16B). Pilot line live 2025, mass production targeted 2027. Has never sold a chip.</div>
+<div class="text-lg font-bold">Rapidus — a state-backed 2 nm entrant</div>
+<div class="mt-2 opacity-80">Private backers invested about $50M; Japan has committed roughly ¥2.35T (~$16B). Its pilot line started in 2025, with mass production targeted for 2027. It has not announced a volume customer.</div>
 </div>
 
 <div class="border-2 border-dashed border-gray-500 rounded-lg p-4 opacity-90">
-<div class="text-lg font-bold">SMIC — IOU 📌</div>
-<div class="mt-2 opacity-80">China's champion, #3 at 5.1%. Built a 7nm phone chip with <i>no EUV</i> (2023 Huawei Mate 60). Entire record year ≈ four weeks of TSMC. <b>China gets its own act</b> — we come back to SMIC in the chip war.</div>
+<div class="text-lg font-bold">SMIC — China's largest foundry</div>
+<div class="mt-2 opacity-80">SMIC holds about 5.1% of foundry revenue. It produced a 7 nm-class chip without EUV for Huawei's Mate 60 in 2023. FY2025 revenue was $9.3B, versus TSMC's $122B.</div>
 </div>
 
 </div>
@@ -122,27 +122,21 @@ LINE THAT LANDS:
 
 ---
 
-# The toll: the manufacturing slice
+# Foundry cost is embedded in Nvidia's cost of revenue
 
-<div class="mt-6">
-<div class="text-sm opacity-60 mb-2">One GB300-class accelerator — where the money goes so far <span class="opacity-70">(all figures analyst estimates, ~)</span></div>
-
-<div class="flex w-full h-16 rounded-lg overflow-hidden text-xs font-bold text-white">
-  <div class="bg-emerald-700 flex items-center justify-center" style="width:60%">Nvidia design + margin</div>
-  <div class="bg-sky-700 flex items-center justify-center" style="width:4%">EDA</div>
-  <div class="bg-amber-600 flex items-center justify-center" style="width:14%">Manufacturing</div>
-  <div class="bg-gray-400 flex items-center justify-center" style="width:22%">memory + packaging →</div>
+<div class="grid grid-cols-2 gap-10 mt-10 text-center">
+<div class="border-2 border-gray-400 rounded-lg p-6">
+<div class="text-5xl font-bold">~$18k–$30k</div>
+<div class="text-sm opacity-60 mt-2">reported price per leading-edge 300 mm wafer</div>
 </div>
-<div class="flex w-full text-xs mt-2 opacity-70">
-  <div style="width:60%">Act II · ~75% gross margin</div>
-  <div style="width:4%"></div>
-  <div style="width:14%" class="font-bold opacity-100">◆ this act</div>
-  <div style="width:22%">Acts V–VI, still ahead</div>
+<div class="border-2 border-gray-400 rounded-lg p-6">
+<div class="text-5xl font-bold">59.9%</div>
+<div class="text-sm opacity-60 mt-2">TSMC gross margin in FY2025</div>
 </div>
 </div>
 
-<div class="text-sm opacity-70 mt-8">
-The <b>foundry's cut</b>: a leading-edge 300mm wafer reportedly runs <b>~$18k–$30k</b> (5nm → 2nm) — and TSMC keeps <b>~60 cents of every dollar</b> as gross margin. The smallest slice of the bill. Made by the fewest hands on Earth.
+<div class="text-lg opacity-80 mt-10 text-center">
+Nvidia does not disclose its foundry cost per GPU. Only three firms currently produce leading-edge logic at commercial scale.
 </div>
 
 <!--
@@ -164,12 +158,12 @@ LINE THAT LANDS:
 layout: center
 ---
 
-# One thing left
+# The fabs depend on a separate equipment industry
 
 <div class="text-2xl mt-8 leading-relaxed max-w-3xl">
-TSMC's fabs are cathedrals.<br>
-But TSMC doesn't build the machines inside them.<br>
-<span class="opacity-60">Nobody you've heard of does.</span>
+TSMC runs the fabs.<br>
+ASML, Applied Materials, Lam Research, and KLA<br>
+<span class="opacity-60">build the key equipment inside them.</span>
 </div>
 
 <!--

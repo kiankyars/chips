@@ -17,9 +17,9 @@ sources: research/materials.md
 -->
 
 
-# The Japanese Basement
+# Japan's share of semiconductor materials
 
-<div class="text-xl opacity-70 mt-3">Fourth trip down the flow strip — this time, what it eats</div>
+<div class="text-xl opacity-70 mt-3">Consumables used by each fab process step</div>
 
 ![map: equipment lit](/diagrams/rendered/map-equipment.svg)
 
@@ -49,11 +49,11 @@ LINE THAT LANDS:
 </div>
 <div class="border-l-4 border-gray-400 pl-3">
 <div class="font-bold">EXPOSE → mask blanks</div>
-<div class="opacity-60">Hoya + AGC ~93% of every EUV blank</div>
+<div class="opacity-60">Hoya + AGC supply ~93% of EUV mask blanks</div>
 </div>
 <div class="border-l-4 border-gray-400 pl-3">
-<div class="font-bold">everywhere → gases</div>
-<div class="opacity-60">neon in the laser, HF to etch & clean</div>
+<div class="font-bold">DUV LITHOGRAPHY → laser gases</div>
+<div class="opacity-60">neon blends for DUV light sources; HF for etch and cleaning</div>
 </div>
 <div class="border-l-4 border-gray-400 pl-3">
 <div class="font-bold">POLISH → slurry + pad</div>
@@ -62,7 +62,7 @@ LINE THAT LANDS:
 </div>
 
 <div class="text-sm opacity-70 mt-6 text-center">
-Upstream of the whole loop: the wafer itself — Shin-Etsu / SUMCO silicon, pulled from a quartz crucible that traces back to <b>one town in North Carolina</b>.
+Single-crystal silicon is grown in fused-quartz crucibles. <b>Spruce Pine, North Carolina</b>, supplies much of the high-purity quartz used for those crucibles.
 </div>
 
 <!--
@@ -85,7 +85,7 @@ LINE THAT LANDS:
 
 ---
 
-# The weapon that leaks
+# Supply shocks trigger substitution
 
 <div class="grid grid-cols-3 gap-6 mt-8">
 
@@ -96,17 +96,17 @@ LINE THAT LANDS:
 
 <div class="border-2 border-gray-400 rounded-lg p-4">
 <div class="text-lg font-bold">2022 · Neon / Ukraine</div>
-<div class="text-sm opacity-70 mt-2">~half the world's chip-laser neon came from two firms — in <b>Mariupol</b> and <b>Odesa</b>. Both stop in weeks. China spot price runs <b>~4×</b>.</div>
+<div class="text-sm opacity-70 mt-2">Before Russia's invasion, two Ukrainian firms supplied about half of chip-laser neon. Both halted production; Chinese spot prices rose roughly <b>4×</b>.</div>
 </div>
 
 <div class="border-2 border-gray-400 rounded-lg p-4">
 <div class="text-lg font-bold">2024 · Spruce Pine, NC</div>
-<div class="text-sm opacity-70 mt-2">One Appalachian town (pop. a few thousand) supplies <b>~70–90%</b> of the world's high-purity quartz. A hurricane shut it down — and TSMC checked its inventory.</div>
+<div class="text-sm opacity-70 mt-2">The Spruce Pine area supplies an estimated <b>70–90%</b> of high-purity quartz. Hurricane Helene halted both mines for roughly two weeks; chip production continued from stockpiles.</div>
 </div>
 
 </div>
 
-<div class="text-center text-xl opacity-80 mt-8">The deeper you go, the more Japanese it gets — and the tinier the market gating the trillion-dollar one.</div>
+<div class="text-center text-xl opacity-80 mt-8">Critical materials often come from concentrated markets, but the 2019 and 2022 shocks also pushed customers to diversify.</div>
 
 <!--
 BEATS:
@@ -129,24 +129,22 @@ LINE THAT LANDS:
 
 ---
 
-# The toll: equipment + materials
+# Equipment and materials are embedded in wafer prices
 
-<div class="mt-6">
-<div class="text-sm opacity-60 mb-2">Running price of one GB300-class accelerator — Act IV's slice</div>
-
-<div class="flex h-16 w-full rounded overflow-hidden border-2 border-gray-400 text-white text-sm font-bold">
-  <div class="bg-gray-700 flex items-center justify-center" style="width:22%">design + IP</div>
-  <div class="bg-gray-500 flex items-center justify-center" style="width:14%">EDA / Arm</div>
-  <div class="bg-blue-700 flex items-center justify-center" style="width:20%">equipment + materials <span class="opacity-80 ml-1">~est.</span></div>
-  <div class="bg-gray-300 flex items-center justify-center text-gray-700" style="width:44%">TSMC · memory · packaging → later acts</div>
+<div class="grid grid-cols-2 gap-10 mt-10 text-center">
+<div class="border-2 border-gray-400 rounded-lg p-6">
+<div class="text-5xl font-bold">~$150</div>
+<div class="text-sm opacity-60 mt-2">blank 300 mm wafer</div>
 </div>
-<div class="text-xs opacity-40 mt-2">bar shape illustrative — equipment/materials enter as an amortized toll, not a line item · as of Q2 2026</div>
+<div class="border-2 border-gray-400 rounded-lg p-6">
+<div class="text-5xl font-bold">~$19,500</div>
+<div class="text-sm opacity-60 mt-2">reported price after 3 nm processing</div>
+</div>
 </div>
 
-<div class="grid grid-cols-3 gap-6 mt-8 text-center">
-<div><div class="text-4xl font-bold">~$150</div><div class="text-sm opacity-60 mt-1">blank 300mm wafer</div></div>
-<div><div class="text-4xl font-bold">~$19,500</div><div class="text-sm opacity-60 mt-1">same disc, processed at 3nm</div></div>
-<div><div class="text-4xl font-bold">$73.2B</div><div class="text-sm opacity-60 mt-1">materials layer, per year</div></div>
+<div class="text-lg opacity-80 mt-10 text-center leading-relaxed">
+The difference includes equipment depreciation, consumables, labor, overhead, and foundry margin.<br>
+No public source allocates those costs per GB300.
 </div>
 
 <!--
@@ -168,13 +166,13 @@ LINE THAT LANDS:
 layout: center
 ---
 
-# Most chips never see any of this
+# Most chips are made on mature process nodes
 
-<div class="text-xl opacity-70 mt-4">Eleven-nines silicon. EUV blanks. Neon from a war zone. Quartz from one town.</div>
+<div class="text-xl opacity-70 mt-4">Mature-node fabs still use ultrapure silicon and process chemicals, but they do not require EUV lithography.</div>
 
 <div class="text-2xl mt-10 leading-relaxed">
-And almost none of the chips in your life<br>
-needed a single gram of it.
+Cars, appliances, and industrial systems<br>
+use large numbers of mature-node chips.
 </div>
 
 <!--
@@ -186,5 +184,5 @@ FACT AMMO:
 - Callback anchors (all already on screen this act): eleven-nines silicon [research/materials §silicon wafers]; EUV mask blanks Hoya+AGC ~93% [research/materials §photomasks & blanks]; neon from Mariupol/Odesa [research/materials §ultra-pure gases]; Spruce Pine ~70–90% HPQ [research/materials §quartz & crucibles].
 - Setup for the interlude ("The Other 90%"): most chips are mature-node/analog — cars use ~1,000+ chips each; a $0.30 part halted global auto production in 2021 (that segment carries the numbers).
 LINE THAT LANDS:
-- "We just built the most expensive object humans make. Now let's meet the 90% of chips that are proud of being cheap."
+- "That completes the leading-edge manufacturing chain. Most chips serve less visible markets and use older processes."
 -->

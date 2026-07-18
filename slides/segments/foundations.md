@@ -17,9 +17,9 @@ sources: research/foundations.md
 -->
 
 
-# The Impossible Object
+# Inside the accelerator
 
-<div class="text-xl opacity-70 mt-2">Everything you need to know about this industry is hiding inside the thing I just held up.</div>
+<div class="text-xl opacity-70 mt-2">The package combines logic, memory, interconnect, and several distinct manufacturing processes.</div>
 
 ![journey](/diagrams/rendered/journey-1.svg)
 
@@ -39,23 +39,23 @@ LINE THAT LANDS:
 
 ---
 
-# Zoom in far enough and it's just switches
+# A transistor is a voltage-controlled switch
 
 <div class="grid grid-cols-2 gap-10 mt-6">
 
 <div class="flex flex-col justify-center gap-4">
 
-- A transistor is a **voltage-controlled switch** — three terminals
-- **Source** → water main · **drain** → spout · **gate** → the handle
-- The handle **never touches the water**: the gate is insulated by an oxide **~1–2 atoms-worth thick**
-- Wire switches together → **AND, OR, every logic gate**
-- A NAND gate = **4 transistors**. A computer is just billions of them.
+- A transistor has **source, drain, and gate** terminals
+- Voltage at the gate controls current between source and drain
+- A thin insulating layer separates the gate from the channel
+- Four transistors can form a **NAND gate**
+- Processors combine billions of these switches
 
 </div>
 
 <div class="flex flex-col justify-center items-center">
 <div class="text-7xl font-bold leading-none">1</div>
-<div class="opacity-70 mt-2 text-center">idea, repeated<br>~200 billion times</div>
+<div class="opacity-70 mt-2 text-center">switching element<br>repeated ~200 billion times</div>
 </div>
 
 </div>
@@ -77,7 +77,7 @@ SIMPLIFICATION HEDGE:
 
 ---
 
-# Now zoom out: the count that broke reality
+# Transistor counts rose 146 million-fold
 
 <div class="grid grid-cols-3 gap-6 mt-10 text-center">
 <div>
@@ -94,7 +94,7 @@ SIMPLIFICATION HEDGE:
 </div>
 </div>
 
-<div class="text-center text-2xl mt-12">4004 → Rubin = <b>~146,000,000×</b> in one lifetime</div>
+<div class="text-center text-2xl mt-12">Intel 4004 to Nvidia Rubin: <b>~146,000,000×</b> in 55 years</div>
 
 <div class="text-sm opacity-50 mt-6 text-center">Cerebras WSE-3 (2024): 4 trillion transistors on one wafer-sized chip — ~50× an H100.</div>
 
@@ -118,29 +118,29 @@ LINE THAT LANDS:
 
 ---
 
-# Two kinds of silicon
+# Logic computes; memory stores data
 
 <div class="grid grid-cols-2 gap-8 mt-8">
 
 <div class="border-2 border-gray-400 rounded-lg p-6">
 <div class="text-3xl font-bold">LOGIC</div>
-<div class="opacity-70 mt-1">the thinking</div>
+<div class="opacity-70 mt-1">compute circuitry</div>
 <div class="mt-4 text-sm leading-relaxed">
-Billions of custom switches doing math. Irregular, bespoke, leading-edge. This is the GPU die itself.
+Billions of custom switches perform arithmetic and control. This is the GPU die itself.
 </div>
 </div>
 
 <div class="border-2 border-gray-400 rounded-lg p-6">
 <div class="text-3xl font-bold">MEMORY</div>
-<div class="opacity-70 mt-1">the remembering</div>
+<div class="opacity-70 mt-1">repeated storage cells</div>
 <div class="mt-4 text-sm leading-relaxed">
-A vast, regular grid of identical cells. A commodity — priced like oil, not like software. Made by different companies, welded on beside the logic.
+A regular grid of identical cells stores data. Different companies fabricate it and place it beside the logic dies.
 </div>
 </div>
 
 </div>
 
-<div class="text-sm opacity-60 mt-8 text-center">Same element. Opposite businesses. We'll spend an entire act on the memory bolted to this chip.</div>
+<div class="text-sm opacity-60 mt-8 text-center">Both use silicon, but they require different circuit structures, processes, and suppliers.</div>
 
 <!--
 BEATS:
@@ -159,9 +159,9 @@ LINE THAT LANDS:
 
 ---
 
-# What "2nm" actually is
+# "2 nm" names a process generation, not a dimension
 
-<div class="text-center text-2xl mt-6">Nothing on a "3nm" chip measures <b>3 nanometers.</b></div>
+<div class="text-center text-2xl mt-6">On a "3 nm" process, the name does not specify a <b>3 nm feature.</b></div>
 
 <div class="grid grid-cols-3 gap-6 mt-10 text-center">
 <div>
@@ -170,15 +170,15 @@ LINE THAT LANDS:
 </div>
 <div>
 <div class="text-5xl font-bold">~23 nm</div>
-<div class="opacity-70 mt-2">tightest metal pitch — still ~42 atoms wide</div>
+<div class="opacity-70 mt-2">tightest metal pitch (N3)</div>
 </div>
 <div>
 <div class="text-5xl font-bold">PPA</div>
-<div class="opacity-70 mt-2">power · performance · area — what actually improves</div>
+<div class="opacity-70 mt-2">power · performance · area · the design targets for each generation</div>
 </div>
 </div>
 
-<div class="text-sm opacity-60 mt-10 text-center">The node name stopped being a measurement in the late 1990s. Today it's a brand — like a perfume called "Midnight."</div>
+<div class="text-sm opacity-60 mt-10 text-center">Node names stopped matching a physical dimension in the late 1990s. They now distinguish process generations.</div>
 
 <!--
 BEATS:
@@ -201,7 +201,7 @@ LINE THAT LANDS:
 
 ---
 
-# The switch keeps changing shape
+# Smaller transistors require tighter gate control
 
 <div class="grid grid-cols-4 gap-4 mt-10 text-center">
 <div>
@@ -220,15 +220,15 @@ LINE THAT LANDS:
 <div class="text-xs opacity-50 mt-1">wrap all sides<br>2022–2025</div>
 </div>
 <div>
-<div class="text-4xl font-bold opacity-50">stack</div>
+<div class="text-4xl font-bold opacity-50">n/p</div>
 <div class="text-sm opacity-70 mt-1">CFET</div>
 <div class="text-xs opacity-50 mt-1">n on top of p<br>~2032</div>
 </div>
 </div>
 
-<div class="text-center text-lg mt-10 opacity-80">sides of the channel the gate controls: <b>1 → 3 → 4 → stacked</b></div>
+<div class="text-center text-lg mt-10 opacity-80">device geometry: <b>planar → fin → surrounding gate → stacked n/p transistors</b></div>
 
-<div class="text-sm opacity-60 mt-4 text-center">Because at these sizes, electrons leak through anything the gate isn't actively policing.</div>
+<div class="text-sm opacity-60 mt-4 text-center">Each design gives the gate more control over the channel and reduces leakage.</div>
 
 <!--
 BEATS:
@@ -251,16 +251,16 @@ LINE THAT LANDS:
 
 ---
 
-# One speck of dust. One dead die.
+# Larger dies lose more yield to small defects
 
 <div class="grid grid-cols-2 gap-10 mt-6">
 
 <div class="flex flex-col justify-center gap-4">
 
 - Yield falls **exponentially** with die size: **e^(−A·D₀)**
-- Big AI dies are the most exposed things on the wafer
-- A killer particle only needs to be **~1/1000th the width of a hair**
-- So the air around the wafer is **millions of times cleaner than city air** — cleaner than any operating room on Earth
+- Larger AI dies present more area where a defect can ruin the circuit
+- A damaging particle can be **~1/1000th the width of a hair**
+- The air around the wafer contains **millions of times fewer particles than city air**
 
 </div>
 
@@ -297,29 +297,28 @@ LINE THAT LANDS:
 
 ---
 
-# Exponential #1: computing got absurdly cheap
+# Transistor density rose while clock speed stalled
 
 <div class="grid grid-cols-2 gap-10 mt-8">
 
 <div class="flex flex-col justify-center gap-4">
 
-- **Moore's Law (1965):** transistors per chip double ~every 2 years — and it was always an *economic* claim, not a physics one
-- Density is **still climbing** (N5 → N3 → N2), just slower and via new tricks
-- But **Dennard scaling died ~2005**: shrinking stopped making chips cooler
-- So clocks **froze** — and the industry's escape hatch was **parallelism**
+- **Moore's 1965 observation** concerned transistor count at minimum cost, not a physical law
+- On-die density continues to rise through smaller features and new device structures; advanced packaging adds more dies per system
+- **Dennard scaling ended around 2005**: shrinking no longer reduced power density
+- Clock speeds plateaued, so designers added cores and accelerators
 
 </div>
 
 <div class="flex flex-col justify-center items-center text-center">
 <div class="text-6xl font-bold leading-none">~3.8<span class="text-3xl">GHz</span></div>
 <div class="opacity-70 mt-1">Pentium 4, 2004</div>
-<div class="text-lg opacity-60 mt-4">…20 years later, still ~4–6 GHz.</div>
-<div class="text-lg opacity-60 mt-1">Not 400.</div>
+<div class="text-lg opacity-60 mt-4">Twenty years later: roughly 4–6 GHz.</div>
 </div>
 
 </div>
 
-<div class="text-sm opacity-60 mt-8 text-center">This is why the object in your hand is a GPU with tens of thousands of slow-ish cores — not one impossibly fast one.</div>
+<div class="text-sm opacity-60 mt-8 text-center">GPUs use many parallel cores because clock rates stopped scaling after 2004.</div>
 
 <!--
 BEATS:
@@ -343,7 +342,7 @@ LINE THAT LANDS:
 
 ---
 
-# Exponential #2: the factory that prints them
+# Leading-edge fab cost rose from $4M to more than $20B
 
 <div class="mt-4 mb-2 text-sm opacity-60">Cost of one leading-edge fab &nbsp;·&nbsp; <span class="opacity-80">log scale — each step ≈ 10×</span></div>
 
@@ -386,7 +385,7 @@ LINE THAT LANDS:
 <div><div class="text-3xl font-bold">~25 → 3</div><div class="text-sm opacity-60">companies at the leading edge (130nm → 2nm)</div></div>
 </div>
 
-<div class="text-sm opacity-60 mt-6 text-center">One exponential spread computing to everyone. This one collapsed the number of companies that can make it to three.</div>
+<div class="text-sm opacity-60 mt-6 text-center">As fab costs rose, the number of leading-edge manufacturers fell from roughly 25 to three.</div>
 
 <!--
 BEATS:

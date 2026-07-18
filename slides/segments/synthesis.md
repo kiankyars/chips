@@ -17,9 +17,9 @@ sources: research/nvidia.md, research/memory-hbm.md, research/packaging.md, rese
 -->
 
 
-# The value pools at the chokepoints
+# Scarce alternatives support higher supplier margins
 
-<div class="text-xl opacity-70 mt-2">Act VI — the map, read one last time. As a money map.</div>
+<div class="text-xl opacity-70 mt-2">Part 6 · Margins and replacement time across the supply chain</div>
 
 <div class="grid grid-cols-2 gap-8 mt-8 items-center">
 <div>
@@ -28,10 +28,8 @@ sources: research/nvidia.md, research/memory-hbm.md, research/packaging.md, rese
 
 </div>
 <div class="text-lg opacity-80 leading-relaxed">
-Every light is on.<br>
-Every company is named.<br>
-The board has seven stamps.<br><br>
-One question left: <b>where did the money actually go?</b>
+The map and dependency inventory are complete.<br><br>
+Supplier margins vary with substitution difficulty and capital intensity.
 </div>
 </div>
 
@@ -52,20 +50,20 @@ LINE THAT LANDS:
 
 ---
 
-# The Money Bar, complete
+# Estimated price and build cost of a GB300 GPU
 
-<div class="text-sm opacity-60 mt-4">One GB300-class GPU · street price ~$50,000 (analyst estimate — Nvidia publishes no list price)</div>
+<div class="text-sm opacity-60 mt-4">One GB300-class GPU · street price ~$50,000 (analyst estimate; Nvidia publishes no list price)</div>
 
 <div class="mt-4">
-  <div class="text-xs opacity-50 mb-1">THE PRICE — who keeps it</div>
+  <div class="text-xs opacity-50 mb-1">ESTIMATED SELLING PRICE</div>
   <div class="flex w-full h-14 rounded overflow-hidden text-sm font-bold text-center">
-    <div class="bg-green-600 flex items-center justify-center" style="width:75%">Nvidia gross margin ~75% — design · CUDA · networking · scarcity</div>
+    <div class="bg-green-600 flex items-center justify-center" style="width:75%">Nvidia gross margin ~75% · design · CUDA · networking</div>
     <div class="bg-gray-500 flex items-center justify-center" style="width:25%">~25% build cost</div>
   </div>
 </div>
 
 <div class="mt-6">
-  <div class="text-xs opacity-50 mb-1">THAT ~25%, EXPLODED — the physical bill (illustrative split; only HBM's &gt;50% share is firmly sourced)</div>
+  <div class="text-xs opacity-50 mb-1">ESTIMATED BUILD COST (illustrative; only HBM's &gt;50% share is firmly sourced)</div>
   <div class="flex w-full h-14 rounded overflow-hidden text-xs font-bold text-center">
     <div class="bg-purple-600 flex items-center justify-center" style="width:52%">HBM memory &gt;50%<br>SK Hynix / Micron / Samsung</div>
     <div class="bg-blue-600 flex items-center justify-center" style="width:20%">TSMC logic dies</div>
@@ -76,7 +74,7 @@ LINE THAT LANDS:
 </div>
 
 <div class="text-xs opacity-60 mt-6 leading-relaxed">
-<b>Amortized tolls</b> — baked into the prices above, never a line item: EDA design (~$0.5–0.7B per leading-edge chip, spread over the run) · ASML/equipment (the $350–400M scanner, priced into every TSMC wafer) · the <b>$150 blank wafer</b> the whole thing stands on.
+<b>Costs embedded in supplier prices:</b> EDA development (~$0.5–0.7B per leading-edge chip, spread over the run) · ASML and other fab equipment · the <b>~$150 blank wafer</b>.
 </div>
 
 <!--
@@ -100,32 +98,32 @@ LINE THAT LANDS:
 
 ---
 
-# The margin ladder
+# Supplier margins across the chain
 
 <div class="grid grid-cols-2 gap-6 mt-4 text-sm">
 <div class="flex flex-col gap-2">
-<div class="flex justify-between bg-green-700 text-white rounded px-3 py-2"><span><b>EDA</b> — Cadence ~86% / Synopsys ~77%</span><span class="opacity-80">software, no factory</span></div>
+<div class="flex justify-between bg-green-700 text-white rounded px-3 py-2"><span><b>EDA</b> — Cadence ~86% / Synopsys ~77%</span><span class="opacity-80">software licensing</span></div>
 <div class="flex justify-between bg-green-600 text-white rounded px-3 py-2"><span><b>Memory*</b> — Micron ~85% GM</span><span class="opacity-80">*supercycle peak</span></div>
-<div class="flex justify-between bg-green-600 text-white rounded px-3 py-2"><span><b>Nvidia</b> — ~75%</span><span class="opacity-80">CUDA + scarcity</span></div>
-<div class="flex justify-between bg-lime-600 text-white rounded px-3 py-2"><span><b>KLA</b> — ~62%</span><span class="opacity-80">process-control near-monopoly</span></div>
-<div class="flex justify-between bg-lime-600 text-white rounded px-3 py-2"><span><b>TSMC</b> — ~60% (66% Q1'26)</span><span class="opacity-80">yield flywheel</span></div>
+<div class="flex justify-between bg-green-600 text-white rounded px-3 py-2"><span><b>Nvidia</b> — ~75%</span><span class="opacity-80">design and software</span></div>
+<div class="flex justify-between bg-lime-600 text-white rounded px-3 py-2"><span><b>KLA</b> — ~62%</span><span class="opacity-80">56–58% process-control share</span></div>
+<div class="flex justify-between bg-lime-600 text-white rounded px-3 py-2"><span><b>TSMC</b> — ~60% (66% Q1'26)</span><span class="opacity-80">72.3% foundry share</span></div>
 </div>
 <div class="flex flex-col gap-2">
-<div class="flex justify-between bg-yellow-600 text-white rounded px-3 py-2"><span><b>ASML</b> — ~53%</span><span class="opacity-80">EUV monopoly</span></div>
-<div class="flex justify-between bg-yellow-600 text-white rounded px-3 py-2"><span><b>Equipment</b> — AMAT ~49% / Lam ~50%</span><span class="opacity-80">step monopolies</span></div>
+<div class="flex justify-between bg-yellow-600 text-white rounded px-3 py-2"><span><b>ASML</b> — ~53%</span><span class="opacity-80">100% EUV share</span></div>
+<div class="flex justify-between bg-yellow-600 text-white rounded px-3 py-2"><span><b>Equipment</b> — AMAT ~49% / Lam ~50%</span><span class="opacity-80">specialized equipment</span></div>
 <div class="flex justify-between bg-orange-600 text-white rounded px-3 py-2"><span><b>Test</b> — Advantest ~44% op</span><span class="opacity-80">ATE duopoly</span></div>
-<div class="flex justify-between bg-red-700 text-white rounded px-3 py-2"><span><b>OSAT</b> — ASE ~18% / Amkor ~14%</span><span class="opacity-80">labor + capex, no moat</span></div>
+<div class="flex justify-between bg-red-700 text-white rounded px-3 py-2"><span><b>OSAT</b> — ASE ~18% / Amkor ~14%</span><span class="opacity-80">assembly and test</span></div>
 </div>
 </div>
 
-<div class="text-xs opacity-60 mt-5">Gross margins unless marked; as of Q2 2026. The ladder's rungs are moats, not products — the same silicon, wildly different economics.</div>
+<div class="text-xs opacity-60 mt-5">Gross margins unless marked, as of Q2 2026. Higher margins generally coincide with fewer substitutes.</div>
 
 <!--
 BEATS:
 - Here is the one chart no free competitor draws: every player you met, ranked by the fraction of each dollar they keep. Read it top to bottom.
 - The top is SOFTWARE and SCARCITY — EDA keeps ~80–86 cents, Nvidia ~75. No factory, or a factory nobody can substitute. The bottom is COMMODITY MUSCLE — OSATs keep ~15 cents doing exactly what anyone with capex and labor can do. Same industry, same silicon flowing through, 6× the margin at the top.
 - The asterisk is the most important thing on the slide — voice it carefully: memory is sitting at the TOP right now (Micron ~85%, SK Hynix ~72% operating) because we're in the biggest memory supercycle in history. But in 2023 these same companies posted record LOSSES. Memory's margin is rented, not owned — it's the one rung that swings from the top of this ladder to the bottom and back every few years. Everyone else's margin is structural. That's the tell.
-- Land the lesson: the ladder isn't ranking how hard the work is. ASML builds the most complex object humans make and keeps ~53 cents; Cadence ships software and keeps ~86. The ladder ranks how REPLACEABLE you are. Which is the next slide.
+- The ladder does not rank engineering difficulty. ASML and Cadence have different economics; the next slide compares how quickly each supplier could be replaced.
 FACT AMMO:
 - EDA: Cadence GAAP GM ~84–87% (86.5% Q1'25), Synopsys ~77% FY25. [research/eda §Cadence, §Synopsys]
 - Memory (supercycle peak): Micron GAAP GM 84.6% FQ3-26, guiding ~86%; SK Hynix operating margin 72% (1Q26), but FY2023 was record operating LOSSES. [research/memory-hbm §financials, §the-2025-26-supercycle]
@@ -143,9 +141,9 @@ LINE THAT LANDS:
 
 ---
 
-# Years to replace — the league table
+# Estimated replacement time by supplier
 
-<div class="text-sm opacity-70 mt-2">If a state with unlimited money set out to replicate this player from scratch — how many years?</div>
+<div class="text-sm opacity-70 mt-2">Order-of-magnitude estimates for developing a competitive domestic alternative</div>
 
 <div class="grid grid-cols-2 gap-x-10 gap-y-2 mt-5 text-sm">
 <div class="flex justify-between border-b border-gray-500 pb-1"><span><b>ASML + Zeiss</b> — EUV lithography</span><span class="font-bold">~15–20 yrs</span></div>
@@ -158,7 +156,7 @@ LINE THAT LANDS:
 <div class="flex justify-between border-b border-gray-500 pb-1"><span><b>OSAT</b> — ASE / Amkor assembly</span><span class="font-bold">~2 yrs</span></div>
 </div>
 
-<div class="text-xs opacity-60 mt-5">The course's original metric. Every number is a judgment call — argue with them. That's the point.</div>
+<div class="text-xs opacity-60 mt-5">Editorial ranges, not forecasted completion dates.</div>
 
 <!--
 BEATS:
@@ -182,22 +180,22 @@ LINE THAT LANDS:
 
 ---
 
-# The board is a judgment call
+# Three additional concentration risks
 
 ![chokepoint board — complete, 7 stamps](/diagrams/rendered/board-7.svg)
 
 <div class="grid grid-cols-3 gap-4 mt-6 text-sm text-center">
 <div class="border border-gray-400 rounded p-3">
 <div class="font-bold">Ajinomoto</div>
-<div class="opacity-70 text-xs mt-1">ABF substrate film · <b>&gt;95%</b> share · &gt;50% margins. The MSG company is a chip chokepoint.</div>
+<div class="opacity-70 text-xs mt-1">Founded as a food company, Ajinomoto supplies ABF film used in <b>&gt;95%</b> of advanced packages.</div>
 </div>
 <div class="border border-gray-400 rounded p-3">
 <div class="font-bold">Shin-Etsu + SUMCO</div>
-<div class="opacity-70 text-xs mt-1"><b>&gt;50%</b> of world silicon wafers · eleven-nines purity. Two firms under nearly every chip.</div>
+<div class="opacity-70 text-xs mt-1">Together, two firms supply <b>&gt;50%</b> of silicon wafers at eleven-nines purity.</div>
 </div>
 <div class="border border-gray-400 rounded p-3">
 <div class="font-bold">Advantest + Teradyne</div>
-<div class="opacity-70 text-xs mt-1"><b>~80%+</b> of chip test. You can't sell what you can't prove works.</div>
+<div class="opacity-70 text-xs mt-1">Together, two firms supply <b>&gt;80%</b> of automated test equipment.</div>
 </div>
 </div>
 
@@ -219,35 +217,35 @@ LINE THAT LANDS:
 
 ---
 
-# What AI changed — and the layer above
+# AI demand changed memory and packaging economics
 
 <div class="grid grid-cols-2 gap-8 mt-6">
 <div>
-<div class="text-sm font-bold opacity-70 mb-2">WHAT THE AI BOOM REWROTE</div>
+<div class="text-sm font-bold opacity-70 mb-2">CHANGES SINCE 2023</div>
 <div class="text-sm leading-relaxed">
 
-- **Memory** stopped being a commodity — HBM is now sold-out, qualified, negotiated like logic; DRAM revenue **+144%** forecast for 2026
-- **Packaging** — the offshored "worthless" back-end — became the frontier that gated all GPU supply
-- **Every margin rose**: TSMC 60→66%, KLA & Advantest & ASML at records
-- But moats decide who **keeps** it when demand normalizes
+- **HBM** is customer-qualified and sold 12–24 months ahead; industry DRAM revenue is forecast to rise **144%** in 2026
+- **CoWoS packaging capacity** constrained GPU shipments from 2023 to 2025
+- **Margins rose** at TSMC; KLA, Advantest, and ASML reported records
+- Suppliers with few substitutes are better positioned when demand normalizes
 
 </div>
 </div>
 <div class="border-l-2 border-amber-500 pl-6">
-<div class="text-sm font-bold opacity-70 mb-2">THIS WAS ONE LAYER</div>
+<div class="text-sm font-bold opacity-70 mb-2">SERIES SCOPE</div>
 <div class="text-base leading-relaxed">
 Applications<br>
 Data Centers<br>
-<b class="text-amber-500">Energy</b> &nbsp;<span class="opacity-60 text-sm">← next</span><br>
-<b>Chips</b> &nbsp;<span class="opacity-60 text-sm">← you are here</span><br>
+<b class="text-amber-500">Energy</b> &nbsp;<span class="opacity-60 text-sm">← next course</span><br>
+<b>Chips</b> &nbsp;<span class="opacity-60 text-sm">← current course</span><br>
 Models
 </div>
 </div>
 </div>
 
 <div class="text-lg text-center mt-8 opacity-90">
-Every chip we followed drinks <b>1,400 watts</b>. Every rack, <b>~135 kW</b> — a hundred homes.<br>
-The next bottleneck isn't making them. It's <b>powering them.</b>
+A 72-GPU rack draws about <b>135 kW</b>.<br>
+Power delivery and grid capacity are the next constraints.
 </div>
 
 <!--
@@ -271,17 +269,16 @@ LINE THAT LANDS:
 layout: center
 ---
 
-# Slow replacement creates the largest margins
+# Long replacement times support high margins
 
 <div class="text-2xl leading-relaxed mt-8 max-w-4xl">
-The money pooled where <b>replacement takes the longest</b>:<br>
-in a Dutch optics partnership, an island foundry,<br>
-two design-software companies, and twenty years of CUDA.<br><br>
-<span class="opacity-70 text-xl">Customers paid the largest premiums where no substitute existed.</span>
+Several high-margin suppliers also have the longest estimated replacement times:<br>
+ASML and Zeiss, TSMC, Cadence and Synopsys, and Nvidia's CUDA ecosystem.<br><br>
+<span class="opacity-70 text-xl">Customers pay premiums when they have few alternatives.</span>
 </div>
 
 <div class="text-lg opacity-60 mt-12">
-This whole chain is one layer of the cake.
+Chips are one of the five layers in this series.
 </div>
 
 <!--

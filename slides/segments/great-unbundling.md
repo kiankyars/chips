@@ -17,13 +17,13 @@ sources: research/foundations.md, research/tsmc.md
 -->
 
 
-# Why the Industry Shattered
+# Rising fab costs split chip design from manufacturing
 
-<div class="text-xl opacity-70 mt-2">Act I — The Impossible Object · the one graph that explains everything</div>
+<div class="text-xl opacity-70 mt-2">Rising fab costs made the integrated model unaffordable for most firms</div>
 
 <div class="text-lg opacity-80 mt-8 leading-relaxed">
-We ended the last segment on a graph going the wrong way.<br>
-This segment is what that graph <i>did</i> to the industry.
+Leading-edge fab costs rose from about $4M to more than $20B.<br>
+That increase changed which companies could design and manufacture chips.
 </div>
 
 <!--
@@ -37,7 +37,7 @@ LINE THAT LANDS:
 
 ---
 
-# The graph that breaks companies
+# Leading-edge fab cost rose roughly 5,000-fold
 
 <div class="grid grid-cols-3 gap-6 mt-10 text-center">
 <div>
@@ -75,21 +75,21 @@ LINE THAT LANDS:
 
 ---
 
-# The bind (mid-1980s)
+# Leading-edge fabs need volume from many customers
 
 <div class="grid grid-cols-2 gap-10 mt-10">
 <div class="border-2 border-gray-400 rounded-lg p-6">
-<div class="text-xl font-bold mb-2">A designer with a great idea</div>
-<div class="opacity-70">...but no way to raise a fab's worth of capital. Locked out.</div>
+<div class="text-xl font-bold mb-2">Chip designer</div>
+<div class="opacity-70">Cannot finance a leading-edge fab.</div>
 </div>
 <div class="border-2 border-gray-400 rounded-lg p-6">
-<div class="text-xl font-bold mb-2">A fab that must run flat-out</div>
-<div class="opacity-70">...but can't stay full on one company's designs alone. Starved.</div>
+<div class="text-xl font-bold mb-2">Fab operator</div>
+<div class="opacity-70">Needs enough customer volume to keep costly equipment utilized.</div>
 </div>
 </div>
 
 <div class="text-center mt-12 text-2xl opacity-80">
-Every serious chip company did both under one roof.<br>
+In the 1980s, major chip companies usually designed and manufactured under one roof.<br>
 <span class="opacity-60 text-lg">"Real men have fabs." — Jerry Sanders, AMD</span>
 </div>
 
@@ -109,11 +109,11 @@ SIMPLIFICATION HEDGE (direction of the lie):
 
 ---
 
-# Morris Chang's move (1987)
+# TSMC made manufacturing the product
 
 <div class="text-2xl mt-8 leading-relaxed text-center">
-Stop treating the fab as overhead.<br>
-<b>Sell the manufacturing itself — to everyone.</b>
+TSMC offered dedicated foundry capacity<br>
+<b>to outside chip designers.</b>
 </div>
 
 <div class="grid grid-cols-3 gap-6 mt-12 text-center">
@@ -148,29 +148,29 @@ LINE THAT LANDS:
 
 ---
 
-# So four kinds of company fall out
+# Four semiconductor business models
 
 <div class="grid grid-cols-2 gap-5 mt-6">
 <div class="border-2 rounded-lg p-4" style="border-color:#3b82f6">
-<div class="text-lg font-bold" style="color:#3b82f6">FABLESS — own the design, rent the fab</div>
-<div class="opacity-70 text-sm mt-1">Answer to "I can't afford a fab." → Nvidia, Qualcomm, AMD, Apple silicon</div>
+<div class="text-lg font-bold" style="color:#3b82f6">FABLESS</div>
+<div class="opacity-70 text-sm mt-1">Design chips and contract with foundries. Nvidia, Qualcomm, AMD, Apple silicon.</div>
 </div>
 <div class="border-2 rounded-lg p-4" style="border-color:#10b981">
-<div class="text-lg font-bold" style="color:#10b981">FOUNDRY — own the fab, sell nothing of your own</div>
-<div class="opacity-70 text-sm mt-1">Answer to "keep the fab full." → TSMC (and the model itself)</div>
+<div class="text-lg font-bold" style="color:#10b981">FOUNDRY</div>
+<div class="opacity-70 text-sm mt-1">Manufacture chips designed by customers. TSMC.</div>
 </div>
 <div class="border-2 rounded-lg p-4" style="border-color:#8b5cf6">
-<div class="text-lg font-bold" style="color:#8b5cf6">IDM — refuse to split, do both</div>
-<div class="opacity-70 text-sm mt-1">Survivable only at huge scale + capital. → Intel, Samsung, the analog world</div>
+<div class="text-lg font-bold" style="color:#8b5cf6">IDM</div>
+<div class="opacity-70 text-sm mt-1">Design and manufacture chips. Intel, Samsung, and analog suppliers.</div>
 </div>
 <div class="border-2 rounded-lg p-4" style="border-color:#f59e0b">
-<div class="text-lg font-bold" style="color:#f59e0b">EQUIPMENT — sell the machines to all of them</div>
-<div class="opacity-70 text-sm mt-1">Answer to "sell shovels, not gold." → ASML, Applied Materials</div>
+<div class="text-lg font-bold" style="color:#f59e0b">EQUIPMENT</div>
+<div class="opacity-70 text-sm mt-1">Supply the tools used by fabs. ASML and Applied Materials.</div>
 </div>
 </div>
 
 <div class="text-center mt-6 text-sm opacity-60">
-Not a taxonomy someone drew up — four survival strategies for the same cost curve.
+These models separate chip design, manufacturing, and equipment supply.
 </div>
 
 <!--
@@ -194,12 +194,12 @@ LINE THAT LANDS:
 layout: center
 ---
 
-# The whole board
+# The semiconductor supply chain
 
 ![the master industry map, fully lit — regions colored by archetype](/diagrams/rendered/map-full.svg)
 
 <div class="text-center mt-4 text-lg opacity-80">
-The colors aren't decoration. They're the four roles we just derived.
+The colors identify the four business models.
 </div>
 
 <!--

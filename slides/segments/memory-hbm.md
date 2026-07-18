@@ -17,9 +17,9 @@ sources: research/memory-hbm.md
 -->
 
 
-# The Memory War
+# High-bandwidth memory
 
-<div class="text-xl opacity-70 mt-2">Act V — Memory & The Assembly · Icheon, Suwon, Boise</div>
+<div class="text-xl opacity-70 mt-2">Part 5 · Memory and packaging · Icheon, Suwon, and Boise</div>
 
 <div class="grid grid-cols-2 gap-8 mt-8 items-center">
 <div>
@@ -28,8 +28,8 @@ sources: research/memory-hbm.md
 
 </div>
 <div class="text-lg opacity-80 leading-relaxed">
-The chip has a design, an island, and a thousand steps behind it.<br>
-Now it needs something to remember with.
+The GPU dies are fabricated.<br>
+The next constraint is memory bandwidth.
 </div>
 </div>
 
@@ -51,7 +51,7 @@ LINE THAT LANDS:
 <div class="grid grid-cols-2 gap-8 mt-8">
 <div class="border-2 border-blue-400 rounded-lg p-6">
 <div class="text-3xl font-bold">DRAM</div>
-<div class="text-sm opacity-60 mb-3">the desk you work at</div>
+<div class="text-sm opacity-60 mb-3">volatile working memory</div>
 
 - 1 transistor + 1 capacitor per bit
 - leaks — every bit refreshed **~every 64 ms**
@@ -60,7 +60,7 @@ LINE THAT LANDS:
 </div>
 <div class="border-2 border-amber-400 rounded-lg p-6">
 <div class="text-3xl font-bold">NAND</div>
-<div class="text-sm opacity-60 mb-3">the filing cabinet</div>
+<div class="text-sm opacity-60 mb-3">nonvolatile storage</div>
 
 - charge trapped in an insulated cell
 - keeps data for years, unpowered
@@ -70,8 +70,8 @@ LINE THAT LANDS:
 </div>
 
 <div class="text-center text-lg mt-8">
-A DDR5 chip from Samsung, SK hynix or Micron is <b>interchangeable</b>.<br>
-An H100 has no substitute. <b>Bits are fungible. Designs aren't.</b>
+DDR5 and HBM both follow JEDEC standards.<br>
+HBM still requires supplier qualification with a specific GPU package.
 </div>
 
 <!--
@@ -89,16 +89,14 @@ LINE THAT LANDS:
 
 ---
 
-# The hog cycle
+# Capacity additions drive DRAM price cycles
 
 <div class="grid grid-cols-2 gap-8 mt-6 items-center">
 <div>
 
 <div class="text-lg leading-relaxed">
-Fabs take <b>~2 years</b> and <b>&gt;$15B</b> to build.<br>
-Everyone adds capacity in the boom.<br>
-The gluts arrive <b>together</b>. Prices crash.<br>
-The weakest player dies. Repeat.
+New fabs take <b>~2 years</b> and <b>&gt;$15B</b> to build.<br>
+Suppliers expand during shortages; the new capacity arrives together and drives prices down.
 </div>
 
 <div class="text-sm opacity-60 mt-6">
@@ -133,33 +131,33 @@ LINE THAT LANDS:
 
 ---
 
-# The crown keeps migrating
+# DRAM leadership moved from the US to Japan to Korea
 
 <div class="grid grid-cols-4 gap-3 mt-8 text-center text-sm">
 <div class="border rounded-lg p-3">
 <div class="text-lg font-bold">America</div>
-<div class="opacity-60">invented it</div>
+<div class="opacity-60">first commercial success</div>
 <div class="mt-2">Intel 1103, 1970 —<br>best-selling chip in the world by '72</div>
 </div>
 <div class="border rounded-lg p-3">
 <div class="text-lg font-bold">Japan</div>
-<div class="opacity-60">won the '80s</div>
+<div class="opacity-60">~75–80% share in the 1980s</div>
 <div class="mt-2">~75–80% of world DRAM;<br>the '85 crash drove <b>Intel out of memory</b></div>
 </div>
 <div class="border rounded-lg p-3">
 <div class="text-lg font-bold">Korea</div>
-<div class="opacity-60">won the '90s</div>
+<div class="opacity-60">Samsung took #1 in 1992</div>
 <div class="mt-2">Samsung #1 in 1992 —<br>held it <b>33 years</b></div>
 </div>
 <div class="border-2 border-amber-500 rounded-lg p-3">
 <div class="text-lg font-bold">2025</div>
-<div class="opacity-60">the crown moves again</div>
-<div class="mt-2">SK hynix takes it —<br>within Korea, on <b>HBM</b></div>
+<div class="opacity-60">SK hynix takes #1</div>
+<div class="mt-2">The lead stays in Korea,<br>driven by <b>HBM</b></div>
 </div>
 </div>
 
 <div class="text-center text-lg mt-8">
-Leadership belongs to <b>whoever keeps writing capex checks at the bottom of the cycle.</b>
+DRAM leaders kept investing during downturns.
 </div>
 
 <!--
@@ -178,7 +176,7 @@ LINE THAT LANDS:
 
 ---
 
-# Remember the bandwidth problem?
+# Compute grew much faster than memory bandwidth
 
 <div class="grid grid-cols-2 gap-10 mt-10 text-center items-center">
 <div>
@@ -192,8 +190,8 @@ LINE THAT LANDS:
 </div>
 
 <div class="text-center text-2xl mt-10 leading-relaxed">
-The GPU can do the math <b>thousands of times faster</b><br>
-than it can be fed. <span class="opacity-70">Here's the bill.</span>
+GPU cores spend much of their time waiting<br>
+for weights to arrive from memory.
 </div>
 
 <!--
@@ -213,25 +211,25 @@ LINE THAT LANDS:
 
 ---
 
-# HBM: memory, stacked into a tower
+# HBM stacks DRAM dies beside the GPU
 
 <div class="grid grid-cols-2 gap-8 mt-6">
 <div class="text-lg leading-relaxed">
 
 - **8 / 12 / 16 DRAM dies**, thinned to tens of microns, stacked vertically
-- wired by **through-silicon vias** — thousands of copper elevator shafts drilled straight through each die
-- the tower sits **millimeters from the GPU** on a silicon interposer (TSMC CoWoS)
+- **through-silicon vias** carry thousands of vertical connections through each die
+- the stack sits **millimeters from the GPU** on a silicon interposer (TSMC CoWoS)
 - bus width: **1024–2048 bits** per stack vs 64 for a DDR channel
 
 </div>
 <div class="flex flex-col gap-4">
 <div class="border-2 border-blue-400 rounded-lg p-4">
-<div class="font-bold">DDR on the motherboard</div>
-<div class="text-sm opacity-70">a suburb — cheap land, long commute down a narrow road</div>
+<div class="font-bold">DDR DIMMs on the motherboard</div>
+<div class="text-sm opacity-70">64-bit channels over longer PCB traces; lower packaging cost</div>
 </div>
 <div class="border-2 border-green-500 rounded-lg p-4">
-<div class="font-bold">HBM on the package</div>
-<div class="text-sm opacity-70">an apartment tower downtown — costly per m², but 2,048 lanes wide and a one-minute walk to work</div>
+<div class="font-bold">HBM stacks on the package</div>
+<div class="text-sm opacity-70">1,024–2,048-bit interfaces millimeters from the GPU; higher packaging cost</div>
 </div>
 </div>
 </div>
@@ -252,7 +250,7 @@ LINE THAT LANDS:
 
 ---
 
-# Why HBM sells like logic, not memory
+# HBM is sold through qualification and long-term contracts
 
 <div class="grid grid-cols-3 gap-6 mt-8 text-center">
 <div>
@@ -270,9 +268,9 @@ LINE THAT LANDS:
 </div>
 
 <div class="text-center text-lg mt-10 leading-relaxed">
-Customer-<b>qualified</b>. Yearly contracts <b>negotiated</b>. <b>Presold</b> years out.<br>
-With HBM4's custom base die, it's becoming <b>semi-custom per customer</b>.<br>
-<span class="opacity-70">The commodity spot market simply doesn't exist here.</span>
+Customers qualify suppliers and negotiate contracts <b>12–24 months ahead</b>.<br>
+HBM4 allows <b>customer-specific logic base dies</b>.<br>
+<span class="opacity-70">HBM is sold mainly through qualified contracts rather than a commodity spot market.</span>
 </div>
 
 <!--
@@ -293,23 +291,23 @@ LINE THAT LANDS:
 
 ---
 
-# The war: an ambush, a stumble, a charge
+# SK hynix led HBM while Samsung caught up
 
 <div class="grid grid-cols-3 gap-5 mt-8 text-sm">
 <div class="border-2 border-green-500 rounded-lg p-4">
 <div class="text-xl font-bold">SK hynix</div>
-<div class="opacity-60 mb-2">the ambush</div>
-Bet early on HBM. Took the <b>DRAM crown in Q1 2025</b> — Samsung's first loss of #1 since 1992. Nvidia's main HBM supplier since the H100. <b>~56% of HBM.</b>
+<div class="opacity-60 mb-2">~56% of HBM</div>
+Nvidia's main HBM supplier since H100. Took the <b>DRAM revenue lead in Q1 2025</b>; held about <b>56% of HBM</b> in Q1 2026.
 </div>
 <div class="border-2 border-red-400 rounded-lg p-4">
 <div class="text-xl font-bold">Samsung</div>
-<div class="opacity-60 mb-2">the stumble</div>
-Failed Nvidia's HBM3E qual for <b>~18 months</b> — the giant that couldn't ship. Passed 12-layer HBM3E <b>Sept 2025</b>; regained DRAM #1 in 4Q25 on legacy prices.
+<div class="opacity-60 mb-2">18-month qualification delay</div>
+Nvidia's HBM3E qualification took about <b>18 months</b>. Samsung passed in <b>Sept 2025</b> and regained the DRAM revenue lead in 4Q25 as conventional prices rose.
 </div>
 <div class="border-2 border-blue-400 rounded-lg p-4">
 <div class="text-xl font-bold">Micron</div>
-<div class="opacity-60 mb-2">the charge</div>
-From <b>2% (2023) → ~19–21%</b> of HBM. The lone US maker. HBM4 in high-volume for Nvidia; sold out through 2026.
+<div class="opacity-60 mb-2">share rose from 2% to ~20%</div>
+HBM share rose from <b>2% in 2023 to ~19–21%</b>. Micron is the only US supplier among the top three; 2026 supply is sold out.
 </div>
 </div>
 
@@ -336,7 +334,7 @@ LINE THAT LANDS:
 
 ---
 
-# Scoreboard — the memory triopoly
+# HBM supplier comparison
 
 <div class="grid grid-cols-3 gap-4 mt-4">
 
@@ -348,7 +346,7 @@ LINE THAT LANDS:
 <div><div class="text-xl font-bold">28.8%</div><div class="opacity-60">DRAM · <b>56% HBM</b></div></div>
 <div><div class="text-xl font-bold">~5+ yrs</div><div class="opacity-60">to replace</div></div>
 </div>
-<div class="text-xs opacity-70 text-center mt-2">HBM yield lead + Nvidia's first call</div>
+<div class="text-xs opacity-70 text-center mt-2">HBM yield lead and ~56% share</div>
 </div>
 
 <div class="border-2 border-red-400 rounded-lg p-3">
@@ -359,7 +357,7 @@ LINE THAT LANDS:
 <div><div class="text-xl font-bold">38.6%</div><div class="opacity-60">DRAM #1</div></div>
 <div><div class="text-xl font-bold">~5+ yrs</div><div class="opacity-60">to replace</div></div>
 </div>
-<div class="text-xs opacity-70 text-center mt-2">only turnkey — own 4nm base die + scale</div>
+<div class="text-xs opacity-70 text-center mt-2">integrates memory and 4 nm base-die production</div>
 </div>
 
 <div class="border-2 border-blue-400 rounded-lg p-3">
@@ -370,7 +368,7 @@ LINE THAT LANDS:
 <div><div class="text-xl font-bold">22.4%</div><div class="opacity-60">DRAM · ~20% HBM</div></div>
 <div><div class="text-xl font-bold">~5+ yrs</div><div class="opacity-60">to replace</div></div>
 </div>
-<div class="text-xs opacity-70 text-center mt-2">the West's only big-3 memory maker</div>
+<div class="text-xs opacity-70 text-center mt-2">only US supplier among the three largest</div>
 </div>
 
 </div>
@@ -393,7 +391,7 @@ LINE THAT LANDS:
 
 ---
 
-# The 2025–26 supercycle
+# DRAM revenue is forecast to rise 144% in 2026
 
 <div class="grid grid-cols-2 gap-8 mt-6">
 <div>
@@ -403,14 +401,14 @@ LINE THAT LANDS:
 <div class="text-sm opacity-60 mt-4">total memory <b>$551.6B</b> in 2026E · data centers ~<b>70%</b> of all memory output</div>
 </div>
 <div class="flex flex-col gap-3">
-<div class="border rounded-lg p-3 text-sm"><b>Micron:</b> one quarter ($41.5B) beat its whole prior fiscal year · 84.6% GM</div>
-<div class="border rounded-lg p-3 text-sm"><b>Samsung Q2'26:</b> ~₩1 trillion profit <b>per day</b> — and the stock <i>fell 7%</i></div>
-<div class="border rounded-lg p-3 text-sm"><b>SK hynix:</b> ~$28B+ Nasdaq ADR — <b>largest in history</b> (Jul 10, 2026)</div>
+<div class="border rounded-lg p-3 text-sm"><b>Micron FQ3'26:</b> $41.5B revenue and an 84.6% gross margin</div>
+<div class="border rounded-lg p-3 text-sm"><b>Samsung Q2'26:</b> preliminary operating profit of ₩89.4T, about 19× year over year</div>
+<div class="border rounded-lg p-3 text-sm"><b>SK hynix:</b> raised roughly $28B through a Nasdaq ADR in July 2026 to fund capacity</div>
 </div>
 </div>
 
 <div class="text-center text-sm opacity-60 mt-6">
-The fuse: one HBM wafer ≈ 3 PC-DRAM wafers that never got made. Your laptop is bidding against a data center for the same silicon.
+One HBM wafer uses capacity equivalent to roughly three PC-DRAM wafers. PC and data-center memory compete for the same fab capacity.
 </div>
 
 <!--
@@ -431,16 +429,16 @@ LINE THAT LANDS:
 
 ---
 
-# Chokepoint #6: earned
+# Chokepoint #6: SK hynix HBM supply
 
 ![chokepoint board — 6 stamps](/diagrams/rendered/board-6.svg)
 
 <div class="text-xl mt-6 text-center">
-<b>SK hynix — HBM.</b> The qualified-supply bottleneck of the entire AI buildout.
+SK hynix supplies about <b>56% of HBM</b> and has been Nvidia's primary supplier since H100.
 </div>
 
 <div class="text-sm opacity-60 mt-10 text-center">
-The tower is built. Now someone has to weld twelve layers of DRAM onto a GPU die without cracking a single one.
+HBM stacks and GPU dies still have to be joined in one package.
 </div>
 
 <!--

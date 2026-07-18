@@ -17,9 +17,9 @@ sources: research/asml.md
 -->
 
 
-# The Printing Press
+# EUV lithography
 
-<div class="text-xl opacity-70 mt-2">Act IV · the fab tour reaches the EXPOSE step</div>
+<div class="text-xl opacity-70 mt-2">Part 4 · Fabrication · lithography</div>
 
 ![the wafer reaches lithography](/diagrams/rendered/flow-expose.svg)
 
@@ -33,7 +33,7 @@ LINE THAT LANDS:
 
 ---
 
-# You've probably seen the machine
+# How an EUV scanner makes 13.5 nm light
 
 <div class="grid grid-cols-2 gap-8 mt-6 items-center">
 <div>
@@ -43,10 +43,10 @@ LINE THAT LANDS:
 </div>
 <div class="text-lg opacity-80 leading-relaxed">
 
-A droplet of molten tin, fired **~50,000×/sec**, hit twice by a laser, flashed into plasma that glows at **13.5 nm** — bounced off the flattest mirrors ever made onto the wafer.
+A laser hits each molten-tin droplet twice. Roughly **50,000 droplets per second** produce **13.5 nm** plasma light, which Zeiss mirrors direct onto the wafer.
 
 <div class="text-sm opacity-60 mt-4">
-Veritasium's video on this has tens of millions of views. So we'll do the machine in 60 seconds — because the machine is not the interesting part. The <i>business</i> is.
+ASML is the only company that can supply this system at production scale.
 </div>
 
 </div>
@@ -64,7 +64,7 @@ LINE THAT LANDS:
 
 ---
 
-# The monopoly
+# ASML is the sole EUV supplier
 
 <div class="grid grid-cols-2 gap-8 mt-8">
 <div class="text-center">
@@ -78,7 +78,7 @@ LINE THAT LANDS:
 </div>
 
 <div class="text-sm opacity-60 mt-10 text-center">
-Canon and Nikon still sell older DUV. At the leading edge — EUV — there is no second supplier. There is no plan B.
+Canon and Nikon sell DUV systems. ASML is the only supplier of EUV lithography tools.
 </div>
 
 <!--
@@ -93,21 +93,20 @@ LINE THAT LANDS:
 
 ---
 
-# Why nobody can build a second one
+# ASML integrates a specialized supplier network
 
 <div class="grid grid-cols-2 gap-6 mt-6">
 <div class="flex flex-col justify-center gap-3 text-lg">
 
 - **>100,000 parts**, sourced across **~17 countries**
-- ASML builds only **~15%** in-house — it's an *orchestrator*
-- **Zeiss** optics — the chokepoint *inside* the chokepoint
+- ASML builds about **15%** in-house and integrates the rest
+- **Zeiss** is the sole supplier of EUV optics
 - **Trumpf** laser · **Cymer** (ASML-owned) light source
 
 </div>
 <div class="flex flex-col justify-center">
 <div class="border-l-4 border-amber-500 pl-4 text-lg leading-relaxed">
-To copy ASML you don't copy a machine.<br>
-You copy <b>an entire supply web</b> that took 30+ years and a dozen countries to assemble.
+A competitor would need to reproduce the supplier network and system-integration knowledge that ASML developed over 30+ years.
 </div>
 </div>
 </div>
@@ -125,12 +124,12 @@ LINE THAT LANDS:
 
 ---
 
-# Two chokepoints, one step
+# ASML and Zeiss are single-source dependencies
 
 ![chokepoint board — 5 of 7](/diagrams/rendered/board-5.svg)
 
 <div class="text-sm opacity-60 mt-6 text-center">
-ASML gates who can print advanced chips. Zeiss gates ASML. One process step just put <b>two</b> stamps on the board.
+ASML is the sole EUV scanner supplier; Zeiss is the sole supplier of its optics. Both enter the dependency map.
 </div>
 
 <!--
@@ -143,20 +142,20 @@ FACT AMMO:
 
 ---
 
-# The business a monopoly builds — FY2025
+# ASML financials — FY2025
 
 <div class="grid grid-cols-2 gap-x-12 gap-y-6 mt-8 text-lg">
 
 <div><b>€32.7B</b> — total net sales <span class="opacity-50">(+16% YoY)</span></div>
 <div><b>€9.6B</b> — net income</div>
 <div><b>52.8%</b> — gross margin</div>
-<div><b>~€28B</b> — net bookings (backlog)</div>
+<div><b>€28.0B</b> — FY2025 net bookings</div>
 <div><b>48</b> — EUV systems shipped</div>
 <div><b>€11.6B</b> — EUV sales <span class="opacity-50">(+39%)</span></div>
 
 </div>
 
-<div class="text-xs opacity-40 text-right mt-4">as of FY2025 · refresh before recording</div>
+<div class="text-xs opacity-40 text-right mt-4">FY2025 results</div>
 
 <!--
 BEATS:
@@ -170,7 +169,7 @@ LINE THAT LANDS:
 
 ---
 
-# The frontier: High-NA EUV
+# High-NA EUV raises numerical aperture to 0.55
 
 <div class="grid grid-cols-3 gap-6 mt-10 text-center">
 <div>
@@ -188,7 +187,7 @@ LINE THAT LANDS:
 </div>
 
 <div class="text-sm opacity-60 mt-10 text-center">
-Higher NA → smaller features in a single exposure. Without it, you split one layer into multiple masks — <b>multi-patterning</b>: slower, costlier, lower yield. Hold that word.
+Higher NA prints smaller features in one exposure. <b>Multi-patterning</b> uses several masks for one layer, adding process time, cost, and yield risk.
 </div>
 
 <!--
@@ -203,16 +202,14 @@ LINE THAT LANDS:
 
 ---
 
-# The chokepoint
+# Export licenses restrict where ASML can ship EUV tools
 
 <div class="text-3xl mt-12 leading-relaxed">
-One company.<br>
-One country.<br>
-Decides which nations get to make advanced chips at all.
+Dutch export licenses determine which customers can buy ASML's EUV systems.
 </div>
 
 <div class="text-sm opacity-60 mt-10">
-Barred from selling EUV to China by Dutch/US export rules — which is exactly why ASML sits at the center of the chip war. That export license is a lever. We'll pull it in the final act.
+ASML cannot sell EUV systems to China under Dutch export controls coordinated with the United States. Those rules are central to current chip policy.
 </div>
 
 <!--

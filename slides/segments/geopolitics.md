@@ -18,9 +18,9 @@ swappable: true    # export rules move monthly — ONE topic per slide, NO cross
 -->
 
 
-# The Board Is the World
+# The semiconductor supply chain is geopolitical leverage
 
-<div class="text-xl opacity-70 mt-3">You've built the whole map. Now read it as a weapons diagram.</div>
+<div class="text-xl opacity-70 mt-3">The same chokepoints constrain national policy and corporate supply.</div>
 
 ![the full map](/diagrams/rendered/map-full.svg)
 
@@ -46,12 +46,12 @@ LINE THAT LANDS:
 layout: center
 ---
 
-# Seven single points of failure
+# Seven chokepoints in leading-edge AI chips
 
 ![the completed board](/diagrams/rendered/board-7.svg)
 
 <div class="text-sm opacity-60 mt-6 text-center">
-The cold open promised seven. You watched every stamp get earned. Now count what each one is worth as a <i>weapon</i>.
+Seven supplier dependencies take an estimated five years or more to replace.
 </div>
 
 <!--
@@ -70,24 +70,24 @@ LINE THAT LANDS:
 
 ---
 
-# Four levers control the chip supply chain
+# Four policy tools shape chip trade
 
 <div class="grid grid-cols-2 gap-6 mt-8">
 <div class="border-2 border-gray-400 rounded-lg p-5">
-<div class="text-2xl font-bold">The EUV license</div>
-<div class="opacity-70 mt-2">One Dutch machine you can refuse to ship. The lever you met in the fab tour.</div>
+<div class="text-2xl font-bold">EUV export licenses</div>
+<div class="opacity-70 mt-2">The Netherlands can deny export licenses for ASML's EUV systems.</div>
 </div>
 <div class="border-2 border-gray-400 rounded-lg p-5">
-<div class="text-2xl font-bold">The EDA switch</div>
-<div class="opacity-70 mt-2">Two US companies' software. Turn it off and designs stop compiling.</div>
+<div class="text-2xl font-bold">EDA export controls</div>
+<div class="opacity-70 mt-2">US export controls can cut Chinese designers off from leading EDA software.</div>
 </div>
 <div class="border-2 border-gray-400 rounded-lg p-5">
-<div class="text-2xl font-bold">The Entity List + FDPR</div>
-<div class="opacity-70 mt-2">US law that reaches any fab on Earth using US tools — even in Taiwan.</div>
+<div class="text-2xl font-bold">The Entity List and FDPR</div>
+<div class="opacity-70 mt-2">US rules can cover chips made abroad with US technology, including at TSMC.</div>
 </div>
 <div class="border-2 border-gray-400 rounded-lg p-5">
-<div class="text-2xl font-bold">The tariff</div>
-<div class="opacity-70 mt-2">A 25% toll at the US border on the most advanced chips.</div>
+<div class="text-2xl font-bold">Section 232 tariffs</div>
+<div class="opacity-70 mt-2">A 25% US tariff applies to advanced chips above specified thresholds.</div>
 </div>
 </div>
 
@@ -109,17 +109,17 @@ LINE THAT LANDS:
 
 ---
 
-# Lever one: the first shot was one company
+# US controls expanded from Huawei to China-wide capabilities
 
 <div class="mt-8 space-y-4 text-lg">
-<div><b class="text-red-500">May 2019</b> — Huawei → Entity List. US suppliers now need a license.</div>
-<div><b class="text-red-500">May 2020</b> — FDPR extended. TSMC — a Taiwanese fab — must stop taking Huawei orders.</div>
-<div><b class="text-red-500">Oct 2022</b> — from one company to a whole country: advanced chips + tools cut off to all of China.</div>
-<div><b class="text-red-500">Dec 2024</b> — HBM controlled, 140 entities added, 24 tool + 3 software categories.</div>
+<div><b class="text-red-500">May 2019</b> · Huawei added to the Entity List; covered US exports require licenses.</div>
+<div><b class="text-red-500">May 2020</b> · FDPR expanded; TSMC can no longer manufacture covered Huawei chips without a US license.</div>
+<div><b class="text-red-500">Oct 2022</b> · Controls expand to specified advanced-computing chips and semiconductor-manufacturing equipment for China.</div>
+<div><b class="text-red-500">Dec 2024</b> · HBM added; 140 entities and 27 tool and software categories covered.</div>
 </div>
 
 <div class="text-sm opacity-60 mt-8">
-The doctrine shift: target a company → deny a country a capability.
+Policy scope expanded from one company to a country's advanced-chip capability.
 </div>
 
 <!--
@@ -137,14 +137,14 @@ LINE THAT LANDS:
 
 ---
 
-# Lever two: how a ban became a toll booth
+# Licenses and tariffs replaced a full ban
 
 <div class="mt-6 space-y-3 text-lg">
-<div><b>Oct 2023</b> — export rules kill the H800 loophole; Nvidia designs the <b>H20</b> to comply.</div>
-<div><b>Apr 2025</b> — H20 banned anyway. Nvidia writes off <b class="text-red-500">$4.5B</b> in one quarter.</div>
-<div><b>Jul–Aug 2025</b> — ban reversed. Price of a license: <b>15%</b> of China chip revenue to the US government.</div>
-<div><b>Aug 2025</b> — Beijing tells its firms not to buy. Nvidia halts H20 production.</div>
-<div><b>Jan 2026</b> — the H200 — banned in 2023 — becomes conditionally exportable, case-by-case, behind a 25% tariff.</div>
+<div><b>Oct 2023</b> · Rules close the H800 exception; Nvidia releases the compliant <b>H20</b>.</div>
+<div><b>Apr 2025</b> · The US adds an H20 license requirement; Nvidia records a <b class="text-red-500">$4.5B</b> charge.</div>
+<div><b>Jul–Aug 2025</b> · Licenses resume; Nvidia and AMD agree to pay <b>15%</b> of China chip revenue to the US government.</div>
+<div><b>Aug 2025</b> · The Chinese government discourages purchases; Nvidia stops H20 production.</div>
+<div><b>Jan 2026</b> · H200 becomes eligible for case-by-case licenses and a 25% tariff.</div>
 </div>
 
 <!--
@@ -163,7 +163,7 @@ LINE THAT LANDS:
 
 ---
 
-# China's counter: the minerals lever
+# China retaliated with mineral export controls
 
 <div class="grid grid-cols-2 gap-8 mt-8">
 <div>
@@ -172,8 +172,8 @@ LINE THAT LANDS:
 </div>
 <div class="flex flex-col justify-center">
 <div class="text-lg space-y-2">
-<div><b>Oct 2025</b> — China's rare-earth controls, modeled on the US FDPR: foreign goods with Chinese rare-earth content need Beijing's license.</div>
-<div class="opacity-70">Truce timers: pause expires <b>Nov 10, 2026</b> · mineral ban suspended to <b>Nov 27, 2026</b>.</div>
+<div><b>Oct 2025</b> · China applies FDPR-style rare-earth rules to foreign goods with Chinese content.</div>
+<div class="opacity-70">Current pauses expire <b>Nov 10, 2026</b> and <b>Nov 27, 2026</b>.</div>
 </div>
 </div>
 </div>
@@ -194,20 +194,20 @@ LINE THAT LANDS:
 
 ---
 
-# The Nexperia crisis: hostage-taking with penny chips
+# Nexperia showed the leverage of mature-node chips
 
 <div class="grid grid-cols-3 gap-6 mt-10 text-center">
 <div>
 <div class="text-5xl font-bold">Sep 2025</div>
-<div class="opacity-70 mt-2">Dutch government seizes Nexperia (China-owned) — fearing tech transfer out of Europe</div>
+<div class="opacity-70 mt-2">Dutch government takes control of Nexperia over technology-transfer concerns</div>
 </div>
 <div>
 <div class="text-5xl font-bold text-red-500">Oct 2025</div>
-<div class="opacity-70 mt-2">China halts exports from Nexperia's Dongguan plant — <b>50+ billion chips/yr</b></div>
+<div class="opacity-70 mt-2">China blocks exports from Nexperia's Dongguan plant: <b>50+ billion chips/yr</b></div>
 </div>
 <div>
 <div class="text-5xl font-bold">days</div>
-<div class="opacity-70 mt-2">from global auto lines stopping — over transistors that cost pennies</div>
+<div class="opacity-70 mt-2">between the export block and warnings of auto-production stoppages</div>
 </div>
 </div>
 
@@ -227,22 +227,22 @@ LINE THAT LANDS:
 
 ---
 
-# China's answer: can it just build its own?
+# China can make advanced chips, at higher cost
 
 <div class="grid grid-cols-2 gap-8 mt-8">
 <div>
 <div class="text-xl font-bold">Logic — SMIC</div>
 <ul class="mt-2 opacity-80 leading-relaxed">
-<li>7nm shipping since 2023 (the Mate 60 shock)</li>
-<li>5nm via DUV multi-patterning — the workaround era</li>
+<li>7 nm-class chips shipping since the 2023 Mate 60 launch</li>
+<li>5 nm-class production through DUV multi-patterning</li>
 <li>Yields ~20–40%; sells at a <b>40–50% premium</b> to TSMC</li>
 </ul>
 </div>
 <div>
-<div class="text-xl font-bold">Silicon — Huawei Ascend</div>
+<div class="text-xl font-bold">AI accelerators — Huawei Ascend</div>
 <ul class="mt-2 opacity-80 leading-relaxed">
 <li>910C: ~600k units targeted in 2026 (2× 2025)</li>
-<li>CloudMatrix 384: beats an Nvidia rack — by brute force</li>
+<li>CloudMatrix 384: exceeds a GB200 NVL72 on aggregate compute</li>
 <li>384 chips, 16 racks, ~4× the power</li>
 </ul>
 </div>
@@ -265,16 +265,16 @@ LINE THAT LANDS:
 
 ---
 
-# The walls China hasn't climbed — yet
+# China still trails in lithography, HBM, and EDA
 
 <div class="grid grid-cols-2 gap-x-10 gap-y-5 mt-8 text-lg">
-<div><b>EUV:</b> Shenzhen prototype light source ~100–150W — the power ASML passed in <b>2017</b></div>
+<div><b>EUV:</b> Shenzhen's prototype reports ~100–150 W source power, comparable with ASML systems around <b>2017</b></div>
 <div><b>DUV:</b> SMEE's headline 2025 tool turned out to be a 110nm dry scanner, not the claimed 28nm class</div>
 <div><b>HBM:</b> CXMT ~8% of DRAM, HBM3 targeted end-2026 — <b>3–4 years</b> behind Korea</div>
 <div><b>EDA:</b> Empyrean, the biggest domestic player, ~10–12% of China's own market</div>
 </div>
 
-<div class="text-center text-2xl font-bold mt-10">Consensus gap at the leading edge: ~5 years — and closing faster than the rule-writers assumed</div>
+<div class="text-center text-2xl font-bold mt-10">Estimates put China's leading-edge gap near five years, with wide variation by technology.</div>
 
 <!--
 BEATS:
@@ -294,19 +294,19 @@ LINE THAT LANDS:
 
 ---
 
-# The US answer: from writing checks to buying shares
+# US industrial policy now includes direct equity
 
 <div class="grid grid-cols-2 gap-8 mt-6">
 <div>
 <div class="text-lg opacity-70">CHIPS Act (2022)</div>
 <div class="text-5xl font-bold mt-1">$52.7B</div>
 <div class="opacity-70 mt-1">+ 25% investment tax credit</div>
-<div class="mt-5 text-lg opacity-70">The pivot (Aug 2025)</div>
+<div class="mt-5 text-lg opacity-70">August 2025</div>
 <div class="text-3xl font-bold mt-1">US takes 9.9% of Intel — $8.9B</div>
 <div class="opacity-70 mt-1">the government is now Intel's largest shareholder</div>
 </div>
 <div class="flex flex-col justify-center gap-3 text-lg">
-<div><b>TSMC Arizona:</b> $165B — largest FDI in US history</div>
+<div><b>TSMC Arizona:</b> $165B announced investment</div>
 <div><b>Micron:</b> up to $250B US plan</div>
 <div><b>Samsung Taylor, TX:</b> ~$37B, unlocked by Tesla</div>
 <div class="mt-3 text-2xl font-bold">US advanced-logic capacity: 0% (2022) → 28% (2032 proj.)</div>
@@ -329,25 +329,25 @@ LINE THAT LANDS:
 
 ---
 
-# Taiwan: the prize on the board
+# Taiwan's concentration is the central risk
 
 <div class="grid grid-cols-3 gap-6 mt-10 text-center">
 <div>
 <div class="text-6xl font-bold">92%</div>
-<div class="opacity-70 mt-2">of sub-10nm capacity, on one island</div>
+<div class="opacity-70 mt-2">of global sub-10 nm capacity was located in Taiwan in 2022</div>
 </div>
 <div>
 <div class="text-6xl font-bold">~90%</div>
-<div class="opacity-70 mt-2">of the most advanced chips (TSMC)</div>
+<div class="opacity-70 mt-2">estimated share of ≤7 nm-class merchant logic</div>
 </div>
 <div>
 <div class="text-6xl font-bold">2027</div>
-<div class="opacity-70 mt-2">N2 already sold out through Q2</div>
+<div class="opacity-70 mt-2">N2 capacity committed through Q2 2027</div>
 </div>
 </div>
 
 <div class="text-center text-lg opacity-70 mt-10">
-The silicon shield — or the reason to seize the island? Argue it both ways.
+The same concentration may deter conflict or make control of Taiwan more valuable.
 </div>
 
 <!--
@@ -369,16 +369,16 @@ LINE THAT LANDS:
 
 ---
 
-# The wargame, walked across your own board
+# A modeled Taiwan conflict costs $10.6T in year one
 
 <div class="text-center mt-6">
 <div class="text-8xl font-bold text-red-500">$10.6T</div>
-<div class="text-2xl opacity-80 mt-3">lost in year one — ~9.6% of global GDP</div>
-<div class="opacity-60 mt-2">More than COVID. More than 2008. In the first year alone.</div>
+<div class="text-2xl opacity-80 mt-3">~9.6% of global GDP</div>
+<div class="opacity-60 mt-2">Bloomberg's estimate exceeds the economic losses from COVID or the 2008 crisis.</div>
 </div>
 
 <div class="text-sm opacity-50 mt-10 text-center">
-Source: Bloomberg Economics model, Feb 2026. A model, not a prophecy — no scenario in which anyone "wins."
+Source: Bloomberg Economics model, Feb 2026. The result depends on scenario assumptions.
 </div>
 
 <!--
@@ -400,14 +400,14 @@ LINE THAT LANDS:
 layout: center
 ---
 
-# The board is the world
+# The supply chain is splitting into two stacks
 
 <div class="text-xl opacity-80 mt-6 max-w-3xl text-center leading-relaxed">
-Two AI stacks. Two toolchains. Truce timers ticking toward November. The most globalized industry on Earth, splitting into blocs — in real time.
+The US-led and China-led AI stacks use different accelerators, software, and toolchains. Current mineral-control pauses expire in November 2026.
 </div>
 
 <div class="text-lg opacity-60 mt-10 text-center">
-You can read the news now. One question left: after the war, the tolls, and the moats — where does the money actually pool?
+The final comparison follows margins across the supply chain.
 </div>
 
 <!--

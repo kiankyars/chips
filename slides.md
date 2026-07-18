@@ -24,7 +24,7 @@ fonts:
 
 # CHIPS
 
-<div class="title-subtitle">One accelerator. Sand to data center.</div>
+<div class="title-subtitle">How one AI accelerator moves from design to data center.</div>
 
 <div class="title-journey">
   <span>SAND</span><span>DESIGN</span><span>FAB</span><span>MEMORY</span><span>PACKAGE</span>
@@ -49,8 +49,8 @@ layout: section
 class: act-divider act-one
 ---
 
-# Part 1 — The Impossible Object
-## Act I · what the object is, and why it shattered an industry
+# Part 1: Inside the Accelerator
+## How transistors work and why leading-edge fabs cost more than $20B
 
 ---
 src: ./slides/segments/foundations.md
@@ -65,8 +65,8 @@ layout: section
 class: act-divider act-two
 ---
 
-# Part 2 — The Blueprint
-## Act II · Santa Clara: the chip is designed before it is built
+# Part 2: Chip Design
+## From architecture and EDA software to a manufacturable design file
 
 ---
 src: ./slides/segments/nvidia.md
@@ -89,8 +89,8 @@ layout: section
 class: act-divider act-three
 ---
 
-# Part 3 — The Island
-## Act III · the file crosses the Pacific to be made
+# Part 3: Foundries
+## Most leading-edge fabless designs are manufactured by TSMC
 
 ---
 src: ./slides/segments/tsmc.md
@@ -109,8 +109,8 @@ layout: section
 class: act-divider act-four
 ---
 
-# Part 4 — The Fab Tour
-## Act IV · three months, a thousand steps, one wafer
+# Part 4: Fabrication
+## How deposition, lithography, etch, and inspection build a chip
 
 ---
 src: ./slides/segments/life-of-a-wafer.md
@@ -137,8 +137,8 @@ layout: section
 class: act-divider act-interlude
 ---
 
-# Interlude — The Other 90%
-## most chips never touch the leading edge
+# Interlude: Mature-Node Chips
+## Most chips use older manufacturing processes
 
 ---
 src: ./slides/segments/other-90.md
@@ -149,8 +149,8 @@ layout: section
 class: act-divider act-five
 ---
 
-# Part 5 — Memory & the Assembly
-## Act V · a chip that can compute but cannot remember
+# Part 5: Memory and Packaging
+## HBM and advanced packaging complete the accelerator
 
 ---
 src: ./slides/segments/memory-hbm.md
@@ -165,8 +165,8 @@ layout: section
 class: act-divider act-six
 ---
 
-# Part 6 — The Board Is the World
-## Act VI · the finished map, re-read as a map of leverage
+# Part 6: Supply-Chain Leverage
+## Where supplier concentration shapes margins and state policy
 
 ---
 src: ./slides/segments/geopolitics.md

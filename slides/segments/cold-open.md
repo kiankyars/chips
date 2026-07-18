@@ -6,7 +6,7 @@ layout: center
 id: cold-open
 act: 0 — The Object
 tier: —
-angle: "Hold up the single most fought-over object on Earth right now, and admit you don't fully understand how it gets made. Neither does almost anyone. By the end, we both will."   # YOU OWN THIS LINE — rewrite it in your voice
+angle: "Use one GB300-class accelerator as the physical object whose supply chain the course will trace."
 runtime: ~4 min
 status: draft
 seeds: [the-object, the-seven, the-money-bar]
@@ -18,11 +18,11 @@ note: BUILD AND RECORD LAST — this front-loads four promises (map, board, mone
 -->
 
 
-# One object
+# One GB300 accelerator
 
 <div class="text-2xl opacity-80 mt-6 leading-relaxed">
-A slab of silicon the size of a coaster.<br>
-Right now it is the most fought-over object on Earth.
+A coaster-sized package with 208 billion transistors.<br>
+It sits at the center of the current AI infrastructure buildout.
 </div>
 
 <!--
@@ -35,20 +35,20 @@ LINE THAT LANDS:
 
 ---
 
-# Three things that shouldn't be possible
+# From one accelerator to industry spending
 
 <div class="grid grid-cols-3 gap-8 mt-12 text-center">
 <div>
 <div class="text-6xl font-bold">208 B</div>
-<div class="opacity-70 mt-3">transistors on one package — about one for every star in the Milky Way</div>
+<div class="opacity-70 mt-3">transistors across two compute dies</div>
 </div>
 <div>
 <div class="text-6xl font-bold">~$4 M</div>
-<div class="opacity-70 mt-3">for one rack of 72 — pulling the power of ~110 homes</div>
+<div class="opacity-70 mt-3">estimated price for a 72-GPU rack drawing about 135 kW</div>
 </div>
 <div>
 <div class="text-6xl font-bold">~$600 B</div>
-<div class="opacity-70 mt-3">hyperscaler capex in 2026, chasing this one part</div>
+<div class="opacity-70 mt-3">estimated 2026 hyperscaler capital spending, including AI infrastructure</div>
 </div>
 </div>
 
@@ -64,12 +64,12 @@ LINE THAT LANDS:
 
 ---
 
-# And almost nobody can make it
+# The companies behind one accelerator
 
 ![the industry map — dark](/diagrams/rendered/map-dark.svg)
 
 <div class="text-lg opacity-70 mt-6 text-center">
-Every company that touches this chip lives somewhere on this map. Tonight it's dark. We're going to light up every single box.
+This map follows the accelerator from design software to the finished package. Each section adds the suppliers responsible for one stage.
 </div>
 
 <!--
@@ -82,12 +82,12 @@ LINE THAT LANDS:
 
 ---
 
-# I count seven
+# Seven suppliers with limited substitutes
 
 ![the chokepoint board — empty](/diagrams/rendered/board-0.svg)
 
 <div class="text-lg opacity-70 mt-6 text-center">
-Seven companies that are single points of failure for the modern economy. Remove any one and the leading edge stops within months. We'll find them one at a time.
+Each controls a technology that leading-edge production cannot replace quickly. Later sections test that claim against market share and replacement time.
 </div>
 
 <!--
@@ -104,13 +104,13 @@ LINE THAT LANDS:
 layout: center
 ---
 
-# The journey
+# From design file to data center
 
 ![journey bar — start](/diagrams/rendered/journey-0.svg)
 
 <div class="text-lg opacity-70 mt-8">
 SAND → DESIGN → FAB → MEMORY → PACKAGE → DATA CENTER.<br>
-We follow this one chip the whole way. Let's start where it starts: as an idea.
+The course follows one accelerator through each production stage, beginning with design.
 </div>
 
 <!--

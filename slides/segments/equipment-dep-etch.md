@@ -17,9 +17,9 @@ sources: research/equipment-dep-etch.md
 -->
 
 
-# The Sculptors
+# Deposition and etch
 
-<div class="text-xl opacity-70 mt-2">Act IV · the tour moves past litho — DEPOSIT and ETCH</div>
+<div class="text-xl opacity-70 mt-2">Part 4 · Fabrication · deposition and etch</div>
 
 <div class="grid grid-cols-2 gap-8 mt-6 items-center">
 <div>
@@ -28,10 +28,9 @@ sources: research/equipment-dep-etch.md
 
 </div>
 <div class="text-2xl leading-relaxed">
-ASML <b>printed</b> the pattern.<br>
-But a printer only draws lines.<br>
-<span class="opacity-70">Two other machines make the chip real —</span><br>
-<span class="opacity-70">one <b>adds</b> material, one <b>carves</b> it away.</span>
+Lithography defines a pattern.<br>
+<b>Deposition</b> adds material.<br>
+<span class="opacity-70"><b>Etching</b> removes selected material.</span>
 </div>
 </div>
 
@@ -50,28 +49,28 @@ LINE THAT LANDS:
 
 ---
 
-# If you can't shrink sideways, build upward
+# 3D NAND scales by adding layers
 
-<div class="grid grid-cols-2 gap-10 mt-4">
+<div class="grid grid-cols-2 gap-10 mt-2">
 <div>
-<div class="text-sm opacity-60 mb-2">THE DANCE — repeated every layer</div>
+<div class="text-sm opacity-60 mb-2">ONE LAYER</div>
 
 - **DEPOSIT** — lay down a film, sometimes atoms thick
 - *(litho prints the pattern)*
-- **ETCH** — plasma carves away everything the pattern didn't protect
+- **ETCH** — plasma removes material the pattern did not protect
 
-<div class="mt-3 opacity-70">…and again. ~1,000 times.</div>
+<div class="mt-3 opacity-70">Repeated across roughly 1,000 process steps.</div>
 </div>
 <div>
-<div class="text-sm opacity-60 mb-2">3D NAND — scaling by STACKING, not shrinking</div>
+<div class="text-sm opacity-60 mb-2">3D NAND LAYER COUNT</div>
 <div class="text-5xl font-bold">24 → 200+ → ~1,000</div>
 <div class="opacity-70 mt-1">layers · 2013 → today → 2030 roadmap</div>
-<div class="mt-4 text-lg">No finer printing. Just <b>more floors</b>.<br><span class="opacity-60">These fabs don't use EUV at all.</span></div>
+<div class="mt-4 text-lg">More layers increase deposition and etch work.<br><span class="opacity-60">Current NAND production does not use EUV.</span></div>
 </div>
 </div>
 
 <div class="text-center text-xl mt-8 opacity-80">
-When 2D shrink got too hard, the industry went <b>vertical</b> — and the value followed, from the <b>printer</b> to the <b>sculptors</b>.
+As 3D structures grow taller, deposition and etch account for more process steps and equipment spending.
 </div>
 
 <!--
@@ -92,35 +91,33 @@ LINE THAT LANDS:
 
 ---
 
-# Applied Materials — the ADD step
+# Applied Materials spans most process steps
 
 ![deposit step glowing](/diagrams/rendered/flow-deposit.svg)
 
-<div class="grid grid-cols-2 gap-10 mt-4">
-<div class="text-lg leading-relaxed">
+<div class="grid grid-cols-2 gap-10 mt-1">
+<div class="text-base leading-relaxed">
 
-The <b>broadest arsenal in the fab</b> — deposition, etch, implant, polish, thermal, even e-beam metrology.
+Applied sells deposition, etch, implant, polish, thermal, and e-beam metrology systems.
 
-<div class="opacity-70 text-base mt-2">Nearly every step <i>except</i> litho and track. #2 in the world, behind only ASML.</div>
+<div class="opacity-70 text-sm mt-1">Its portfolio covers nearly every step except lithography and track; it ranks #2 in wafer-fab equipment.</div>
 
 </div>
 <div>
-<div class="text-sm opacity-60 mb-1">THE ARCHITECTURE TOLL-BOOTH</div>
-<div class="text-lg">Every time the transistor changes <b>shape</b>, Applied's served market grows:</div>
-<div class="mt-3 text-3xl font-bold">GAA: +~$1B</div>
-<div class="text-3xl font-bold">backside power: +~$1B</div>
-<div class="opacity-60 text-sm mt-1">per 100,000 wafer-starts/month of new capacity</div>
+<div class="text-sm opacity-60 mb-1">INCREMENTAL TOOL SPEND AT 100K WAFER STARTS/MONTH</div>
+<div class="text-base">Applied's estimate per architecture change:</div>
+<div class="mt-2 text-2xl font-bold">GAA: +~$1B</div>
+<div class="text-2xl font-bold">backside power: +~$1B</div>
 </div>
 </div>
 
-<div class="border-2 border-gray-400 rounded-lg p-4 mt-5">
+<div class="border-2 border-gray-400 rounded-lg p-2 mt-2">
   <div class="grid grid-cols-4 gap-4 text-center">
-    <div><div class="text-3xl font-bold">$28.4B</div><div class="text-sm opacity-60">revenue FY25</div></div>
-    <div><div class="text-3xl font-bold">~49%</div><div class="text-sm opacity-60">gross margin</div></div>
-    <div><div class="text-3xl font-bold">#2</div><div class="text-sm opacity-60">in WFE (after ASML)</div></div>
-    <div><div class="text-3xl font-bold">~10 yrs</div><div class="text-sm opacity-60">to replace</div></div>
+    <div><div class="text-2xl font-bold">$28.4B</div><div class="text-sm opacity-60">revenue FY25</div></div>
+    <div><div class="text-2xl font-bold">~49%</div><div class="text-sm opacity-60">gross margin</div></div>
+    <div><div class="text-2xl font-bold">#2</div><div class="text-sm opacity-60">in WFE (after ASML)</div></div>
+    <div><div class="text-2xl font-bold">~10 yrs</div><div class="text-sm opacity-60">to replace</div></div>
   </div>
-  <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026 · moat: the widest toolset under one roof — sells the recipe, not just the tool</div>
 </div>
 
 <!--
@@ -143,36 +140,35 @@ LINE THAT LANDS:
 
 ---
 
-# Lam Research — the REMOVE step
+# Lam Research leads dry etch
 
 ![etch step glowing](/diagrams/rendered/flow-etch.svg)
 
-<div class="grid grid-cols-2 gap-10 mt-4 items-center">
+<div class="grid grid-cols-2 gap-10 mt-1 items-center">
 <div>
-<div class="text-sm opacity-60 mb-2">ONE 3D-NAND MEMORY HOLE</div>
-<div class="text-2xl leading-relaxed">
+<div class="text-sm opacity-60 mb-1">ONE 3D-NAND MEMORY HOLE</div>
+<div class="text-xl leading-snug">
 <b>1/1000th</b> the width of a human hair.<br>
 <b>50×</b> deeper than it is wide.<br>
-<b>Billions</b> per wafer — every one identical.
+<b>Billions</b> of channels per wafer, each with the same target profile.
 </div>
-<div class="opacity-60 text-base mt-3">Etched straight down through 100+ stacked layers, in one pass.</div>
+<div class="opacity-60 text-sm mt-2">Etched through 100+ stacked layers in one pass.</div>
 </div>
 <div>
-<div class="text-sm opacity-60 mb-1">THE ETCH KING</div>
-<div class="text-lg leading-relaxed">
-20+ years the dry-etch leader · 7 device generations leading NAND hole etch · <b>&gt;100M</b> NAND wafers channel-etched to date.
+<div class="text-sm opacity-60 mb-1">DRY-ETCH POSITION</div>
+<div class="text-base leading-snug">
+Dry-etch leader for 20+ years; led seven NAND channel-etch generations; <b>&gt;100M</b> NAND wafers channel-etched.
 </div>
 </div>
 </div>
 
-<div class="border-2 border-gray-400 rounded-lg p-4 mt-5">
+<div class="border-2 border-gray-400 rounded-lg p-2 mt-2">
   <div class="grid grid-cols-4 gap-4 text-center">
-    <div><div class="text-3xl font-bold">$18.4B</div><div class="text-sm opacity-60">revenue FY25</div></div>
-    <div><div class="text-3xl font-bold">~50%</div><div class="text-sm opacity-60">gross margin</div></div>
-    <div><div class="text-3xl font-bold">~½</div><div class="text-sm opacity-60">of dry etch (est.)</div></div>
-    <div><div class="text-3xl font-bold">~10 yrs</div><div class="text-sm opacity-60">to replace</div></div>
+    <div><div class="text-2xl font-bold">$18.4B</div><div class="text-sm opacity-60">revenue FY25</div></div>
+    <div><div class="text-2xl font-bold">~50%</div><div class="text-sm opacity-60">gross margin</div></div>
+    <div><div class="text-2xl font-bold">~½</div><div class="text-sm opacity-60">of dry etch (est.)</div></div>
+    <div><div class="text-2xl font-bold">~10 yrs</div><div class="text-sm opacity-60">to replace</div></div>
   </div>
-  <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026 · moat: nobody else can drill this hole — and ~100,000 chambers already in the field</div>
 </div>
 
 <!--
@@ -197,7 +193,7 @@ LINE THAT LANDS:
 
 ---
 
-# Two more, bolted to the line
+# Tokyo Electron and ASM dominate adjacent steps
 
 <div class="grid grid-cols-2 gap-8 mt-4">
 
@@ -211,7 +207,7 @@ LINE THAT LANDS:
 <div class="text-lg mt-3 leading-relaxed">
 The <b>track</b> — coats resist before litho, develops it after. <b>&gt;90%</b> global share.
 </div>
-<div class="opacity-70 text-base mt-2">Physically bolted to every ASML scanner: an EUV cell = an ASML machine + (almost always) a TEL track. A grip <i>tighter</i> than ASML's on litho.</div>
+<div class="opacity-70 text-base mt-2">TEL tracks are paired with most EUV scanners; SCREEN holds a small remaining share.</div>
 </div>
 
 <div class="border-2 border-gray-400 rounded-lg p-5">
@@ -219,13 +215,13 @@ The <b>track</b> — coats resist before litho, develops it after. <b>&gt;90%</b
 <div class="text-lg mt-3 leading-relaxed">
 <b>ALD</b> — atomic layer deposition. Film built <b>one atomic layer per cycle</b>, coating every hidden surface.
 </div>
-<div class="opacity-70 text-base mt-2">Gate-all-around wraps the gate around the channel — cavities litho and normal deposition can't reach. Only ALD gets in. GAA handed ASM a record year.</div>
+<div class="opacity-70 text-base mt-2">Gate-all-around structures contain recessed surfaces that require conformal coating. ALD serves those surfaces, and GAA demand helped ASM report record 2025 revenue.</div>
 </div>
 
 </div>
 
 <div class="text-sm opacity-60 mt-5 text-center">
-Big five — ASML, Applied, Lam, TEL, KLA — control ~<b>70%</b> of the ~$116B equipment market. Each owns a <i>different</i> step. An oligopoly of monopolies.
+The five largest equipment suppliers account for about <b>70%</b> of the ~$116B market, with each company leading specific process categories.
 </div>
 
 <!--
@@ -248,27 +244,25 @@ LINE THAT LANDS:
 
 ---
 
-# 3D chips shifted value to deposition and etch
+# 3D scaling increased deposition and etch demand
 
 <div class="grid grid-cols-2 gap-10 mt-6 items-center">
 <div class="text-2xl leading-relaxed">
-A chip isn't machined.<br>
-It's <b>built up</b> and <b>carved down</b> —<br>
-<span class="opacity-70">deposit, etch, deposit, etch,</span><br>
-<span class="opacity-70">~1,000 times.</span>
+Fabs build chips by repeatedly depositing material<br>
+and etching selected regions across<br>
+<b>roughly 1,000 process steps</b>.
 </div>
 <div>
-<div class="text-sm opacity-60 mb-2">AND THEY NEVER STOP EARNING</div>
+<div class="text-sm opacity-60 mb-2">INSTALLED-BASE REVENUE</div>
 <div class="text-lg leading-relaxed">
-~<b>100,000</b> tool chambers in the field, running for decades. Sell it once — service it for 25 years.
+Lam has roughly <b>100,000</b> process chambers in the field. Vendors earn service revenue over tools' 20–25-year operating lives.
 </div>
 <div class="opacity-60 text-base mt-2">Lam: ~36% of revenue recurring · Applied's services arm now entirely recurring.</div>
 </div>
 </div>
 
 <div class="text-2xl mt-8 text-center leading-relaxed">
-You've added and carved ~1,000 times.<br>
-<b>How do you know it worked?</b>
+KLA's inspection tools check whether each process step met its target.
 </div>
 
 <!--

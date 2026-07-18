@@ -17,9 +17,9 @@ sources: research/arm-riscv.md
 -->
 
 
-# Empire vs Insurgent
+# Arm and RISC-V
 
-<div class="text-xl opacity-70 mt-2">Arm · RISC-V — the war over the words every chip speaks</div>
+<div class="text-xl opacity-70 mt-2">Two instruction-set models: licensed and open</div>
 
 <img src="/diagrams/rendered/map-design.svg" class="absolute bottom-4 right-4 w-56 opacity-90" alt="map — design region lit" />
 
@@ -37,7 +37,7 @@ LINE THAT LANDS:
 
 ---
 
-# The toll booth
+# Arm earns royalties on each chip shipped
 
 <div class="grid grid-cols-3 gap-8 mt-10 text-center">
 <div>
@@ -50,12 +50,12 @@ LINE THAT LANDS:
 </div>
 <div>
 <div class="text-6xl font-bold">~1–2%</div>
-<div class="opacity-70 mt-2">royalty per chip, forever</div>
+<div class="opacity-70 mt-2">typical royalty rate on the chip's selling price</div>
 </div>
 </div>
 
 <div class="text-sm opacity-60 mt-12 text-center">
-Arm has never fabbed a chip. It sells blueprints — and collects at the gate on every unit shipped.
+Arm licenses CPU designs and architecture. Most contracts include an upfront fee and a per-chip royalty.
 </div>
 
 <!--
@@ -78,21 +78,21 @@ LINE THAT LANDS:
 
 ---
 
-# Two ways to pay the empire
+# Two Arm license models
 
 <div class="grid grid-cols-2 gap-8 mt-8">
 <div class="border-2 border-gray-400 rounded-lg p-5">
 <div class="text-2xl font-bold">Core license</div>
-<div class="opacity-70 mt-3 leading-relaxed">Buy a finished CPU design (Cortex, Neoverse). Drop it in. Most licensees.</div>
+<div class="opacity-70 mt-3 leading-relaxed">License a finished Cortex or Neoverse CPU design for integration into a chip.</div>
 </div>
 <div class="border-2 border-gray-400 rounded-lg p-5">
 <div class="text-2xl font-bold">Architecture license</div>
-<div class="opacity-70 mt-3 leading-relaxed">Buy the <i>vocabulary only</i> — design your own CPU that speaks Arm. Elite club: Apple, Qualcomm, Nvidia…</div>
+<div class="opacity-70 mt-3 leading-relaxed">License the instruction set and design a custom Arm-compatible CPU. Apple, Qualcomm, Nvidia, and a small group of others use this model.</div>
 </div>
 </div>
 
 <div class="text-sm opacity-60 mt-8 text-center">
-2022–2025: Arm sued Qualcomm — its biggest royalty payer — over exactly this line. And lost.
+Arm sued over whether Nuvia's architecture license transferred to Qualcomm. In 2024, the jury found Qualcomm had not breached its own license but deadlocked on Nuvia; a 2025 judgment found no Nuvia breach.
 </div>
 
 <!--
@@ -113,29 +113,29 @@ LINE THAT LANDS:
 
 ---
 
-# The insurgent
+# Where RISC-V is used today
 
 <div class="grid grid-cols-2 gap-10 mt-8">
 <div>
-<div class="text-lg font-bold mb-3">Where RISC-V is real</div>
+<div class="text-lg font-bold mb-3">Deployed at scale</div>
 <ul class="opacity-80 leading-relaxed">
-<li>~1B cores/yr shipped by <b>Nvidia</b> — inside its GPUs</li>
-<li>Storage controllers, MCUs, IoT — the invisible cores</li>
-<li>Anywhere no app store has to care</li>
+<li>About 1B cores a year shipped by <b>Nvidia</b> inside its GPUs</li>
+<li>Storage controllers, microcontrollers, and IoT products</li>
+<li>Embedded systems with controlled software stacks</li>
 </ul>
 </div>
 <div>
-<div class="text-lg font-bold mb-3">Where it's aspirational</div>
+<div class="text-lg font-bold mb-3">Limited commercial adoption</div>
 <ul class="opacity-80 leading-relaxed">
-<li>Phones: no credible threat this decade</li>
-<li>Servers: real projects, no volume share</li>
-<li>The moat isn't silicon — it's software</li>
+<li>No meaningful commercial smartphone share</li>
+<li>Limited server shipments</li>
+<li>Software compatibility remains the main barrier</li>
 </ul>
 </div>
 </div>
 
 <div class="text-sm opacity-60 mt-10 text-center">
-The RISC-V spec is free: no license, no royalty, no permission. Open ISA ≠ free cores — you still pay for a finished design.
+Anyone may implement the RISC-V ISA without a license or royalty. Finished commercial core designs still cost money.
 </div>
 
 <!--
@@ -159,14 +159,14 @@ LINE THAT LANDS:
 
 ---
 
-# The wildcard
+# RISC-V and export controls
 
 <div class="text-3xl mt-14 leading-relaxed text-center">
-You can't sanction a language.
+The RISC-V specification is public and available worldwide.
 </div>
 
 <div class="text-sm opacity-60 mt-12 text-center">
-RISC-V International moved to Switzerland in 2019 — explicitly so no government could gate access to the standard.
+RISC-V International moved from the United States to Switzerland in 2019, citing concerns about access restrictions.
 </div>
 
 <!--
@@ -186,21 +186,21 @@ LINE THAT LANDS:
 
 ---
 
-# Scoreboard: the empire holds
+# Arm remains dominant in smartphones
 
 <div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
   <div class="grid grid-cols-5 gap-4 text-center">
     <div><div class="text-3xl font-bold">$4.9 B</div><div class="text-sm opacity-60">revenue FY26 (ended Mar '26)</div></div>
-    <div><div class="text-3xl font-bold">—</div><div class="text-sm opacity-60">gross margin</div></div><!-- TODO: Arm gross margin not in research pack — add before recording -->
+    <div><div class="text-3xl font-bold">350B+</div><div class="text-sm opacity-60">chips shipped cumulatively</div></div>
     <div><div class="text-3xl font-bold">&gt;99%</div><div class="text-sm opacity-60">of smartphones</div></div>
-    <div><div class="text-xl font-bold leading-tight mt-2">the world's software compiles to Arm</div></div>
+<div><div class="text-xl font-bold leading-tight mt-2">mature mobile software ecosystem</div></div>
     <div><div class="text-3xl font-bold">~15 yrs</div><div class="text-sm opacity-60">to replace</div></div>
   </div>
   <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
 </div>
 
 <div class="text-sm opacity-60 mt-8 text-center">
-RISC-V doesn't get a scoreboard. You can't buy stock in a language — which is exactly the point.
+RISC-V is an open standard, so adoption is measured through compatible cores and products rather than company revenue.
 </div>
 
 <!--

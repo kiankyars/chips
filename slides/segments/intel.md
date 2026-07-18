@@ -17,9 +17,9 @@ sources: research/intel.md
 -->
 
 
-# INTEL
+# Intel lost the process lead
 
-<div class="text-xl opacity-70 mt-2">The Fallen King</div>
+<div class="text-xl opacity-70 mt-2">10nm delays, missed markets, and the 18A recovery attempt</div>
 
 <img src="/diagrams/rendered/map-manufacture.svg" class="h-44 mx-auto mt-8 opacity-80" alt="master map — manufacturing region lit" />
 
@@ -38,18 +38,18 @@ LINE THAT LANDS:
 
 ---
 
-# Fifty years of the crown
+# Intel led processors and manufacturing for decades
 
 <div class="grid grid-cols-5 gap-4 mt-10 text-center">
-<div><div class="text-4xl font-bold">1968</div><div class="text-sm opacity-60 mt-2">Noyce & Moore found it; Grove is hire #1</div></div>
-<div><div class="text-4xl font-bold">1985</div><div class="text-sm opacity-60 mt-2">invents DRAM, then walks out of memory</div></div>
-<div><div class="text-4xl font-bold">1981</div><div class="text-sm opacity-60 mt-2">wins the IBM PC → three decades of Wintel</div></div>
-<div><div class="text-4xl font-bold">2007–16</div><div class="text-sm opacity-60 mt-2">tick-tock: the industry's metronome</div></div>
+<div><div class="text-4xl font-bold">1968</div><div class="text-sm opacity-60 mt-2">Noyce and Moore found Intel; Grove joins as its third employee</div></div>
+<div><div class="text-4xl font-bold">1970 / 1985</div><div class="text-sm opacity-60 mt-2">commercializes the Intel 1103 DRAM; exits memory in 1985</div></div>
+<div><div class="text-4xl font-bold">1981</div><div class="text-sm opacity-60 mt-2">Intel 8088 selected for the IBM PC; Wintel dominates for three decades</div></div>
+<div><div class="text-4xl font-bold">2007–16</div><div class="text-sm opacity-60 mt-2">new process and architecture on alternating years</div></div>
 <div><div class="text-4xl font-bold">~99%</div><div class="text-sm opacity-60 mt-2">of data-center CPUs at peak</div></div>
 </div>
 
 <div class="text-sm opacity-60 mt-12 text-center">
-Market cap topped $500B in August 2000 — a ceiling that stood for 26 years.
+Intel reached a $500B market cap in August 2000 and did not surpass it for 26 years.
 </div>
 
 <!--
@@ -72,17 +72,17 @@ LINE THAT LANDS:
 
 ---
 
-# 10nm — how a king actually falls
+# 10nm delays cost Intel the process lead
 
 <div class="grid grid-cols-3 gap-8 mt-10 text-center">
-<div><div class="text-6xl font-bold">2.7×</div><div class="opacity-70 mt-2">density leap attempted<br><span class="text-sm opacity-60">industry norm per node: 1.5–2×</span></div></div>
-<div><div class="text-6xl font-bold">0</div><div class="opacity-70 mt-2">EUV machines in the plan<br><span class="text-sm opacity-60">quadruple patterning instead</span></div></div>
-<div><div class="text-6xl font-bold">7 yrs</div><div class="opacity-70 mt-2">desktop stuck on 14nm<br><span class="text-sm opacity-60">2016 target → shipped late 2019</span></div></div>
+<div><div class="text-6xl font-bold">2.7×</div><div class="opacity-70 mt-2">targeted density increase<br><span class="text-sm opacity-60">typical per node: 1.5–2×</span></div></div>
+<div><div class="text-6xl font-bold">0</div><div class="opacity-70 mt-2">EUV tools in the process plan<br><span class="text-sm opacity-60">quadruple patterning instead</span></div></div>
+<div><div class="text-6xl font-bold">7 yrs</div><div class="opacity-70 mt-2">desktop process remained on 14 nm<br><span class="text-sm opacity-60">2016 target → shipped late 2019</span></div></div>
 </div>
 
 <div class="text-sm opacity-60 mt-12 text-center">
-Meanwhile: TSMC ships N7 (2018) → N7+ with EUV (2019) → N5 (2020).<br>
-July 24, 2020 — Intel admits 7nm is late too. Stock −16% in a day. The crown had already moved.
+TSMC shipped N7 in 2018, N7+ with EUV in 2019, and N5 in 2020.<br>
+On July 24, 2020, Intel announced another 7 nm delay; its shares fell 16% that day.
 </div>
 
 <!--
@@ -108,7 +108,7 @@ LINE THAT LANDS:
 
 ---
 
-# The doors it didn't walk through
+# Intel missed the mobile, Arm, and AI shifts
 
 <div class="text-xl leading-relaxed mt-8 px-8 opacity-90">
 "We ended up not winning it, or passing on it, depending on how you want to view it. And the world would have been a lot different if we'd done it."
@@ -116,9 +116,9 @@ LINE THAT LANDS:
 </div>
 
 <div class="grid grid-cols-3 gap-6 mt-10 text-center">
-<div><div class="text-3xl font-bold">2020</div><div class="text-sm opacity-60 mt-1">Apple leaves x86 — M1</div></div>
-<div><div class="text-3xl font-bold">&gt;50%</div><div class="text-sm opacity-60 mt-1">of new AWS CPU capacity is Arm — 3 years running</div></div>
-<div><div class="text-3xl font-bold">$5.8B vs $5.1B</div><div class="text-sm opacity-60 mt-1">AMD out-earns Intel in the data center, Q1 2026 — first time ever</div></div>
+<div><div class="text-3xl font-bold">2020</div><div class="text-sm opacity-60 mt-1">Apple begins its transition from x86 to M1</div></div>
+<div><div class="text-3xl font-bold">&gt;50%</div><div class="text-sm opacity-60 mt-1">of new AWS CPU capacity used Arm for three consecutive years</div></div>
+<div><div class="text-3xl font-bold">$5.8B vs $5.1B</div><div class="text-sm opacity-60 mt-1">AMD data-center revenue exceeds Intel's for the first time, Q1 2026</div></div>
 </div>
 
 <!--
@@ -144,15 +144,15 @@ LINE THAT LANDS:
 
 ---
 
-# 2024 — the year it all landed
+# 2024 was Intel's first annual loss since 1986
 
 <div class="grid grid-cols-3 gap-x-8 gap-y-10 mt-10 text-center">
-<div><div class="text-5xl font-bold">−$18.8B</div><div class="text-sm opacity-60 mt-2">2024 net loss — first annual loss since <b>1986</b></div></div>
-<div><div class="text-5xl font-bold">−26%</div><div class="text-sm opacity-60 mt-2">in one day (Aug 2024) — worst since 1974; dividend paid since 1992, suspended</div></div>
-<div><div class="text-5xl font-bold">15,000</div><div class="text-sm opacity-60 mt-2">layoffs announced that same day</div></div>
+<div><div class="text-5xl font-bold">−$18.8B</div><div class="text-sm opacity-60 mt-2">2024 net loss, the first annual loss since <b>1986</b></div></div>
+<div><div class="text-5xl font-bold">−26%</div><div class="text-sm opacity-60 mt-2">one-day share decline in Aug 2024; dividend suspended</div></div>
+<div><div class="text-5xl font-bold">15,000</div><div class="text-sm opacity-60 mt-2">layoffs announced in August 2024</div></div>
 <div><div class="text-5xl font-bold">4</div><div class="text-sm opacity-60 mt-2">CEOs since 2018</div></div>
 <div><div class="text-5xl font-bold">108,900 → ~75,000</div><div class="text-sm opacity-60 mt-2">employees, end-2024 → end-2025 plan</div></div>
-<div><div class="text-5xl font-bold">1986</div><div class="text-sm opacity-60 mt-2">the rhyme: the year after Grove walked out of memory</div></div>
+<div><div class="text-5xl font-bold">1986</div><div class="text-sm opacity-60 mt-2">Intel's previous annual loss</div></div>
 </div>
 
 <!--
@@ -177,20 +177,20 @@ LINE THAT LANDS:
 
 ---
 
-# The last stand — 18A
+# 18A is Intel's manufacturing recovery plan
 
 <div class="grid grid-cols-2 gap-10 mt-8">
 
 <div class="flex flex-col gap-3 text-lg">
 <div><b>Fab 52</b> — Chandler, Arizona</div>
 <div><b>RibbonFET</b> — Intel's first gate-all-around transistor</div>
-<div><b>PowerVia</b> — backside power, industry first — <i>before TSMC</i></div>
-<div><b>Panther Lake</b> — laptops on shelves Jan 2026</div>
+<div><b>PowerVia</b> — backside power introduced ahead of TSMC</div>
+<div><b>Panther Lake</b> — laptop processors shipped in Jan 2026</div>
 <div><b>Clearwater Forest</b> — 288-core Xeon, June 2026</div>
 </div>
 
 <div class="flex flex-col gap-6 text-center justify-center">
-<div><div class="text-5xl font-bold">~20–25%</div><div class="text-sm opacity-60 mt-1">good-die yield when the ramp began — target "industry-standard" only in early 2027</div></div>
+<div><div class="text-5xl font-bold">~20–25%</div><div class="text-sm opacity-60 mt-1">good-die yield when the ramp began; "industry-standard" yield targeted for early 2027</div></div>
 <div><div class="text-5xl font-bold">$174M</div><div class="text-sm opacity-60 mt-1">external foundry revenue, Q1 2026 — ~3% of foundry revenue</div></div>
 <div><div class="text-5xl font-bold">−$33B</div><div class="text-sm opacity-60 mt-1">cumulative foundry losses since 2023</div></div>
 </div>
@@ -220,22 +220,22 @@ LINE THAT LANDS:
 
 ---
 
-# Too strategic to fail
+# The US government became Intel's largest shareholder
 
 <div class="text-lg leading-relaxed mt-6 px-6 opacity-90 border-l-4 border-gray-400 pl-6">
 Intel may "pause or discontinue our pursuit of Intel 14A and successor leading-edge nodes"
-<div class="text-sm opacity-60 mt-2">— Intel 10-Q, July 2025: quitting the leading edge, contemplated in an SEC filing for the first time</div>
+<div class="text-sm opacity-60 mt-2">— Intel 10-Q, July 2025: the filing contemplated ending development after 18A</div>
 </div>
 
 <div class="grid grid-cols-3 gap-6 mt-10 text-center">
-<div><div class="text-4xl font-bold">$8.9B</div><div class="text-sm opacity-60 mt-2"><b>US government</b> — 9.9% at $20.47 + a warrant chaining the fabs to Intel</div></div>
+<div><div class="text-4xl font-bold">$8.9B</div><div class="text-sm opacity-60 mt-2"><b>US government</b> · 9.9% at $20.47, plus a foundry-ownership warrant</div></div>
 <div><div class="text-4xl font-bold">$2B</div><div class="text-sm opacity-60 mt-2"><b>SoftBank</b> — at $23</div></div>
 <div><div class="text-4xl font-bold">$5B</div><div class="text-sm opacity-60 mt-2"><b>Nvidia</b> — at $23.28, plus joint x86 products</div></div>
 </div>
 
 <div class="text-sm opacity-60 mt-10 text-center">
-~$15.9B of equity in ~6 weeks — from the Treasury, SoftBank, and Intel's chief tormentor.<br>
-None of it bought a single foundry order.
+The US Treasury, SoftBank, and Nvidia invested about $15.9B in six weeks.<br>
+Intel still had no named external 14A anchor customer.
 </div>
 
 <!--
@@ -261,21 +261,21 @@ LINE THAT LANDS:
 
 ---
 
-# Scoreboard — the fallen king
+# Intel in 2026
 
 <div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
   <div class="grid grid-cols-5 gap-4 text-center">
     <div><div class="text-3xl font-bold">$52.9B</div><div class="text-sm opacity-60">revenue FY25</div></div>
     <div><div class="text-3xl font-bold">41%</div><div class="text-sm opacity-60">gross margin (non-GAAP, Q1'26)</div></div>
     <div><div class="text-3xl font-bold">~70%</div><div class="text-sm opacity-60">PC CPU share</div></div>
-    <div><div class="text-xl font-bold leading-tight mt-2">the only leading edge on American soil</div></div>
+    <div><div class="text-xl font-bold leading-tight mt-2">only US-owned leading-edge logic manufacturer</div></div>
     <div><div class="text-3xl font-bold">~10 yrs</div><div class="text-sm opacity-60">to replace</div></div>
   </div>
   <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
 </div>
 
 <div class="text-center text-lg mt-10 opacity-80">
-TSMC. Samsung. Intel. That is the entire leading edge of human civilization.
+TSMC, Samsung, and Intel are the only companies currently producing leading-edge logic at commercial scale.
 </div>
 
 <!--
