@@ -107,19 +107,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Intel missed the mobile, Arm, and AI shifts
+<div class="visual-sequence__kicker">INTEL'S MISSED SHIFTS</div>
 
-<div class="text-xl leading-relaxed mt-8 px-8 opacity-90">
-"We ended up not winning it, or passing on it, depending on how you want to view it. And the world would have been a lot different if we'd done it."
-<div class="text-sm opacity-60 mt-3">— Paul Otellini, Intel CEO 2005–2013, on the chip for the first iPhone. The volume was 100× the forecast.</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/slide-066-intel-missed-shifts.svg" alt="Mobile, Arm processors, and AI accelerators redirecting demand away from Intel" />
 </div>
 
-<div class="grid grid-cols-3 gap-6 mt-10 text-center">
-<div><div class="text-3xl font-bold">2020</div><div class="text-sm opacity-60 mt-1">Apple begins its transition from x86 to M1</div></div>
-<div><div class="text-3xl font-bold">&gt;50%</div><div class="text-sm opacity-60 mt-1">of new AWS CPU capacity used Arm for three consecutive years</div></div>
-<div><div class="text-3xl font-bold">$5.8B vs $5.1B</div><div class="text-sm opacity-60 mt-1">AMD data-center revenue exceeds Intel's for the first time, Q1 2026</div></div>
-</div>
+<div class="visual-sequence__caption"><strong>Mobile, Arm, and AI shifted demand away from Intel.</strong></div>
+<div class="visual-sequence__source">iPhone · Apple M1 · AWS Graviton · Nvidia data center</div>
 
 <!--
 BEATS:
@@ -219,24 +217,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# The US government became Intel's largest shareholder
+<div class="visual-sequence__kicker">INTEL 14A</div>
 
-<div class="text-lg leading-relaxed mt-6 px-6 opacity-90 border-l-4 border-gray-400 pl-6">
-Intel may "pause or discontinue our pursuit of Intel 14A and successor leading-edge nodes"
-<div class="text-sm opacity-60 mt-2">— Intel 10-Q, July 2025: the filing contemplated ending development after 18A</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/slide-069-intel-investment-lifeline.svg" alt="The US government, SoftBank, and Nvidia investing in Intel while the external 14A customer order remains blank" />
 </div>
 
-<div class="grid grid-cols-3 gap-6 mt-10 text-center">
-<div><div class="text-4xl font-bold">$8.9B</div><div class="text-sm opacity-60 mt-2"><b>US government</b> · 9.9% at $20.47, plus a foundry-ownership warrant</div></div>
-<div><div class="text-4xl font-bold">$2B</div><div class="text-sm opacity-60 mt-2"><b>SoftBank</b> — at $23</div></div>
-<div><div class="text-4xl font-bold">$5B</div><div class="text-sm opacity-60 mt-2"><b>Nvidia</b> — at $23.28, plus joint x86 products</div></div>
-</div>
-
-<div class="text-sm opacity-60 mt-10 text-center">
-The US Treasury, SoftBank, and Nvidia invested about $15.9B in six weeks.<br>
-Intel still had no named external 14A anchor customer.
-</div>
+<div class="visual-sequence__caption"><strong>Three investors supplied $15.9B, but no external 14A anchor order.</strong></div>
+<div class="visual-sequence__source">US government · $8.9B · SoftBank · $2B · Nvidia · $5B</div>
 
 <!--
 BEATS:

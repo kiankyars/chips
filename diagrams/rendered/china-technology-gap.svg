@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">China has different gaps in lithography, memory, and EDA</title>
+<desc id="desc">Four horizontal rows compare the current reported state of Chinese EUV, DUV, HBM, and EDA with external benchmarks. The EUV prototype reports 100 to 150 watts, the announced DUV tool resolves 110 nanometres, HBM remains three to four years behind Korea, and Empyrean holds about 10 to 12 percent of the Chinese EDA market.</desc>
+<defs>
+  <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#ddd5c8" stroke-width="1" opacity="0.22"/>
+  </pattern>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#493f30" flood-opacity="0.13"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#4f5965"/>
+  </marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#3977a8"/>
+  </marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#397a66"/>
+  </marker>
+  <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#ad4f5d"/>
+  </marker>
+</defs>
+<rect width="1920" height="1080" fill="#f4efe6"/>
+<rect width="1920" height="1080" fill="url(#paper-grid)"/>
+<text x="110" y="110" fill="#777c79" font-size="21" font-weight="780" text-anchor="start" letter-spacing="2.2" opacity="1">DIFFERENT TECHNOLOGIES · DIFFERENT GAPS</text>
+<text x="590" y="176" fill="#777c79" font-size="21" font-weight="780" text-anchor="start" letter-spacing="2.2" opacity="1">REPORTED DOMESTIC STATE</text>
+<text x="1730" y="176" fill="#777c79" font-size="21" font-weight="780" text-anchor="end" letter-spacing="2.2" opacity="1">EXTERNAL REFERENCE</text>
+<g>
+  <text x="110" y="272" fill="#bd7b25" font-size="29" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">EUV</text>
+  <text x="110" y="308" fill="#777c79" font-size="19" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">prototype · 100–150 W</text>
+  <path d="M590 280L1730 280" fill="none" stroke="#ddd5c8" stroke-width="8" stroke-dasharray="12 10" marker-end="url(#arrow-ink)"/>
+  <path d="M590 280L735 280" fill="none" stroke="#bd7b25" stroke-width="12"/>
+  <circle cx="735" cy="280" r="18" fill="#fffaf0" stroke="#bd7b25" stroke-width="6"/>
+  <text x="1730" y="256" fill="#1f272d" font-size="20" font-weight="700" text-anchor="end" letter-spacing="0" opacity="1">comparable with ASML around 2017</text>
+</g>
+<g>
+  <text x="110" y="457" fill="#ad4f5d" font-size="29" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">DUV</text>
+  <text x="110" y="493" fill="#777c79" font-size="19" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">110 nm dry scanner</text>
+  <path d="M590 465L1730 465" fill="none" stroke="#ddd5c8" stroke-width="8" stroke-dasharray="12 10" marker-end="url(#arrow-ink)"/>
+  <path d="M590 465L735 465" fill="none" stroke="#ad4f5d" stroke-width="12"/>
+  <circle cx="735" cy="465" r="18" fill="#fffaf0" stroke="#ad4f5d" stroke-width="6"/>
+  <text x="1730" y="441" fill="#1f272d" font-size="20" font-weight="700" text-anchor="end" letter-spacing="0" opacity="1">not the claimed 28 nm class</text>
+</g>
+<g>
+  <text x="110" y="642" fill="#7358a3" font-size="29" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">HBM</text>
+  <text x="110" y="678" fill="#777c79" font-size="19" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">HBM3 targeted end-2026</text>
+  <path d="M590 650L1730 650" fill="none" stroke="#ddd5c8" stroke-width="8" stroke-dasharray="12 10" marker-end="url(#arrow-ink)"/>
+  <path d="M590 650L735 650" fill="none" stroke="#7358a3" stroke-width="12"/>
+  <circle cx="735" cy="650" r="18" fill="#fffaf0" stroke="#7358a3" stroke-width="6"/>
+  <text x="1730" y="626" fill="#1f272d" font-size="20" font-weight="700" text-anchor="end" letter-spacing="0" opacity="1">about 3–4 years behind Korea</text>
+</g>
+<g>
+  <text x="110" y="827" fill="#3977a8" font-size="29" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">EDA</text>
+  <text x="110" y="863" fill="#777c79" font-size="19" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">Empyrean · ~10–12% of China market</text>
+  <path d="M590 835L1730 835" fill="none" stroke="#ddd5c8" stroke-width="8" stroke-dasharray="12 10" marker-end="url(#arrow-ink)"/>
+  <path d="M590 835L735 835" fill="none" stroke="#3977a8" stroke-width="12"/>
+  <circle cx="735" cy="835" r="18" fill="#fffaf0" stroke="#3977a8" stroke-width="6"/>
+  <text x="1730" y="811" fill="#1f272d" font-size="20" font-weight="700" text-anchor="end" letter-spacing="0" opacity="1">advanced flow still relies on foreign tools</text>
+</g>
+<rect x="554" y="930" width="812" height="72" rx="36" fill="#efd9dc" stroke="#ad4f5d" stroke-width="3"/>
+<text x="960" y="976" fill="#ad4f5d" font-size="25" font-weight="800" text-anchor="middle" letter-spacing="1.2" opacity="1">ESTIMATED LEADING-EDGE GAP · ABOUT FIVE YEARS</text>
+</svg>

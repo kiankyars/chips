@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">Three concentrated-material shocks led to substitution or inventory buffering</title>
+<desc id="desc">Three panels show Japanese chemical restrictions in 2019 followed by Korean localization, the 2022 halt in Ukrainian neon followed by supplier diversification, and the 2024 Spruce Pine quartz shutdown bridged by stockpiles.</desc>
+<defs>
+  <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#ded7cb" stroke-width="1" opacity="0.24"/>
+  </pattern>
+  <filter id="paper-shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="13" flood-color="#493f30" flood-opacity="0.12"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#515b64"/></marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#2f6f9f"/></marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#2f7b65"/></marker>
+  <marker id="arrow-rose" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#b24956"/></marker>
+</defs>
+<rect width="1920" height="1080" fill="#f3efe7"/>
+<rect width="1920" height="1080" fill="url(#paper-grid)"/>
+<text x="104" y="92" fill="#747a76" font-size="20" font-weight="760" text-anchor="start" letter-spacing="3.6" opacity="1">MATERIALS</text>
+<text x="104" y="156" fill="#20252b" font-size="48" font-weight="760" text-anchor="start" letter-spacing="0" opacity="1">Supply shocks opened replacement paths</text>
+<path d="M104 190H1816" stroke="#cec6b9" stroke-width="2"/>
+<g>
+<rect x="104" y="244" width="532" height="682" rx="28" fill="#fffaf0" stroke="#2f6f9f" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<rect x="138" y="278" width="112" height="48" rx="24" fill="#dceaf3" stroke="#2f6f9f" stroke-width="2"/>
+<text x="194" y="310" fill="#2f6f9f" font-size="19" font-weight="780" text-anchor="middle" letter-spacing="0.8" opacity="1">2019</text>
+<text x="602" y="311" fill="#2f6f9f" font-size="22" font-weight="820" text-anchor="end" letter-spacing="1.2" opacity="1">JAPAN → KOREA</text>
+<g>
+<rect x="258" y="362" width="58" height="116" rx="10" fill="#2f6f9f" opacity="0.13" stroke="#2f6f9f" stroke-width="4"/>
+<path d="M265 388H309M265 452H309" stroke="#2f6f9f" stroke-width="3"/>
+</g>
+<g>
+<rect x="330" y="372" width="58" height="116" rx="10" fill="#2f6f9f" opacity="0.18" stroke="#2f6f9f" stroke-width="4"/>
+<path d="M337 398H381M337 462H381" stroke="#2f6f9f" stroke-width="3"/>
+</g>
+<g>
+<rect x="402" y="362" width="58" height="116" rx="10" fill="#2f6f9f" opacity="0.23" stroke="#2f6f9f" stroke-width="4"/>
+<path d="M409 388H453M409 452H453" stroke="#2f6f9f" stroke-width="3"/>
+</g><text x="370" y="354" fill="#2f6f9f" font-size="16" font-weight="760" text-anchor="middle" letter-spacing="0.6" opacity="1">PHOTORESIST · HF · POLYIMIDE</text>
+<path d="M174 532H566" stroke="#b24956" stroke-width="5" stroke-dasharray="10 10"/>
+<path d="M351 508L389 556M389 508L351 556" stroke="#b24956" stroke-width="8" stroke-linecap="round"/>
+<text x="370" y="596" fill="#b24956" font-size="18" font-weight="800" text-anchor="middle" letter-spacing="1.1" opacity="1">EXPORT RESTRICTIONS</text>
+<path d="M370 624V698" stroke="#2f7b65" stroke-width="5" marker-end="url(#arrow-green)"/>
+<rect x="162" y="716" width="416" height="86" rx="20" fill="#d9ebe3" stroke="#2f7b65" stroke-width="3"/>
+<text x="370" y="770" fill="#2f7b65" font-size="24" font-weight="830" text-anchor="middle" letter-spacing="0.7" opacity="1">KOREA LOCALIZES</text>
+<text x="370" y="864" fill="#747a76" font-size="20" font-weight="690" text-anchor="middle" letter-spacing="0" opacity="1">HF exports fell about 97%</text>
+</g>
+<g>
+<rect x="694" y="244" width="532" height="682" rx="28" fill="#fffaf0" stroke="#b87821" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<rect x="728" y="278" width="112" height="48" rx="24" fill="#f1e1c3" stroke="#b87821" stroke-width="2"/>
+<text x="784" y="310" fill="#b87821" font-size="19" font-weight="780" text-anchor="middle" letter-spacing="0.8" opacity="1">2022</text>
+<text x="1192" y="311" fill="#b87821" font-size="22" font-weight="820" text-anchor="end" letter-spacing="1.2" opacity="1">UKRAINE · NEON</text>
+<g><rect x="888" y="386" width="56" height="132" rx="25" fill="#b87821" opacity="0.16" stroke="#b87821" stroke-width="4"/><path d="M906 386V364H926V386" fill="none" stroke="#b87821" stroke-width="4"/></g>
+<g><rect x="962" y="386" width="56" height="132" rx="25" fill="#b87821" opacity="0.16" stroke="#b87821" stroke-width="4"/><path d="M980 386V364H1000V386" fill="none" stroke="#b87821" stroke-width="4"/></g><text x="960" y="354" fill="#b87821" font-size="17" font-weight="780" text-anchor="middle" letter-spacing="0.9" opacity="1">CHIP-LASER NEON</text>
+<path d="M764 532H1156" stroke="#b24956" stroke-width="5" stroke-dasharray="10 10"/>
+<path d="M941 508L979 556M979 508L941 556" stroke="#b24956" stroke-width="8" stroke-linecap="round"/>
+<text x="960" y="596" fill="#b24956" font-size="18" font-weight="800" text-anchor="middle" letter-spacing="1.1" opacity="1">BOTH PLANTS HALT</text>
+<path d="M960 624V698" stroke="#2f7b65" stroke-width="5" marker-end="url(#arrow-green)"/>
+<rect x="752" y="716" width="416" height="86" rx="20" fill="#d9ebe3" stroke="#2f7b65" stroke-width="3"/>
+<text x="960" y="770" fill="#2f7b65" font-size="24" font-weight="830" text-anchor="middle" letter-spacing="0.7" opacity="1">BUYERS DIVERSIFY</text>
+<text x="960" y="864" fill="#747a76" font-size="20" font-weight="690" text-anchor="middle" letter-spacing="0" opacity="1">about ½ of supply · spot price 4×</text>
+</g>
+<g>
+<rect x="1284" y="244" width="532" height="682" rx="28" fill="#fffaf0" stroke="#2f7b65" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<rect x="1318" y="278" width="112" height="48" rx="24" fill="#dceaf3" stroke="#2f7b65" stroke-width="2"/>
+<text x="1374" y="310" fill="#2f7b65" font-size="19" font-weight="780" text-anchor="middle" letter-spacing="0.8" opacity="1">2024</text>
+<text x="1782" y="311" fill="#2f7b65" font-size="22" font-weight="820" text-anchor="end" letter-spacing="1.2" opacity="1">SPRUCE PINE</text>
+<path d="M1385 524L1481 366L1543 454L1609 396L1715 524Z" fill="#2f7b65" opacity="0.14" stroke="#2f7b65" stroke-width="5" stroke-linejoin="round"/>
+<path d="M1457 524L1487 466L1515 498L1547 456" fill="none" stroke="#2f7b65" stroke-width="5"/><text x="1550" y="354" fill="#2f7b65" font-size="17" font-weight="780" text-anchor="middle" letter-spacing="0.8" opacity="1">HIGH-PURITY QUARTZ</text>
+<path d="M1354 532H1746" stroke="#b24956" stroke-width="5" stroke-dasharray="10 10"/>
+<path d="M1531 508L1569 556M1569 508L1531 556" stroke="#b24956" stroke-width="8" stroke-linecap="round"/>
+<text x="1550" y="596" fill="#b24956" font-size="18" font-weight="800" text-anchor="middle" letter-spacing="1.1" opacity="1">TWO-WEEK SHUTDOWN</text>
+<path d="M1550 624V698" stroke="#2f7b65" stroke-width="5" marker-end="url(#arrow-green)"/>
+<rect x="1342" y="716" width="416" height="86" rx="20" fill="#d9ebe3" stroke="#2f7b65" stroke-width="3"/>
+<text x="1550" y="770" fill="#2f7b65" font-size="24" font-weight="830" text-anchor="middle" letter-spacing="0.7" opacity="1">STOCKPILES BRIDGE</text>
+<text x="1550" y="864" fill="#747a76" font-size="20" font-weight="690" text-anchor="middle" letter-spacing="0" opacity="1">estimated 70–90% source share</text>
+</g>
+<text x="960" y="988" fill="#747a76" font-size="24" font-weight="620" text-anchor="middle" letter-spacing="0" opacity="1">The disruption was immediate; the supply response reduced repeat leverage.</text>
+</svg>

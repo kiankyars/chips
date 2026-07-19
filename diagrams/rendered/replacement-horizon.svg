@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">Estimated years to replace critical semiconductor suppliers</title>
+<desc id="desc">A horizontal horizon compares order-of-magnitude replacement times: about two years for outsourced assembly and test, five for HBM, seven for KLA, five to ten for Japanese materials, around ten for EDA and CUDA, more than ten for TSMC, and fifteen to twenty for ASML and Zeiss.</desc>
+<defs>
+  <filter id="shadow" x="-25%" y="-25%" width="150%" height="170%">
+    <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#1f272d" flood-opacity="0.13"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#1f272d"/>
+  </marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#3977a8"/>
+  </marker>
+  <marker id="arrow-violet" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#7358a3"/>
+  </marker>
+  <pattern id="hatch" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <path d="M0 0V18" stroke="#ad5a5a" stroke-width="5" opacity="0.36"/>
+  </pattern>
+</defs>
+<rect width="1920" height="1080" fill="#f4efe6"/>
+<text x="480" y="82" fill="#74746f" font-size="22" font-weight="760" text-anchor="start" letter-spacing="2.2">YEARS TO A COMPETITIVE DOMESTIC ALTERNATIVE</text>
+<g>
+  <path d="M480 164V936" stroke="#a8a49a" stroke-width="3"/>
+  <text x="480" y="132" fill="#74746f" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="0">0</text>
+</g><g>
+  <path d="M800 164V936" stroke="#ddd6c9" stroke-width="2"/>
+  <text x="800" y="132" fill="#74746f" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="0">5</text>
+</g><g>
+  <path d="M1120 164V936" stroke="#ddd6c9" stroke-width="2"/>
+  <text x="1120" y="132" fill="#74746f" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="0">10</text>
+</g><g>
+  <path d="M1440 164V936" stroke="#ddd6c9" stroke-width="2"/>
+  <text x="1440" y="132" fill="#74746f" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="0">15</text>
+</g><g>
+  <path d="M1760 164V936" stroke="#ddd6c9" stroke-width="2"/>
+  <text x="1760" y="132" fill="#74746f" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="0">20</text>
+</g>
+<path d="M82 277H1790" stroke="#ddd6c9" stroke-width="2"/>
+<text x="92" y="234" fill="#1f272d" font-size="27" font-weight="740" text-anchor="start" letter-spacing="0">OSAT</text>
+<text x="92" y="264" fill="#74746f" font-size="19" font-weight="560" text-anchor="start" letter-spacing="0">assembly + test</text>
+<circle cx="608" cy="238" r="15" fill="#ad5a5a"/>
+<circle cx="608" cy="238" r="25" fill="none" stroke="#ad5a5a" stroke-width="3" opacity="0.28"/>
+<text x="608" y="214" fill="#ad5a5a" font-size="22" font-weight="760" text-anchor="middle" letter-spacing="0">~2</text>
+<path d="M82 368H1790" stroke="#ddd6c9" stroke-width="2"/>
+<text x="92" y="325" fill="#1f272d" font-size="27" font-weight="740" text-anchor="start" letter-spacing="0">SK hynix</text>
+<text x="92" y="355" fill="#74746f" font-size="19" font-weight="560" text-anchor="start" letter-spacing="0">HBM</text>
+<circle cx="800" cy="329" r="15" fill="#7358a3"/>
+<circle cx="800" cy="329" r="25" fill="none" stroke="#7358a3" stroke-width="3" opacity="0.28"/>
+<text x="800" y="305" fill="#7358a3" font-size="22" font-weight="760" text-anchor="middle" letter-spacing="0">~5</text>
+<path d="M82 459H1790" stroke="#ddd6c9" stroke-width="2"/>
+<text x="92" y="416" fill="#1f272d" font-size="27" font-weight="740" text-anchor="start" letter-spacing="0">KLA</text>
+<text x="92" y="446" fill="#74746f" font-size="19" font-weight="560" text-anchor="start" letter-spacing="0">process control</text>
+<circle cx="928" cy="420" r="15" fill="#c3842e"/>
+<circle cx="928" cy="420" r="25" fill="none" stroke="#c3842e" stroke-width="3" opacity="0.28"/>
+<text x="928" y="396" fill="#c3842e" font-size="22" font-weight="760" text-anchor="middle" letter-spacing="0">~7</text>
+<path d="M82 550H1790" stroke="#ddd6c9" stroke-width="2"/>
+<text x="92" y="507" fill="#1f272d" font-size="27" font-weight="740" text-anchor="start" letter-spacing="0">Japan materials</text>
+<text x="92" y="537" fill="#74746f" font-size="19" font-weight="560" text-anchor="start" letter-spacing="0">resist + mask blanks</text>
+<path d="M800 511H1120" stroke="#9b7d20" stroke-width="18" stroke-linecap="round"/>
+<circle cx="800" cy="511" r="10" fill="#fbf8f1" stroke="#9b7d20" stroke-width="5"/>
+<circle cx="1120" cy="511" r="10" fill="#fbf8f1" stroke="#9b7d20" stroke-width="5"/>
+<text x="960" y="489" fill="#9b7d20" font-size="22" font-weight="760" text-anchor="middle" letter-spacing="0">~5–10</text>
+<path d="M82 641H1790" stroke="#ddd6c9" stroke-width="2"/>
+<text x="92" y="598" fill="#1f272d" font-size="27" font-weight="740" text-anchor="start" letter-spacing="0">Synopsys + Cadence</text>
+<text x="92" y="628" fill="#74746f" font-size="19" font-weight="560" text-anchor="start" letter-spacing="0">EDA</text>
+<circle cx="1120" cy="602" r="15" fill="#3977a8"/>
+<circle cx="1120" cy="602" r="25" fill="none" stroke="#3977a8" stroke-width="3" opacity="0.28"/>
+<text x="1120" y="578" fill="#3977a8" font-size="22" font-weight="760" text-anchor="middle" letter-spacing="0">~10</text>
+<path d="M82 732H1790" stroke="#ddd6c9" stroke-width="2"/>
+<text x="92" y="689" fill="#1f272d" font-size="27" font-weight="740" text-anchor="start" letter-spacing="0">Nvidia</text>
+<text x="92" y="719" fill="#74746f" font-size="19" font-weight="560" text-anchor="start" letter-spacing="0">CUDA ecosystem</text>
+<circle cx="1120" cy="693" r="15" fill="#3977a8"/>
+<circle cx="1120" cy="693" r="25" fill="none" stroke="#3977a8" stroke-width="3" opacity="0.28"/>
+<text x="1120" y="669" fill="#3977a8" font-size="22" font-weight="760" text-anchor="middle" letter-spacing="0">~10</text>
+<path d="M82 823H1790" stroke="#ddd6c9" stroke-width="2"/>
+<text x="92" y="780" fill="#1f272d" font-size="27" font-weight="740" text-anchor="start" letter-spacing="0">TSMC</text>
+<text x="92" y="810" fill="#74746f" font-size="19" font-weight="560" text-anchor="start" letter-spacing="0">leading-edge logic + CoWoS</text>
+<path d="M1120 784H1676.8" stroke="#387d72" stroke-width="9" stroke-linecap="round" marker-end="url(#arrow-ink)"/>
+<circle cx="1120" cy="784" r="13" fill="#387d72"/>
+<text x="1120" y="762" fill="#387d72" font-size="22" font-weight="760" text-anchor="middle" letter-spacing="0">~10+</text>
+<path d="M82 914H1790" stroke="#ddd6c9" stroke-width="2"/>
+<text x="92" y="871" fill="#1f272d" font-size="27" font-weight="740" text-anchor="start" letter-spacing="0">ASML + Zeiss</text>
+<text x="92" y="901" fill="#74746f" font-size="19" font-weight="560" text-anchor="start" letter-spacing="0">EUV lithography</text>
+<path d="M1440 875H1760" stroke="#c3842e" stroke-width="18" stroke-linecap="round"/>
+<circle cx="1440" cy="875" r="10" fill="#fbf8f1" stroke="#c3842e" stroke-width="5"/>
+<circle cx="1760" cy="875" r="10" fill="#fbf8f1" stroke="#c3842e" stroke-width="5"/>
+<text x="1600" y="853" fill="#c3842e" font-size="22" font-weight="760" text-anchor="middle" letter-spacing="0">~15–20</text>
+<text x="92" y="1010" fill="#74746f" font-size="21" font-weight="560" text-anchor="start" letter-spacing="0">Editorial ranges · order of magnitude, not completion dates</text>
+</svg>

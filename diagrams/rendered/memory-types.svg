@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">DRAM and NAND store bits in different physical structures</title>
+<desc id="desc">A DRAM cell uses one transistor and one capacitor that must be refreshed about every 64 milliseconds. A vertical NAND string traps charge across hundreds of layers and retains data without power.</desc>
+<defs>
+  <filter id="shadow" x="-25%" y="-25%" width="150%" height="170%">
+    <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#1f272d" flood-opacity="0.13"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#1f272d"/>
+  </marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#3977a8"/>
+  </marker>
+  <marker id="arrow-violet" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#7358a3"/>
+  </marker>
+  <pattern id="hatch" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <path d="M0 0V18" stroke="#ad5a5a" stroke-width="5" opacity="0.36"/>
+  </pattern>
+</defs>
+<rect width="1920" height="1080" fill="#f4efe6"/>
+<rect x="96" y="104" width="820" height="850" rx="34" fill="#fbf8f1" stroke="#ddd6c9" stroke-width="3"/>
+<rect x="1004" y="104" width="820" height="850" rx="34" fill="#fbf8f1" stroke="#ddd6c9" stroke-width="3"/>
+<text x="154" y="185" fill="#3977a8" font-size="48" font-weight="780" text-anchor="start" letter-spacing="1.2">DRAM</text>
+<text x="154" y="226" fill="#74746f" font-size="20" font-weight="700" text-anchor="start" letter-spacing="2.4">VOLATILE WORKING MEMORY</text>
+<g>
+  <path d="M286 338V690" stroke="#1f272d" stroke-width="8" stroke-linecap="round"/>
+  <text x="286" y="312" fill="#74746f" font-size="18" font-weight="700" text-anchor="middle" letter-spacing="1.5">BIT LINE</text>
+  <path d="M286 508H414" stroke="#1f272d" stroke-width="8" stroke-linecap="round"/>
+  <path d="M414 474V542M452 474V542" stroke="#3977a8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M452 508H608" stroke="#1f272d" stroke-width="8" stroke-linecap="round"/>
+  <path d="M430 390V456" stroke="#3977a8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M338 390H430" stroke="#3977a8" stroke-width="8" stroke-linecap="round"/>
+  <text x="338" y="369" fill="#3977a8" font-size="18" font-weight="700" text-anchor="middle" letter-spacing="1.5">WORD LINE</text>
+  <circle cx="608" cy="508" r="10" fill="#1f272d"/>
+  <path d="M608 508H622" stroke="#1f272d" stroke-width="8"/>
+  <path d="M622 412V604M690 412V604" stroke="#3977a8" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="624" cy="462" r="7" fill="#3977a8"/><circle cx="642" cy="482" r="7" fill="#3977a8"/><circle cx="658" cy="458" r="7" fill="#3977a8"/><circle cx="627" cy="514" r="7" fill="#3977a8"/><circle cx="653" cy="527" r="7" fill="#3977a8"/><circle cx="643" cy="556" r="7" fill="#3977a8"/>
+  <path d="M716 392C806 424 818 555 732 626" fill="none" stroke="#3977a8" stroke-width="5" stroke-dasharray="12 10" marker-end="url(#arrow-blue)"/>
+  <text x="782" y="508" fill="#3977a8" font-size="24" font-weight="740" text-anchor="middle" letter-spacing="0">refresh</text>
+  <text x="782" y="540" fill="#3977a8" font-size="22" font-weight="620" text-anchor="middle" letter-spacing="0">~64 ms</text>
+</g>
+<path d="M154 746H858" stroke="#ddd6c9" stroke-width="3"/>
+<text x="506" y="811" fill="#1f272d" font-size="31" font-weight="720" text-anchor="middle" letter-spacing="0">1 transistor + 1 capacitor</text>
+<text x="506" y="858" fill="#74746f" font-size="24" font-weight="560" text-anchor="middle" letter-spacing="0">charge leaks · power off → empty</text>
+
+<text x="1062" y="185" fill="#c3842e" font-size="48" font-weight="780" text-anchor="start" letter-spacing="1.2">NAND</text>
+<text x="1062" y="226" fill="#74746f" font-size="20" font-weight="700" text-anchor="start" letter-spacing="2.4">NONVOLATILE STORAGE</text>
+<g filter="url(#shadow)">
+  <rect x="1150" y="282" width="580" height="560" rx="26" fill="#eee8dc" stroke="#ddd6c9" stroke-width="3"/>
+  <rect x="1190" y="315" width="500" height="24" rx="8" fill="#fbf8f1" stroke="#a8a49a" stroke-width="2"/>
+
+<rect x="1190" y="357" width="500" height="24" rx="8" fill="#fbf8f1" stroke="#a8a49a" stroke-width="2"/>
+
+<rect x="1190" y="399" width="500" height="24" rx="8" fill="#f1dfbd" stroke="#c3842e" stroke-width="3"/>
+<circle cx="1370" cy="411" r="7" fill="#c3842e"/><circle cx="1510" cy="411" r="7" fill="#c3842e"/>
+<rect x="1190" y="441" width="500" height="24" rx="8" fill="#fbf8f1" stroke="#a8a49a" stroke-width="2"/>
+
+<rect x="1190" y="483" width="500" height="24" rx="8" fill="#fbf8f1" stroke="#a8a49a" stroke-width="2"/>
+
+<rect x="1190" y="525" width="500" height="24" rx="8" fill="#f1dfbd" stroke="#c3842e" stroke-width="3"/>
+<circle cx="1370" cy="537" r="7" fill="#c3842e"/><circle cx="1510" cy="537" r="7" fill="#c3842e"/>
+<rect x="1190" y="567" width="500" height="24" rx="8" fill="#fbf8f1" stroke="#a8a49a" stroke-width="2"/>
+
+<rect x="1190" y="609" width="500" height="24" rx="8" fill="#fbf8f1" stroke="#a8a49a" stroke-width="2"/>
+
+<rect x="1190" y="651" width="500" height="24" rx="8" fill="#f1dfbd" stroke="#c3842e" stroke-width="3"/>
+<circle cx="1370" cy="663" r="7" fill="#c3842e"/><circle cx="1510" cy="663" r="7" fill="#c3842e"/>
+<rect x="1190" y="693" width="500" height="24" rx="8" fill="#fbf8f1" stroke="#a8a49a" stroke-width="2"/>
+
+<rect x="1190" y="735" width="500" height="24" rx="8" fill="#f1dfbd" stroke="#c3842e" stroke-width="3"/>
+<circle cx="1370" cy="747" r="7" fill="#c3842e"/><circle cx="1510" cy="747" r="7" fill="#c3842e"/>
+<rect x="1190" y="777" width="500" height="24" rx="8" fill="#fbf8f1" stroke="#a8a49a" stroke-width="2"/>
+
+  <rect x="1407" y="290" width="66" height="540" rx="30" fill="#1f272d" opacity="0.9"/>
+  <rect x="1427" y="306" width="26" height="508" rx="13" fill="#f1dfbd"/>
+</g>
+<path d="M1128 416L1370 411" fill="none" stroke="#c3842e" stroke-width="2.5"/>
+<circle cx="1370" cy="411" r="5" fill="#c3842e"/>
+<text x="1110" y="424" fill="#c3842e" font-size="24" font-weight="720" text-anchor="end" letter-spacing="1.1">TRAPPED CHARGE</text>
+<path d="M1128 682L1438 648" fill="none" stroke="#1f272d" stroke-width="2.5"/>
+<circle cx="1438" cy="648" r="5" fill="#1f272d"/>
+<text x="1110" y="690" fill="#1f272d" font-size="24" font-weight="720" text-anchor="end" letter-spacing="1.1">VERTICAL CHANNEL</text>
+<path d="M1062 870H1766" stroke="#ddd6c9" stroke-width="3"/>
+<text x="1414" y="912" fill="#1f272d" font-size="31" font-weight="720" text-anchor="middle" letter-spacing="0">200–400+ layers</text>
+<text x="1414" y="944" fill="#74746f" font-size="20" font-weight="560" text-anchor="middle" letter-spacing="0">charge remains without power</text>
+</svg>

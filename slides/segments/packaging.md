@@ -128,30 +128,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Smaller dies also improve yield and cost
+<div class="visual-sequence__kicker">WHY CHIPLETS WIN</div>
 
-<div class="grid grid-cols-3 gap-6 mt-8">
-<div class="border-2 border-gray-400 rounded-lg p-5">
-<div class="text-sm opacity-60">YIELD</div>
-<div class="text-2xl font-bold mt-1">Four smaller dies can cost less</div>
-<div class="text-sm opacity-70 mt-3">AMD estimated four small dies at <b>&lt;60%</b> of one monolith; a bad die no longer scraps the whole device.</div>
-</div>
-<div class="border-2 border-gray-400 rounded-lg p-5">
-<div class="text-sm opacity-60">MEMORY</div>
-<div class="text-2xl font-bold mt-1">HBM has to sit millimeters away</div>
-<div class="text-sm opacity-70 mt-3"><b>~1,700</b> signal lines per stack. A conventional PCB cannot route that interface; this package uses a silicon interposer.</div>
-</div>
-<div class="border-2 border-gray-400 rounded-lg p-5">
-<div class="text-sm opacity-60">COST</div>
-<div class="text-2xl font-bold mt-1">Use advanced nodes only for compute</div>
-<div class="text-sm opacity-70 mt-3">Compute on the newest node; I/O and cache on mature ones. Mix nodes in one package.</div>
-</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/chiplet-yield-v2.png" alt="One defect scraps a monolithic die but only one of four chiplets, while an interposer combines compute, mature-node input-output, and nearby HBM" />
 </div>
 
-<div class="text-center text-lg opacity-80 mt-8">
-Packaging now carries more of each generation's density and performance gains.
-</div>
+<div class="visual-sequence__caption"><strong>Split the die.</strong><span>Lose less silicon, mix process nodes, and place HBM nearby.</span></div>
+<div class="visual-sequence__source">AMD estimate · four small dies cost &lt;60% of one monolith</div>
 
 <!--
 BEATS:

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">High-bandwidth memory beside a GPU on a silicon interposer</title>
+<desc id="desc">An exploded axonometric package shows eight representative DRAM dies joined by through-silicon vias and microbumps above a logic base die. A wide interface crosses the silicon interposer to the GPU.</desc>
+<defs>
+  <filter id="shadow" x="-25%" y="-25%" width="150%" height="170%">
+    <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#1f272d" flood-opacity="0.13"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#1f272d"/>
+  </marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#3977a8"/>
+  </marker>
+  <marker id="arrow-violet" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#7358a3"/>
+  </marker>
+  <pattern id="hatch" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <path d="M0 0V18" stroke="#ad5a5a" stroke-width="5" opacity="0.36"/>
+  </pattern>
+</defs>
+<rect width="1920" height="1080" fill="#f4efe6"/>
+<path d="M168 922H1752" stroke="#ddd6c9" stroke-width="3"/>
+<g opacity="1">
+  <path d="M370 780H1650L1525 842H245Z" fill="#d7e7df" stroke="#387d72" stroke-width="3"/>
+  <path d="M245 842H1525V872H245Z" fill="#387d72" opacity="0.28" stroke="#387d72" stroke-width="3"/>
+  <path d="M1650 780L1525 842V872L1650 810Z" fill="#387d72" opacity="0.45" stroke="#387d72" stroke-width="3"/>
+</g>
+<path d="M820 716C930 716 980 650 1090 650" fill="none" stroke="#7358a3" stroke-width="3" opacity="0.42"/><path d="M820 722C930 722 980 654 1090 654" fill="none" stroke="#7358a3" stroke-width="3" opacity="0.45499999999999996"/><path d="M820 728C930 728 980 658 1090 658" fill="none" stroke="#7358a3" stroke-width="3" opacity="0.49"/><path d="M820 734C930 734 980 662 1090 662" fill="none" stroke="#7358a3" stroke-width="3" opacity="0.525"/><path d="M820 740C930 740 980 666 1090 666" fill="none" stroke="#7358a3" stroke-width="3" opacity="0.56"/><path d="M820 746C930 746 980 670 1090 670" fill="none" stroke="#7358a3" stroke-width="3" opacity="0.595"/><path d="M820 752C930 752 980 674 1090 674" fill="none" stroke="#7358a3" stroke-width="3" opacity="0.63"/><path d="M820 758C930 758 980 678 1090 678" fill="none" stroke="#7358a3" stroke-width="3" opacity="0.665"/><path d="M820 764C930 764 980 682 1090 682" fill="none" stroke="#7358a3" stroke-width="3" opacity="0.7"/><path d="M820 770C930 770 980 686 1090 686" fill="none" stroke="#7358a3" stroke-width="3" opacity="0.7350000000000001"/><path d="M820 776C930 776 980 690 1090 690" fill="none" stroke="#7358a3" stroke-width="3" opacity="0.77"/>
+<g opacity="1">
+  <path d="M1100 548H1550L1445 600H995Z" fill="#3977a8" stroke="#1f272d" stroke-width="3"/>
+  <path d="M995 600H1445V696H995Z" fill="#1f272d" opacity="0.28" stroke="#1f272d" stroke-width="3"/>
+  <path d="M1550 548L1445 600V696L1550 644Z" fill="#1f272d" opacity="0.45" stroke="#1f272d" stroke-width="3"/>
+</g>
+<g opacity="1">
+  <path d="M500 660H890L812 699H422Z" fill="#7358a3" stroke="#1f272d" stroke-width="3"/>
+  <path d="M422 699H812V737H422Z" fill="#1f272d" opacity="0.28" stroke="#1f272d" stroke-width="3"/>
+  <path d="M890 660L812 699V737L890 698Z" fill="#1f272d" opacity="0.45" stroke="#1f272d" stroke-width="3"/>
+</g>
+<g opacity="1">
+  <path d="M500 610H890L812 649H422Z" fill="#d3c5e7" stroke="#7358a3" stroke-width="3"/>
+  <path d="M422 649H812V667H422Z" fill="#7358a3" opacity="0.28" stroke="#7358a3" stroke-width="3"/>
+  <path d="M890 610L812 649V667L890 628Z" fill="#7358a3" opacity="0.45" stroke="#7358a3" stroke-width="3"/>
+</g>
+<g opacity="1">
+  <path d="M500 562H890L812 601H422Z" fill="#e1d8ef" stroke="#7358a3" stroke-width="3"/>
+  <path d="M422 601H812V619H422Z" fill="#7358a3" opacity="0.28" stroke="#7358a3" stroke-width="3"/>
+  <path d="M890 562L812 601V619L890 580Z" fill="#7358a3" opacity="0.45" stroke="#7358a3" stroke-width="3"/>
+</g>
+<g opacity="1">
+  <path d="M500 514H890L812 553H422Z" fill="#d3c5e7" stroke="#7358a3" stroke-width="3"/>
+  <path d="M422 553H812V571H422Z" fill="#7358a3" opacity="0.28" stroke="#7358a3" stroke-width="3"/>
+  <path d="M890 514L812 553V571L890 532Z" fill="#7358a3" opacity="0.45" stroke="#7358a3" stroke-width="3"/>
+</g>
+<g opacity="1">
+  <path d="M500 466H890L812 505H422Z" fill="#e1d8ef" stroke="#7358a3" stroke-width="3"/>
+  <path d="M422 505H812V523H422Z" fill="#7358a3" opacity="0.28" stroke="#7358a3" stroke-width="3"/>
+  <path d="M890 466L812 505V523L890 484Z" fill="#7358a3" opacity="0.45" stroke="#7358a3" stroke-width="3"/>
+</g>
+<g opacity="1">
+  <path d="M500 418H890L812 457H422Z" fill="#d3c5e7" stroke="#7358a3" stroke-width="3"/>
+  <path d="M422 457H812V475H422Z" fill="#7358a3" opacity="0.28" stroke="#7358a3" stroke-width="3"/>
+  <path d="M890 418L812 457V475L890 436Z" fill="#7358a3" opacity="0.45" stroke="#7358a3" stroke-width="3"/>
+</g>
+<g opacity="1">
+  <path d="M500 370H890L812 409H422Z" fill="#e1d8ef" stroke="#7358a3" stroke-width="3"/>
+  <path d="M422 409H812V427H422Z" fill="#7358a3" opacity="0.28" stroke="#7358a3" stroke-width="3"/>
+  <path d="M890 370L812 409V427L890 388Z" fill="#7358a3" opacity="0.45" stroke="#7358a3" stroke-width="3"/>
+</g>
+<g opacity="1">
+  <path d="M500 322H890L812 361H422Z" fill="#d3c5e7" stroke="#7358a3" stroke-width="3"/>
+  <path d="M422 361H812V379H422Z" fill="#7358a3" opacity="0.28" stroke="#7358a3" stroke-width="3"/>
+  <path d="M890 322L812 361V379L890 340Z" fill="#7358a3" opacity="0.45" stroke="#7358a3" stroke-width="3"/>
+</g>
+<g opacity="1">
+  <path d="M500 274H890L812 313H422Z" fill="#e1d8ef" stroke="#7358a3" stroke-width="3"/>
+  <path d="M422 313H812V331H422Z" fill="#7358a3" opacity="0.28" stroke="#7358a3" stroke-width="3"/>
+  <path d="M890 274L812 313V331L890 292Z" fill="#7358a3" opacity="0.45" stroke="#7358a3" stroke-width="3"/>
+</g>
+<path d="M554 290V694" stroke="#7358a3" stroke-width="7" stroke-linecap="round" opacity="0.84"/><path d="M636 290V694" stroke="#7358a3" stroke-width="7" stroke-linecap="round" opacity="0.84"/><path d="M718 290V694" stroke="#7358a3" stroke-width="7" stroke-linecap="round" opacity="0.84"/><path d="M800 290V694" stroke="#7358a3" stroke-width="7" stroke-linecap="round" opacity="0.84"/>
+<circle cx="456" cy="735" r="8" fill="#c3842e"/><circle cx="494" cy="735" r="8" fill="#c3842e"/><circle cx="532" cy="735" r="8" fill="#c3842e"/><circle cx="570" cy="735" r="8" fill="#c3842e"/><circle cx="608" cy="735" r="8" fill="#c3842e"/><circle cx="646" cy="735" r="8" fill="#c3842e"/><circle cx="684" cy="735" r="8" fill="#c3842e"/><circle cx="722" cy="735" r="8" fill="#c3842e"/><circle cx="760" cy="735" r="8" fill="#c3842e"/><circle cx="798" cy="735" r="8" fill="#c3842e"/>
+<text x="628" y="208" fill="#7358a3" font-size="30" font-weight="780" text-anchor="middle" letter-spacing="1.8">HBM STACK</text>
+<text x="1274" y="535" fill="#fbf8f1" font-size="38" font-weight="780" text-anchor="middle" letter-spacing="2">GPU</text>
+<path d="M454 302L476 350" fill="none" stroke="#7358a3" stroke-width="2.5"/>
+<circle cx="476" cy="350" r="5" fill="#7358a3"/>
+<text x="142" y="310" fill="#7358a3" font-size="24" font-weight="720" text-anchor="start" letter-spacing="1.1">8 / 12 / 16 DRAM DIES</text>
+<path d="M216 464L554 472" fill="none" stroke="#7358a3" stroke-width="2.5"/>
+<circle cx="554" cy="472" r="5" fill="#7358a3"/>
+<text x="142" y="472" fill="#7358a3" font-size="24" font-weight="720" text-anchor="start" letter-spacing="1.1">TSVs</text>
+<path d="M356 660L452 685" fill="none" stroke="#1f272d" stroke-width="2.5"/>
+<circle cx="452" cy="685" r="5" fill="#1f272d"/>
+<text x="142" y="668" fill="#1f272d" font-size="24" font-weight="720" text-anchor="start" letter-spacing="1.1">LOGIC BASE DIE</text>
+<path d="M300 750L520 735" fill="none" stroke="#c3842e" stroke-width="2.5"/>
+<circle cx="520" cy="735" r="5" fill="#c3842e"/>
+<text x="142" y="758" fill="#c3842e" font-size="24" font-weight="720" text-anchor="start" letter-spacing="1.1">MICROBUMPS</text>
+<path d="M1602 502L1444 592" fill="none" stroke="#3977a8" stroke-width="2.5"/>
+<circle cx="1444" cy="592" r="5" fill="#3977a8"/>
+<text x="1718" y="510" fill="#3977a8" font-size="24" font-weight="720" text-anchor="end" letter-spacing="1.1">GPU DIE</text>
+<path d="M1406 710L1000 684" fill="none" stroke="#7358a3" stroke-width="2.5"/>
+<circle cx="1000" cy="684" r="5" fill="#7358a3"/>
+<text x="1718" y="718" fill="#7358a3" font-size="24" font-weight="720" text-anchor="end" letter-spacing="1.1">WIDE MEMORY INTERFACE</text>
+<path d="M1448 860L1500 826" fill="none" stroke="#387d72" stroke-width="2.5"/>
+<circle cx="1500" cy="826" r="5" fill="#387d72"/>
+<text x="1718" y="868" fill="#387d72" font-size="24" font-weight="720" text-anchor="end" letter-spacing="1.1">SILICON INTERPOSER</text>
+<text x="960" y="978" fill="#74746f" font-size="32" font-weight="620" text-anchor="middle" letter-spacing="0">Memory sits millimeters from compute.</text>
+</svg>

@@ -1,5 +1,6 @@
 ---
-layout: section
+layout: default
+class: visual-sequence paper-visual
 ---
 
 <!-- SEGMENT
@@ -17,14 +18,14 @@ sources: research/foundations.md, research/tsmc.md
 -->
 
 
-# Rising fab costs split chip design from manufacturing
+<div class="visual-sequence__kicker">THE GREAT UNBUNDLING</div>
 
-<div class="text-xl opacity-70 mt-2">Rising fab costs made the integrated model unaffordable for most firms</div>
-
-<div class="text-lg opacity-80 mt-8 leading-relaxed">
-Leading-edge fab costs rose from about $4M to more than $20B.<br>
-That increase changed which companies could design and manufacture chips.
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/unbundling-design-fab.png" alt="A compact chip-design studio hands a physical layout to a much larger semiconductor fabrication plant" />
 </div>
+
+<div class="visual-sequence__caption"><strong>Design split from manufacturing</strong><span>when the factory became too expensive for one product line.</span></div>
+<div class="visual-sequence__source">Leading-edge fab cost · ~$4M → $20B+</div>
 
 <!--
 BEATS:

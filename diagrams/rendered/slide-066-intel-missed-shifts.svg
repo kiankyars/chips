@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">Mobile, Arm, and AI shifted volume away from Intel</title>
+<desc id="desc">Three panels show Intel passing on the original iPhone chip, Apple and AWS moving CPU demand to Arm, and Nvidia data-centre revenue growing far beyond Intel company revenue.</desc>
+<defs>
+  <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#ded7cb" stroke-width="1" opacity="0.24"/>
+  </pattern>
+  <filter id="paper-shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="13" flood-color="#493f30" flood-opacity="0.12"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#515b64"/></marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#2f6f9f"/></marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#2f7b65"/></marker>
+  <marker id="arrow-rose" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#b24956"/></marker>
+</defs>
+<rect width="1920" height="1080" fill="#f3efe7"/>
+<rect width="1920" height="1080" fill="url(#paper-grid)"/>
+<text x="104" y="92" fill="#747a76" font-size="20" font-weight="760" text-anchor="start" letter-spacing="3.6" opacity="1">INTEL</text>
+<text x="104" y="156" fill="#20252b" font-size="48" font-weight="760" text-anchor="start" letter-spacing="0" opacity="1">Three markets moved away from x86</text>
+<path d="M104 190H1816" stroke="#cec6b9" stroke-width="2"/>
+<g>
+<rect x="104" y="244" width="532" height="672" rx="28" fill="#fffaf0" stroke="#b24956" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<rect x="138" y="278" width="112" height="48" rx="24" fill="#f1dadd" stroke="#b24956" stroke-width="2"/>
+<text x="194" y="310" fill="#b24956" font-size="19" font-weight="780" text-anchor="middle" letter-spacing="0.8" opacity="1">2007</text>
+<text x="602" y="311" fill="#b24956" font-size="22" font-weight="820" text-anchor="end" letter-spacing="2.1" opacity="1">MOBILE</text>
+<g>
+<rect x="304" y="364" width="132" height="236" rx="24" fill="#fffaf0" stroke="#b24956" stroke-width="5"/>
+<rect x="320" y="394" width="100" height="164" rx="10" fill="#b24956" opacity="0.14"/>
+<circle cx="370" cy="578" r="9" fill="#b24956"/>
+</g>
+<g>
+<path d="M158.48 438.6H168M249.60000000000002 438.6H259.12" stroke="#515b64" stroke-width="2.04"/>
+<path d="M181.6 415.48V425M181.6 506.6V516.12" stroke="#515b64" stroke-width="2.04"/>
+<path d="M158.48 454.92H168M249.60000000000002 454.92H259.12" stroke="#515b64" stroke-width="2.04"/>
+<path d="M197.92000000000002 415.48V425M197.92000000000002 506.6V516.12" stroke="#515b64" stroke-width="2.04"/>
+<path d="M158.48 471.24H168M249.60000000000002 471.24H259.12" stroke="#515b64" stroke-width="2.04"/>
+<path d="M214.24 415.48V425M214.24 506.6V516.12" stroke="#515b64" stroke-width="2.04"/>
+<path d="M158.48 487.56H168M249.60000000000002 487.56H259.12" stroke="#515b64" stroke-width="2.04"/>
+<path d="M230.56 415.48V425M230.56 506.6V516.12" stroke="#515b64" stroke-width="2.04"/>
+<rect x="168" y="425" width="81.60000000000001" height="81.60000000000001" rx="9.520000000000001" fill="#515b64" opacity="0.13" stroke="#515b64" stroke-width="2.72"/>
+<path d="M184.32 450.84000000000003H233.28M184.32 465.8H216.96V487.56M227.84 465.8V487.56" fill="none" stroke="#515b64" stroke-width="2.72" stroke-linecap="round"/>
+</g>
+<path d="M270 493C302 493 304 482 334 482" fill="none" stroke="#b24956" stroke-width="4" stroke-dasharray="8 8"/>
+<path d="M283 463L317 517M317 463L283 517" stroke="#b24956" stroke-width="7" stroke-linecap="round"/>
+<path d="M138 680H602" stroke="#cec6b9" stroke-width="2"/>
+<text x="138" y="742" fill="#20252b" font-size="21" font-weight="760" text-anchor="start" letter-spacing="0" opacity="1">ORIGINAL IPHONE CHIP</text>
+<text x="138" y="792" fill="#747a76" font-size="18" font-weight="760" text-anchor="start" letter-spacing="1.5" opacity="1">VOLUME</text>
+<text x="512" y="805" fill="#b24956" font-size="31" font-weight="840" text-anchor="end" letter-spacing="0" opacity="1">100× FORECAST</text>
+<text x="138" y="866" fill="#515b64" font-size="22" font-weight="620" text-anchor="start" letter-spacing="0" opacity="1">Intel passed on the bid</text>
+</g>
+
+<g>
+<rect x="694" y="244" width="532" height="672" rx="28" fill="#fffaf0" stroke="#2f7b65" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<rect x="728" y="278" width="112" height="48" rx="24" fill="#d9ebe3" stroke="#2f7b65" stroke-width="2"/>
+<text x="784" y="310" fill="#2f7b65" font-size="19" font-weight="780" text-anchor="middle" letter-spacing="0.8" opacity="1">2020</text>
+<text x="1192" y="311" fill="#2f7b65" font-size="22" font-weight="820" text-anchor="end" letter-spacing="2.1" opacity="1">ARM</text>
+<g>
+<rect x="850" y="360" width="220" height="142" rx="12" fill="#fffaf0" stroke="#2f7b65" stroke-width="5"/>
+<rect x="868" y="378" width="184" height="106" fill="#2f7b65" opacity="0.14"/>
+<path d="M820 510H1100L1068 538H852Z" fill="#fffaf0" stroke="#2f7b65" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<rect x="925" y="402" width="70" height="70" rx="12" fill="#d9ebe3" stroke="#2f7b65" stroke-width="4"/>
+<text x="960" y="449" fill="#2f7b65" font-size="25" font-weight="840" text-anchor="middle" letter-spacing="0" opacity="1">M1</text>
+<g transform="translate(736 534)"><g>
+<path d="M-8.4 12H0M72 12H80.39999999999999" stroke="#515b64" stroke-width="1.7999999999999998"/>
+<path d="M12 -8.4V0M12 72V80.39999999999999" stroke="#515b64" stroke-width="1.7999999999999998"/>
+<path d="M-8.4 26.4H0M72 26.4H80.39999999999999" stroke="#515b64" stroke-width="1.7999999999999998"/>
+<path d="M26.4 -8.4V0M26.4 72V80.39999999999999" stroke="#515b64" stroke-width="1.7999999999999998"/>
+<path d="M-8.4 40.8H0M72 40.8H80.39999999999999" stroke="#515b64" stroke-width="1.7999999999999998"/>
+<path d="M40.8 -8.4V0M40.8 72V80.39999999999999" stroke="#515b64" stroke-width="1.7999999999999998"/>
+<path d="M-8.4 55.199999999999996H0M72 55.199999999999996H80.39999999999999" stroke="#515b64" stroke-width="1.7999999999999998"/>
+<path d="M55.199999999999996 -8.4V0M55.199999999999996 72V80.39999999999999" stroke="#515b64" stroke-width="1.7999999999999998"/>
+<rect x="0" y="0" width="72" height="72" rx="8.4" fill="#515b64" opacity="0.13" stroke="#515b64" stroke-width="2.4"/>
+<path d="M14.399999999999999 22.8H57.599999999999994M14.399999999999999 36H43.199999999999996V55.199999999999996M52.8 36V55.199999999999996" fill="none" stroke="#515b64" stroke-width="2.4" stroke-linecap="round"/>
+</g></g>
+<path d="M834 582L884 582" fill="none" stroke="#b24956" stroke-width="5" stroke-linecap="round" stroke-dasharray="7 7" marker-end="url(#arrow-rose)" opacity="1"/>
+<path d="M728 680H1192" stroke="#cec6b9" stroke-width="2"/>
+<text x="728" y="742" fill="#20252b" font-size="21" font-weight="760" text-anchor="start" letter-spacing="0" opacity="1">APPLE LEAVES INTEL</text>
+<text x="728" y="792" fill="#747a76" font-size="18" font-weight="760" text-anchor="start" letter-spacing="1.2" opacity="1">AWS NEW CPU CAPACITY</text>
+<text x="1192" y="805" fill="#2f7b65" font-size="31" font-weight="840" text-anchor="end" letter-spacing="0" opacity="1">&gt;50% ARM</text>
+<text x="728" y="866" fill="#515b64" font-size="22" font-weight="620" text-anchor="start" letter-spacing="0" opacity="1">Three consecutive years</text>
+</g>
+
+<g>
+<rect x="1284" y="244" width="532" height="672" rx="28" fill="#fffaf0" stroke="#2f6f9f" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<rect x="1318" y="278" width="112" height="48" rx="24" fill="#dceaf3" stroke="#2f6f9f" stroke-width="2"/>
+<text x="1374" y="310" fill="#2f6f9f" font-size="19" font-weight="780" text-anchor="middle" letter-spacing="0.8" opacity="1">2026</text>
+<text x="1782" y="311" fill="#2f6f9f" font-size="22" font-weight="820" text-anchor="end" letter-spacing="2.1" opacity="1">AI</text>
+<g><rect x="1438" y="352" width="220" height="286" rx="16" fill="#fffaf0" stroke="#2f6f9f" stroke-width="5"/><rect x="1456" y="372" width="184" height="34" rx="6" fill="#2f6f9f" opacity="0.12" stroke="#2f6f9f" stroke-width="2"/><circle cx="1622" cy="389" r="5" fill="#2f6f9f"/>
+<rect x="1456" y="420" width="184" height="34" rx="6" fill="#2f6f9f" opacity="0.155" stroke="#2f6f9f" stroke-width="2"/><circle cx="1622" cy="437" r="5" fill="#2f6f9f"/>
+<rect x="1456" y="468" width="184" height="34" rx="6" fill="#2f6f9f" opacity="0.19" stroke="#2f6f9f" stroke-width="2"/><circle cx="1622" cy="485" r="5" fill="#2f6f9f"/>
+<rect x="1456" y="516" width="184" height="34" rx="6" fill="#2f6f9f" opacity="0.225" stroke="#2f6f9f" stroke-width="2"/><circle cx="1622" cy="533" r="5" fill="#2f6f9f"/>
+<rect x="1456" y="564" width="184" height="34" rx="6" fill="#2f6f9f" opacity="0.26" stroke="#2f6f9f" stroke-width="2"/><circle cx="1622" cy="581" r="5" fill="#2f6f9f"/></g>
+<path d="M1328 604H1390" stroke="#515b64" stroke-width="18" stroke-linecap="round" opacity="0.35"/>
+<path d="M1328 604H1372" stroke="#b24956" stroke-width="18" stroke-linecap="round"/>
+<path d="M1318 680H1782" stroke="#cec6b9" stroke-width="2"/>
+<text x="1318" y="730" fill="#747a76" font-size="18" font-weight="760" text-anchor="start" letter-spacing="1.4" opacity="1">QUARTERLY REVENUE</text>
+<text x="1318" y="782" fill="#2f6f9f" font-size="19" font-weight="780" text-anchor="start" letter-spacing="0" opacity="1">NVIDIA DATA CENTER</text>
+<text x="1782" y="790" fill="#2f6f9f" font-size="34" font-weight="840" text-anchor="end" letter-spacing="0" opacity="1">$75.2B</text>
+<text x="1318" y="836" fill="#b24956" font-size="19" font-weight="780" text-anchor="start" letter-spacing="0" opacity="1">INTEL · TOTAL</text>
+<text x="1782" y="844" fill="#b24956" font-size="29" font-weight="820" text-anchor="end" letter-spacing="0" opacity="1">$13.6B</text>
+</g>
+<text x="960" y="986" fill="#747a76" font-size="24" font-weight="620" text-anchor="middle" letter-spacing="0" opacity="1">Each shift redirected demand toward a different architecture or supplier.</text>
+</svg>

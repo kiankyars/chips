@@ -40,42 +40,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Six large fabless designers
+<div class="visual-sequence__kicker">FABLESS DESIGNERS</div>
 
-<div class="flex flex-col gap-2 mt-3">
-
-<div class="border-2 border-gray-400 rounded-lg px-4 py-2 grid grid-cols-[210px_1fr_170px] gap-3 items-center">
-  <div class="text-2xl font-bold">AMD</div>
-<div class="text-xs leading-tight">x86 CPUs and Instinct AI accelerators; market value rose roughly 300× under Lisa Su from 2014 to mid-2026.</div>
-  <div class="text-right"><div class="text-2xl font-bold">$34.6B</div><div class="text-xs opacity-60">FY25 rev · DC +32%</div></div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/slide-047-fabless-designers.svg" alt="Six fabless design companies sending completed layout files to one outside foundry" />
 </div>
 
-<div class="border-2 border-blue-400 rounded-lg px-4 py-2 grid grid-cols-[210px_1fr_170px] gap-3 items-center">
-  <div class="text-2xl font-bold">Apple</div>
-<div class="text-xs leading-tight">A-, M-, and C-series chips for Apple products; a major early customer for TSMC's advanced nodes.</div>
-  <div class="text-right"><div class="text-2xl font-bold">~17%</div><div class="text-xs opacity-60">of TSMC FY2025 revenue, est.</div></div>
-</div>
-
-<div class="border-2 border-gray-400 rounded-lg px-4 py-2 grid grid-cols-[210px_1fr_170px] gap-3 items-center">
-  <div class="text-2xl font-bold">Qualcomm</div>
-<div class="text-xs leading-tight">Snapdragon processors plus cellular-patent licenses generate chip and royalty revenue.</div>
-  <div class="text-right"><div class="text-2xl font-bold">$44.3B</div><div class="text-xs opacity-60">FY25 rev</div></div>
-</div>
-
-<div class="border-2 border-gray-400 rounded-lg px-4 py-2 grid grid-cols-[210px_1fr_170px] gap-3 items-center">
-  <div class="text-2xl font-bold leading-tight">Broadcom<br><span class="text-lg">+ Marvell</span></div>
-<div class="text-xs leading-tight">Custom accelerators and networking silicon for Google, Meta, OpenAI, AWS, and other large customers.</div>
-  <div class="text-right"><div class="text-2xl font-bold">&gt;$100B</div><div class="text-xs opacity-60">AVGO AI rev, FY27 guided</div></div>
-</div>
-
-<div class="border-2 border-gray-400 rounded-lg px-4 py-2 grid grid-cols-[210px_1fr_170px] gap-3 items-center">
-  <div class="text-2xl font-bold">MediaTek</div>
-<div class="text-xs leading-tight">Roughly one-third of smartphone application processors; expanding into custom AI silicon and TSMC's 2 nm process.</div>
-  <div class="text-right"><div class="text-2xl font-bold">~38%</div><div class="text-xs opacity-60">of smartphone APs</div></div>
-</div>
-
-</div>
+<div class="visual-sequence__caption"><strong>Six fabless designers send layout files to outside foundries.</strong></div>
+<div class="visual-sequence__source">AMD · Apple · Qualcomm · Broadcom · Marvell · MediaTek</div>
 
 <!--
 BEATS (montage — walk each card fast, ~20–30s each; this is a pressure-valve segment, keep the tempo up):

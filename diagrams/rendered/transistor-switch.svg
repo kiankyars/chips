@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">A transistor is a voltage-controlled switch</title>
+<desc id="desc">Two matched cross-sections show that without gate voltage no conducting channel joins source and drain, while applied gate voltage creates a channel and permits current to flow.</desc>
+<defs>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#28313a" flood-opacity="0.10"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#252a31"/></marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#2e6f9e"/></marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#347d68"/></marker>
+  <marker id="arrow-rose" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#b44e57"/></marker>
+  <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#252a31" stroke-width="1" opacity="0.025"/>
+  </pattern>
+
+</defs>
+<rect width="1920" height="1080" fill="#f3efe7"/>
+<rect width="1920" height="1080" fill="url(#paper-grid)"/>
+<g>
+<rect x="110" y="218" width="748" height="648" rx="28" fill="#fbf8f1" stroke="#d8d2c7" stroke-width="3" filter="url(#shadow)"/>
+<text x="180" y="286" fill="#6f746f" font-size="25" font-weight="760" text-anchor="start" letter-spacing="3">GATE OFF</text>
+<path d="M180 304H288" stroke="#6f746f" stroke-width="5" stroke-linecap="round"/>
+
+<rect x="168" y="584" width="632" height="218" rx="12" fill="#e7d8bd" stroke="#b97824" stroke-width="3"/>
+<path d="M188 650H780M188 714H780" stroke="#b97824" stroke-width="2" opacity="0.20"/>
+
+<rect x="202" y="615" width="174" height="187" rx="8" fill="#d7e8f1" stroke="#2e6f9e" stroke-width="4"/>
+<rect x="598" y="615" width="174" height="187" rx="8" fill="#d7e8f1" stroke="#2e6f9e" stroke-width="4"/>
+
+<rect x="384" y="565" width="200" height="18" rx="8" fill="#fdfcf8" stroke="#6f5b8f" stroke-width="3"/>
+<rect x="416" y="356" width="136" height="196" rx="14" fill="#d7e8f1" stroke="#2e6f9e" stroke-width="4"/>
+<path d="M484 306V348" stroke="#6f746f" stroke-width="5" marker-end="url(#arrow-ink)" opacity="0.48"/>
+<text x="532" y="329" fill="#6f746f" font-size="27" font-weight="760" text-anchor="middle" letter-spacing="0">0 V</text>
+
+<path d="M384 608H584" stroke="#6f746f" stroke-width="3" stroke-dasharray="12 14" opacity="0.46"/>
+<path d="M473 590L495 626M495 590L473 626" stroke="#b44e57" stroke-width="5" stroke-linecap="round"/>
+
+<text x="289" y="840" fill="#2e6f9e" font-size="22" font-weight="760" text-anchor="middle" letter-spacing="2">SOURCE</text>
+<text x="484" y="528" fill="#2e6f9e" font-size="22" font-weight="760" text-anchor="middle" letter-spacing="2">GATE</text>
+<text x="685" y="840" fill="#2e6f9e" font-size="22" font-weight="760" text-anchor="middle" letter-spacing="2">DRAIN</text>
+</g>
+<g>
+<rect x="1062" y="218" width="748" height="648" rx="28" fill="#fbf8f1" stroke="#347d68" stroke-width="3" filter="url(#shadow)"/>
+<text x="1132" y="286" fill="#347d68" font-size="25" font-weight="760" text-anchor="start" letter-spacing="3">GATE ON</text>
+<path d="M1132 304H1240" stroke="#347d68" stroke-width="5" stroke-linecap="round"/>
+
+<rect x="1120" y="584" width="632" height="218" rx="12" fill="#e7d8bd" stroke="#b97824" stroke-width="3"/>
+<path d="M1140 650H1732M1140 714H1732" stroke="#b97824" stroke-width="2" opacity="0.20"/>
+
+<rect x="1154" y="615" width="174" height="187" rx="8" fill="#d7e8f1" stroke="#2e6f9e" stroke-width="4"/>
+<rect x="1550" y="615" width="174" height="187" rx="8" fill="#d7e8f1" stroke="#2e6f9e" stroke-width="4"/>
+
+<rect x="1336" y="565" width="200" height="18" rx="8" fill="#fdfcf8" stroke="#6f5b8f" stroke-width="3"/>
+<rect x="1368" y="356" width="136" height="196" rx="14" fill="#d8e9e1" stroke="#347d68" stroke-width="4"/>
+<path d="M1436 306V348" stroke="#347d68" stroke-width="5" marker-end="url(#arrow-green)" opacity="1"/>
+<text x="1484" y="329" fill="#347d68" font-size="27" font-weight="760" text-anchor="middle" letter-spacing="0">+V</text>
+
+<rect x="1320" y="588" width="236" height="40" rx="20" fill="#d8e9e1" stroke="#347d68" stroke-width="3"/>
+<circle cx="1344" cy="603" r="8" fill="#347d68"/>
+<circle cx="1384" cy="613" r="8" fill="#347d68"/>
+<circle cx="1424" cy="603" r="8" fill="#347d68"/>
+<circle cx="1464" cy="613" r="8" fill="#347d68"/>
+<circle cx="1504" cy="603" r="8" fill="#347d68"/>
+<circle cx="1544" cy="613" r="8" fill="#347d68"/>
+<circle cx="1584" cy="603" r="8" fill="#347d68"/>
+<path d="M1354 608H1536" stroke="#347d68" stroke-width="4" marker-end="url(#arrow-green)"/>
+
+<text x="1241" y="840" fill="#2e6f9e" font-size="22" font-weight="760" text-anchor="middle" letter-spacing="2">SOURCE</text>
+<text x="1436" y="528" fill="#347d68" font-size="22" font-weight="760" text-anchor="middle" letter-spacing="2">GATE</text>
+<text x="1637" y="840" fill="#2e6f9e" font-size="22" font-weight="760" text-anchor="middle" letter-spacing="2">DRAIN</text>
+</g>
+<path d="M882 542H1034" stroke="#252a31" stroke-width="4" marker-end="url(#arrow-ink)" opacity="0.72"/>
+<text x="960" y="963" fill="#252a31" font-size="31" font-weight="620" text-anchor="middle" letter-spacing="0">voltage creates a channel</text>
+</svg>

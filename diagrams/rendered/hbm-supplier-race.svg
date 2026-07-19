@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">HBM suppliers reached a common qualification gate by mid 2026</title>
+<desc id="desc">Three horizontal lanes show SK hynix, Samsung, and Micron advancing through qualification. SK hynix held about 56 percent of HBM in the first quarter of 2026, Micron held about 19 to 21 percent, and all three were qualified for Rubin HBM4 by mid 2026.</desc>
+<defs>
+  <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#ddd5c8" stroke-width="1" opacity="0.22"/>
+  </pattern>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#493f30" flood-opacity="0.13"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#4f5965"/>
+  </marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#3977a8"/>
+  </marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#397a66"/>
+  </marker>
+  <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#ad4f5d"/>
+  </marker>
+</defs>
+<rect width="1920" height="1080" fill="#f4efe6"/>
+<rect width="1920" height="1080" fill="url(#paper-grid)"/>
+<text x="118" y="112" fill="#777c79" font-size="21" font-weight="780" text-anchor="start" letter-spacing="2.2" opacity="1">HBM SUPPLIER QUALIFICATION</text>
+<path d="M118 150L1802 150" fill="none" stroke="#ddd5c8" stroke-width="3"/>
+<g>
+<text x="118" y="300" fill="#397a66" font-size="29" font-weight="800" text-anchor="start" letter-spacing="1.6" opacity="1">SK HYNIX</text>
+<text x="118" y="338" fill="#777c79" font-size="20" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">Nvidia's primary HBM supplier since H100</text>
+<path d="M430 320L1690 320" fill="none" stroke="#397a66" stroke-width="8" marker-end="url(#arrow-green)"/>
+<g filter="url(#shadow)"><rect x="510" y="273.9" width="98.6" height="19.72" rx="4.06" fill="#e4dcef" stroke="#397a66" stroke-width="1.7399999999999998"/>
+<rect x="510" y="267.52" width="98.6" height="19.72" rx="4.06" fill="#fffaf0" stroke="#397a66" stroke-width="1.7399999999999998"/>
+<rect x="510" y="261.14" width="98.6" height="19.72" rx="4.06" fill="#e4dcef" stroke="#397a66" stroke-width="1.7399999999999998"/>
+<rect x="510" y="254.76" width="98.6" height="19.72" rx="4.06" fill="#fffaf0" stroke="#397a66" stroke-width="1.7399999999999998"/>
+<rect x="510" y="248.38" width="98.6" height="19.72" rx="4.06" fill="#e4dcef" stroke="#397a66" stroke-width="1.7399999999999998"/>
+<rect x="510" y="242" width="98.6" height="19.72" rx="4.06" fill="#fffaf0" stroke="#397a66" stroke-width="1.7399999999999998"/>
+  <rect x="505.36" y="297.1" width="107.88" height="15.079999999999998" rx="4.06" fill="#397a66" opacity="0.9"/>
+</g>
+<g>
+  <path d="M969 246V394M1061 174V322" stroke="#397a66" stroke-width="8" stroke-linecap="round"/>
+  <path d="M955 246H1075" stroke="#397a66" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="1015" cy="308" r="20" fill="#fffaf0" stroke="#397a66" stroke-width="5"/>
+  <path d="M1005 308L1014 318L1031 296" fill="none" stroke="#397a66" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<rect x="1338" y="295" width="420" height="48" rx="24" fill="#d8e8df" stroke="#397a66" stroke-width="2.5"/>
+<text x="1548" y="326" fill="#397a66" font-size="20" font-weight="760" text-anchor="middle" letter-spacing="0.5" opacity="1">~56% HBM · Q1 2026</text>
+</g>
+<g>
+<text x="118" y="525" fill="#ad4f5d" font-size="29" font-weight="800" text-anchor="start" letter-spacing="1.6" opacity="1">SAMSUNG</text>
+<text x="118" y="563" fill="#777c79" font-size="20" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">HBM3E qualification took about 18 months</text>
+<path d="M430 545L1690 545" fill="none" stroke="#ad4f5d" stroke-width="8" marker-end="url(#arrow-red)"/>
+<g filter="url(#shadow)"><rect x="510" y="498.9" width="98.6" height="19.72" rx="4.06" fill="#e4dcef" stroke="#ad4f5d" stroke-width="1.7399999999999998"/>
+<rect x="510" y="492.52" width="98.6" height="19.72" rx="4.06" fill="#fffaf0" stroke="#ad4f5d" stroke-width="1.7399999999999998"/>
+<rect x="510" y="486.14" width="98.6" height="19.72" rx="4.06" fill="#e4dcef" stroke="#ad4f5d" stroke-width="1.7399999999999998"/>
+<rect x="510" y="479.76" width="98.6" height="19.72" rx="4.06" fill="#fffaf0" stroke="#ad4f5d" stroke-width="1.7399999999999998"/>
+<rect x="510" y="473.38" width="98.6" height="19.72" rx="4.06" fill="#e4dcef" stroke="#ad4f5d" stroke-width="1.7399999999999998"/>
+<rect x="510" y="467" width="98.6" height="19.72" rx="4.06" fill="#fffaf0" stroke="#ad4f5d" stroke-width="1.7399999999999998"/>
+  <rect x="505.36" y="522.1" width="107.88" height="15.079999999999998" rx="4.06" fill="#ad4f5d" opacity="0.9"/>
+</g>
+<g>
+  <path d="M1114 471V619M1206 399V547" stroke="#ad4f5d" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1100 471H1220" stroke="#ad4f5d" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="1160" cy="533" r="20" fill="#fffaf0" stroke="#ad4f5d" stroke-width="5"/>
+  <path d="M1150 533L1159 543L1176 521" fill="none" stroke="#ad4f5d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<rect x="1338" y="520" width="420" height="48" rx="24" fill="#efd9dc" stroke="#ad4f5d" stroke-width="2.5"/>
+<text x="1548" y="551" fill="#ad4f5d" font-size="20" font-weight="760" text-anchor="middle" letter-spacing="0.5" opacity="1">qualified · SEPT 2025</text>
+</g>
+<g>
+<text x="118" y="750" fill="#3977a8" font-size="29" font-weight="800" text-anchor="start" letter-spacing="1.6" opacity="1">MICRON</text>
+<text x="118" y="788" fill="#777c79" font-size="20" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">share rose from 2% in 2023</text>
+<path d="M430 770L1690 770" fill="none" stroke="#3977a8" stroke-width="8" marker-end="url(#arrow-blue)"/>
+<g filter="url(#shadow)"><rect x="510" y="723.9" width="98.6" height="19.72" rx="4.06" fill="#e4dcef" stroke="#3977a8" stroke-width="1.7399999999999998"/>
+<rect x="510" y="717.52" width="98.6" height="19.72" rx="4.06" fill="#fffaf0" stroke="#3977a8" stroke-width="1.7399999999999998"/>
+<rect x="510" y="711.14" width="98.6" height="19.72" rx="4.06" fill="#e4dcef" stroke="#3977a8" stroke-width="1.7399999999999998"/>
+<rect x="510" y="704.76" width="98.6" height="19.72" rx="4.06" fill="#fffaf0" stroke="#3977a8" stroke-width="1.7399999999999998"/>
+<rect x="510" y="698.38" width="98.6" height="19.72" rx="4.06" fill="#e4dcef" stroke="#3977a8" stroke-width="1.7399999999999998"/>
+<rect x="510" y="692" width="98.6" height="19.72" rx="4.06" fill="#fffaf0" stroke="#3977a8" stroke-width="1.7399999999999998"/>
+  <rect x="505.36" y="747.1" width="107.88" height="15.079999999999998" rx="4.06" fill="#3977a8" opacity="0.9"/>
+</g>
+<g>
+  <path d="M1109 696V844M1201 624V772" stroke="#3977a8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1095 696H1215" stroke="#3977a8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="1155" cy="758" r="20" fill="#fffaf0" stroke="#3977a8" stroke-width="5"/>
+  <path d="M1145 758L1154 768L1171 746" fill="none" stroke="#3977a8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<rect x="1338" y="745" width="420" height="48" rx="24" fill="#d8e7f1" stroke="#3977a8" stroke-width="2.5"/>
+<text x="1548" y="776" fill="#3977a8" font-size="20" font-weight="760" text-anchor="middle" letter-spacing="0.5" opacity="1">~19–21% HBM · Q1 2026</text>
+</g>
+<rect x="557" y="902" width="806" height="84" rx="42" fill="#e4dcef" stroke="#7358a3" stroke-width="3"/>
+<text x="960" y="938" fill="#7358a3" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="2" opacity="1">MID-2026</text>
+<text x="960" y="972" fill="#7358a3" font-size="29" font-weight="730" text-anchor="middle" letter-spacing="0" opacity="1">all three qualified for Rubin HBM4</text>
+</svg>

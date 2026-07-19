@@ -84,29 +84,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Supply shocks trigger substitution
+<div class="visual-sequence__kicker">MATERIAL SHOCKS</div>
 
-<div class="grid grid-cols-3 gap-6 mt-8">
-
-<div class="border-2 border-gray-400 rounded-lg p-4">
-<div class="text-lg font-bold">2019 · Japan → Korea</div>
-<div class="text-sm opacity-70 mt-2">Japan restricts 3 chemicals: photoresist, HF, fluorinated polyimide. Korea was importing <b>92%</b> of its resist and <b>94%</b> of its polyimide from Japan. HF exports collapse <b>~97%</b>.</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/slide-104-material-shocks-substitution.svg" alt="Three material supply shocks followed by localization, supplier diversification, or stockpile use" />
 </div>
 
-<div class="border-2 border-gray-400 rounded-lg p-4">
-<div class="text-lg font-bold">2022 · Neon / Ukraine</div>
-<div class="text-sm opacity-70 mt-2">Before Russia's invasion, two Ukrainian firms supplied about half of chip-laser neon. Both halted production; Chinese spot prices rose roughly <b>4×</b>.</div>
-</div>
-
-<div class="border-2 border-gray-400 rounded-lg p-4">
-<div class="text-lg font-bold">2024 · Spruce Pine, NC</div>
-<div class="text-sm opacity-70 mt-2">The Spruce Pine area supplies an estimated <b>70–90%</b> of high-purity quartz. Hurricane Helene halted both mines for roughly two weeks; chip production continued from stockpiles.</div>
-</div>
-
-</div>
-
-<div class="text-center text-xl opacity-80 mt-8">Critical materials often come from concentrated markets, but the 2019 and 2022 shocks also pushed customers to diversify.</div>
+<div class="visual-sequence__caption"><strong>Customers added local suppliers, second sources, or stockpiles.</strong></div>
+<div class="visual-sequence__source">Japan–Korea · 2019 · Ukraine neon · 2022 · Spruce Pine quartz · 2024</div>
 
 <!--
 BEATS:

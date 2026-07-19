@@ -316,27 +316,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Overseas fabs trail Taiwan's leading edge
+<div class="visual-sequence__kicker">TSMC'S FOOTPRINT</div>
 
-<div class="grid grid-cols-3 gap-6 mt-8 text-center">
-<div>
-<div class="text-3xl font-bold">Arizona</div>
-<div class="text-sm opacity-70 mt-2"><b>$165B</b> · six fabs planned<br>Fab 1 running N4 with <b>reported yields comparable to Taiwan</b><br>$514M profit in Q1'26</div>
-</div>
-<div>
-<div class="text-3xl font-bold">Kumamoto</div>
-<div class="text-sm opacity-70 mt-2">specialty nodes (12–28nm)<br>with Sony, Denso, Toyota<br>Fab 2 ~end-2027</div>
-</div>
-<div>
-<div class="text-3xl font-bold">Dresden</div>
-<div class="text-sm opacity-70 mt-2">€10B+ · automotive/industrial<br>with Bosch, Infineon, NXP<br>production ~late 2027</div>
-</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/tsmc-geography.svg" alt="TSMC fabs in Arizona, Kumamoto, and Dresden compared with its leading-edge production center in Taiwan" />
 </div>
 
-<div class="text-lg mt-10 text-center">
-<b>N2 production remains in Taiwan.</b> Up to <b>10 new fabs</b> were under construction there in 2026.
-</div>
+<div class="visual-sequence__caption"><strong>Overseas fabs diversify capacity.</strong><span>The leading edge remains centered in Taiwan.</span></div>
+<div class="visual-sequence__source">Arizona · N4 · Kumamoto / Dresden · mature nodes · Taiwan · N2</div>
 
 <!--
 BEATS:

@@ -69,27 +69,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Four policy tools shape chip trade
+<div class="visual-sequence__kicker">POLICY CONTROL POINTS</div>
 
-<div class="grid grid-cols-2 gap-6 mt-8">
-<div class="border-2 border-gray-400 rounded-lg p-5">
-<div class="text-2xl font-bold">EUV export licenses</div>
-<div class="opacity-70 mt-2">The Netherlands can deny export licenses for ASML's EUV systems.</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/policy-control-points.svg" alt="Four control points mark design software, foundry production, EUV equipment, and advanced chip imports" />
 </div>
-<div class="border-2 border-gray-400 rounded-lg p-5">
-<div class="text-2xl font-bold">EDA export controls</div>
-<div class="opacity-70 mt-2">US export controls can cut Chinese designers off from leading EDA software.</div>
-</div>
-<div class="border-2 border-gray-400 rounded-lg p-5">
-<div class="text-2xl font-bold">The Entity List and FDPR</div>
-<div class="opacity-70 mt-2">US rules can cover chips made abroad with US technology, including at TSMC.</div>
-</div>
-<div class="border-2 border-gray-400 rounded-lg p-5">
-<div class="text-2xl font-bold">Section 232 tariffs</div>
-<div class="opacity-70 mt-2">A 25% US tariff applies to advanced chips above specified thresholds.</div>
-</div>
-</div>
+
+<div class="visual-sequence__caption"><strong>Governments can block</strong><span>design tools, fab access, equipment shipments, or imports.</span></div>
+<div class="visual-sequence__source">EDA controls · FDPR · EUV licenses · Section 232</div>
 
 <!--
 BEATS:
@@ -108,19 +98,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# US controls expanded from Huawei to China-wide capabilities
+<div class="visual-sequence__kicker">CONTROL SCOPE · 2019–2024</div>
 
-<div class="mt-8 space-y-4 text-lg">
-<div><b class="text-red-500">May 2019</b> · Huawei added to the Entity List; covered US exports require licenses.</div>
-<div><b class="text-red-500">May 2020</b> · FDPR expanded; TSMC can no longer manufacture covered Huawei chips without a US license.</div>
-<div><b class="text-red-500">Oct 2022</b> · Controls expand to specified advanced-computing chips and semiconductor-manufacturing equipment for China.</div>
-<div><b class="text-red-500">Dec 2024</b> · HBM added; 140 entities and 27 tool and software categories covered.</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/export-control-expansion.svg" alt="Growing circles show US controls expanding from Huawei to foreign fabs, advanced chips, equipment, HBM, and more entities" />
 </div>
 
-<div class="text-sm opacity-60 mt-8">
-Policy scope expanded from one company to a country's advanced-chip capability.
-</div>
+<div class="visual-sequence__caption"><strong>US controls expanded</strong><span>from Huawei to chips, equipment, HBM, and 140 entities.</span></div>
+<div class="visual-sequence__source">May 2019 → December 2024</div>
 
 <!--
 BEATS:
@@ -136,16 +124,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Licenses and tariffs replaced a full ban
+<div class="visual-sequence__kicker">THE H20 POLICY CYCLE</div>
 
-<div class="mt-6 space-y-3 text-lg">
-<div><b>Oct 2023</b> · Rules close the H800 exception; Nvidia releases the compliant <b>H20</b>.</div>
-<div><b>Apr 2025</b> · The US adds an H20 license requirement; Nvidia records a <b class="text-red-500">$4.5B</b> charge.</div>
-<div><b>Jul–Aug 2025</b> · Licenses resume; Nvidia and AMD agree to pay <b>15%</b> of China chip revenue to the US government.</div>
-<div><b>Aug 2025</b> · The Chinese government discourages purchases; Nvidia stops H20 production.</div>
-<div><b>Jan 2026</b> · H200 becomes eligible for case-by-case licenses and a 25% tariff.</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/h20-policy-cycle.svg" alt="Five policy gates track H20 and H200 access to China from October 2023 through January 2026" />
 </div>
+
+<div class="visual-sequence__caption"><strong>Policy created the H20</strong><span>then restricted and partially reopened its sale.</span></div>
+<div class="visual-sequence__source">October 2023 → January 2026</div>
 
 <!--
 BEATS:
@@ -226,27 +215,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# China can make advanced chips, at higher cost
+<div class="visual-sequence__kicker">ADVANCED CHIPS · AT HIGHER COST</div>
 
-<div class="grid grid-cols-2 gap-8 mt-8">
-<div>
-<div class="text-xl font-bold">Logic — SMIC</div>
-<ul class="mt-2 opacity-80 leading-relaxed">
-<li>7 nm-class chips shipping since the 2023 Mate 60 launch</li>
-<li>5 nm-class production through DUV multi-patterning</li>
-<li>Yields ~20–40%; sells at a <b>40–50% premium</b> to TSMC</li>
-</ul>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/china-capability-cost.svg" alt="SMIC uses repeated DUV patterning while Huawei uses more chips, racks, and power to close system-level compute gaps" />
 </div>
-<div>
-<div class="text-xl font-bold">AI accelerators — Huawei Ascend</div>
-<ul class="mt-2 opacity-80 leading-relaxed">
-<li>910C: ~600k units targeted in 2026 (2× 2025)</li>
-<li>CloudMatrix 384: exceeds a GB200 NVL72 on aggregate compute</li>
-<li>384 chips, 16 racks, ~4× the power</li>
-</ul>
-</div>
-</div>
+
+<div class="visual-sequence__caption"><strong>SMIC accepts lower yields;</strong><span>Huawei uses more chips and power.</span></div>
+<div class="visual-sequence__source">SMIC and Huawei · 2026 estimates</div>
 
 <!--
 BEATS:
@@ -264,17 +243,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# China still trails in lithography, HBM, and EDA
+<div class="visual-sequence__kicker">CHINA'S TECHNOLOGY GAPS</div>
 
-<div class="grid grid-cols-2 gap-x-10 gap-y-5 mt-8 text-lg">
-<div><b>EUV:</b> Shenzhen's prototype reports ~100–150 W source power, comparable with ASML systems around <b>2017</b></div>
-<div><b>DUV:</b> SMEE's headline 2025 tool turned out to be a 110nm dry scanner, not the claimed 28nm class</div>
-<div><b>HBM:</b> CXMT ~8% of DRAM, HBM3 targeted end-2026 — <b>3–4 years</b> behind Korea</div>
-<div><b>EDA:</b> Empyrean, the biggest domestic player, ~10–12% of China's own market</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/china-technology-gap.svg" alt="Four rows compare China's reported EUV, DUV, HBM, and EDA capabilities with external reference points" />
 </div>
 
-<div class="text-center text-2xl font-bold mt-10">Estimates put China's leading-edge gap near five years, with wide variation by technology.</div>
+<div class="visual-sequence__caption"><strong>The largest gaps remain</strong><span>EUV, HBM, and advanced EDA.</span></div>
+<div class="visual-sequence__source">Estimates vary by technology · roughly five-year leading-edge gap</div>
 
 <!--
 BEATS:
@@ -293,25 +272,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# US industrial policy now includes direct equity
+<div class="visual-sequence__kicker">US INDUSTRIAL POLICY</div>
 
-<div class="grid grid-cols-2 gap-8 mt-6">
-<div>
-<div class="text-lg opacity-70">CHIPS Act (2022)</div>
-<div class="text-5xl font-bold mt-1">$52.7B</div>
-<div class="opacity-70 mt-1">+ 25% investment tax credit</div>
-<div class="mt-5 text-lg opacity-70">August 2025</div>
-<div class="text-3xl font-bold mt-1">US takes 9.9% of Intel — $8.9B</div>
-<div class="opacity-70 mt-1">the government is now Intel's largest shareholder</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/us-fab-investment.svg" alt="A US map marks announced TSMC, Micron, Samsung, and Intel investments beside federal incentives and equity" />
 </div>
-<div class="flex flex-col justify-center gap-3 text-lg">
-<div><b>TSMC Arizona:</b> $165B announced investment</div>
-<div><b>Micron:</b> up to $250B US plan</div>
-<div><b>Samsung Taylor, TX:</b> ~$37B, unlocked by Tesla</div>
-<div class="mt-3 text-2xl font-bold">US advanced-logic capacity: 0% (2022) → 28% (2032 proj.)</div>
-</div>
-</div>
+
+<div class="visual-sequence__caption"><strong>Federal incentives and equity</strong><span>are funding new US fab capacity.</span></div>
+<div class="visual-sequence__source">Announced investment · 2032 capacity projection</div>
 
 <!--
 BEATS:
@@ -397,18 +368,17 @@ LINE THAT LANDS:
 -->
 
 ---
-layout: center
+class: visual-sequence paper-visual
 ---
 
-# The supply chain is splitting into two stacks
+<div class="visual-sequence__kicker">TWO AI STACKS</div>
 
-<div class="text-xl opacity-80 mt-6 max-w-3xl text-center leading-relaxed">
-The US-led and China-led AI stacks use different accelerators, software, and toolchains. Current mineral-control pauses expire in November 2026.
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/split-ai-stacks.svg" alt="Two separated stacks compare US-led and China-led accelerators, software, foundries, and equipment" />
 </div>
 
-<div class="text-lg opacity-60 mt-10 text-center">
-The final comparison follows margins across the supply chain.
-</div>
+<div class="visual-sequence__caption"><strong>The two stacks now use</strong><span>different accelerators, software, foundries, and tools.</span></div>
+<div class="visual-sequence__source">Mineral-control pauses expire · November 2026</div>
 
 <!--
 BEATS:

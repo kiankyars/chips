@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">EDA turns hardware descriptions into routed chip layouts</title>
+<desc id="desc">Four visual stages transform RTL source into logic gates, placed standard cells, and a routed physical layout. A verification arrow loops from the final layout back through the design flow.</desc>
+<defs>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#28313a" flood-opacity="0.10"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#252a31"/></marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#2e6f9e"/></marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#347d68"/></marker>
+  <marker id="arrow-rose" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#b44e57"/></marker>
+  <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#252a31" stroke-width="1" opacity="0.025"/>
+  </pattern>
+
+</defs>
+<rect width="1920" height="1080" fill="#f3efe7"/>
+<rect width="1920" height="1080" fill="url(#paper-grid)"/>
+<text x="92" y="142" fill="#6f746f" font-size="23" font-weight="760" text-anchor="start" letter-spacing="2.4">HUMANS DESCRIBE INTENT</text>
+<text x="1822" y="142" fill="#6f746f" font-size="23" font-weight="760" text-anchor="end" letter-spacing="2.4">SOFTWARE BUILDS THE ARTIFACT</text>
+<g>
+<rect x="92" y="282" width="326" height="412" rx="28" fill="#fbf8f1" stroke="#2e6f9e" stroke-width="3" filter="url(#shadow)"/>
+<text x="255" y="352" fill="#2e6f9e" font-size="25" font-weight="760" text-anchor="middle" letter-spacing="3">RTL</text>
+<path d="M201 370H309" stroke="#2e6f9e" stroke-width="5" stroke-linecap="round"/>
+<g transform="translate(128 398)"><g>
+<rect x="0" y="0" width="254" height="248" rx="18" fill="#f9fbfc" stroke="#2e6f9e" stroke-width="4"/>
+<rect x="30" y="34" width="182" height="8" rx="4" fill="#2e6f9e" opacity="0.58"/>
+<rect x="30" y="66" width="118" height="8" rx="4" fill="#2e6f9e" opacity="0.58"/>
+<rect x="58" y="98" width="202" height="8" rx="4" fill="#6f5b8f" opacity="0.82"/>
+<rect x="30" y="130" width="156" height="8" rx="4" fill="#2e6f9e" opacity="0.58"/>
+<rect x="58" y="162" width="184" height="8" rx="4" fill="#2e6f9e" opacity="0.58"/>
+<rect x="30" y="194" width="92" height="8" rx="4" fill="#2e6f9e" opacity="0.58"/>
+</g></g>
+</g>
+<g>
+<rect x="560" y="282" width="326" height="412" rx="28" fill="#fbf8f1" stroke="#b97824" stroke-width="3" filter="url(#shadow)"/>
+<text x="723" y="352" fill="#b97824" font-size="25" font-weight="760" text-anchor="middle" letter-spacing="3">GATES</text>
+<path d="M669 370H777" stroke="#b97824" stroke-width="5" stroke-linecap="round"/>
+<g transform="translate(596 398)"><g>
+<path d="M18 52H48Q106 82 48 112H18Z" fill="#f0dfbd" stroke="#b97824" stroke-width="4"/>
+<path d="M152 48L206 78L152 108Z" fill="#f0dfbd" stroke="#b97824" stroke-width="4"/><circle cx="215" cy="78" r="8" fill="#fbf8f1" stroke="#b97824" stroke-width="4"/>
+<path d="M78 152H108Q166 182 108 212H78Z" fill="#f0dfbd" stroke="#b97824" stroke-width="4"/>
+<path d="M0 82H18M106 82H152M223 78H248M166 182H248M54 112V182H78" fill="none" stroke="#252a31" stroke-width="4"/>
+<circle cx="54" cy="112" r="6" fill="#252a31"/>
+</g></g>
+</g>
+<g>
+<rect x="1028" y="282" width="326" height="412" rx="28" fill="#fbf8f1" stroke="#6f5b8f" stroke-width="3" filter="url(#shadow)"/>
+<text x="1191" y="352" fill="#6f5b8f" font-size="25" font-weight="760" text-anchor="middle" letter-spacing="3">PLACED</text>
+<path d="M1137 370H1245" stroke="#6f5b8f" stroke-width="5" stroke-linecap="round"/>
+<g transform="translate(1064 398)"><rect x="0" y="0" width="254" height="248" rx="15" fill="#eef2f4" stroke="#2e6f9e" stroke-width="4"/><rect x="10" y="12" width="34" height="26" rx="4" fill="#6f5b8f" opacity="0.42"/>
+<rect x="51" y="12" width="52" height="26" rx="4" fill="#2e6f9e" opacity="0.58"/>
+<rect x="110" y="12" width="40" height="26" rx="4" fill="#2e6f9e" opacity="0.74"/>
+<rect x="157" y="12" width="64" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/>
+<rect x="228" y="12" width="36" height="26" rx="4" fill="#6f5b8f" opacity="0.58"/>
+<rect x="10" y="50" width="52" height="26" rx="4" fill="#2e6f9e" opacity="0.58"/>
+<rect x="69" y="50" width="40" height="26" rx="4" fill="#2e6f9e" opacity="0.74"/>
+<rect x="116" y="50" width="64" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/>
+<rect x="187" y="50" width="36" height="26" rx="4" fill="#6f5b8f" opacity="0.58"/>
+<rect x="230" y="50" width="48" height="26" rx="4" fill="#2e6f9e" opacity="0.74"/>
+<rect x="10" y="88" width="40" height="26" rx="4" fill="#2e6f9e" opacity="0.74"/>
+<rect x="57" y="88" width="64" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/>
+<rect x="128" y="88" width="36" height="26" rx="4" fill="#6f5b8f" opacity="0.58"/>
+<rect x="171" y="88" width="48" height="26" rx="4" fill="#2e6f9e" opacity="0.74"/>
+<rect x="226" y="88" width="34" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/>
+<rect x="10" y="126" width="64" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/>
+<rect x="81" y="126" width="36" height="26" rx="4" fill="#6f5b8f" opacity="0.58"/>
+<rect x="124" y="126" width="48" height="26" rx="4" fill="#2e6f9e" opacity="0.74"/>
+<rect x="179" y="126" width="34" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/>
+<rect x="220" y="126" width="52" height="26" rx="4" fill="#2e6f9e" opacity="0.58"/>
+<rect x="10" y="164" width="36" height="26" rx="4" fill="#6f5b8f" opacity="0.58"/>
+<rect x="53" y="164" width="48" height="26" rx="4" fill="#2e6f9e" opacity="0.74"/>
+<rect x="108" y="164" width="34" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/>
+<rect x="149" y="164" width="52" height="26" rx="4" fill="#2e6f9e" opacity="0.58"/>
+<rect x="208" y="164" width="40" height="26" rx="4" fill="#6f5b8f" opacity="0.74"/>
+<rect x="10" y="202" width="48" height="26" rx="4" fill="#2e6f9e" opacity="0.74"/>
+<rect x="65" y="202" width="34" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/>
+<rect x="106" y="202" width="52" height="26" rx="4" fill="#2e6f9e" opacity="0.58"/>
+<rect x="165" y="202" width="40" height="26" rx="4" fill="#6f5b8f" opacity="0.74"/>
+<rect x="212" y="202" width="64" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/></g>
+</g>
+<g>
+<rect x="1496" y="282" width="326" height="412" rx="28" fill="#fbf8f1" stroke="#347d68" stroke-width="3" filter="url(#shadow)"/>
+<text x="1659" y="352" fill="#347d68" font-size="25" font-weight="760" text-anchor="middle" letter-spacing="3">ROUTED</text>
+<path d="M1605 370H1713" stroke="#347d68" stroke-width="5" stroke-linecap="round"/>
+<g transform="translate(1532 398)"><g>
+<rect x="0" y="0" width="254" height="248" rx="15" fill="#e8ece8" stroke="#347d68" stroke-width="4"/>
+<g opacity="0.34"><rect x="0" y="0" width="254" height="248" rx="15" fill="#eef2f4" stroke="#2e6f9e" stroke-width="4"/><rect x="10" y="12" width="34" height="26" rx="4" fill="#6f5b8f" opacity="0.42"/>
+<rect x="51" y="12" width="52" height="26" rx="4" fill="#2e6f9e" opacity="0.58"/>
+<rect x="110" y="12" width="40" height="26" rx="4" fill="#2e6f9e" opacity="0.74"/>
+<rect x="157" y="12" width="64" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/>
+<rect x="228" y="12" width="36" height="26" rx="4" fill="#6f5b8f" opacity="0.58"/>
+<rect x="10" y="50" width="52" height="26" rx="4" fill="#2e6f9e" opacity="0.58"/>
+<rect x="69" y="50" width="40" height="26" rx="4" fill="#2e6f9e" opacity="0.74"/>
+<rect x="116" y="50" width="64" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/>
+<rect x="187" y="50" width="36" height="26" rx="4" fill="#6f5b8f" opacity="0.58"/>
+<rect x="230" y="50" width="48" height="26" rx="4" fill="#2e6f9e" opacity="0.74"/>
+<rect x="10" y="88" width="40" height="26" rx="4" fill="#2e6f9e" opacity="0.74"/>
+<rect x="57" y="88" width="64" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/>
+<rect x="128" y="88" width="36" height="26" rx="4" fill="#6f5b8f" opacity="0.58"/>
+<rect x="171" y="88" width="48" height="26" rx="4" fill="#2e6f9e" opacity="0.74"/>
+<rect x="226" y="88" width="34" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/>
+<rect x="10" y="126" width="64" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/>
+<rect x="81" y="126" width="36" height="26" rx="4" fill="#6f5b8f" opacity="0.58"/>
+<rect x="124" y="126" width="48" height="26" rx="4" fill="#2e6f9e" opacity="0.74"/>
+<rect x="179" y="126" width="34" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/>
+<rect x="220" y="126" width="52" height="26" rx="4" fill="#2e6f9e" opacity="0.58"/>
+<rect x="10" y="164" width="36" height="26" rx="4" fill="#6f5b8f" opacity="0.58"/>
+<rect x="53" y="164" width="48" height="26" rx="4" fill="#2e6f9e" opacity="0.74"/>
+<rect x="108" y="164" width="34" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/>
+<rect x="149" y="164" width="52" height="26" rx="4" fill="#2e6f9e" opacity="0.58"/>
+<rect x="208" y="164" width="40" height="26" rx="4" fill="#6f5b8f" opacity="0.74"/>
+<rect x="10" y="202" width="48" height="26" rx="4" fill="#2e6f9e" opacity="0.74"/>
+<rect x="65" y="202" width="34" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/>
+<rect x="106" y="202" width="52" height="26" rx="4" fill="#2e6f9e" opacity="0.58"/>
+<rect x="165" y="202" width="40" height="26" rx="4" fill="#6f5b8f" opacity="0.74"/>
+<rect x="212" y="202" width="64" height="26" rx="4" fill="#2e6f9e" opacity="0.42"/></g>
+<path d="M18 24H68V50H228" fill="none" stroke="#347d68" stroke-width="7" opacity="0.72"/>
+<path d="M18 50H80V122H228" fill="none" stroke="#6f5b8f" stroke-width="4" opacity="0.72"/>
+<path d="M18 76H92V194H228" fill="none" stroke="#347d68" stroke-width="4" opacity="0.72"/>
+<path d="M18 102H104V98H228" fill="none" stroke="#6f5b8f" stroke-width="7" opacity="0.72"/>
+<path d="M18 128H116V170H228" fill="none" stroke="#347d68" stroke-width="4" opacity="0.72"/>
+<path d="M18 154H128V74H228" fill="none" stroke="#6f5b8f" stroke-width="4" opacity="0.72"/>
+<path d="M18 180H140V146H228" fill="none" stroke="#347d68" stroke-width="7" opacity="0.72"/>
+<path d="M18 206H152V50H228" fill="none" stroke="#6f5b8f" stroke-width="4" opacity="0.72"/>
+</g></g>
+</g>
+<path d="M430 488H532" stroke="#252a31" stroke-width="4" marker-end="url(#arrow-ink)" opacity="0.65"/>
+<path d="M898 488H1000" stroke="#252a31" stroke-width="4" marker-end="url(#arrow-ink)" opacity="0.65"/>
+<path d="M1366 488H1468" stroke="#252a31" stroke-width="4" marker-end="url(#arrow-ink)" opacity="0.65"/>
+
+<path d="M1658 744V834Q1658 912 1580 912H342Q184 912 184 754" fill="none" stroke="#b44e57" stroke-width="6" stroke-dasharray="13 11" marker-end="url(#arrow-rose)"/>
+<rect x="808" y="858" width="304" height="106" rx="53" fill="#f3efe7" stroke="#b44e57" stroke-width="4"/>
+<text x="960" y="925" fill="#b44e57" font-size="31" font-weight="790" text-anchor="middle" letter-spacing="4">VERIFY</text>
+<text x="960" y="1025" fill="#252a31" font-size="27" font-weight="580" text-anchor="middle" letter-spacing="0">repeat until the layout works</text>
+</svg>

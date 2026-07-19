@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">TSMC production footprint and leading-edge concentration</title>
+<desc id="desc">A simplified world map marks Arizona at N4, Dresden for automotive and industrial nodes, Kumamoto at 12 to 28 nanometres, and Taiwan as the concentrated centre of N2 production. A magnified Taiwan panel emphasizes that the leading edge remains there.</desc>
+<defs>
+  <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#ded7ca" stroke-width="1" opacity="0.22"/>
+  </pattern>
+  <pattern id="die-grid" width="32" height="28" patternUnits="userSpaceOnUse">
+    <path d="M32 0H0V28" fill="none" stroke="#4f5965" stroke-width="1.5" opacity="0.42"/>
+  </pattern>
+  <filter id="paper-shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="13" flood-color="#493f30" flood-opacity="0.12"/>
+  </filter>
+  <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#493f30" flood-opacity="0.14"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#4f5965"/>
+  </marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#16745c"/>
+  </marker>
+  <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#ad4355"/>
+  </marker>
+</defs>
+<rect width="1920" height="1080" fill="#f3efe6"/>
+<rect width="1920" height="1080" fill="url(#paper-grid)"/>
+<text x="104" y="92" fill="#7b827f" font-size="20" font-weight="760" text-anchor="start" letter-spacing="3.6" opacity="1">TSMC</text>
+<text x="104" y="156" fill="#171a1f" font-size="48" font-weight="760" text-anchor="start" letter-spacing="0" opacity="1">A global footprint with one leading-edge center</text>
+<path d="M104 190H1816" stroke="#c9c1b3" stroke-width="2"/>
+<rect x="104" y="238" width="1186" height="702" rx="28" fill="#fffaf0" stroke="#c9c1b3" stroke-width="2" filter="url(#paper-shadow)"/>
+<g fill="#ddd5c7" stroke="#c9c1b3" stroke-width="2">
+  <path d="M170 424L235 356L334 322L430 341L484 397L458 459L400 479L372 547L304 563L259 517L203 503Z"/>
+  <path d="M382 577L434 611L468 701L451 817L407 888L368 806L348 678Z"/>
+  <path d="M648 349L705 310L767 325L794 365L763 397L719 389L686 420L642 400Z"/>
+  <path d="M690 438L775 411L862 444L904 534L881 656L809 757L744 682L712 569Z"/>
+  <path d="M792 348L910 294L1046 314L1162 367L1226 444L1190 512L1098 500L1044 559L973 542L916 470L838 452Z"/>
+  <path d="M1115 682L1195 663L1253 704L1227 770L1140 781L1090 732Z"/>
+</g>
+<path d="M206 890C436 804 463 611 626 534C818 442 1022 488 1246 385" fill="none" stroke="#c9c1b3" stroke-width="2" stroke-dasharray="8 12" opacity="0.7"/>
+
+<circle cx="329" cy="448" r="22" fill="#2f68a2" opacity="0.14"/>
+<circle cx="329" cy="448" r="13" fill="#fffaf0" stroke="#2f68a2" stroke-width="5"/>
+<circle cx="329" cy="448" r="6" fill="#2f68a2"/>
+<path d="M329 425L329 364" fill="none" stroke="#2f68a2" stroke-width="3" stroke-linecap="round" opacity="1"/>
+<text x="329" y="327" fill="#2f68a2" font-size="24" font-weight="780" text-anchor="middle" letter-spacing="1" opacity="1">ARIZONA</text>
+<rect x="265" y="475" width="128" height="48" rx="24" fill="#dce8f3" stroke="#2f68a2" stroke-width="2"/>
+<text x="329" y="507" fill="#2f68a2" font-size="20" font-weight="760" text-anchor="middle" letter-spacing="0.5" opacity="1">N4</text>
+
+<circle cx="737" cy="366" r="22" fill="#4f5965" opacity="0.14"/>
+<circle cx="737" cy="366" r="13" fill="#fffaf0" stroke="#4f5965" stroke-width="5"/>
+<circle cx="737" cy="366" r="6" fill="#4f5965"/>
+<path d="M737 343L737 296" fill="none" stroke="#4f5965" stroke-width="3" stroke-linecap="round" opacity="1"/>
+<text x="737" y="270" fill="#4f5965" font-size="24" font-weight="780" text-anchor="middle" letter-spacing="1" opacity="1">DRESDEN</text>
+<text x="737" y="426" fill="#7b827f" font-size="17" font-weight="720" text-anchor="middle" letter-spacing="1.1" opacity="1">AUTO · INDUSTRIAL</text>
+
+<circle cx="1174" cy="403" r="22" fill="#c17a1b" opacity="0.14"/>
+<circle cx="1174" cy="403" r="13" fill="#fffaf0" stroke="#c17a1b" stroke-width="5"/>
+<circle cx="1174" cy="403" r="6" fill="#c17a1b"/>
+<path d="M1174 380L1174 334" fill="none" stroke="#c17a1b" stroke-width="3" stroke-linecap="round" opacity="1"/>
+<text x="1174" y="307" fill="#c17a1b" font-size="24" font-weight="780" text-anchor="middle" letter-spacing="1" opacity="1">KUMAMOTO</text>
+<rect x="1110" y="438" width="158" height="48" rx="24" fill="#f2e2c7" stroke="#c17a1b" stroke-width="2"/>
+<text x="1189" y="470" fill="#c17a1b" font-size="20" font-weight="760" text-anchor="middle" letter-spacing="0.5" opacity="1">12–28 nm</text>
+
+<circle cx="1092" cy="478" r="28" fill="#16745c" opacity="0.14"/>
+<circle cx="1092" cy="478" r="19" fill="#fffaf0" stroke="#16745c" stroke-width="5"/>
+<circle cx="1092" cy="478" r="12" fill="#16745c"/>
+<circle cx="1092" cy="478" r="44" fill="none" stroke="#16745c" stroke-width="3" opacity="0.45"/>
+<path d="M1117 492L1392 540" fill="none" stroke="#16745c" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-green)" opacity="1"/>
+
+<rect x="1360" y="238" width="456" height="702" rx="28" fill="#d7ebe3" stroke="#16745c" stroke-width="3" filter="url(#paper-shadow)"/>
+<text x="1588" y="296" fill="#16745c" font-size="24" font-weight="800" text-anchor="middle" letter-spacing="2.3" opacity="1">TAIWAN</text>
+<path d="M1583 344C1544 377 1524 427 1533 484C1540 530 1518 580 1539 632C1558 680 1599 706 1614 758C1657 704 1657 641 1638 589C1622 545 1652 486 1634 432C1622 391 1605 360 1583 344Z" fill="#fffaf0" stroke="#16745c" stroke-width="5"/>
+<g transform="translate(1416 733) scale(0.72)" fill="none" stroke="#16745c" stroke-width="4" stroke-linejoin="round">
+  <path d="M0 82V30L48 52V30L96 52V14H150V82Z" fill="#fffaf0"/>
+  <path d="M109 14V-18H137V14M19 82V60H39V82M61 82V60H81V82M111 82V54H137V82"/>
+</g>
+<g transform="translate(1541 773) scale(0.72)" fill="none" stroke="#16745c" stroke-width="4" stroke-linejoin="round">
+  <path d="M0 82V30L48 52V30L96 52V14H150V82Z" fill="#fffaf0"/>
+  <path d="M109 14V-18H137V14M19 82V60H39V82M61 82V60H81V82M111 82V54H137V82"/>
+</g>
+<g transform="translate(1665 721) scale(0.72)" fill="none" stroke="#16745c" stroke-width="4" stroke-linejoin="round">
+  <path d="M0 82V30L48 52V30L96 52V14H150V82Z" fill="#fffaf0"/>
+  <path d="M109 14V-18H137V14M19 82V60H39V82M61 82V60H81V82M111 82V54H137V82"/>
+</g>
+<rect x="1438" y="838" width="300" height="64" rx="32" fill="#16745c"/>
+<text x="1588" y="880" fill="#fffaf0" font-size="25" font-weight="820" text-anchor="middle" letter-spacing="1.2" opacity="1">N2 PRODUCTION</text>
+<text x="697" y="1005" fill="#7b827f" font-size="18" font-weight="740" text-anchor="middle" letter-spacing="2.1" opacity="1">OVERSEAS FABS DIVERSIFY CAPACITY</text>
+<text x="1588" y="1005" fill="#16745c" font-size="18" font-weight="800" text-anchor="middle" letter-spacing="2.1" opacity="1">LEADING EDGE</text>
+</svg>

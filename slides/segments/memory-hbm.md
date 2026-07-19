@@ -45,34 +45,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Two kinds of memory
+<div class="visual-sequence__kicker">MEMORY CELLS</div>
 
-<div class="grid grid-cols-2 gap-8 mt-8">
-<div class="border-2 border-blue-400 rounded-lg p-6">
-<div class="text-3xl font-bold">DRAM</div>
-<div class="text-sm opacity-60 mb-3">volatile working memory</div>
-
-- 1 transistor + 1 capacitor per bit
-- leaks — every bit refreshed **~every 64 ms**
-- nanosecond access · **vanishes at power-off**
-
-</div>
-<div class="border-2 border-amber-400 rounded-lg p-6">
-<div class="text-3xl font-bold">NAND</div>
-<div class="text-sm opacity-60 mb-3">nonvolatile storage</div>
-
-- charge trapped in an insulated cell
-- keeps data for years, unpowered
-- ~**1000× slower** · 3D towers **200–400+ layers**
-
-</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/memory-types-v2.png" alt="A leaking DRAM capacitor cell that must refresh beside a vertical 3D NAND charge-storage structure" />
 </div>
 
-<div class="text-center text-lg mt-8">
-DDR5 and HBM both follow JEDEC standards.<br>
-HBM still requires supplier qualification with a specific GPU package.
-</div>
+<div class="visual-sequence__caption"><strong>DRAM needs refresh.</strong><span>NAND retains data without power.</span></div>
+<div class="visual-sequence__source">DRAM · ~64 ms refresh · NAND · 200–400+ layers</div>
 
 <!--
 BEATS:
@@ -210,29 +193,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# HBM stacks DRAM dies beside the GPU
+<div class="visual-sequence__kicker">HIGH-BANDWIDTH MEMORY</div>
 
-<div class="grid grid-cols-2 gap-8 mt-6">
-<div class="text-lg leading-relaxed">
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/hbm-package-v2.png" alt="An exploded HBM stack with DRAM dies, through-silicon vias, microbumps, a logic base die, and a wide interface to a nearby GPU on an interposer" />
+</div>
 
-- **8 / 12 / 16 DRAM dies**, thinned to tens of microns, stacked vertically
-- **through-silicon vias** carry thousands of vertical connections through each die
-- the stack sits **millimeters from the GPU** on a silicon interposer (TSMC CoWoS)
-- bus width: **1024–2048 bits** per stack vs 64 for a DDR channel
-
-</div>
-<div class="flex flex-col gap-4">
-<div class="border-2 border-blue-400 rounded-lg p-4">
-<div class="font-bold">DDR DIMMs on the motherboard</div>
-<div class="text-sm opacity-70">64-bit channels over longer PCB traces; lower packaging cost</div>
-</div>
-<div class="border-2 border-green-500 rounded-lg p-4">
-<div class="font-bold">HBM stacks on the package</div>
-<div class="text-sm opacity-70">1,024–2,048-bit interfaces millimeters from the GPU; higher packaging cost</div>
-</div>
-</div>
-</div>
+<div class="visual-sequence__caption"><strong>Move memory onto the package.</strong><span>Then make the connection thousands of bits wide.</span></div>
+<div class="visual-sequence__source">8 / 12 / 16 dies · 1,024–2,048-bit interface</div>
 
 <!--
 BEATS:
@@ -290,30 +261,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# SK hynix led HBM while Samsung caught up
+<div class="visual-sequence__kicker">HBM SUPPLIER RACE</div>
 
-<div class="grid grid-cols-3 gap-5 mt-8 text-sm">
-<div class="border-2 border-green-500 rounded-lg p-4">
-<div class="text-xl font-bold">SK hynix</div>
-<div class="opacity-60 mb-2">~56% of HBM</div>
-Nvidia's main HBM supplier since H100. Took the <b>DRAM revenue lead in Q1 2025</b>; held about <b>56% of HBM</b> in Q1 2026.
-</div>
-<div class="border-2 border-red-400 rounded-lg p-4">
-<div class="text-xl font-bold">Samsung</div>
-<div class="opacity-60 mb-2">18-month qualification delay</div>
-Nvidia's HBM3E qualification took about <b>18 months</b>. Samsung passed in <b>Sept 2025</b> and regained the DRAM revenue lead in 4Q25 as conventional prices rose.
-</div>
-<div class="border-2 border-blue-400 rounded-lg p-4">
-<div class="text-xl font-bold">Micron</div>
-<div class="opacity-60 mb-2">share rose from 2% to ~20%</div>
-HBM share rose from <b>2% in 2023 to ~19–21%</b>. Micron is the only US supplier among the top three; 2026 supply is sold out.
-</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/hbm-supplier-race.svg" alt="Three supplier lanes show SK hynix, Samsung, and Micron reaching Nvidia qualification for Rubin HBM4" />
 </div>
 
-<div class="text-center text-lg mt-8">
-Mid-2026: <b>all three</b> certified by Nvidia for Vera Rubin's HBM4.
-</div>
+<div class="visual-sequence__caption"><strong>All three suppliers</strong><span>reached Rubin HBM4 qualification by mid-2026.</span></div>
+<div class="visual-sequence__source">Q1 2026 · SK hynix ~56% HBM · Micron ~19–21%</div>
 
 <!--
 BEATS:
@@ -390,26 +348,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# DRAM revenue is forecast to rise 144% in 2026
+<div class="visual-sequence__kicker">THE MEMORY SUPERCYCLE</div>
 
-<div class="grid grid-cols-2 gap-8 mt-6">
-<div>
-<div class="text-sm opacity-60 mb-2">DRAM industry revenue</div>
-<div class="text-lg">2025: <b>$165.7B</b> <span class="opacity-60">(+73%)</span></div>
-<div class="text-3xl font-bold text-green-500 mt-1">2026E: $404.3B <span class="text-lg">(+144%)</span></div>
-<div class="text-sm opacity-60 mt-4">total memory <b>$551.6B</b> in 2026E · data centers ~<b>70%</b> of all memory output</div>
-</div>
-<div class="flex flex-col gap-3">
-<div class="border rounded-lg p-3 text-sm"><b>Micron FQ3'26:</b> $41.5B revenue and an 84.6% gross margin</div>
-<div class="border rounded-lg p-3 text-sm"><b>Samsung Q2'26:</b> preliminary operating profit of ₩89.4T, about 19× year over year</div>
-<div class="border rounded-lg p-3 text-sm"><b>SK hynix:</b> raised roughly $28B through a Nasdaq ADR in July 2026 to fund capacity</div>
-</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/dram-revenue-surge.svg" alt="Bars compare 2025 DRAM revenue with the 2026 forecast while three wafers show HBM's higher capacity use" />
 </div>
 
-<div class="text-center text-sm opacity-60 mt-6">
-One HBM wafer uses capacity equivalent to roughly three PC-DRAM wafers. PC and data-center memory compete for the same fab capacity.
-</div>
+<div class="visual-sequence__caption"><strong>Forecast DRAM revenue</strong><span>rises from $165.7B in 2025 to $404.3B in 2026.</span></div>
+<div class="visual-sequence__source">TrendForce forecast · 2026E +144%</div>
 
 <!--
 BEATS:

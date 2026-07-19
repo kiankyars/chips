@@ -74,23 +74,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Low-cost chip shortages idled car factories
+<div class="visual-sequence__kicker">THE 2021 SHORTAGE</div>
 
-<div class="grid grid-cols-2 gap-10 mt-8">
-<div class="text-center">
-<div class="text-7xl font-bold">1,000–3,500</div>
-<div class="opacity-70 mt-2">chips in a single modern car</div>
-</div>
-<div class="text-center">
-<div class="text-7xl font-bold">$210B</div>
-<div class="opacity-70 mt-2">auto revenue lost to the 2021 shortage</div>
-</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/auto-chip-shortage.png" alt="A stopped automobile assembly line with one tiny missing microcontroller enlarged in the foreground" />
 </div>
 
-<div class="text-base opacity-70 mt-12 text-center leading-relaxed">
-Automakers produced <b>7.7M fewer vehicles</b> in 2021 because they could not source low-cost microcontrollers.
-</div>
+<div class="visual-sequence__caption"><strong>A controller that costs cents</strong><span>can stop a $40,000 vehicle.</span></div>
+<div class="visual-sequence__source">2021 · 7.7M fewer vehicles · ~$210B lost auto revenue</div>
 
 <!--
 BEATS:
@@ -110,36 +104,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Long product lives and depreciated fabs support analog margins
+<div class="visual-sequence__kicker">MATURE ANALOG ECONOMICS</div>
 
-<div class="grid grid-cols-2 gap-10 mt-6">
-
-<div class="flex flex-col justify-center gap-4 text-lg leading-relaxed">
-
-- **Shrinking can hurt analog performance.** Smaller nodes reduce voltage headroom and worsen noise and matching. Many precision parts use **180nm–45nm**.
-- **Old fabs are depreciated.** A **$0.30** chip can carry **60%+** gross margin.
-- **Engineers draw analog circuits transistor by transistor.** Training under experienced designers takes years.
-- **Products remain available for decades.** ST guarantees 20-year availability for some parts.
-
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/slide-111-analog-300mm-economics-v2.png" alt="Equal-size analog dies shown on 200 and 300 millimeter wafers, with the larger wafer reducing unit cost" />
 </div>
 
-<div class="flex flex-col justify-center">
-
-<div class="border-2 border-gray-400 rounded-lg p-5">
-<div class="text-2xl font-bold mb-1">Texas Instruments</div>
-<div class="text-sm opacity-60 mb-4">300 mm manufacturing lowers unit cost</div>
-
-<div class="text-lg leading-relaxed">
-TI keeps decades-old analog products in production on <b>300 mm</b> wafers.
-</div>
-<div class="text-4xl font-bold mt-4">~40% cheaper</div>
-<div class="text-sm opacity-60">estimated cost per unpackaged chip vs 200 mm · ~2.3× the wafer area</div>
-<div class="text-sm opacity-70 mt-4">TI plans to invest <b>&gt;$60B</b> in seven US fabs.</div>
-</div>
-
-</div>
-</div>
+<div class="visual-sequence__caption"><strong>A 300 mm wafer cuts TI's unpackaged-chip cost by roughly 40%.</strong></div>
+<div class="visual-sequence__source">Texas Instruments · mature analog · 180–45 nm</div>
 
 <!--
 BEATS:
@@ -164,52 +139,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Six large analog and embedded-chip suppliers
+<div class="visual-sequence__kicker">THE CHIPS INSIDE EVERYTHING ELSE</div>
 
-<div class="grid grid-cols-3 gap-3 mt-4 text-sm">
-
-<div class="border border-gray-400 rounded-lg p-3">
-<div class="font-bold text-lg">Texas Instruments</div>
-<div class="opacity-60">$17.7B · #1 analog</div>
-<div class="mt-2">About 80,000 products; 300 mm production lowers unit costs; more than $60B planned for seven US fabs.</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/analog-embedded-objects.png" alt="An EV inverter, radar sensor, contactless card, motor controller, server power supply, and precision instrument, each revealing a semiconductor module" />
 </div>
 
-<div class="border border-gray-400 rounded-lg p-3">
-<div class="font-bold text-lg">Infineon</div>
-<div class="opacity-60">~€14.7B · #1 power</div>
-<div class="mt-2">#1 in power and automotive semiconductors at 13.5% share; expanding SiC, GaN, and data-center power products.</div>
-</div>
-
-<div class="border border-gray-400 rounded-lg p-3">
-<div class="font-bold text-lg">STMicro</div>
-<div class="opacity-60">$11.8B · −11%</div>
-<div class="mt-2">Supplied silicon-carbide power modules for the 2018 Tesla Model 3; France and Italy retain strategic stakes.</div>
-</div>
-
-<div class="border border-gray-400 rounded-lg p-3">
-<div class="font-bold text-lg">NXP</div>
-<div class="opacity-60">$12.3B · auto ~57%</div>
-<div class="mt-2">About 57% of revenue comes from automotive; leads automotive radar and co-developed NFC.</div>
-</div>
-
-<div class="border border-gray-400 rounded-lg p-3">
-<div class="font-bold text-lg">Renesas</div>
-<div class="opacity-60">~$8.8B · Japan</div>
-<div class="mt-2">Formed from Hitachi, Mitsubishi, and NEC chip units; a 2021 fire at its Naka fab worsened the auto-chip shortage.</div>
-</div>
-
-<div class="border border-gray-400 rounded-lg p-3">
-<div class="font-bold text-lg">Analog Devices</div>
-<div class="opacity-60">$11.0B · +17%</div>
-<div class="mt-2">#2 in analog, focused on high-value precision converters; expanded through the Linear and Maxim acquisitions.</div>
-</div>
-
-</div>
-
-<div class="text-xs opacity-60 mt-3 text-center">
-Long qualification cycles constrain supplier switching.
-</div>
+<div class="visual-sequence__caption"><strong>These products use separate chips.</strong><span>They handle power, sensing, control, and conversion.</span></div>
+<div class="visual-sequence__source">TI · Infineon · STMicro · NXP · Renesas · Analog Devices</div>
 
 <!--
 BEATS:

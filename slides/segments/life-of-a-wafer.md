@@ -150,27 +150,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Transistors first, then 15+ layers of wiring
+<div class="visual-sequence__kicker">INSIDE THE DIE</div>
 
-<div class="grid grid-cols-2 gap-10 mt-8">
-<div class="border-2 border-gray-400 rounded-lg p-6">
-<div class="text-sm opacity-60">FEOL — front end of line</div>
-<div class="text-2xl font-bold mt-2">Transistors</div>
-<div class="opacity-70 mt-2">the transistors themselves, built in the silicon</div>
-</div>
-<div class="border-2 border-gray-400 rounded-lg p-6">
-<div class="text-sm opacity-60">BEOL — back end of line</div>
-<div class="text-2xl font-bold mt-2">Interconnect</div>
-<div class="opacity-70 mt-2">15+ metal layers, from local signal wiring to wide power rails</div>
-</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/chip-interconnect-stack.png" alt="A thin transistor layer beneath a much taller stack of metal interconnect layers and vias" />
 </div>
 
-<div class="grid grid-cols-3 gap-6 mt-8 text-center">
-<div><div class="text-3xl font-bold">81</div><div class="text-sm opacity-60">mask layers at N5</div></div>
-<div><div class="text-3xl font-bold">~115</div><div class="text-sm opacity-60">what it would take without EUV</div></div>
-<div><div class="text-3xl font-bold">1–1.5 days</div><div class="text-sm opacity-60">per layer → ~3 months</div></div>
-</div>
+<div class="visual-sequence__caption"><strong>Transistors occupy the floor.</strong><span>More than fifteen layers of wiring rise above them.</span></div>
+<div class="visual-sequence__source">N5 · 81 mask layers · roughly three months in process</div>
 
 <!--
 BEATS:
@@ -190,30 +180,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# A single particle can destroy a die
+<div class="visual-sequence__kicker">CONTAMINATION</div>
 
-<div class="grid grid-cols-2 gap-10 mt-6">
-<div>
-<div class="text-sm opacity-60 mb-2">THE AIR AROUND THE WAFER</div>
-<div class="text-5xl font-bold">≤10</div>
-<div class="opacity-70">particles per m³ (ISO 1)</div>
-<div class="text-3xl font-bold mt-4 opacity-60">35,000,000</div>
-<div class="opacity-70">particles per m³ — city air</div>
-<div class="text-sm opacity-50 mt-2">the wafer environment is ISO 1; operating rooms are typically ISO 6–7</div>
-</div>
-<div>
-<div class="text-sm opacity-60 mb-2">THE MATH</div>
-<div class="text-4xl font-bold">yield ≈ e<sup>−A·D₀</sup></div>
-<div class="opacity-70 mt-2">yield falls with die area<br>at a fixed defect density</div>
-<div class="text-2xl font-bold mt-4">~90%</div>
-<div class="opacity-70">phone-sized die at D₀ = 0.1/cm²</div>
-</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/wafer-particle-defect.png" alt="A nearly invisible particle on a wafer, magnified to show it shorting two metal lines on one die" />
 </div>
 
-<div class="text-center text-lg mt-8 opacity-80">
-Processing raises a blank wafer's value from roughly <b>$150</b> to about <b>$30,000</b>.
-</div>
+<div class="visual-sequence__caption"><strong>One particle can bridge two wires.</strong><span>The bridged die fails.</span></div>
+<div class="visual-sequence__source">Blank wafer · ~$150 · processed wafer · ~$30,000</div>
 
 <!--
 BEATS:

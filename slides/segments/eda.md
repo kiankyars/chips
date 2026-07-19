@@ -36,41 +36,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# EDA converts hardware descriptions into chip layouts
+<div class="visual-sequence__kicker">ELECTRONIC DESIGN AUTOMATION</div>
 
-<div class="flex items-stretch gap-2 mt-10 text-center">
-  <div class="flex-1 border-2 border-gray-400 rounded-lg p-3 flex flex-col justify-center">
-    <div class="font-bold text-lg">RTL</div>
-    <div class="text-xs opacity-60 mt-1">describe the behavior in code</div>
-  </div>
-  <div class="text-2xl opacity-40 self-center">→</div>
-  <div class="flex-1 border-2 border-gray-400 rounded-lg p-3 flex flex-col justify-center">
-    <div class="font-bold text-lg">SYNTHESIS</div>
-    <div class="text-xs opacity-60 mt-1">compile code into logic gates</div>
-  </div>
-  <div class="text-2xl opacity-40 self-center">→</div>
-  <div class="flex-1 border-2 border-gray-400 rounded-lg p-3 flex flex-col justify-center">
-    <div class="font-bold text-lg">PLACE & ROUTE</div>
-<div class="text-xs opacity-60 mt-1">position gates and route interconnects</div>
-  </div>
-  <div class="text-2xl opacity-40 self-center">→</div>
-  <div class="flex-1 border-2 border-amber-400 rounded-lg p-3 flex flex-col justify-center">
-    <div class="font-bold text-lg">VERIFICATION</div>
-<div class="text-xs opacity-60 mt-1">simulate and verify before tape-out</div>
-    <div class="text-xs font-bold mt-1">~50% of the project</div>
-  </div>
-  <div class="text-2xl opacity-40 self-center">→</div>
-  <div class="flex-1 border-2 border-gray-400 rounded-lg p-3 flex flex-col justify-center">
-    <div class="font-bold text-lg">TAPE-OUT</div>
-<div class="text-xs opacity-60 mt-1">deliver layout data to the foundry</div>
-  </div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/eda-flow-v2.png" alt="EDA software transforms RTL into logic gates, placed cells, and a routed physical layout, with verification looping through the process" />
 </div>
 
-<div class="text-center mt-10">
-  <span class="text-4xl font-bold">~$724M</span>
-<span class="opacity-60 ml-3">estimated design cost for one 2 nm-class chip, excluding manufacturing</span>
-</div>
+<div class="visual-sequence__caption"><strong>Describe behavior.</strong><span>Software builds and verifies the physical layout.</span></div>
+<div class="visual-sequence__source">2 nm-class design estimate · ~$724M before manufacturing</div>
 
 <!--
 BEATS:

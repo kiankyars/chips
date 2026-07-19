@@ -140,23 +140,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Estimated replacement time by supplier
+<div class="visual-sequence__kicker">REPLACEMENT HORIZON</div>
 
-<div class="text-sm opacity-70 mt-2">Order-of-magnitude estimates for developing a competitive domestic alternative</div>
-
-<div class="grid grid-cols-2 gap-x-10 gap-y-2 mt-5 text-sm">
-<div class="flex justify-between border-b border-gray-500 pb-1"><span><b>ASML + Zeiss</b> — EUV lithography</span><span class="font-bold">~15–20 yrs</span></div>
-<div class="flex justify-between border-b border-gray-500 pb-1"><span><b>TSMC</b> — leading-edge logic + CoWoS</span><span class="font-bold">~10+ yrs</span></div>
-<div class="flex justify-between border-b border-gray-500 pb-1"><span><b>Synopsys + Cadence</b> — EDA</span><span class="font-bold">~10 yrs</span></div>
-<div class="flex justify-between border-b border-gray-500 pb-1"><span><b>Nvidia</b> — CUDA ecosystem</span><span class="font-bold">~10 yrs</span></div>
-<div class="flex justify-between border-b border-gray-500 pb-1"><span><b>Japan materials</b> — resist + mask blanks</span><span class="font-bold">~5–10 yrs</span></div>
-<div class="flex justify-between border-b border-gray-500 pb-1"><span><b>KLA</b> — process control</span><span class="font-bold">~7 yrs</span></div>
-<div class="flex justify-between border-b border-gray-500 pb-1"><span><b>SK Hynix</b> — HBM</span><span class="font-bold">~5 yrs</span></div>
-<div class="flex justify-between border-b border-gray-500 pb-1"><span><b>OSAT</b> — ASE / Amkor assembly</span><span class="font-bold">~2 yrs</span></div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/replacement-horizon.svg" alt="A zero-to-twenty-year horizon comparing estimated time to replace critical semiconductor suppliers" />
 </div>
 
-<div class="text-xs opacity-60 mt-5">Editorial ranges, not forecasted completion dates.</div>
+<div class="visual-sequence__caption"><strong>ASML and Zeiss take longest to replace.</strong><span>OSAT capacity can be added sooner.</span></div>
+<div class="visual-sequence__source">Editorial ranges · not forecast completion dates</div>
 
 <!--
 BEATS:
@@ -179,25 +173,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Three additional concentration risks
+<div class="visual-sequence__kicker">BEYOND THE SEVEN-POINT BOARD</div>
 
-![chokepoint board — complete, 7 stamps](/diagrams/rendered/board-7.svg)
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/slide-153-additional-concentration-risks.svg" alt="Three additional semiconductor supply concentrations in ABF film, silicon wafers, and automated test equipment" />
+</div>
 
-<div class="grid grid-cols-3 gap-4 mt-6 text-sm text-center">
-<div class="border border-gray-400 rounded p-3">
-<div class="font-bold">Ajinomoto</div>
-<div class="opacity-70 text-xs mt-1">Founded as a food company, Ajinomoto supplies ABF film used in <b>&gt;95%</b> of advanced packages.</div>
-</div>
-<div class="border border-gray-400 rounded p-3">
-<div class="font-bold">Shin-Etsu + SUMCO</div>
-<div class="opacity-70 text-xs mt-1">Together, two firms supply <b>&gt;50%</b> of silicon wafers at eleven-nines purity.</div>
-</div>
-<div class="border border-gray-400 rounded p-3">
-<div class="font-bold">Advantest + Teradyne</div>
-<div class="opacity-70 text-xs mt-1">Together, two firms supply <b>&gt;80%</b> of automated test equipment.</div>
-</div>
-</div>
+<div class="visual-sequence__caption"><strong>Three more inputs have two or fewer dominant suppliers.</strong></div>
+<div class="visual-sequence__source">Ajinomoto · Shin-Etsu + SUMCO · Advantest + Teradyne</div>
 
 <!--
 BEATS:
@@ -216,37 +202,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence
+---
 
-# AI demand changed memory and packaging economics
+<div class="visual-sequence__kicker">THE NEXT CONSTRAINT</div>
 
-<div class="grid grid-cols-2 gap-8 mt-6">
-<div>
-<div class="text-sm font-bold opacity-70 mb-2">CHANGES SINCE 2023</div>
-<div class="text-sm leading-relaxed">
-
-- **HBM** is customer-qualified and sold 12–24 months ahead; industry DRAM revenue is forecast to rise **144%** in 2026
-- **CoWoS packaging capacity** constrained GPU shipments from 2023 to 2025
-- **Margins rose** at TSMC; KLA, Advantest, and ASML reported records
-- Suppliers with few substitutes are better positioned when demand normalizes
-
-</div>
-</div>
-<div class="border-l-2 border-amber-500 pl-6">
-<div class="text-sm font-bold opacity-70 mb-2">SERIES SCOPE</div>
-<div class="text-base leading-relaxed">
-Applications<br>
-Data Centers<br>
-<b class="text-amber-500">Energy</b> &nbsp;<span class="opacity-60 text-sm">← next course</span><br>
-<b>Chips</b> &nbsp;<span class="opacity-60 text-sm">← current course</span><br>
-Models
-</div>
-</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/chip-rack-grid.png" alt="An advanced accelerator package connects to an AI server rack and then to a power substation and transmission grid" />
 </div>
 
-<div class="text-lg text-center mt-8 opacity-90">
-A 72-GPU rack draws about <b>135 kW</b>.<br>
-Power delivery and grid capacity are the next constraints.
-</div>
+<div class="visual-sequence__caption"><strong>One rack draws about 135 kW.</strong><span>The next course follows the power.</span></div>
+<div class="visual-sequence__source">72 GPUs · roughly 132–140 kW</div>
 
 <!--
 BEATS:
@@ -266,20 +232,18 @@ LINE THAT LANDS:
 -->
 
 ---
-layout: center
+layout: default
+class: visual-sequence contain-visual
 ---
 
-# Long replacement times support high margins
+<div class="visual-sequence__kicker">THE CHIPS LAYER</div>
 
-<div class="text-2xl leading-relaxed mt-8 max-w-4xl">
-Several high-margin suppliers also have the longest estimated replacement times:<br>
-ASML and Zeiss, TSMC, Cadence and Synopsys, and Nvidia's CUDA ecosystem.<br><br>
-<span class="opacity-70 text-xl">Customers pay premiums when they have few alternatives.</span>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/map-full.svg" alt="The full semiconductor supply chain from design through manufacturing, equipment, memory, packaging, and data centers" />
 </div>
 
-<div class="text-lg opacity-60 mt-12">
-Chips are one of the five layers in this series.
-</div>
+<div class="visual-sequence__caption"><strong>The highest-margin suppliers are the hardest to replace.</strong></div>
+<div class="visual-sequence__source">Applications · Data Centers · Energy · Chips · Models</div>
 
 <!--
 BEATS:

@@ -1,5 +1,6 @@
 ---
-layout: center
+layout: default
+class: visual-sequence
 ---
 
 <!-- SEGMENT
@@ -18,12 +19,14 @@ note: BUILD AND RECORD LAST — this front-loads four promises (map, board, mone
 -->
 
 
-# One GB300 accelerator
+<div class="visual-sequence__kicker">THE OBJECT</div>
 
-<div class="text-2xl opacity-80 mt-6 leading-relaxed">
-A coaster-sized package with 208 billion transistors.<br>
-It sits at the center of the current AI infrastructure buildout.
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/package-04-complete.svg" alt="An accelerator package containing two compute dies and eight HBM stacks" />
 </div>
+
+<div class="visual-sequence__caption"><strong>One accelerator</strong><span>Two compute dies · eight HBM stacks · one package</span></div>
+<div class="visual-sequence__source">GB300-class package · schematic</div>
 
 <!--
 BEATS:

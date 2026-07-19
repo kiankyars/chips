@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">Three additional semiconductor supply concentrations</title>
+<desc id="desc">Three illustrated panels show Ajinomoto ABF film in advanced packages, silicon wafers supplied by Shin-Etsu and SUMCO, and automated test equipment supplied by Advantest and Teradyne.</desc>
+<defs>
+  <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#ded7cb" stroke-width="1" opacity="0.24"/>
+  </pattern>
+  <filter id="paper-shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="13" flood-color="#493f30" flood-opacity="0.12"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#515b64"/></marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#2f6f9f"/></marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#2f7b65"/></marker>
+  <marker id="arrow-rose" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#b24956"/></marker>
+</defs>
+<rect width="1920" height="1080" fill="#f3efe7"/>
+<rect width="1920" height="1080" fill="url(#paper-grid)"/>
+<text x="104" y="92" fill="#747a76" font-size="20" font-weight="760" text-anchor="start" letter-spacing="3.6" opacity="1">BEYOND THE SEVEN-POINT BOARD</text>
+<text x="104" y="156" fill="#20252b" font-size="48" font-weight="760" text-anchor="start" letter-spacing="0" opacity="1">Three more concentrated inputs</text>
+<path d="M104 190H1816" stroke="#cec6b9" stroke-width="2"/>
+<rect x="1616" y="86" width="184" height="48" rx="24" fill="#f1dadd" stroke="#b24956" stroke-width="2"/>
+<text x="1708" y="118" fill="#b24956" font-size="19" font-weight="780" text-anchor="middle" letter-spacing="0.8" opacity="1">3 MORE</text>
+<g>
+<rect x="104" y="250" width="532" height="664" rx="28" fill="#fffaf0" stroke="#b87821" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<text x="370" y="314" fill="#b87821" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="1.4" opacity="1">PACKAGE SUBSTRATE FILM</text>
+<g>
+<rect x="237" y="430" width="266" height="70" rx="10" fill="#515b64" opacity="0.18" stroke="#515b64" stroke-width="3"/>
+<rect x="271" y="338" width="198" height="88" rx="12" fill="#dceaf3" stroke="#2f6f9f" stroke-width="4"/>
+<rect x="219" y="504" width="302" height="30" rx="8" fill="#f1e1c3" stroke="#b87821" stroke-width="4"/>
+<circle cx="281" cy="468" r="11" fill="#b87821" opacity="0.7"/><circle cx="325" cy="468" r="11" fill="#b87821" opacity="0.7"/><circle cx="369" cy="468" r="11" fill="#b87821" opacity="0.7"/><circle cx="413" cy="468" r="11" fill="#b87821" opacity="0.7"/><circle cx="457" cy="468" r="11" fill="#b87821" opacity="0.7"/>
+</g><text x="370" y="586" fill="#b87821" font-size="22" font-weight="840" text-anchor="middle" letter-spacing="2" opacity="1">ABF</text>
+<text x="370" y="688" fill="#b87821" font-size="68" font-weight="860" text-anchor="middle" letter-spacing="0" opacity="1">&gt;95%</text>
+<text x="370" y="736" fill="#20252b" font-size="23" font-weight="800" text-anchor="middle" letter-spacing="0" opacity="1">AJINOMOTO</text>
+<path d="M166 776H574" stroke="#cec6b9" stroke-width="2"/>
+<text x="370" y="832" fill="#747a76" font-size="19" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">used in advanced packages</text>
+</g>
+<g>
+<rect x="694" y="250" width="532" height="664" rx="28" fill="#fffaf0" stroke="#2f6f9f" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<text x="960" y="314" fill="#2f6f9f" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="1.4" opacity="1">SILICON WAFERS</text>
+<g>
+<circle cx="960" cy="480" r="150" fill="#fffaf0" stroke="#2f6f9f" stroke-width="4"/>
+<path d="M862.5 426H1057.5M831 480H1089M862.5 534H1057.5M906 351V609M960 330V630M1014 351V609" fill="none" stroke="#2f6f9f" stroke-width="2" opacity="0.36"/>
+</g><circle cx="907" cy="438" r="9" fill="#b24956"/><circle cx="1008" cy="512" r="7" fill="#b24956" opacity="0.55"/><text x="960" y="504" fill="#2f6f9f" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="1.6" opacity="1">11 NINES</text>
+<text x="960" y="688" fill="#2f6f9f" font-size="68" font-weight="860" text-anchor="middle" letter-spacing="0" opacity="1">&gt;50%</text>
+<text x="960" y="736" fill="#20252b" font-size="23" font-weight="800" text-anchor="middle" letter-spacing="0" opacity="1">SHIN-ETSU + SUMCO</text>
+<path d="M756 776H1164" stroke="#cec6b9" stroke-width="2"/>
+<text x="960" y="832" fill="#747a76" font-size="19" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">electronic-grade wafer volume</text>
+</g>
+<g>
+<rect x="1284" y="250" width="532" height="664" rx="28" fill="#fffaf0" stroke="#705a96" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<text x="1550" y="314" fill="#705a96" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="1.4" opacity="1">AUTOMATED TEST EQUIPMENT</text>
+<g>
+<rect x="1420" y="370" width="260" height="84" rx="18" fill="#e7e0f0" stroke="#705a96" stroke-width="5"/>
+<path d="M1446 454L1474 526M1498 454L1514 526M1550 454V526M1602 454L1586 526M1654 454L1626 526" stroke="#705a96" stroke-width="4"/>
+<rect x="1462" y="534" width="176" height="104" rx="12" fill="#fffaf0" stroke="#515b64" stroke-width="4"/>
+<circle cx="1550" cy="586" r="28" fill="#d9ebe3" stroke="#2f7b65" stroke-width="4"/>
+</g>
+<text x="1550" y="688" fill="#705a96" font-size="68" font-weight="860" text-anchor="middle" letter-spacing="0" opacity="1">&gt;80%</text>
+<text x="1550" y="736" fill="#20252b" font-size="23" font-weight="800" text-anchor="middle" letter-spacing="0" opacity="1">ADVANTEST + TERADYNE</text>
+<path d="M1346 776H1754" stroke="#cec6b9" stroke-width="2"/>
+<text x="1550" y="832" fill="#747a76" font-size="19" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">two-company market share</text>
+</g>
+<text x="960" y="986" fill="#747a76" font-size="23" font-weight="620" text-anchor="middle" letter-spacing="0" opacity="1">These are important concentrations, but they sit outside the course's seven-point cutoff.</text>
+</svg>

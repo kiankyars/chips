@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">United States industrial policy funds semiconductor capacity through incentives and equity</title>
+<desc id="desc">A simplified United States map marks TSMC in Arizona, Micron, Samsung in Taylor Texas, and the federal equity investment in Intel. Side panels show the 52.7 billion dollar CHIPS Act, a 25 percent investment tax credit, and a projected rise in United States advanced logic capacity from zero percent in 2022 to 28 percent in 2032.</desc>
+<defs>
+  <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#ddd5c8" stroke-width="1" opacity="0.22"/>
+  </pattern>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#493f30" flood-opacity="0.13"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#4f5965"/>
+  </marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#3977a8"/>
+  </marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#397a66"/>
+  </marker>
+  <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#ad4f5d"/>
+  </marker>
+</defs>
+<rect width="1920" height="1080" fill="#f4efe6"/>
+<rect width="1920" height="1080" fill="url(#paper-grid)"/>
+<rect x="76" y="96" width="374" height="868" rx="28" fill="#fffaf0" stroke="#ddd5c8" stroke-width="3" filter="url(#shadow)"/>
+<text x="126" y="174" fill="#3977a8" font-size="21" font-weight="780" text-anchor="start" letter-spacing="2.2" opacity="1">FEDERAL SUPPORT</text>
+<text x="126" y="270" fill="#3977a8" font-size="58" font-weight="820" text-anchor="start" letter-spacing="0" opacity="1">$52.7B</text>
+<text x="126" y="312" fill="#777c79" font-size="20" font-weight="760" text-anchor="start" letter-spacing="1.4" opacity="1">CHIPS ACT · 2022</text>
+<text x="126" y="430" fill="#397a66" font-size="58" font-weight="820" text-anchor="start" letter-spacing="0" opacity="1">+25%</text>
+<text x="126" y="472" fill="#777c79" font-size="20" font-weight="760" text-anchor="start" letter-spacing="1.2" opacity="1">INVESTMENT TAX CREDIT</text>
+<text x="126" y="594" fill="#7358a3" font-size="58" font-weight="820" text-anchor="start" letter-spacing="0" opacity="1">$8.9B</text>
+<text x="126" y="636" fill="#777c79" font-size="20" font-weight="760" text-anchor="start" letter-spacing="1.4" opacity="1">9.9% OF INTEL</text>
+<text x="126" y="684" fill="#777c79" font-size="18" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">direct federal equity · Aug 2025</text>
+
+<rect x="490" y="96" width="1354" height="868" rx="28" fill="#fffaf0" stroke="#ddd5c8" stroke-width="3" filter="url(#shadow)"/>
+<path d="M502 324L635 238L822 260L960 230L1088 281L1280 274L1418 358L1510 430L1474 530L1366 558L1320 648L1198 676L1100 748L934 725L806 760L662 690L574 598L480 512Z" fill="#d8e7f1" stroke="#3977a8" stroke-width="5"/>
+<g>
+  <circle cx="715" cy="470" r="24" fill="#fffaf0" stroke="#397a66" stroke-width="6"/>
+  <circle cx="715" cy="470" r="9" fill="#397a66"/>
+  <text x="749" y="462" fill="#397a66" font-size="22" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">TSMC · ARIZONA</text>
+  <text x="749" y="495" fill="#777c79" font-size="19" font-weight="580" text-anchor="start" letter-spacing="0" opacity="1">$165B announced</text>
+</g>
+<g>
+  <circle cx="1145" cy="392" r="24" fill="#fffaf0" stroke="#7358a3" stroke-width="6"/>
+  <circle cx="1145" cy="392" r="9" fill="#7358a3"/>
+  <text x="1179" y="384" fill="#7358a3" font-size="22" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">MICRON</text>
+  <text x="1179" y="417" fill="#777c79" font-size="19" font-weight="580" text-anchor="start" letter-spacing="0" opacity="1">up to $250B US plan</text>
+</g>
+<g>
+  <circle cx="1105" cy="624" r="24" fill="#fffaf0" stroke="#ad4f5d" stroke-width="6"/>
+  <circle cx="1105" cy="624" r="9" fill="#ad4f5d"/>
+  <text x="1139" y="616" fill="#ad4f5d" font-size="22" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">SAMSUNG · TAYLOR</text>
+  <text x="1139" y="649" fill="#777c79" font-size="19" font-weight="580" text-anchor="start" letter-spacing="0" opacity="1">~$37B</text>
+</g>
+<g>
+  <circle cx="1336" cy="494" r="24" fill="#fffaf0" stroke="#3977a8" stroke-width="6"/>
+  <circle cx="1336" cy="494" r="9" fill="#3977a8"/>
+  <text x="1302" y="486" fill="#3977a8" font-size="22" font-weight="800" text-anchor="end" letter-spacing="0" opacity="1">INTEL</text>
+  <text x="1302" y="519" fill="#777c79" font-size="19" font-weight="580" text-anchor="end" letter-spacing="0" opacity="1">federal government · 9.9%</text>
+</g>
+<path d="M602 864H1698" stroke="#ddd5c8" stroke-width="18" stroke-linecap="round"/>
+<path d="M602 864H909" stroke="#3977a8" stroke-width="18" stroke-linecap="round"/>
+<circle cx="602" cy="864" r="15" fill="#3977a8"/>
+<circle cx="1698" cy="864" r="15" fill="#397a66"/>
+<text x="602" y="828" fill="#3977a8" font-size="31" font-weight="800" text-anchor="middle" letter-spacing="0" opacity="1">0%</text>
+<text x="602" y="912" fill="#777c79" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1">2022</text>
+<text x="1698" y="828" fill="#397a66" font-size="31" font-weight="800" text-anchor="middle" letter-spacing="0" opacity="1">28%</text>
+<text x="1698" y="912" fill="#777c79" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1">2032 PROJECTED</text>
+<text x="1150" y="917" fill="#777c79" font-size="19" font-weight="760" text-anchor="middle" letter-spacing="1.5" opacity="1">US ADVANCED-LOGIC CAPACITY</text>
+</svg>

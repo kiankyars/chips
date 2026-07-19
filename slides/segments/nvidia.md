@@ -199,19 +199,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Nvidia owns no semiconductor fabs
+<div class="visual-sequence__kicker">FABLESS</div>
 
-<div class="text-center mt-10 text-3xl leading-relaxed">
-Nvidia designs chips and software,<br>
-<span class="text-5xl font-bold">then contracts out manufacturing.</span>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/fabless-physical-chain.png" alt="A chip layout becomes two compute dies, eight HBM stacks, and a completed accelerator package" />
 </div>
 
-<div class="grid grid-cols-3 gap-6 mt-10 text-center text-sm opacity-70">
-<div>GPU dies<br><b>TSMC</b></div>
-<div>HBM<br><b>SK Hynix / Micron / Samsung</b></div>
-<div>advanced packaging<br><b>TSMC</b></div>
-</div>
+<div class="visual-sequence__caption"><strong>Nvidia supplies the design.</strong><span>TSMC and the memory makers supply the physical chip.</span></div>
+<div class="visual-sequence__source">GPU dies + packaging · TSMC · HBM · SK hynix / Micron / Samsung</div>
 
 <!--
 BEATS:

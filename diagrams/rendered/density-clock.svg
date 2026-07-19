@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">Transistor density rose while clock speed stalled</title>
+<desc id="desc">Two aligned time series show transistor counts continuing to climb while clock speed plateaus around 2004. A separate visual shows the resulting shift from one faster core to many parallel cores.</desc>
+<defs>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#28313a" flood-opacity="0.10"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#252a31"/></marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#2e6f9e"/></marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#347d68"/></marker>
+  <marker id="arrow-rose" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#b44e57"/></marker>
+  <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#252a31" stroke-width="1" opacity="0.025"/>
+  </pattern>
+
+</defs>
+<rect width="1920" height="1080" fill="#f3efe7"/>
+<rect width="1920" height="1080" fill="url(#paper-grid)"/>
+<text x="150" y="112" fill="#2e6f9e" font-size="25" font-weight="760" text-anchor="start" letter-spacing="3">TRANSISTORS</text>
+<path d="M150 130H258" stroke="#2e6f9e" stroke-width="5" stroke-linecap="round"/>
+<path d="M150 176V436H1200" fill="none" stroke="#252a31" stroke-width="3" opacity="0.72"/>
+<path d="M150 261.8H1200M150 347.6H1200" stroke="#d8d2c7" stroke-width="2" stroke-dasharray="6 10"/>
+<polyline points="150,408 430,365 650,295 785,246 1000,144 1200,96" fill="none" stroke="#2e6f9e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="150" cy="408" r="7" fill="#fbf8f1" stroke="#2e6f9e" stroke-width="4"/>
+<circle cx="430" cy="365" r="7" fill="#fbf8f1" stroke="#2e6f9e" stroke-width="4"/>
+<circle cx="650" cy="295" r="7" fill="#fbf8f1" stroke="#2e6f9e" stroke-width="4"/>
+<circle cx="785" cy="246" r="7" fill="#fbf8f1" stroke="#2e6f9e" stroke-width="4"/>
+<circle cx="1000" cy="144" r="7" fill="#fbf8f1" stroke="#2e6f9e" stroke-width="4"/>
+<circle cx="1200" cy="96" r="7" fill="#fbf8f1" stroke="#2e6f9e" stroke-width="4"/>
+<text x="160" y="390" fill="#2e6f9e" font-size="22" font-weight="700" text-anchor="start" letter-spacing="0">2,300</text>
+<text x="1188" y="72" fill="#2e6f9e" font-size="27" font-weight="760" text-anchor="end" letter-spacing="0">208B</text>
+
+<text x="150" y="522" fill="#b44e57" font-size="25" font-weight="760" text-anchor="start" letter-spacing="3">CLOCK SPEED</text>
+<path d="M150 540H258" stroke="#b44e57" stroke-width="5" stroke-linecap="round"/>
+<path d="M150 586V846H1200" fill="none" stroke="#252a31" stroke-width="3" opacity="0.72"/>
+<path d="M150 671.8H1200M150 757.6H1200" stroke="#d8d2c7" stroke-width="2" stroke-dasharray="6 10"/>
+<polyline points="150,850 430,820 650,742 785,636 1000,624 1200,610" fill="none" stroke="#b44e57" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="150" cy="850" r="7" fill="#fbf8f1" stroke="#b44e57" stroke-width="4"/>
+<circle cx="430" cy="820" r="7" fill="#fbf8f1" stroke="#b44e57" stroke-width="4"/>
+<circle cx="650" cy="742" r="7" fill="#fbf8f1" stroke="#b44e57" stroke-width="4"/>
+<circle cx="785" cy="636" r="7" fill="#fbf8f1" stroke="#b44e57" stroke-width="4"/>
+<circle cx="1000" cy="624" r="7" fill="#fbf8f1" stroke="#b44e57" stroke-width="4"/>
+<circle cx="1200" cy="610" r="7" fill="#fbf8f1" stroke="#b44e57" stroke-width="4"/>
+<text x="785" y="602" fill="#b44e57" font-size="24" font-weight="760" text-anchor="middle" letter-spacing="0">~3.8 GHz</text>
+<text x="1190" y="576" fill="#b44e57" font-size="24" font-weight="760" text-anchor="end" letter-spacing="0">~4–6 GHz</text>
+
+<path d="M785 154V880" stroke="#b97824" stroke-width="3" stroke-dasharray="8 10"/>
+<text x="785" y="918" fill="#b97824" font-size="22" font-weight="760" text-anchor="middle" letter-spacing="0">2004</text>
+<text x="785" y="954" fill="#b97824" font-size="20" font-weight="760" text-anchor="middle" letter-spacing="2">POWER WALL</text>
+<text x="150" y="918" fill="#6f746f" font-size="22" font-weight="620" text-anchor="middle" letter-spacing="0">1971</text>
+<text x="1200" y="918" fill="#6f746f" font-size="22" font-weight="620" text-anchor="middle" letter-spacing="0">2026</text>
+
+<path d="M1284 152V908" stroke="#d8d2c7" stroke-width="3"/>
+<text x="1554" y="112" fill="#347d68" font-size="25" font-weight="760" text-anchor="middle" letter-spacing="3">AFTER 2004</text>
+<path d="M1500 130H1608" stroke="#347d68" stroke-width="5" stroke-linecap="round"/>
+<rect x="1454" y="224" width="200" height="200" rx="24" fill="#d8e9e1" stroke="#347d68" stroke-width="5"/>
+<path d="M1494 264H1614V384H1494Z" fill="none" stroke="#347d68" stroke-width="3" opacity="0.42"/>
+<text x="1554" y="470" fill="#6f746f" font-size="21" font-weight="760" text-anchor="middle" letter-spacing="2">ONE CORE</text>
+<path d="M1554 510V580" stroke="#347d68" stroke-width="5" marker-end="url(#arrow-green)"/>
+<rect x="1396" y="624" width="34" height="34" rx="5" fill="#347d68" stroke="#347d68" stroke-width="2"/>
+<rect x="1442" y="624" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1488" y="624" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1534" y="624" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1580" y="624" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1626" y="624" width="34" height="34" rx="5" fill="#347d68" stroke="#347d68" stroke-width="2"/>
+<rect x="1672" y="624" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1718" y="624" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1396" y="670" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1442" y="670" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1488" y="670" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1534" y="670" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1580" y="670" width="34" height="34" rx="5" fill="#347d68" stroke="#347d68" stroke-width="2"/>
+<rect x="1626" y="670" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1672" y="670" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1718" y="670" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1396" y="716" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1442" y="716" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1488" y="716" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1534" y="716" width="34" height="34" rx="5" fill="#347d68" stroke="#347d68" stroke-width="2"/>
+<rect x="1580" y="716" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1626" y="716" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1672" y="716" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1718" y="716" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1396" y="762" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1442" y="762" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1488" y="762" width="34" height="34" rx="5" fill="#347d68" stroke="#347d68" stroke-width="2"/>
+<rect x="1534" y="762" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1580" y="762" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1626" y="762" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1672" y="762" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1718" y="762" width="34" height="34" rx="5" fill="#347d68" stroke="#347d68" stroke-width="2"/>
+<rect x="1396" y="808" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1442" y="808" width="34" height="34" rx="5" fill="#347d68" stroke="#347d68" stroke-width="2"/>
+<rect x="1488" y="808" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1534" y="808" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1580" y="808" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1626" y="808" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1672" y="808" width="34" height="34" rx="5" fill="#347d68" stroke="#347d68" stroke-width="2"/>
+<rect x="1718" y="808" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1396" y="854" width="34" height="34" rx="5" fill="#347d68" stroke="#347d68" stroke-width="2"/>
+<rect x="1442" y="854" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1488" y="854" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1534" y="854" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1580" y="854" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1626" y="854" width="34" height="34" rx="5" fill="#347d68" stroke="#347d68" stroke-width="2"/>
+<rect x="1672" y="854" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<rect x="1718" y="854" width="34" height="34" rx="5" fill="#d8e9e1" stroke="#347d68" stroke-width="2"/>
+<text x="1554" y="950" fill="#347d68" font-size="23" font-weight="760" text-anchor="middle" letter-spacing="2">MANY CORES</text>
+</svg>

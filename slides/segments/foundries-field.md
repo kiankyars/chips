@@ -73,32 +73,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Samsung persists; GlobalFoundries exited; states fund new entrants
+<div class="visual-sequence__kicker">THE REST OF THE FRONTIER</div>
 
-<div class="grid grid-cols-2 gap-4 mt-4 text-sm">
-
-<div class="border-2 border-gray-400 rounded-lg p-4">
-<div class="text-lg font-bold">Samsung Foundry — #2 by revenue</div>
-<div class="mt-2 opacity-80">Samsung introduced 3 nm GAA in 2022, about three years before TSMC. Reported yield near 20% led Qualcomm to move designs elsewhere. The foundry business lost an estimated $10B+ over three years; memory profits and a $16.5B Tesla order fund continued investment.</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/foundry-frontier-race.svg" alt="Four foundry paths: Samsung continues with yield pressure, GlobalFoundries exits, Rapidus enters with state backing, and SMIC reaches 7 nanometers without EUV" />
 </div>
 
-<div class="border-2 border-gray-400 rounded-lg p-4">
-<div class="text-lg font-bold">GlobalFoundries — exited the leading edge</div>
-<div class="mt-2 opacity-80">GlobalFoundries canceled its 7 nm program in 2018 and focused on mature and specialty nodes. It reported $6.8B revenue and a 24.9% gross margin in FY2025. IBM paid the company about $1.5B to take over its fabs in 2015.</div>
-</div>
-
-<div class="border-2 border-gray-400 rounded-lg p-4">
-<div class="text-lg font-bold">Rapidus — a state-backed 2 nm entrant</div>
-<div class="mt-2 opacity-80">Private backers invested about $50M; Japan has committed roughly ¥2.35T (~$16B). Its pilot line started in 2025, with mass production targeted for 2027. It has not announced a volume customer.</div>
-</div>
-
-<div class="border-2 border-dashed border-gray-500 rounded-lg p-4 opacity-90">
-<div class="text-lg font-bold">SMIC — China's largest foundry</div>
-<div class="mt-2 opacity-80">SMIC holds about 5.1% of foundry revenue. It produced a 7 nm-class chip without EUV for Huawei's Mate 60 in 2023. FY2025 revenue was $9.3B, versus TSMC's $122B.</div>
-</div>
-
-</div>
+<div class="visual-sequence__caption"><strong>Samsung stayed in the race.</strong><span>The other paths are exit, subsidy, or a sanctions workaround.</span></div>
+<div class="visual-sequence__source">Samsung · GlobalFoundries · Rapidus · SMIC</div>
 
 <!--
 BEATS:

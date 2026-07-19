@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">Chinese firms can manufacture advanced chips with yield and power penalties</title>
+<desc id="desc">The left panel shows repeated DUV patterning producing 7 nanometre class logic with estimated yields of 20 to 40 percent and prices 40 to 50 percent above TSMC. The right panel shows Huawei using 384 chips across 16 racks and about four times the power to exceed a GB200 NVL72 in aggregate compute.</desc>
+<defs>
+  <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#ddd5c8" stroke-width="1" opacity="0.22"/>
+  </pattern>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#493f30" flood-opacity="0.13"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#4f5965"/>
+  </marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#3977a8"/>
+  </marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#397a66"/>
+  </marker>
+  <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#ad4f5d"/>
+  </marker>
+</defs>
+<rect width="1920" height="1080" fill="#f4efe6"/>
+<rect width="1920" height="1080" fill="url(#paper-grid)"/>
+<rect x="86" y="96" width="830" height="870" rx="28" fill="#fffaf0" stroke="#ddd5c8" stroke-width="3" filter="url(#shadow)"/>
+<rect x="1004" y="96" width="830" height="870" rx="28" fill="#fffaf0" stroke="#ddd5c8" stroke-width="3" filter="url(#shadow)"/>
+<text x="142" y="170" fill="#397a66" font-size="21" font-weight="780" text-anchor="start" letter-spacing="2.2" opacity="1">SMIC · LOGIC</text>
+<text x="142" y="218" fill="#1f272d" font-size="31" font-weight="780" text-anchor="start" letter-spacing="0" opacity="1">DUV MULTI-PATTERNING</text>
+<g transform="translate(0 0)">
+  <rect x="244" y="360" width="248" height="176" rx="18" fill="#fffaf0" stroke="#aaa398" stroke-width="4"/>
+  <path d="M278 406H458M278 448H458M278 490H458" stroke="#aaa398" stroke-width="7" opacity="0.6"/>
+  </g>
+<g transform="translate(34 -24)">
+  <rect x="244" y="360" width="248" height="176" rx="18" fill="#fffaf0" stroke="#aaa398" stroke-width="4"/>
+  <path d="M278 406H458M278 448H458M278 490H458" stroke="#aaa398" stroke-width="7" opacity="0.6"/>
+  </g>
+<g transform="translate(68 -48)">
+  <rect x="244" y="360" width="248" height="176" rx="18" fill="#fffaf0" stroke="#aaa398" stroke-width="4"/>
+  <path d="M278 406H458M278 448H458M278 490H458" stroke="#aaa398" stroke-width="7" opacity="0.6"/>
+  </g>
+<g transform="translate(102 -72)">
+  <rect x="244" y="360" width="248" height="176" rx="18" fill="#d8e8df" stroke="#397a66" stroke-width="4"/>
+  <path d="M278 406H458M278 448H458M278 490H458" stroke="#397a66" stroke-width="7" opacity="0.6"/>
+  </g>
+<path d="M470 610L470 716" fill="none" stroke="#397a66" stroke-width="6" marker-end="url(#arrow-green)"/>
+<rect x="158" y="748" width="310" height="48" rx="24" fill="#efd9dc" stroke="#ad4f5d" stroke-width="2.5"/>
+<text x="313" y="779" fill="#ad4f5d" font-size="24" font-weight="760" text-anchor="middle" letter-spacing="0.5" opacity="1">YIELD ~20–40%</text>
+<rect x="490" y="748" width="330" height="48" rx="24" fill="#f1dfbd" stroke="#bd7b25" stroke-width="2.5"/>
+<text x="655" y="779" fill="#bd7b25" font-size="24" font-weight="760" text-anchor="middle" letter-spacing="0.5" opacity="1">PRICE +40–50%</text>
+<text x="490" y="866" fill="#777c79" font-size="22" font-weight="560" text-anchor="middle" letter-spacing="0" opacity="1">7 nm-class shipping · 5 nm-class through repeated exposures</text>
+
+<text x="1060" y="170" fill="#ad4f5d" font-size="21" font-weight="780" text-anchor="start" letter-spacing="2.2" opacity="1">HUAWEI · AI SYSTEM</text>
+<rect x="1170" y="208" width="528" height="48" rx="24" fill="#efd9dc" stroke="#ad4f5d" stroke-width="2.5"/>
+<text x="1434" y="239" fill="#ad4f5d" font-size="18" font-weight="760" text-anchor="middle" letter-spacing="0.5" opacity="1">AGGREGATE COMPUTE &gt; GB200 NVL72</text>
+<g><rect x="1240" y="285" width="161.28" height="280.8" rx="10.799999999999999" fill="#fffaf0" stroke="#ad4f5d" stroke-width="3"/><rect x="1252.96" y="303.72" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#ad4f5d" opacity="0.18" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1252.96" y="338.28" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#fffaf0" opacity="1" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1252.96" y="372.84000000000003" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#ad4f5d" opacity="0.18" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1252.96" y="407.4" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#fffaf0" opacity="1" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1252.96" y="441.96000000000004" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#ad4f5d" opacity="0.18" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1252.96" y="476.52" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#fffaf0" opacity="1" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1252.96" y="511.08" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#ad4f5d" opacity="0.18" stroke="#ad4f5d" stroke-width="2.16"/></g>
+<g><rect x="1490" y="285" width="161.28" height="280.8" rx="10.799999999999999" fill="#fffaf0" stroke="#ad4f5d" stroke-width="3"/><rect x="1502.96" y="303.72" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#ad4f5d" opacity="0.18" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1502.96" y="338.28" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#fffaf0" opacity="1" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1502.96" y="372.84000000000003" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#ad4f5d" opacity="0.18" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1502.96" y="407.4" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#fffaf0" opacity="1" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1502.96" y="441.96000000000004" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#ad4f5d" opacity="0.18" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1502.96" y="476.52" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#fffaf0" opacity="1" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1502.96" y="511.08" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#ad4f5d" opacity="0.18" stroke="#ad4f5d" stroke-width="2.16"/></g>
+<g><rect x="1240" y="625" width="161.28" height="280.8" rx="10.799999999999999" fill="#fffaf0" stroke="#ad4f5d" stroke-width="3"/><rect x="1252.96" y="643.72" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#ad4f5d" opacity="0.18" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1252.96" y="678.28" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#fffaf0" opacity="1" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1252.96" y="712.84" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#ad4f5d" opacity="0.18" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1252.96" y="747.4" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#fffaf0" opacity="1" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1252.96" y="781.96" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#ad4f5d" opacity="0.18" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1252.96" y="816.52" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#fffaf0" opacity="1" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1252.96" y="851.0799999999999" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#ad4f5d" opacity="0.18" stroke="#ad4f5d" stroke-width="2.16"/></g>
+<g><rect x="1490" y="625" width="161.28" height="280.8" rx="10.799999999999999" fill="#fffaf0" stroke="#ad4f5d" stroke-width="3"/><rect x="1502.96" y="643.72" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#ad4f5d" opacity="0.18" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1502.96" y="678.28" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#fffaf0" opacity="1" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1502.96" y="712.84" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#ad4f5d" opacity="0.18" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1502.96" y="747.4" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#fffaf0" opacity="1" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1502.96" y="781.96" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#ad4f5d" opacity="0.18" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1502.96" y="816.52" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#fffaf0" opacity="1" stroke="#ad4f5d" stroke-width="2.16"/><rect x="1502.96" y="851.0799999999999" width="135.35999999999999" height="23.04" rx="3.5999999999999996" fill="#ad4f5d" opacity="0.18" stroke="#ad4f5d" stroke-width="2.16"/></g>
+<text x="1138" y="352" fill="#ad4f5d" font-size="54" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">384</text>
+<text x="1138" y="395" fill="#777c79" font-size="19" font-weight="780" text-anchor="middle" letter-spacing="2" opacity="1">CHIPS</text>
+<text x="1138" y="548" fill="#ad4f5d" font-size="54" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">16</text>
+<text x="1138" y="591" fill="#777c79" font-size="19" font-weight="780" text-anchor="middle" letter-spacing="2" opacity="1">RACKS</text>
+<text x="1138" y="744" fill="#bd7b25" font-size="54" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">~4×</text>
+<text x="1138" y="787" fill="#777c79" font-size="19" font-weight="780" text-anchor="middle" letter-spacing="2" opacity="1">POWER</text>
+
+</svg>

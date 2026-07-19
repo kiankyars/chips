@@ -38,27 +38,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# A transistor is a voltage-controlled switch
+<div class="visual-sequence__kicker">THE BASIC SWITCH</div>
 
-<div class="grid grid-cols-2 gap-10 mt-6">
-
-<div class="flex flex-col justify-center gap-4">
-
-- A transistor has **source, drain, and gate** terminals
-- Voltage at the gate controls current between source and drain
-- A thin insulating layer separates the gate from the channel
-- Four transistors can form a **NAND gate**
-- Processors combine billions of these switches
-
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/transistor-switch-v2.png" alt="A transistor shown with its gate off and on; gate voltage opens a channel from source to drain" />
 </div>
 
-<div class="flex flex-col justify-center items-center">
-<div class="text-7xl font-bold leading-none">1</div>
-<div class="opacity-70 mt-2 text-center">switching element<br>repeated ~200 billion times</div>
-</div>
-
-</div>
+<div class="visual-sequence__caption"><strong>Gate voltage</strong><span>opens a channel from source to drain.</span></div>
+<div class="visual-sequence__source">One switching element · repeated ~200B times</div>
 
 <!--
 BEATS:
@@ -279,29 +269,17 @@ SIMPLIFICATION HEDGE:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Larger dies lose more yield to small defects
+<div class="visual-sequence__kicker">YIELD</div>
 
-<div class="grid grid-cols-2 gap-10 mt-6">
-
-<div class="flex flex-col justify-center gap-4">
-
-- Yield falls **exponentially** with die size: **e^(−A·D₀)**
-- Larger AI dies present more area where a defect can ruin the circuit
-- A damaging particle can be **~1/1000th the width of a hair**
-- The air around the wafer contains **millions of times fewer particles than city air**
-
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/yield-defects.svg" alt="The same six defects distributed across grids of small and large dies, showing that larger dies lose more yield" />
 </div>
 
-<div class="flex flex-col justify-center items-center text-center">
-<div class="text-6xl font-bold leading-none">≤10</div>
-<div class="opacity-70 mt-1">particles/m³ around the wafer (ISO 1)</div>
-<div class="text-3xl font-bold mt-6 opacity-40">vs</div>
-<div class="text-6xl font-bold leading-none mt-4">~35,000,000</div>
-<div class="opacity-70 mt-1">particles/m³ in city air</div>
-</div>
-
-</div>
+<div class="visual-sequence__caption"><strong>At the same defect density,</strong><span>larger dies lose more yield.</span></div>
+<div class="visual-sequence__source">First-order yield model · e<sup>−A·D₀</sup></div>
 
 <!--
 BEATS:
@@ -325,29 +303,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Transistor density rose while clock speed stalled
+<div class="visual-sequence__kicker">THE POWER WALL</div>
 
-<div class="grid grid-cols-2 gap-10 mt-8">
-
-<div class="flex flex-col justify-center gap-4">
-
-- **Moore's 1965 observation** concerned transistor count at minimum cost, not a physical law
-- On-die density continues to rise through smaller features and new device structures; advanced packaging adds more dies per system
-- **Dennard scaling ended around 2005**: shrinking no longer reduced power density
-- Clock speeds plateaued, so designers added cores and accelerators
-
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/density-clock-v2.png" alt="Transistor count continues rising while clock speed plateaus around 2004, leading designers toward many parallel cores" />
 </div>
 
-<div class="flex flex-col justify-center items-center text-center">
-<div class="text-6xl font-bold leading-none">~3.8<span class="text-3xl">GHz</span></div>
-<div class="opacity-70 mt-1">Pentium 4, 2004</div>
-<div class="text-lg opacity-60 mt-4">Twenty years later: roughly 4–6 GHz.</div>
-</div>
-
-</div>
-
-<div class="text-sm opacity-60 mt-8 text-center">GPUs use many parallel cores because clock rates stopped scaling after 2004.</div>
+<div class="visual-sequence__caption"><strong>Clock speeds stalled after 2004.</strong><span>Designers added cores instead.</span></div>
+<div class="visual-sequence__source">Pentium 4 · ~3.8 GHz · 2004</div>
 
 <!--
 BEATS:

@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">Six fabless designers converge on one manufacturing gate</title>
+<desc id="desc">Six named design companies create different processors and accelerators. Their completed layout files converge at an outside foundry, illustrating diversity in design and concentration in manufacturing.</desc>
+<defs>
+  <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#ded7cb" stroke-width="1" opacity="0.24"/>
+  </pattern>
+  <filter id="paper-shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="13" flood-color="#493f30" flood-opacity="0.12"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#515b64"/></marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#2f6f9f"/></marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#2f7b65"/></marker>
+  <marker id="arrow-rose" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#b24956"/></marker>
+</defs>
+<rect width="1920" height="1080" fill="#f3efe7"/>
+<rect width="1920" height="1080" fill="url(#paper-grid)"/>
+<text x="104" y="92" fill="#747a76" font-size="20" font-weight="760" text-anchor="start" letter-spacing="3.6" opacity="1">FABLESS DESIGNERS</text>
+<text x="104" y="156" fill="#20252b" font-size="48" font-weight="760" text-anchor="start" letter-spacing="0" opacity="1">Six designers, one manufacturing gate</text>
+<path d="M104 190H1816" stroke="#cec6b9" stroke-width="2"/>
+<path d="M434 355C1210 355 1204 532 1280 532" fill="none" stroke="#b24956" stroke-width="3.5" stroke-dasharray="8 8" opacity="0.54"/>
+<path d="M800 355C1210 355 1204 532 1280 532" fill="none" stroke="#2f6f9f" stroke-width="3.5" stroke-dasharray="8 8" opacity="0.54"/>
+<path d="M1166 355C1210 355 1204 532 1280 532" fill="none" stroke="#b87821" stroke-width="3.5" stroke-dasharray="8 8" opacity="0.54"/>
+<path d="M434 659C1210 659 1204 532 1280 532" fill="none" stroke="#705a96" stroke-width="3.5" stroke-dasharray="8 8" opacity="0.54"/>
+<path d="M800 659C1210 659 1204 532 1280 532" fill="none" stroke="#2f7b65" stroke-width="3.5" stroke-dasharray="8 8" opacity="0.54"/>
+<path d="M1166 659C1210 659 1204 532 1280 532" fill="none" stroke="#2f6f9f" stroke-width="3.5" stroke-dasharray="8 8" opacity="0.54"/>
+<g>
+<rect x="104" y="244" width="330" height="222" rx="28" fill="#fffaf0" stroke="#b24956" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<g>
+<path d="M123.68 311.6H136M241.6 311.6H253.92000000000002" stroke="#b24956" stroke-width="2.64"/>
+<path d="M153.6 281.68V294M153.6 399.6V411.92" stroke="#b24956" stroke-width="2.64"/>
+<path d="M123.68 332.72H136M241.6 332.72H253.92000000000002" stroke="#b24956" stroke-width="2.64"/>
+<path d="M174.72 281.68V294M174.72 399.6V411.92" stroke="#b24956" stroke-width="2.64"/>
+<path d="M123.68 353.84000000000003H136M241.6 353.84000000000003H253.92000000000002" stroke="#b24956" stroke-width="2.64"/>
+<path d="M195.84 281.68V294M195.84 399.6V411.92" stroke="#b24956" stroke-width="2.64"/>
+<path d="M123.68 374.96H136M241.6 374.96H253.92000000000002" stroke="#b24956" stroke-width="2.64"/>
+<path d="M216.95999999999998 281.68V294M216.95999999999998 399.6V411.92" stroke="#b24956" stroke-width="2.64"/>
+<rect x="136" y="294" width="105.6" height="105.6" rx="12.32" fill="#b24956" opacity="0.13" stroke="#b24956" stroke-width="3.52"/>
+<path d="M157.12 327.44H220.48000000000002M157.12 346.8H199.36V374.96M213.44 346.8V374.96" fill="none" stroke="#b24956" stroke-width="3.52" stroke-linecap="round"/>
+</g>
+<text x="282" y="328" fill="#b24956" font-size="25" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">AMD</text>
+<text x="282" y="364" fill="#747a76" font-size="18" font-weight="720" text-anchor="start" letter-spacing="0.8" opacity="1">CPU + AI</text>
+<path d="M282 397H390" stroke="#b24956" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+<path d="M282 420H360" stroke="#b24956" stroke-width="4" stroke-linecap="round" opacity="0.28"/>
+</g>
+<g>
+<rect x="470" y="244" width="330" height="222" rx="28" fill="#fffaf0" stroke="#2f6f9f" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<g>
+<path d="M489.68 311.6H502M607.6 311.6H619.92" stroke="#2f6f9f" stroke-width="2.64"/>
+<path d="M519.6 281.68V294M519.6 399.6V411.92" stroke="#2f6f9f" stroke-width="2.64"/>
+<path d="M489.68 332.72H502M607.6 332.72H619.92" stroke="#2f6f9f" stroke-width="2.64"/>
+<path d="M540.72 281.68V294M540.72 399.6V411.92" stroke="#2f6f9f" stroke-width="2.64"/>
+<path d="M489.68 353.84000000000003H502M607.6 353.84000000000003H619.92" stroke="#2f6f9f" stroke-width="2.64"/>
+<path d="M561.84 281.68V294M561.84 399.6V411.92" stroke="#2f6f9f" stroke-width="2.64"/>
+<path d="M489.68 374.96H502M607.6 374.96H619.92" stroke="#2f6f9f" stroke-width="2.64"/>
+<path d="M582.96 281.68V294M582.96 399.6V411.92" stroke="#2f6f9f" stroke-width="2.64"/>
+<rect x="502" y="294" width="105.6" height="105.6" rx="12.32" fill="#2f6f9f" opacity="0.13" stroke="#2f6f9f" stroke-width="3.52"/>
+<path d="M523.12 327.44H586.48M523.12 346.8H565.36V374.96M579.44 346.8V374.96" fill="none" stroke="#2f6f9f" stroke-width="3.52" stroke-linecap="round"/>
+</g>
+<text x="648" y="328" fill="#2f6f9f" font-size="25" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">APPLE</text>
+<text x="648" y="364" fill="#747a76" font-size="18" font-weight="720" text-anchor="start" letter-spacing="0.8" opacity="1">A · M · C</text>
+<path d="M648 397H756" stroke="#2f6f9f" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+<path d="M648 420H726" stroke="#2f6f9f" stroke-width="4" stroke-linecap="round" opacity="0.28"/>
+</g>
+<g>
+<rect x="836" y="244" width="330" height="222" rx="28" fill="#fffaf0" stroke="#b87821" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<g>
+<path d="M855.68 311.6H868M973.6 311.6H985.92" stroke="#b87821" stroke-width="2.64"/>
+<path d="M885.6 281.68V294M885.6 399.6V411.92" stroke="#b87821" stroke-width="2.64"/>
+<path d="M855.68 332.72H868M973.6 332.72H985.92" stroke="#b87821" stroke-width="2.64"/>
+<path d="M906.72 281.68V294M906.72 399.6V411.92" stroke="#b87821" stroke-width="2.64"/>
+<path d="M855.68 353.84000000000003H868M973.6 353.84000000000003H985.92" stroke="#b87821" stroke-width="2.64"/>
+<path d="M927.84 281.68V294M927.84 399.6V411.92" stroke="#b87821" stroke-width="2.64"/>
+<path d="M855.68 374.96H868M973.6 374.96H985.92" stroke="#b87821" stroke-width="2.64"/>
+<path d="M948.96 281.68V294M948.96 399.6V411.92" stroke="#b87821" stroke-width="2.64"/>
+<rect x="868" y="294" width="105.6" height="105.6" rx="12.32" fill="#b87821" opacity="0.13" stroke="#b87821" stroke-width="3.52"/>
+<path d="M889.12 327.44H952.48M889.12 346.8H931.36V374.96M945.44 346.8V374.96" fill="none" stroke="#b87821" stroke-width="3.52" stroke-linecap="round"/>
+</g>
+<text x="1014" y="328" fill="#b87821" font-size="25" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">QUALCOMM</text>
+<text x="1014" y="364" fill="#747a76" font-size="18" font-weight="720" text-anchor="start" letter-spacing="0.8" opacity="1">MOBILE + RADIO</text>
+<path d="M1014 397H1122" stroke="#b87821" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+<path d="M1014 420H1092" stroke="#b87821" stroke-width="4" stroke-linecap="round" opacity="0.28"/>
+</g>
+<g>
+<rect x="104" y="548" width="330" height="222" rx="28" fill="#fffaf0" stroke="#705a96" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<g>
+<path d="M123.68 615.6H136M241.6 615.6H253.92000000000002" stroke="#705a96" stroke-width="2.64"/>
+<path d="M153.6 585.68V598M153.6 703.6V715.92" stroke="#705a96" stroke-width="2.64"/>
+<path d="M123.68 636.72H136M241.6 636.72H253.92000000000002" stroke="#705a96" stroke-width="2.64"/>
+<path d="M174.72 585.68V598M174.72 703.6V715.92" stroke="#705a96" stroke-width="2.64"/>
+<path d="M123.68 657.84H136M241.6 657.84H253.92000000000002" stroke="#705a96" stroke-width="2.64"/>
+<path d="M195.84 585.68V598M195.84 703.6V715.92" stroke="#705a96" stroke-width="2.64"/>
+<path d="M123.68 678.96H136M241.6 678.96H253.92000000000002" stroke="#705a96" stroke-width="2.64"/>
+<path d="M216.95999999999998 585.68V598M216.95999999999998 703.6V715.92" stroke="#705a96" stroke-width="2.64"/>
+<rect x="136" y="598" width="105.6" height="105.6" rx="12.32" fill="#705a96" opacity="0.13" stroke="#705a96" stroke-width="3.52"/>
+<path d="M157.12 631.44H220.48000000000002M157.12 650.8H199.36V678.96M213.44 650.8V678.96" fill="none" stroke="#705a96" stroke-width="3.52" stroke-linecap="round"/>
+</g>
+<text x="282" y="632" fill="#705a96" font-size="25" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">BROADCOM</text>
+<text x="282" y="668" fill="#747a76" font-size="18" font-weight="720" text-anchor="start" letter-spacing="0.8" opacity="1">CUSTOM AI</text>
+<path d="M282 701H390" stroke="#705a96" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+<path d="M282 724H360" stroke="#705a96" stroke-width="4" stroke-linecap="round" opacity="0.28"/>
+</g>
+<g>
+<rect x="470" y="548" width="330" height="222" rx="28" fill="#fffaf0" stroke="#2f7b65" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<g>
+<path d="M489.68 615.6H502M607.6 615.6H619.92" stroke="#2f7b65" stroke-width="2.64"/>
+<path d="M519.6 585.68V598M519.6 703.6V715.92" stroke="#2f7b65" stroke-width="2.64"/>
+<path d="M489.68 636.72H502M607.6 636.72H619.92" stroke="#2f7b65" stroke-width="2.64"/>
+<path d="M540.72 585.68V598M540.72 703.6V715.92" stroke="#2f7b65" stroke-width="2.64"/>
+<path d="M489.68 657.84H502M607.6 657.84H619.92" stroke="#2f7b65" stroke-width="2.64"/>
+<path d="M561.84 585.68V598M561.84 703.6V715.92" stroke="#2f7b65" stroke-width="2.64"/>
+<path d="M489.68 678.96H502M607.6 678.96H619.92" stroke="#2f7b65" stroke-width="2.64"/>
+<path d="M582.96 585.68V598M582.96 703.6V715.92" stroke="#2f7b65" stroke-width="2.64"/>
+<rect x="502" y="598" width="105.6" height="105.6" rx="12.32" fill="#2f7b65" opacity="0.13" stroke="#2f7b65" stroke-width="3.52"/>
+<path d="M523.12 631.44H586.48M523.12 650.8H565.36V678.96M579.44 650.8V678.96" fill="none" stroke="#2f7b65" stroke-width="3.52" stroke-linecap="round"/>
+</g>
+<text x="648" y="632" fill="#2f7b65" font-size="25" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">MARVELL</text>
+<text x="648" y="668" fill="#747a76" font-size="18" font-weight="720" text-anchor="start" letter-spacing="0.8" opacity="1">NETWORKING</text>
+<path d="M648 701H756" stroke="#2f7b65" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+<path d="M648 724H726" stroke="#2f7b65" stroke-width="4" stroke-linecap="round" opacity="0.28"/>
+</g>
+<g>
+<rect x="836" y="548" width="330" height="222" rx="28" fill="#fffaf0" stroke="#2f6f9f" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<g>
+<path d="M855.68 615.6H868M973.6 615.6H985.92" stroke="#2f6f9f" stroke-width="2.64"/>
+<path d="M885.6 585.68V598M885.6 703.6V715.92" stroke="#2f6f9f" stroke-width="2.64"/>
+<path d="M855.68 636.72H868M973.6 636.72H985.92" stroke="#2f6f9f" stroke-width="2.64"/>
+<path d="M906.72 585.68V598M906.72 703.6V715.92" stroke="#2f6f9f" stroke-width="2.64"/>
+<path d="M855.68 657.84H868M973.6 657.84H985.92" stroke="#2f6f9f" stroke-width="2.64"/>
+<path d="M927.84 585.68V598M927.84 703.6V715.92" stroke="#2f6f9f" stroke-width="2.64"/>
+<path d="M855.68 678.96H868M973.6 678.96H985.92" stroke="#2f6f9f" stroke-width="2.64"/>
+<path d="M948.96 585.68V598M948.96 703.6V715.92" stroke="#2f6f9f" stroke-width="2.64"/>
+<rect x="868" y="598" width="105.6" height="105.6" rx="12.32" fill="#2f6f9f" opacity="0.13" stroke="#2f6f9f" stroke-width="3.52"/>
+<path d="M889.12 631.44H952.48M889.12 650.8H931.36V678.96M945.44 650.8V678.96" fill="none" stroke="#2f6f9f" stroke-width="3.52" stroke-linecap="round"/>
+</g>
+<text x="1014" y="632" fill="#2f6f9f" font-size="25" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">MEDIATEK</text>
+<text x="1014" y="668" fill="#747a76" font-size="18" font-weight="720" text-anchor="start" letter-spacing="0.8" opacity="1">MOBILE + AI</text>
+<path d="M1014 701H1122" stroke="#2f6f9f" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+<path d="M1014 724H1092" stroke="#2f6f9f" stroke-width="4" stroke-linecap="round" opacity="0.28"/>
+</g>
+
+<rect x="1202" y="454" width="164" height="156" rx="18" fill="#dceaf3" stroke="#2f6f9f" stroke-width="4" filter="url(#paper-shadow)"/>
+<path d="M1226 454V424H1290L1314 454" fill="#dceaf3" stroke="#2f6f9f" stroke-width="4" stroke-linejoin="round"/>
+<text x="1284" y="522" fill="#2f6f9f" font-size="25" font-weight="820" text-anchor="middle" letter-spacing="1.4" opacity="1">GDSII</text>
+<text x="1284" y="558" fill="#747a76" font-size="17" font-weight="740" text-anchor="middle" letter-spacing="1.6" opacity="1">LAYOUTS</text>
+<path d="M1368 532L1452 532" fill="none" stroke="#515b64" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-ink)" opacity="1"/>
+
+<rect x="1456" y="244" width="360" height="608" rx="28" fill="#d9ebe3" stroke="#2f7b65" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<text x="1636" y="304" fill="#2f7b65" font-size="22" font-weight="820" text-anchor="middle" letter-spacing="1.6" opacity="1">OUTSIDE FOUNDRY</text>
+<g transform="translate(1522 390) scale(1)">
+<path d="M0 150V48L86 88V48L174 88V18H228V150Z" fill="#fffaf0" stroke="#2f7b65" stroke-width="5" stroke-linejoin="round"/>
+<path d="M28 119H60V150H28ZM92 119H124V150H92ZM156 119H188V150H156Z" fill="#2f7b65" opacity="0.26" stroke="#2f7b65" stroke-width="3"/>
+<path d="M174 18V-24H228V18" fill="#2f7b65" opacity="0.18" stroke="#2f7b65" stroke-width="5"/>
+</g>
+<g>
+<circle cx="1636" cy="700" r="92" fill="#fffaf0" stroke="#2f7b65" stroke-width="4"/>
+<path d="M1576.2 666.88H1695.8M1556.88 700H1715.12M1576.2 733.12H1695.8M1602.88 620.88V779.12M1636 608V792M1669.12 620.88V779.12" fill="none" stroke="#2f7b65" stroke-width="2" opacity="0.36"/>
+</g>
+<text x="1636" y="825" fill="#2f7b65" font-size="21" font-weight="800" text-anchor="middle" letter-spacing="1.4" opacity="1">PHYSICAL CHIPS</text>
+<text x="104" y="966" fill="#747a76" font-size="19" font-weight="760" text-anchor="start" letter-spacing="2.4" opacity="1">DESIGN IS DISTRIBUTED</text>
+<text x="1816" y="966" fill="#2f7b65" font-size="19" font-weight="800" text-anchor="end" letter-spacing="2.1" opacity="1">LEADING-EDGE MANUFACTURING IS NOT</text>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">Three investors supplied Intel capital but no anchor foundry order</title>
+<desc id="desc">Arrows from the US government, SoftBank, and Nvidia feed 15.9 billion dollars into an Intel 14A fab. A separate empty purchase-order box shows that no external 14A anchor customer had been named.</desc>
+<defs>
+  <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#ded7cb" stroke-width="1" opacity="0.24"/>
+  </pattern>
+  <filter id="paper-shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="13" flood-color="#493f30" flood-opacity="0.12"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#515b64"/></marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#2f6f9f"/></marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#2f7b65"/></marker>
+  <marker id="arrow-rose" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#b24956"/></marker>
+</defs>
+<rect width="1920" height="1080" fill="#f3efe7"/>
+<rect width="1920" height="1080" fill="url(#paper-grid)"/>
+<text x="104" y="92" fill="#747a76" font-size="20" font-weight="760" text-anchor="start" letter-spacing="3.6" opacity="1">INTEL 14A</text>
+<text x="104" y="156" fill="#20252b" font-size="48" font-weight="760" text-anchor="start" letter-spacing="0" opacity="1">Capital arrived; the anchor customer did not</text>
+<path d="M104 190H1816" stroke="#cec6b9" stroke-width="2"/>
+
+<g>
+<rect x="104" y="260" width="430" height="222" rx="28" fill="#fffaf0" stroke="#2f6f9f" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<g>
+<path d="M140 354L230 312L320 354Z" fill="#2f6f9f" opacity="0.16" stroke="#2f6f9f" stroke-width="4"/>
+<path d="M158 364H302M168 458H292" stroke="#2f6f9f" stroke-width="4"/>
+<path d="M186 366V452M230 366V452M274 366V452" stroke="#2f6f9f" stroke-width="7"/>
+</g>
+<text x="500" y="322" fill="#2f6f9f" font-size="21" font-weight="820" text-anchor="end" letter-spacing="1.4" opacity="1">US GOVERNMENT</text>
+<text x="500" y="382" fill="#2f6f9f" font-size="46" font-weight="850" text-anchor="end" letter-spacing="0" opacity="1">$8.9B</text>
+<text x="500" y="430" fill="#747a76" font-size="18" font-weight="680" text-anchor="end" letter-spacing="0" opacity="1">9.9% stake</text>
+</g>
+<g>
+<rect x="104" y="550" width="430" height="222" rx="28" fill="#fffaf0" stroke="#b87821" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<circle cx="214" cy="660" r="66" fill="#f1e1c3" stroke="#b87821" stroke-width="4"/><text x="214" y="678" fill="#b87821" font-size="44" font-weight="850" text-anchor="middle" letter-spacing="0" opacity="1">SB</text>
+<text x="500" y="612" fill="#b87821" font-size="21" font-weight="820" text-anchor="end" letter-spacing="1.4" opacity="1">SOFTBANK</text>
+<text x="500" y="672" fill="#b87821" font-size="46" font-weight="850" text-anchor="end" letter-spacing="0" opacity="1">$2B</text>
+<text x="500" y="720" fill="#747a76" font-size="18" font-weight="680" text-anchor="end" letter-spacing="0" opacity="1">equity</text>
+</g>
+<g>
+<rect x="1386" y="405" width="430" height="222" rx="28" fill="#fffaf0" stroke="#2f7b65" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<g>
+<path d="M1417.64 473.8H1428M1516.8 473.8H1527.16" stroke="#2f7b65" stroke-width="2.2199999999999998"/>
+<path d="M1442.8 448.64V459M1442.8 547.8V558.16" stroke="#2f7b65" stroke-width="2.2199999999999998"/>
+<path d="M1417.64 491.56H1428M1516.8 491.56H1527.16" stroke="#2f7b65" stroke-width="2.2199999999999998"/>
+<path d="M1460.56 448.64V459M1460.56 547.8V558.16" stroke="#2f7b65" stroke-width="2.2199999999999998"/>
+<path d="M1417.64 509.32H1428M1516.8 509.32H1527.16" stroke="#2f7b65" stroke-width="2.2199999999999998"/>
+<path d="M1478.32 448.64V459M1478.32 547.8V558.16" stroke="#2f7b65" stroke-width="2.2199999999999998"/>
+<path d="M1417.64 527.08H1428M1516.8 527.08H1527.16" stroke="#2f7b65" stroke-width="2.2199999999999998"/>
+<path d="M1496.08 448.64V459M1496.08 547.8V558.16" stroke="#2f7b65" stroke-width="2.2199999999999998"/>
+<rect x="1428" y="459" width="88.8" height="88.8" rx="10.36" fill="#2f7b65" opacity="0.13" stroke="#2f7b65" stroke-width="2.96"/>
+<path d="M1445.76 487.12H1499.04M1445.76 503.4H1481.28V527.08M1493.12 503.4V527.08" fill="none" stroke="#2f7b65" stroke-width="2.96" stroke-linecap="round"/>
+</g>
+<text x="1782" y="467" fill="#2f7b65" font-size="21" font-weight="820" text-anchor="end" letter-spacing="1.4" opacity="1">NVIDIA</text>
+<text x="1782" y="527" fill="#2f7b65" font-size="46" font-weight="850" text-anchor="end" letter-spacing="0" opacity="1">$5B</text>
+<text x="1782" y="575" fill="#747a76" font-size="18" font-weight="680" text-anchor="end" letter-spacing="0" opacity="1">equity + joint products</text>
+</g>
+
+<path d="M534 371C610 371 622 465 704 492" fill="none" stroke="#2f6f9f" stroke-width="6" marker-end="url(#arrow-blue)"/>
+<path d="M534 661C610 661 622 568 704 540" fill="none" stroke="#b87821" stroke-width="6" marker-end="url(#arrow-ink)"/>
+<path d="M1386 516H1282" fill="none" stroke="#2f7b65" stroke-width="6" marker-end="url(#arrow-green)"/>
+
+<rect x="704" y="260" width="578" height="514" rx="28" fill="#fffaf0" stroke="#515b64" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<text x="993" y="320" fill="#515b64" font-size="23" font-weight="820" text-anchor="middle" letter-spacing="2" opacity="1">INTEL FOUNDRY</text>
+<g transform="translate(878 425) scale(1)">
+<path d="M0 150V48L86 88V48L174 88V18H228V150Z" fill="#fffaf0" stroke="#515b64" stroke-width="5" stroke-linejoin="round"/>
+<path d="M28 119H60V150H28ZM92 119H124V150H92ZM156 119H188V150H156Z" fill="#515b64" opacity="0.26" stroke="#515b64" stroke-width="3"/>
+<path d="M174 18V-24H228V18" fill="#515b64" opacity="0.18" stroke="#515b64" stroke-width="5"/>
+</g>
+<rect x="858" y="644" width="270" height="70" rx="35" fill="#e7e0f0" stroke="#705a96" stroke-width="3"/>
+<text x="993" y="689" fill="#705a96" font-size="22" font-weight="820" text-anchor="middle" letter-spacing="0.8" opacity="1">14A · HIGH-NA EUV</text>
+
+<rect x="1328" y="686" width="488" height="172" rx="24" fill="#f1dadd" stroke="#b24956" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="1362" y="734" fill="#b24956" font-size="18" font-weight="780" text-anchor="start" letter-spacing="1.2" opacity="1">EXTERNAL 14A PURCHASE ORDER</text>
+<path d="M1362 782H1570" stroke="#b24956" stroke-width="4" opacity="0.32"/>
+<text x="1778" y="824" fill="#b24956" font-size="31" font-weight="850" text-anchor="end" letter-spacing="0" opacity="1">NONE NAMED</text>
+
+<rect x="512" y="868" width="896" height="92" rx="46" fill="#fffaf0" stroke="#cec6b9" stroke-width="3"/>
+<text x="960" y="926" fill="#20252b" font-size="31" font-weight="820" text-anchor="middle" letter-spacing="1.2" opacity="1">$15.9B OF EQUITY · SIX WEEKS</text>
+</svg>

@@ -8,6 +8,12 @@ import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import { generateAsmlScenes } from './scenes/asml.mjs'
+import { generateFabVisuals } from './scenes/fab-visuals.mjs'
+import { generateEquipmentFollowupVisuals } from './scenes/followup-visuals-equipment.mjs'
+import { generateFollowupVisualsA } from './scenes/followup-visuals-a.mjs'
+import { generateFollowupVisualsB } from './scenes/followup-visuals-b.mjs'
+import { generateFoundationsVisuals } from './scenes/foundations-visuals.mjs'
+import { generateMemoryVisuals } from './scenes/memory-visuals.mjs'
 import { generatePackageScenes } from './scenes/package.mjs'
 import { generateTransistorScenes } from './scenes/transistor.mjs'
 
@@ -306,5 +312,11 @@ for (let k = 0; k <= 7; k++) writeFileSync(join(OUT, `board-${k}.svg`), board(k)
 generateTransistorScenes(OUT)
 generateAsmlScenes(OUT)
 generatePackageScenes(OUT)
+generateFoundationsVisuals(OUT)
+generateFabVisuals(OUT)
+generateMemoryVisuals(OUT)
+generateEquipmentFollowupVisuals(OUT)
+generateFollowupVisualsA(OUT)
+generateFollowupVisualsB(OUT)
 
 console.log(`wrote SVGs to ${OUT}`)

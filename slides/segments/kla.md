@@ -52,31 +52,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# In-line measurement limits the cost of process drift
+<div class="visual-sequence__kicker">PROCESS CONTROL</div>
 
-<div class="grid grid-cols-2 gap-10 mt-6">
-<div class="border-2 border-red-400/60 rounded-lg p-6">
-<div class="text-sm opacity-60 mb-2">WITHOUT IN-LINE MEASUREMENT</div>
-<div class="text-lg leading-relaxed">
-A process drifts at <b>step 400</b>.<br>
-The drift remains undetected until wafers fail test at <b>step 1,000</b>.
-</div>
-<div class="opacity-70 mt-3 text-sm">600–1,000+ steps · 3–4 months in the line — every wafer started in between is suspect.</div>
-</div>
-<div class="border-2 border-emerald-400/60 rounded-lg p-6">
-<div class="text-sm opacity-60 mb-2">WITH IN-LINE MEASUREMENT</div>
-<div class="text-lg leading-relaxed">
-Measure after <b>critical steps</b>.<br>
-Catch the drift at <b>step 401</b>.
-</div>
-<div class="opacity-70 mt-3 text-sm">Early detection can limit the affected work-in-progress to one lot.</div>
-</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/process-drift-v2.png" alt="Without inspection, drift reaches scrap at final test; an early inspection confines the loss to one lot" />
 </div>
 
-<div class="text-center text-2xl mt-8">
-At 50,000 wafer starts per month, one yield point is worth roughly <b>$100M / year</b>.
-</div>
+<div class="visual-sequence__caption"><strong>Measure at step 401.</strong><span>Do not discover the drift at final test.</span></div>
+<div class="visual-sequence__source">One yield point at 50k wafer starts / month · roughly $100M / year</div>
 
 <!--
 BEATS:
@@ -98,30 +84,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# A 20 nm defect is tiny relative to a 300 mm wafer
+<div class="visual-sequence__kicker">INSPECTION SCALE</div>
 
-<div class="grid grid-cols-2 gap-10 mt-6 items-center">
-<div>
-<div class="text-sm opacity-60 mb-2">SCALE COMPARISON</div>
-<div class="text-lg leading-relaxed">
-At the same scale, a <b>20 nm defect</b> is comparable to a golf ball on a disc <b>~600 km across</b>.
-</div>
-<div class="opacity-70 mt-3">Inspection takes about <b>one hour per wafer</b>.</div>
-</div>
-<div class="flex flex-col gap-2 text-lg">
-<div class="text-sm opacity-60 mb-1">WHY INSPECTION DEMAND RISES</div>
-<div>Smaller features → <b>smaller killer defects</b></div>
-<div>EUV + multipatterning → <b>more layers that must align</b></div>
-<div>Larger AI dies + HBM stacks → <b>more value at risk per defect</b></div>
-</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/defect-scale-v2.png" alt="A nested zoom from a 300 millimeter wafer to one die, metal lines, and a 20 nanometer defect" />
 </div>
 
-<div class="grid grid-cols-3 gap-6 mt-8 text-center">
-<div><div class="text-5xl font-bold">56–58%</div><div class="text-sm opacity-60">of process control (KLA)</div></div>
-<div><div class="text-5xl font-bold">~7×</div><div class="text-sm opacity-60">the nearest rival</div></div>
-<div><div class="text-5xl font-bold">80%+</div><div class="text-sm opacity-60">of reticle inspection</div></div>
-</div>
+<div class="visual-sequence__caption"><strong>20 nanometers against 300 millimeters.</strong><span>A 15-million-fold scale difference.</span></div>
+<div class="visual-sequence__source">Inspection time · roughly one hour per wafer</div>
 
 <!--
 BEATS:

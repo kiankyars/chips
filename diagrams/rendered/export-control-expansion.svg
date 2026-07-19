@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">United States semiconductor controls expanded in scope from 2019 through 2024</title>
+<desc id="desc">Four circles grow along a timeline. Controls begin with Huawei in 2019, reach foreign fabs using United States technology in 2020, expand to advanced computing chips and manufacturing equipment in 2022, and add HBM, 140 entities, and 27 tool and software categories in 2024.</desc>
+<defs>
+  <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#ddd5c8" stroke-width="1" opacity="0.22"/>
+  </pattern>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#493f30" flood-opacity="0.13"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#4f5965"/>
+  </marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#3977a8"/>
+  </marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#397a66"/>
+  </marker>
+  <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#ad4f5d"/>
+  </marker>
+</defs>
+<rect width="1920" height="1080" fill="#f4efe6"/>
+<rect width="1920" height="1080" fill="url(#paper-grid)"/>
+<text x="92" y="114" fill="#777c79" font-size="21" font-weight="780" text-anchor="start" letter-spacing="2.2" opacity="1">CONTROL SCOPE</text>
+<path d="M190 546L1740 546" fill="none" stroke="#ad4f5d" stroke-width="7" marker-end="url(#arrow-red)"/>
+<g>
+  <circle cx="300" cy="546" r="74" fill="none" stroke="#ad4f5d" stroke-width="5" opacity="0.78"/>
+  <circle cx="300" cy="546" r="8.879999999999999" fill="#ad4f5d"/>
+  <text x="300" y="676" fill="#ad4f5d" font-size="26" font-weight="800" text-anchor="middle" letter-spacing="0" opacity="1">MAY 2019</text>
+  <text x="300" y="710" fill="#777c79" font-size="19" font-weight="560" text-anchor="middle" letter-spacing="0" opacity="1">Huawei · Entity List</text>
+</g>
+<g>
+  <circle cx="720" cy="546" r="114" fill="none" stroke="#ad4f5d" stroke-width="6.333333333333333" opacity="0.78"/>
+  <circle cx="720" cy="546" r="13.68" fill="#ad4f5d"/>
+  <text x="720" y="716" fill="#ad4f5d" font-size="26" font-weight="800" text-anchor="middle" letter-spacing="0" opacity="1">MAY 2020</text>
+  <text x="720" y="750" fill="#777c79" font-size="19" font-weight="560" text-anchor="middle" letter-spacing="0" opacity="1">FDPR reaches foreign fabs</text>
+</g>
+<g>
+  <circle cx="1150" cy="546" r="158" fill="none" stroke="#ad4f5d" stroke-width="8.777777777777779" opacity="0.78"/>
+  <circle cx="1150" cy="546" r="18.96" fill="#ad4f5d"/>
+  <text x="1150" y="760" fill="#ad4f5d" font-size="26" font-weight="800" text-anchor="middle" letter-spacing="0" opacity="1">OCT 2022</text>
+  <text x="1150" y="794" fill="#777c79" font-size="19" font-weight="560" text-anchor="middle" letter-spacing="0" opacity="1">advanced chips + fab tools</text>
+</g>
+<g>
+  <circle cx="1590" cy="546" r="205" fill="none" stroke="#ad4f5d" stroke-width="11.38888888888889" opacity="0.78"/>
+  <circle cx="1590" cy="546" r="24.599999999999998" fill="#ad4f5d"/>
+  <text x="1590" y="807" fill="#ad4f5d" font-size="26" font-weight="800" text-anchor="middle" letter-spacing="0" opacity="1">DEC 2024</text>
+  <text x="1590" y="841" fill="#777c79" font-size="19" font-weight="560" text-anchor="middle" letter-spacing="0" opacity="1">HBM · 140 entities · 27 categories</text>
+</g>
+<text x="300" y="318" fill="#777c79" font-size="20" font-weight="760" text-anchor="middle" letter-spacing="2" opacity="1">ONE COMPANY</text>
+<text x="1590" y="254" fill="#ad4f5d" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="2" opacity="1">COUNTRY-WIDE CAPABILITY</text>
+<path d="M370 270C700 122 1240 122 1520 226" fill="none" stroke="#ad4f5d" stroke-width="4" stroke-dasharray="11 10" marker-end="url(#arrow-red)" opacity="0.7"/>
+<text x="960" y="990" fill="#1f272d" font-size="28" font-weight="640" text-anchor="middle" letter-spacing="0" opacity="1">The rule set grew outward from a named company to technologies and supply categories.</text>
+</svg>

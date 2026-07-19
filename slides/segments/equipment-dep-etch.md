@@ -48,30 +48,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# 3D NAND scales by adding layers
+<div class="visual-sequence__kicker">3D NAND</div>
 
-<div class="grid grid-cols-2 gap-10 mt-2">
-<div>
-<div class="text-sm opacity-60 mb-2">ONE LAYER</div>
-
-- **DEPOSIT** — lay down a film, sometimes atoms thick
-- *(litho prints the pattern)*
-- **ETCH** — plasma removes material the pattern did not protect
-
-<div class="mt-3 opacity-70">Repeated across roughly 1,000 process steps.</div>
-</div>
-<div>
-<div class="text-sm opacity-60 mb-2">3D NAND LAYER COUNT</div>
-<div class="text-5xl font-bold">24 → 200+ → ~1,000</div>
-<div class="opacity-70 mt-1">layers · 2013 → today → 2030 roadmap</div>
-<div class="mt-4 text-lg">More layers increase deposition and etch work.<br><span class="opacity-60">Current NAND production does not use EUV.</span></div>
-</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/nand-vertical-scaling.png" alt="Three vertical NAND stacks grow from short to very tall while keeping the same footprint and vertical channels" />
 </div>
 
-<div class="text-center text-xl mt-8 opacity-80">
-As 3D structures grow taller, deposition and etch account for more process steps and equipment spending.
-</div>
+<div class="visual-sequence__caption"><strong>NAND makers stack more layers.</strong><span>Each generation requires deeper channels.</span></div>
+<div class="visual-sequence__source">24 layers · 2013 → 200+ today → ~1,000 on roadmaps</div>
 
 <!--
 BEATS:
@@ -90,35 +77,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Applied Materials spans most process steps
+<div class="visual-sequence__kicker">PROCESS COVERAGE</div>
 
-![deposit step glowing](/diagrams/rendered/flow-deposit.svg)
-
-<div class="grid grid-cols-2 gap-10 mt-1">
-<div class="text-base leading-relaxed">
-
-Applied sells deposition, etch, implant, polish, thermal, and e-beam metrology systems.
-
-<div class="opacity-70 text-sm mt-1">Its portfolio covers nearly every step except lithography and track; it ranks #2 in wafer-fab equipment.</div>
-
-</div>
-<div>
-<div class="text-sm opacity-60 mb-1">INCREMENTAL TOOL SPEND AT 100K WAFER STARTS/MONTH</div>
-<div class="text-base">Applied's estimate per architecture change:</div>
-<div class="mt-2 text-2xl font-bold">GAA: +~$1B</div>
-<div class="text-2xl font-bold">backside power: +~$1B</div>
-</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/equipment-applied-coverage.svg" alt="Applied Materials spans six fab tool categories while track and lithography remain outside its portfolio" />
 </div>
 
-<div class="border-2 border-gray-400 rounded-lg p-2 mt-2">
-  <div class="grid grid-cols-4 gap-4 text-center">
-    <div><div class="text-2xl font-bold">$28.4B</div><div class="text-sm opacity-60">revenue FY25</div></div>
-    <div><div class="text-2xl font-bold">~49%</div><div class="text-sm opacity-60">gross margin</div></div>
-    <div><div class="text-2xl font-bold">#2</div><div class="text-sm opacity-60">in WFE (after ASML)</div></div>
-    <div><div class="text-2xl font-bold">~10 yrs</div><div class="text-sm opacity-60">to replace</div></div>
-  </div>
-</div>
+<div class="visual-sequence__caption"><strong>Applied reaches six tool categories.</strong><span>Track and lithography remain outside its portfolio.</span></div>
+<div class="visual-sequence__source">Deposition · etch · implant · polish · thermal · metrology</div>
 
 <!--
 BEATS:
@@ -139,37 +108,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Lam Research leads dry etch
+<div class="visual-sequence__kicker">DEEP NAND ETCH</div>
 
-![etch step glowing](/diagrams/rendered/flow-etch.svg)
-
-<div class="grid grid-cols-2 gap-10 mt-1 items-center">
-<div>
-<div class="text-sm opacity-60 mb-1">ONE 3D-NAND MEMORY HOLE</div>
-<div class="text-xl leading-snug">
-<b>1/1000th</b> the width of a human hair.<br>
-<b>50×</b> deeper than it is wide.<br>
-<b>Billions</b> of channels per wafer, each with the same target profile.
-</div>
-<div class="opacity-60 text-sm mt-2">Etched through 100+ stacked layers in one pass.</div>
-</div>
-<div>
-<div class="text-sm opacity-60 mb-1">DRY-ETCH POSITION</div>
-<div class="text-base leading-snug">
-Dry-etch leader for 20+ years; led seven NAND channel-etch generations; <b>&gt;100M</b> NAND wafers channel-etched.
-</div>
-</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/equipment-lam-deep-etch-v2.png" alt="A narrow Lam Research dry-etch channel cuts straight through more than one hundred NAND layers" />
 </div>
 
-<div class="border-2 border-gray-400 rounded-lg p-2 mt-2">
-  <div class="grid grid-cols-4 gap-4 text-center">
-    <div><div class="text-2xl font-bold">$18.4B</div><div class="text-sm opacity-60">revenue FY25</div></div>
-    <div><div class="text-2xl font-bold">~50%</div><div class="text-sm opacity-60">gross margin</div></div>
-    <div><div class="text-2xl font-bold">~½</div><div class="text-sm opacity-60">of dry etch (est.)</div></div>
-    <div><div class="text-2xl font-bold">~10 yrs</div><div class="text-sm opacity-60">to replace</div></div>
-  </div>
-</div>
+<div class="visual-sequence__caption"><strong>Lam etches through 100+ layers.</strong><span>The channel is about 50 times deeper than wide.</span></div>
+<div class="visual-sequence__source">100+ layers · one pass · billions of channels per wafer</div>
 
 <!--
 BEATS:
@@ -192,37 +141,17 @@ LINE THAT LANDS:
 -->
 
 ---
+class: visual-sequence paper-visual
+---
 
-# Tokyo Electron and ASM dominate adjacent steps
+<div class="visual-sequence__kicker">ADJACENT STEPS</div>
 
-<div class="grid grid-cols-2 gap-8 mt-4">
-
-<div class="border-2 border-gray-400 rounded-lg p-5">
-<div class="flex items-center gap-3">
-
-![coat step](/diagrams/rendered/flow-coat.svg)
-
-<div class="text-2xl font-bold">Tokyo Electron</div>
-</div>
-<div class="text-lg mt-3 leading-relaxed">
-The <b>track</b> — coats resist before litho, develops it after. <b>&gt;90%</b> global share.
-</div>
-<div class="opacity-70 text-base mt-2">TEL tracks are paired with most EUV scanners; SCREEN holds a small remaining share.</div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/equipment-tel-asm-v2.png" alt="Tokyo Electron coats and develops resist around exposure while ASM atomic layer deposition wraps recessed surfaces" />
 </div>
 
-<div class="border-2 border-gray-400 rounded-lg p-5">
-<div class="text-2xl font-bold">ASM International</div>
-<div class="text-lg mt-3 leading-relaxed">
-<b>ALD</b> — atomic layer deposition. Film built <b>one atomic layer per cycle</b>, coating every hidden surface.
-</div>
-<div class="opacity-70 text-base mt-2">Gate-all-around structures contain recessed surfaces that require conformal coating. ALD serves those surfaces, and GAA demand helped ASM report record 2025 revenue.</div>
-</div>
-
-</div>
-
-<div class="text-sm opacity-60 mt-5 text-center">
-The five largest equipment suppliers account for about <b>70%</b> of the ~$116B market, with each company leading specific process categories.
-</div>
+<div class="visual-sequence__caption"><strong>TEL coats and develops the resist.</strong><span>ASM coats recessed surfaces one atomic layer at a time.</span></div>
+<div class="visual-sequence__source">TEL track &gt;90% share · ASM ALD · GAA</div>
 
 <!--
 BEATS:
