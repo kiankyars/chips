@@ -36,7 +36,9 @@ Supplier margins vary with substitution difficulty and capital intensity.
 ![journey bar — complete](/diagrams/rendered/journey-6.svg)
 
 <!--
-The completed map connects supplier economics to substitution. Companies with few qualified alternatives can defend higher margins, while capital-intensive assembly businesses face more competition. Replacement time provides a practical way to compare those positions across the supply chain.
+- The completed map connects supplier economics to substitution.
+- Companies with few qualified alternatives can defend higher margins, while capital-intensive assembly businesses face more competition.
+- Replacement time provides a practical way to compare those positions across the supply chain.
 -->
 
 ---
@@ -69,7 +71,10 @@ The completed map connects supplier economics to substitution. Companies with fe
 </div>
 
 <!--
-Analysts estimate a GB300-class GPU sells for about $50,000, though Nvidia publishes no list price. Nvidia retains most of that value through design, software, networking, and scarcity. Physical build cost forms a smaller share, with HBM accounting for more than half of the estimated bill of materials. The remaining split is illustrative.
+- Analysts estimate a GB300-class GPU sells for about $50,000, though Nvidia publishes no list price.
+- Nvidia retains most of that value through design, software, networking, and scarcity.
+- Physical build cost forms a smaller share, with HBM accounting for more than half of the estimated bill of materials.
+- The remaining split is illustrative.
 -->
 
 ---
@@ -95,7 +100,9 @@ Analysts estimate a GB300-class GPU sells for about $50,000, though Nvidia publi
 <div class="text-xs opacity-60 mt-5">Gross margins unless marked, as of Q2 2026. Higher margins generally coincide with fewer substitutes.</div>
 
 <!--
-EDA vendors keep gross margins near 80 percent or more, while Nvidia, KLA, TSMC, and ASML also retain large shares of revenue. OSAT margins sit much lower because customers have more assembly options. Memory appears near the top during the current price cycle, but its margins can fall when new capacity creates oversupply.
+- EDA vendors keep gross margins near 80 percent or more, while Nvidia, KLA, TSMC, and ASML also retain large shares of revenue.
+- OSAT margins sit much lower because customers have more assembly options.
+- Memory appears near the top during the current price cycle, but its margins can fall when new capacity creates oversupply.
 -->
 
 ---
@@ -113,7 +120,9 @@ title: "Replacement horizon"
 <div class="visual-sequence__source">Editorial ranges · not forecast completion dates</div>
 
 <!--
-Replacing ASML and Zeiss requires rebuilding the optics and light-source supply chains around the scanner. Adding OSAT capacity needs less specialized knowledge. These ranges compare relative difficulty rather than predict completion dates.
+- Replacing ASML and Zeiss requires rebuilding the optics and light-source supply chains around the scanner.
+- Adding OSAT capacity needs less specialized knowledge.
+- These ranges compare relative difficulty rather than predict completion dates.
 -->
 
 ---
@@ -131,7 +140,9 @@ title: "Beyond the seven-point board"
 <div class="visual-sequence__source">Ajinomoto · Shin-Etsu + SUMCO · Advantest + Teradyne</div>
 
 <!--
-The seven-point list uses a strict threshold, but other concentrated inputs still deserve attention. Ajinomoto dominates advanced-package insulating film, Shin-Etsu and SUMCO lead silicon wafers, and Advantest and Teradyne dominate automated test equipment. These markets add risk even when they do not meet the same replacement-time threshold.
+- The seven-point list uses a strict threshold, but other concentrated inputs still deserve attention.
+- Ajinomoto dominates advanced-package insulating film, Shin-Etsu and SUMCO lead silicon wafers, and Advantest and Teradyne dominate automated test equipment.
+- These markets add risk even when they do not meet the same replacement-time threshold.
 -->
 
 ---
@@ -149,7 +160,9 @@ title: "From chip to system"
 <div class="visual-sequence__source">72 GPUs · roughly 132–140 kW</div>
 
 <!--
-A 72-GPU rack draws about 132 to 140 kilowatts. At that density, accelerator deployment requires power distribution, cooling, and grid capacity alongside the chips themselves. Semiconductor constraints therefore extend into the building and electrical system that operate the hardware.
+- A 72-GPU rack draws about 132 to 140 kilowatts.
+- At that density, accelerator deployment requires power distribution, cooling, and grid capacity alongside the chips themselves.
+- Semiconductor constraints therefore extend into the building and electrical system that operate the hardware.
 -->
 
 ---
@@ -168,5 +181,7 @@ title: "The semiconductor supply chain"
 <div class="visual-sequence__source">Design · fabrication · equipment · materials · memory · packaging</div>
 
 <!--
-The complete supply chain shows a consistent relationship between supplier margins and available substitutes. Design software, advanced fabrication, lithography, materials, memory, and packaging each contribute to one accelerator. Suppliers gain pricing power when customers cannot replace their process or capacity within a useful time.
+- The complete supply chain shows a consistent relationship between supplier margins and available substitutes.
+- Design software, advanced fabrication, lithography, materials, memory, and packaging each contribute to one accelerator.
+- Suppliers gain pricing power when customers cannot replace their process or capacity within a useful time.
 -->

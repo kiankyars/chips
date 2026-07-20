@@ -3,6 +3,8 @@
 A long-form, diagram-heavy course on how an AI accelerator moves from design to
 data center, and which companies control each step.
 
+View the published course at <https://kiankyars.github.io/chips/>.
+
 ## The premise
 
 **Follow one chip.** A Blackwell-class AI accelerator is followed from idea → design
@@ -43,7 +45,7 @@ chips/
 | Structure, slides, diagram prompts | **Claude** |
 | The actual words spoken | **You**, live, from the beat sheet |
 
-Speaker notes are short prose prompts designed to be scanned while speaking.
+Speaker notes are short bullet prompts designed to be scanned while speaking.
 Sources and verification detail stay in `research/`. See `AUTHORING.md` for the
 full loop.
 
@@ -56,7 +58,11 @@ npm run dev -- --presenter   # presenter view: slide + your beats side-by-side
 npm run export       # render slides.md -> dist PDF
 npm run diagrams     # regenerate every structural SVG
 npm run check        # regenerate diagrams, validate sources/assets, and build the deck
+npm run build:pages  # production build for https://kiankyars.github.io/chips/
 ```
+
+Pushes to `main` deploy the production build to GitHub Pages. The workflow can
+also be run manually from the repository's Actions tab.
 
 ## Status
 

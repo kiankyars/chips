@@ -29,7 +29,8 @@ sources: research/asml.md
 <div class="visual-sequence__source">ASML · High-NA EUV system specifications</div>
 
 <!--
-ASML's High-NA EXE platform stretches 14 metres, about the length of a semi-trailer. That enclosure contains the light source, vacuum chambers, mirror train, and precision stages needed to keep a moving wafer aligned at nanometre scale.
+- ASML's High-NA EXE platform stretches 14 metres, about the length of a semi-trailer.
+- That enclosure contains the light source, vacuum chambers, mirror train, and precision stages needed to keep a moving wafer aligned at nanometre scale.
 -->
 
 ---
@@ -48,7 +49,8 @@ title: "Reticle → field → wafer"
 <div class="visual-sequence__source">ASML · TWINSCAN NXE:3400C and NXE:3600D</div>
 
 <!--
-A reticle holds the pattern for one exposure field, and projection optics shrink the image to one quarter of its linear size. This turns a 104 by 132 millimetre reticle pattern into a field up to 26 by 33 millimetres, which the scanner repeats across the wafer.
+- A reticle holds the pattern for one exposure field, and projection optics shrink the image to one quarter of its linear size.
+- Four-to-one reduction turns a 104 by 132 millimetre reticle pattern into a field up to 26 by 33 millimetres, repeated across the wafer.
 -->
 
 ---
@@ -67,7 +69,9 @@ title: "One causal light path"
 <div class="visual-sequence__source">ASML · ZEISS SMT · EUV lithography principles</div>
 
 <!--
-TRUMPF's carbon-dioxide laser flattens a molten tin droplet and then vaporizes it, creating plasma that emits 13.5 nanometre light. Air and glass absorb EUV, so the scanner keeps the light path in a vacuum and uses mirrors. Those mirrors shape the light at the reticle and project the reduced pattern onto the wafer.
+- TRUMPF's carbon-dioxide laser flattens a molten tin droplet and then vaporizes it, creating plasma that emits 13.5 nanometre light.
+- Air and glass absorb EUV, so the scanner keeps the light path in a vacuum and uses mirrors.
+- Those mirrors shape the light at the reticle and project the reduced pattern onto the wafer.
 -->
 
 ---
@@ -86,7 +90,8 @@ title: "The machine is an integrated supply chain"
 <div class="visual-sequence__source">ASML · Making EUV: from lab to fab</div>
 
 <!--
-ASML integrates the scanner rather than building every critical module itself. TRUMPF supplies the high-power laser, ASML's Cymer unit supplies the EUV source, and ZEISS supplies the optics, while ASML combines them with wafer stages, sensors, control software, and a calibrated vacuum system.
+- ASML integrates the scanner rather than building every critical module itself.
+- TRUMPF supplies the high-power laser, ASML's Cymer unit the EUV source, and ZEISS the optics; ASML integrates them with stages, sensors, software, and a calibrated vacuum.
 -->
 
 ---
@@ -100,7 +105,8 @@ ASML is the sole EUV scanner supplier; Zeiss is the sole supplier of its optics.
 </div>
 
 <!--
-ASML has a monopoly on production EUV scanners, and ZEISS has a monopoly on the optical system inside them. A leading-edge fab depends on both single-source suppliers within the same machine, so losing either would stop new EUV capacity.
+- ASML has a monopoly on production EUV scanners, and ZEISS has a monopoly on the optical system inside them.
+- A leading-edge fab depends on both single-source suppliers within the same machine, so losing either would stop new EUV capacity.
 -->
 
 ---
@@ -121,7 +127,9 @@ ASML has a monopoly on production EUV scanners, and ZEISS has a monopoly on the 
 <div class="text-xs opacity-40 text-right mt-4">FY2025 results</div>
 
 <!--
-An EUV scanner takes months to assemble, calibrate, and install, while ZEISS optics and source modules limit how fast ASML can add capacity. ASML shipped 48 EUV systems in FY2025 while taking €28 billion in bookings. Customers order years ahead because annual supply remains constrained.
+- An EUV scanner takes months to assemble, calibrate, and install, while ZEISS optics and source modules limit how fast ASML can add capacity.
+- ASML shipped 48 EUV systems in FY2025 while taking €28 billion in bookings.
+- Customers order years ahead because annual supply remains constrained.
 -->
 
 ---
@@ -148,7 +156,9 @@ Higher NA prints smaller features in one exposure. <b>Multi-patterning</b> uses 
 </div>
 
 <!--
-High-NA EUV raises numerical aperture from 0.33 to 0.55, allowing smaller features in one exposure. Each EXE:5200-class tool costs about $400 million, and fabs have installed fewer than twelve. Without that resolution, a fab can use several masks for one layer, adding process steps, cost, and yield risk.
+- High-NA EUV raises numerical aperture from 0.33 to 0.55, allowing smaller features in one exposure.
+- Each EXE:5200-class tool costs about $400 million, and fabs have installed fewer than twelve.
+- Without that resolution, a fab can use several masks for one layer, adding process steps, cost, and yield risk.
 -->
 
 ---
@@ -164,5 +174,6 @@ ASML cannot sell EUV systems to China under Dutch export controls coordinated wi
 </div>
 
 <!--
-ASML needs Dutch government licenses to export its EUV systems, and the Netherlands blocks sales to China in coordination with the United States. Because ASML has no production competitor, one export license can determine whether a country can buy the equipment needed for leading-edge chip production.
+- ASML needs Dutch government licenses to export its EUV systems, and the Netherlands blocks sales to China in coordination with the United States.
+- Because ASML has no production competitor, one export license can determine whether a country can buy the equipment needed for leading-edge chip production.
 -->

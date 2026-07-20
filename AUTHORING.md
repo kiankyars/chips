@@ -27,21 +27,22 @@ Then you record: speak the beats in your own words over the slides.
 
 ## Beat sheet, not script
 
-Speaker notes (the trailing `<!-- ... -->` block on each slide) are short prompts
-you can scan while speaking:
+Speaker notes (the trailing `<!-- ... -->` block on each slide) are short bullet
+prompts you can scan while speaking:
 
 ```
 <!--
-The amber region is the channel; blue is the gate; cyan marks the interface.
-A planar gate controls the channel from the top, so leakage rises as the channel shrinks.
-FinFETs and gate-all-around transistors give the gate control over more surfaces.
+- Amber is the channel; blue is the gate; cyan marks the interface.
+- A planar gate controls the channel from the top, so leakage rises as the channel shrinks.
+- FinFETs and gate-all-around transistors give the gate control over more surfaces.
 -->
 ```
 
-Keep each note to two to four sentences and roughly 35–75 words. Include only the
-facts needed to explain the slide. Put citations, verification tags, production
-directions, optional lines, and full caveats in the research or authoring files.
-If a caveat prevents a false claim, state it once in plain English.
+Keep each note to two to four bullets and roughly 25–75 words. Each bullet should
+carry one speaking beat and normally fit on one or two lines. Include only the facts
+needed to explain the slide. Put citations, verification tags, production directions,
+optional lines, and full caveats in the research or authoring files. If a caveat
+prevents a false claim, state it once in plain English.
 
 ## Segment file header
 
@@ -121,14 +122,8 @@ doesn't exist yet, the SVG placeholder (or nothing) renders — decks must alway
 
 ## Fact-checking convention
 
-Anything I'm not fully confident on is tagged so we never ship a number on vibes.
+Anything I'm not fully confident on stays in `research/` until it is verified.
 Sourced facts carry a `[n]` footnote pointing at the source list at the bottom of
-each `research/` file.
-
-- **In `research/` packs**, the tag is an HTML comment: `<!-- VERIFY: ... -->`.
-- **In `slides/segments/` beat sheets**, the tag must be `[VERIFY: ... ]` (square
-  brackets), NEVER `<!-- VERIFY -->`. The beats already live inside a `<!-- ... -->`
-  speaker-note block, and **HTML comments cannot nest** — an inner `<!-- ... -->`
-  closes the note block early and dumps the rest of your beats onto the visible
-  slide. Square brackets stay safely hidden inside the note. (This is enforced;
-  a nested `<!-- VERIFY` inside a note is a build-visible bug.)
+each research file, and unresolved claims use an HTML `<!-- VERIFY: ... -->` tag
+there. Speaker notes contain only facts ready to say aloud; they never contain
+citations or verification tags.

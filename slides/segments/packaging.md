@@ -36,7 +36,8 @@ but too little CoWoS capacity to assemble them.
 ![journey bar — PACKAGE active](/diagrams/rendered/journey-5.svg)
 
 <!--
-Fabricated GPU dies and HBM stacks still need a package that connects them at high bandwidth. During the 2023 to 2025 shortage, TSMC had logic wafers available but lacked enough CoWoS capacity to assemble complete accelerators.
+- Fabricated GPU dies and HBM stacks still need a package that connects them at high bandwidth.
+- During the 2023 to 2025 shortage, TSMC had logic wafers available but lacked enough CoWoS capacity to assemble complete accelerators.
 -->
 
 ---
@@ -66,7 +67,10 @@ It's the shortage of our <b>CoWoS</b> capacity."
 </div>
 
 <!--
-Chip packaging began as labor-intensive assembly. It entered the first wave of offshoring through facilities such as Fairchild's 1963 plant in a converted Hong Kong shoe factory. Advanced packaging now adds dense silicon wiring and can command prices near those of a 7nm logic wafer. TSMC identified CoWoS capacity as the main AI-chip shortage in 2023.
+- Chip packaging began as labor-intensive assembly.
+- Packaging entered the first wave of offshoring through facilities such as Fairchild's 1963 plant in a converted Hong Kong shoe factory.
+- Advanced packaging now adds dense silicon wiring and can command prices near those of a 7nm logic wafer.
+- TSMC identified CoWoS capacity as the main AI-chip shortage in 2023.
 -->
 
 ---
@@ -94,7 +98,9 @@ Chip packaging began as labor-intensive assembly. It entered the first wave of o
 </div>
 
 <!--
-A standard EUV exposure covers at most about 858 square millimeters, and the H100 die used 814. Blackwell crossed that limit by joining two compute dies with a 10-terabyte-per-second link. High-NA EUV halves the exposure field, which gives designers another reason to divide large processors into chiplets.
+- A standard EUV exposure covers at most about 858 square millimeters, and the H100 die used 814.
+- Blackwell crossed that limit by joining two compute dies with a 10-terabyte-per-second link.
+- High-NA EUV halves the exposure field, which gives designers another reason to divide large processors into chiplets.
 -->
 
 ---
@@ -112,7 +118,9 @@ title: "Why chiplets win"
 <div class="visual-sequence__source">AMD estimate · four small dies cost &lt;60% of one monolith</div>
 
 <!--
-Chiplets split one large design into smaller dies, improving yield because a defect destroys less silicon. Designers can also mix process nodes and place memory close to compute. AMD estimated that four small dies can cost less than 60 percent of an equivalent monolithic design.
+- Chiplets split one large design into smaller dies, improving yield because a defect destroys less silicon.
+- Designers can also mix process nodes and place memory close to compute.
+- AMD estimated that four small dies can cost less than 60 percent of an equivalent monolithic design.
 -->
 
 ---
@@ -136,7 +144,9 @@ Chiplets split one large design into smaller dies, improving yield because a def
 </div>
 
 <!--
-TSMC expanded CoWoS from about 13,000 to 15,000 wafers per month at the end of 2023 toward a 120,000 to 140,000 target for 2026. That increase approaches tenfold in three years. Demand still kept the capacity sold out as accelerator production grew.
+- TSMC expanded CoWoS from about 13,000 to 15,000 wafers per month at the end of 2023 toward a 120,000 to 140,000 target for 2026.
+- That increase approaches tenfold in three years.
+- Demand still kept the capacity sold out as accelerator production grew.
 -->
 
 ---
@@ -157,7 +167,8 @@ title: "Package assembly · 1 / 4"
 <div class="visual-sequence__source">Illustrative locked top view · not to scale</div>
 
 <!--
-The organic substrate forms the base of the accelerator package. It carries power and signals between the package and the circuit board, while its large footprint supports the compute dies, memory stacks, and the wiring layer added above it.
+- The organic substrate forms the base of the accelerator package.
+- The organic substrate carries power and signals to the circuit board while supporting the compute dies, memory stacks, and wiring layer above it.
 -->
 
 ---
@@ -178,7 +189,8 @@ title: "Package assembly · 2 / 4"
 <div class="visual-sequence__source">CoWoS: Chip on Wafer on Substrate · geometry simplified</div>
 
 <!--
-CoWoS places a silicon interposer on the organic substrate. The interposer provides far denser wiring than the substrate can support, allowing logic dies and HBM stacks to exchange data across thousands of short electrical connections.
+- CoWoS places a silicon interposer on the organic substrate.
+- The interposer provides far denser wiring than the substrate can support, allowing logic dies and HBM stacks to exchange data across thousands of short electrical connections.
 -->
 
 ---
@@ -199,7 +211,8 @@ title: "Package assembly · 3 / 4"
 <div class="visual-sequence__source">GB300-class component count · arrangement simplified</div>
 
 <!--
-Two GPU dies and eight HBM stacks mount on the same interposer. The shared wiring plane links the compute dies to each other and gives both access to nearby memory, avoiding the narrower paths used by conventional memory modules.
+- Two GPU dies and eight HBM stacks mount on the same interposer.
+- The shared wiring plane links the compute dies to each other and gives both access to nearby memory, avoiding the narrower paths used by conventional memory modules.
 -->
 
 ---
@@ -220,5 +233,7 @@ title: "Package assembly · 4 / 4"
 <div class="visual-sequence__source">Illustrative cutaway · TSMC CoWoS</div>
 
 <!--
-A thermal lid closes over the assembled logic and memory dies. It protects the package and transfers heat into the cooling system. The result is one accelerator assembled from separate components rather than one monolithic chip.
+- A thermal lid closes over the assembled logic and memory dies.
+- The lid protects the package and transfers heat into the cooling system.
+- The result is one accelerator assembled from separate components rather than one monolithic chip.
 -->

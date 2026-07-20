@@ -1,6 +1,6 @@
 ---
 layout: default
-class: visual-sequence
+class: visual-sequence paper-visual
 title: "The object"
 ---
 
@@ -23,14 +23,15 @@ note: BUILD AND RECORD LAST — this front-loads four promises (map, board, mone
 <div class="visual-sequence__kicker">THE OBJECT</div>
 
 <div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/package-04-complete.svg" alt="An accelerator package containing two compute dies and eight HBM stacks" />
+  <img src="/assets/nvidia-grace-blackwell-ultra-superchip.webp" alt="Official NVIDIA image of a Grace Blackwell Ultra board with two Blackwell Ultra GPUs, one Grace CPU, and two ConnectX-8 SuperNICs" />
 </div>
 
-<div class="visual-sequence__caption"><strong>One accelerator</strong><span>Two compute dies · eight HBM stacks · one package</span></div>
-<div class="visual-sequence__source">GB300-class package · schematic</div>
+<div class="visual-sequence__caption"><strong>Grace Blackwell Ultra</strong><span>Two GPUs · one Grace CPU · two ConnectX-8 SuperNICs</span></div>
+<div class="visual-sequence__source">Official NVIDIA image</div>
 
 <!--
-A GB300-class accelerator combines two compute dies with eight HBM stacks inside one package. The finished object depends on separate logic, memory, interconnect, and packaging technologies, so no single company can build the whole device.
+- This GB300 compute board carries two Blackwell Ultra GPUs, one Grace CPU, and two ConnectX-8 SuperNICs.
+- The course follows one GPU package: two compute dies beside HBM, assembled through advanced packaging.
 -->
 
 ---
@@ -53,7 +54,9 @@ A GB300-class accelerator combines two compute dies with eight HBM stacks inside
 </div>
 
 <!--
-These numbers trace the scaling chain. One package has 208 billion transistors; 72 packages become a $4 million rack with a facility-scale power load. Hyperscaler spending shows how demand for that hardware propagates through the semiconductor industry.
+- These numbers trace the scaling chain.
+- One package has 208 billion transistors; 72 packages become a $4 million rack with a facility-scale power load.
+- Hyperscaler spending shows how demand for that hardware propagates through the semiconductor industry.
 -->
 
 ---
@@ -67,7 +70,9 @@ This map follows the accelerator from design software to the finished package. E
 </div>
 
 <!--
-No company owns the whole route. Nvidia designs the accelerator, TSMC fabricates its logic, memory suppliers build HBM, and packaging firms assemble the final module. The finished device records all of those dependencies.
+- No company owns the whole route.
+- Nvidia designs the accelerator, TSMC fabricates its logic, memory suppliers build HBM, and packaging firms assemble the final module.
+- The finished device records all of those dependencies.
 -->
 
 ---
@@ -81,7 +86,8 @@ Each controls a technology that leading-edge production cannot replace quickly. 
 </div>
 
 <!--
-A high market share alone does not make a chokepoint. The stronger test is whether production stops without that supplier and how long a credible substitute would take to qualify.
+- A high market share alone does not make a chokepoint.
+- The stronger test is whether production stops without that supplier and how long a credible substitute would take to qualify.
 -->
 
 ---
@@ -98,5 +104,6 @@ The course follows one accelerator through each production stage, beginning with
 </div>
 
 <!--
-The production chain starts with silicon, passes through chip design and wafer fabrication, then adds memory and packaging before deployment in a data center. Following one accelerator in this order connects each physical step to the companies that perform it.
+- The production chain starts with silicon, passes through chip design and wafer fabrication, then adds memory and packaging before deployment in a data center.
+- Following one accelerator in this order connects each physical step to the companies that perform it.
 -->

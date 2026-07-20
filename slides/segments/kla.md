@@ -39,7 +39,9 @@ KLA's inspection and metrology tools find defects and verify dimensions after pr
 </div>
 
 <!--
-KLA's tools inspect wafers for defects and measure dimensions and alignment after process steps. They do not deposit, etch, or print material. At nanometre scale, the fab needs these measurements to detect a bad process before it damages more wafers.
+- KLA's tools inspect wafers for defects and measure dimensions and alignment after process steps.
+- KLA's tools do not deposit, etch, or print material.
+- At nanometre scale, the fab needs these measurements to detect a bad process before it damages more wafers.
 -->
 
 ---
@@ -57,7 +59,9 @@ title: "Process control"
 <div class="visual-sequence__source">One yield point at 50k wafer starts / month · roughly $100M / year</div>
 
 <!--
-In this illustration, a process drifts at step 400. Without in-line inspection, the fab discovers the problem at final test after weeks of additional work; inspection at step 401 confines the loss to one lot. At 50,000 wafer starts per month, one percentage point of yield can represent about $100 million a year.
+- In this illustration, a process drifts at step 400.
+- Without in-line inspection, the fab discovers the problem at final test after weeks of additional work; inspection at step 401 confines the loss to one lot.
+- At 50,000 wafer starts per month, one percentage point of yield can represent about $100 million a year.
 -->
 
 ---
@@ -75,7 +79,8 @@ title: "Inspection scale"
 <div class="visual-sequence__source">Inspection time · roughly one hour per wafer</div>
 
 <!--
-A 20 nanometre defect against a 300 millimetre wafer creates a 15-million-fold scale difference; if the defect grew to the size of a golf ball, the wafer would span about 600 kilometres. KLA combines fast optical inspection with targeted electron-beam review to find and classify defects in about an hour per wafer.
+- A 20-nanometre defect against a 300-millimetre wafer is a 15-million-fold scale difference; at golf-ball size, the wafer would span about 600 kilometres.
+- KLA combines fast optical inspection with targeted electron-beam review to find and classify defects in about an hour per wafer.
 -->
 
 ---
@@ -99,5 +104,7 @@ At <b>~62%</b>, KLA's gross margin is about <b>ten points above ASML's</b><br>
 </div>
 
 <!--
-KLA controls about 56 to 58 percent of the semiconductor process-control market, about seven times its nearest rival. Fabs tune inspection recipes to each layer, process window, and known defect signature, so switching vendors requires new baselines and requalification. That embedded process knowledge supports KLA's 62 percent gross margin and the long replacement estimate.
+- KLA controls about 56 to 58 percent of the semiconductor process-control market, about seven times its nearest rival.
+- Fabs tune inspection recipes to each layer, process window, and known defect signature, so switching vendors requires new baselines and requalification.
+- That embedded process knowledge supports KLA's 62 percent gross margin and the long replacement estimate.
 -->

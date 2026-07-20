@@ -38,7 +38,9 @@ over <b>three to four months</b>.<br>
 ![journey bar — FAB](/diagrams/rendered/journey-3.svg)
 
 <!--
-A leading-edge wafer passes through about a thousand process steps over three to four months. Different machines deposit material, print patterns, remove material, and inspect the result. Much of the cycle time comes from waiting between those operations rather than active processing.
+- A leading-edge wafer passes through about a thousand process steps over three to four months.
+- Different machines deposit material, print patterns, remove material, and inspect the result.
+- Much of the cycle time comes from waiting between those operations rather than active processing.
 -->
 
 ---
@@ -63,7 +65,9 @@ A leading-edge wafer passes through about a thousand process steps over three to
 </div>
 
 <!--
-The fab starts with a polished 300 millimetre silicon wafer that costs about $100 to $200 and reaches 99.999999999 percent purity. The design arrives as 60 to 100 patterned reticles, with roughly one reticle per mask level; a multi-patterned layer may need several. A leading-edge mask set therefore costs millions of dollars.
+- The fab starts with a polished 300 millimetre silicon wafer that costs about $100 to $200 and reaches 99.999999999 percent purity.
+- The design arrives as 60 to 100 patterned reticles, with roughly one reticle per mask level; a multi-patterned layer may need several.
+- A leading-edge mask set therefore costs millions of dollars.
 -->
 
 ---
@@ -79,7 +83,9 @@ The fab starts with a polished 300 millimetre silicon wafer that costs about $10
 </div>
 
 <!--
-The fab deposits a film, coats it with light-sensitive resist, exposes a pattern, etches the open regions, implants dopants where needed, polishes the surface, and measures the result. It repeats variations of this cycle across about 80 to 120 mask levels. Each exposure patterns billions of features across the wafer at once.
+- The fab deposits a film, coats it with light-sensitive resist, exposes a pattern, etches the open regions, implants dopants where needed, polishes the surface, and measures the result.
+- The fab repeats variations of this cycle across about 80 to 120 mask levels.
+- Each exposure patterns billions of features across the wafer at once.
 -->
 
 ---
@@ -102,7 +108,9 @@ The fab deposits a film, coats it with light-sensitive resist, exposes a pattern
 </div>
 
 <!--
-Wafers, photoresist, and mask blanks become part of a fab's process recipe after long qualification. A replacement can change film thickness, pattern dimensions, defect rates, or yield, so the fab must test it across many wafers before release. That requalification can take one to two years, making concentrated supply hard to replace.
+- Wafers, photoresist, and mask blanks become part of a fab's process recipe after long qualification.
+- A replacement can change film thickness, pattern dimensions, defect rates, or yield, so the fab must test it across many wafers before release.
+- That requalification can take one to two years, making concentrated supply hard to replace.
 -->
 
 ---
@@ -120,7 +128,9 @@ title: "Inside the die"
 <div class="visual-sequence__source">N5 · 81 mask layers · roughly three months in process</div>
 
 <!--
-Transistors occupy a thin device layer at the bottom, while more than fifteen interconnect layers above them route signals and power. Each mask level adds several process steps and more queue time, and each added step creates another chance for contamination or process drift. That is why 81 mask levels can keep an N5 wafer in the fab for months.
+- Transistors occupy a thin device layer at the bottom, while more than fifteen interconnect layers above them route signals and power.
+- Each mask level adds several process steps and more queue time, and each added step creates another chance for contamination or process drift.
+- Eighty-one mask levels can keep an N5 wafer in the fab for months.
 -->
 
 ---
@@ -138,7 +148,9 @@ title: "Contamination"
 <div class="visual-sequence__source">Blank wafer · ~$150 · processed wafer · ~$30,000</div>
 
 <!--
-A particle about 100 nanometres wide can bridge nearby wires and kill a die. Cleanrooms and sealed wafer carriers limit contamination because one defect late in the process wastes months of work. Larger dies expose more area to defects, so inspection and process control have a direct effect on the number of sellable chips.
+- A particle about 100 nanometres wide can bridge nearby wires and kill a die.
+- Cleanrooms and sealed wafer carriers limit contamination because one defect late in the process wastes months of work.
+- Larger dies expose more area to defects, so inspection and process control have a direct effect on the number of sellable chips.
 -->
 
 ---
@@ -152,5 +164,6 @@ EUV scanners perform the exposure step and cost more than any other fab tool.
 </div>
 
 <!--
-During exposure, a lithography scanner projects the reticle pattern into photoresist on the wafer. EUV can replace several DUV exposures and reduce masks and process steps, but its scanner is the most expensive tool in the fab.
+- During exposure, a lithography scanner projects the reticle pattern into photoresist on the wafer.
+- EUV can replace several DUV exposures and reduce masks and process steps, but its scanner is the most expensive tool in the fab.
 -->

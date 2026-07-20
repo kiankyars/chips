@@ -24,7 +24,8 @@ sources: research/arm-riscv.md
 <img src="/diagrams/rendered/map-design.svg" class="absolute bottom-4 right-4 w-56 opacity-90" alt="map — design region lit" />
 
 <!--
-An instruction set architecture defines the commands that software can give a processor, such as load, add, and branch. Arm licenses its instruction set and CPU designs, while RISC-V publishes an open instruction set that anyone can implement.
+- An instruction set architecture defines the commands that software can give a processor, such as load, add, and branch.
+- Arm licenses its instruction set and CPU designs, while RISC-V publishes an open instruction set that anyone can implement.
 -->
 
 ---
@@ -51,7 +52,8 @@ Arm licenses CPU designs and architecture. Most contracts include an upfront fee
 </div>
 
 <!--
-Arm earns a license fee when a company adopts its technology and a royalty when each chip ships. A one-to-two-percent royalty across billions of units from Apple, Qualcomm, MediaTek, and other licensees turns broad adoption into recurring revenue.
+- Arm earns a license fee when a company adopts its technology and a royalty when each chip ships.
+- A one-to-two-percent royalty across billions of units from Apple, Qualcomm, MediaTek, and other licensees turns broad adoption into recurring revenue.
 -->
 
 ---
@@ -74,7 +76,8 @@ Arm sued over whether Nuvia's architecture license transferred to Qualcomm. In 2
 </div>
 
 <!--
-With a core license, a company integrates a finished Cortex or Neoverse CPU design; an architecture license lets companies such as Apple and Qualcomm create their own compatible cores. The Qualcomm-Nuvia dispute showed that control over those license terms can affect acquisitions and product plans.
+- A core license supplies a finished Cortex or Neoverse CPU; an architecture license lets companies such as Apple and Qualcomm create compatible cores.
+- The Qualcomm-Nuvia dispute showed that control over those license terms can affect acquisitions and product plans.
 -->
 
 ---
@@ -105,7 +108,9 @@ Anyone may implement the RISC-V ISA without a license or royalty. Finished comme
 </div>
 
 <!--
-RISC-V removes the ISA license and royalty, though companies still pay to design or license finished cores. It has strong adoption in controllers, microcontrollers, storage, and embedded systems; Nvidia ships about one billion RISC-V control cores a year. Smartphones and servers remain limited because their software ecosystems favor established architectures.
+- RISC-V removes the ISA license and royalty, though companies still pay to design or license finished cores.
+- RISC-V has strong adoption in controllers, microcontrollers, storage, and embedded systems; Nvidia ships about one billion RISC-V control cores a year.
+- Smartphones and servers remain limited because their software ecosystems favor established architectures.
 -->
 
 ---
@@ -121,7 +126,9 @@ RISC-V International moved from the United States to Switzerland in 2019, citing
 </div>
 
 <!--
-The RISC-V specification is public and can be implemented worldwide without a license from one company. RISC-V International moved its legal base from the United States to Switzerland in 2019, citing concern that export restrictions could limit collaboration. The open specification makes access harder for any government to restrict.
+- The RISC-V specification is public and can be implemented worldwide without a license from one company.
+- RISC-V International moved its legal base from the United States to Switzerland in 2019, citing concern that export restrictions could limit collaboration.
+- The open specification makes access harder for any government to restrict.
 -->
 
 ---
@@ -144,5 +151,7 @@ RISC-V is an open standard, so adoption is measured through compatible cores and
 </div>
 
 <!--
-Arm reported $4.9 billion in FY2026 revenue and remains in more than 99 percent of smartphones. Its installed software base and 350 billion shipped chips create a substantial barrier to replacement, estimated at about 15 years. RISC-V offers an open alternative, but its commercial adoption remains concentrated in embedded and control applications.
+- Arm reported $4.9 billion in FY2026 revenue and remains in more than 99 percent of smartphones.
+- Its installed software base and 350 billion shipped chips create a substantial barrier to replacement, estimated at about 15 years.
+- RISC-V offers an open alternative, but its commercial adoption remains concentrated in embedded and control applications.
 -->

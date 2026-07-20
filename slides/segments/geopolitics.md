@@ -31,7 +31,8 @@ swappable: true    # export rules move monthly — ONE topic per slide, NO cross
 </div>
 
 <!--
-Governments can use the semiconductor supply chain as leverage because critical technologies and production sit in a few countries and companies. Export licenses, investment rules, and industrial subsidies now shape which firms can buy design tools, equipment, memory, and advanced logic.
+- Governments can use the semiconductor supply chain as leverage because critical technologies and production sit in a few countries and companies.
+- Export licenses, investment rules, and industrial subsidies now shape which firms can buy design tools, equipment, memory, and advanced logic.
 -->
 
 ---
@@ -47,7 +48,9 @@ Seven supplier dependencies take an estimated five years or more to replace.
 </div>
 
 <!--
-Seven dependencies in leading-edge AI chips may take five years or more to replace. They span design software, fabrication, lithography, materials, memory, and packaging. A restriction at any one of these points can slow production across the rest of the chain.
+- Seven dependencies in leading-edge AI chips may take five years or more to replace.
+- The seven dependencies span design software, fabrication, lithography, materials, memory, and packaging.
+- A restriction at any one of these points can slow production across the rest of the chain.
 -->
 
 ---
@@ -65,7 +68,8 @@ title: "Policy control points"
 <div class="visual-sequence__source">EDA controls · FDPR · EUV licenses · Section 232</div>
 
 <!--
-The United States can restrict EDA software and use the foreign direct product rule to reach chips made abroad with US technology. The Netherlands can license EUV shipments, foundries can deny fabrication, and customs authorities can block finished-chip imports.
+- The United States can restrict EDA software and use the foreign direct product rule to reach chips made abroad with US technology.
+- The Netherlands can license EUV shipments, foundries can deny fabrication, and customs authorities can block finished-chip imports.
 -->
 
 ---
@@ -83,7 +87,9 @@ title: "Control scope · 2019–2024"
 <div class="visual-sequence__source">May 2019 → December 2024</div>
 
 <!--
-US controls widened between 2019 and 2024. Measures that began with Huawei expanded to advanced chips, semiconductor equipment, HBM, and more than 140 additional entities. Each step reached farther upstream, from finished products toward the tools and components needed to make them.
+- US controls widened between 2019 and 2024.
+- Measures that began with Huawei expanded to advanced chips, semiconductor equipment, HBM, and more than 140 additional entities.
+- Each step reached farther upstream, from finished products toward the tools and components needed to make them.
 -->
 
 ---
@@ -101,7 +107,9 @@ title: "The H20 policy cycle"
 <div class="visual-sequence__source">October 2023 → January 2026</div>
 
 <!--
-The H20 shows how product design responds to policy. Nvidia created the chip to fit the October 2023 export limits, then faced new restrictions in 2025 and a partial reopening by January 2026. Each policy change altered which accelerator Nvidia could sell into China.
+- The H20 shows how product design responds to policy.
+- Nvidia created the chip to fit the October 2023 export limits, then faced new restrictions in 2025 and a partial reopening by January 2026.
+- Each policy change altered which accelerator Nvidia could sell into China.
 -->
 
 ---
@@ -122,7 +130,9 @@ The H20 shows how product design responds to policy. Nvidia created the chip to 
 </div>
 
 <!--
-China answered US semiconductor controls with restrictions on gallium, germanium, and rare-earth inputs. Some rules extend to foreign goods containing Chinese material, mirroring the reach of US foreign-product controls. The current pauses expire in November 2026, so buyers still face a defined policy deadline.
+- China answered US semiconductor controls with restrictions on gallium, germanium, and rare-earth inputs.
+- Some rules extend to foreign goods containing Chinese material, mirroring the reach of US foreign-product controls.
+- The current pauses expire in November 2026, so buyers still face a defined policy deadline.
 -->
 
 ---
@@ -145,7 +155,9 @@ China answered US semiconductor controls with restrictions on gallium, germanium
 </div>
 
 <!--
-The Nexperia dispute showed that mature-node chips can create immediate leverage. After the Dutch government took control over technology-transfer concerns, China blocked exports from the company's Dongguan plant. Automakers warned of production stoppages within days because the plant ships more than 50 billion simple chips a year.
+- The Nexperia dispute showed that mature-node chips can create immediate leverage.
+- After the Dutch government took control over technology-transfer concerns, China blocked exports from the company's Dongguan plant.
+- Automakers warned of production stoppages within days because the plant ships more than 50 billion simple chips a year.
 -->
 
 ---
@@ -163,7 +175,9 @@ title: "Advanced chips · at higher cost"
 <div class="visual-sequence__source">SMIC and Huawei · 2026 estimates</div>
 
 <!--
-SMIC can produce advanced chips without EUV by using more process steps and accepting lower yield. Huawei can compensate with more chips, area, and power at the system level. The result narrows the capability gap while raising manufacturing cost and energy use.
+- SMIC can produce advanced chips without EUV by using more process steps and accepting lower yield.
+- Huawei can compensate with more chips, area, and power at the system level.
+- The result narrows the capability gap while raising manufacturing cost and energy use.
 -->
 
 ---
@@ -181,7 +195,9 @@ title: "China's technology gaps"
 <div class="visual-sequence__source">Estimates vary by technology · roughly five-year leading-edge gap</div>
 
 <!--
-China has made progress in chip design and mature-node manufacturing, but its largest gaps remain EUV lithography, HBM, and advanced EDA. Estimates vary by technology and product. A five-year leading-edge gap gives a useful scale, not a fixed schedule.
+- China has made progress in chip design and mature-node manufacturing, but its largest gaps remain EUV lithography, HBM, and advanced EDA.
+- Estimates vary by technology and product.
+- A five-year leading-edge gap gives a useful scale, not a fixed schedule.
 -->
 
 ---
@@ -199,7 +215,8 @@ title: "US industrial policy"
 <div class="visual-sequence__source">Announced investment · 2032 capacity projection</div>
 
 <!--
-US industrial policy combines grants, tax credits, loans, and equity to fund domestic fabs. Announced projects could raise the US share of advanced logic capacity by 2032, but construction, equipment installation, and yield ramping determine how much of that planned capacity becomes usable output.
+- US industrial policy combines grants, tax credits, loans, and equity to fund domestic fabs.
+- Announced projects could raise the US share of advanced logic capacity by 2032, but construction and yield ramping determine how much becomes usable output.
 -->
 
 ---
@@ -226,7 +243,10 @@ The same concentration may deter conflict or make control of Taiwan more valuabl
 </div>
 
 <!--
-Taiwan held 92 percent of global sub-10nm capacity in 2022. It also supplied about 90 percent of merchant logic at 7nm class and below. Strong demand has committed much of TSMC's N2 capacity through mid-2027. This concentration makes continuity across the Taiwan Strait central to the world's supply of advanced processors.
+- Taiwan held 92 percent of global sub-10nm capacity in 2022.
+- Taiwan also supplied about 90 percent of merchant logic at 7nm class and below.
+- Strong demand has committed much of TSMC's N2 capacity through mid-2027.
+- This concentration makes continuity across the Taiwan Strait central to the world's supply of advanced processors.
 -->
 
 ---
@@ -244,7 +264,8 @@ Source: Bloomberg Economics model, Feb 2026. The result depends on scenario assu
 </div>
 
 <!--
-A Bloomberg Economics model estimated that a Taiwan conflict could cost $10.6 trillion in its first year, about 9.6 percent of global GDP. The estimate exceeds modeled losses from COVID or the 2008 crisis, but it depends on assumptions about blockades, trade disruption, and military escalation.
+- A Bloomberg Economics model estimated that a Taiwan conflict could cost $10.6 trillion in its first year, about 9.6 percent of global GDP.
+- The estimate exceeds modeled losses from COVID or the 2008 crisis, but it depends on assumptions about blockades, trade disruption, and military escalation.
 -->
 
 ---
@@ -262,5 +283,7 @@ title: "Two AI stacks"
 <div class="visual-sequence__source">Mineral-control pauses expire · November 2026</div>
 
 <!--
-The United States and China are developing different AI stacks across accelerators, software, foundries, and production tools. Neither stack is self-contained, since both still depend on foreign suppliers and shared material flows. Mineral-control pauses ending in November 2026 create the next scheduled test of that separation.
+- The United States and China are developing different AI stacks across accelerators, software, foundries, and production tools.
+- Neither stack is self-contained, since both still depend on foreign suppliers and shared material flows.
+- Mineral-control pauses ending in November 2026 create the next scheduled test of that separation.
 -->

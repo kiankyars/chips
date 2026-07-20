@@ -35,7 +35,8 @@ sources: research/tsmc.md
 </div>
 
 <!--
-TSMC is the world's first and largest pure-play foundry. It turns customer designs into physical chips without selling processors under its own name, letting customers share its fabs without competing with their manufacturer and creating the trust on which the business depends.
+- TSMC is the world's first and largest pure-play foundry.
+- TSMC turns customer designs into chips without selling its own processors, so customers share its fabs without competing with their manufacturer; this neutrality creates trust.
 -->
 
 ---
@@ -58,7 +59,9 @@ TSMC is the world's first and largest pure-play foundry. It turns customer desig
 </div>
 
 <!--
-Morris Chang founded TSMC in 1987 after 25 years at Texas Instruments. Taiwan's state fund supplied 48.3 percent of the startup capital and Philips supplied 27.5 percent, giving the company patient backing when American chipmakers declined to invest. TSMC used that capital to build a customer-neutral foundry that manufactured designs without selling competing chips.
+- Morris Chang founded TSMC in 1987 after 25 years at Texas Instruments.
+- Taiwan's state fund supplied 48.3 percent of the startup capital and Philips supplied 27.5 percent, giving the company patient backing when American chipmakers declined to invest.
+- TSMC used that capital to build a customer-neutral foundry that manufactured designs without selling competing chips.
 -->
 
 ---
@@ -87,7 +90,9 @@ Morris Chang founded TSMC in 1987 after 25 years at Texas Instruments. Taiwan's 
 <div class="text-sm opacity-60 mt-8">TSMC manufactures customer designs without selling competing chips.</div>
 
 <!--
-TSMC sells a manufacturing process, a process design kit, qualified IP, and reliable yield. It does not sell branded processors, so rival customers can use the same fabs without competing against their manufacturer. Its process rules also connect to major EDA tools and IP libraries, making a finished design expensive to move to another foundry.
+- TSMC sells a manufacturing process, a process design kit, qualified IP, and reliable yield.
+- TSMC does not sell branded processors, so rival customers can use the same fabs without competing against their manufacturer.
+- Its process rules also connect to major EDA tools and IP libraries, making a finished design expensive to move to another foundry.
 -->
 
 ---
@@ -114,7 +119,10 @@ MORE CAPACITY ← REINVESTED REVENUE ← NEW CUSTOMER DESIGNS
 </div>
 
 <!--
-More wafer volume gives TSMC more defect data. That improves yield and lowers cost. Better yield attracts the next customer design and adds more volume. The resulting revenue funds new capacity: TSMC spent $40.9 billion on capital equipment in 2025 and plans $52 to $56 billion in 2026.
+- More wafer volume gives TSMC more defect data.
+- More defect data improves yield and lowers cost.
+- Better yield attracts the next customer design and adds more volume.
+- The resulting revenue funds new capacity: TSMC spent $40.9 billion on capital equipment in 2025 and plans $52 to $56 billion in 2026.
 -->
 
 ---
@@ -137,7 +145,9 @@ More wafer volume gives TSMC more defect data. That improves yield and lowers co
 </div>
 
 <!--
-Apple committed enough iPhone volume to make new-node ramps economically viable. Those early wafers gave TSMC defect data, helped yields mature, and spread fixed costs across large production runs. Once a process stabilized, TSMC could offer it to more customers.
+- Apple committed enough iPhone volume to make new-node ramps economically viable.
+- Those early wafers gave TSMC defect data, helped yields mature, and spread fixed costs across large production runs.
+- Once a process stabilized, TSMC could offer it to more customers.
 -->
 
 ---
@@ -159,7 +169,10 @@ TSMC plans no <b>High-NA EUV</b> in production through 2029; it is extending exi
 </div>
 
 <!--
-Node names such as N2 identify process generations rather than a measured feature size. N2 introduced TSMC's first gate-all-around transistor and entered high-volume manufacturing in late 2025. A16 adds backside power, moving power wiring below the transistors, and A14 follows in 2028. TSMC plans to extend current EUV systems without production High-NA EUV through 2029.
+- Node names such as N2 identify process generations rather than a measured feature size.
+- N2 introduced TSMC's first gate-all-around transistor and entered high-volume manufacturing in late 2025.
+- A16 adds backside power, moving power wiring below the transistors, and A14 follows in 2028.
+- TSMC plans to extend current EUV systems without production High-NA EUV through 2029.
 -->
 
 ---
@@ -181,7 +194,9 @@ Node names such as N2 identify process generations rather than a measured featur
 </div>
 
 <!--
-The figures shown are estimates for a processed wafer, not the cost of a finished chip. Per-chip cost depends on die area, usable dies per wafer, yield, packaging, and memory. TSMC's margin expansion shows strong pricing power, although product mix and currency also affect the reported margin.
+- The figures shown are estimates for a processed wafer, not the cost of a finished chip.
+- Per-chip cost depends on die area, usable dies per wafer, yield, packaging, and memory.
+- TSMC's margin expansion shows strong pricing power, although product mix and currency also affect the reported margin.
 -->
 
 ---
@@ -195,7 +210,9 @@ The figures shown are estimates for a processed wafer, not the cost of a finishe
 </div>
 
 <!--
-TSMC supplies an estimated 90 percent of merchant logic at 7nm-class nodes and below. Intel and Samsung also make leading-edge chips, but much of their capacity serves their own products. The exact share depends on whether analysts count internal production, yet merchant customers have few alternatives at the leading edge.
+- TSMC supplies an estimated 90 percent of merchant logic at 7nm-class nodes and below.
+- Intel and Samsung also make leading-edge chips, but much of their capacity serves their own products.
+- The exact share depends on whether analysts count internal production, yet merchant customers have few alternatives at the leading edge.
 -->
 
 ---
@@ -218,7 +235,8 @@ TSMC supplies an estimated 90 percent of merchant logic at 7nm-class nodes and b
 </div>
 
 <!--
-TSMC reported $122 billion in FY2025 revenue, a 59.9 percent gross margin, and 72.3 percent of foundry revenue in Q1 2026, about eleven times Samsung's share. Replacing this capacity would require new fabs, scarce equipment, a full design ecosystem, and years of yield learning, so the estimate exceeds ten years.
+- TSMC reported $122 billion in FY2025 revenue, a 59.9 percent gross margin, and 72.3 percent of foundry revenue in Q1 2026, about eleven times Samsung's share.
+- Replacing this capacity would require new fabs, scarce equipment, a full design ecosystem, and years of yield learning, so the estimate exceeds ten years.
 -->
 
 ---
@@ -236,7 +254,8 @@ title: "TSMC's footprint"
 <div class="visual-sequence__source">Arizona · N4 · Kumamoto / Dresden · mature nodes · Taiwan · N2</div>
 
 <!--
-TSMC's Arizona fab produces N4, while its sites in Japan and Germany focus on mature and specialty nodes. N2 volume production remains in Hsinchu and Kaohsiung, and A14 will start in Taiwan, so overseas fabs add diversity while the newest processes, research base, and largest concentration of engineers stay in Taiwan.
+- TSMC's Arizona fab produces N4, while its sites in Japan and Germany focus on mature and specialty nodes.
+- N2 volume starts in Hsinchu and Kaohsiung and A14 in Taiwan, so overseas fabs add diversity while the newest processes, research base, and largest engineering concentration stay there.
 -->
 
 ---
@@ -253,7 +272,8 @@ This geographic concentration is central to the policy discussion in Part 6.
 </div>
 
 <!--
-TSMC's newest processes remain concentrated in Taiwan, about 130 kilometres from China's coast. Overseas fabs add geographic diversity, but Arizona, Japan, and Germany trail Taiwan in process generation; N2 and future A14 capacity begin on the island, so a disruption there would affect the leading edge first.
+- TSMC's newest processes remain concentrated in Taiwan, about 130 kilometres from China's coast.
+- Arizona, Japan, and Germany add geographic diversity but trail Taiwan in process generation; N2 and future A14 begin there, so disruption would hit the leading edge first.
 -->
 
 ---
@@ -274,5 +294,7 @@ TSMC overtook Intel in process technology around 2020.<br>
 </div>
 
 <!--
-TSMC's customer-neutral model attracts designs. Running more wafers produces more defect data, improves yield, lowers cost, and wins more volume. This feedback loop helped TSMC overtake Intel in process technology around 2020 after Intel had led the industry for about five decades.
+- TSMC's customer-neutral model attracts designs.
+- Running more wafers produces more defect data, improves yield, lowers cost, and wins more volume.
+- This feedback loop helped TSMC overtake Intel in process technology around 2020 after Intel had led the industry for about five decades.
 -->

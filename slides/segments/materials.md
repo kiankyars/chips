@@ -24,7 +24,8 @@ sources: research/materials.md
 ![map: equipment lit](/diagrams/rendered/map-equipment.svg)
 
 <!--
-Fabs buy major equipment at long intervals but consume photoresist, gases, slurries, and other materials every day. Japanese suppliers hold about half of the global semiconductor materials market, even though Japan's share of chip manufacturing has fallen from its 1980s peak.
+- Fabs buy major equipment at long intervals but consume photoresist, gases, slurries, and other materials every day.
+- Japanese suppliers hold about half of the global semiconductor materials market, even though Japan's share of chip manufacturing has fallen from its 1980s peak.
 -->
 
 ---
@@ -53,11 +54,14 @@ Fabs buy major equipment at long intervals but consume photoresist, gases, slurr
 </div>
 
 <div class="text-sm opacity-70 mt-6 text-center">
-Single-crystal silicon is grown in fused-quartz crucibles. <b>Spruce Pine, North Carolina</b>, supplies much of the high-purity quartz used for those crucibles.
+Single-crystal silicon grows in fused-quartz crucibles. <b>Spruce Pine, North Carolina, is a leading global source of the high-purity quartz used to make them.</b>
 </div>
 
 <!--
-Coating consumes photoresist, exposure requires a mask blank, DUV lithography uses neon gas blends, and polishing consumes slurry and pads. Japanese companies supply about 90 percent of photoresist and Hoya plus AGC supply about 93 percent of EUV mask blanks. Fabs can spend one to two years qualifying a replacement chemical, so changing suppliers takes time.
+- Coating consumes photoresist, exposure requires a mask blank, DUV lithography uses neon gas blends, and polishing consumes slurry and pads.
+- Japanese companies supply about 90 percent of photoresist and Hoya plus AGC supply about 93 percent of EUV mask blanks.
+- Spruce Pine, North Carolina, is a leading source of high-purity quartz for silicon-growing crucibles.
+- Replacement chemicals can take one to two years to qualify.
 -->
 
 ---
@@ -75,7 +79,10 @@ title: "Material shocks"
 <div class="visual-sequence__source">Japan–Korea · 2019 · Ukraine neon · 2022 · Spruce Pine quartz · 2024</div>
 
 <!--
-Japan restricted three semiconductor materials sold to South Korea in 2019, and Korean manufacturers responded by qualifying local and third-country suppliers. Russia's invasion of Ukraine disrupted a large share of semiconductor-grade neon in 2022, prompting stockpiling and new capacity. Hurricane Helene closed Spruce Pine quartz mines in 2024, but they restarted within weeks. Each shock accelerated supplier diversification.
+- Japan restricted three semiconductor materials sold to South Korea in 2019, and Korean manufacturers responded by qualifying local and third-country suppliers.
+- Russia's invasion of Ukraine disrupted a large share of semiconductor-grade neon in 2022, prompting stockpiling and new capacity.
+- Hurricane Helene closed Spruce Pine quartz mines in 2024, but they restarted within weeks.
+- Each shock accelerated supplier diversification.
 -->
 
 ---
@@ -99,7 +106,8 @@ No public source allocates those costs per GB300.
 </div>
 
 <!--
-A blank 300 millimetre wafer costs about $150, while industry estimates put a processed 3nm wafer near $19,500; the gap combines equipment depreciation, consumed materials, labor, overhead, and foundry margin. Public reporting does not separate those components for a specific accelerator.
+- A blank 300 millimetre wafer costs about $150; industry estimates put processed 3nm wafers near $19,500, including equipment, materials, labor, overhead, and foundry margin.
+- Public reporting does not separate those components for a specific accelerator.
 -->
 
 ---
@@ -116,5 +124,6 @@ use large numbers of mature-node chips.
 </div>
 
 <!--
-Most chips use mature nodes because analog, power, and embedded-control functions benefit from low cost, voltage handling, proven reliability, and long qualification histories. These fabs skip EUV, but they still depend on ultrapure silicon wafers, photoresist, specialty gases, wet chemicals, and polishing consumables.
+- Most chips use mature nodes because analog, power, and embedded-control functions benefit from low cost, voltage handling, proven reliability, and long qualification histories.
+- These fabs skip EUV, but they still depend on ultrapure silicon wafers, photoresist, specialty gases, wet chemicals, and polishing consumables.
 -->

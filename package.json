@@ -6,6 +6,7 @@
     "dev": "slidev slides.md --open",
     "diagrams": "node diagrams/src/generate.mjs",
     "build": "slidev build slides.md",
+    "build:pages": "slidev build slides.md --base /chips/",
     "export": "slidev export slides.md",
     "check": "npm run diagrams && node scripts/check-course.mjs && npm run build"
   },

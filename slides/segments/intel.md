@@ -24,7 +24,9 @@ sources: research/intel.md
 <img src="/diagrams/rendered/map-manufacture.svg" class="h-44 mx-auto mt-8 opacity-80" alt="master map — manufacturing region lit" />
 
 <!--
-Intel once led both processor design and leading-edge manufacturing. Delays at 10nm, missed shifts toward mobile and AI, and weak foundry economics cost the company that position. Its recovery now depends on 18A yield and outside customers.
+- Intel once led both processor design and leading-edge manufacturing.
+- Delays at 10nm, missed shifts toward mobile and AI, and weak foundry economics cost the company that position.
+- Its recovery now depends on 18A yield and outside customers.
 -->
 
 ---
@@ -44,7 +46,9 @@ Intel reached a $500B market cap in August 2000 and did not surpass it for 26 ye
 </div>
 
 <!--
-Noyce and Moore founded Intel in 1968, and the company built early success in DRAM before leaving memory in 1985. The IBM PC made x86 dominant, while Intel's alternating process and architecture releases set the industry's pace. At its peak, Intel supplied about 99 percent of data-center CPUs.
+- Noyce and Moore founded Intel in 1968, and the company built early success in DRAM before leaving memory in 1985.
+- The IBM PC made x86 dominant, while Intel's alternating process and architecture releases set the industry's pace.
+- At its peak, Intel supplied about 99 percent of data-center CPUs.
 -->
 
 ---
@@ -63,7 +67,9 @@ On July 24, 2020, Intel announced another 7 nm delay; its shares fell 16% that d
 </div>
 
 <!--
-Intel targeted a 2.7-fold density gain at 10nm without EUV, using a complex multi-patterning process instead. The node reached volume years late and kept desktop processors on 14nm for about seven years. During that delay, TSMC shipped N7, N7+ with EUV, and N5.
+- Intel targeted a 2.7-fold density gain at 10nm without EUV, using a complex multi-patterning process instead.
+- The node reached volume years late and kept desktop processors on 14nm for about seven years.
+- During that delay, TSMC shipped N7, N7+ with EUV, and N5.
 -->
 
 ---
@@ -81,7 +87,8 @@ title: "Intel's missed shifts"
 <div class="visual-sequence__source">iPhone · Apple M1 · AWS Graviton · Nvidia data center</div>
 
 <!--
-Demand shifted toward phones, Arm processors, cloud chips, and AI accelerators while Intel defended its x86 franchise. Apple moved Macs to its own Arm designs, AWS expanded Graviton, AMD recovered server share, and Nvidia captured the fastest-growing data-center workload.
+- Demand shifted toward phones, Arm processors, cloud chips, and AI accelerators while Intel defended its x86 franchise.
+- Apple moved Macs to its own Arm designs, AWS expanded Graviton, AMD recovered server share, and Nvidia captured the fastest-growing data-center workload.
 -->
 
 ---
@@ -98,7 +105,8 @@ Demand shifted toward phones, Arm processors, cloud chips, and AI accelerators w
 </div>
 
 <!--
-The loss forced Intel to suspend its dividend and redirect cash toward manufacturing recovery. Large workforce cuts and repeated leadership changes showed that investors no longer viewed the problem as a normal semiconductor downturn.
+- The loss forced Intel to suspend its dividend and redirect cash toward manufacturing recovery.
+- Large workforce cuts and repeated leadership changes showed that investors no longer viewed the problem as a normal semiconductor downturn.
 -->
 
 ---
@@ -124,7 +132,10 @@ The loss forced Intel to suspend its dividend and redirect cash toward manufactu
 </div>
 
 <!--
-Intel's 18A process combines RibbonFET transistors with backside power delivery and now ships Panther Lake and Clearwater Forest products. Good-die yield began near 20 to 25 percent, so economics depend on the ramp toward industry-standard yield. External foundry revenue remained $174 million in Q1 2026. Cumulative foundry losses since 2023 reached about $33 billion.
+- Intel's 18A process combines RibbonFET transistors with backside power delivery and now ships Panther Lake and Clearwater Forest products.
+- Good-die yield began near 20 to 25 percent, so economics depend on the ramp toward industry-standard yield.
+- External foundry revenue remained $174 million in Q1 2026.
+- Cumulative foundry losses since 2023 reached about $33 billion.
 -->
 
 ---
@@ -142,7 +153,9 @@ title: "Intel 14A"
 <div class="visual-sequence__source">US government · $8.9B · SoftBank · $2B · Nvidia · $5B</div>
 
 <!--
-The US government, SoftBank, and Nvidia invested a combined $15.9 billion in Intel. That capital supports the manufacturing program, but Intel still lacks a named external anchor order for 14A. A foundry needs customer volume as well as financing to sustain a new leading-edge node.
+- The US government, SoftBank, and Nvidia invested a combined $15.9 billion in Intel.
+- That capital supports the manufacturing program, but Intel still lacks a named external anchor order for 14A.
+- A foundry needs customer volume as well as financing to sustain a new leading-edge node.
 -->
 
 ---
@@ -165,5 +178,7 @@ TSMC, Samsung, and Intel are the only companies currently producing leading-edge
 </div>
 
 <!--
-Intel remains the sole US-owned company manufacturing leading-edge logic at home, with $52.9 billion in 2025 revenue and about 70 percent of the PC CPU market. TSMC, Samsung, and Intel are the three companies producing leading-edge logic at commercial scale. Intel's position now depends on 18A yield and foundry demand.
+- Intel remains the sole US-owned company manufacturing leading-edge logic at home, with $52.9 billion in 2025 revenue and about 70 percent of the PC CPU market.
+- TSMC, Samsung, and Intel are the three companies producing leading-edge logic at commercial scale.
+- Intel's position now depends on 18A yield and foundry demand.
 -->

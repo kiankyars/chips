@@ -39,9 +39,18 @@ for (const file of markdownFiles) {
     if (!note || note.startsWith('SEGMENT'))
       continue
     speakerNoteCount++
-    const wordCount = note.split(/\s+/).filter(Boolean).length
-    if (/^\s*-\s/m.test(note))
-      failures.push(`${basename(file)} contains bullet-form speaker notes`)
+    const lines = note.split('\n').map(line => line.trim()).filter(Boolean)
+    const bulletTexts = lines.map(line => line.replace(/^-\s+/, ''))
+    const wordCount = bulletTexts.join(' ').split(/\s+/).filter(Boolean).length
+    if (lines.length < 2 || lines.length > 4)
+      failures.push(`${basename(file)} speaker note must contain 2-4 bullets (${lines.length} found)`)
+    if (lines.some(line => !/^-\s+\S/.test(line)))
+      failures.push(`${basename(file)} contains a non-bullet speaker-note line`)
+    for (const bullet of bulletTexts) {
+      const bulletWordCount = bullet.split(/\s+/).filter(Boolean).length
+      if (bulletWordCount > 28)
+        failures.push(`${basename(file)} speaker-note bullet exceeds 28 words (${bulletWordCount})`)
+    }
     if (/\[[^\]]+\]/.test(note))
       failures.push(`${basename(file)} exposes bracketed source notation in speaker notes`)
     if (/<(?:h[1-6]|details|summary)\b/i.test(note))
@@ -52,8 +61,8 @@ for (const file of markdownFiles) {
       failures.push(`${basename(file)} contains multi-paragraph speaker notes`)
     if (note.includes('—'))
       failures.push(`${basename(file)} contains an em dash in speaker notes`)
-    if (wordCount > 90)
-      failures.push(`${basename(file)} speaker note exceeds 90 words (${wordCount})`)
+    if (wordCount > 75)
+      failures.push(`${basename(file)} speaker note exceeds 75 words (${wordCount})`)
   }
 }
 

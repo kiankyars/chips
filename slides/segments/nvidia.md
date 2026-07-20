@@ -36,7 +36,8 @@ Manufacturing comes later.
 ![journey bar — DESIGN active](/diagrams/rendered/journey-2.svg)
 
 <!--
-Nvidia defines the accelerator architecture and software in Santa Clara, then sends the completed design into a manufacturing chain of foundries, memory suppliers, and packaging companies. Those partners turn Nvidia’s file into the silicon and package shown on this journey.
+- Nvidia defines the accelerator architecture and software in Santa Clara, then sends the completed design into a manufacturing chain of foundries, memory suppliers, and packaging companies.
+- Those partners turn Nvidia’s file into the silicon and package shown on this journey.
 -->
 
 ---
@@ -61,7 +62,9 @@ Neural-network workloads rely heavily on matrix multiplication, which GPUs divid
 </div>
 
 <!--
-A server CPU uses dozens of complex cores to handle serial work and branches with low latency. A GPU uses thousands of smaller cores to apply the same operation across many data elements. Neural networks rely on matrix multiplication, so GPUs can divide that work across their cores.
+- A server CPU uses dozens of complex cores to handle serial work and branches with low latency.
+- A GPU uses thousands of smaller cores to apply the same operation across many data elements.
+- Neural networks rely on matrix multiplication, so GPUs can divide that work across their cores.
 -->
 
 ---
@@ -95,7 +98,9 @@ A server CPU uses dozens of complex cores to handle serial work and branches wit
 </div>
 
 <!--
-GB300 joins two near-reticle-limit compute dies because one exposure cannot print a larger die. Eight stacks of high-bandwidth memory, or HBM, sit beside them and deliver 8 terabytes per second. That feed keeps 20,480 compute cores supplied with operands instead of leaving the arithmetic units idle.
+- GB300 joins two near-reticle-limit compute dies because one exposure cannot print a larger die.
+- Eight stacks of high-bandwidth memory, or HBM, sit beside them and deliver 8 terabytes per second.
+- HBM's bandwidth keeps 20,480 compute cores supplied with operands instead of leaving the arithmetic units idle.
 -->
 
 ---
@@ -127,7 +132,10 @@ GB300 joins two near-reticle-limit compute dies because one exposure cannot prin
 </div>
 
 <!--
-CUDA let developers use Nvidia GPUs for general-purpose computing in 2006. AlexNet demonstrated their value for deep learning in 2012. Nvidia expanded the platform through libraries, tools, and DGX systems. More than four million registered developers rely on about twenty years of accumulated software.
+- CUDA let developers use Nvidia GPUs for general-purpose computing in 2006.
+- AlexNet demonstrated their value for deep learning in 2012.
+- Nvidia expanded the platform through libraries, tools, and DGX systems.
+- More than four million registered developers rely on about twenty years of accumulated software.
 -->
 
 ---
@@ -145,7 +153,9 @@ CUDA switching costs, market share, and high-value systems support Nvidia's marg
 </div>
 
 <!--
-Nvidia’s gross margin is about 75 percent, above the 40 to 50 percent range common among chipmakers. CUDA raises switching costs, while Nvidia’s accelerator share and integrated networking systems support pricing. The margin applies across the company, so it does not describe the economics of every product.
+- Nvidia’s gross margin is about 75 percent, above the 40 to 50 percent range common among chipmakers.
+- CUDA raises switching costs, while Nvidia’s accelerator share and integrated networking systems support pricing.
+- The margin applies across the company, so it does not describe the economics of every product.
 -->
 
 ---
@@ -163,7 +173,8 @@ title: "Fabless"
 <div class="visual-sequence__source">GPU dies + packaging · TSMC · HBM · SK hynix / Micron / Samsung</div>
 
 <!--
-Nvidia supplies the design and software; TSMC fabricates the compute dies and assembles the package; SK hynix, Micron, or Samsung supplies the HBM. A completed accelerator depends on several manufacturers even though Nvidia controls the product.
+- Nvidia supplies the design and software; TSMC fabricates the compute dies and assembles the package; SK hynix, Micron, or Samsung supplies the HBM.
+- A completed accelerator depends on several manufacturers even though Nvidia controls the product.
 -->
 
 ---
@@ -182,7 +193,9 @@ Nvidia supplies the design and software; TSMC fabricates the compute dies and as
 </div>
 
 <!--
-Nvidia reported $215.9 billion of FY2026 revenue and a gross margin near 75 percent. It holds about 90 percent of AI accelerator revenue, supported by twenty years of CUDA libraries and developer adoption. Replacing the hardware is easier than rebuilding the software ecosystem and supply relationships.
+- Nvidia reported $215.9 billion of FY2026 revenue and a gross margin near 75 percent.
+- Nvidia holds about 90 percent of AI accelerator revenue, supported by twenty years of CUDA libraries and developer adoption.
+- Replacing the hardware is easier than rebuilding the software ecosystem and supply relationships.
 -->
 
 ---
@@ -202,5 +215,7 @@ The next sections trace foundry, memory, packaging, and equipment costs.
 </div>
 
 <!--
-The gray portion combines several kinds of cost rather than one supplier invoice. TSMC fabricates the logic dies and performs advanced packaging; memory makers supply HBM; equipment and materials costs are embedded in those manufacturing prices. Nvidia also includes networking, boards, cooling, and system assembly in cost of revenue.
+- The gray portion combines several kinds of cost rather than one supplier invoice.
+- TSMC fabricates the logic dies and performs advanced packaging; memory makers supply HBM; equipment and materials costs are embedded in those manufacturing prices.
+- Nvidia also includes networking, boards, cooling, and system assembly in cost of revenue.
 -->

@@ -29,7 +29,9 @@ sources: research/foundations.md, research/tsmc.md
 <div class="visual-sequence__source">Leading-edge fab cost · ~$4M → $20B+</div>
 
 <!--
-For decades, one company designed a chip, owned the fab, and sold the finished product. The foundry model separated those jobs: designers could hire manufacturing capacity, while the fab pooled demand from many customers. That split created modern fabless designers and pure-play foundries.
+- For decades, one company designed a chip, owned the fab, and sold the finished product.
+- The foundry model separated those jobs: designers could hire manufacturing capacity, while the fab pooled demand from many customers.
+- That split created modern fabless designers and pure-play foundries.
 -->
 
 ---
@@ -57,7 +59,9 @@ For decades, one company designed a chip, owned the fab, and sold the finished p
 </div>
 
 <!--
-Each process generation requires new buildings, tools, and process development before a sellable chip appears. As that upfront risk grew, many firms left leading-edge manufacturing and became fabless or stayed on older nodes. Three companies still finance the newest logic processes.
+- Each process generation requires new buildings, tools, and process development before a sellable chip appears.
+- As that upfront risk grew, many firms left leading-edge manufacturing and became fabless or stayed on older nodes.
+- Three companies still finance the newest logic processes.
 -->
 
 ---
@@ -81,7 +85,10 @@ In the 1980s, major chip companies usually designed and manufactured under one r
 </div>
 
 <!--
-A $20 billion fab needs a steady stream of wafers to keep its tools busy. High utilization spreads the fixed costs across enough output. Few product lines supply that volume on their own. A foundry makes the investment economic by pooling orders from many chip designers.
+- A $20 billion fab needs a steady stream of wafers to keep its tools busy.
+- High utilization spreads the fixed costs across enough output.
+- Few product lines supply that volume on their own.
+- A foundry makes the investment economic by pooling orders from many chip designers.
 -->
 
 ---
@@ -109,7 +116,9 @@ TSMC offered dedicated foundry capacity<br>
 </div>
 
 <!--
-Morris Chang founded TSMC in 1987 at age 56, with Taiwan’s government and Philips supplying most initial capital. TSMC manufactured designs for outside customers and promised not to sell competing chips of its own. That neutrality gave customers confidence to share their layouts and supplied the fab with demand from many designers.
+- Morris Chang founded TSMC in 1987 at age 56, with Taiwan’s government and Philips supplying most initial capital.
+- TSMC manufactured designs for outside customers and promised not to sell competing chips of its own.
+- That neutrality gave customers confidence to share their layouts and supplied the fab with demand from many designers.
 -->
 
 ---
@@ -140,7 +149,8 @@ These models separate chip design, manufacturing, and equipment supply.
 </div>
 
 <!--
-Rising fab costs produced four business models: fabless companies avoid factory ownership, foundries pool many customers, and integrated device manufacturers, or IDMs, keep design and production together at sufficient scale. Equipment companies sell the specialized tools that manufacturers need, regardless of which chip design wins.
+- Rising fab costs produced four models: fabless firms avoid factories, foundries pool customers, and integrated device manufacturers, or IDMs, keep design and production together.
+- Equipment companies sell the specialized tools that manufacturers need, regardless of which chip design wins.
 -->
 
 ---
@@ -156,5 +166,7 @@ The colors identify the four business models.
 </div>
 
 <!--
-The accelerator begins with Nvidia’s design and EDA tools, then TSMC fabricates the logic dies. SK hynix, Micron, or Samsung supplies the HBM; TSMC packages the logic and memory together; system builders install the package in a rack. Equipment and materials companies support each manufacturing step behind that path.
+- The accelerator begins with Nvidia’s design and EDA tools, then TSMC fabricates the logic dies.
+- SK hynix, Micron, or Samsung supplies the HBM; TSMC packages the logic and memory together; system builders install the package in a rack.
+- Equipment and materials companies support each manufacturing step behind that path.
 -->

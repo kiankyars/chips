@@ -24,7 +24,8 @@ sources: research/idm-analog.md
 ![](/diagrams/rendered/map-manufacture.svg)
 
 <!--
-Most semiconductors do not use the newest process node. Analog chips, microcontrollers, and power devices often favor mature processes because those nodes offer proven reliability, lower cost, and the stable high-voltage handling their applications require.
+- Most semiconductors do not use the newest process node.
+- Analog chips, microcontrollers, and power devices often favor mature processes because those nodes offer proven reliability, lower cost, and the stable high-voltage handling their applications require.
 -->
 
 ---
@@ -52,7 +53,8 @@ AI accelerators and memory drove most 2025 growth; analog grew 7%.
 </div>
 
 <!--
-The global chip market reached about $772 billion in 2025, while analog and microcontrollers accounted for about $90 billion and $30 billion. Many of these products use 15- to 40-year-old process nodes and need neither EUV nor the newest fab equipment.
+- The global chip market reached about $772 billion in 2025, while analog and microcontrollers accounted for about $90 billion and $30 billion.
+- Many of these products use 15- to 40-year-old process nodes and need neither EUV nor the newest fab equipment.
 -->
 
 ---
@@ -70,7 +72,9 @@ title: "The 2021 shortage"
 <div class="visual-sequence__source">2021 · 7.7M fewer vehicles · ~$210B lost auto revenue</div>
 
 <!--
-Automakers lost access to inexpensive mature-node controllers during the 2021 shortage. A missing chip worth cents could stop completion of a $40,000 vehicle. The industry produced about 7.7 million fewer vehicles and lost an estimated $210 billion in revenue.
+- Automakers lost access to inexpensive mature-node controllers during the 2021 shortage.
+- A missing chip worth cents could stop completion of a $40,000 vehicle.
+- The industry produced about 7.7 million fewer vehicles and lost an estimated $210 billion in revenue.
 -->
 
 ---
@@ -88,7 +92,8 @@ title: "Mature analog economics"
 <div class="visual-sequence__source">Texas Instruments · mature analog · 180–45 nm</div>
 
 <!--
-Texas Instruments builds mature analog chips on 300mm wafers across nodes from about 180nm to 45nm. The larger wafer fits more dies and reduces handling per chip, cutting the company's unpackaged-chip cost by about 40 percent compared with 200mm production.
+- Texas Instruments builds mature analog chips on 300mm wafers across nodes from about 180nm to 45nm.
+- The larger wafer fits more dies and reduces handling per chip, cutting the company's unpackaged-chip cost by about 40 percent compared with 200mm production.
 -->
 
 ---
@@ -106,7 +111,9 @@ title: "The chips inside everything else"
 <div class="visual-sequence__source">TI · Infineon · STMicro · NXP · Renesas · Analog Devices</div>
 
 <!--
-Cars, factories, appliances, and medical equipment combine many specialized chips rather than relying on one processor. Analog chips measure real-world signals, power semiconductors control electricity, and microcontrollers run local tasks. TI, Infineon, STMicro, NXP, Renesas, and Analog Devices supply much of this market.
+- Cars, factories, appliances, and medical equipment combine many specialized chips rather than relying on one processor.
+- Analog chips measure real-world signals, power semiconductors control electricity, and microcontrollers run local tasks.
+- TI, Infineon, STMicro, NXP, Renesas, and Analog Devices supply much of this market.
 -->
 
 ---
@@ -119,5 +126,7 @@ to keep its cores supplied with data.
 </div>
 
 <!--
-A processor performs work when memory delivers instructions and data. After fabrication, an accelerator still needs nearby high-bandwidth memory to keep thousands of compute units active. That requirement moves the supply chain from mature devices and logic into memory production.
+- A processor performs work when memory delivers instructions and data.
+- After fabrication, an accelerator still needs nearby high-bandwidth memory to keep thousands of compute units active.
+- That requirement moves the supply chain from mature devices and logic into memory production.
 -->

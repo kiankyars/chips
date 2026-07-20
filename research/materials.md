@@ -140,10 +140,13 @@ requalification cycles. Japan quietly owns most of this layer.
 - The CZ crucible that holds molten silicon must itself be ultra-pure fused
   quartz — impurities leach straight into the melt. The feedstock:
   **high-purity quartz (HPQ)**.
-- **Spruce Pine, North Carolina** (a town of a few thousand) supplies
-  **~70–90% of the world's high-purity quartz** from a freak 380-million-year-old
-  pegmatite deposit. Two companies mine it: **Sibelco** (Belgium) and **The
-  Quartz Corp** (Imerys/Norsk Mineral JV). [33][34]
+- **Spruce Pine, North Carolina** hosts both U.S. producers of high-purity
+  quartz. USGS estimates that the United States leads global HPQ production but
+  does not publish country shares; it also lists sources in Australia, Brazil,
+  Canada, China, India, and Russia. [48]
+- Sibelco mines its IOTA quartz from two Spruce Pine ore bodies and identifies
+  fused-quartz crucibles for Czochralski silicon growth as a semiconductor use.
+  [49]
 - **Hurricane Helene, Sept 26–27, 2024**: the town was devastated and both
   operations shut down — global headlines about chipmaking grinding to a halt.
   [33] Reality: recovery was fast. Sibelco restarted production ~2 weeks later
@@ -200,10 +203,9 @@ requalification cycles. Japan quietly owns most of this layer.
   insulating film made by Ajinomoto — the Japanese seasoning company — which
   holds ~95% of the market. Your chip is packaged by the people who invented
   MSG. [38][39]
-- **One town**: Spruce Pine, NC — population a few thousand — supplies
-  ~70–90% of the world's high-purity quartz. No Spruce Pine, no crucibles; no
-  crucibles, no silicon. A hurricane in Appalachia made TSMC check its
-  inventory. [33][34]
+- **One town**: Spruce Pine, NC hosts both U.S. high-purity-quartz producers,
+  and USGS estimates that the United States leads global production. HPQ has no
+  economic substitute for most uses, including fused-quartz crucibles. [48]
 - **Eleven nines**: wafer-grade silicon is 99.999999999% pure — about one
   foreign atom per hundred billion. It is routinely called the purest material
   humans mass-produce. [8][9]
@@ -268,3 +270,5 @@ requalification cycles. Japan quietly owns most of this layer.
 45. Mordor Intelligence, Specialty Gas Market (top-5 ~55–70% of high-purity gas) — https://www.mordorintelligence.com/industry-reports/specialty-gas-market
 46. Market Research Future, Electronic Specialty Gases Market ($15.98B 2024) — https://www.marketresearchfuture.com/reports/electronic-specialty-gases-market-39391
 47. Digitimes, "Shinko Electric to delist in June…" (Mar 2025) — https://www.digitimes.com/news/a20250321PD206/shinko-electric-mitsui-chemicals-materials-partnership-fujitsu.html
+48. USGS, *Mineral Commodity Summaries 2024: Quartz (High-Purity and Industrial Cultured Crystal)* (Spruce Pine production, crucible use, global sources, and substitutes) — https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-quartz.pdf
+49. Sibelco, "High Purity Quartz" (Spruce Pine IOTA ore bodies and fused-quartz crucibles for the CZ process) — https://www.sibelco.com/en/materials/high-purity-quartz

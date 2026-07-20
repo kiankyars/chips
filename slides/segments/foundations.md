@@ -24,7 +24,9 @@ sources: research/foundations.md
 ![journey](/diagrams/rendered/journey-1.svg)
 
 <!--
-An accelerator starts as a design file. A foundry prints that design into logic dies, memory makers build high-bandwidth memory stacks, and a packager joins the dies and memory on one substrate. Manufacturers then install completed accelerators into liquid-cooled racks for the data center.
+- An accelerator starts as a design file.
+- A foundry prints that design into logic dies, memory makers build high-bandwidth memory stacks, and a packager joins the dies and memory on one substrate.
+- Manufacturers then install completed accelerators into liquid-cooled racks for the data center.
 -->
 
 ---
@@ -35,14 +37,17 @@ title: "The basic switch"
 <div class="visual-sequence__kicker">THE BASIC SWITCH</div>
 
 <div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/transistor-switch-v2.png" alt="A transistor shown with its gate off and on; gate voltage opens a channel from source to drain" />
+  <img src="/diagrams/rendered/transistor-switch-v2.png" alt="An n-type MOSFET shown off and on; positive gate voltage opens an electron channel from source to drain" />
 </div>
 
-<div class="visual-sequence__caption"><strong>Gate voltage</strong><span>opens a channel from source to drain.</span></div>
-<div class="visual-sequence__source">One switching element · repeated ~200B times</div>
+<div class="visual-sequence__caption"><strong>n-type</strong><span>Positive gate voltage opens the channel; p-type uses the opposite polarity.</span></div>
+<div class="visual-sequence__source">n-type: electrons · p-type: holes · CMOS pairs both</div>
 
 <!--
-A transistor uses voltage at the gate to control current between source and drain: with no gate voltage the channel closes, and with voltage it opens. Modern chips repeat this switching element hundreds of billions of times to build logic.
+- This diagram shows an n-type MOSFET: positive gate-to-source voltage creates an electron channel between source and drain.
+- A p-type MOSFET uses holes as carriers and switches with the opposite gate polarity.
+- CMOS pairs both types so one path is normally off, reducing static current.
+- Modern chips repeat these complementary switches hundreds of billions of times.
 -->
 
 ---
@@ -69,7 +74,8 @@ A transistor uses voltage at the gate to control current between source and drai
 <div class="text-sm opacity-50 mt-6 text-center">Cerebras WSE-3 (2024): 4 trillion transistors on one wafer-sized chip — ~50× an H100.</div>
 
 <!--
-The same basic switch scales from a chip you could count in 38 minutes to one that would take more than 10,000 years at one transistor per second. That 146-million-fold increase gives designers enough circuitry for parallel arithmetic, memory control, and data movement on one accelerator package.
+- Counting one transistor per second would take 38 minutes for the first chip and more than 10,000 years for the second.
+- That 146-million-fold increase gives designers enough circuitry for parallel arithmetic, memory control, and data movement on one accelerator package.
 -->
 
 ---
@@ -99,7 +105,8 @@ A regular grid of identical cells stores data. Different companies fabricate it 
 <div class="text-sm opacity-60 mt-8 text-center">Both use silicon, but they require different circuit structures, processes, and suppliers.</div>
 
 <!--
-Logic uses custom transistor networks to perform arithmetic and control, while memory uses regular arrays of cells to retain data. An accelerator needs both, but companies fabricate them with different processes and place the memory beside the logic dies.
+- Logic uses custom transistor networks to perform arithmetic and control, while memory uses regular arrays of cells to retain data.
+- An accelerator needs both, but companies fabricate them with different processes and place the memory beside the logic dies.
 -->
 
 ---
@@ -126,7 +133,8 @@ Logic uses custom transistor networks to perform arithmetic and control, while m
 <div class="text-sm opacity-60 mt-10 text-center">Node names stopped matching a physical dimension in the late 1990s. They now distinguish process generations.</div>
 
 <!--
-Node names identify process generations: TSMC N3, for example, has a gate pitch near 45 nm and a tightest metal pitch near 23 nm. Each generation targets better power, performance, and area, though gains depend on the design.
+- Node names identify process generations: TSMC N3, for example, has a gate pitch near 45 nm and a tightest metal pitch near 23 nm.
+- Each generation targets better power, performance, and area, though gains depend on the design.
 -->
 
 ---
@@ -145,7 +153,10 @@ title: "Transistor geometry · 1 / 3"
 <div class="visual-sequence__source">Leading-edge transition to FinFETs began · 2011</div>
 
 <!--
-Amber is the channel, blue is the gate, and cyan marks their interface. A planar gate controls the channel from above. As the channel shrinks, current leaks when the switch is off. FinFETs and gate-all-around designs control more of the channel surface.
+- Amber is the channel, blue is the gate, and cyan marks their interface.
+- A planar gate controls the channel from above.
+- As the channel shrinks, current leaks when the switch is off.
+- FinFETs and gate-all-around designs control more of the channel surface.
 -->
 
 ---
@@ -164,7 +175,8 @@ title: "Transistor geometry · 2 / 3"
 <div class="visual-sequence__source">Intel 22nm announcement · 2011</div>
 
 <!--
-A FinFET raises the channel into a vertical fin so the gate controls the top and both sides, improving control over a short channel and reducing leakage. Intel announced its 22 nm FinFET in 2011 and shipped it in Ivy Bridge the following year.
+- A FinFET raises the channel into a vertical fin so the gate controls the top and both sides, improving control over a short channel and reducing leakage.
+- Intel announced its 22 nm FinFET in 2011 and shipped it in Ivy Bridge the following year.
 -->
 
 ---
@@ -183,7 +195,8 @@ title: "Transistor geometry · 3 / 3"
 <div class="visual-sequence__source">Samsung 3nm production · 2022</div>
 
 <!--
-A gate-all-around transistor divides the fin into stacked nanosheets and surrounds the top, bottom, and sides of each sheet with gate material, giving tighter control as channels shrink. Samsung began 3 nm production with this geometry in 2022.
+- A gate-all-around transistor divides the fin into stacked nanosheets and surrounds the top, bottom, and sides of each sheet with gate material, giving tighter control as channels shrink.
+- Samsung began 3 nm production with this geometry in 2022.
 -->
 
 ---
@@ -201,7 +214,9 @@ title: "Yield"
 <div class="visual-sequence__source">First-order yield model · e<sup>−A·D₀</sup></div>
 
 <!--
-A stray particle or process defect can ruin the die beneath it. Larger dies cover more wafer area, so they encounter defects more often and produce fewer working chips per wafer. Accelerator designers split large designs into chiplets to improve yield, then reconnect the smaller dies inside one package.
+- A stray particle or process defect can ruin the die beneath it.
+- Larger dies cover more wafer area, so they encounter defects more often and produce fewer working chips per wafer.
+- Accelerator designers split large designs into chiplets to improve yield, then reconnect the smaller dies inside one package.
 -->
 
 ---
@@ -219,7 +234,9 @@ title: "The power wall"
 <div class="visual-sequence__source">Pentium 4 · ~3.8 GHz · 2004</div>
 
 <!--
-Until the mid-2000s, shrinking transistors allowed clock speeds to rise without a matching increase in power. Leakage broke that relationship, and processor clocks stalled around the Pentium 4’s 3.8 GHz level. Designers continued adding transistors by building more cores, which made parallel processors such as GPUs more important.
+- Until the mid-2000s, shrinking transistors allowed clock speeds to rise without a matching increase in power.
+- Leakage broke that relationship, and processor clocks stalled around the Pentium 4’s 3.8 GHz level.
+- Designers continued adding transistors by building more cores, which made parallel processors such as GPUs more important.
 -->
 
 ---
@@ -270,5 +287,7 @@ Until the mid-2000s, shrinking transistors allowed clock speeds to rise without 
 <div class="text-sm opacity-60 mt-6 text-center">As fab costs rose, the number of leading-edge manufacturers fell from roughly 25 to three.</div>
 
 <!--
-A leading-edge fab cost about $4 million in the early 1970s and more than $20 billion today, an increase of about 5,000 times. Rock’s law describes a doubling about every four years. As the investment rose, the number of companies operating at the leading edge fell from about 25 to three.
+- A leading-edge fab cost about $4 million in the early 1970s and more than $20 billion today, an increase of about 5,000 times.
+- Rock’s law describes a doubling about every four years.
+- As the investment rose, the number of companies operating at the leading edge fell from about 25 to three.
 -->

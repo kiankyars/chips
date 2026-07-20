@@ -31,7 +31,8 @@ fonts:
 </div>
 
 <!--
-This course follows one GB300-class AI accelerator from design file to installed rack. Each step reveals the companies, tools, and materials required to build it.
+- This course follows one GB300-class AI accelerator from design file to installed rack.
+- Each step reveals the companies, tools, and materials required to build it.
 -->
 
 ---

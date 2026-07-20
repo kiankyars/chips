@@ -24,7 +24,9 @@ sources: research/eda.md
 ![industry map — design region lit](/diagrams/rendered/map-design.svg)
 
 <!--
-Electronic design automation, or EDA, is the software engineers use to turn a chip specification into a manufacturable layout. A modern accelerator contains hundreds of billions of transistors and many layers of wiring, far beyond what a team could place and check by hand. The design reaches the foundry as a file.
+- Electronic design automation, or EDA, is the software engineers use to turn a chip specification into a manufacturable layout.
+- A modern accelerator contains hundreds of billions of transistors and many layers of wiring, far beyond what a team could place and check by hand.
+- The design reaches the foundry as a file.
 -->
 
 ---
@@ -42,7 +44,10 @@ title: "Electronic design automation"
 <div class="visual-sequence__source">2 nm-class design estimate · ~$724M before manufacturing</div>
 
 <!--
-Engineers start with register-transfer-level code, or RTL, which describes data movement and chip operations. EDA tools translate that behavior into logic gates. They choose physical locations, connect the wiring, and check the layout against electrical and foundry rules. Engineers repeat verification throughout the flow.
+- Engineers start with register-transfer-level code, or RTL, which describes data movement and chip operations.
+- EDA tools translate that behavior into logic gates.
+- EDA tools choose physical locations, connect the wiring, and check the layout against electrical and foundry rules.
+- Engineers repeat verification throughout the flow.
 -->
 
 ---
@@ -73,7 +78,9 @@ Engineers start with register-transfer-level code, or RTL, which describes data 
 </div>
 
 <!--
-Synopsys specializes in digital synthesis and implementation, while Cadence is strong in analog design and hardware emulation. Siemens EDA’s Calibre checks the finished layout against the foundry’s geometric and manufacturing rules before tape-out. A chip designed in one vendor’s tools may still pass through another vendor’s final check.
+- Synopsys specializes in digital synthesis and implementation, while Cadence is strong in analog design and hardware emulation.
+- Siemens EDA’s Calibre checks the finished layout against the foundry’s geometric and manufacturing rules before tape-out.
+- A chip designed in one vendor’s tools may still pass through another vendor’s final check.
 -->
 
 ---
@@ -109,7 +116,8 @@ Synopsys specializes in digital synthesis and implementation, while Cadence is s
 </div>
 
 <!--
-The EDA market generated about $21 billion in 2025 while supporting $792 billion in semiconductor sales, and Synopsys and Cadence each hold about 30 percent of that market. Foundry certification and years of tool development make a leading-edge replacement about a 15-year project.
+- The EDA market generated about $21 billion in 2025 while supporting $792 billion in semiconductor sales, and Synopsys and Cadence each hold about 30 percent of that market.
+- Foundry certification and years of tool development make a leading-edge replacement about a 15-year project.
 -->
 
 ---
@@ -123,7 +131,8 @@ layout: center
 <div class="text-xl mt-6 text-center"><b>Synopsys and Cadence</b> dominate the certified toolchains used for leading-edge chip design.</div>
 
 <!--
-Synopsys and Cadence dominate the certified toolchains used to design leading-edge chips, and foundries and chip designers build their processes around those tools. Losing access would delay advanced designs because engineers have few substitutes for critical steps and qualification takes years.
+- Synopsys and Cadence dominate the certified toolchains used to design leading-edge chips, and foundries and chip designers build their processes around those tools.
+- Losing access would delay advanced designs because engineers have few substitutes for critical steps and qualification takes years.
 -->
 
 ---
@@ -141,5 +150,7 @@ The final section returns to EDA controls as part of US-China semiconductor poli
 </div>
 
 <!--
-Advanced chip designs depend on EDA tools throughout implementation and verification. If export controls cut off those tools, engineers can lose the ability to finish or validate a layout before it reaches a fab. The 2025 restrictions on sales to China demonstrated that leverage, even though the United States lifted them six weeks later.
+- Advanced chip designs depend on EDA tools throughout implementation and verification.
+- If export controls cut off those tools, engineers can lose the ability to finish or validate a layout before it reaches a fab.
+- The 2025 restrictions on sales to China demonstrated that leverage, even though the United States lifted them six weeks later.
 -->

@@ -351,7 +351,7 @@
   text-align: right;
 }
 
-/* Presenter notes are short prompts designed to be scanned while speaking. */
+/* Presenter notes are short bullet prompts designed to be scanned while speaking. */
 .slidev-presenter .grid-section.note {
   font-size: 18px;
 }
@@ -368,9 +368,22 @@
   overflow-wrap: anywhere;
 }
 
-.slidev-presenter .slidev-note p {
-  margin: 0 0 0.8em;
-  line-height: 1.55;
+.slidev-presenter .slidev-note ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.slidev-presenter .slidev-note li {
+  padding-left: 0.15rem;
+  line-height: 1.48;
+}
+
+.slidev-presenter .slidev-note li + li {
+  margin-top: 0.55em;
+}
+
+.slidev-presenter .slidev-note li::marker {
+  color: var(--chips-cyan);
 }
 
 /* Slidev 0.50 leaves the closed goto list rendered below its off-screen input. */

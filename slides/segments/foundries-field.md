@@ -24,7 +24,8 @@ sources: research/foundries-field.md, research/foundations.md
 ![map manufacture](/diagrams/rendered/map-manufacture.svg){class="absolute bottom-4 right-4 w-40 opacity-80"}
 
 <!--
-TSMC, Samsung, and Intel now ship leading-edge logic at scale, with state-backed Rapidus trying to join them. Samsung and Intel remain despite weak foundry economics because each new process generation demands more capital, volume, and learning.
+- TSMC, Samsung, and Intel now ship leading-edge logic at scale, with state-backed Rapidus trying to join them.
+- Samsung and Intel remain despite weak foundry economics because each new process generation demands more capital, volume, and learning.
 -->
 
 ---
@@ -48,7 +49,9 @@ As leading-edge fab costs rose, the number of manufacturers fell from about 25 t
 </div>
 
 <!--
-The number of leading-edge manufacturers fell from about 25 in 2001 to three by the late 2010s as fab costs climbed. High wafer volume improves yield and lowers unit cost, so the largest producer learns faster and wins more customers. TSMC now has a foundry revenue share many times Samsung's, reinforcing this cycle.
+- The number of leading-edge manufacturers fell from about 25 in 2001 to three by the late 2010s as fab costs climbed.
+- High wafer volume improves yield and lowers unit cost, so the largest producer learns faster and wins more customers.
+- TSMC now has a foundry revenue share many times Samsung's, reinforcing this cycle.
 -->
 
 ---
@@ -66,7 +69,9 @@ title: "The rest of the frontier"
 <div class="visual-sequence__source">Samsung · GlobalFoundries · Rapidus · SMIC</div>
 
 <!--
-Samsung remains at the frontier but has struggled with yield and foundry losses. GlobalFoundries left the leading edge in 2018 and focused on profitable specialty nodes. Rapidus depends on Japanese state support to attempt 2nm production, while SMIC has produced 7nm-class chips without EUV under export controls.
+- Samsung remains at the frontier but has struggled with yield and foundry losses.
+- GlobalFoundries left the leading edge in 2018 and focused on profitable specialty nodes.
+- Rapidus depends on Japanese state support to attempt 2nm production, while SMIC has produced 7nm-class chips without EUV under export controls.
 -->
 
 ---
@@ -89,7 +94,10 @@ Nvidia does not disclose its foundry cost per GPU. Only three firms currently pr
 </div>
 
 <!--
-Industry estimates put a leading-edge 300mm wafer at $18k to $30k. TSMC reported a 59.9% gross margin in FY2025. A wafer price cannot reveal foundry cost per GPU without the die area, dies per wafer, and manufacturing yield. Nvidia does not disclose those inputs, so no public source can allocate the foundry cost to one accelerator.
+- Industry estimates put a leading-edge 300mm wafer at $18k to $30k.
+- TSMC reported a 59.9% gross margin in FY2025.
+- A wafer price cannot reveal foundry cost per GPU without the die area, dies per wafer, and manufacturing yield.
+- Nvidia does not disclose those inputs, so no public source can allocate the foundry cost to one accelerator.
 -->
 
 ---
@@ -105,5 +113,6 @@ ASML, Applied Materials, Lam Research, and KLA<br>
 </div>
 
 <!--
-TSMC operates the fabs, but equipment suppliers build the machines that make each process step work. ASML supplies lithography, Applied Materials and Lam Research cover deposition and etch, and KLA supplies inspection and process control.
+- TSMC operates the fabs, but equipment suppliers build the machines that make each process step work.
+- ASML supplies lithography, Applied Materials and Lam Research cover deposition and etch, and KLA supplies inspection and process control.
 -->
