@@ -24,19 +24,12 @@ sources: research/eda.md
 ![industry map — design region lit](/diagrams/rendered/map-design.svg)
 
 <!--
-BEATS:
-- Callback: our chip just left Nvidia as a FILE. Pose the question — who actually drew 208 billion transistors?
-- Answer: nobody. No human has ever drawn a modern chip. Software did.
-- Map check: we're still in the design region — lit since Nvidia. Two more companies light up before the file leaves Santa Clara, and you've probably never heard of either.
-- Set the angle in your own words: this is the cheapest chokepoint on the whole board.
-FACT AMMO:
-- Blackwell: 208 billion transistors [research/eda §What EDA is]. Handle: at one transistor per second, hand-placing them takes ~6,600 years — EDA software does it in months [research/eda §What EDA is].
-LINE THAT LANDS:
-- "Nobody draws chips. Chips are compiled."
+Electronic design automation, or EDA, is the software engineers use to turn a chip specification into a manufacturable layout. A modern accelerator contains hundreds of billions of transistors and many layers of wiring, far beyond what a team could place and check by hand. The design reaches the foundry as a file.
 -->
 
 ---
 class: visual-sequence paper-visual
+title: "Electronic design automation"
 ---
 
 <div class="visual-sequence__kicker">ELECTRONIC DESIGN AUTOMATION</div>
@@ -49,17 +42,7 @@ class: visual-sequence paper-visual
 <div class="visual-sequence__source">2 nm-class design estimate · ~$724M before manufacturing</div>
 
 <!--
-BEATS:
-- Walk the five boxes left to right, plain-language: engineers write the recipe (RTL, like code), software compiles it into gates, software decides where every gate sits and wires them under physics constraints, then you simulate the whole thing to death, then you ship one file to the foundry.
-- Dwell on the highlighted box: HALF the project isn't designing — it's proving the design works. Why? Because a mask-set mistake costs millions; there is no patch after tape-out.
-- Land the cost ladder: this is why design got expensive — and why the software that does it is unskippable.
-FACT AMMO:
-- Verification ≈ 50%+ of total project time, stable for a decade; even design engineers spend ~40–47% of their own time verifying (Wilson Research / Siemens) [research/eda §What EDA is].
-- Design cost by node (IBS): 28nm ~$40M → 7nm ~$217M → 5nm ~$416–449M → 3nm ~$581–590M → 2nm ~$724M [research/eda §What EDA is] [VERIFY: IBS figures vary by vintage/source; use as order-of-magnitude]. Handle: the 2nm design bill alone rivals a Hollywood blockbuster slate — spent before any manufacturing.
-- GDSII = literally the blueprint file the foundry prints [research/eda §What EDA is].
-- Simplification hedge: the real flow is dozens of loops and hundreds of tools — five boxes is the honest cartoon; the lie's direction is "it's far messier and more iterative than this."
-LINE THAT LANDS:
-- "Humans write intent. Software produces the 200-billion-transistor artifact."
+Engineers start with register-transfer-level code, or RTL, which describes data movement and chip operations. EDA tools translate that behavior into logic gates. They choose physical locations, connect the wiring, and check the layout against electrical and foundry rules. Engineers repeat verification throughout the flow.
 -->
 
 ---
@@ -90,22 +73,7 @@ LINE THAT LANDS:
 </div>
 
 <!--
-BEATS:
-- Frame as a duel, not two profiles: two companies, founded two years apart, fighting over every socket for four decades — and the fight settled into a stable split of the spoils.
-- Synopsys character: the compiler company — De Geus's Design Compiler made "chips from code" an industry. Now betting $35B (Ansys) that the game expands from silicon to simulating everything AROUND the chip.
-- Cadence character: the analog/custom stronghold, plus the hardware flex — emulators that boot your OS on a chip that doesn't exist yet.
-- Siemens EDA is the card, not a third profile: one sentence on Calibre — even chips designed on Synopsys or Cadence tools clear Siemens' checker before a fab will print them.
-- The kicker beat: both companies' AI now designs chips — and the duel's newest front is agentic AI flows.
-FACT AMMO:
-- Shares: Synopsys ~31%, Cadence ~30%, Siemens EDA ~13% — three companies ≈ ~74% of the market [research/eda §The triopoly & market shares] [VERIFY: share cuts differ by analyst (EDA-only vs EDA+IP); some sources claim big-3 >90% of advanced-node digital flow seats — verify before using the 90% line].
-- Synopsys: founded 1986, Aart de Geus, Design Compiler; CEO today Sassine Ghazi [research/eda §Synopsys] [VERIFY: light-check founding details before recording]. Cadence: formed 1988 (SDA + ECAD merger); CEO Anirudh Devgan [research/eda §Cadence] [VERIFY: light-check founding details].
-- Ansys: closed July 17, 2025, ~$34.9B ($17.6B cash + $17.1B stock) [research/eda §Synopsys].
-- Arm + Synopsys = 66% of the $8.5B design-IP market (2024, IPnest); Synopsys dominates wired-interface IP [research/eda §Synopsys].
-- Palladium Z3: up to 48B gates, >2× prior capacity, runs on NVIDIA BlueField DPUs [research/eda §Cadence]. Handle: NVIDIA hardware helps verify future NVIDIA designs — AI designing the chips AI runs on.
-- Mentor Graphics: founded 1981, acquired by Siemens for $4.5B (closed March 2017); Calibre ~85%+ installed base in physical sign-off [research/eda §Siemens EDA] [VERIFY: 85% figure is analyst/SemiAnalysis framing, not audited].
-- AI flows: Synopsys DSO.ai — first 100 commercial AI-driven tape-outs by Feb 2023; Cadence Cerebrus — up to 10× engineering productivity; 2026 frontier is agentic (Cadence AgentStack) [research/eda §AI in EDA].
-LINE THAT LANDS:
-- "Cadence's emulator runs on NVIDIA chips, and NVIDIA's chips are designed on Cadence software. AI is now designing the chips that AI runs on."
+Synopsys specializes in digital synthesis and implementation, while Cadence is strong in analog design and hardware emulation. Siemens EDA’s Calibre checks the finished layout against the foundry’s geometric and manufacturing rules before tape-out. A chip designed in one vendor’s tools may still pass through another vendor’s final check.
 -->
 
 ---
@@ -141,20 +109,7 @@ LINE THAT LANDS:
 </div>
 
 <!--
-BEATS:
-- Read the top line first: the entire EDA industry is a rounding error next to the chips it enables — that mismatch IS the tollbooth.
-- Scoreboard rhythm: same five boxes as every major player. Note the margins — these are software margins on infrastructure the world cannot skip.
-- Why nobody leaves: 30–40 years of tool code and foundry calibration; every engineer's muscle memory is Synopsys/Cadence keystrokes; foundries certify tools per node years in advance — new entrants aren't in the room; and customers pre-commit years of spend.
-- Years-to-replace beat: China, with state money and maximum motivation, got to ~10% self-sufficiency — at mature nodes only. That's the empirical case for ~15 years.
-FACT AMMO:
-- ESD industry revenue ~$21.2B in 2025 (SEMI ESD Alliance) vs $791.7B 2025 chip sales (SIA, +25.6%) — EDA ≈ 2.7% of the industry it gates [research/eda §The triopoly & market shares]. Handle: delete these three companies and the other 97% stops.
-- Synopsys FY2025 (ended Oct 31): revenue $7.054B, +15% YoY; GAAP gross margin ~77%; backlog $11.4B [research/eda §Synopsys]. Note fiscal calendars differ: SNPS FY ends Oct 31; Cadence = calendar year [research/eda §header].
-- Cadence FY2025: revenue $5.297B, +14% YoY; GAAP gross margin ~84–87% by quarter (86.5% in Q1'25); non-GAAP op margin 44.6%; backlog $8.0B record as of Q1'26 [research/eda §Cadence].
-- Backlogs handle: $11.4B + $8.0B of pre-committed spend ≈ customers locking in years of tolls in advance — that's what a moat looks like on a balance sheet [research/eda §The moat].
-- Years-to-replace (~15 yrs) is a PROPOSAL from §The moat: 30–40 years of accumulated tool code; PDK certification loop with foundries; China ~0%→10% self-sufficiency in a few years, mature nodes only [research/eda §The moat] — sharpen or overrule.
-- Simplification hedge: the moat is strongest at the leading edge; at mature nodes (28nm+) Chinese and niche tools genuinely compete [research/eda §The moat].
-LINE THAT LANDS:
-- "The entire EDA industry is about $21B — under 3% of the $792B chip industry. Delete these companies and the other 97% stops."
+The EDA market generated about $21 billion in 2025 while supporting $792 billion in semiconductor sales, and Synopsys and Cadence each hold about 30 percent of that market. Foundry certification and years of tool development make a leading-edge replacement about a 15-year project.
 -->
 
 ---
@@ -168,14 +123,7 @@ layout: center
 <div class="text-xl mt-6 text-center"><b>Synopsys and Cadence</b> dominate the certified toolchains used for leading-edge chip design.</div>
 
 <!--
-BEATS:
-- Ceremony beat — slow down. The cold open promised seven single points of failure; this is the first one proven, and it's the one nobody outside the industry can name.
-- Recap the proof in three moves: chips are compiled, not drawn → two companies own the compiler → the margins and backlogs prove nobody can leave.
-- Stamp it: Chokepoint #1 of 7. Six to go.
-FACT AMMO:
-- Board criterion (curriculum): a single company or cluster whose removal halts leading-edge AI-chip production within months, no substitute inside five years — the duopoly qualifies via the leading-edge design flow [research/eda §The moat, §The triopoly & market shares].
-LINE THAT LANDS:
-- "Every chip in every device you own started life inside these two companies' software. That's not a market. That's a tollbooth on the modern world."
+Synopsys and Cadence dominate the certified toolchains used to design leading-edge chips, and foundries and chip designers build their processes around those tools. Losing access would delay advanced designs because engineers have few substitutes for critical steps and qualification takes years.
 -->
 
 ---
@@ -193,20 +141,5 @@ The final section returns to EDA controls as part of US-China semiconductor poli
 </div>
 
 <!--
-BEATS:
-- SEED (eda-export-lever → pays off in geopolitics): because two US companies own the design layer, chip-design software is now a foreign-policy instrument — walk the three dates as escalation, sledgehammer, reversal.
-- The 2022 move is the chess one: banning software for GAAFET transistors China couldn't manufacture yet — locking the door before China reached it.
-- The 2025 whiplash is the proof both ways: one letter turns it off, one deal turns it back on. Don't resolve it here — plant it: "hold that thought until the final act."
-- CLOSER (15–30s, what you now know): chips are compiled, not drawn; two companies own the compiler; that's Chokepoint #1 of 7; and Washington has already fired it as a weapon — twice.
-- CLIFFHANGER into arm-riscv: the tools are settled — a duopoly. But before the first line of RTL, every chip must choose a LANGUAGE. Next: the empire that collects a royalty on ~99% of smartphones, and the open-source insurgents trying to burn its tollbooth down.
-FACT AMMO:
-- Aug 2022: BIS controls ECAD software "specially designed" for GAAFET development (ECCN 3D006, effective Oct 14, 2022) [research/eda §Geopolitics].
-- May 2025: BIS letters (May 23/29) to Synopsys, Cadence, Siemens — license requirement on essentially all EDA to China; Synopsys suspended guidance and halted China sales [research/eda §Geopolitics].
-- July 2, 2025: restrictions rescinded as part of the US–China framework deal trading export relief for Chinese rare-earth exports [research/eda §Geopolitics]. Handle: chip software literally traded against minerals.
-- The stakes: China ≈ $814M / 11.5% of Synopsys FY25 revenue + $680M / 13% of Cadence — cutting China off costs the big three roughly $1.5B/yr, but denies China the design layer of a $792B industry [research/eda §Geopolitics].
-- Counter-lever: China's SAMR cleared Synopsys–Ansys July 14, 2025 — one day before the deal deadline — with divestitures + 10 years of behavioral remedies [research/eda §Synopsys]. Line: "The US controls the software; China discovered it controls the permission slip."
-- China's build-out: self-sufficiency passed ~10% in 2024; Empyrean is world #4 (~$168M revenue); Huawei claims a 14nm-class toolchain — mature nodes, never externally verified [research/eda §Geopolitics] [VERIFY: Huawei claim never externally verified — keep the hedge if voiced].
-- Arm handoff number (for the cliffhanger only): royalty on ~99% of smartphones — cite from the arm-riscv pack when that segment is built; curriculum row carries it.
-LINE THAT LANDS:
-- "In May 2025 one letter switched off China's access to chip-design software. Six weeks later, a rare-earths deal switched it back on. Software is now traded against minerals."
+Advanced chip designs depend on EDA tools throughout implementation and verification. If export controls cut off those tools, engineers can lose the ability to finish or validate a layout before it reaches a fab. The 2025 restrictions on sales to China demonstrated that leverage, even though the United States lifted them six weeks later.
 -->

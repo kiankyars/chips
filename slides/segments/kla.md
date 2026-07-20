@@ -39,20 +39,12 @@ KLA's inspection and metrology tools find defects and verify dimensions after pr
 </div>
 
 <!--
-BEATS:
-- Catch the handoff off the sculptors: we've watched films get grown and carved away, the loop running dozens of times. Every single pass ends on the same step — the one we've skipped until now: MEASURE.
-- This machine changes nothing about the wafer. It deposits nothing, etches nothing, prints nothing. It only looks at what the other tools just did — and it's built by a company most people have never heard of, the highest-margin name in the entire fab.
-- The thesis of the whole segment, said plainly: at nanometer scale, "if you can't measure it, you can't build it" isn't a slogan. It's the literal precondition for everything upstream.
-FACT AMMO:
-- KLA = process control: inspection (find defects) + metrology (measure dimensions/alignment). It deposits/etches/prints nothing — it measures everything the other tools do [research/kla §what KLA is].
-- Milpitas, CA — a Silicon Valley original: KLA Instruments (1975, photomask defect detection) + Tencor (1976) merged 1997, renamed KLA Corp in 2019 [research/kla §what KLA is].
-- Customers = everyone who runs a fab: TSMC, Samsung, Intel, SK Hynix, Micron, plus mask shops and packaging houses [research/kla §what KLA is].
-LINE THAT LANDS:
-- "Every other machine in this building changes the wafer. This one only watches it — and it's the most profitable machine in the room."
+KLA's tools inspect wafers for defects and measure dimensions and alignment after process steps. They do not deposit, etch, or print material. At nanometre scale, the fab needs these measurements to detect a bad process before it damages more wafers.
 -->
 
 ---
 class: visual-sequence paper-visual
+title: "Process control"
 ---
 
 <div class="visual-sequence__kicker">PROCESS CONTROL</div>
@@ -65,26 +57,12 @@ class: visual-sequence paper-visual
 <div class="visual-sequence__source">One yield point at 50k wafer starts / month · roughly $100M / year</div>
 
 <!--
-BEATS:
-- Cash the seed, third and biggest time. Foundations PLANTED it ("one particle, one dead $40k die"); life-of-a-wafer made you FEEL it (a speck at step 900 kills three months of survived history). This is the machine — and the business — built to hunt it.
-- Run the horror scenario concretely: a process drifts at step 400. Without in-line measurement, nobody finds out until the finished wafers fail electrical test at step 1,000. With a 3–4 month cycle time, that's weeks of work-in-progress already poisoned — every wafer that started in between is suspect.
-- The fix is why fabs measure constantly, in-line, between steps: catch the drift at step 401 and you quarantine a single lot instead of scrapping a quarter's output. That's the immune-system framing — process control doesn't build the body, it catches the infection before it spreads.
-- Now the stakes in dollars: one point of yield at a leading-edge fab is on the order of $100M a year. That is why nobody on Earth haggles with KLA.
-- Bridge to the next slide: and the hunt only gets harder every node — which is the whole reason this is a growth business, not a mature one.
-FACT AMMO:
-- 600–1,000+ process steps per wafer; ~3–4 months from bare silicon to finished circuits [research/kla §teachable].
-- The excursion story: drift undetected at step 400 → failure at step 1,000 → months of WIP suspect (framing; the step/cycle numbers are sourced) [research/kla §teachable].
-- 1% yield improvement ≈ "millions of dollars per week" for a high-volume device (eInnoSys, mirroring McKinsey); McKinsey example — one maker losing ~$68M to yield loss, a program delivered +10% yield in six months [research/kla §teachable].
-- $100M handle (arithmetic, each input checkable): a ~$18,500 3nm wafer [VERIFY: widely reported TSMC N3 figure, not officially confirmed] × ~50k wafer-starts/month × 12 × 1% ≈ ~$100M+/yr per yield point [research/kla §teachable].
-- New fabs start at 30–50% yield and take 18–24 months of hunting defect sources to climb above 80% — ramping yield faster is the whole game [research/kla §teachable].
-- Simplification hedge (direction of the lie): "step 400 / step 1,000" is illustrative — real excursions are flagged by statistical process control across many tools, not one dramatic miss; but the structural point (long cycle time = enormous exposed WIP) is exactly right.
-LINE THAT LANDS:
-- "It doesn't build the body. It catches the infection before it spreads."
-- "One yield point is worth a hundred million dollars a year — that's why nobody haggles with the inspector."
+In this illustration, a process drifts at step 400. Without in-line inspection, the fab discovers the problem at final test after weeks of additional work; inspection at step 401 confines the loss to one lot. At 50,000 wafer starts per month, one percentage point of yield can represent about $100 million a year.
 -->
 
 ---
 class: visual-sequence paper-visual
+title: "Inspection scale"
 ---
 
 <div class="visual-sequence__kicker">INSPECTION SCALE</div>
@@ -97,24 +75,7 @@ class: visual-sequence paper-visual
 <div class="visual-sequence__source">Inspection time · roughly one hour per wafer</div>
 
 <!--
-BEATS:
-- Make the search physical. A killer defect at the leading edge is ~20 nm. Scale it up until it's a golf ball and the 300mm wafer becomes a disc roughly 600 km across — Ohio-sized. KLA's job is to find that one golf ball, anywhere on it, in about an hour — for every wafer, at production speed. (This is the "virus-sized defect on a football field" idea, done as arithmetic.)
-- Then the growth thesis: process-control intensity RISES every single node. Smaller features mean smaller defects can kill you; EUV and multipatterning stack more layers that all have to line up; the giant AI dies and HBM stacks from Act 0 have less redundancy, so every defect costs more. More to inspect, more to measure, every generation.
-- That's what turns a measuring company into a near-monopoly. KLA is ~56–58% of the entire process-control market — about 7× its nearest competitor, and still gaining share. On the sharpest corners it's effectively alone: 80%+ of reticle/photomask inspection, ~75–80% of patterned-wafer inspection.
-- Optional aside (only if it doesn't blow the clock): this is a chokepoint like litho — softer, but real. Yield learning is exactly what China's leading-edge effort lacks, and KLA's tools ARE the yield-learning machine — which is why China went from 43% of KLA's revenue to 24% in about two years under export controls.
-FACT AMMO:
-- The search, as arithmetic: a ~20nm defect scaled to a golf ball → the 300mm wafer scales to a disc ~600 km across; found in ~an hour per wafer (own arithmetic; same idea as "a marble on a highway seen from a jet") [research/kla §the tech].
-- How it's actually done (one line if asked): broadband-plasma optical inspection casts the wide net fast (the radar); an e-beam microscope revisits each flagged site to classify it (the microscope) [research/kla §the tech].
-- Reticle/mask inspection is the crown franchise — a defect on the mask prints onto every die of every wafer, so you catch it once at the mask shop or scrap everything downstream [research/kla §the tech].
-- Intensity rises: smaller features → smaller killer defects; EUV + multipatterning → more layers that must align; bigger die + HBM → less redundancy, higher cost per defect (KLA's own framing) [research/kla §teachable, §market position].
-- Share: ~56–58% of process control (56% third-party [4], ~58% KLA investor day [5]); ~7× nearest competitor, +360 bps since 2021; nearest rival AMAT only ~10%; reticle inspection 80%+, patterned-wafer 75–80% [research/kla §market position].
-- Growth proof point: in CY2025 KLA took #1 in advanced wafer-level-packaging process control — share up 14 points, revenue up ~70% YoY [research/kla §market position].
-- China aside: 43% of revenue (FY2024) → 33% (FY2025) → 24% (March 2026 qtr), partly post-boom, partly "more stringent U.S. export controls" [research/kla §geopolitics]. Dec-2024 BIS rules guided to cut ~$500M of CY2025 revenue [VERIFY: exact guidance figure/breakdown].
-- Process control ≈ 10%+ of total WFE spend and rising [VERIFY: analyst figures vary ~9–11%] [research/kla §market position].
-- Simplification hedge: "20nm defect" is a stand-in — the killer-defect size tracks the node and the layer; the robust claim is the ratio (defect-to-wafer), not the exact nanometers.
-LINE THAT LANDS:
-- "Find one golf ball on a field 600 kilometers wide — in an hour, for every wafer that walks in."
-- "The harder chips get to inspect, the more this one company owns the inspecting."
+A 20 nanometre defect against a 300 millimetre wafer creates a 15-million-fold scale difference; if the defect grew to the size of a golf ball, the wafer would span about 600 kilometres. KLA combines fast optical inspection with targeted electron-beam review to find and classify defects in about an hour per wafer.
 -->
 
 ---
@@ -138,22 +99,5 @@ At <b>~62%</b>, KLA's gross margin is about <b>ten points above ASML's</b><br>
 </div>
 
 <!--
-BEATS:
-- Land the scoreboard as the punchline of the whole segment. ~$12B in revenue, ~56–58% share, ~7× the nearest rival — and the number that should stop you: a ~62% gross margin.
-- Drive the margin proof: KLA's non-GAAP gross margin (62.2%) is the HIGHEST of the big-five equipment makers — about ten points above ASML's ~53%, the monopoly everyone talks about. The company that touches the wafer least earns the most on it, because measurement is where the yield knowledge lives, and yield knowledge is priceless.
-- The annuity under it: process control is somewhat countercyclical (fabs measure MORE when yields are bad), and services are ~23% of revenue on a 17-year growth streak — a steady stream beneath the cyclical tool sales.
-- Years-to-replace is my editorial call, not a pack number: I put it at ~10 years — real rivals exist (AMAT, Onto, Hitachi, ASML's e-beam), so it's not the 20-plus of ASML/Zeiss, but a 40-year optical-inspection lead plus a mountain of proprietary yield data is why nobody has closed the gap. Overwrite this number if you disagree — synthesis ranks them all.
-- CLOSER — 15s recap, then the handoff. What you now know: process control is the fab's immune system; the search is a golf ball on a 600km disc that gets harder every node; and that's why the company that builds nothing owns the fattest margin in the industry. NO new stamp — the board still reads five.
-- Hand off into materials: the wafer's last measurement passes. We've now met every MACHINE in the fab — deposit, litho, etch, implant, polish, measure. But machines are only half a fab. Every one of those steps ATE something — resist, gases, slurries, blank plates, ultrapure everything. So: what was all this made FROM? Down one more floor, into the Japanese basement.
-FACT AMMO:
-- FY2025: revenue $12.16B; GAAP net income $4.06B; GAAP gross margin ≈ 61%; FCF $3.75B; services $2.68B (~22%) [research/kla §financials].
-- Q3 FY2026 (latest reported): non-GAAP gross margin 62.2%, non-GAAP operating margin 42.6% — highest margins of the big-5 WFE makers, vs ASML 52.8% gross margin in 2025 (AMAT/Lam high-40s, TEL mid-40s [VERIFY: exact AMAT/Lam/TEL current GMs]) [research/kla §financials].
-- Services $775M = 23% of revenue, +16% YoY; 2026 tracks to the 17th consecutive year of services growth — the annuity under the cyclical tool business [research/kla §financials].
-- Process control is somewhat countercyclical — fabs measure more when yields are bad — but not immune to the WFE cycle [research/kla §risks].
-- Investor-day trajectory: 13–17% revenue CAGR through CY2030; WFE market seen at $215B ± $20B by 2030; >90% of FCF returned [research/kla §financials].
-- Scoreboard values: revenue $12.16B FY25, GM ~62% (non-GAAP Q3 FY26 62.2%; GAAP FY25 ~61%), share 56–58% [research/kla §financials, §market position]. Years-to-replace ~10 yrs is an editorial estimate (NOT from the pack) — proposed from the moat: 40-yr BBP optical-inspection legacy + proprietary yield data + near-monopoly reticle/patterned-wafer franchises, offset by live rivals; synthesis ranks the full league table.
-- Board note: no stamp earned here — process control is the "softer, real" chokepoint, but the locked seven are ASML, Zeiss, TSMC-wafers, Synopsys+Cadence, Japan materials, SK Hynix HBM, TSMC-CoWoS; the board stays at five going into materials.
-LINE THAT LANDS:
-- "The company that only measures chips has a 62% gross margin — ten points fatter than ASML, the monopoly everyone talks about."
-- "We've met every machine in the fab. Now — what was all of this made out of?"
+KLA controls about 56 to 58 percent of the semiconductor process-control market, about seven times its nearest rival. Fabs tune inspection recipes to each layer, process window, and known defect signature, so switching vendors requires new baselines and requalification. That embedded process knowledge supports KLA's 62 percent gross margin and the long replacement estimate.
 -->

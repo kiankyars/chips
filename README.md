@@ -1,12 +1,7 @@
 # CHIPS
 
-Episode 1 of **The Five Layers of the Cake of AI** — a long-form, diagram-heavy
-YouTube lecture giving the most comprehensive breakdown of the semiconductor
-industry, player by player.
-
-The five layers (per Jensen Huang): Applications · Data Centers · Energy ·
-**Chips** · Models. This repo is *Chips* — the others come later and are not a
-priority.
+A long-form, diagram-heavy course on how an AI accelerator moves from design to
+data center, and which companies control each step.
 
 ## The premise
 
@@ -16,7 +11,7 @@ industry is encountered at the exact moment the chip cannot proceed without it �
 never as an entry in a list. One master map lights up region by region; a Chokepoint
 Board fills toward a number promised in the cold open; a Money Bar decomposes the
 chip's price toll by toll. See `STRATEGY.md` for the full design system and
-`curriculum.md` for the episode map.
+`curriculum.md` for the course map.
 
 ## The core idea: course-as-code
 
@@ -30,7 +25,7 @@ chips/
   README.md            ← you are here
   STRATEGY.md          ← the design system: why v2 looks like this
   AUTHORING.md         ← the co-design workflow + every file convention
-  curriculum.md        ← the episode map: acts, segments, minutes, devices
+  curriculum.md        ← the course map: acts, segments, minutes, devices
   slides.md            ← Slidev entry deck; imports each segment
   slides/segments/     ← one markdown file per segment
   research/            ← fact packs w/ sources, one per segment (Claude's job)
@@ -48,9 +43,9 @@ chips/
 | Structure, slides, diagram prompts | **Claude** |
 | The actual words spoken | **You**, live, from the beat sheet |
 
-Speaker-notes in every slide are a **beat sheet + fact ammo**, never a verbatim
-script. You speak in your own words over strong visuals — the way good explainer
-channels actually work. See `AUTHORING.md` for the full loop.
+Speaker notes are short prose prompts designed to be scanned while speaking.
+Sources and verification detail stay in `research/`. See `AUTHORING.md` for the
+full loop.
 
 ## Running the deck
 

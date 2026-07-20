@@ -186,8 +186,7 @@
 .title-slide .title-kicker,
 .title-slide h1,
 .title-slide .title-subtitle,
-.title-slide .title-journey,
-.title-slide .title-series {
+.title-slide .title-journey {
   position: relative;
   z-index: 2;
 }
@@ -232,45 +231,6 @@
   font-size: 0.66rem;
   font-weight: 700;
   letter-spacing: 0.11em;
-}
-
-.title-slide .title-series {
-  position: absolute;
-  right: 4.75rem;
-  bottom: 3.5rem;
-  color: #c0ccdd;
-  font-size: 0.82rem;
-  letter-spacing: 0.025em;
-}
-
-.course-chrome {
-  position: absolute;
-  z-index: 40;
-  right: 1.25rem;
-  bottom: 0.85rem;
-  left: 1.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: rgba(184, 198, 217, 0.72);
-  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.55rem;
-  font-weight: 650;
-  letter-spacing: 0.12em;
-  pointer-events: none;
-}
-
-.course-chrome__label {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.course-chrome__mark {
-  width: 1.4rem;
-  height: 2px;
-  background: var(--chips-cyan);
-  box-shadow: 0 0 10px rgba(103, 232, 249, 0.55);
 }
 
 /* Artifact-first scenes: the diagram is the slide; narration carries the prose. */
@@ -391,12 +351,35 @@
   text-align: right;
 }
 
-.visual-sequence .course-chrome {
-  color: rgba(168, 179, 199, 0.46);
+/* Presenter notes are short prompts designed to be scanned while speaking. */
+.slidev-presenter .grid-section.note {
+  font-size: 18px;
 }
 
-.visual-sequence .course-chrome__mark {
-  opacity: 0.55;
+.slidev-presenter .grid-section.note .slidev-note {
+  width: 100%;
+  max-width: 64ch;
+  margin-inline: auto;
+  padding: 1.15rem 1.35rem 2.75rem;
+  color: #dbe5f2;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.55;
+  text-wrap: pretty;
+  overflow-wrap: anywhere;
+}
+
+.slidev-presenter .slidev-note p {
+  margin: 0 0 0.8em;
+  line-height: 1.55;
+}
+
+/* Slidev 0.50 leaves the closed goto list rendered below its off-screen input. */
+#slidev-goto-dialog:not(.top-5) {
+  pointer-events: none;
+}
+
+#slidev-goto-dialog:not(.top-5) .autocomplete-list {
+  display: none;
 }
 
 @media print {

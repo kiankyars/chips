@@ -11,6 +11,7 @@ const segmentFiles = readdirSync(segmentDir)
   .map(file => join(segmentDir, file))
 
 const failures = []
+let speakerNoteCount = 0
 
 for (const file of segmentFiles) {
   const source = readFileSync(file, 'utf8')
@@ -31,9 +32,34 @@ for (const file of markdownFiles) {
   }
 }
 
+for (const file of markdownFiles) {
+  const source = readFileSync(file, 'utf8')
+  for (const match of source.matchAll(/<!--([\s\S]*?)-->/g)) {
+    const note = match[1].trim()
+    if (!note || note.startsWith('SEGMENT'))
+      continue
+    speakerNoteCount++
+    const wordCount = note.split(/\s+/).filter(Boolean).length
+    if (/^\s*-\s/m.test(note))
+      failures.push(`${basename(file)} contains bullet-form speaker notes`)
+    if (/\[[^\]]+\]/.test(note))
+      failures.push(`${basename(file)} exposes bracketed source notation in speaker notes`)
+    if (/<(?:h[1-6]|details|summary)\b/i.test(note))
+      failures.push(`${basename(file)} contains presentation markup in speaker notes`)
+    if (/\b(?:FACT AMMO|LINE THAT LANDS|SIMPLIFICATION HEDGE|IOU|PAYOFF|CALLBACK)\b/i.test(note) || /\bSEED\b/.test(note))
+      failures.push(`${basename(file)} exposes production jargon in speaker notes`)
+    if (/\n\s*\n/.test(note))
+      failures.push(`${basename(file)} contains multi-paragraph speaker notes`)
+    if (note.includes('—'))
+      failures.push(`${basename(file)} contains an em dash in speaker notes`)
+    if (wordCount > 90)
+      failures.push(`${basename(file)} speaker note exceeds 90 words (${wordCount})`)
+  }
+}
+
 if (failures.length) {
   console.error(failures.map(failure => `- ${failure}`).join('\n'))
   process.exit(1)
 }
 
-console.log(`Validated ${segmentFiles.length} segments and their diagram references.`)
+console.log(`Validated ${segmentFiles.length} segments, ${speakerNoteCount} concise speaker notes, and their diagram references.`)

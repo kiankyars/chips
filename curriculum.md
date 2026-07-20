@@ -1,6 +1,6 @@
 # CHIPS — curriculum v2
 
-One episode, ~112 min nominal (records to 105–120). The spine: **follow one chip** —
+One course, ~112 min nominal (records to 105–120). The spine: **follow one chip** —
 a Blackwell/GB300-class Nvidia accelerator — from idea to installed rack. Every player
 is encountered at the moment the chip cannot proceed without them. See `STRATEGY.md`
 for why this architecture; this file is the operational map.
@@ -78,7 +78,7 @@ with their step glowing.*
 | id | title | min | tier | covers |
 |---|---|---|---|---|
 | `geopolitics` | The Board Is the World | 12 | — | 60s callback montage re-anchoring the full Board. Export controls as chess told through the levers the viewer now owns (EUV license, EDA, entity list, the H20/China saga); China's counter-moves (rare earths, Nexperia) and full-stack push (SMIC — **multi-patterning seed pays off**, Huawei, SMEE, CXMT, domestic EDA) honestly assessed; CHIPS Act → equity era; then the Taiwan wargame walked light-by-light across the viewer's own Board — sourced to published wargames, hedged, silicon-shield logic argued both ways. **Build last; slides swappable.** |
-| `synthesis` | Where the Value Pools | 5 | — | The Money Bar's final waterfall; the margin ladder ranked; the **years-to-replace league table** (the course's quotable original); the fully lit Map re-read once as a money map; what AI demand changes about everything; the five-layer cake returns — "above chips sits energy" — Episode 2 teaser. |
+| `synthesis` | Where the Value Pools | 5 | — | The Money Bar's final waterfall; the margin ladder ranked; the **years-to-replace league table** (the course's quotable original); the fully lit Map re-read once as a money map; what AI demand changes about memory, packaging, and infrastructure. |
 
 ---
 

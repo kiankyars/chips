@@ -1,6 +1,7 @@
 ---
 class: visual-sequence
 transition: fade
+title: "EUV · physical scale"
 ---
 
 <!-- SEGMENT
@@ -28,16 +29,13 @@ sources: research/asml.md
 <div class="visual-sequence__source">ASML · High-NA EUV system specifications</div>
 
 <!--
-BEATS:
-- This is the current High-NA EXE platform at human scale: 14 metres long, 4 metres wide, 4 metres high and 150 tonnes.
-- It is not a photograph enlarged for effect; the figure and the machine use the dimensions ASML publishes.
-FACT AMMO:
-- ASML, official High-NA specifications: https://www.linkedin.com/posts/asml_time-to-nerd-out-here-are-some-key-specs-activity-7158450887667924992-iSIA
+ASML's High-NA EXE platform stretches 14 metres, about the length of a semi-trailer. That enclosure contains the light source, vacuum chambers, mirror train, and precision stages needed to keep a moving wafer aligned at nanometre scale.
 -->
 
 ---
 class: visual-sequence
 transition: fade
+title: "Reticle → field → wafer"
 ---
 
 <div class="visual-sequence__kicker">Reticle → field → wafer</div>
@@ -50,18 +48,13 @@ transition: fade
 <div class="visual-sequence__source">ASML · TWINSCAN NXE:3400C and NXE:3600D</div>
 
 <!--
-BEATS:
-- The reticle does not contain an entire wafer. Its pattern is reduced four times to one maximum 26 by 33 millimetre field.
-- The scanner moves the wafer and repeats that exposure field across its 300 millimetre surface.
-- The 132 by 104 millimetre reticle-pattern dimensions shown here follow directly from the published 4× reduction and 33 by 26 millimetre wafer field.
-FACT AMMO:
-- ASML, TWINSCAN NXE:3400C: https://www.asml.com/en/products/euv-lithography-systems/twinscan-nxe3400c
-- ASML, TWINSCAN NXE:3600D: https://www.asml.com/en/products/euv-lithography-systems/twinscan-nxe-3600d
+A reticle holds the pattern for one exposure field, and projection optics shrink the image to one quarter of its linear size. This turns a 104 by 132 millimetre reticle pattern into a field up to 26 by 33 millimetres, which the scanner repeats across the wafer.
 -->
 
 ---
 class: visual-sequence
 transition: fade
+title: "One causal light path"
 ---
 
 <div class="visual-sequence__kicker">One causal light path</div>
@@ -74,19 +67,13 @@ transition: fade
 <div class="visual-sequence__source">ASML · ZEISS SMT · EUV lithography principles</div>
 
 <!--
-BEATS:
-- TRUMPF's carbon-dioxide laser first flattens a molten-tin droplet, then vaporizes it. The plasma emits 13.5 nanometre EUV light.
-- Air and glass absorb EUV. The entire optical path therefore stays in vacuum and uses multilayer mirrors instead of lenses.
-- Illumination optics shape the light at the reticle; projection optics reduce the reflected pattern onto photoresist on the wafer.
-FACT AMMO:
-- ASML, Light and lasers: https://www.asml.com/en/technology/lithography-principles/light-and-lasers
-- ASML and Cymer, laser-produced plasma path: https://www.asml.com/en/news/press-releases/2009/asml-and-cymer-announce-advancement-in-euv-to-enable-manufacturing-of-integrated-circuits
-- ZEISS SMT, EUV lithography: https://www.zeiss.com/semiconductor-manufacturing-technology/inspiring-technology/euv-lithography.html
+TRUMPF's carbon-dioxide laser flattens a molten tin droplet and then vaporizes it, creating plasma that emits 13.5 nanometre light. Air and glass absorb EUV, so the scanner keeps the light path in a vacuum and uses mirrors. Those mirrors shape the light at the reticle and project the reduced pattern onto the wafer.
 -->
 
 ---
 class: visual-sequence
 transition: fade
+title: "The machine is an integrated supply chain"
 ---
 
 <div class="visual-sequence__kicker">The machine is an integrated supply chain</div>
@@ -99,13 +86,7 @@ transition: fade
 <div class="visual-sequence__source">ASML · Making EUV: from lab to fab</div>
 
 <!--
-BEATS:
-- ASML owns the system architecture and integration problem. It acquired Cymer, the San Diego source specialist, in 2013.
-- TRUMPF supplies the high-power carbon-dioxide laser. ZEISS supplies the collector, illumination and projection optics.
-- ASML also integrates reticle and wafer stages, sensors, control software and the calibrated vacuum system into one production tool.
-FACT AMMO:
-- ASML, Making EUV: from lab to fab: https://www.asml.com/en/news/stories/2022/making-euv-lab-to-fab
-- ZEISS SMT, EUV lithography: https://www.zeiss.com/semiconductor-manufacturing-technology/inspiring-technology/euv-lithography.html
+ASML integrates the scanner rather than building every critical module itself. TRUMPF supplies the high-power laser, ASML's Cymer unit supplies the EUV source, and ZEISS supplies the optics, while ASML combines them with wafer stages, sensors, control software, and a calibrated vacuum system.
 -->
 
 ---
@@ -119,11 +100,7 @@ ASML is the sole EUV scanner supplier; Zeiss is the sole supplier of its optics.
 </div>
 
 <!--
-BEATS:
-- Land the stamps: #4 ASML (EUV), #5 Zeiss (the optics inside it). This is the densest chokepoint moment in the whole episode — two single points of failure in one machine.
-- Note the pattern for later: chokepoints nest. The board is starting to look less like a list and more like a map of leverage.
-FACT AMMO:
-- EUV optics are effectively single-sourced from Carl Zeiss SMT [research/asml.md §the machine].
+ASML has a monopoly on production EUV scanners, and ZEISS has a monopoly on the optical system inside them. A leading-edge fab depends on both single-source suppliers within the same machine, so losing either would stop new EUV capacity.
 -->
 
 ---
@@ -144,13 +121,7 @@ FACT AMMO:
 <div class="text-xs opacity-40 text-right mt-4">FY2025 results</div>
 
 <!--
-BEATS:
-- What a leading-edge monopoly looks like on a P&L: ~53% gross margin, a backlog measured in years, EUV growing ~40% on the AI buildout.
-- The backlog is the tell — customers pre-commit billions because there's no alternative and no shelf. And the machines never really leave: installed-base service is a recurring annuity on top.
-FACT AMMO:
-- All figures: research/asml.md §FY2025 [1][2][3]. [VERIFY: refresh to latest 2026 quarter before recording — Q2 2026 due ~mid-July]
-LINE THAT LANDS:
-- "A monopoly on the leading edge looks like a 53% margin and a waiting list."
+An EUV scanner takes months to assemble, calibrate, and install, while ZEISS optics and source modules limit how fast ASML can add capacity. ASML shipped 48 EUV systems in FY2025 while taking €28 billion in bookings. Customers order years ahead because annual supply remains constrained.
 -->
 
 ---
@@ -177,13 +148,7 @@ Higher NA prints smaller features in one exposure. <b>Multi-patterning</b> uses 
 </div>
 
 <!--
-BEATS:
-- The next generation is the most expensive production tool ever sold — how we push below 2nm. Whoever installs these first leads the next node.
-- SEED multi-patterning: when you can't get (or can't buy) EUV, you fake finer features by exposing a layer several times. It works — but it's the expensive, low-yield workaround. This word comes back when we get to China and SMIC.
-FACT AMMO:
-- EXE:5200-class, ~$400M, NA 0.55 vs 0.33, <12 installed [research/asml.md §High-NA]. [VERIFY: throughput (~175–220 wph) and exact install count]
-LINE THAT LANDS:
-- "There's a way to make advanced chips without EUV. It's called doing it the hard way, and it's the story of China's whole chip program."
+High-NA EUV raises numerical aperture from 0.33 to 0.55, allowing smaller features in one exposure. Each EXE:5200-class tool costs about $400 million, and fabs have installed fewer than twelve. Without that resolution, a fab can use several masks for one layer, adding process steps, cost, and yield risk.
 -->
 
 ---
@@ -199,12 +164,5 @@ ASML cannot sell EUV systems to China under Dutch export controls coordinated wi
 </div>
 
 <!--
-BEATS:
-- Tie back to the angle — the cleanest chokepoint in the whole episode, now stamped twice.
-- SEED the export license: don't go deep, just plant that this monopoly is also a weapon, and the geopolitics act will fire it.
-- Closer / handoff: the wafer moves on down the tour — "ASML printed the pattern. Now something has to carve it."
-FACT AMMO:
-- EUV export ban to China; ASML is the West's single biggest point of leverage [research/asml.md §geopolitics].
-LINE THAT LANDS:
-- "Every chip-war headline you've ever read traces back to one company's export license."
+ASML needs Dutch government licenses to export its EUV systems, and the Netherlands blocks sales to China in coordination with the United States. Because ASML has no production competitor, one export license can determine whether a country can buy the equipment needed for leading-edge chip production.
 -->

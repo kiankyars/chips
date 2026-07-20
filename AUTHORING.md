@@ -27,20 +27,21 @@ Then you record: speak the beats in your own words over the slides.
 
 ## Beat sheet, not script
 
-Speaker notes (the trailing `<!-- ... -->` block on each slide) follow a fixed shape:
+Speaker notes (the trailing `<!-- ... -->` block on each slide) are short prompts
+you can scan while speaking:
 
 ```
 <!--
-BEATS:
-- the logical steps you walk through, in order — what you SAY, in your words
-FACT AMMO:
-- the exact numbers/names to drop, so you don't have to memorize them
-LINE THAT LANDS: (optional)
-- one punchy framing you can use or toss
+The amber region is the channel; blue is the gate; cyan marks the interface.
+A planar gate controls the channel from the top, so leakage rises as the channel shrinks.
+FinFETs and gate-all-around transistors give the gate control over more surfaces.
 -->
 ```
 
-Rule: **I never write the sentence you say.** Beats are skeleton; the muscle is yours.
+Keep each note to two to four sentences and roughly 35–75 words. Include only the
+facts needed to explain the slide. Put citations, verification tags, production
+directions, optional lines, and full caveats in the research or authoring files.
+If a caveat prevents a false claim, state it once in plain English.
 
 ## Segment file header
 
@@ -86,10 +87,10 @@ Defined in `STRATEGY.md`; implemented as recurring slide patterns:
   and EDA enter as "amortized tolls," flagged honestly as estimates/ranges.
 - **Flow Strip**: all Act IV players enter on the deposit→litho→etch→implant→CMP→measure
   ribbon with their step glowing.
-- **Numbers with handles**: beat-sheet rule — no headline number without a physical
-  analogy in FACT AMMO.
-- **Simplification hedges**: where a teach compresses contested detail, FACT AMMO
-  includes a one-line "direction of the lie" hedge you can voice.
+- **Numbers with handles**: no headline number without a physical comparison the
+  speaker can remember.
+- **Simplification hedges**: keep a short plain-language caveat only when omitting it
+  would make the spoken claim false.
 
 ## Diagram convention
 

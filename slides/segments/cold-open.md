@@ -1,6 +1,7 @@
 ---
 layout: default
 class: visual-sequence
+title: "The object"
 ---
 
 <!-- SEGMENT
@@ -29,11 +30,7 @@ note: BUILD AND RECORD LAST — this front-loads four promises (map, board, mone
 <div class="visual-sequence__source">GB300-class package · schematic</div>
 
 <!--
-BEATS:
-- Open on the object, not a thesis. Hold a GB300-class AI accelerator on screen. Let it sit.
-- One sentence of stakes: nations, trillion-dollar companies, and every AI lab are fighting over this specific thing.
-LINE THAT LANDS:
-- "Governments are rewriting trade law over this. Let me show you what it actually is."
+A GB300-class accelerator combines two compute dies with eight HBM stacks inside one package. The finished object depends on separate logic, memory, interconnect, and packaging technologies, so no single company can build the whole device.
 -->
 
 ---
@@ -56,13 +53,7 @@ LINE THAT LANDS:
 </div>
 
 <!--
-BEATS:
-- Three impossibility facts, fast, each with a physical handle. Don't explain them yet — let them feel absurd.
-- Transistor count vs stars; the price/power of a single rack; the scale of money pointed at it.
-FACT AMMO:
-- 208B transistors on the B300 package [research/nvidia §the one chip]. Rack ~$4M, ~135kW ≈ 110 US homes [research/nvidia §the one chip]. ~$600B hyperscaler 2026 capex [research/foundations §industry aggregates]. [VERIFY: capex figure — refresh before recording]
-LINE THAT LANDS:
-- "One transistor for every star in our galaxy — on a chip the size of a coaster."
+These numbers trace the scaling chain. One package has 208 billion transistors; 72 packages become a $4 million rack with a facility-scale power load. Hyperscaler spending shows how demand for that hardware propagates through the semiconductor industry.
 -->
 
 ---
@@ -76,11 +67,7 @@ This map follows the accelerator from design software to the finished package. E
 </div>
 
 <!--
-BEATS:
-- Reveal the master map — fully dark. This is the spine. The viewer will be able to locate themselves on it at any minute for the next two hours.
-- Promise #1: by the end, every light is on. Promise #2: every company that touches the chip gets named.
-LINE THAT LANDS:
-- "By the end of this, you'll understand this map better than most people paid to invest in it."
+No company owns the whole route. Nvidia designs the accelerator, TSMC fabricates its logic, memory suppliers build HBM, and packaging firms assemble the final module. The finished device records all of those dependencies.
 -->
 
 ---
@@ -94,13 +81,7 @@ Each controls a technology that leading-edge production cannot replace quickly. 
 </div>
 
 <!--
-BEATS:
-- Promise #3, the mystery engine: name the number — seven — and show the empty board. Every time we prove a single point of failure, it earns a stamp.
-- Tease the twist without spoiling it: "one company is going to show up on this board twice."
-FACT AMMO:
-- The seven, with criteria, are fixed in curriculum.md §The Seven Chokepoints — lock the count before recording this.
-LINE THAT LANDS:
-- "Seven companies. Not seven countries. Seven companies. Let's go find them."
+A high market share alone does not make a chokepoint. The stronger test is whether production stops without that supplier and how long a credible substitute would take to qualify.
 -->
 
 ---
@@ -117,9 +98,5 @@ The course follows one accelerator through each production stage, beginning with
 </div>
 
 <!--
-BEATS:
-- Promise #4 (implicit): the money bar — we'll tally who charges what for this chip, and only add it all up at the very end.
-- Introduce the journey bar as the "you are here" strip. Then hand off to Part 1 — the physics teardown of the object we just held.
-LINE THAT LANDS:
-- "This is the most important supply chain in the world. Here's the whole thing, one link at a time."
+The production chain starts with silicon, passes through chip design and wafer fabrication, then adds memory and packaging before deployment in a data center. Following one accelerator in this order connects each physical step to the companies that perform it.
 -->

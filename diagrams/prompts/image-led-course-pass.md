@@ -73,7 +73,7 @@ Exact labels and quantitative claims remain in Slidev rather than inside the ima
 
 ## chip-rack-grid
 
-- Used in: `synthesis.md` — the constraint moves from chips to energy
+- Used in: `synthesis.md` — one accelerator scales into a facility-level load
 - Render to: `diagrams/rendered/chip-rack-grid.png`
 
 > Create a 16:9 restrained technical editorial scene: advanced GPU package in the

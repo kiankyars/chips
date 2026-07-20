@@ -1,6 +1,6 @@
 ---
 theme: default
-title: "Chips — The Five Layers of AI, Episode 1"
+title: "Chips — From Design to Data Center"
 titleTemplate: "%s"
 highlighter: shiki
 lineNumbers: false
@@ -20,7 +20,7 @@ fonts:
   <img src="/assets/oxidized-silicon-wafer.jpg" alt="">
 </div>
 
-<div class="title-kicker">THE FIVE LAYERS OF AI · 01</div>
+<div class="title-kicker">THE SEMICONDUCTOR SUPPLY CHAIN</div>
 
 # CHIPS
 
@@ -30,14 +30,8 @@ fonts:
   <span>SAND</span><span>DESIGN</span><span>FAB</span><span>MEMORY</span><span>PACKAGE</span>
 </div>
 
-<div class="title-series">
-Applications · Data Centers · Energy · <b>Chips</b> · Models
-</div>
-
 <!--
-BEATS:
-- This is the title card only. The real open is the cold-open segment that follows.
-- Frame the series (Jensen's five layers) and that this is episode one, on the Chips layer.
+This course follows one GB300-class AI accelerator from design file to installed rack. Each step reveals the companies, tools, and materials required to build it.
 -->
 
 ---
