@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
 <title id="title">Accelerator package assembly, state 3 of 4</title>
-<desc id="desc">The same view adds two compute dies and eight HBM stacks on the interposer.</desc>
+<desc id="desc">The same view adds two compute dies and twelve HBM stacks on the interposer.</desc>
 <defs>
   <radialGradient id="spot" cx="50%" cy="48%" r="58%">
     <stop offset="0%" stop-color="#17304d" stop-opacity="0.58"/>
@@ -117,90 +117,130 @@
   <text x="1095" y="548" text-anchor="middle" fill="#f8fafc" font-size="26" font-weight="750" letter-spacing="2">GPU 2</text>
 </g>
 <g filter="url(#shadow)">
-  <rect x="485" y="390" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
-  <rect x="495" y="402" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
-  <rect x="495" y="416" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
-  <rect x="495" y="430" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
-  <rect x="495" y="444" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
-  <rect x="495" y="458" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
-  <rect x="495" y="472" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
-<text x="542.5" y="522" text-anchor="middle" fill="#d8b4fe" font-size="20" font-weight="720" letter-spacing="2">HBM</text>
-</g>
-<g filter="url(#shadow)">
-  <rect x="605" y="390" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
-  <rect x="615" y="402" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
-  <rect x="615" y="416" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
-  <rect x="615" y="430" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
-  <rect x="615" y="444" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
-  <rect x="615" y="458" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
-  <rect x="615" y="472" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
+  <rect x="465" y="375" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
+  <rect x="475" y="387" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
+  <rect x="475" y="401" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
+  <rect x="475" y="415" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
+  <rect x="475" y="429" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
+  <rect x="475" y="443" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
+  <rect x="475" y="457" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
 
 </g>
 <g filter="url(#shadow)">
-  <rect x="485" y="580" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
-  <rect x="495" y="592" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
-  <rect x="495" y="606" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
-  <rect x="495" y="620" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
-  <rect x="495" y="634" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
-  <rect x="495" y="648" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
-  <rect x="495" y="662" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
+  <rect x="590" y="375" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
+  <rect x="600" y="387" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
+  <rect x="600" y="401" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
+  <rect x="600" y="415" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
+  <rect x="600" y="429" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
+  <rect x="600" y="443" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
+  <rect x="600" y="457" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
 
 </g>
 <g filter="url(#shadow)">
-  <rect x="605" y="580" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
-  <rect x="615" y="592" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
-  <rect x="615" y="606" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
-  <rect x="615" y="620" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
-  <rect x="615" y="634" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
-  <rect x="615" y="648" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
-  <rect x="615" y="662" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
+  <rect x="465" y="505" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
+  <rect x="475" y="517" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
+  <rect x="475" y="531" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
+  <rect x="475" y="545" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
+  <rect x="475" y="559" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
+  <rect x="475" y="573" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
+  <rect x="475" y="587" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
 
 </g>
 <g filter="url(#shadow)">
-  <rect x="1260" y="390" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
-  <rect x="1270" y="402" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
-  <rect x="1270" y="416" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
-  <rect x="1270" y="430" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
-  <rect x="1270" y="444" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
-  <rect x="1270" y="458" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
-  <rect x="1270" y="472" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
-<text x="1317.5" y="522" text-anchor="middle" fill="#d8b4fe" font-size="20" font-weight="720" letter-spacing="2">HBM</text>
-</g>
-<g filter="url(#shadow)">
-  <rect x="1380" y="390" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
-  <rect x="1390" y="402" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
-  <rect x="1390" y="416" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
-  <rect x="1390" y="430" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
-  <rect x="1390" y="444" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
-  <rect x="1390" y="458" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
-  <rect x="1390" y="472" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
+  <rect x="590" y="505" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
+  <rect x="600" y="517" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
+  <rect x="600" y="531" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
+  <rect x="600" y="545" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
+  <rect x="600" y="559" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
+  <rect x="600" y="573" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
+  <rect x="600" y="587" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
 
 </g>
 <g filter="url(#shadow)">
-  <rect x="1260" y="580" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
-  <rect x="1270" y="592" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
-  <rect x="1270" y="606" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
-  <rect x="1270" y="620" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
-  <rect x="1270" y="634" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
-  <rect x="1270" y="648" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
-  <rect x="1270" y="662" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
+  <rect x="465" y="635" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
+  <rect x="475" y="647" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
+  <rect x="475" y="661" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
+  <rect x="475" y="675" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
+  <rect x="475" y="689" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
+  <rect x="475" y="703" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
+  <rect x="475" y="717" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
 
 </g>
 <g filter="url(#shadow)">
-  <rect x="1380" y="580" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
-  <rect x="1390" y="592" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
-  <rect x="1390" y="606" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
-  <rect x="1390" y="620" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
-  <rect x="1390" y="634" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
-  <rect x="1390" y="648" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
-  <rect x="1390" y="662" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
+  <rect x="590" y="635" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
+  <rect x="600" y="647" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
+  <rect x="600" y="661" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
+  <rect x="600" y="675" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
+  <rect x="600" y="689" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
+  <rect x="600" y="703" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
+  <rect x="600" y="717" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
+
+</g>
+<g filter="url(#shadow)">
+  <rect x="1225" y="375" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
+  <rect x="1235" y="387" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
+  <rect x="1235" y="401" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
+  <rect x="1235" y="415" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
+  <rect x="1235" y="429" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
+  <rect x="1235" y="443" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
+  <rect x="1235" y="457" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
+
+</g>
+<g filter="url(#shadow)">
+  <rect x="1350" y="375" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
+  <rect x="1360" y="387" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
+  <rect x="1360" y="401" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
+  <rect x="1360" y="415" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
+  <rect x="1360" y="429" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
+  <rect x="1360" y="443" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
+  <rect x="1360" y="457" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
+
+</g>
+<g filter="url(#shadow)">
+  <rect x="1225" y="505" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
+  <rect x="1235" y="517" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
+  <rect x="1235" y="531" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
+  <rect x="1235" y="545" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
+  <rect x="1235" y="559" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
+  <rect x="1235" y="573" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
+  <rect x="1235" y="587" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
+
+</g>
+<g filter="url(#shadow)">
+  <rect x="1350" y="505" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
+  <rect x="1360" y="517" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
+  <rect x="1360" y="531" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
+  <rect x="1360" y="545" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
+  <rect x="1360" y="559" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
+  <rect x="1360" y="573" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
+  <rect x="1360" y="587" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
+
+</g>
+<g filter="url(#shadow)">
+  <rect x="1225" y="635" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
+  <rect x="1235" y="647" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
+  <rect x="1235" y="661" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
+  <rect x="1235" y="675" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
+  <rect x="1235" y="689" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
+  <rect x="1235" y="703" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
+  <rect x="1235" y="717" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
+
+</g>
+<g filter="url(#shadow)">
+  <rect x="1350" y="635" width="115" height="105" rx="12" fill="url(#hbmTop)" stroke="#d8b4fe" stroke-width="4"/>
+  <rect x="1360" y="647" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.34"/>
+  <rect x="1360" y="661" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.41000000000000003"/>
+  <rect x="1360" y="675" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.48000000000000004"/>
+  <rect x="1360" y="689" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.55"/>
+  <rect x="1360" y="703" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6200000000000001"/>
+  <rect x="1360" y="717" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
 
 </g>
 <path d="M 973 540 H 982" stroke="#93c5fd" stroke-width="12" filter="url(#softGlow)"/>
-<path d="M 1486 302 L 1230 420" fill="none" stroke="#93c5fd" stroke-width="2.5" opacity="0.76"/>
-<circle cx="1230" cy="420" r="5" fill="#93c5fd"/>
+<path d="M 1486 302 L 1130 420" fill="none" stroke="#93c5fd" stroke-width="2.5" opacity="0.76"/>
+<circle cx="1130" cy="420" r="5" fill="#93c5fd"/>
 <text x="1510" y="310" fill="#93c5fd" font-size="25" font-weight="760" letter-spacing="2">TWO COMPUTE DIES</text>
-<path d="M 1496 812 L 1350 700" fill="none" stroke="#d8b4fe" stroke-width="2.5" opacity="0.76"/>
-<circle cx="1350" cy="700" r="5" fill="#d8b4fe"/>
-<text x="1520" y="820" fill="#d8b4fe" font-size="25" font-weight="760" letter-spacing="2">EIGHT HBM STACKS</text>
+<path d="M 1496 812 L 1400 700" fill="none" stroke="#d8b4fe" stroke-width="2.5" opacity="0.76"/>
+<circle cx="1400" cy="700" r="5" fill="#d8b4fe"/>
+<text x="1520" y="820" fill="#d8b4fe" font-size="25" font-weight="760" letter-spacing="2">TWELVE HBM STACKS</text>
 </svg>

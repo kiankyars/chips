@@ -203,15 +203,15 @@ title: "Package assembly · 3 / 4"
 
 <div class="visual-sequence__frame">
 
-![Two GPU dies and eight HBM stacks added to the same package view](/diagrams/rendered/package-03-dies-and-hbm.svg)
+![Two GPU dies and twelve HBM stacks added to the same package view](/diagrams/rendered/package-03-dies-and-hbm.svg)
 
 </div>
 
-<div class="visual-sequence__caption">Two GPU dies and eight HBM stacks share the same high-density wiring plane.</div>
+<div class="visual-sequence__caption">Two GPU dies and twelve HBM stacks share the same high-density wiring plane.</div>
 <div class="visual-sequence__source">GB300-class component count · arrangement simplified</div>
 
 <!--
-- Two GPU dies and eight HBM stacks mount on the same interposer.
+- Two GPU dies and twelve HBM stacks mount on the same interposer.
 - The shared wiring plane links the compute dies to each other and gives both access to nearby memory, avoiding the narrower paths used by conventional memory modules.
 -->
 

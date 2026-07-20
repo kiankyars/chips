@@ -93,13 +93,13 @@ Neural-network workloads rely heavily on matrix multiplication, which GPUs divid
 </div>
 <div class="border-2 border-amber-500 rounded-lg p-4 text-center">
 <div class="font-bold">288 GB of memory at 8 TB/s.</div>
-<div class="text-sm opacity-60 mt-1">Eight HBM3E stacks keep the cores supplied with data.</div>
+<div class="text-sm opacity-60 mt-1">Twelve HBM3E stacks keep the cores supplied with data.</div>
 </div>
 </div>
 
 <!--
 - GB300 joins two near-reticle-limit compute dies because one exposure cannot print a larger die.
-- Eight stacks of high-bandwidth memory, or HBM, sit beside them and deliver 8 terabytes per second.
+- Twelve stacks of high-bandwidth memory, or HBM, sit beside them and deliver 8 terabytes per second.
 - HBM's bandwidth keeps 20,480 compute cores supplied with operands instead of leaving the arithmetic units idle.
 -->
 
@@ -166,7 +166,7 @@ title: "Fabless"
 <div class="visual-sequence__kicker">FABLESS</div>
 
 <div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/fabless-physical-chain.png" alt="A chip layout becomes two compute dies, eight HBM stacks, and a completed accelerator package" />
+  <img src="/diagrams/rendered/fabless-physical-chain.png" alt="A chip layout becomes compute dies, HBM stacks, and a completed accelerator package" />
 </div>
 
 <div class="visual-sequence__caption"><strong>Nvidia supplies the design.</strong><span>TSMC and the memory makers supply the physical chip.</span></div>

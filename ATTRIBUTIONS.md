@@ -11,3 +11,11 @@
   https://developer.nvidia.com/blog/inside-nvidia-blackwell-ultra-the-chip-powering-the-ai-factory-era/
   Original asset:
   https://developer-blogs.nvidia.com/wp-content/uploads/2025/08/ConnectX-8-SuperNICs-png.webp
+
+- `public/assets/sk-hynix-hbm3e-blackwell-display.png` — official SK hynix
+  newsroom photograph of a 36 GB 12-layer HBM3E package displayed beside an
+  NVIDIA GB300 Grace Blackwell Ultra module. Copyright SK hynix; no open-content
+  license is stated. Source:
+  https://news.skhynix.com/sk-hynix-showcases-full-stack-ai-memory-portfolio-at-2025-ocp-global-summit/
+  Original asset:
+  https://d18r0a86za96sg.cloudfront.net/wp-content/uploads/2026/05/27131105/SK-hynix_OCP-Global-Summit-2025_Image_06-936x562-1.png

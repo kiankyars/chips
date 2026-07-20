@@ -179,6 +179,27 @@ title: "High-bandwidth memory"
 -->
 
 ---
+class: visual-sequence paper-visual
+title: "HBM3E"
+---
+
+<div class="visual-sequence__kicker">HBM3E</div>
+
+<div class="visual-sequence__frame">
+  <img src="/assets/sk-hynix-hbm3e-blackwell-display.png" alt="SK hynix display showing a 36 GB 12-layer HBM3E package beside an NVIDIA GB300 Grace Blackwell Ultra module" />
+</div>
+
+<div class="visual-sequence__caption"><strong>About 1.2 TB/s per stack.</strong><span>Memory sits millimetres from the GPU.</span></div>
+<div class="visual-sequence__source">24–36 GB · 8 or 12 DRAM dies · 1,024-bit interface</div>
+
+<!--
+- HBM3E is the fifth HBM generation and the memory used by Blackwell Ultra.
+- An eight-high stack holds 24 GB; a twelve-high stack holds 36 GB.
+- Its 1,024-bit interface moves about 1.2 TB each second from one stack.
+- SK hynix, Micron, and Samsung manufacture it; Blackwell Ultra reaches 288 GB and up to 8 TB/s across its HBM subsystem.
+-->
+
+---
 
 # HBM is sold through qualification and long-term contracts
 

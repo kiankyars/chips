@@ -127,10 +127,10 @@ ${label ? `<text x="${x + 57.5}" y="${y + 132}" text-anchor="middle" fill="${C.h
 
 function diesAndMemory() {
   const positions = [
-    [485, 390], [605, 390], [485, 580], [605, 580],
-    [1260, 390], [1380, 390], [1260, 580], [1380, 580],
+    [465, 375], [590, 375], [465, 505], [590, 505], [465, 635], [590, 635],
+    [1225, 375], [1350, 375], [1225, 505], [1350, 505], [1225, 635], [1350, 635],
   ]
-  const hbm = positions.map(([x, y], i) => hbmStack(x, y, i === 0 || i === 4 ? 'HBM' : '')).join('\n')
+  const hbm = positions.map(([x, y]) => hbmStack(x, y, '')).join('\n')
   return `${computeDie(745, 'GPU 1')}
 ${computeDie(980, 'GPU 2')}
 ${hbm}
@@ -160,8 +160,8 @@ function scene(stage) {
   if (stage === 1) parts.push(label('ORGANIC SUBSTRATE', 1490, 720, 1400, 736, C.substrateEdge))
   if (stage === 2) parts.push(label('SILICON INTERPOSER', 1490, 420, 1370, 452, C.interposerEdge))
   if (stage === 3) {
-    parts.push(label('TWO COMPUTE DIES', 1510, 310, 1230, 420, C.computeEdge))
-    parts.push(label('EIGHT HBM STACKS', 1520, 820, 1350, 700, C.hbmEdge))
+    parts.push(label('TWO COMPUTE DIES', 1510, 310, 1130, 420, C.computeEdge))
+    parts.push(label('TWELVE HBM STACKS', 1520, 820, 1400, 700, C.hbmEdge))
   }
   if (stage === 4) parts.push(label('THERMAL LID', 1510, 230, 1510, 306, C.lidEdge))
 
@@ -172,7 +172,7 @@ function svg(stage) {
   const descriptions = {
     1: 'A top-down locked view shows the organic package substrate and its copper traces.',
     2: 'The same view adds a silicon interposer above the organic substrate.',
-    3: 'The same view adds two compute dies and eight HBM stacks on the interposer.',
+    3: 'The same view adds two compute dies and twelve HBM stacks on the interposer.',
     4: 'The same view adds the thermal lid to complete the accelerator package.',
   }
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">

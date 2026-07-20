@@ -44,7 +44,7 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   transistor for every star in the Milky Way, on a slab the size of a coaster. [7][13]
 - **Process**: TSMC **4NP** — a custom 5nm-class node. Not TSMC's newest; Nvidia
   trades density for yield on giant dies. [7]
-- **Memory**: **288 GB of HBM3E** in **8 stacks** (12-high) flanking the dies,
+- **Memory**: **288 GB of HBM3E** across **12 stacks** flanking the dies,
   **8 TB/s** of bandwidth, all assembled on TSMC **CoWoS-L** advanced packaging. [7][8]
 - **Compute**: 160 SMs / **20,480 CUDA cores**; ~15 PFLOPS dense FP4 per GPU. [7]
 - **Power**: **1,400W per GPU** — a space heater and a half, liquid-cooled. [8]
@@ -145,7 +145,7 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 ## Supply chain (why Nvidia's supply = everyone's bottleneck)
 - **TSMC, logic**: Blackwell on custom **4NP** (5nm-class); Rubin moves to
   **3nm**. Single-source. [7][17]
-- **TSMC, packaging (CoWoS)**: two reticle-limit dies + 8 HBM stacks must be
+- **TSMC, packaging (CoWoS)**: two reticle-limit dies + 12 HBM stacks must be
   bonded on a silicon interposer — **CoWoS-L** — and this, not wafer starts, has
   been the AI bottleneck. TSMC CoWoS: ~35k wafers/mo (end-2024) → ~75k (end-2025)
   → target ~125–130k (end-2026); sold out through 2026–27, lead times 52–78

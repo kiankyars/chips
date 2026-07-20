@@ -96,6 +96,22 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   Samsung's TC-NCF film — SK hynix's yield edge here is a core reason it leads.
   <!-- VERIFY: current-gen process details; well-documented for HBM3/3E era -->
 
+### HBM3E in production
+- HBM3E is the **fifth HBM generation**, extending HBM3 rather than defining a
+  separately named fifth-generation standard. SK hynix began volume production
+  in March 2024. [66]
+- Commercial configurations include **24 GB with eight DRAM dies** and **36 GB
+  with twelve dies**. The stack connects through a **1,024-bit interface** and
+  delivers about **1.2 TB/s**; exact rates vary by supplier and product. [66][67][68]
+- SK hynix, Micron, and Samsung all manufacture HBM3E. That does not mean every
+  supplier is qualified for every accelerator. [66][67][68]
+- NVIDIA lists Blackwell Ultra at **288 GB of HBM3E** and up to **8 TB/s** per
+  GPU. NVIDIA's correction note says the proper package has **12 HBM stacks**,
+  replacing an earlier eight-stack diagram. [69]
+- Power comparisons are vendor-specific. Micron claims 30% less power than
+  competing HBM3E products and 2.5 times HBM2E performance per watt; those are
+  not general HBM3E specifications. [67]
+
 ### HBM3E → HBM4 transition (status mid-2026)
 - **HBM4 (JEDEC JESD270-4, Apr 2025):** interface doubles to **2048-bit**, up
   to 8 Gb/s/pin → **≥2 TB/s per stack**, stacks to 16-high, 24/32Gb dies. [21]
@@ -370,3 +386,7 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 63. CNBC, "Samsung Electronics shares fall as capex concerns outweigh strong Q2" (Q2-26 prelim, Jul 7, 2026) — https://www.cnbc.com/2026/07/07/samsung-electronics-preliminary-second-quarter-profit-hits-fresh-high.html
 64. Wikipedia, "Intel 1103" — https://en.wikipedia.org/wiki/Intel_1103
 65. TrendForce, "Memory Industry to Maintain Cautious CapEx in 2026" (DRAM capex $53.7B → $61.3B) — https://www.trendforce.com/presscenter/news/20251113-12780.html
+66. SK hynix, "SK hynix Begins Volume Production of Industry's First HBM3E" (fifth generation, 1.18 TB/s, production) — https://news.skhynix.com/sk-hynix-begins-volume-production-of-industry-first-hbm3e/
+67. Micron, "HBM3E" and product brief (24/36 GB, eight/twelve-high, 1,024 I/O pins, >9.2 Gb/s, >1.2 TB/s) — https://www.micron.com/products/memory/hbm/hbm3e
+68. Samsung Semiconductor, "HBM" (24/36 GB, eight/twelve-high, up to 9.2 Gb/s and 1.18 TB/s) — https://semiconductor.samsung.com/dram/hbm/
+69. NVIDIA, "Inside NVIDIA Blackwell Ultra" (288 GB HBM3E, 8 TB/s, correction to 12 HBM stacks) — https://developer.nvidia.com/blog/inside-nvidia-blackwell-ultra-the-chip-powering-the-ai-factory-era/
