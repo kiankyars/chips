@@ -46,8 +46,9 @@ Tier: **T (tragedy)** — the fallen king arc.
   quadruple patterning), plus first-use **cobalt** interconnects. Each choice
   multiplied defect density; together they broke the node. [11][12]
 - Slated for ~2016 under tick-tock → slipped to 2017 → April 2018: "10nm is
-  broken, delayed until 2019." [11] Real volume only arrived with Ice Lake
-  (late 2019). Desktop stayed on 14nm-plus-plus-plus for ~7 years.
+  broken, delayed until 2019." [11] Volume arrived first in mobile Ice Lake in
+  2019; mainstream desktop remained on 14nm until 10nm-class Alder Lake arrived
+  in 2021. [53][54]
 - While Intel stalled, TSMC shipped N7 (2018), N7+ with EUV (2019), N5 (2020)
   — the process crown changed heads roughly 2018–2020, first time since the
   1980s. [12][13]
@@ -132,7 +133,7 @@ Tier: **T (tragedy)** — the fallen king arc.
   Nvidia-custom x86 CPUs for Nvidia's AI platforms (NVLink-connected), and
   x86 SoCs with **Nvidia RTX GPU chiplets** for PCs. Closed Dec 2025 — by
   which point Nvidia was already up ~$2.5B on paper. [32][33]
-- Net: ~**$15.9B** of equity capital injected in ~6 weeks, from the US
+- Net: ~**$15.9B** of equity capital announced in about one month, from the US
   Treasury, SoftBank, and Intel's chief tormentor. None of it bought foundry
   *orders* — that's the open question (see 14A).
 
@@ -153,14 +154,11 @@ Tier: **T (tragedy)** — the fallen king arc.
   June 1–2, 2026 (Computex). Up to **288 E-cores**, 12 compute tiles on EMIB
   2.5D packaging, 576MB L3; Intel claims +30% perf/thread vs AMD's 192-core
   EPYC 9965; shipping day-one via Dell/HPE/Lenovo/Supermicro. [40][41]
-- **The yield debate (the whole ballgame):** good-die yields were ~20–25% when
-  the Panther Lake compute-tile ramp began (early 2026) [37]; Intel targets
-  >50% by mid-2026 and "industry-standard" yields only in **early 2027** —
-  until then it is capping output and leaving part of Fab 52 idle. [38]
-  Early July 2026: reports that *profitable* 18A yields slip to late 2026/2027
-  (+ AMD's data-center overtake + a BofA "AI bubble" note) cratered the stock
-  **-21% in a week** (~$140 → ~$110). [39][3]
-  <!-- VERIFY: one 2026 analysis pegs 18A defect-limited yields at ~60-75% vs TSMC N2 >90% — figures vary wildly by source and by what's measured (defect density vs good-die on a specific product); hedge on air -->
+- **The yield debate (the whole ballgame):** Intel says 18A entered high-volume
+  manufacturing in 2025, but does not disclose a comparable product-level yield
+  figure. Public estimates mix defect density, functional yield, good-die yield,
+  and different products; do not collapse them into one on-screen percentage.
+  [55]
 - **External customers (still the sore spot):** committed — **Microsoft**
   (chip on 18A, announced Feb 2024), **Amazon/AWS** (AI fabric chip on 18A,
   multi-year framework, Sept 2024), **US DoD** (RAMP-C / Secure Enclave);
@@ -324,3 +322,6 @@ Tier: **T (tragedy)** — the fallen king arc.
 50. Electronics Weekly (2025-01), "Intel makes 2024 loss of $18.8bn" (first since 1986) — https://www.electronicsweekly.com/news/business/intel-makes-2024-loss-of-18-8bn-2025-01/
 51. Intel Form 10-Q, Q1 FY2026 (SEC) — https://www.sec.gov/Archives/edgar/data/0000050863/000005086326000079/intc-20260328.htm
 52. CompaniesMarketCap, Nvidia / TSMC market caps (July 2026) — https://companiesmarketcap.com/nvidia/marketcap/ and https://companiesmarketcap.com/tsmc/marketcap/
+53. Intel, "2019 Year in Review" (10nm Ice Lake mobile volume production) — https://download.intel.com/newsroom/d/newtech/2019-yearbook.pdf
+54. Intel, "Intel at CES 2021" (Alder Lake as the next-generation desktop processor on enhanced 10nm SuperFin) — https://www.intel.com/content/www/us/en/newsroom/news/ces-2021-four-new-processor-families.html
+55. Intel, 2025 Form 10-K (18A high-volume manufacturing status and process disclosures) — https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000011/intc-20251227.htm

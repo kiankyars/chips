@@ -37,9 +37,10 @@ Fiscal calendars: **Synopsys FY ends Oct 31** (FY2025 = Nov'24–Oct'25); **Cade
 - Electronic System Design industry revenue (EDA + design IP + services, per
   SEMI ESD Alliance): **~$21.2B in 2025** (Q1 $5.10B, Q2 $5.09B, Q3 $5.57B,
   Q4 $5.47B; four-quarter growth ~10%). [5]
-- That ~$21B software layer gates a chip industry that sold **$791.7B in 2025**
-  (+25.6% YoY, per SIA) — EDA is **~2.7%** of the value of the industry that
-  cannot exist without it. [6]
+- That ~$21B ESD ecosystem — tools, semiconductor IP, and services — supports a
+  chip industry that sold **$791.7B in 2025**
+  (+25.6% YoY, per SIA) — that ESD total is **~2.7%** of semiconductor sales.
+  [6]
 - (WSTS's spring-2026 forecast even projects ~$1.5T for 2026 on a memory/AI
   surge — use cautiously, it's a forecast.) [7] <!-- VERIFY: extreme forecast; re-check before quoting -->
 - Market shares: **Synopsys ~31%, Cadence ~30%, Siemens EDA ~13%** — three

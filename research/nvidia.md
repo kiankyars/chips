@@ -35,18 +35,21 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   gaming — once the whole company — is now ~7% of revenue. [2]
 
 ## The one chip — GB300 / Blackwell Ultra (the course's tracer bullet)
-- **Package**: B300 "Blackwell Ultra" GPU = **two dies** stitched together, each
-  built at/near TSMC's **~858mm² reticle limit** (the physical maximum a litho
-  scanner can print in one exposure; Nvidia doesn't publish exact die size —
-  predecessor Hopper was 814mm² single-die). Joined by NV-HBI die-to-die link at
+- **Package**: B300 "Blackwell Ultra" GPU = **two reticle-sized dies** stitched
+  together. A standard 26 × 33 mm exposure field is ~858mm², but Nvidia does not
+  publish the exact die area (predecessor Hopper was 814mm² single-die). Joined by
+  NV-HBI die-to-die link at
   **10 TB/s** so software sees one GPU. [7][13]
 - **Transistors**: **208 billion** across the two dies (104B each) — roughly one
   transistor for every star in the Milky Way, on a slab the size of a coaster. [7][13]
 - **Process**: TSMC **4NP** — a custom 5nm-class node. Not TSMC's newest; Nvidia
   trades density for yield on giant dies. [7]
-- **Memory**: **288 GB of HBM3E** across **12 stacks** flanking the dies,
+- **Memory**: **288 GB of HBM3E** in **8 stacks (12-high)** flanking the dies,
   **8 TB/s** of bandwidth, all assembled on TSMC **CoWoS-L** advanced packaging. [7][8]
 - **Compute**: 160 SMs / **20,480 CUDA cores**; ~15 PFLOPS dense FP4 per GPU. [7]
+  A CUDA core is an FP32 execution lane, not a CPU-equivalent independently
+  scheduled core; the 160 streaming multiprocessors are the more useful
+  architectural unit for this comparison. [7]
 - **Power**: **1,400W per GPU** — a space heater and a half, liquid-cooled. [8]
 - **The rack (GB300 NVL72)**: 72 B300 GPUs + 36 Grace CPUs wired by NVLink into
   one giant GPU; ~**1.1 exaFLOPS** FP4 per rack; draws ~**132–140kW**
@@ -54,8 +57,11 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 - **Price (all third-party estimates — Nvidia publishes no list price)**:
   - GB300 NVL72 rack: ~**$3.7–4.0M** (Loop Capital, from Apple's ~$1B/250-rack
     order); other industry sources put it at **$6–6.5M** configured. [11][12]
-  - Implied per-GPU street price: ~**$50k+**. [12] <!-- VERIFY: wide estimate range; pick one framing and flag as estimate on screen -->
   - Next-gen Vera Rubin NVL72 racks reportedly up to **$8.8M**. [11]
+- **Scope warning:** Nvidia reports companywide revenue, gross margin, and cost
+  of revenue, not product-level economics for one GB300. Applying the FY2026
+  gross margin to a third-party full-rack price estimate does not produce a valid
+  product bill of materials. [2]
 - Timeline: unveiled GTC Mar 2025; ramped H2 2025; the volume workhorse of the
   2026 buildout. [7][15]
 
@@ -105,10 +111,11 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   78-layer PCB midplane; Nvidia's response: "our roadmap is intact." [18]
 
 ## The moat
-- **CUDA** (2006): the software layer ~every AI framework targets. **4M+**
-  registered developers, ~20 years of libraries, tooling, and StackOverflow
-  answers; competitors must clone an ecosystem, not a chip. [45]
-  <!-- VERIFY: some Nvidia materials say "6M developers" — pick one figure -->
+- **CUDA** (2006): Nvidia's dominant compute platform, supported by major AI
+  frameworks. Nvidia says
+  **more than 6M developers** use its developer ecosystem, built over roughly
+  20 years of libraries, tooling, and accumulated knowledge; competitors must
+  clone an ecosystem, not only a chip. [45][50]
 - **Networking**: bought Mellanox for **$6.9B** (closed 2020)
   <!-- VERIFY: price/date from memory --> — now looks like the decade's best
   acquisition: NVLink (rack-scale, 130 TB/s across an NVL72), InfiniBand
@@ -123,14 +130,17 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   75–85% by end-2026 as TPUs/ASICs ramp — falling share of an exploding pie. [5]
 
 ## The tech — CPU vs GPU (the teachable)
-- **CPU**: a few dozen powerful cores (server chips: 64–128) built to do *one
+- **CPU**: dozens to hundreds of independently scheduled cores built to do *one
   thing after another* as fast as possible — a latency machine. Great at
   branching logic: run the OS, parse a spreadsheet.
-- **GPU**: thousands of simple cores — B300 has **20,480** — all doing the *same
-  operation on different data at once* — a throughput machine. [7]
-- Analogy that lands: a CPU is a few Nobel laureates; a GPU is 20,000
-  schoolkids each doing one multiplication. For painting 8 million pixels — or
-  multiplying giant matrices — the schoolkids win every time.
+- **GPU**: B300 groups thousands of arithmetic lanes into **160 streaming
+  multiprocessors** and adds **640 Tensor Cores** for matrix operations. The
+  hardware schedules groups of threads across those lanes for throughput; a
+  marketed "CUDA core" is not comparable to an independently scheduled CPU
+  core. [7]
+- Analogy that lands: a CPU is a small team of generalists optimized to finish
+  one complicated task quickly; a GPU is a large set of coordinated crews
+  applying the same operations across many data elements.
 - Why that equals AI: a neural network is essentially **stacked matrix
   multiplications** (every layer = multiply a grid of numbers by a grid of
   weights). Matrix math decomposes into millions of independent multiply-adds —
@@ -139,29 +149,29 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 - Since 2017 Nvidia also packs dedicated **Tensor Cores** (matrix-multiply
   units) — the honest version is that modern Nvidia DC chips are matrix engines
   with a GPU heritage, not graphics cards.
-- Direction-of-the-lie hedge: a "CUDA core" is far simpler than a CPU core —
-  compare chips by throughput, not core count.
+- Direction-of-the-lie hedge: CPU-core and CUDA-core counts are different units;
+  compare workload throughput, not the marketed counts.
 
 ## Supply chain (why Nvidia's supply = everyone's bottleneck)
 - **TSMC, logic**: Blackwell on custom **4NP** (5nm-class); Rubin moves to
   **3nm**. Single-source. [7][17]
-- **TSMC, packaging (CoWoS)**: two reticle-limit dies + 12 HBM stacks must be
-  bonded on a silicon interposer — **CoWoS-L** — and this, not wafer starts, has
-  been the AI bottleneck. TSMC CoWoS: ~35k wafers/mo (end-2024) → ~75k (end-2025)
-  → target ~125–130k (end-2026); sold out through 2026–27, lead times 52–78
-  weeks; Nvidia books ~**60%** of global CoWoS demand (~595k wafers for 2026).
-  Overflow goes to ASE/Amkor; Arizona packaging fabs ramping. [34][35][36]
-- **HBM**: SK Hynix effectively lead/exclusive supplier of 12-Hi HBM3E at GB300
-  launch [30]; Micron shipping in volume; Samsung finally passed Nvidia's 12-Hi
-  HBM3E qualification **Sept 2025** (third of three). HBM share ~**62% SK Hynix /
-  21% Micron / 17% Samsung** (Q2 2025). Rubin moves to **HBM4** — the next
-  qualification war. [30][31][32][33]
-- Chain in one breath: Nvidia designs → TSMC prints two reticle-limit dies →
-  Korea ships HBM stacks → TSMC CoWoS glues it all onto an interposer → ODMs
-  (Foxconn etc.) build the $4M racks → hyperscalers plug in 130kW each.
-- Because Nvidia pre-buys most of CoWoS + HBM, **everyone else's** accelerator
-  (AMD, Google TPU, Trainium…) queues for the leftovers — Nvidia's supply chain
-  is the industry's rate limiter. [34][36]
+- **TSMC, packaging (CoWoS)**: two reticle-sized dies + 8 HBM stacks must be
+  bonded on an RDL-based interposer with local silicon interconnects —
+  **CoWoS-L**. Packaging capacity was a major shipment constraint alongside HBM;
+  front-end wafer output alone did not determine accelerator volume. Industry
+  estimates put CoWoS at ~35k wafers/mo (end-2024), ~75k (end-2025), and a
+  ~125–130k target (end-2026), with Nvidia booking a large share. TSMC does not
+  publish this exact monthly series or customer allocation. [34][35][36]
+- **HBM**: SK hynix was the lead supplier of 12-high HBM3E at GB300 launch;
+  Micron shipped in volume, and Samsung cleared Nvidia's 12-high HBM3E
+  qualification in **Sept 2025**. Q2 2025 share estimates were ~**62% SK hynix /
+  21% Micron / 17% Samsung**. Rubin moves to **HBM4**; Nvidia publicly named all
+  three as sources by mid-2026. [30][31][32][33][51]
+- Chain in one breath: Nvidia designs → TSMC prints two reticle-sized dies →
+  memory suppliers ship HBM stacks → TSMC CoWoS joins the package → ODMs build
+  full racks → operators supply roughly 130kW per NVL72.
+- Nvidia's large CoWoS and HBM bookings can tighten capacity available to other
+  accelerators, but supplier allocations are not publicly disclosed. [34][36]
 
 ## Customers & the circular-money debate
 - Buyers: hyperscalers (Microsoft, Meta, Amazon, Google, Oracle) + AI labs +
@@ -261,8 +271,8 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   company. [3]
 - The US government literally takes a **15–25% cut** of Nvidia's China chip
   sales — an export tax invented for one company. [22]
-- Gross margin ~**75%**: for every $100 of AI chips sold, $75 is gross profit —
-  the "AI tax" everyone in the boom pays. [1]
+- Nvidia's **FY2026 companywide GAAP gross margin was 71.1%**. It is evidence of
+  platform economics, not a disclosed margin for one accelerator. [2]
 
 ## Sources
 1. Nvidia, "Financial Results for Q1 Fiscal 2027" (quarter ended 2026-04-26) — https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027
@@ -314,3 +324,5 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 47. Futurum, "Nvidia Q2 FY2026: networking steals the spotlight" (Spectrum-X >$10B annualized) — https://futurumgroup.com/insights/nvidia-q2-fy-2026-earnings-networking-steals-the-spotlight/
 48. Tom's Hardware, "Nvidia on track for $500B in GPU sales by late 2026 despite losing China" — https://www.tomshardware.com/pc-components/gpus/nvidia-hints-at-early-vera-rubin-launch-on-track-for-usd500-billion-in-gpu-sales-by-late-2026-despite-losing-china
 49. Fortune, "Nvidia is officially the world's first $5 trillion company" (2025-10-29) — https://fortune.com/2025/10/29/nvidia-first-5-trillion-company-ceo-jensen-huang-500-billion-revenue-blackwell-rubin-gpus-china/
+50. NVIDIA, "GTC 2026 News and Announcements" (more than 6 million developers) — https://blogs.nvidia.com/blog/gtc-2026-news/
+51. NVIDIA, GTC Taipei 2026 session (Micron, SK hynix, and Samsung named as Rubin HBM4 sources) — https://www.nvidia.com/en-us/on-demand/session/gtctaipei26-stw61044/

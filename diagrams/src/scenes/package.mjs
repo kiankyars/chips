@@ -91,12 +91,21 @@ function substrate() {
 }
 
 function interposer() {
+  const localSiliconInterconnects = [
+    [690, 470, 150, 150],
+    [885, 470, 150, 150],
+    [1080, 470, 150, 150],
+  ].map(([x, y, width, height]) =>
+    `<rect x="${x}" y="${y}" width="${width}" height="${height}" rx="10" fill="#0b3140" stroke="${C.interposerEdge}" stroke-width="3" stroke-dasharray="9 7" opacity="0.9"/>`,
+  )
+
   return `<g filter="url(#shadow)">
   <rect x="455" y="345" width="1010" height="400" rx="24" fill="url(#interposerTop)" stroke="${C.interposerEdge}" stroke-width="5"/>
   <rect x="475" y="365" width="970" height="360" rx="18" fill="url(#microbumps)" opacity="0.78"/>
   <path d="M 520 545 H 1400 M 960 390 V 700" stroke="#a5f3fc" stroke-width="2" opacity="0.24"/>
   <path d="M 560 430 C 730 430 690 510 820 510 M 1360 430 C 1190 430 1230 510 1100 510" fill="none" stroke="#a5f3fc" stroke-width="4" opacity="0.42"/>
   <path d="M 560 660 C 730 660 690 580 820 580 M 1360 660 C 1190 660 1230 580 1100 580" fill="none" stroke="#a5f3fc" stroke-width="4" opacity="0.42"/>
+  ${localSiliconInterconnects.join('\n  ')}
 </g>`
 }
 
@@ -127,8 +136,8 @@ ${label ? `<text x="${x + 57.5}" y="${y + 132}" text-anchor="middle" fill="${C.h
 
 function diesAndMemory() {
   const positions = [
-    [465, 375], [590, 375], [465, 505], [590, 505], [465, 635], [590, 635],
-    [1225, 375], [1350, 375], [1225, 505], [1350, 505], [1225, 635], [1350, 635],
+    [465, 395], [590, 395], [465, 590], [590, 590],
+    [1225, 395], [1350, 395], [1225, 590], [1350, 590],
   ]
   const hbm = positions.map(([x, y]) => hbmStack(x, y, '')).join('\n')
   return `${computeDie(745, 'GPU 1')}
@@ -158,10 +167,10 @@ function scene(stage) {
   if (stage >= 4) parts.push(lid())
 
   if (stage === 1) parts.push(label('ORGANIC SUBSTRATE', 1490, 720, 1400, 736, C.substrateEdge))
-  if (stage === 2) parts.push(label('SILICON INTERPOSER', 1490, 420, 1370, 452, C.interposerEdge))
+  if (stage === 2) parts.push(label('RDL + LOCAL SILICON', 1460, 420, 1160, 490, C.interposerEdge))
   if (stage === 3) {
     parts.push(label('TWO COMPUTE DIES', 1510, 310, 1130, 420, C.computeEdge))
-    parts.push(label('TWELVE HBM STACKS', 1520, 820, 1400, 700, C.hbmEdge))
+    parts.push(label('EIGHT HBM3E STACKS', 1510, 820, 1400, 680, C.hbmEdge))
   }
   if (stage === 4) parts.push(label('THERMAL LID', 1510, 230, 1510, 306, C.lidEdge))
 
@@ -171,8 +180,8 @@ function scene(stage) {
 function svg(stage) {
   const descriptions = {
     1: 'A top-down locked view shows the organic package substrate and its copper traces.',
-    2: 'The same view adds a silicon interposer above the organic substrate.',
-    3: 'The same view adds two compute dies and twelve HBM stacks on the interposer.',
+    2: 'The same view adds an RDL-based interposer with embedded local silicon interconnects above the organic substrate.',
+    3: 'The same view adds two compute dies and eight 12-high HBM3E stacks on the interposer.',
     4: 'The same view adds the thermal lid to complete the accelerator package.',
   }
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">

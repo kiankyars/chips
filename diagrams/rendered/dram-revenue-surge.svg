@@ -53,8 +53,8 @@
   <path d="M1601.04 684V701.16C1626 727.68 1704 727.68 1728.96 701.16V684" fill="#7358a3" opacity="0.15" stroke="#7358a3" stroke-width="3.12"/>
   <path d="M1622.1 676.98H1707.9M1637.7 689.46H1692.3" stroke="#7358a3" stroke-width="1.56" opacity="0.4"/>
 </g>
-<text x="1470" y="782" fill="#7358a3" font-size="24" font-weight="780" text-anchor="middle" letter-spacing="1.8" opacity="1">ONE HBM WAFER</text>
-<text x="1470" y="824" fill="#777c79" font-size="23" font-weight="560" text-anchor="middle" letter-spacing="0" opacity="1">uses capacity equivalent to roughly</text>
-<text x="1470" y="865" fill="#1f272d" font-size="25" font-weight="780" text-anchor="middle" letter-spacing="1.5" opacity="1">THREE PC-DRAM WAFERS</text>
-<text x="118" y="1000" fill="#777c79" font-size="22" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">Forecast · data centers account for about 70% of 2026 memory output</text>
+<text x="1470" y="782" fill="#7358a3" font-size="24" font-weight="780" text-anchor="middle" letter-spacing="1.8" opacity="1">1 GB OF HBM OUTPUT</text>
+<text x="1470" y="824" fill="#777c79" font-size="23" font-weight="560" text-anchor="middle" letter-spacing="0" opacity="1">requires roughly</text>
+<text x="1470" y="865" fill="#1f272d" font-size="25" font-weight="780" text-anchor="middle" letter-spacing="1.5" opacity="1">3× DDR5 WAFER CAPACITY</text>
+<text x="118" y="1000" fill="#777c79" font-size="22" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">Forecast revenue · HBM capacity intensity raises the wafer burden</text>
 </svg>

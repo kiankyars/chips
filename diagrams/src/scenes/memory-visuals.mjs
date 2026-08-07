@@ -253,57 +253,51 @@ ${text(735, 1008, 'advanced nodes only where they pay', { size: 25, fill: C.mute
 }
 
 function replacementHorizonScene() {
-  const x0 = 480
-  const x1 = 1760
-  const scale = (x1 - x0) / 20
-  const at = years => x0 + years * scale
-  const rows = [
-    { name: 'OSAT', sub: 'assembly + test', value: 2, color: C.rose },
-    { name: 'SK hynix', sub: 'HBM', value: 5, color: C.violet },
-    { name: 'KLA', sub: 'process control', value: 7, color: C.amber },
-    { name: 'Japan materials', sub: 'resist + mask blanks', range: [5, 10], color: '#9b7d20' },
-    { name: 'Synopsys + Cadence', sub: 'EDA', value: 10, color: C.blue },
-    { name: 'Nvidia', sub: 'CUDA ecosystem', value: 10, color: C.blue },
-    { name: 'TSMC', sub: 'leading-edge logic + CoWoS', open: 10, color: C.teal },
-    { name: 'ASML + Zeiss', sub: 'EUV lithography', range: [15, 20], color: C.amber },
+  const columns = [
+    {
+      x: 90,
+      color: C.green,
+      title: 'CAPACITY CAN SHIFT',
+      sub: 'within an existing qualified ecosystem',
+      items: ['OSAT assembly + test', 'allocation among qualified sources'],
+    },
+    {
+      x: 700,
+      color: C.violet,
+      title: 'CAPABILITY MUST SCALE',
+      sub: 'qualification, yield, and manufacturing depth',
+      items: ['HBM manufacturing at scale', 'advanced materials', 'process-control tools'],
+    },
+    {
+      x: 1310,
+      color: C.amber,
+      title: 'ECOSYSTEM MUST BE REBUILT',
+      sub: 'interdependent tools, IP, suppliers, and know-how',
+      items: ['EDA + CUDA ecosystems', 'leading-edge logic + CoWoS', 'EUV scanners + optics'],
+    },
   ]
 
-  const guides = [0, 5, 10, 15, 20].map(year => `<g>
-  <path d="M${at(year)} 164V936" stroke="${year === 0 ? C.line : C.faint}" stroke-width="${year === 0 ? 3 : 2}"/>
-  ${text(at(year), 132, String(year), { size: 24, fill: C.muted, weight: 700, anchor: 'middle' })}
-</g>`).join('')
-
-  const rowSvg = rows.map((row, i) => {
-    const y = 238 + i * 91
-    let mark
-    if (row.range) {
-      const [from, to] = row.range
-      mark = `<path d="M${at(from)} ${y}H${at(to)}" stroke="${row.color}" stroke-width="18" stroke-linecap="round"/>
-<circle cx="${at(from)}" cy="${y}" r="10" fill="${C.paper}" stroke="${row.color}" stroke-width="5"/>
-<circle cx="${at(to)}" cy="${y}" r="10" fill="${C.paper}" stroke="${row.color}" stroke-width="5"/>
-${text((at(from) + at(to)) / 2, y - 22, `~${from}–${to}`, { size: 22, fill: row.color, weight: 760, anchor: 'middle' })}`
-    } else if (row.open) {
-      mark = `<path d="M${at(row.open)} ${y}H${at(18.7)}" stroke="${row.color}" stroke-width="9" stroke-linecap="round" marker-end="url(#arrow-ink)"/>
-<circle cx="${at(row.open)}" cy="${y}" r="13" fill="${row.color}"/>
-${text(at(row.open), y - 22, `~${row.open}+`, { size: 22, fill: row.color, weight: 760, anchor: 'middle' })}`
-    } else {
-      mark = `<circle cx="${at(row.value)}" cy="${y}" r="15" fill="${row.color}"/>
-<circle cx="${at(row.value)}" cy="${y}" r="25" fill="none" stroke="${row.color}" stroke-width="3" opacity="0.28"/>
-${text(at(row.value), y - 24, `~${row.value}`, { size: 22, fill: row.color, weight: 760, anchor: 'middle' })}`
-    }
-    return `<path d="M82 ${y + 39}H1790" stroke="${C.faint}" stroke-width="2"/>
-${text(92, y - 4, row.name, { size: 27, weight: 740 })}
-${text(92, y + 26, row.sub, { size: 19, fill: C.muted, weight: 560 })}
-${mark}`
+  const columnSvg = columns.map(column => {
+    const itemSvg = column.items.map((item, index) => {
+      const y = 400 + index * 126
+      return `<rect x="${column.x + 42}" y="${y}" width="436" height="82" rx="20" fill="${column.color}" opacity="0.12" stroke="${column.color}" stroke-width="3"/>
+${text(column.x + 260, y + 51, item, { size: 24, fill: column.color, weight: 720, anchor: 'middle' })}`
+    }).join('\n')
+    return `${panel(column.x, 216, 520, 606)}
+${text(column.x + 260, 286, column.title, { size: 25, fill: column.color, weight: 820, anchor: 'middle', tracking: 1.2 })}
+${text(column.x + 260, 326, column.sub, { size: 18, fill: C.muted, weight: 560, anchor: 'middle' })}
+${itemSvg}`
   }).join('\n')
 
   return svgDoc(
-    'Estimated years to replace critical semiconductor suppliers',
-    'A horizontal horizon compares order-of-magnitude replacement times: about two years for outsourced assembly and test, five for HBM, seven for KLA, five to ten for Japanese materials, around ten for EDA and CUDA, more than ten for TSMC, and fifteen to twenty for ASML and Zeiss.',
-    `${text(x0, 82, 'YEARS TO A COMPETITIVE DOMESTIC ALTERNATIVE', { size: 22, fill: C.muted, weight: 760, tracking: 2.2 })}
-${guides}
-${rowSvg}
-${text(92, 1010, 'Editorial ranges · order of magnitude, not completion dates', { size: 21, fill: C.muted, weight: 560 })}`,
+    'Relative replacement difficulty across semiconductor capabilities',
+    'Three categories distinguish shifting existing qualified capacity, scaling a competitive manufacturing capability, and rebuilding a deeply interdependent ecosystem. The ordering is qualitative rather than a forecast in years.',
+    `${text(960, 82, 'RELATIVE REPLACEMENT DIFFICULTY', { size: 26, fill: C.muted, weight: 800, anchor: 'middle', tracking: 2.4 })}
+${text(960, 132, 'Capacity substitution is not the same task as recreating a capability or ecosystem', { size: 25, fill: C.ink, weight: 650, anchor: 'middle' })}
+${columnSvg}
+<path d="M620 520H675" stroke="${C.line}" stroke-width="5" marker-end="url(#arrow-ink)"/>
+<path d="M1230 520H1285" stroke="${C.line}" stroke-width="5" marker-end="url(#arrow-ink)"/>
+${text(960, 920, 'Qualitative synthesis · actual substitution depends on the product, geography, qualification status, and starting capability', { size: 20, fill: C.muted, weight: 560, anchor: 'middle' })}`,
   )
 }
 

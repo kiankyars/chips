@@ -14,7 +14,7 @@ status: draft
 seeds: [margin-ladder]    # the ladder is teased here, ranked in `synthesis`. Soft plant — not a formal ledger pair, but the payoff lives in another segment, so redline per that rule.
 pays_off: []              # cashes no prior ledger seed; it consumes foundations' cost-curve concept, which is a dependency, not a seed
 stamps: []                # no chokepoint proven here — first stamp (EDA) is earned in `eda`
-diagrams: [map-full]      # FIRST full reveal of the master map — archetypes ARE the legend
+diagrams: [map-full, unbundling-design-fab]
 sources: research/foundations.md, research/tsmc.md
 -->
 

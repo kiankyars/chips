@@ -11,9 +11,10 @@ cents, built on process nodes 15–40 years old, that stop car production lines
 when missing.
 
 ## The layer in numbers
-- Whole semiconductor market 2025: **~$772B** (+22%), forecast **~$975B** in 2026 —
-  but almost all of that growth is AI/memory/logic. This layer grows single digits:
-  analog +7% (2025) / +10% (2026e), discretes -слightly/+8%. [26][27]
+- Whole semiconductor market 2025: **$791.7B** (+25.6%). Logic (+39.9%) and
+  memory (+34.8%) were the fastest-growing product categories. This layer grew
+  more slowly: analog +7% in the WSTS autumn estimate, with category forecasts
+  subject to revision. [26][27][45]
 - **Analog market: ~$85–95B** (2025). WSTS has analog growing 7% in 2025 off a
   ~$80B 2024 base; research houses put global analog at ~$94B for 2025. [26][27][28]
   <!-- VERIFY: exact WSTS analog dollar figure for 2025; ~$80B 2024 base is from memory -->
@@ -287,3 +288,4 @@ when missing.
 42. FinancialContent/MarketMinute, "Analog Awakening: TI signals sector rebound with bold Q1 guidance" (Feb 2026) — https://markets.financialcontent.com/stocks/article/marketminute-2026-2-25-analog-awakening-texas-instruments-signals-sector-rebound-with-bold-q1-guidance
 43. TI, Product life cycle policy (10–15 years, often longer) — https://www.ti.com/support-quality/quality-policies-procedures/product-life-cycle.html
 44. Investing.com, "onsemi Q2 2025: China SiC sales double" — https://www.investing.com/news/company-news/onsemi-q2-2025-presentation-revenue-grows-2-as-china-sic-sales-double-93CH-4167787
+45. SIA, "Global Annual Semiconductor Sales Increase 25.6% to $791.7 Billion in 2025" — https://www.semiconductors.org/global-annual-semiconductor-sales-increase-25-6-to-791-7-billion-in-2025/

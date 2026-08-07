@@ -6,13 +6,13 @@ layout: section
 id: eda
 act: II — The Blueprint
 tier: D            # duel — Synopsys vs Cadence told as one 40-year contest; Siemens EDA is a card
-angle: "The $792B chip industry runs on $21B of software from two companies — the cheapest chokepoint on the board, and the first one Washington learned to fire as a weapon."   # PROPOSED — YOU OWN THIS LINE
+angle: "The $792B chip industry depends on a roughly $21B electronic-system-design market — tools, IP, and services anchored by Synopsys and Cadence, with Siemens a consequential third — and export controls turn access to that toolchain into leverage."   # PROPOSED — YOU OWN THIS LINE
 runtime: ~5 min
 status: draft
 seeds: [eda-export-lever]     # EDA as an export-control weapon → pays off in geopolitics
 pays_off: []
 stamps: [eda-duopoly]         # Chokepoint #1: Synopsys + Cadence
-diagrams: [map-design, board-1]
+diagrams: [map-design, eda-flow-v2, board-1]
 sources: research/eda.md
 -->
 
@@ -85,10 +85,10 @@ title: "Electronic design automation"
 
 ---
 
-# A $21B software market supports $792B in chip sales
+# A $21B ESD market supports $792B in chip sales
 
 <div class="text-center mt-2 text-lg">
-  EDA revenue was about <b>$21B</b> in 2025, versus <b>$792B</b> in semiconductor sales.
+  Electronic System Design revenue — tools, semiconductor IP, and services — was about <b>$21B</b> in 2025, versus <b>$792B</b> in semiconductor sales.
 </div>
 
 <div class="border-2 border-gray-400 rounded-lg p-3 mt-4">
@@ -98,7 +98,7 @@ title: "Electronic design automation"
     <div><div class="text-2xl font-bold">~77%</div><div class="text-sm opacity-60">gross margin</div></div>
     <div><div class="text-2xl font-bold">~31%</div><div class="text-sm opacity-60">market share</div></div>
 <div><div class="text-lg font-bold leading-tight mt-1">synthesis, digital design, and IP</div></div>
-    <div><div class="text-2xl font-bold">~15 yrs</div><div class="text-sm opacity-60">to replace</div></div>
+    <div><div class="text-lg font-bold leading-tight mt-1">ecosystem</div><div class="text-sm opacity-60">must be rebuilt</div></div>
   </div>
   <div class="text-xs opacity-40 text-right mt-1">as of Q2 2026</div>
 </div>
@@ -110,14 +110,14 @@ title: "Electronic design automation"
     <div><div class="text-2xl font-bold">~86%</div><div class="text-sm opacity-60">gross margin</div></div>
     <div><div class="text-2xl font-bold">~30%</div><div class="text-sm opacity-60">market share</div></div>
 <div><div class="text-lg font-bold leading-tight mt-1">analog/custom design and emulation</div></div>
-    <div><div class="text-2xl font-bold">~15 yrs</div><div class="text-sm opacity-60">to replace</div></div>
+    <div><div class="text-lg font-bold leading-tight mt-1">ecosystem</div><div class="text-sm opacity-60">must be rebuilt</div></div>
   </div>
   <div class="text-xs opacity-40 text-right mt-1">as of Q2 2026</div>
 </div>
 
 <!--
-- The EDA market generated about $21 billion in 2025 while supporting $792 billion in semiconductor sales, and Synopsys and Cadence each hold about 30 percent of that market.
-- Foundry certification and years of tool development make a leading-edge replacement about a 15-year project.
+- The broader Electronic System Design market generated about $21 billion in 2025 across tools, semiconductor IP, and services while supporting $792 billion in semiconductor sales.
+- Foundry certification, interoperable toolchains, and accumulated IP make replacement an ecosystem-rebuilding task, not a defensible countdown.
 -->
 
 ---

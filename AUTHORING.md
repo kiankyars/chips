@@ -46,10 +46,17 @@ prevents a false claim, state it once in plain English.
 
 ## Segment file header
 
-Every `slides/segments/<id>.md` starts with this metadata comment so we can
-track state at a glance:
+Every `slides/segments/<id>.md` begins with the first slide's Slidev frontmatter.
+Put the metadata comment immediately after that frontmatter and before visible
+content; making the comment the file's first content creates a blank slide.
 
 ```
+---
+class: visual-sequence
+transition: fade
+title: "EUV · physical scale"
+---
+
 <!-- SEGMENT
 id: asml
 act: IV — The Fab Tour
@@ -77,15 +84,16 @@ don't delete it.
 Defined in `STRATEGY.md`; implemented as recurring slide patterns:
 
 - **Map navigator**: every segment's first slide shows the master map with this
-  segment's region lit (`diagrams/map/…` states). No company is introduced without
+  segment's region lit (`diagrams/rendered/map-*.svg` states). No company is introduced without
   its location lighting up.
-- **Scoreboard**: major players get the identical stat block — revenue · gross margin ·
-  market share · moat-in-one-line · years-to-replace — always dated ("as of Q2 2026").
-  Keep it a consistent slide layout so comparison becomes a visual rhythm.
-- **Chokepoint stamps**: when a segment proves a single point of failure, the slide
-  shows the Board gaining that stamp (states in `diagrams/board/`).
-- **Money Bar**: acts end with the running price-waterfall of the one chip; equipment
-  and EDA enter as "amortized tolls," flagged honestly as estimates/ranges.
+- **Scoreboard**: protagonists and selected comparison sets may use a consistent
+  stat block when entity scope, period, and metric definitions are genuinely
+  comparable. Date every metric; do not force ensemble players into false symmetry.
+- **Chokepoint stamps**: when a segment proves a hard-to-replace control point, the
+  slide shows the Board gaining that stamp (`diagrams/rendered/board-*.svg`).
+- **Economics Ledger**: act-end entries keep company financials, product estimates,
+  and supplier relationships in separate, explicit scopes. Never infer a product
+  cost or margin by multiplying unrelated figures.
 - **Flow Strip**: all Act IV players enter on the deposit→litho→etch→implant→CMP→measure
   ribbon with their step glowing.
 - **Numbers with handles**: no headline number without a physical comparison the
@@ -97,11 +105,15 @@ Defined in `STRATEGY.md`; implemented as recurring slide patterns:
 
 Two kinds of diagrams:
 
+Each segment's `diagrams` metadata is an exact inventory of the rendered diagram IDs
+referenced by that segment. `npm run check` rejects missing, duplicate, or stale entries.
+
 **1. Structural diagrams are code.** The master map (and its lighting states), the
-journey bar, the flow strip, the chokepoint board, the money bar — anything that must
-stay pixel-consistent across many slides — is a hand-authored SVG committed to
-`diagrams/rendered/<id>.svg` and referenced directly (`![](/diagrams/rendered/<id>.svg)`).
-Diffable, regenerable, no image model in the loop.
+journey bar, the flow strip, and the chokepoint board — anything that must
+stay pixel-consistent across many slides — is encoded in SVG/JavaScript, rendered
+to a committed `diagrams/rendered/<id>.svg` by `diagrams/src/generate.mjs`, and
+referenced directly (`![](/diagrams/rendered/<id>.svg)`). The result is diffable
+and regenerable, with no image model in the loop.
 
 **2. Decorative one-offs may stay GPT-image.** One file per prompt in
 `diagrams/prompts/<id>.md`:
@@ -116,9 +128,9 @@ PROMPT:
 <the full text you paste into GPT-image>
 ```
 
-You generate, save the PNG to `diagrams/rendered/<id>.png`, and the slide picks it
-up. Regenerating a diagram never touches the script. If a slide references a PNG that
-doesn't exist yet, the SVG placeholder (or nothing) renders — decks must always build.
+You generate and save the PNG to `diagrams/rendered/<id>.png`, and the slide picks it
+up. Regenerating a diagram never touches the script. Missing rendered assets fail
+`npm run check`; commit a labeled placeholder when final artwork is not ready.
 
 ## Fact-checking convention
 

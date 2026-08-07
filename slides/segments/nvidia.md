@@ -12,7 +12,7 @@ status: draft
 seeds: [memory-wall, reticle-limit, owns-no-factories]
 pays_off: []
 stamps: []
-diagrams: [map-design, journey-2]
+diagrams: [map-design, journey-2, fabless-physical-chain]
 sources: research/nvidia.md
 -->
 
@@ -46,25 +46,25 @@ Manufacturing comes later.
 
 <div class="grid grid-cols-2 gap-8 mt-8">
 <div class="border-2 border-gray-400 rounded-lg p-6 text-center">
-<div class="text-6xl font-bold">~64–128</div>
-<div class="opacity-70 mt-2">powerful cores</div>
+<div class="text-5xl font-bold">dozens → hundreds</div>
+<div class="opacity-70 mt-2">independently scheduled cores</div>
 <div class="text-sm opacity-60 mt-4">optimized for low-latency serial and branch-heavy work</div>
 </div>
 <div class="border-2 border-green-500 rounded-lg p-6 text-center">
-<div class="text-6xl font-bold">20,480</div>
-<div class="opacity-70 mt-2">simple cores</div>
-<div class="text-sm opacity-60 mt-4">optimized for high-throughput parallel operations</div>
+<div class="text-5xl font-bold">160 SMs</div>
+<div class="opacity-70 mt-2">640 Tensor Cores</div>
+<div class="text-sm opacity-60 mt-4">schedule thousands of arithmetic lanes for parallel throughput</div>
 </div>
 </div>
 
 <div class="text-center text-lg opacity-70 mt-8">
-Neural-network workloads rely heavily on matrix multiplication, which GPUs divide across many cores.
+Neural-network workloads rely heavily on matrix multiplication, which maps efficiently onto SIMT execution and dedicated Tensor Cores.
 </div>
 
 <!--
-- A server CPU uses dozens of complex cores to handle serial work and branches with low latency.
-- A GPU uses thousands of smaller cores to apply the same operation across many data elements.
-- Neural networks rely on matrix multiplication, so GPUs can divide that work across their cores.
+- A server CPU exposes dozens to hundreds of independently scheduled cores optimized for serial work, branches, and low latency.
+- Blackwell Ultra groups arithmetic lanes into 160 streaming multiprocessors and adds 640 Tensor Cores for matrix operations.
+- A marketed CUDA core is an execution lane, not a CPU-equivalent core; SIMT scheduling turns many lanes into throughput.
 -->
 
 ---
@@ -77,8 +77,8 @@ Neural-network workloads rely heavily on matrix multiplication, which GPUs divid
 <div class="opacity-70 mt-2">transistors, two dies</div>
 </div>
 <div>
-<div class="text-5xl font-bold">~858 mm²</div>
-<div class="opacity-70 mt-2">per die — the reticle limit</div>
+<div class="text-5xl font-bold">≈858 mm²</div>
+<div class="opacity-70 mt-2">standard exposure field; exact die area not disclosed</div>
 </div>
 <div>
 <div class="text-5xl font-bold">1,400 W</div>
@@ -93,14 +93,14 @@ Neural-network workloads rely heavily on matrix multiplication, which GPUs divid
 </div>
 <div class="border-2 border-amber-500 rounded-lg p-4 text-center">
 <div class="font-bold">288 GB of memory at 8 TB/s.</div>
-<div class="text-sm opacity-60 mt-1">Twelve HBM3E stacks keep the cores supplied with data.</div>
+<div class="text-sm opacity-60 mt-1">Eight 12-high HBM3E stacks keep the cores supplied with data.</div>
 </div>
 </div>
 
 <!--
 - GB300 joins two near-reticle-limit compute dies because one exposure cannot print a larger die.
-- Twelve stacks of high-bandwidth memory, or HBM, sit beside them and deliver 8 terabytes per second.
-- HBM's bandwidth keeps 20,480 compute cores supplied with operands instead of leaving the arithmetic units idle.
+- Eight 12-high stacks of high-bandwidth memory, or HBM, sit beside them and deliver 8 terabytes per second.
+- HBM's bandwidth keeps 160 streaming multiprocessors and their Tensor Cores supplied with operands instead of leaving arithmetic units idle.
 -->
 
 ---
@@ -127,35 +127,35 @@ Neural-network workloads rely heavily on matrix multiplication, which GPUs divid
 </div>
 
 <div class="text-center mt-12">
-<div class="text-6xl font-bold">4M+</div>
-<div class="opacity-70 mt-2">registered CUDA developers · ~20 years of libraries</div>
+<div class="text-6xl font-bold">6M+</div>
+<div class="opacity-70 mt-2">CUDA developers · ~20 years of libraries</div>
 </div>
 
 <!--
 - CUDA let developers use Nvidia GPUs for general-purpose computing in 2006.
 - AlexNet demonstrated their value for deep learning in 2012.
 - Nvidia expanded the platform through libraries, tools, and DGX systems.
-- More than four million registered developers rely on about twenty years of accumulated software.
+- More than six million developers contribute to a CUDA ecosystem built over about twenty years.
 -->
 
 ---
 
-# Nvidia's gross margin is about 75%
+# Nvidia's FY26 GAAP gross margin was 71.1%
 
 <div class="text-center mt-10">
-<div class="text-8xl font-bold">~75%</div>
-<div class="opacity-70 mt-3">gross margin</div>
+<div class="text-8xl font-bold">71.1%</div>
+<div class="opacity-70 mt-3">FY2026 GAAP gross margin</div>
 </div>
 
 <div class="text-center text-lg opacity-70 mt-10">
-Typical chipmakers report roughly 40–50%.<br>
-CUDA switching costs, market share, and high-value systems support Nvidia's margin.
+Companywide across accelerators, networking, and systems.<br>
+It is not a product-level margin for one GB300.
 </div>
 
 <!--
-- Nvidia’s gross margin is about 75 percent, above the 40 to 50 percent range common among chipmakers.
-- CUDA raises switching costs, while Nvidia’s accelerator share and integrated networking systems support pricing.
-- The margin applies across the company, so it does not describe the economics of every product.
+- Nvidia reported a 71.1 percent GAAP gross margin for fiscal 2026.
+- CUDA switching costs, accelerator share, networking, and integrated systems support companywide pricing.
+- Nvidia does not disclose a gross margin for one GB300 product.
 -->
 
 ---
@@ -184,38 +184,44 @@ title: "Fabless"
 <div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
   <div class="grid grid-cols-5 gap-4 text-center">
     <div><div class="text-3xl font-bold">$215.9 B</div><div class="text-sm opacity-60">revenue FY26</div></div>
-    <div><div class="text-3xl font-bold">~75%</div><div class="text-sm opacity-60">gross margin</div></div>
+    <div><div class="text-3xl font-bold">71.1%</div><div class="text-sm opacity-60">FY26 GAAP gross margin</div></div>
     <div><div class="text-3xl font-bold">~90%</div><div class="text-sm opacity-60">AI-accelerator share</div></div>
 <div><div class="text-xl font-bold leading-tight mt-2">CUDA: 20 years of libraries, tools, and developer adoption</div></div>
-    <div><div class="text-3xl font-bold">~10 yrs</div><div class="text-sm opacity-60">to replace</div></div>
+    <div><div class="text-xl font-bold leading-tight mt-2">ecosystem</div><div class="text-sm opacity-60">must be rebuilt</div></div>
   </div>
   <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
 </div>
 
 <!--
-- Nvidia reported $215.9 billion of FY2026 revenue and a gross margin near 75 percent.
+- Nvidia reported $215.9 billion of FY2026 revenue and a 71.1 percent GAAP gross margin.
 - Nvidia holds about 90 percent of AI accelerator revenue, supported by twenty years of CUDA libraries and developer adoption.
 - Replacing the hardware is easier than rebuilding the software ecosystem and supply relationships.
 -->
 
 ---
 
-# Estimated economics of a GB300-class GPU
+# Company margin is not a GB300 bill of materials
 
-<div class="mt-10">
-  <div class="flex w-full h-16 rounded overflow-hidden text-sm font-bold text-center">
-    <div class="bg-green-600 flex items-center justify-center" style="width:75%">Nvidia gross margin ~75%</div>
-<div class="bg-gray-500 flex items-center justify-center" style="width:25%">estimated cost of revenue ~25%</div>
-  </div>
-  <div class="text-xs opacity-50 mt-2">illustrative only · companywide margin applied to an analyst-estimated ~$50k GPU price</div>
+<div class="grid grid-cols-2 gap-8 mt-10 text-center">
+<div class="border-2 border-green-500 rounded-lg p-6">
+<div class="text-5xl font-bold">71.1%</div>
+<div class="opacity-70 mt-2">Nvidia FY26 GAAP gross margin</div>
+<div class="text-sm opacity-50 mt-3">companywide · all products and systems</div>
+</div>
+<div class="border-2 border-gray-400 rounded-lg p-6">
+<div class="text-5xl font-bold">$3.7–4.0M</div>
+<div class="opacity-70 mt-2">third-party GB300 NVL72 full-rack estimate</div>
+<div class="text-sm opacity-50 mt-3">72 GPUs · 36 CPUs · fabric, cooling, and power delivery</div>
+</div>
 </div>
 
-<div class="text-2xl text-center mt-12 opacity-80">
-The next sections trace foundry, memory, packaging, and equipment costs.
+<div class="text-xl text-center mt-10 opacity-80 leading-relaxed">
+Nvidia does not disclose product-level revenue, gross margin, or cost for one GB300.<br>
+The next sections trace physical suppliers without claiming a complete product cost.
 </div>
 
 <!--
-- The gray portion combines several kinds of cost rather than one supplier invoice.
-- TSMC fabricates the logic dies and performs advanced packaging; memory makers supply HBM; equipment and materials costs are embedded in those manufacturing prices.
-- Nvidia also includes networking, boards, cooling, and system assembly in cost of revenue.
+- Nvidia's 71.1 percent FY2026 gross margin covers the whole company, not one GPU.
+- The $3.7 million to $4.0 million figure is a third-party estimate for a complete GB300 NVL72 rack, not Nvidia's disclosed list price or recognized revenue.
+- Applying one to the other would mix incompatible scopes, so the course traces suppliers without inventing a complete bill of materials.
 -->

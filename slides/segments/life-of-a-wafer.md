@@ -12,7 +12,7 @@ status: draft
 seeds: [japan-under-everything]     # stamp #3 opens the Japan cluster; `materials` cashes the full basement tour
 pays_off: [yield]                   # stage 2 of the yield chain: foundations → HERE → kla → intel → packaging (chiplets)
 stamps: [japan-materials]           # stamp #3 — Japan's materials cluster
-diagrams: [map-equipment, journey-3, flow-strip, flow-coat, board-3, flow-expose]
+diagrams: [map-equipment, journey-3, flow-strip, flow-coat, board-3, chip-interconnect-stack, wafer-particle-defect, flow-expose]
 sources: research/foundations.md, research/materials.md
 -->
 
@@ -96,8 +96,8 @@ over <b>three to four months</b>.<br>
 
 <div class="grid grid-cols-3 gap-6 mt-6 text-center text-lg">
 <div><b>The wafer</b><div class="opacity-70 text-sm mt-1">Shin-Etsu + SUMCO<br>&gt;half of world silicon</div></div>
-<div><b>The resist</b><div class="opacity-70 text-sm mt-1">JSR · TOK — Japan ~90%<br>(~95% of EUV resist)</div></div>
-<div><b>The mask blanks</b><div class="opacity-70 text-sm mt-1">Hoya + AGC<br>≈93% of EUV blanks</div></div>
+<div><b>The resist</b><div class="opacity-70 text-sm mt-1">Japanese suppliers<br>dominate advanced resists</div></div>
+<div><b>The mask blanks</b><div class="opacity-70 text-sm mt-1">Hoya + AGC<br>leading commercial EUV suppliers</div></div>
 </div>
 
 <div class="mt-8 text-center">
@@ -108,7 +108,7 @@ over <b>three to four months</b>.<br>
 </div>
 
 <!--
-- Wafers, photoresist, and mask blanks become part of a fab's process recipe after long qualification.
+- Fabs qualify wafers and photoresists; mask shops turn blanks into the patterned reticles required for each design.
 - A replacement can change film thickness, pattern dimensions, defect rates, or yield, so the fab must test it across many wafers before release.
 - That requalification can take one to two years, making concentrated supply hard to replace.
 -->
@@ -145,7 +145,7 @@ title: "Contamination"
 </div>
 
 <div class="visual-sequence__caption"><strong>One particle can bridge two wires.</strong><span>The bridged die fails.</span></div>
-<div class="visual-sequence__source">Blank wafer · ~$150 · processed wafer · ~$30,000</div>
+<div class="visual-sequence__source">Blank wafer · ~$150 · months of accumulated process value at risk</div>
 
 <!--
 - A particle about 100 nanometres wide can bridge nearby wires and kill a die.

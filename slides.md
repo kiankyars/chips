@@ -27,7 +27,7 @@ fonts:
 <div class="title-subtitle">How one AI accelerator moves from design to data center.</div>
 
 <div class="title-journey">
-  <span>SAND</span><span>DESIGN</span><span>FAB</span><span>MEMORY</span><span>PACKAGE</span>
+  <span>PHYSICS</span><span>DESIGN</span><span>FAB</span><span>MEMORY</span><span>PACKAGE</span><span>DATA CENTER</span>
 </div>
 
 <!--

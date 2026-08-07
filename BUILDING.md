@@ -9,11 +9,11 @@ Read order for a builder: `AUTHORING.md` → `STRATEGY.md` §3 → your row in
 
 - Slides are separated by `---` on its own line. Optional per-slide frontmatter
   sits between the separators (e.g. `layout: section`, `layout: center`).
-- Speaker notes = one HTML comment at the END of each slide, in the
-  BEATS / FACT AMMO / LINE THAT LANDS shape from AUTHORING.md.
+- Speaker notes = one HTML comment at the END of each slide, containing two to
+  four concise bullet prompts as specified in AUTHORING.md.
 - UnoCSS utility classes work in HTML (`<div class="grid grid-cols-2 gap-8">`).
-- Images: `![desc](/diagrams/rendered/<file>.svg)` — the `public/diagrams`
-  symlink serves them.
+- Images: `![desc](/diagrams/rendered/<file>.svg)` — Slidev resolves referenced
+  diagram assets from the repository and fingerprints them into the build.
 - Keep slides visual: one object, mechanism, comparison, or piece of evidence per
   frame. Narration carries the explanation. ~1 slide per 45–60 s of runtime
   (an 8-min segment ≈ 8–11 slides).
@@ -31,7 +31,7 @@ explained. The current reference sequences are:
 Each frame uses `class: visual-sequence` and `transition: fade`. It has one
 short kicker, one factual caption, and an optional source tag. Do not add a
 second explanatory panel, cards, or a conventional title. Put the remaining
-argument in BEATS and FACT AMMO.
+argument in the speaker-note bullets.
 
 Scene source belongs in `diagrams/src/scenes/` and must be called from
 `diagrams/src/generate.mjs`, so `npm run diagrams` reproduces every frame.
@@ -82,43 +82,41 @@ scoreboard is necessary, use this structure:
     <div><div class="text-3xl font-bold">XX%</div><div class="text-sm opacity-60">gross margin</div></div>
     <div><div class="text-3xl font-bold">XX%</div><div class="text-sm opacity-60">market share</div></div>
     <div><div class="text-xl font-bold leading-tight mt-2">moat in one line</div></div>
-    <div><div class="text-3xl font-bold">~XX yrs</div><div class="text-sm opacity-60">to replace</div></div>
+    <div><div class="text-xl font-bold leading-tight mt-2">ecosystem</div><div class="text-sm opacity-60">replacement difficulty</div></div>
   </div>
   <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
 </div>
 ```
 
-Years-to-replace = "a state with unlimited money needs ~N years to replicate
-this player." Propose a defensible number from the pack's moat section; the
-synthesis segment ranks them all.
+Replacement difficulty uses one of three evidence-bounded categories: capacity can
+shift, capability must scale, or an ecosystem must be rebuilt. The synthesis segment
+compares those categories without inventing a countdown.
 
 **3. Stamp slide (when a chokepoint is proven).** The proof beat, then
 `board-<n>.svg` + one line naming what was just stamped.
 
-**4. Money-Bar toll (act-end segments only:** fabless-field, foundries-field,
-materials, packaging, synthesis**).** Simple HTML stacked bar showing the
-running decomposition of one GB300-class accelerator's price; label each toll
-with $-range and margin, mark analyst estimates with `~`. Values come from the
-packs (nvidia/packaging/memory-hbm carry the BOM-class numbers). EDA/equipment
-enter as "amortized toll" with an honesty flag.
+**4. Economics Ledger (act-end segments only: `fabless-field`, `foundries-field`,
+`materials`, `packaging`, `synthesis`).** Record a compact, scope-labeled snapshot
+of what public data supports. Every financial number names its entity, metric,
+period, and estimate status. Keep companywide margins, market-price estimates,
+and supplier relationships separate; never derive per-GPU cost or margin by
+combining them.
 
 **5. Closer.** Last slide beat = 15–30 s "what you now know" + the cliffhanger
 handoff into the next segment (write it as a question the next segment answers).
 
 ## Hard rules
 
-1. **Every number comes from a research pack**, cited in FACT AMMO as
-   `[research/<pack> §section]`. No invented numbers. If the pack entry carries
-   a VERIFY tag, carry it forward next to the number — but inside a beat block
-   write it as `[VERIFY: ... ]` (square brackets), NEVER `<!-- VERIFY -->`.
-   HTML comments cannot nest: a `<!-- VERIFY -->` inside the `<!-- ... -->` note
-   block closes the note early and spills your beats onto the visible slide.
+1. **Every number comes from a research pack.** The pack carries its citation
+   and any `VERIFY` marker. Only verified claims reach slides or speaker notes;
+   notes stay plain and never expose bracketed source notation or verification
+   markers.
 2. **Beats are skeleton, never script** (AUTHORING.md). Lines-that-land are
    offers, not requirements.
-3. **Numbers with handles**: every headline number in FACT AMMO gets a physical
-   analogy.
-4. **Simplification hedges**: compressed teaches get a one-line "direction of
-   the lie" hedge in FACT AMMO.
+3. **Numbers with handles**: every headline number gets a physical analogy in
+   the slide or its speaker notes.
+4. **Simplification hedges**: a compressed explanation gets a short plain-language
+   caveat wherever omitting it would make the spoken claim false.
 5. **Seeds/pays_off from your curriculum row are load-bearing** — plant and cash
    them explicitly in beats, and list them in the segment header.
 6. **Angle is proposed, status is `draft`** — the creator owns the angle line.

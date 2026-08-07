@@ -6,14 +6,14 @@ layout: section
 id: packaging
 act: V — Memory & The Assembly
 tier: P-lite
-angle: "For two years the world's most valuable chip existed and still couldn't be bought — and the bottleneck wasn't the wafer, it was the glue. The step the industry offshored in 1963 because it was worthless is now the single gate that decides who gets AI compute."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~7 min
+angle: "In 2023–25, AI accelerators remained supply-constrained even as front-end output ramped: CoWoS capacity, HBM, and later substrates limited shipments. A packaging stage offshored to cut costs in 1963 had become a gate for AI compute."   # YOU OWN THIS LINE — rewrite it in your voice
+runtime: ~8 min
 status: draft
 seeds: []                                   # no new forward seed; hands the completed Board into geopolitics
 pays_off: [reticle-limit, yield]            # reticle-limit (from nvidia) cashed; yield chain returns as chiplets (foundations→life-of-a-wafer→kla→intel→HERE)
-stamps: [tsmc-cowos]                        # stamp #7 — the Board completes; TSMC's second, different monopoly
-diagrams: [map-backend, journey-5, package-01-substrate, package-02-interposer, package-03-dies-and-hbm, package-04-complete]
-sources: research/packaging.md
+stamps: [tsmc-cowos]                        # stamp #7 — the Board completes; TSMC's second constrained capability
+diagrams: [map-backend, journey-5, chiplet-yield-v2, package-01-substrate, package-02-interposer, package-03-dies-and-hbm, package-04-complete, board-7]
+sources: research/packaging.md, research/nvidia.md
 -->
 
 
@@ -125,7 +125,9 @@ title: "Why chiplets win"
 
 ---
 
-# CoWoS capacity grew about 10×
+# Economics Ledger: CoWoS capacity figures are estimates
+
+<div class="text-xs opacity-50 mt-2">INDUSTRY ESTIMATES · WAFERS PER MONTH · NOT TSMC DISCLOSURE</div>
 
 <div class="grid grid-cols-4 gap-3 mt-8 text-center">
 <div><div class="text-3xl font-bold">~13–15k</div><div class="text-xs opacity-60 mt-1">wafers/mo · end-2023</div></div>
@@ -135,18 +137,50 @@ title: "Why chiplets win"
 </div>
 
 <div class="text-center mt-8">
-<div class="text-6xl font-bold">≈ 10×</div>
-<div class="opacity-70 mt-2">in three years; capacity remained sold out</div>
+<div class="text-6xl font-bold">up to ≈ 10×</div>
+<div class="opacity-70 mt-2">end-2023 estimate → end-2026 analyst target</div>
 </div>
 
 <div class="text-sm opacity-60 mt-8 text-center">
-<b>C</b>hip <b>o</b>n <b>W</b>afer <b>o</b>n <b>S</b>ubstrate: dies and HBM on a silicon interposer mounted to an organic substrate. In production since 2013; demand accelerated with AI.
+<b>C</b>hip <b>o</b>n <b>W</b>afer <b>o</b>n <b>S</b>ubstrate: dies and HBM on an interposer mounted to an organic substrate. Blackwell uses an RDL interposer with embedded local silicon links.
 </div>
 
 <!--
-- TSMC expanded CoWoS from about 13,000 to 15,000 wafers per month at the end of 2023 toward a 120,000 to 140,000 target for 2026.
-- That increase approaches tenfold in three years.
-- Demand still kept the capacity sold out as accelerator production grew.
+- Industry estimates put CoWoS near 13,000 to 15,000 wafers per month at the end of 2023.
+- The 120,000 to 140,000 figure is an analyst target for the end of 2026, not achieved capacity at the time of this course.
+- Industry reporting describes repeated capacity expansions and continued tightness; TSMC does not publish this monthly series.
+-->
+
+---
+
+# Packaging is a layered supply chain
+
+<div class="text-center text-base opacity-70 mt-4">
+GB300 uses CoWoS-L. The broader advanced-packaging ecosystem also includes:
+</div>
+
+<div class="grid grid-cols-3 gap-6 mt-6 text-center">
+<div class="border-2 border-purple-400 rounded-lg p-5">
+<div class="text-xl font-bold">ADJACENT 3D STACKING</div>
+<div class="text-2xl mt-4">TSMC SoIC</div>
+<div class="text-sm opacity-60 mt-2">hybrid bonding joins stacked dies copper-to-copper</div>
+</div>
+<div class="border-2 border-amber-400 rounded-lg p-5">
+<div class="text-xl font-bold">SUBSTRATE MATERIALS</div>
+<div class="text-2xl mt-4">Ajinomoto ABF</div>
+<div class="text-sm opacity-60 mt-2">insulating build-up film enables fine package wiring</div>
+</div>
+<div class="border-2 border-blue-400 rounded-lg p-5">
+<div class="text-xl font-bold">ASSEMBLY + TEST</div>
+<div class="text-2xl mt-4">ASE · Amkor · JCET</div>
+<div class="text-sm opacity-60 mt-2">Advantest and Teradyne supply automated test systems</div>
+</div>
+</div>
+
+<!--
+- GB300 uses CoWoS-L, not SoIC; SoIC is TSMC's adjacent copper-to-copper hybrid-bonding platform for denser three-dimensional stacking.
+- Organic substrates use Ajinomoto build-up film as an insulating layer around fine copper wiring.
+- OSATs assemble and test many packages, while Advantest and Teradyne supply the automated test equipment.
 -->
 
 ---
@@ -181,16 +215,16 @@ title: "Package assembly · 2 / 4"
 
 <div class="visual-sequence__frame">
 
-![The same package view with a silicon interposer added](/diagrams/rendered/package-02-interposer.svg)
+![The same package view with an RDL interposer and embedded local silicon interconnects added](/diagrams/rendered/package-02-interposer.svg)
 
 </div>
 
-<div class="visual-sequence__caption">CoWoS adds a silicon wiring layer between the substrate and the dies.</div>
-<div class="visual-sequence__source">CoWoS: Chip on Wafer on Substrate · geometry simplified</div>
+<div class="visual-sequence__caption">CoWoS-L combines an RDL wiring plane with embedded local silicon interconnects.</div>
+<div class="visual-sequence__source">TSMC CoWoS-L · geometry simplified</div>
 
 <!--
-- CoWoS places a silicon interposer on the organic substrate.
-- The interposer provides far denser wiring than the substrate can support, allowing logic dies and HBM stacks to exchange data across thousands of short electrical connections.
+- CoWoS-L places an RDL-based interposer with embedded local silicon interconnects on the organic substrate.
+- The local silicon provides dense links where dies meet, while the larger RDL wiring plane carries signals and power across the package.
 -->
 
 ---
@@ -203,15 +237,15 @@ title: "Package assembly · 3 / 4"
 
 <div class="visual-sequence__frame">
 
-![Two GPU dies and twelve HBM stacks added to the same package view](/diagrams/rendered/package-03-dies-and-hbm.svg)
+![Two GPU dies and eight 12-high HBM3E stacks added to the same package view](/diagrams/rendered/package-03-dies-and-hbm.svg)
 
 </div>
 
-<div class="visual-sequence__caption">Two GPU dies and twelve HBM stacks share the same high-density wiring plane.</div>
+<div class="visual-sequence__caption">Two GPU dies and eight 12-high HBM3E stacks share the same wiring plane.</div>
 <div class="visual-sequence__source">GB300-class component count · arrangement simplified</div>
 
 <!--
-- Two GPU dies and twelve HBM stacks mount on the same interposer.
+- Two GPU dies and eight 12-high HBM3E stacks mount on the same interposer.
 - The shared wiring plane links the compute dies to each other and gives both access to nearby memory, avoiding the narrower paths used by conventional memory modules.
 -->
 
@@ -236,4 +270,37 @@ title: "Package assembly · 4 / 4"
 - A thermal lid closes over the assembled logic and memory dies.
 - The lid protects the package and transfers heat into the cooling system.
 - The result is one accelerator assembled from separate components rather than one monolithic chip.
+-->
+
+---
+
+# Chokepoint #7: TSMC CoWoS capacity
+
+<div class="mt-5">
+
+![completed chokepoint board](/diagrams/rendered/board-7.svg)
+
+</div>
+
+<div class="mt-4">
+
+![accelerator journey — package complete](/diagrams/rendered/journey-5.svg)
+
+</div>
+
+<div class="grid grid-cols-3 gap-6 mt-3 items-start">
+<div class="col-span-2 text-base leading-relaxed">
+
+<b>The completed package leaves for system integration.</b><br>
+TSMC appears twice because leading-edge wafer fabrication and advanced packaging are separate constrained capabilities.
+
+</div>
+<div class="text-sm opacity-60 text-right">Next: when do supply dependencies become geopolitical leverage?</div>
+</div>
+
+<!--
+- CoWoS capacity earns the seventh and final supply-chain control point.
+- TSMC appears twice because leading-edge logic fabrication and advanced packaging require different assets, processes, and qualified capacity.
+- With logic, HBM, interconnect, substrate, assembly, and test joined, the package is ready to enter rack integration.
+- The next question is when these dependencies become geopolitical leverage.
 -->

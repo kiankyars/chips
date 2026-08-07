@@ -17,9 +17,10 @@ requalification cycles. Japan quietly owns most of this layer.
   **$27.4B** (+9.3%). [1]
 - Japanese companies hold roughly **half** of the global semiconductor materials
   market (~48–56% depending on count). [2][3] <!-- VERIFY: exact % varies by source/year -->
-- Japan's individual strongholds: ~**53%** of silicon wafers, ~**50–90%** of
-  photoresist (higher at the leading edge), near-total control of EUV mask
-  blanks and ABF film (below). [2][3]
+- Japan's individual strongholds include silicon wafers, advanced photoresists,
+  EUV mask blanks, and ABF film. Public share estimates use inconsistent years
+  and market definitions, so the course treats the concentration qualitatively
+  unless a source defines both. [2][3]
 - The kicker: Japan's share of chip *making* collapsed from ~50% (late 1980s) to
   ~9% — but it kept the materials layer underneath everyone else's fabs. [3]
 
@@ -55,10 +56,10 @@ requalification cycles. Japan quietly owns most of this layer.
 - What it is: the light-sensitive chemical film spin-coated onto the wafer;
   the lithography machine's image is *developed* in it like photographic film.
   ASML's $200M scanner is useless without it.
-- Japan holds ~**90%** of the global photoresist market (US Dept. of Commerce
-  figure); at the leading edge, Japanese firms control ~**95% of EUV
-  photoresists**. [14] Players: **JSR, Tokyo Ohka Kogyo (TOK), Shin-Etsu,
-  Sumitomo Chemical, Fujifilm**. [2][14]
+- Japanese suppliers dominate advanced photoresists. Published 90% and 95%
+  estimates combine different product scopes and dates, so do not quote them
+  without a dated market definition. Players include **JSR, Tokyo Ohka Kogyo
+  (TOK), Shin-Etsu, Sumitomo Chemical, and Fujifilm**. [2][14]
 - Why EUV resist is brutally hard: an EUV photon carries ~**14×** the energy of
   a DUV (ArF) photon, so the same exposure dose delivers ~14× *fewer* photons —
   you're printing with statistical noise ("stochastics"), and a handful of
@@ -89,11 +90,10 @@ requalification cycles. Japan quietly owns most of this layer.
 - The photomask = the master stencil; the blank = the blank stencil plate.
   Every EUV mask blank is ultra-low-expansion glass coated with **40+
   alternating silicon/molybdenum layers**, defect-free — a mirror, not a
-  transparency, because nothing transmits EUV. [21]
-- EUV mask blanks: **Hoya + AGC (both Japanese) ≈ 93% of the market** — a
-  two-company gate on every EUV chip. [21] Whole EUV blank market was only
-  ~**$194M in 2024** — a sub-$200M market that all of AI silicon stands on. [21]
-  <!-- VERIFY: Hoya/AGC split disputed — one source AGC >59%, another Hoya >75% by volume [21][22] -->
+  transparency, because EUV optics are reflective. [21][50][51]
+- **Hoya and AGC are leading commercial EUV mask-blank suppliers.** Public
+  share estimates conflict materially, so the course does not quote the 93%
+  estimate or a supplier split. [21][22]
 - Finished masks: captive shops (TSMC, Samsung, Intel internal) hold ~**63%**
   of the market's value; the merchant "big three" are **Photronics (~18%,
   US), Toppan (now Tekscend Photomask) and DNP (together ~30%)**. [24][25]
@@ -103,7 +103,7 @@ requalification cycles. Japan quietly owns most of this layer.
   <!-- VERIFY: some estimates put 2nm-era sets at $20–30M+; sourced range is $5–15M -->
 
 ## Ultra-pure gases & chemicals
-- **Neon — the Ukraine story.** Neon is the buffer gas in DUV excimer lasers
+- **Neon — the Ukraine story.** Neon is used in DUV excimer-laser gas mixtures
   (the light source for every non-EUV litho layer). It's a byproduct of
   Soviet-era steel-plant air separation, so pre-2022 roughly **half (45–54%)
   of the world's semiconductor-grade neon** came from two Ukrainian firms:
@@ -112,7 +112,8 @@ requalification cycles. Japan quietly owns most of this layer.
   ~75% to chipmakers. [26] China spot prices ran **400 → 1,600 RMB/m³**
   (Oct 2021 → Feb 2022), ~4×; the 2014 Crimea annexation had already spiked
   neon ~**600%**. [27][28] Chipmakers survived on stockpiles, then built
-  non-Ukrainian capacity — another leverage-that-leaks story.
+  non-Ukrainian capacity — another leverage-that-leaks story. ASML describes
+  KrF and ArF DUV sources as excimer lasers using gas mixtures. [50]
 - **Hydrogen fluoride**: the etch/clean workhorse — semiconductor grade means
   parts-per-*trillion* impurity control. Japanese specialists **Stella Chemifa**
   (~15–25%+ of ultra-high-purity HF) and **Morita** lead; exactly the chemical
@@ -181,9 +182,9 @@ requalification cycles. Japan quietly owns most of this layer.
 
 ## Risks
 - **Concentration below the concentration**: one town (Spruce Pine HPQ), one
-  company (Ajinomoto ~95% ABF; DuPont >50% pads), two companies (Hoya+AGC ~93%
-  EUV blanks; Ingas+Cryoin ~50% neon pre-2022), one country (Japan ~half of all
-  materials). Each is a tiny market gating a trillion-dollar industry.
+  company (Ajinomoto in ABF; DuPont in pads), a small supplier set (EUV mask
+  blanks), one geography (Ukraine neon before 2022), and one country (Japan
+  across advanced materials). Each can gate a much larger downstream market.
 - **Geography risk**: Japan = earthquakes. The 2011 Tōhoku quake knocked out
   Shin-Etsu's Shirakawa plant, then ~20% of global 300mm wafer supply.
   <!-- VERIFY: 2011 Shirakawa ~20% figure — from memory, widely reported at the time -->
@@ -272,3 +273,5 @@ requalification cycles. Japan quietly owns most of this layer.
 47. Digitimes, "Shinko Electric to delist in June…" (Mar 2025) — https://www.digitimes.com/news/a20250321PD206/shinko-electric-mitsui-chemicals-materials-partnership-fujitsu.html
 48. USGS, *Mineral Commodity Summaries 2024: Quartz (High-Purity and Industrial Cultured Crystal)* (Spruce Pine production, crucible use, global sources, and substitutes) — https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-quartz.pdf
 49. Sibelco, "High Purity Quartz" (Spruce Pine IOTA ore bodies and fused-quartz crucibles for the CZ process) — https://www.sibelco.com/en/materials/high-purity-quartz
+50. ASML, "Light & lasers" (DUV excimer-laser gas mixtures; KrF and ArF sources) — https://www.asml.com/en/technology/lithography-principles/light-and-lasers
+51. ASML, "Indistinguishable from magic: the EUV pellicle" (the patterned reticle or mask carries the pattern printed on the wafer) — https://www.asml.com/en/company/stories/2022/the-euv-pellicle-indistinguishable-from-magic

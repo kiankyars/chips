@@ -261,8 +261,9 @@ Feeds: cold open, foundations, great-unbundling, life-of-a-wafer segments.
   <!-- VERIFY: the >20T/sec updated figure — weaker sourcing than the 2014 IEEE number -->
 - **AI capex backdrop**: big-five hyperscalers (Amazon, Microsoft, Google, Meta,
   Oracle) 2026 capex forecast **>$600B, +~36% YoY**; post-Q1-2026-earnings
-  estimates run **~$690–725B**. Semiconductors are the single biggest line item.
-  [45][46]
+  estimates run **~$690–725B**. Treat those totals as infrastructure-demand
+  context, not as chip TAM: the companies do not report a comparable
+  semiconductor split. [45][46]
 
 ## Wafer prices
 

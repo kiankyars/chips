@@ -1,18 +1,17 @@
 # Research — KLA ⭐
 
-As-of: 2026-07
+As-of: 2026-08-06
 
 Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 `<!-- VERIFY -->` = not fully confident, check before recording.
-Note: KLA's fiscal year ends June 30. FY2025 ended June 2025 (reported). FY2026
-ended June 30, 2026 — full-year results expected ~late July 2026; latest reported
-quarter is Q3 FY2026 (March 2026, reported April 29, 2026).
+Note: KLA's fiscal year ends June 30. FY2026 results were released July 28, 2026.
 
 ## What KLA is
-- Milpitas, California — a Silicon Valley original. Makes **process control**
-  equipment: inspection (find defects) and metrology (measure dimensions/alignment).
-  It deposits nothing, etches nothing, prints nothing — it **measures** everything
-  the other tools do. [7]
+- Milpitas, California — a Silicon Valley original. Its core **Semiconductor
+  Process Control** franchise makes inspection (find defects) and metrology
+  (measure dimensions/alignment) equipment: those tools measure rather than
+  deposit, etch, or print. KLA's smaller SPTS-led Specialty Semiconductor
+  Process business does sell deposition and etch tools. [3][7]
 - History one-liner: **KLA Instruments** (founded 1975, Ken Levy & Bob Anderson,
   photomask defect detection) + **Tencor Instruments** (founded 1976, Karel Urbanek)
   merged in **1997** as KLA-Tencor (combined revenue already >$1B); renamed
@@ -36,10 +35,10 @@ quarter is Q3 FY2026 (March 2026, reported April 29, 2026).
   **millions of dollars per week** for a high-volume device." [10] McKinsey found one
   manufacturer losing **~$68M** to yield losses; a systematic yield program delivered
   a 10% yield improvement in six months. [11]
-- Back-of-envelope for the leading edge: a 3nm wafer reportedly sells for
-  **~$18,500** <!-- VERIFY: widely reported TSMC N3 figure, not officially confirmed -->;
-  a 50k wafer-starts/month fab × 12 months × 1% ≈ **~$100M+/year per yield point**.
-  (Arithmetic, not a quoted source — but each input is checkable.)
+- The dollar value of one yield point is not universal: it depends on die mix,
+  wafer value, the yield mechanism, and customer contracts. KLA's economic case
+  is the avoided work-in-process exposed after a process excursion, not one
+  course-wide dollar conversion.
 - New fabs start at **30–50% yield** and take **18–24 months** of hunting defect
   sources across hundreds of steps to get above 80%. [12] Ramping yield faster =
   the whole game; KLA sells the tools that make the ramp possible.
@@ -71,11 +70,11 @@ quarter is Q3 FY2026 (March 2026, reported April 29, 2026).
   nm-scale defects at production speed — the workhorse, a 40-year product legacy. [14]
 - The scale problem, as arithmetic: a ~20nm defect on a 300mm wafer, scaled up so
   the defect is a golf ball, means finding that golf ball somewhere on a disc
-  **~600 km across** — in about an hour per wafer. (Own arithmetic; the "marble
-  on a highway seen from a jet" metaphor is the same idea.)
+  **~600 km across**. Inspection time varies with recipe, sensitivity, coverage,
+  and sampling.
 - **E-beam review & inspection** (eSL10): optical casts the wide net fast; the
-  electron microscope then revisits each flagged site at high resolution to
-  classify it. Optical = radar, e-beam = microscope.
+  electron microscope then revisits selected flagged sites at high resolution
+  to classify them. Optical = radar, e-beam = microscope. [14][16]
 - **Overlay metrology** (Archer series): measures whether each new layer landed
   on the previous one; leading-edge overlay error budgets are down to a few nm
   <!-- VERIFY: exact overlay budget at 2nm-class nodes -->. EUV + multipatterning
@@ -85,29 +84,34 @@ quarter is Q3 FY2026 (March 2026, reported April 29, 2026).
   downstream. This is the near-monopoly franchise. [6]
 
 ## Financials
+FY2026 (ended June 30, 2026) [17]:
+- Revenue: **$13.579B**. GAAP net income: **$4.831B**.
+- GAAP gross margin: **61.30%**, derived from $13.579B revenue less $5.255B
+  cost of revenue in KLA's full-year GAAP statement.
+- Free cash flow: **$3.77B**. Semiconductor Process Control revenue: **$12.245B**.
+
 FY2025 (ended June 30, 2025) [1]:
-- Revenue: **$12.16B**. GAAP net income **$4.06B** (EPS $30.37); non-GAAP net
-  income **$4.45B** (EPS $33.28).
-- GAAP gross margin ≈ **61%** (derived from 8-K: $12.156B revenue, $4.752B COGS).
+- Revenue: **$12.16B**. GAAP net income **$4.06B** (split-adjusted EPS $3.04);
+  non-GAAP net income **$4.45B** (split-adjusted EPS $3.33).
+- GAAP gross margin: **60.9%** (derived from 8-K: $12.156B revenue, $4.752B COGS).
 - Free cash flow: **$3.75B**.
 - Segments: Semi Process Control **$10.95B**, Specialty Semiconductor **$587M**,
   PCB & Component Inspection **$622M**. Services **$2.68B** (~22% of revenue).
 
-Q3 FY2026 (March 2026 quarter, latest reported) [2]:
-- Revenue **$3.415B** (+11% YoY). Non-GAAP EPS **$9.40** / GAAP **$9.12**.
+Q3 FY2026 operating snapshot (March 2026 quarter) [2]:
+- Revenue **$3.415B** (+11% YoY). Split-adjusted non-GAAP EPS **$0.94** / GAAP
+  **$0.91**.
 - **Non-GAAP gross margin 62.2%; non-GAAP operating margin 42.6%** — the highest
   margins of the big-5 WFE makers (vs ASML's 52.8% gross margin in 2025; AMAT/Lam
   high-40s, TEL mid-40s <!-- VERIFY: exact AMAT/Lam/TEL current GMs -->). [2][15]
-- Services **$775M** = **23% of revenue**, +16% YoY; 2026 on track to be the
-  **17th consecutive year** of services growth — the annuity under the cyclical
-  tool business.
+- Services **$775M** = **23% of revenue**, +16% YoY — the annuity under the
+  cyclical tool business.
 - FCF $622M in the quarter; trailing-12-month FCF **$4B** = **31% FCF margin**.
 - Systems mix: foundry/logic 62% / memory 38% (DRAM = 86% of memory — the HBM effect).
-- Guidance for June 2026 quarter: revenue **$3.575B ± $200M**, non-GAAP EPS
-  $9.87 ± $1.00 → FY2026 revenue tracking to **~$13.5B+**. [2]
 - March 2026 Investor Day: **13–17% revenue CAGR target through CY2030**; sees WFE
-  market at **$215B ± $20B by 2030**; dividend +21% to $2.30/quarter (17th
-  consecutive increase); new $7B buyback; >90% of FCF returned. [2]
+  market at **$215B ± $20B by 2030**; dividend +21% to $0.23/quarter on the
+  split-adjusted basis (17th consecutive increase); new $7B buyback; >90% of
+  FCF returned. [2]
 
 ## Geopolitics — China & export controls
 - China revenue share: **43% (FY2024) → 33% (FY2025)** [3] → **24%** (March 2026
@@ -139,15 +143,15 @@ Q3 FY2026 (March 2026 quarter, latest reported) [2]:
 - "A wafer takes three to four months and up to a thousand process steps. KLA's
   machines are how you find out at step 401 — not step 1,000 — that step 400 went
   wrong." [8][9]
-- "One yield point at a leading-edge fab is on the order of $100 million a year.
-  That's why nobody haggles with KLA." [10] (+ arithmetic above)
+- "A process excursion caught in-line exposes one lot; the same excursion found
+  at final test can expose weeks of work-in-process." [8][9]
 - "KLA's share of process control is about 7× its nearest competitor — a more
   lopsided lead than almost anywhere else in semiconductors, and it's still
   gaining share." [2]
-- "The company that only *measures* chips has a 62% gross margin — ten points
-  higher than ASML, the machine monopoly everyone talks about." [2][15]
+- "KLA's process-control franchise helped the company report a 61.3% FY2026
+  GAAP gross margin." [17]
 - "Finding a 20-nanometer defect on a 300mm wafer is like finding one golf ball
-  on a disc 600 km wide — per hour, per wafer." (arithmetic)
+  on a disc 600 km wide." (arithmetic)
 - "China went from 43% of KLA's revenue to 24% in about two years — the quiet
   chokepoint story of the export-control era." [2][3]
 
@@ -169,3 +173,5 @@ Q3 FY2026 (March 2026 quarter, latest reported) [2]:
 13. Zacks via Yahoo Finance, "Can Rising Process Control Intensity Drive KLA's Next Growth Phase?" — https://finance.yahoo.com/markets/stocks/articles/rising-process-control-intensity-drive-130000496.html
 14. KLA, "BBP 40th Anniversary" / "KLA's Broadband Plasma Products Legacy" — https://bbp.kla.com/ and https://www.kla.com/advance/innovation/klas-legacy-of-broadband-plasma-products-lights-the-way-for-future-innovations
 15. ASML 2025 gross margin 52.8% for comparison — see research/asml.md source [1] (ASML Q4-2025 results press release).
+16. KLA-Tencor, "New eS805 Electron-Beam Inspection System" (optical inspection plus targeted e-beam review workflow) — https://ir.kla.com/news-events/press-releases/detail/199/kla-tencor-announces-new-es805-electron-beam-inspection
+17. KLA, "Fiscal 2026 Fourth Quarter and Full Year Results" (July 28, 2026; $13.579B revenue, $5.255B GAAP cost of revenue, $4.831B net income) — https://ir.kla.com/sec-filings/all-sec-filings/content/0000319201-26-000024/exhibit991earningsrelease7.htm

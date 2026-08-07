@@ -6,13 +6,13 @@ layout: section
 id: memory-hbm
 act: V — Memory & The Assembly
 tier: D            # duel — a three-way contest told as one story (SK hynix · Samsung · Micron)
-angle: "Logic sells genius; memory sells nerve. For fifty years memory was the industry's commodity purgatory — until HBM welded it to the GPU and turned the boldest capex bet in silicon into the single biggest line on an AI chip's bill."   # YOU OWN THIS LINE — rewrite it in your voice
+angle: "Logic sells genius; memory sells nerve. For fifty years memory was the industry's commodity purgatory — until HBM welded it to the GPU and, by third-party estimates, became the largest physical package-cost line in B300."   # YOU OWN THIS LINE — rewrite it in your voice
 runtime: ~9 min
 status: draft
 seeds: []                          # nothing new planted for a later segment; the closer hands off to `packaging`
 pays_off: [memory-wall]            # the bandwidth problem seeded in `nvidia` gets its bill here
-stamps: [hbm]                      # chokepoint #6 — SK hynix / HBM qualified-supply bottleneck
-diagrams: [map-memory, journey-4, board-6]
+stamps: [hbm]                      # chokepoint #6 — qualified HBM capacity
+diagrams: [map-memory, journey-4, memory-types-v2, hbm-package-v2, hbm-supplier-race, board-6, dram-revenue-surge]
 sources: research/memory-hbm.md
 -->
 
@@ -210,7 +210,7 @@ title: "HBM3E"
 </div>
 <div>
 <div class="text-5xl font-bold">&gt;50%</div>
-<div class="opacity-70 mt-2">of a B300's build cost<br>is the memory</div>
+<div class="opacity-70 mt-2">third-party estimate: HBM share<br>of B300 physical package cost</div>
 </div>
 <div>
 <div class="text-5xl font-bold">2026</div>
@@ -225,7 +225,7 @@ HBM4 allows <b>customer-specific logic base dies</b>.<br>
 </div>
 
 <!--
-- HBM uses about three times as much wafer capacity per gigabyte as DDR5 and accounts for more than half of a B300's build cost.
+- HBM uses about three times as much wafer capacity per gigabyte as DDR5; third-party estimates put it above half of B300 physical package cost.
 - Suppliers sell capacity through customer qualification and contracts arranged 12 to 24 months ahead.
 - Custom base dies in HBM4 deepen that product-specific relationship.
 -->
@@ -238,64 +238,62 @@ title: "HBM supplier race"
 <div class="visual-sequence__kicker">HBM SUPPLIER RACE</div>
 
 <div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/hbm-supplier-race.svg" alt="Three supplier lanes show SK hynix, Samsung, and Micron reaching Nvidia qualification for Rubin HBM4" />
+  <img src="/diagrams/rendered/hbm-supplier-race.svg" alt="Three supplier lanes show SK hynix, Samsung, and Micron as NVIDIA-named Rubin HBM4 sources" />
 </div>
 
-<div class="visual-sequence__caption"><strong>All three suppliers</strong><span>reached Rubin HBM4 qualification by mid-2026.</span></div>
-<div class="visual-sequence__source">Q1 2026 · SK hynix ~56% HBM · Micron ~19–21%</div>
+<div class="visual-sequence__caption"><strong>All three suppliers</strong><span>were publicly named by NVIDIA for Rubin HBM4 by mid-2026.</span></div>
+<div class="visual-sequence__source">Q1 2026 HBM share estimates</div>
 
 <!--
 - SK hynix entered 2026 with about 56 percent of the HBM market, while Micron held about one fifth.
-- Samsung, SK hynix, and Micron had all qualified HBM4 for Nvidia's Rubin platform by mid-2026, giving customers three approved suppliers with different volume and yield positions.
+- NVIDIA publicly named Samsung, SK hynix, and Micron as Rubin HBM4 sources by mid-2026; their available volume and yield positions still differed.
 -->
 
 ---
 
-# HBM supplier comparison
+# HBM supplier positioning
 
 <div class="grid grid-cols-3 gap-4 mt-4">
 
 <div class="border-2 border-green-500 rounded-lg p-3">
 <div class="text-lg font-bold text-center">SK hynix</div>
-<div class="grid grid-cols-2 gap-2 text-center mt-2 text-sm">
-<div><div class="text-xl font-bold">₩97.2T</div><div class="opacity-60">revenue FY25</div></div>
-<div><div class="text-xl font-bold">49%</div><div class="opacity-60">op. margin FY25</div></div>
-<div><div class="text-xl font-bold">28.8%</div><div class="opacity-60">DRAM · <b>56% HBM</b></div></div>
-<div><div class="text-xl font-bold">~5+ yrs</div><div class="opacity-60">to replace</div></div>
+<div class="grid grid-cols-3 gap-1 text-center mt-2 text-sm">
+<div><div class="text-xl font-bold">$27.98B</div><div class="opacity-60">DRAM rev. 1Q26</div></div>
+<div><div class="text-xl font-bold">28.8%</div><div class="opacity-60">DRAM share</div></div>
+<div><div class="text-xl font-bold">~56%</div><div class="opacity-60">HBM share est.</div></div>
 </div>
 <div class="text-xs opacity-70 text-center mt-2">HBM yield lead and ~56% share</div>
 </div>
 
 <div class="border-2 border-red-400 rounded-lg p-3">
 <div class="text-lg font-bold text-center">Samsung</div>
-<div class="grid grid-cols-2 gap-2 text-center mt-2 text-sm">
-<div><div class="text-xl font-bold">₩74.8T</div><div class="opacity-60">memory rev 1Q26</div></div>
-<div><div class="text-xl font-bold">~66%</div><div class="opacity-60">DS op. margin 1Q26</div></div>
-<div><div class="text-xl font-bold">38.6%</div><div class="opacity-60">DRAM #1</div></div>
-<div><div class="text-xl font-bold">~5+ yrs</div><div class="opacity-60">to replace</div></div>
+<div class="grid grid-cols-3 gap-1 text-center mt-2 text-sm">
+<div><div class="text-xl font-bold">$37.32B</div><div class="opacity-60">DRAM rev. 1Q26</div></div>
+<div><div class="text-xl font-bold">38.5%</div><div class="opacity-60">DRAM share</div></div>
+<div><div class="text-xl font-bold">SEP '25</div><div class="opacity-60">HBM3E qualified</div></div>
 </div>
 <div class="text-xs opacity-70 text-center mt-2">integrates memory and 4 nm base-die production</div>
 </div>
 
 <div class="border-2 border-blue-400 rounded-lg p-3">
 <div class="text-lg font-bold text-center">Micron</div>
-<div class="grid grid-cols-2 gap-2 text-center mt-2 text-sm">
-<div><div class="text-xl font-bold">$41.5B</div><div class="opacity-60">revenue FQ3'26</div></div>
-<div><div class="text-xl font-bold">84.6%</div><div class="opacity-60">gross margin</div></div>
-<div><div class="text-xl font-bold">22.4%</div><div class="opacity-60">DRAM · ~20% HBM</div></div>
-<div><div class="text-xl font-bold">~5+ yrs</div><div class="opacity-60">to replace</div></div>
+<div class="grid grid-cols-3 gap-1 text-center mt-2 text-sm">
+<div><div class="text-xl font-bold">$21.75B</div><div class="opacity-60">DRAM rev. 1Q26</div></div>
+<div><div class="text-xl font-bold">22.4%</div><div class="opacity-60">DRAM share</div></div>
+<div><div class="text-xl font-bold">~20%</div><div class="opacity-60">HBM share est.</div></div>
 </div>
 <div class="text-xs opacity-70 text-center mt-2">only US supplier among the three largest</div>
 </div>
 
 </div>
 
-<div class="text-xs opacity-40 text-right mt-3">as of Q2 2026 · shares 1Q26</div>
+<div class="text-xs opacity-40 text-right mt-3">DRAM revenue/share: TrendForce 1Q26 · HBM figures: separate estimates</div>
 
 <!--
-- SK hynix leads HBM share and yield; Samsung combines memory with its own logic manufacturing.
+- The first two figures in each card use the same 1Q26 DRAM revenue and market-share basis.
+- SK hynix leads estimated HBM share; Samsung combines memory with its own logic manufacturing.
 - Micron is the only US-based company among the three leading DRAM and HBM suppliers.
-- Qualification, packaging expertise, and booked capacity make substitution slow even with three approved sources.
+- Product qualification, packaging expertise, and booked capacity make large allocation shifts slow even with three named sources.
 -->
 
 ---
@@ -320,12 +318,12 @@ title: "The memory supercycle"
 
 ---
 
-# Chokepoint #6: SK hynix HBM supply
+# Chokepoint #6: HBM capacity
 
 ![chokepoint board — 6 stamps](/diagrams/rendered/board-6.svg)
 
 <div class="text-xl mt-6 text-center">
-SK hynix supplies about <b>56% of HBM</b> and has been Nvidia's primary supplier since H100.
+NVIDIA named three Rubin HBM4 sources, but SK hynix entered 2026 with about <b>56% of HBM</b>.
 </div>
 
 <div class="text-sm opacity-60 mt-10 text-center">
@@ -333,7 +331,7 @@ HBM stacks and GPU dies still have to be joined in one package.
 </div>
 
 <!--
-- SK hynix supplies about 56 percent of HBM and has served as Nvidia's main supplier since H100.
-- Its yield lead and booked capacity make replacement slow even though Samsung and Micron also produce qualified HBM.
-- The dependency concerns available volume and execution rather than a single-source monopoly.
+- Nvidia publicly named Samsung, SK hynix, and Micron as Rubin HBM4 sources, so the Board is not making a single-supplier claim.
+- SK hynix entered 2026 with about 56 percent of HBM and has served as Nvidia's main supplier since H100.
+- Shifting a large allocation still requires product-specific qualification and volume, even with three Nvidia-named sources.
 -->

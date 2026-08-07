@@ -4,8 +4,9 @@ As-of: 2026-07
 
 Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 `<!-- VERIFY -->` = not fully confident, check before recording.
-Segment frame ("The Twist"): for two years you couldn't buy a GPU — and it
-wasn't for lack of wafers.
+Segment frame ("The Twist"): in 2023–25, AI accelerators remained constrained
+as front-end output ramped; CoWoS capacity, HBM, and later substrates limited
+shipments at different points.
 
 ## What packaging was vs what it is
 
@@ -58,9 +59,9 @@ wasn't for lack of wafers.
 - HBM speaks a **1,024-bit-wide interface per stack** (HBM4: 2,048-bit); with
   command/address/clock, roughly **~1,700 signal lines per stack**. A PCB
   physically cannot route that — traces are too fat, too long, too few. [12][13]
-- Only a **silicon interposer** (or silicon bridge) has wiring fine enough:
-  µm-scale traces, tens of thousands of micro-bumps, die-to-memory distance
-  measured in **millimeters**. [12]
+- HBM requires a high-density in-package interconnect. Implementations include
+  a full silicon interposer, a polymer/copper RDL interposer, or embedded local
+  silicon bridges, with die-to-memory distance measured in millimeters. [12][68]
 - Payoff: HBM3E delivers **>1.2 TB/s per stack**; a B200 carries 8 stacks. That
   bandwidth exists *only inside the package*. [13]
 - Course line: the memory wall wasn't solved by faster memory — it was solved
@@ -77,10 +78,11 @@ wasn't for lack of wafers.
 
 ## CoWoS — the acronym that gated the AI boom
 
-- **C**hip **o**n **W**afer **o**n **S**ubstrate: dies are mounted on a silicon
-  interposer (with through-silicon vias), which sits on an organic substrate.
-  2.5D packaging. First commercialized with Xilinx Virtex-7 FPGAs, volume
-  production by 2013 — a decade as a niche, expensive oddity. [14]
+- **C**hip **o**n **W**afer **o**n **S**ubstrate: dies are mounted on an
+  interposer, which sits on an organic substrate. CoWoS-S uses a monolithic
+  silicon interposer; CoWoS-L uses an RDL-based interposer with embedded local
+  silicon interconnects. First commercialized with Xilinx Virtex-7 FPGAs,
+  volume production by 2013 — a decade as a niche, expensive oddity. [14][68]
 - **The quote**: "It's not the shortage of AI chips. It's the shortage of our
   CoWoS capacity." — TSMC Chairman **Mark Liu, Sept 2023** (to Nikkei, at
   SEMICON Taiwan). Every H100 needed a CoWoS slot; TSMC had wafer capacity to
@@ -88,7 +90,8 @@ wasn't for lack of wafers.
 - Same year, Musk (WSJ CEO Council, May 2023): GPUs "at this point are
   considerably harder to get than drugs." [16] H100 lead times ran
   **~36–52 weeks** through 2023. [17]
-- Capacity trajectory (wafers/month, end of year):
+- Industry-estimated capacity trajectory (wafers/month, end of year; TSMC does
+  not publish this exact series):
   - end-2023: **~13–15k** [18][19]
   - end-2024: **~35–40k** (doubled) [19][20]
   - end-2025: **~75–80k** (doubled again) [19][20]
@@ -102,7 +105,7 @@ wasn't for lack of wafers.
   - **CoWoS-R**: organic RDL interposer, no silicon (cheaper, lower density). [23]
   - **CoWoS-L**: small **local silicon interconnect (LSI) bridges** embedded in
     an RDL interposer — silicon only where dies meet, scaling toward **~6×
-    reticle** packages. [23][24]
+    reticle** packages. [23][24][68]
 - Blackwell = CoWoS-L, and Nvidia was initially its only customer, locking up
   **>70% of 2025 CoWoS-L capacity**. [25][26] Blackwell's 2024 delay/re-spin was
   a *packaging-level* problem (interposer/bridge redesign) — the first time a
@@ -289,8 +292,10 @@ wasn't for lack of wafers.
 - **The MSG company**: >95% of the world's advanced CPU/GPU packages are
   insulated with film from Ajinomoto — the company that invented MSG seasoning
   — at reported >50% margins. [54][55][56]
-- **The 10×**: TSMC's CoWoS capacity: ~13–15k wafers/month end-2023 → ~120–140k
-  targeted end-2026. Ten-x in three years, and it's *still* sold out. [18][19][21]
+- **The possible 10×**: industry estimates put CoWoS at ~13–15k wafers/month at
+  end-2023 and target ~120–140k by end-2026. The latter is a forecast, while
+  industry reporting describes repeated expansion and continued tightness.
+  [18][19][21]
 - **The tester tax**: a phone chip passes test in under a minute; a
   Blackwell-class AI package can sit on the tester for 20+ minutes — which is
   why the test duopoly (Advantest + Teradyne) is having the best years in its
@@ -343,7 +348,7 @@ wasn't for lack of wafers.
 41. TrendForce, "Top 10 OSAT Companies of 2024 Revealed" — https://www.trendforce.com/presscenter/news/20250513-12577.html
 42. Evertiq, "Chinese firms gain ground in 2024 top 10 OSAT ranking" (Amkor 15.2%, JCET 12% of top-10) — https://evertiq.com/news/2025-05-23-chinese-firms-gain-ground-in-2024-top-10-osat-ranking
 43. PR Newswire, ASE Technology Holding Q4/FY2025 results (GM 17.7%) — https://www.prnewswire.com/news-releases/ase-technology-holding-co-ltd-reports-its-unaudited-consolidated-financial-results-for-the-fourth-quarter-and-the-full-year-of-2025-302679779.html
-44. Amkor Technology, 2025 earnings releases (FY2025 gross margin ~14%) — https://www.sec.gov/Archives/edgar/data/1047127/000104712725000187/amkr9302025erex-991.htm
+44. Amkor Technology, "Fourth Quarter and Full Year 2025 Results" (FY2025 gross margin 14.0%) — https://www.sec.gov/Archives/edgar/data/1047127/000104712726000007/amkr123125erex-991.htm
 45. TSMC, 4Q25/FY2025 results (FY2025 gross margin 59.9%) — https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm
 46. Amkor Technology, "Amkor Breaks Ground on New Advanced Packaging and Test Campus in Arizona; Expands Investment to $7 Billion" — https://ir.amkor.com/news-releases/news-release-details/amkor-technology-breaks-ground-new-semiconductor-advanced
 47. TSMC press release, "Amkor and TSMC to Expand Partnership and Collaborate on Advanced Packaging in Arizona" — https://pr.tsmc.com/english/news/3174
@@ -367,3 +372,4 @@ wasn't for lack of wafers.
 65. TechTimes, "Intel and TSMC Pile In as Glass Substrates and Panel Packaging Head for 10x Growth" (Counterpoint: $650M→$8.1B) — https://www.techtimes.com/articles/319529/20260702/intel-tsmc-pile-glass-substrates-panel-packaging-head-10x-growth.htm
 66. TrendForce, "TSMC Targets its System-on-Wafer… Mass Production in 2027" — https://www.trendforce.com/news/2024/06/04/news-fueled-by-ai-demand-tsmc-targets-its-system-on-wafer-manufactured-with-cowos-to-enter-mass-production-in-2027/
 67. DigiTimes, "CoWoS capacity utilization reportedly only 60% amid AI boom" — https://www.digitimes.com/news/a20250805PD205/cowos-capacity-tsmc-packaging-equipment.html
+68. TSMC 3DFabric, "CoWoS" (CoWoS-S/R/L structures and interconnect roles) — https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm

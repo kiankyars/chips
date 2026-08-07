@@ -12,7 +12,7 @@ status: draft
 seeds: []                                                    # climax plants nothing forward
 pays_off: [multi-patterning, taiwan-flag, euv-export-license, smic-iou]
 stamps: []                                                   # board already complete (board-7) — this segment re-reads it, earns none
-diagrams: [map-full, board-7, journey-6]
+diagrams: [map-full, journey-5, board-7, export-control-expansion, policy-control-points, h20-policy-cycle, china-technology-gap, china-capability-cost, us-fab-investment, split-ai-stacks]
 sources: research/geopolitics.md
 swappable: true    # export rules move monthly — ONE topic per slide, NO cross-slide dependencies; any single slide can be re-recorded without touching its neighbors
 -->
@@ -26,7 +26,7 @@ swappable: true    # export rules move monthly — ONE topic per slide, NO cross
 
 <div class="mt-4">
 
-![journey complete](/diagrams/rendered/journey-6.svg)
+![journey — package complete, deployment pending](/diagrams/rendered/journey-5.svg)
 
 </div>
 
@@ -44,11 +44,11 @@ layout: center
 ![the completed board](/diagrams/rendered/board-7.svg)
 
 <div class="text-sm opacity-60 mt-6 text-center">
-Seven supplier dependencies take an estimated five years or more to replace.
+Seven hard-to-replace control points: sole sources, small qualified sets, and geographic clusters.
 </div>
 
 <!--
-- Seven dependencies in leading-edge AI chips may take five years or more to replace.
+- The seven control points mix sole sources, small qualified supplier sets, and geographic clusters.
 - The seven dependencies span design software, fabrication, lithography, materials, memory, and packaging.
 - A restriction at any one of these points can slow production across the rest of the chain.
 -->

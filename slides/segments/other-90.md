@@ -12,7 +12,7 @@ status: draft
 seeds: []
 pays_off: []
 stamps: []         # deliberately none — the honesty beat is that this layer has NO single-company chokepoint
-diagrams: [map-manufacture]
+diagrams: [map-manufacture, analog-embedded-objects, auto-chip-shortage, slide-111-analog-300mm-economics-v2]
 sources: research/idm-analog.md
 -->
 
@@ -34,8 +34,8 @@ sources: research/idm-analog.md
 
 <div class="grid grid-cols-3 gap-8 mt-10 text-center">
 <div>
-<div class="text-6xl font-bold">~$772B</div>
-<div class="opacity-70 mt-2">whole chip market, 2025 <span class="opacity-50">(+22%)</span></div>
+<div class="text-6xl font-bold">$791.7B</div>
+<div class="opacity-70 mt-2">whole chip market, 2025 <span class="opacity-50">(+25.6%)</span></div>
 </div>
 <div>
 <div class="text-6xl font-bold">~$90B</div>
@@ -49,11 +49,11 @@ sources: research/idm-analog.md
 
 <div class="text-base opacity-70 mt-12 text-center leading-relaxed">
 These products use nodes introduced <b>15–40 years ago</b> and do not require EUV or leading-edge fab equipment.<br>
-AI accelerators and memory drove most 2025 growth; analog grew 7%.
+Logic and memory were 2025's fastest-growing product categories; WSTS's autumn estimate put analog growth at 7%.
 </div>
 
 <!--
-- The global chip market reached about $772 billion in 2025, while analog and microcontrollers accounted for about $90 billion and $30 billion.
+- The global chip market reached $791.7 billion in 2025, while analog and microcontrollers accounted for about $90 billion and $30 billion.
 - Many of these products use 15- to 40-year-old process nodes and need neither EUV nor the newest fab equipment.
 -->
 

@@ -12,7 +12,7 @@ status: draft
 seeds: []
 pays_off: []
 stamps: []          # NO new stamp — board stays at board-5 (from asml); these players are dominant but not on the locked seven
-diagrams: [map-equipment, flow-deposit, flow-etch, flow-coat]
+diagrams: [map-equipment, equipment-applied-coverage, equipment-lam-deep-etch-v2, nand-vertical-scaling, equipment-tel-asm-v2]
 sources: research/equipment-dep-etch.md
 -->
 

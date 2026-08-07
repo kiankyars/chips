@@ -1,6 +1,6 @@
 # CHIPS — curriculum v2
 
-One course, ~112 min nominal (records to 105–120). The spine: **follow one chip** —
+One course, 118 min nominal before pressure-valve cuts (target 105–120). The spine: **follow one chip** —
 a Blackwell/GB300-class Nvidia accelerator — from idea to installed rack. Every player
 is encountered at the moment the chip cannot proceed without them. See `STRATEGY.md`
 for why this architecture; this file is the operational map.
@@ -10,8 +10,8 @@ Legend: tier **P** = protagonist deep-dive · **T** = tragedy · **D** = duel ·
 first if over runtime, never from protagonists)
 
 Persistent devices in every segment: the Map corner-navigator (+ region lit on entry),
-Journey Bar at act breaks, Chokepoint stamps when earned, Money-Bar toll at act ends,
-Scoreboard block for every major player (dated "as of Q2 2026").
+Journey Bar at act breaks, Chokepoint stamps when earned, Economics Ledger at act ends,
+Comparable Scoreboard blocks for selected players, with every metric explicitly dated.
 
 ---
 
@@ -19,7 +19,7 @@ Scoreboard block for every major player (dated "as of Q2 2026").
 
 | id | title | min | tier | covers |
 |---|---|---|---|---|
-| `cold-open` | The Object | 4 | — | One GB300-class accelerator held on screen; three impossibility facts; ~$600B/yr AI capex as stakes; the Map fully dark; the promises: every light lit, every company named, **"I count seven single points of failure"** (empty Chokepoint Board), the Money Bar. Journey Bar introduced. Title card. **Build and record LAST.** |
+| `cold-open` | The Object | 4 | — | One GB300-class accelerator held on screen; three impossibility facts; ~$600B/yr hyperscaler capex, including AI infrastructure, as stakes; the Map fully dark; the promises: every light lit, every company named, **"I count seven hard-to-replace control points"** (empty Chokepoint Board), and a scope-safe Economics Ledger. Journey Bar introduced. Title card. **Build and record LAST.** |
 
 ## ACT I — THE IMPOSSIBLE OBJECT (13 min)
 
@@ -32,8 +32,8 @@ Scoreboard block for every major player (dated "as of Q2 2026").
 
 | id | title | min | tier | covers |
 |---|---|---|---|---|
-| `nvidia` | The Designer | 7 | P | Designing THE chip: what a GPU does (parallel matrix math), CUDA as the real moat, the 75% gross-margin mystery posed and answered, what Nvidia does NOT own (fab, memory, packaging) — the bomb that sets up every later toll booth. **Seeds: memory wall · reticle limit.** First Money-Bar entry. |
-| `eda` | The Invisible Duopoly | 5 | D | You cannot hand-draw 200B transistors: the design-flow diagram (RTL→synthesis→P&R→verification→tape-out); Synopsys vs Cadence 40-year duel, Siemens EDA card; ~90% gross-margin tollbooth. **Stamp #1 (EDA duopoly). Seed: export lever.** |
+| `nvidia` | The Designer | 7 | P | Designing THE chip: what a GPU does (parallel matrix math), CUDA as the real moat, FY26's 71.1% companywide GAAP gross margin, and what Nvidia does NOT own (fab, memory, packaging). Product economics remain undisclosed. **Seeds: memory wall · reticle limit.** Establishes the scope rules used by the first act-end Economics Ledger. |
+| `eda` | The Invisible Duopoly | 5 | D | You cannot hand-draw 200B transistors: the design-flow diagram (RTL→synthesis→P&R→verification→tape-out); Synopsys vs Cadence 40-year duel, Siemens EDA card; high-70s to mid-80s gross margins. **Stamp #1 (EDA duopoly). Seed: export lever.** |
 | `arm-riscv` | Empire vs Insurgent | 4 | D | Arm's toll-booth economics (royalty on ~99% of smartphones); architecture vs core licenses; RISC-V as open insurgent; instruction sets as political territory. |
 | `fabless-field` 🔧 | The Crowd Design Freed | 3 | C | Card montage on the Map: AMD, Apple (**IOU → TSMC segment**), Qualcomm, Broadcom + Marvell as the hyperscaler custom-silicon counterweight (TPU/Trainium), MediaTek. Thesis: design is crowded precisely because manufacturing is not. Cliffhanger: a perfect blueprint, zero factories — the file flies 8,000 miles to an island. |
 
@@ -66,34 +66,37 @@ with their step glowing.*
 |---|---|---|---|---|
 | `other-90` 🔧 | The Other 90% | 5 | E | Deliberate breather after the deepest stretch + the honesty beat: most chips never touch the leading edge. TI, Infineon, STMicro, NXP, Renesas, ADI as one themed sweep — cars (~1,000+ chips each), factories, grids; the $0.30 chip that halted global auto production in 2021; analog moats measured in decades, not nanometers. |
 
-## ACT V — MEMORY & THE ASSEMBLY (16 min)
+## ACT V — MEMORY & THE ASSEMBLY (17 min)
 
 | id | title | min | tier | covers |
 |---|---|---|---|---|
-| `memory-hbm` | The Memory War | 9 | D | Logic vs memory callback; DRAM/NAND commodity boom-bust purgatory (a genuinely different microeconomics); then **the memory-wall seed pays off**: HBM flips the script — stacked DRAM welded next to the GPU, sold like logic (qualified, negotiated, sold out); SK Hynix's ambush of Samsung, Micron's charge; the 2025–26 supercycle; HBM as the biggest line on the Money Bar. **Stamp #6 (HBM).** |
-| `packaging` | The Twist | 7 | P-lite | Mystery framing: for two years you couldn't buy a GPU — and it wasn't wafers. **Reticle-limit seed pays off**: CoWoS explained; chiplets (yield logic returns); hybrid bonding/SoIC; ABF substrate card (Ajinomoto!); OSAT sweep (ASE, Amkor, JCET) + test card (Advantest/Teradyne). **Stamp #7 — the Board completes: "TSMC is on this board twice."** The chip is DONE: Journey Bar fills, Money Bar totals, return to the cold-open shot. |
+| `memory-hbm` | The Memory War | 9 | D | Logic vs memory callback; DRAM/NAND commodity boom-bust purgatory (a genuinely different microeconomics); then **the memory-wall seed pays off**: HBM flips the script — stacked DRAM beside the GPU, sold through qualification and long-term capacity agreements; SK Hynix's ambush of Samsung, Micron's charge; the 2025–26 supercycle; third-party estimates put HBM above half of the physical package cost. **Stamp #6 (qualified HBM capacity).** |
+| `packaging` | The Twist | 8 | P-lite | Mystery framing: as front-end output ramped, CoWoS capacity, HBM, and later substrates constrained AI-accelerator shipments. **Reticle-limit seed pays off**: CoWoS explained; chiplets (yield logic returns); hybrid bonding/SoIC; ABF substrate card; OSAT + automated-test sweep. **Stamp #7 — the Board completes: "TSMC is on this board twice."** This is a second constrained capability, not a claim that advanced packaging has no alternatives. The completed package leaves for system integration and hands off to geopolitics. |
 
 ## ACT VI — THE BOARD IS THE WORLD (17 min)
 
 | id | title | min | tier | covers |
 |---|---|---|---|---|
 | `geopolitics` | The Board Is the World | 12 | — | 60s callback montage re-anchoring the full Board. Export controls as chess told through the levers the viewer now owns (EUV license, EDA, entity list, the H20/China saga); China's counter-moves (rare earths, Nexperia) and full-stack push (SMIC — **multi-patterning seed pays off**, Huawei, SMEE, CXMT, domestic EDA) honestly assessed; CHIPS Act → equity era; then the Taiwan wargame walked light-by-light across the viewer's own Board — sourced to published wargames, hedged, silicon-shield logic argued both ways. **Build last; slides swappable.** |
-| `synthesis` | Where the Value Pools | 5 | — | The Money Bar's final waterfall; the margin ladder ranked; the **years-to-replace league table** (the course's quotable original); the fully lit Map re-read once as a money map; what AI demand changes about memory, packaging, and infrastructure. |
+| `synthesis` | Where the Value Pools | 5 | — | The Economics Ledger closes with scope-safe product evidence and comparable company gross margins; replacement difficulty is ranked qualitatively; the fully lit Map is re-read as an economics map; AI demand then extends the constraint into infrastructure. |
 
 ---
 
 ## The Seven Chokepoints (locked before recording)
 
-Criterion: *a single company (or single-country cluster) whose removal halts
-leading-edge AI-chip production within months, with no substitute inside five years.*
+Criterion: *a technology or supply stage concentrated in one supplier, a small
+qualified set, or one geography, where disruption would materially constrain
+leading-edge AI-chip output before substitutes could qualify or scale.*
 
-1. **ASML** — 100% of EUV lithography.
-2. **Carl Zeiss SMT** — the only EUV optics on Earth; the chokepoint inside the chokepoint.
-3. **TSMC (wafers)** — ~90% of leading-edge logic.
-4. **Synopsys + Cadence** — the EDA duopoly; no chip exists without their software.
-5. **Japan's materials cluster** — JSR/TOK photoresist + Hoya EUV mask blanks (~90% class shares).
-6. **SK Hynix (HBM)** — the qualified-supply bottleneck of the AI buildout.
-7. **TSMC (CoWoS packaging)** — the same company, a second, different monopoly.
+1. **Synopsys + Cadence** — the two largest EDA vendors anchor many certified
+   leading-edge flows; Siemens is the important third supplier.
+2. **TSMC (wafers)** — about 90% of ≤7nm-class merchant foundry logic.
+3. **Japan's materials cluster** — concentrated advanced resists, wafers, and EUV mask blanks.
+4. **ASML** — the sole commercial supplier of EUV lithography systems.
+5. **Carl Zeiss SMT** — the sole supplier of projection optics for ASML's EUV systems.
+6. **HBM capacity** — NVIDIA named three Rubin HBM4 sources, but available volume
+   remains concentrated; SK hynix entered 2026 with the largest share.
+7. **TSMC (CoWoS packaging)** — the same company, a second constrained capability for products qualified on its proprietary flow.
 
 On-screen honesty: the Board is a judgment call; alternates (Ajinomoto ABF, Shin-Etsu
 wafers, Advantest test) appear as "honorable mentions" in synthesis.
@@ -102,7 +105,7 @@ wafers, Advantest test) appear as "honorable mentions" in synthesis.
 
 | seed | planted in | pays off in |
 |---|---|---|
-| Memory wall ("feeding 20,000 cores is a bandwidth problem — hold that thought") | `nvidia` | `memory-hbm` |
+| Memory wall ("keeping the GPU's arithmetic units supplied is a bandwidth problem — hold that thought") | `nvidia` | `memory-hbm` |
 | Reticle limit (the die is as big as physics allows) | `nvidia` | `packaging` |
 | Yield (one particle, one dead die) | `foundations` | `life-of-a-wafer` → `kla` → `intel` → chiplets in `packaging` |
 | Multi-patterning (EUV's workaround era) | `asml` | SMIC in `geopolitics` |
@@ -110,13 +113,13 @@ wafers, Advantest test) appear as "honorable mentions" in synthesis.
 | EUV export license | `asml` | `geopolitics` |
 | Apple IOU | `fabless-field` | `tsmc` |
 | SMIC IOU | `foundries-field` | `geopolitics` |
-| "Owns no factories" | `nvidia` | every act-end Money-Bar toll |
+| "Owns no factories" | `nvidia` | all later-act Economics Ledger entries |
 
 ## Runtime budget
 
-4 + 13 + 19 + 19 + 24 + 5 + 16 + 17 = **117 min nominal** → records long; pressure
+4 + 13 + 19 + 19 + 24 + 5 + 17 + 17 = **118 min nominal** → records long; pressure
 valves 🔧 (`fabless-field`, `foundries-field`, `materials`, `other-90`) absorb up to
-~14 min of cuts. Protagonists are never cut.
+~13 min of cuts while preserving the 105-minute floor. Protagonists are never cut.
 
 ## Build order
 

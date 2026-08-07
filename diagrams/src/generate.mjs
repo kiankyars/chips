@@ -101,25 +101,25 @@ function buildMap(state) {
   const eq = []
   eq.push(regionFrame(330, 52, 1010, 130, 'EQUIPMENT — the toolmakers', C.equipment.edge))
   const eqBoxes = [
-    ['ASML', 2], ['Applied Materials', 0], ['Lam Research', 0], ['Tokyo Electron', 0], ['KLA', 0], ['ASM Intl', 0],
+    ['ASML', 1], ['Applied Materials', 0], ['Lam Research', 0], ['Tokyo Electron', 0], ['KLA', 0], ['ASM Intl', 0], ['Zeiss SMT', 1],
   ]
   eqBoxes.forEach(([name, star], i) => {
-    eq.push(box(348 + i * 163, 82, 150, 70, name.split(' ').length > 1 ? name.split(' ') : [name], { ...C.equipment, fs: 19, star, bold: star > 0 }))
+    eq.push(box(348 + i * 140, 82, 130, 70, name.split(' ').length > 1 ? name.split(' ') : [name], { ...C.equipment, fs: 17, star, bold: star > 0 }))
   })
   parts.push(g('equipment', eq.join('\n')))
 
   // --- MATERIALS band (below equipment)
   const mt = []
   mt.push(regionFrame(330, 222, 1010, 106, 'MATERIALS', C.materials.edge))
+  mt.push(`<text x="520" y="210" font-size="24" font-weight="800" fill="${C.star}">★</text>`)
   const mtBoxes = [
-    [['Shin-Etsu', 'SUMCO'], 0, 'wafers'], [['JSR · TOK'], 1, 'photoresist'], [['Hoya'], 1, 'mask blanks'],
-    [['Carl Zeiss SMT'], 1, 'EUV optics'], [['gases · slurries'], 0, 'Linde · Entegris'], [['Ajinomoto'], 0, 'ABF substrate'],
+    [['Shin-Etsu', 'SUMCO'], 0, 'Si wafers'], [['JSR · TOK'], 0, 'photoresist'], [['Hoya · AGC'], 0, 'EUV blanks'],
+    [['gases · slurries'], 0, 'Linde · Entegris'], [['Ajinomoto'], 0, 'ABF substrate'],
   ]
   mtBoxes.forEach(([lines, star, sub], i) => {
-    mt.push(box(348 + i * 163, 244, 150, 62, lines, { ...C.materials, fs: 17, star, sub }))
+    mt.push(box(348 + i * 195, 244, 180, 62, lines, { ...C.materials, fs: 17, star, sub }))
   })
-  // zeiss feeds ASML; bands feed manufacture
-  mt.push(arrow(837, 244, 470, 156, { color: C.materials.edge, dash: '5 5' }))
+  // equipment and materials feed manufacture
   parts.push(g('materials', mt.join('\n')))
   parts.push(g('equipment', [arrow(650, 330, 650, 392, { color: C.equipment.edge }), arrow(1000, 330, 1000, 392, { color: C.equipment.edge }), arrow(835, 182, 835, 218, { color: C.equipment.edge, width: 2 })].join('\n')))
 
@@ -127,7 +127,7 @@ function buildMap(state) {
   const ds = []
   ds.push(regionFrame(36, 420, 268, 610, 'DESIGN', C.design.edge))
   const dsGroups = [
-    ['EDA', [['Synopsys', 1], ['Cadence', 1], ['Siemens EDA', 0]]],
+    ['EDA', [[['Synopsys +', 'Cadence'], 1], ['Siemens EDA', 0]]],
     ['IP', [['Arm', 0], ['RISC-V', 0]]],
     ['FABLESS', [['Nvidia', 0], ['AMD', 0], ['Apple', 0], ['Qualcomm', 0], ['Broadcom · Marvell', 0], ['MediaTek', 0]]],
   ]
@@ -148,7 +148,7 @@ function buildMap(state) {
   const mf = []
   mf.push(regionFrame(376, 420, 560, 610, 'MANUFACTURE', C.manufacture.edge))
   mf.push(`<text x="398" y="466" font-size="17" font-weight="700" letter-spacing="1.5" fill="${C.inkSoft}">FOUNDRIES</text>`)
-  const foundries = [['TSMC', 2], ['Samsung Foundry', 0], ['Intel Foundry', 0], ['GlobalFoundries', 0], ['SMIC', 0], ['UMC · Rapidus', 0]]
+  const foundries = [['TSMC', 1], ['Samsung Foundry', 0], ['Intel Foundry', 0], ['GlobalFoundries', 0], ['SMIC', 0], ['UMC · Rapidus', 0]]
   foundries.forEach(([name, star], i) => {
     mf.push(box(394, 480 + i * 56, 250, 46, name, { ...C.manufacture, fs: 18, star, bold: star > 0 }))
   })
@@ -164,9 +164,9 @@ function buildMap(state) {
   parts.push(g('memory', [
     regionFrame(1008, 800, 330, 230, 'MEMORY', C.memory.edge),
     box(1026, 824, 142, 52, 'Samsung', { ...C.memory, fs: 17 }),
-    box(1182, 824, 142, 52, 'SK Hynix', { ...C.memory, fs: 17, star: 1, bold: true }),
+    box(1182, 824, 142, 52, 'SK Hynix', { ...C.memory, fs: 17, bold: true }),
     box(1026, 890, 142, 52, 'Micron', { ...C.memory, fs: 17 }),
-    box(1182, 890, 142, 52, 'HBM', { ...C.memory, fs: 17, bold: true, sub: 'the AI bottleneck' }),
+    box(1182, 890, 142, 52, 'HBM', { ...C.memory, fs: 17, star: 1, bold: true, sub: 'capacity constraint' }),
     arrow(1173, 800, 1173, 756, { color: C.memory.edge }),
   ].join('\n')))
 
@@ -185,15 +185,15 @@ function buildMap(state) {
 
   // --- AI DATA CENTERS (far right)
   parts.push(g('datacenter', [
-    box(1424, 500, 460, 170, ['AI DATA CENTERS'], { ...C.datacenter, fs: 30, bold: true, sub: 'the $600B/yr buildout' }),
+    box(1424, 500, 460, 170, ['AI DATA CENTERS'], { ...C.datacenter, fs: 30, bold: true, sub: 'within ~$600B/yr hyperscaler capex' }),
     `<text x="1654" y="710" text-anchor="middle" font-size="18" fill="${C.inkSoft}">…and every phone, car, and grid</text>`,
   ].join('\n')))
 
   // legend for chokepoint stars (always faint, full opacity on 'full')
   parts.push(`<g opacity="${state === 'dark' ? 0.25 : 0.9}">
 <text x="1424" y="86" font-size="20" fill="${C.star}" font-weight="700">★ = chokepoint</text>
-<text x="1424" y="114" font-size="17" fill="${C.inkSoft}">single point of failure for</text>
-<text x="1424" y="136" font-size="17" fill="${C.inkSoft}">the modern world</text>
+<text x="1424" y="114" font-size="17" fill="${C.inkSoft}">hard-to-replace supply-chain</text>
+<text x="1424" y="136" font-size="17" fill="${C.inkSoft}">control point</text>
 </g>`)
 
   return svgDoc(1920, 1080, parts.join('\n'))
@@ -204,7 +204,7 @@ for (const s of ['dark', 'design', 'manufacture', 'equipment', 'memory', 'backen
 }
 
 // ============================================================ JOURNEY BAR
-const STAGES = ['SAND', 'DESIGN', 'FAB', 'MEMORY', 'PACKAGE', 'DATA CENTER']
+const STAGES = ['PHYSICS', 'DESIGN', 'FAB', 'MEMORY', 'PACKAGE', 'DATA CENTER']
 function journeyBar(active /* 0=none yet, 1..6 = stage index+1 */) {
   const W = 1920, H = 150, bw = 264, gap = 40, x0 = (W - (STAGES.length * bw + (STAGES.length - 1) * gap)) / 2
   const parts = []
@@ -261,11 +261,11 @@ for (const [k, hot] of Object.entries(FLOW_STATES)) writeFileSync(join(OUT, `flo
 // eda → tsmc → life-of-a-wafer (Japan cluster) → asml (+zeiss) → memory-hbm → packaging
 const CHOKEPOINTS = [
   [['Synopsys', '+ Cadence'], 'EDA'],
-  [['TSMC'], 'leading-edge wafers'],
-  [['JSR · TOK', '· Hoya'], 'resist + mask blanks'],
+  [['TSMC'], '≤7 nm merchant logic'],
+  [['JAPAN', 'MATERIALS'], 'Si wafers · resists · EUV blanks'],
   [['ASML'], 'EUV lithography'],
   [['Zeiss SMT'], 'EUV optics'],
-  [['SK Hynix'], 'HBM'],
+  [['HBM capacity'], '3 Rubin HBM4 sources'],
   [['TSMC — again'], 'CoWoS packaging'],
 ]
 function board(filled /* 0..7 */) {
@@ -282,7 +282,7 @@ function board(filled /* 0..7 */) {
 <text x="${x + bw / 2}" y="165" text-anchor="middle" dominant-baseline="central" font-size="54" font-weight="300" fill="${C.line}">?</text>`)
     }
   })
-  parts.push(`<text x="${W / 2}" y="330" text-anchor="middle" font-size="24" fill="${C.inkSoft}">${filled}/7 single points of failure found</text>`)
+  parts.push(`<text x="${W / 2}" y="330" text-anchor="middle" font-size="24" fill="${C.inkSoft}">${filled}/7 concentrated control points mapped</text>`)
   return svgDoc(W, H, parts.join('\n'))
 }
 for (let k = 0; k <= 7; k++) writeFileSync(join(OUT, `board-${k}.svg`), board(k))

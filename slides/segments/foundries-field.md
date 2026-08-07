@@ -12,7 +12,7 @@ status: draft
 seeds: [smic-iou]              # planted here → cashed in geopolitics
 pays_off: []                   # this segment cashes no earlier seed; it reuses Act I's cost curve
 stamps: []                     # no chokepoint earned here (TSMC already stamped #2)
-diagrams: [cost-curve]         # reuses foundations' Act I cost curve as the funnel backdrop; funnel drawn inline for now
+diagrams: [map-manufacture, foundry-frontier-race]
 sources: research/foundries-field.md, research/foundations.md
 -->
 
@@ -76,12 +76,12 @@ title: "The rest of the frontier"
 
 ---
 
-# Foundry cost is embedded in Nvidia's cost of revenue
+# Economics Ledger: foundry cost is not a disclosed GPU line item
 
 <div class="grid grid-cols-2 gap-10 mt-10 text-center">
 <div class="border-2 border-gray-400 rounded-lg p-6">
 <div class="text-5xl font-bold">~$18k–$30k</div>
-<div class="text-sm opacity-60 mt-2">reported price per leading-edge 300 mm wafer</div>
+<div class="text-sm opacity-60 mt-2">industry estimate per leading-edge 300 mm wafer</div>
 </div>
 <div class="border-2 border-gray-400 rounded-lg p-6">
 <div class="text-5xl font-bold">59.9%</div>

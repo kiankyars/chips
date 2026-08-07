@@ -116,20 +116,10 @@ function chipIcon(x, y, color, { scale = 1, label = '' } = {}) {
 </g>`
 }
 
-function qualificationGate(x, y, color, open = false) {
-  const rightTop = open ? y - 72 : y
-  return `<g>
-  <path d="M${x - 46} ${y - 74}V${y + 74}M${x + 46} ${rightTop - 74}V${rightTop + 74}" stroke="${color}" stroke-width="8" stroke-linecap="round"/>
-  <path d="M${x - 60} ${y - 74}H${x + 60}" stroke="${color}" stroke-width="8" stroke-linecap="round"/>
-  <circle cx="${x}" cy="${y - 12}" r="20" fill="${C.paper}" stroke="${color}" stroke-width="5"/>
-  <path d="M${x - 10} ${y - 12}L${x - 1} ${y - 2}L${x + 16} ${y - 24}" fill="none" stroke="${color}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-</g>`
-}
-
 function hbmSupplierRace() {
   const lanes = [
     { name: 'SK HYNIX', color: C.green, y: 320, end: 1690, lead: '~56% HBM · Q1 2026', sub: "Nvidia's primary HBM supplier since H100" },
-    { name: 'SAMSUNG', color: C.rose, y: 545, end: 1690, lead: 'qualified · SEPT 2025', sub: 'HBM3E qualification took about 18 months' },
+    { name: 'SAMSUNG', color: C.rose, y: 545, end: 1690, lead: 'HBM3E qualified · SEPT 2025', sub: 'HBM3E qualification took about 18 months' },
     { name: 'MICRON', color: C.blue, y: 770, end: 1690, lead: '~19–21% HBM · Q1 2026', sub: 'share rose from 2% in 2023' },
   ]
 
@@ -138,19 +128,18 @@ ${text(118, lane.y - 20, lane.name, { size: 29, fill: lane.color, weight: 800, t
 ${text(118, lane.y + 18, lane.sub, { size: 20, fill: C.muted, weight: 560 })}
 ${rule(430, lane.y, lane.end, lane.y, { color: lane.color, width: 8, marker: i === 0 ? 'arrow-green' : i === 1 ? 'arrow-red' : 'arrow-blue' })}
 ${hbmStack(510, lane.y - 78, lane.color, { scale: 0.58, layers: 6 })}
-${i === 1 ? qualificationGate(1160, lane.y, lane.color, true) : qualificationGate(1015 + i * 70, lane.y, lane.color, true)}
 ${pill(1338, lane.y - 25, lane.lead, lane.color, i === 0 ? C.greenSoft : i === 1 ? C.roseSoft : C.blueSoft, 420, { size: 20 })}
 </g>`).join('\n')
 
   return svgDoc(
-    'HBM suppliers reached a common qualification gate by mid 2026',
-    'Three horizontal lanes show SK hynix, Samsung, and Micron advancing through qualification. SK hynix held about 56 percent of HBM in the first quarter of 2026, Micron held about 19 to 21 percent, and all three were qualified for Rubin HBM4 by mid 2026.',
-    `${sectionLabel('HBM SUPPLIER QUALIFICATION', 118, 112)}
+    'NVIDIA publicly named three HBM4 suppliers for Rubin by mid 2026',
+    'Three horizontal lanes show SK hynix, Samsung, and Micron. SK hynix held about 56 percent of HBM in the first quarter of 2026, Micron held about 19 to 21 percent, and NVIDIA publicly named all three as Rubin HBM4 sources by mid 2026.',
+    `${sectionLabel('HBM SUPPLIER RACE', 118, 112)}
 ${rule(118, 150, 1802, 150, { color: C.faint, width: 3 })}
 ${laneSvg}
 <rect x="557" y="902" width="806" height="84" rx="42" fill="${C.violetSoft}" stroke="${C.violet}" stroke-width="3"/>
 ${text(960, 938, 'MID-2026', { size: 20, fill: C.violet, weight: 800, anchor: 'middle', tracking: 2 })}
-${text(960, 972, 'all three qualified for Rubin HBM4', { size: 29, fill: C.violet, weight: 730, anchor: 'middle' })}`,
+${text(960, 972, 'NVIDIA named all three for Rubin HBM4', { size: 29, fill: C.violet, weight: 730, anchor: 'middle' })}`,
   )
 }
 
@@ -186,10 +175,10 @@ ${panel(1130, 104, 684, 820, { shadow: true })}
 ${sectionLabel('CAPACITY PER GIGABYTE', 1180, 178, C.violet)}
 ${text(1472, 241, 'HBM ≈ 3× DDR5', { size: 42, fill: C.violet, weight: 800, anchor: 'middle' })}
 ${capacityWafers}
-${text(1470, 782, 'ONE HBM WAFER', { size: 24, fill: C.violet, weight: 780, anchor: 'middle', tracking: 1.8 })}
-${text(1470, 824, 'uses capacity equivalent to roughly', { size: 23, fill: C.muted, weight: 560, anchor: 'middle' })}
-${text(1470, 865, 'THREE PC-DRAM WAFERS', { size: 25, fill: C.ink, weight: 780, anchor: 'middle', tracking: 1.5 })}
-${text(118, 1000, 'Forecast · data centers account for about 70% of 2026 memory output', { size: 22, fill: C.muted, weight: 560 })}`,
+${text(1470, 782, '1 GB OF HBM OUTPUT', { size: 24, fill: C.violet, weight: 780, anchor: 'middle', tracking: 1.8 })}
+${text(1470, 824, 'requires roughly', { size: 23, fill: C.muted, weight: 560, anchor: 'middle' })}
+${text(1470, 865, '3× DDR5 WAFER CAPACITY', { size: 25, fill: C.ink, weight: 780, anchor: 'middle', tracking: 1.5 })}
+${text(118, 1000, 'Forecast revenue · HBM capacity intensity raises the wafer burden', { size: 22, fill: C.muted, weight: 560 })}`,
   )
 }
 
@@ -206,6 +195,16 @@ function stopGate(x, y, color) {
   return `<g>
   <circle cx="${x}" cy="${y}" r="49" fill="${C.paper}" stroke="${color}" stroke-width="7"/>
   <path d="M${x - 24} ${y - 24}L${x + 24} ${y + 24}M${x + 24} ${y - 24}L${x - 24} ${y + 24}" stroke="${color}" stroke-width="8" stroke-linecap="round"/>
+</g>`
+}
+
+function accessGate(x, y, color, open = false) {
+  const rightTop = open ? y - 72 : y
+  return `<g>
+  <path d="M${x - 46} ${y - 74}V${y + 74}M${x + 46} ${rightTop - 74}V${rightTop + 74}" stroke="${color}" stroke-width="8" stroke-linecap="round"/>
+  <path d="M${x - 60} ${y - 74}H${x + 60}" stroke="${color}" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="${x}" cy="${y - 12}" r="20" fill="${C.paper}" stroke="${color}" stroke-width="5"/>
+  <path d="M${x - 10} ${y - 12}L${x - 1} ${y - 2}L${x + 16} ${y - 24}" fill="none" stroke="${color}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 </g>`
 }
 
@@ -269,7 +268,7 @@ function policyGate(x, y, state, label, detail) {
   const color = state === 'closed' ? C.rose : state === 'open' ? C.green : C.amber
   return `<g>
   ${panel(x - 145, y - 136, 290, 272, { fill: state === 'closed' ? C.roseSoft : state === 'open' ? C.greenSoft : C.amberSoft, stroke: color })}
-  ${qualificationGate(x, y - 34, color, state !== 'closed')}
+  ${accessGate(x, y - 34, color, state !== 'closed')}
   ${text(x, y + 74, label, { size: 22, fill: color, weight: 800, anchor: 'middle', tracking: 1 })}
   ${text(x, y + 108, detail, { size: 18, fill: C.muted, weight: 560, anchor: 'middle' })}
 </g>`

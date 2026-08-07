@@ -82,9 +82,9 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 ### Mechanically what it is
 - **High Bandwidth Memory**: 8/12/16 DRAM dies thinned to tens of microns,
   stacked vertically, connected by **through-silicon vias (TSVs)** — thousands
-  of copper elevator shafts drilled through each die — on top of a base die,
-  the whole tower sitting **millimeters from the GPU on a silicon interposer**
-  (TSMC CoWoS). [20]
+  of copper elevator shafts drilled through each die — on top of a base die.
+  The stack sits millimeters from the GPU over a high-density in-package
+  interconnect: a full silicon interposer, RDL interposer, or local bridge. [20][71]
 - Analogy: DDR on the motherboard = a **suburb** — cheap land, long commute on
   a narrow road (64-bit channel). HBM = an **apartment tower downtown** —
   expensive per square meter, but 1024–2048 lanes wide and a one-minute walk
@@ -106,8 +106,7 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 - SK hynix, Micron, and Samsung all manufacture HBM3E. That does not mean every
   supplier is qualified for every accelerator. [66][67][68]
 - NVIDIA lists Blackwell Ultra at **288 GB of HBM3E** and up to **8 TB/s** per
-  GPU. NVIDIA's correction note says the proper package has **12 HBM stacks**,
-  replacing an earlier eight-stack diagram. [69]
+  GPU, configured as **eight 12-high stacks**. [69]
 - Power comparisons are vendor-specific. Micron claims 30% less power than
   competing HBM3E products and 2.5 times HBM2E performance per watt; those are
   not general HBM3E specifications. [67]
@@ -123,9 +122,9 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   (11.7 Gbps, 3.3 TB/s/stack claimed — fastest announced); SK hynix began
   full-scale HBM4 production at M16 in Feb 2026 too. [23][22]
   <!-- VERIFY: "who was first" is contested marketing; both started ~Feb 2026 -->
-- **All three (Samsung, SK hynix, Micron) certified by Nvidia for Vera Rubin
-  HBM4** — confirmed by Jensen Huang at GTC Taipei, June 1, 2026; Rubin
-  shipments from summer 2026. [13][24]
+- NVIDIA publicly named **Samsung, SK hynix, and Micron** as Vera Rubin HBM4
+  sources by June 2026. NVIDIA did not disclose a formal qualification
+  milestone in that statement. [13][24][70]
 - Next lap already started: SK hynix shipped **12-layer HBM4E samples June
   2026**, ahead of schedule; SK hynix showed **16-high 48GB HBM4** at CES 2026;
   Samsung unveiled HBM4E at GTC 2026. [25][26][27]
@@ -137,11 +136,10 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   5–6×); HBM3E contract ≈ **$13–17/GB** in early 2026. Caveat to voice: the
   supercycle *compressed* the ratio — commodity DDR5 rose so fast TrendForce
   expects plain DDR5 **profitability to surpass HBM3E in 2026**. [29][30][31]
-- **The trade ratio:** ~**3× the wafer capacity per GB** vs DDR5 (stacking
-  overhead + TSV area + yield loss); TrendForce frames it as 1GB HBM ≈ wafer
-  area of ~4GB conventional DRAM. Every HBM wafer started is ~3 wafers of
-  PC/phone DRAM that never get made — that arithmetic is what set the whole
-  2025–26 shortage off. [32][33]
+- **The trade ratio:** Micron estimates that HBM3E consumes roughly **3× the
+  wafer supply** of DDR5 to produce a given number of bits at the same process
+  node. That capacity intensity raises the opportunity cost of allocating DRAM
+  output to HBM during a constrained cycle. [32][72]
 - HBM consumes roughly **a fifth of all DRAM wafer capacity in 2026**.
   <!-- VERIFY: ~20–23% figures circulating; find TrendForce primary -->
 - **HBM sells like logic, not memory:** customer-qualified (Nvidia quals take
@@ -150,9 +148,10 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   sold out 2026 supply back in Oct 2025), and with HBM4's custom base dies it's
   becoming a semi-custom product per customer. The commodity spot market simply
   doesn't exist here. [34][35][36]
-- **HBM as % of an AI accelerator's BOM:** H100 SXM ~**41%** (~$1,350 of
+- **Third-party package-cost estimates:** H100 SXM HBM ~**41%** (~$1,350 of
   ~$3,320 build cost); B200 ~**45%** (~$2.9k of ~$6.4k); Blackwell Ultra B300
-  **>50%**. The memory now costs more than the GPU die it feeds. [37][38]
+  **>50%**. These are analyst estimates, not vendor-disclosed bills of materials.
+  [37][38]
 
 ### Samsung's Nvidia qualification saga (resolved)
 - Samsung failed Nvidia's HBM3E quals for ~**18 months** (thermal/power issues)
@@ -221,6 +220,11 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   It's the Korea playbook, re-run.
 
 ## Financials (latest as of 2026-07)
+### Like-for-like DRAM market snapshot
+- TrendForce's **1Q26 branded-DRAM revenue / share**: Samsung **$37.32B / 38.5%**,
+  SK hynix **$27.98B / 28.8%**, and Micron **$21.75B / 22.4%**. These are DRAM
+  market metrics, not companywide revenue or HBM share. [73]
+
 ### SK hynix
 - **FY2025 (record):** revenue **₩97.15T**, operating profit **₩47.21T** (49%
   margin — beat Samsung's whole company), net **₩42.95T**. HBM revenue more
@@ -308,9 +312,9 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 - **Samsung earned ~₩1 trillion per day in Q2 2026** (₩89.4T ≈ $59B operating
   profit, up ~19× YoY) — and its stock *fell 7%*, because in memory, record
   profits are how every crash begins. [63]
-- **One HBM wafer kills ~3 PC-DRAM wafers.** That trade ratio is why your
-  laptop's RAM roughly quadrupled in price in six months: your PC is bidding
-  against Microsoft's data centers for the same wafer. [32][43]
+- **A fixed bit volume produced as HBM consumes roughly 3× the wafer capacity
+  of DDR5.** That capacity trade-off raises the opportunity cost of commodity
+  DRAM during a constrained cycle. [32][43]
 - **Samsung lost the DRAM crown in Q1 2025 for the first time since 1992** —
   33 years of dominance ended not by a foreign rival but by its neighbor
   SK hynix betting earlier on HBM. [7]
@@ -389,4 +393,8 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 66. SK hynix, "SK hynix Begins Volume Production of Industry's First HBM3E" (fifth generation, 1.18 TB/s, production) — https://news.skhynix.com/sk-hynix-begins-volume-production-of-industry-first-hbm3e/
 67. Micron, "HBM3E" and product brief (24/36 GB, eight/twelve-high, 1,024 I/O pins, >9.2 Gb/s, >1.2 TB/s) — https://www.micron.com/products/memory/hbm/hbm3e
 68. Samsung Semiconductor, "HBM" (24/36 GB, eight/twelve-high, up to 9.2 Gb/s and 1.18 TB/s) — https://semiconductor.samsung.com/dram/hbm/
-69. NVIDIA, "Inside NVIDIA Blackwell Ultra" (288 GB HBM3E, 8 TB/s, correction to 12 HBM stacks) — https://developer.nvidia.com/blog/inside-nvidia-blackwell-ultra-the-chip-powering-the-ai-factory-era/
+69. NVIDIA, "Inside NVIDIA Blackwell Ultra" (288 GB HBM3E, 8 TB/s, eight 12-high stacks) — https://developer.nvidia.com/blog/inside-nvidia-blackwell-ultra-the-chip-powering-the-ai-factory-era/
+70. NVIDIA, GTC Taipei 2026 session (Micron, SK hynix, and Samsung named as Rubin HBM4 sources) — https://www.nvidia.com/en-us/on-demand/session/gtctaipei26-stw61044/
+71. TSMC, "CoWoS" (CoWoS-S silicon interposer, CoWoS-R RDL interposer, and CoWoS-L RDL with local silicon interconnect) — https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm
+72. Micron, "High Bandwidth Memory: The Need for a Memory Revolution" (HBM3E consumes about three times the wafer supply of D5 for a given bit volume at the same node), June 2024 — https://investors.micron.com/static-files/a531c7f0-fca2-48f3-8f24-79c945aaa2d2
+73. TrendForce, "Rapid Contract Price Surge Drives 1Q26 DRAM Industry Up 81% QoQ" (supplier DRAM revenue and shares) — https://www.trendforce.com/presscenter/news/20260601-13070.html

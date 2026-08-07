@@ -74,9 +74,9 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   **Nvidia ~19%** of revenue (~US$23.4B — overtook Apple for the first time in
   over a decade), **Apple ~17%** (NT$645B). [9][10] Next tier: MediaTek,
   Qualcomm, Broadcom, AMD roughly ~5–9% each. <!-- VERIFY: next-tier splits are pre-2025 analyst projections (MediaTek ~9%, Qualcomm ~8%, AMD ~7%); TSMC only discloses anonymized >10% customers. -->
-- Years-to-replace (scoreboard line): realistically **a decade+** — you'd need
-  Intel-scale fabs, ASML allocation, the PDK/IP ecosystem, and ~30 years of
-  accumulated yield learning.
+- Replacement difficulty: **ecosystem must be rebuilt** — the task requires
+  Intel-scale fabs, ASML allocation, the PDK/IP ecosystem, and accumulated
+  yield learning. A single countdown would imply more precision than the evidence supports.
 
 ## Financials
 ### FY2025 (record, AI supercycle) [1][2]
@@ -143,11 +143,12 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   and A14 higher still (CFO, Jan 2026). [2]
 
 ## Packaging (the second product line — and the AI bottleneck)
-- **Why packaging gates AI supply:** every Nvidia/AMD AI accelerator = big logic
-  die(s) + HBM memory stacks bonded on a silicon interposer — TSMC's **CoWoS**
-  (Chip-on-Wafer-on-Substrate). 2023–25, CoWoS capacity — not wafer capacity —
-  was the binding constraint on world GPU output. Nvidia's allocation of CoWoS
-  ≈ Nvidia's shippable revenue.
+- **Why packaging gates AI supply:** Nvidia and AMD AI accelerators combine logic
+  dies and HBM over a high-density in-package interconnect in TSMC's **CoWoS**
+  family. CoWoS variants use a full silicon interposer, an RDL interposer, or
+  RDL with embedded local silicon links. [40] In 2023–25, CoWoS capacity — not wafer capacity —
+  was a binding constraint on leading AI-accelerator output; Nvidia's CoWoS
+  allocation constrained its shipment ceiling.
 - Capacity: ~**75k wpm CoWoS exiting 2025** → est. **~115–140k wpm by end-2026**;
   supply-demand gap seen narrowing from ~20% to ~10% during 2026 — still short. [16][17]
   <!-- VERIFY: all CoWoS capacity numbers are TrendForce/supply-chain estimates; TSMC doesn't publish them. -->
@@ -291,3 +292,4 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 37. Sammy Fans, "TSMC is now 11x bigger than Samsung chip foundry business" (TrendForce Q1 2026) — https://www.sammyfans.com/2026/06/12/samsung-tsmc-chip-foundry-business-trendforce-q1-2026/amp/
 38. TrendForce, "TSMC speeds up expansion in Taiwan: up to 10 fabs reportedly under construction or starting in 2026" — https://www.trendforce.com/news/2026/02/23/news-tsmc-speeds-up-expansion-in-taiwan-up-to-10-fabs-reportedly-under-construction-or-starting-in-2026/
 39. TSMC PR, "ESMC breaks ground on Dresden fab" (JV structure: TSMC 70%, Bosch/Infineon/NXP 10% each) — https://pr.tsmc.com/english/news/3169
+40. TSMC, "CoWoS" (CoWoS-S, CoWoS-R, and CoWoS-L interconnect structures) — https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm

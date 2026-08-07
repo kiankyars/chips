@@ -60,28 +60,31 @@ The spine: **follow one chip.** A Blackwell/GB300-class Nvidia accelerator is fo
 from idea → file → island → fab → memory → package → data center. Every company is
 *encountered at the moment the chip cannot proceed without it* — never profiled in
 taxonomic sequence. The industry's real structure (a linear value chain gated by
-absolute monopolies) is the oldest retention machine in storytelling: a journey with
+concentrated control points) is the oldest retention machine in storytelling: a journey with
 gates, and a gatekeeper at each gate.
 
 ### The seven persistent devices
 
 1. **The Map.** One master industry map, shown fully dark in the cold open, lit region
-   by region, fully lit at minute ~100 — then re-read twice: as a *money map*, then as
-   a *weapons map*. Present in every segment as a corner "you are here" navigator.
+   by region, fully lit at minute ~100 — then re-read twice: first as a *weapons map*
+   in geopolitics, then as an *economics map* in synthesis. Present in every segment as a corner "you are here" navigator.
    Ships in the repo as a poster (the shareable artifact).
-2. **The Journey Bar.** SAND → DESIGN → FAB → MEMORY → PACKAGE → DATA CENTER progress
+2. **The Journey Bar.** PHYSICS → DESIGN → FAB → MEMORY → PACKAGE → DATA CENTER progress
    strip at every act break. The viewer can always locate themselves at minute 9 or 99.
-3. **The Chokepoint Board.** The cold open promises: *"I count seven companies that are
-   single points of failure for the modern world."* A stamp is earned on screen each
-   time one is proven; the completed board opens the geopolitics act. (The seven, with
-   criteria, are fixed in curriculum.md — the count is locked before recording.)
-4. **The Money Bar.** A price waterfall of the one chip — every act ends with its toll:
-   "TSMC charged ~$X at ~Y% margin." Completes only in the finale. (Equipment/EDA enter
-   as honest "amortized tolls.")
-5. **The Scoreboard.** An identical stat block for every major player — revenue, gross
-   margin, share, moat-in-one-line, **years-to-replace** — dated "as of Q2 2026."
-   Years-to-replace (how long would a state with unlimited money need to replicate this
-   player?) is the course's original, most quotable metric.
+3. **The Chokepoint Board.** The cold open promises: *"I count seven supply-chain
+   control points that are hard to replace."* A stamp is earned on screen each time
+   one is proven; the completed board opens the geopolitics act. The board deliberately
+   mixes sole sources, small qualified sets, and geographic clusters; the criteria are
+   fixed in curriculum.md before recording.
+4. **The Economics Ledger.** Act-end entries record only what public data can
+   support: dated company margins, named supplier relationships, and explicitly
+   labeled product or market estimates. The ledger never derives per-product cost
+   or margin by combining figures reported at incompatible scopes.
+5. **The Scoreboard.** Protagonists and selected comparison sets may use a common
+   stat block when entity scope, period, and metric definitions are comparable.
+   Ensemble cards are not forced into the template. Replacement difficulty uses
+   three qualitative categories: capacity can shift, capability must scale, or an
+   ecosystem must be rebuilt.
 6. **The Flow Strip.** One deposition→litho→etch→implant→CMP→metrology ribbon, taught
    once in "Life of a Wafer," then reused for every equipment and materials player —
    each enters with their step glowing. This is the structural cure for five
@@ -96,7 +99,8 @@ gates, and a gatekeeper at each gate.
 - **Cast tiers, not equal profiles.** Protagonists (Nvidia, TSMC, ASML) get 7–10 min
   deep dives. A tragedy (Intel) gets its own register. Duels get told as one contest
   (Synopsys/Cadence; Arm/RISC-V; SK Hynix/Samsung/Micron). Ensembles get themed sweeps
-  (fabless crowd, analog world, materials, OSATs). Cameos get a Scoreboard card (60–90s).
+  (fabless crowd, analog world, materials, OSATs). Cameos get a concise evidence card
+  only when comparable public data adds explanatory value (60–90s).
   A rivalry is a story; two adjacent profiles are a list.
 - **Concept placement rule.** Teach a concept abstractly only if ≥3 players depend on it
   (transistor, node, archetypes, process flow, yield). Otherwise teach it inside the
@@ -129,7 +133,7 @@ would otherwise die.
   GPT-image prompts remain for decorative one-offs.
 - **Record act-by-act, never in one sitting.** Narrator energy is the unmodeled variable.
 - **Build and record the cold open LAST.** It front-loads four promises (map, board,
-  money bar, "seven"); it can only be cut once every device has survived the build.
+  economics ledger, "seven"); it can only be cut once every device has survived the build.
 - **Geopolitics slides built swappable.** Export rules move monthly; single slides must
   be replaceable without re-recording neighbors.
 - **Pre-record refresh pass.** Every dated number re-verified within 30 days of recording;
@@ -139,7 +143,7 @@ would otherwise die.
 
 ## 5. Known risks (accepted, with mitigations)
 
-- **Runtime creep** (nominal ~112 min records long): ensemble/montage segments are the
+- **Runtime creep** (118 min nominal before pressure-valve cuts): ensemble/montage segments are the
   designated pressure valves — cut there first, never from protagonists.
 - **The "seven" is contestable** (is Zeiss inside ASML? does TSMC count twice?):
   the criteria and count are fixed in curriculum.md before the cold open is recorded;
@@ -147,7 +151,7 @@ would otherwise die.
 - **Fact rot** (HBM share, Intel status, export rules move monthly): course-as-code is
   the mitigation — regenerate slides from refreshed packs.
 - **The chip device dates the course:** the chip's identity lives in one intro slide and
-  the money-bar labels; swappable for the 2028 refresh.
+  the economics-ledger scope labels; swappable for the 2028 refresh.
 - **Nitpick risk from expert viewers:** beat sheets carry "this is simplified — here's
   the direction of the lie" hedges for the narrator to voice.
 
@@ -155,8 +159,8 @@ would otherwise die.
 
 - v2 curriculum: `curriculum.md` (rewritten — segment list, minutes, tiers, devices,
   seed→payoff ledger, the seven chokepoints with criteria).
-- Research: one fact pack per segment in `research/`, web-verified to July 2026,
-  primary-source-first, every number footnoted.
+- Research: one fact pack per segment in `research/`, source-linked and refreshed
+  through July 2026, with unresolved claims explicitly marked `VERIFY`.
 - Segments: built per AUTHORING.md as `status: draft` with proposed angles — your
   angle pass and redline remain the two human steps, per the contract.
 - Structural SVGs: `diagrams/` (map states, journey bar, flow strip, boards).

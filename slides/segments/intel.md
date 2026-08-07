@@ -12,7 +12,7 @@ status: draft
 seeds: [euv-pass, state-equity]    # euv-pass → asml (next act: the machine Intel said no to) · state-equity → geopolitics (CHIPS Act → equity era)
 pays_off: [yield]                  # planted in foundations, felt in life-of-a-wafer/kla — here it kills a king
 stamps: []                         # no chokepoint stamp — that absence is part of the story
-diagrams: [map-manufacture]
+diagrams: [map-manufacture, slide-066-intel-missed-shifts, slide-069-intel-investment-lifeline]
 sources: research/intel.md
 -->
 
@@ -58,7 +58,7 @@ Intel reached a $500B market cap in August 2000 and did not surpass it for 26 ye
 <div class="grid grid-cols-3 gap-8 mt-10 text-center">
 <div><div class="text-6xl font-bold">2.7×</div><div class="opacity-70 mt-2">targeted density increase<br><span class="text-sm opacity-60">typical per node: 1.5–2×</span></div></div>
 <div><div class="text-6xl font-bold">0</div><div class="opacity-70 mt-2">EUV tools in the process plan<br><span class="text-sm opacity-60">quadruple patterning instead</span></div></div>
-<div><div class="text-6xl font-bold">7 yrs</div><div class="opacity-70 mt-2">desktop process remained on 14 nm<br><span class="text-sm opacity-60">2016 target → shipped late 2019</span></div></div>
+<div><div class="text-6xl font-bold">2019 / 2021</div><div class="opacity-70 mt-2">10nm mobile / 10nm-class desktop<br><span class="text-sm opacity-60">mainstream desktop stayed on 14 nm until Alder Lake</span></div></div>
 </div>
 
 <div class="text-sm opacity-60 mt-12 text-center">
@@ -68,7 +68,7 @@ On July 24, 2020, Intel announced another 7 nm delay; its shares fell 16% that d
 
 <!--
 - Intel targeted a 2.7-fold density gain at 10nm without EUV, using a complex multi-patterning process instead.
-- The node reached volume years late and kept desktop processors on 14nm for about seven years.
+- Intel reached volume 10nm first in mobile Ice Lake in 2019; mainstream desktop remained on 14nm until 10nm-class Alder Lake arrived in 2021.
 - During that delay, TSMC shipped N7, N7+ with EUV, and N5.
 -->
 
@@ -124,7 +124,7 @@ title: "Intel's missed shifts"
 </div>
 
 <div class="flex flex-col gap-6 text-center justify-center">
-<div><div class="text-5xl font-bold">~20–25%</div><div class="text-sm opacity-60 mt-1">good-die yield when the ramp began; "industry-standard" yield targeted for early 2027</div></div>
+<div><div class="text-5xl font-bold">2025</div><div class="text-sm opacity-60 mt-1">18A high-volume manufacturing began; no comparable product-level yield disclosed</div></div>
 <div><div class="text-5xl font-bold">$174M</div><div class="text-sm opacity-60 mt-1">external foundry revenue, Q1 2026 — ~3% of foundry revenue</div></div>
 <div><div class="text-5xl font-bold">−$33B</div><div class="text-sm opacity-60 mt-1">cumulative foundry losses since 2023</div></div>
 </div>
@@ -133,7 +133,7 @@ title: "Intel's missed shifts"
 
 <!--
 - Intel's 18A process combines RibbonFET transistors with backside power delivery and now ships Panther Lake and Clearwater Forest products.
-- Good-die yield began near 20 to 25 percent, so economics depend on the ramp toward industry-standard yield.
+- Intel says 18A entered high-volume manufacturing in 2025; no numeric yield is shown because public estimates use incompatible product and yield definitions.
 - External foundry revenue remained $174 million in Q1 2026.
 - Cumulative foundry losses since 2023 reached about $33 billion.
 -->
@@ -146,15 +146,15 @@ title: "Intel 14A"
 <div class="visual-sequence__kicker">INTEL 14A</div>
 
 <div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/slide-069-intel-investment-lifeline.svg" alt="The US government, SoftBank, and Nvidia investing in Intel while the external 14A customer order remains blank" />
+  <img src="/diagrams/rendered/slide-069-intel-investment-lifeline.svg" alt="The US government, SoftBank, and Nvidia investing in Intel while no external 14A anchor customer is publicly named" />
 </div>
 
-<div class="visual-sequence__caption"><strong>Three investors supplied $15.9B, but no external 14A anchor order.</strong></div>
+<div class="visual-sequence__caption"><strong>Three investors bought $15.9B of Intel equity; no external 14A anchor customer was publicly named.</strong></div>
 <div class="visual-sequence__source">US government · $8.9B · SoftBank · $2B · Nvidia · $5B</div>
 
 <!--
-- The US government, SoftBank, and Nvidia invested a combined $15.9 billion in Intel.
-- That capital supports the manufacturing program, but Intel still lacks a named external anchor order for 14A.
+- The US government, SoftBank, and Nvidia bought a combined $15.9 billion of Intel equity.
+- The equity strengthened Intel's balance sheet but was not a 14A customer order.
 - A foundry needs customer volume as well as financing to sustain a new leading-edge node.
 -->
 
@@ -168,7 +168,7 @@ title: "Intel 14A"
     <div><div class="text-3xl font-bold">41%</div><div class="text-sm opacity-60">gross margin (non-GAAP, Q1'26)</div></div>
     <div><div class="text-3xl font-bold">~70%</div><div class="text-sm opacity-60">PC CPU share</div></div>
     <div><div class="text-xl font-bold leading-tight mt-2">only US-owned leading-edge logic manufacturer</div></div>
-    <div><div class="text-3xl font-bold">~10 yrs</div><div class="text-sm opacity-60">to replace</div></div>
+    <div><div class="text-xl font-bold leading-tight mt-2">capability</div><div class="text-sm opacity-60">must scale</div></div>
   </div>
   <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
 </div>

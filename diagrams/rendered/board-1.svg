@@ -19,5 +19,5 @@
 <text x="1500" y="165" text-anchor="middle" dominant-baseline="central" font-size="54" font-weight="300" fill="#526078">?</text>
 <rect x="1645" y="90" width="250" height="150" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5" stroke-dasharray="8 6"/>
 <text x="1770" y="165" text-anchor="middle" dominant-baseline="central" font-size="54" font-weight="300" fill="#526078">?</text>
-<text x="960" y="330" text-anchor="middle" font-size="24" fill="#a8b3c7">1/7 single points of failure found</text>
+<text x="960" y="330" text-anchor="middle" font-size="24" fill="#a8b3c7">1/7 concentrated control points mapped</text>
 </svg>

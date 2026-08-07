@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@slidev/cli": "^0.50.0",
+    "@slidev/parser": "0.50.0",
     "@slidev/theme-default": "^0.25.0",
     "playwright-chromium": "^1.44.0"
   }

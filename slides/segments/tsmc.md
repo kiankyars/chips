@@ -12,7 +12,7 @@ status: draft
 seeds: [taiwan-flag]          # planted here — DETONATES in geopolitics, not here
 pays_off: [apple-iou]         # planted in fabless-field
 stamps: [tsmc-wafers]         # chokepoint #2 — leading-edge logic
-diagrams: [map-manufacture, journey-3, board-2]
+diagrams: [map-manufacture, journey-3, board-2, tsmc-geography]
 sources: research/tsmc.md
 -->
 
@@ -225,7 +225,7 @@ TSMC plans no <b>High-NA EUV</b> in production through 2029; it is extending exi
     <div><div class="text-3xl font-bold">59.9%</div><div class="text-sm opacity-60">gross margin FY25 (66.2% Q1'26)</div></div>
     <div><div class="text-3xl font-bold">72.3%</div><div class="text-sm opacity-60">global foundry share (Q1'26)</div></div>
     <div><div class="text-xl font-bold leading-tight mt-2">pure-play model + 30 years of yield data</div></div>
-    <div><div class="text-3xl font-bold">~10+ yrs</div><div class="text-sm opacity-60">to replace</div></div>
+    <div><div class="text-xl font-bold leading-tight mt-2">ecosystem</div><div class="text-sm opacity-60">must be rebuilt</div></div>
   </div>
   <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
 </div>
@@ -236,7 +236,7 @@ TSMC plans no <b>High-NA EUV</b> in production through 2029; it is extending exi
 
 <!--
 - TSMC reported $122 billion in FY2025 revenue, a 59.9 percent gross margin, and 72.3 percent of foundry revenue in Q1 2026, about eleven times Samsung's share.
-- Replacing this capacity would require new fabs, scarce equipment, a full design ecosystem, and years of yield learning, so the estimate exceeds ten years.
+- Replacing this capability would require new fabs, scarce equipment, a full design ecosystem, and accumulated yield learning; no single countdown captures that task.
 -->
 
 ---

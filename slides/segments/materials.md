@@ -12,14 +12,14 @@ status: draft
 seeds: []                                         # no ledger seed planted here
 pays_off: []                                      # Japan-materials stamp was earned at life-of-a-wafer; DEEPENED here, not re-earned
 stamps: []                                        # no NEW stamp — this segment thickens Stamp #3 (Japan cluster, board-3)
-diagrams: [map-equipment, flow-strip]
+diagrams: [map-equipment, flow-strip, slide-104-material-shocks-substitution]
 sources: research/materials.md
 -->
 
 
 # Japan's share of semiconductor materials
 
-<div class="text-xl opacity-70 mt-3">Consumables used by each fab process step</div>
+<div class="text-xl opacity-70 mt-3">Materials and tooling used across fab process steps</div>
 
 ![map: equipment lit](/diagrams/rendered/map-equipment.svg)
 
@@ -30,38 +30,38 @@ sources: research/materials.md
 
 ---
 
-# What each step consumes
+# What each step depends on
 
 ![flow strip](/diagrams/rendered/flow-strip.svg)
 
-<div class="grid grid-cols-4 gap-4 mt-6 text-sm">
-<div class="border-l-4 border-gray-400 pl-3">
+<div class="grid grid-cols-6 gap-4 mt-5 text-sm">
+<div class="col-span-2 border-l-4 border-gray-400 pl-3">
+<div class="font-bold">WAFER MAKING → silicon + quartz</div>
+<div class="opacity-60">High-purity quartz forms crystal-growth crucibles</div>
+</div>
+<div class="col-span-2 border-l-4 border-gray-400 pl-3">
 <div class="font-bold">COAT → photoresist</div>
-<div class="opacity-60">JSR, TOK — Japan ~90% (~95% at EUV)</div>
+<div class="opacity-60">Japanese suppliers dominate advanced resists</div>
 </div>
-<div class="border-l-4 border-gray-400 pl-3">
-<div class="font-bold">EXPOSE → mask blanks</div>
-<div class="opacity-60">Hoya + AGC supply ~93% of EUV mask blanks</div>
+<div class="col-span-2 border-l-4 border-gray-400 pl-3">
+<div class="font-bold">EXPOSE → reticle + light source</div>
+<div class="opacity-60">The reticle carries the pattern; DUV uses ArF or KrF gas mixtures</div>
 </div>
-<div class="border-l-4 border-gray-400 pl-3">
-<div class="font-bold">DUV LITHOGRAPHY → laser gases</div>
-<div class="opacity-60">neon blends for DUV light sources; HF for etch and cleaning</div>
+<div class="col-span-3 border-l-4 border-gray-400 pl-3">
+<div class="font-bold">ETCH / CLEAN → wet chemicals</div>
+<div class="opacity-60">Electronic-grade HF is one input</div>
 </div>
-<div class="border-l-4 border-gray-400 pl-3">
+<div class="col-span-3 border-l-4 border-gray-400 pl-3">
 <div class="font-bold">POLISH → slurry + pad</div>
 <div class="opacity-60">Entegris slurry, DuPont pads</div>
 </div>
 </div>
 
-<div class="text-sm opacity-70 mt-6 text-center">
-Single-crystal silicon grows in fused-quartz crucibles. <b>Spruce Pine, North Carolina, is a leading global source of the high-purity quartz used to make them.</b>
-</div>
-
 <!--
-- Coating consumes photoresist, exposure requires a mask blank, DUV lithography uses neon gas blends, and polishing consumes slurry and pads.
-- Japanese companies supply about 90 percent of photoresist and Hoya plus AGC supply about 93 percent of EUV mask blanks.
-- Spruce Pine, North Carolina, is a leading source of high-purity quartz for silicon-growing crucibles.
-- Replacement chemicals can take one to two years to qualify.
+- Spruce Pine is a leading source of high-purity quartz used in crucibles for growing single-crystal silicon.
+- Coating consumes photoresist from a supplier set concentrated in Japan.
+- Exposure projects a patterned reticle; DUV light sources use krypton-fluoride or argon-fluoride excimer-laser mixtures.
+- Etch, cleaning, and polishing consume high-purity chemicals, slurries, and pads that fabs qualify to a specific process.
 -->
 
 ---
@@ -87,16 +87,16 @@ title: "Material shocks"
 
 ---
 
-# Equipment and materials are embedded in wafer prices
+# Economics Ledger: wafer prices combine many inputs
 
 <div class="grid grid-cols-2 gap-10 mt-10 text-center">
 <div class="border-2 border-gray-400 rounded-lg p-6">
 <div class="text-5xl font-bold">~$150</div>
-<div class="text-sm opacity-60 mt-2">blank 300 mm wafer</div>
+<div class="text-sm opacity-60 mt-2">industry estimate: blank 300 mm wafer</div>
 </div>
 <div class="border-2 border-gray-400 rounded-lg p-6">
 <div class="text-5xl font-bold">~$19,500</div>
-<div class="text-sm opacity-60 mt-2">reported price after 3 nm processing</div>
+<div class="text-sm opacity-60 mt-2">industry estimate after 3 nm processing</div>
 </div>
 </div>
 

@@ -11,8 +11,9 @@ View the published course at <https://kiankyars.github.io/chips/>.
 file → the island → the fab → memory → package → data center. Every company in the
 industry is encountered at the exact moment the chip cannot proceed without it —
 never as an entry in a list. One master map lights up region by region; a Chokepoint
-Board fills toward a number promised in the cold open; a Money Bar decomposes the
-chip's price toll by toll. See `STRATEGY.md` for the full design system and
+Board fills toward a number promised in the cold open; an Economics Ledger keeps
+company margins, product estimates, and supplier relationships in their disclosed
+scopes. See `STRATEGY.md` for the full design system and
 `curriculum.md` for the course map.
 
 ## The core idea: course-as-code
@@ -67,7 +68,8 @@ also be run manually from the repository's Actions tab.
 ## Status
 
 - ✅ Design system + curriculum v2 (`STRATEGY.md`, `curriculum.md`)
-- ✅ Research fact packs, web-verified to July 2026 (`research/`)
+- ✅ Research fact packs, source-linked and refreshed through July 2026;
+  unresolved claims are marked `VERIFY` (`research/`)
 - ✅ All segments drafted with proposed angles (`slides/segments/`), awaiting your
   angle pass + redline (the two human steps in `AUTHORING.md`)
 - Recording order & production rules: end of `STRATEGY.md`

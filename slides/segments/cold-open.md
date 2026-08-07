@@ -11,12 +11,12 @@ tier: —
 angle: "Use one GB300-class accelerator as the physical object whose supply chain the course will trace."
 runtime: ~4 min
 status: draft
-seeds: [the-object, the-seven, the-money-bar]
+seeds: [the-object, the-seven, the-economics-ledger]
 pays_off: []
 stamps: []
 diagrams: [map-dark, board-0, journey-0]
 sources: research/nvidia.md, research/foundations.md
-note: BUILD AND RECORD LAST — this front-loads four promises (map, board, money bar, "seven"). Only lock it once every device has survived the build.
+note: BUILD AND RECORD LAST — this front-loads four promises (map, board, economics ledger, "seven"). Only lock it once every device has survived the build.
 -->
 
 
@@ -77,17 +77,17 @@ This map follows the accelerator from design software to the finished package. E
 
 ---
 
-# Seven suppliers with limited substitutes
+# Seven supply-chain control points
 
 ![the chokepoint board — empty](/diagrams/rendered/board-0.svg)
 
 <div class="text-lg opacity-70 mt-6 text-center">
-Each controls a technology that leading-edge production cannot replace quickly. Later sections test that claim against market share and replacement time.
+Each concentrates a technology or qualified capacity that leading-edge production cannot replace quickly. Later sections test the severity against share, qualification, and time to scale.
 </div>
 
 <!--
 - A high market share alone does not make a chokepoint.
-- The stronger test is whether production stops without that supplier and how long a credible substitute would take to qualify.
+- The stronger test is whether a disruption constrains production before another supplier, qualified set, or region can scale.
 -->
 
 ---
@@ -99,11 +99,16 @@ layout: center
 ![journey bar — start](/diagrams/rendered/journey-0.svg)
 
 <div class="text-lg opacity-70 mt-8">
-SAND → DESIGN → FAB → MEMORY → PACKAGE → DATA CENTER.<br>
-The course follows one accelerator through each production stage, beginning with design.
+PHYSICS → DESIGN → FAB → MEMORY → PACKAGE → DATA CENTER.<br>
+The course starts with the device's physical constraints, then follows one accelerator through design, production, and deployment.
+</div>
+
+<div class="border border-cyan-400 rounded-lg px-5 py-3 mt-6 text-base text-center">
+Beginning in Act II, each act closes with an <b>Economics Ledger</b> that separates company financials, product estimates, and supplier relationships.
 </div>
 
 <!--
 - The production chain starts with silicon, passes through chip design and wafer fabrication, then adds memory and packaging before deployment in a data center.
 - Following one accelerator in this order connects each physical step to the companies that perform it.
+- The Economics Ledger keeps unlike financial scopes separate as the supply chain fills in.
 -->

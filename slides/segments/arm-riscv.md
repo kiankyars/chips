@@ -141,7 +141,7 @@ RISC-V International moved from the United States to Switzerland in 2019, citing
     <div><div class="text-3xl font-bold">350B+</div><div class="text-sm opacity-60">chips shipped cumulatively</div></div>
     <div><div class="text-3xl font-bold">&gt;99%</div><div class="text-sm opacity-60">of smartphones</div></div>
 <div><div class="text-xl font-bold leading-tight mt-2">mature mobile software ecosystem</div></div>
-    <div><div class="text-3xl font-bold">~15 yrs</div><div class="text-sm opacity-60">to replace</div></div>
+    <div><div class="text-xl font-bold leading-tight mt-2">ecosystem</div><div class="text-sm opacity-60">must be rebuilt</div></div>
   </div>
   <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
 </div>
@@ -152,6 +152,6 @@ RISC-V is an open standard, so adoption is measured through compatible cores and
 
 <!--
 - Arm reported $4.9 billion in FY2026 revenue and remains in more than 99 percent of smartphones.
-- Its installed software base and 350 billion shipped chips create a substantial barrier to replacement, estimated at about 15 years.
+- Its installed software base and 350 billion shipped chips make substitution an ecosystem migration, not a forecastable countdown.
 - RISC-V offers an open alternative, but its commercial adoption remains concentrated in embedded and control applications.
 -->

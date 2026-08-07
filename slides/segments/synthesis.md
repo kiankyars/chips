@@ -6,20 +6,20 @@ layout: section
 id: synthesis
 act: VI — The Board Is the World
 tier: —            # finale synthesis — no new player, re-reads the whole board
-angle: "Follow the money and it pools in exactly one place: wherever a single company would take a decade or more to replace. Margin isn't a reward for making chips — it's the market pricing the depth of a moat in real time."   # PROPOSED — YOU OWN THIS LINE
+angle: "Follow the economics: hard-to-replace capabilities can support margins, but business mix, capital intensity, and cycles determine what companies report."   # PROPOSED — YOU OWN THIS LINE
 runtime: ~5 min
 status: draft
 seeds: []
-pays_off: [owns-no-factories]      # the Money Bar completes: every toll Nvidia pays is now labeled
+pays_off: [owns-no-factories]      # the Economics Ledger closes without inventing a per-product waterfall
 stamps: []                         # no new stamps — board-7 is a callback, complete
-diagrams: [map-full, journey-6, board-7]
+diagrams: [map-full, journey-6, replacement-horizon, slide-153-additional-concentration-risks, chip-rack-grid]
 sources: research/nvidia.md, research/memory-hbm.md, research/packaging.md, research/tsmc.md, research/eda.md, research/asml.md, research/kla.md, research/equipment-dep-etch.md, research/materials.md
 -->
 
 
-# Scarce alternatives support higher supplier margins
+# Economics reflect moats, mix, and capital intensity
 
-<div class="text-xl opacity-70 mt-2">Part 6 · Margins and replacement time across the supply chain</div>
+<div class="text-xl opacity-70 mt-2">Part 6 · Scope-safe comparisons across the supply chain</div>
 
 <div class="grid grid-cols-2 gap-8 mt-8 items-center">
 <div>
@@ -29,80 +29,80 @@ sources: research/nvidia.md, research/memory-hbm.md, research/packaging.md, rese
 </div>
 <div class="text-lg opacity-80 leading-relaxed">
 The map and dependency inventory are complete.<br><br>
-Supplier margins vary with substitution difficulty and capital intensity.
+Supplier margins vary with substitution difficulty, business mix, capital intensity, and the cycle.
 </div>
 </div>
-
-![journey bar — complete](/diagrams/rendered/journey-6.svg)
 
 <!--
 - The completed map connects supplier economics to substitution.
-- Companies with few qualified alternatives can defend higher margins, while capital-intensive assembly businesses face more competition.
-- Replacement time provides a practical way to compare those positions across the supply chain.
+- Scarcity can support margins, but software mix, capital intensity, and cyclicality also shape reported economics.
+- Relative replacement difficulty provides a second lens without pretending that one variable explains every margin.
 -->
 
 ---
 
-# Estimated price and build cost of a GB300 GPU
+# Economics Ledger: what public data reveals about GB300
 
-<div class="text-sm opacity-60 mt-4">One GB300-class GPU · street price ~$50,000 (analyst estimate; Nvidia publishes no list price)</div>
+<div class="grid grid-cols-2 gap-6 mt-6 text-center">
+<div class="border-2 border-gray-400 rounded-lg p-4">
+<div class="text-4xl font-bold">$3.7–4.0M</div>
+<div class="text-sm opacity-60 mt-2">third-party GB300 NVL72 full-rack estimate</div>
+<div class="text-xs opacity-45 mt-2">72 GPUs · 36 CPUs · fabric, cooling, and power delivery</div>
+</div>
+<div class="border-2 border-green-500 rounded-lg p-4">
+<div class="text-4xl font-bold">71.1%</div>
+<div class="text-sm opacity-60 mt-2">Nvidia FY26 GAAP gross margin</div>
+<div class="text-xs opacity-45 mt-2">companywide, not a GB300 product margin</div>
+</div>
+</div>
 
-<div class="mt-4">
-  <div class="text-xs opacity-50 mb-1">ESTIMATED SELLING PRICE</div>
-  <div class="flex w-full h-14 rounded overflow-hidden text-sm font-bold text-center">
-    <div class="bg-green-600 flex items-center justify-center" style="width:75%">Nvidia gross margin ~75% · design · CUDA · networking</div>
-    <div class="bg-gray-500 flex items-center justify-center" style="width:25%">~25% build cost</div>
+<div class="grid grid-cols-2 gap-6 mt-6 text-center">
+  <div class="border-2 border-purple-500 rounded-lg p-4">
+    <div class="text-3xl font-bold">HBM &gt;50%</div>
+    <div class="text-sm opacity-60 mt-2">third-party physical package-cost estimate</div>
+  </div>
+  <div class="border-2 border-gray-500 rounded-lg p-4">
+    <div class="text-3xl font-bold">UNDISCLOSED</div>
+    <div class="text-sm opacity-60 mt-2">remainder is not publicly split by component</div>
   </div>
 </div>
 
-<div class="mt-6">
-  <div class="text-xs opacity-50 mb-1">ESTIMATED BUILD COST (illustrative; only HBM's &gt;50% share is firmly sourced)</div>
-  <div class="flex w-full h-14 rounded overflow-hidden text-xs font-bold text-center">
-    <div class="bg-purple-600 flex items-center justify-center" style="width:52%">HBM memory &gt;50%<br>SK Hynix / Micron / Samsung</div>
-    <div class="bg-blue-600 flex items-center justify-center" style="width:20%">TSMC logic dies</div>
-    <div class="bg-blue-400 flex items-center justify-center text-black" style="width:13%">TSMC CoWoS</div>
-    <div class="bg-amber-500 flex items-center justify-center text-black" style="width:8%">substrate</div>
-    <div class="bg-gray-400 flex items-center justify-center text-black" style="width:7%">OSAT + test</div>
-  </div>
-</div>
-
-<div class="text-xs opacity-60 mt-6 leading-relaxed">
-<b>Costs embedded in supplier prices:</b> EDA development (~$0.5–0.7B per leading-edge chip, spread over the run) · ASML and other fab equipment · the <b>~$150 blank wafer</b>.
+<div class="text-xs opacity-60 mt-5 leading-relaxed">
+Physical package inputs include HBM, logic dies, interposer or RDL, substrate, lid, and assembly materials. Supplier prices embed depreciation, consumables, labor, yield loss, and margin. EDA and design costs are amortized, not package components.
 </div>
 
 <!--
-- Analysts estimate a GB300-class GPU sells for about $50,000, though Nvidia publishes no list price.
-- Nvidia retains most of that value through design, software, networking, and scarcity.
-- Physical build cost forms a smaller share, with HBM accounting for more than half of the estimated bill of materials.
-- The remaining split is illustrative.
+- Nvidia does not disclose a GB300 list price, recognized revenue per GPU, product margin, or product cost.
+- Companywide gross margin cannot turn a third-party market-price estimate into a per-GPU build cost.
+- Third-party estimates place HBM above half of the physical bill of materials; the remaining component split is not public.
+- EDA and design spending are amortized costs, not physical components inside the package.
 -->
 
 ---
 
-# Supplier margins across the chain
+# Company gross margins require like-for-like scope
 
 <div class="grid grid-cols-2 gap-6 mt-4 text-sm">
 <div class="flex flex-col gap-2">
-<div class="flex justify-between bg-green-700 text-white rounded px-3 py-2"><span><b>EDA</b> — Cadence ~86% / Synopsys ~77%</span><span class="opacity-80">software licensing</span></div>
-<div class="flex justify-between bg-green-600 text-white rounded px-3 py-2"><span><b>Memory*</b> — Micron ~85% GM</span><span class="opacity-80">*supercycle peak</span></div>
-<div class="flex justify-between bg-green-600 text-white rounded px-3 py-2"><span><b>Nvidia</b> — ~75%</span><span class="opacity-80">design and software</span></div>
-<div class="flex justify-between bg-lime-600 text-white rounded px-3 py-2"><span><b>KLA</b> — ~62%</span><span class="opacity-80">56–58% process-control share</span></div>
-<div class="flex justify-between bg-lime-600 text-white rounded px-3 py-2"><span><b>TSMC</b> — ~60% (66% Q1'26)</span><span class="opacity-80">72.3% foundry share</span></div>
+<div class="flex justify-between bg-green-700 text-white rounded px-3 py-2"><span><b>Synopsys</b> · FY25</span><span>~77%</span></div>
+<div class="flex justify-between bg-green-600 text-white rounded px-3 py-2"><span><b>Nvidia</b> · FY26 GAAP</span><span>71.1%</span></div>
+<div class="flex justify-between bg-lime-600 text-white rounded px-3 py-2"><span><b>KLA</b> · FY26 GAAP</span><span>61.3%</span></div>
+<div class="flex justify-between bg-lime-600 text-white rounded px-3 py-2"><span><b>TSMC</b> · FY25</span><span>59.9%</span></div>
 </div>
 <div class="flex flex-col gap-2">
-<div class="flex justify-between bg-yellow-600 text-white rounded px-3 py-2"><span><b>ASML</b> — ~53%</span><span class="opacity-80">100% EUV share</span></div>
-<div class="flex justify-between bg-yellow-600 text-white rounded px-3 py-2"><span><b>Equipment</b> — AMAT ~49% / Lam ~50%</span><span class="opacity-80">specialized equipment</span></div>
-<div class="flex justify-between bg-orange-600 text-white rounded px-3 py-2"><span><b>Test</b> — Advantest ~44% op</span><span class="opacity-80">ATE duopoly</span></div>
-<div class="flex justify-between bg-red-700 text-white rounded px-3 py-2"><span><b>OSAT</b> — ASE ~18% / Amkor ~14%</span><span class="opacity-80">assembly and test</span></div>
+<div class="flex justify-between bg-yellow-600 text-white rounded px-3 py-2"><span><b>ASML</b> · FY25</span><span>52.8%</span></div>
+<div class="flex justify-between bg-orange-700 text-white rounded px-3 py-2"><span><b>ASE</b> · FY25</span><span>17.7%</span></div>
+<div class="flex justify-between bg-red-700 text-white rounded px-3 py-2"><span><b>Amkor</b> · FY25</span><span>~14%</span></div>
+<div class="border border-gray-500 rounded px-3 py-2 opacity-70">Same metric; companywide scope. Fiscal calendars and accounting frameworks still differ.</div>
 </div>
 </div>
 
-<div class="text-xs opacity-60 mt-5">Gross margins unless marked, as of Q2 2026. Higher margins generally coincide with fewer substitutes.</div>
+<div class="text-xs opacity-60 mt-5">Latest full fiscal year in the cited research packs · reported company gross margin · no product margins</div>
 
 <!--
-- EDA vendors keep gross margins near 80 percent or more, while Nvidia, KLA, TSMC, and ASML also retain large shares of revenue.
-- OSAT margins sit much lower because customers have more assembly options.
-- Memory appears near the top during the current price cycle, but its margins can fall when new capacity creates oversupply.
+- These are companywide gross margins, not product margins; each row keeps its fiscal year visible.
+- Software-heavy Synopsys and platform-driven Nvidia sit above equipment and foundry companies, while OSAT assembly sits lower.
+- Concentration can support pricing, but mix, capital intensity, accounting, and the memory cycle prevent a one-variable ranking.
 -->
 
 ---
@@ -113,16 +113,16 @@ title: "Replacement horizon"
 <div class="visual-sequence__kicker">REPLACEMENT HORIZON</div>
 
 <div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/replacement-horizon.svg" alt="A zero-to-twenty-year horizon comparing estimated time to replace critical semiconductor suppliers" />
+  <img src="/diagrams/rendered/replacement-horizon.svg" alt="Three categories distinguish shifting qualified capacity, scaling a manufacturing capability, and rebuilding a semiconductor ecosystem" />
 </div>
 
-<div class="visual-sequence__caption"><strong>ASML and Zeiss take longest to replace.</strong><span>OSAT capacity can be added sooner.</span></div>
-<div class="visual-sequence__source">Editorial ranges · not forecast completion dates</div>
+<div class="visual-sequence__caption"><strong>Shifting capacity is not the same task</strong><span>as recreating a capability or ecosystem.</span></div>
+<div class="visual-sequence__source">Qualitative synthesis · no forecast in years</div>
 
 <!--
-- Replacing ASML and Zeiss requires rebuilding the optics and light-source supply chains around the scanner.
-- Adding OSAT capacity needs less specialized knowledge.
-- These ranges compare relative difficulty rather than predict completion dates.
+- Existing qualified capacity can sometimes be reallocated without recreating the underlying technology.
+- Scaling HBM, materials, or process-control capability adds qualification, yield learning, and manufacturing depth.
+- EDA, CUDA, leading-edge foundries, and EUV depend on interlocking ecosystems rather than one replaceable factory.
 -->
 
 ---
@@ -142,7 +142,7 @@ title: "Beyond the seven-point board"
 <!--
 - The seven-point list uses a strict threshold, but other concentrated inputs still deserve attention.
 - Ajinomoto dominates advanced-package insulating film, Shin-Etsu and SUMCO lead silicon wafers, and Advantest and Teradyne dominate automated test equipment.
-- These markets add risk even when they do not meet the same replacement-time threshold.
+- These markets add risk even when they do not meet the Board's control-point criterion.
 -->
 
 ---
@@ -166,6 +166,23 @@ title: "From chip to system"
 -->
 
 ---
+layout: center
+---
+
+# The accelerator reaches the data center
+
+![journey bar — complete](/diagrams/rendered/journey-6.svg)
+
+<div class="text-xl opacity-75 mt-8 text-center">
+Installed in a powered, cooled rack, the package completes the journey from design file to operating compute system.
+</div>
+
+<!--
+- Packaging produces a tested accelerator, but deployment is complete only after system integration, power, cooling, and networking are in place.
+- The installed rack closes the physical journey promised in the opening.
+-->
+
+---
 layout: default
 class: visual-sequence contain-visual
 title: "The semiconductor supply chain"
@@ -177,11 +194,11 @@ title: "The semiconductor supply chain"
   <img src="/diagrams/rendered/map-full.svg" alt="The full semiconductor supply chain from design through manufacturing, equipment, memory, packaging, and data centers" />
 </div>
 
-<div class="visual-sequence__caption"><strong>The highest-margin suppliers are the hardest to replace.</strong></div>
+<div class="visual-sequence__caption"><strong>Hard-to-replace capabilities can support margins.</strong><span>Business mix, capital intensity, and cycles still matter.</span></div>
 <div class="visual-sequence__source">Design · fabrication · equipment · materials · memory · packaging</div>
 
 <!--
-- The complete supply chain shows a consistent relationship between supplier margins and available substitutes.
+- The complete supply chain links supplier economics to the availability of qualified substitutes.
 - Design software, advanced fabrication, lithography, materials, memory, and packaging each contribute to one accelerator.
-- Suppliers gain pricing power when customers cannot replace their process or capacity within a useful time.
+- Scarcity can support pricing power, but it does not explain every difference in reported margin.
 -->

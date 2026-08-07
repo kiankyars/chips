@@ -264,9 +264,9 @@ ${text(x + width - 34, y + 170, detail, { size: 18, fill: C.muted, weight: 680, 
 
 function intelInvestmentLifeline() {
   return svgDoc(
-    'Three investors supplied Intel capital but no anchor foundry order',
-    'Arrows from the US government, SoftBank, and Nvidia feed 15.9 billion dollars into an Intel 14A fab. A separate empty purchase-order box shows that no external 14A anchor customer had been named.',
-    `${header('Intel 14A', 'Capital arrived; the anchor customer did not')}
+    'Three investors supplied Intel capital; no external 14A anchor customer was publicly named',
+    'The US government, SoftBank, and Nvidia bought 15.9 billion dollars of Intel equity. A separate box notes that Intel had not publicly named an external 14A anchor customer.',
+    `${header('Intel 14A', 'Capital arrived; no external anchor was publicly named')}
 
 ${investorCard(104, 260, 430, 'US GOVERNMENT', '$8.9B', '9.9% stake', C.blue, governmentIcon(140, 312, C.blue))}
 ${investorCard(104, 550, 430, 'SOFTBANK', '$2B', 'equity', C.amber, `<circle cx="214" cy="660" r="66" fill="${C.amberSoft}" stroke="${C.amber}" stroke-width="4"/>${text(214, 678, 'SB', { size: 44, fill: C.amber, weight: 850, anchor: 'middle' })}`)}
@@ -277,18 +277,18 @@ ${investorCard(1386, 405, 430, 'NVIDIA', '$5B', 'equity + joint products', C.gre
 <path d="M1386 516H1282" fill="none" stroke="${C.green}" stroke-width="6" marker-end="url(#arrow-green)"/>
 
 ${panel(704, 260, 578, 514, C.graphite)}
-${text(993, 320, 'INTEL FOUNDRY', { size: 23, fill: C.graphite, weight: 820, anchor: 'middle', tracking: 2 })}
+${text(993, 320, 'INTEL', { size: 23, fill: C.graphite, weight: 820, anchor: 'middle', tracking: 2 })}
 ${fabIcon(878, 425, C.graphite, 1)}
 <rect x="858" y="644" width="270" height="70" rx="35" fill="${C.violetSoft}" stroke="${C.violet}" stroke-width="3"/>
-${text(993, 689, '14A · HIGH-NA EUV', { size: 22, fill: C.violet, weight: 820, anchor: 'middle', tracking: 0.8 })}
+${text(993, 689, '14A · HIGH-NA EUV PLAN', { size: 22, fill: C.violet, weight: 820, anchor: 'middle', tracking: 0.8 })}
 
 <rect x="1328" y="686" width="488" height="172" rx="24" fill="${C.roseSoft}" stroke="${C.rose}" stroke-width="3" stroke-dasharray="10 8"/>
 ${text(1362, 734, 'EXTERNAL 14A PURCHASE ORDER', { size: 18, fill: C.rose, weight: 780, tracking: 1.2 })}
 <path d="M1362 782H1570" stroke="${C.rose}" stroke-width="4" opacity="0.32"/>
-${text(1778, 824, 'NONE NAMED', { size: 31, fill: C.rose, weight: 850, anchor: 'end' })}
+${text(1778, 824, 'NONE PUBLICLY NAMED', { size: 28, fill: C.rose, weight: 850, anchor: 'end' })}
 
 <rect x="512" y="868" width="896" height="92" rx="46" fill="${C.paper}" stroke="${C.hairline}" stroke-width="3"/>
-${text(960, 926, '$15.9B OF EQUITY · SIX WEEKS', { size: 31, fill: C.ink, weight: 820, anchor: 'middle', tracking: 1.2 })}`,
+${text(960, 926, '$15.9B OF ANNOUNCED EQUITY', { size: 31, fill: C.ink, weight: 820, anchor: 'middle', tracking: 1.2 })}`,
   )
 }
 
@@ -339,7 +339,7 @@ ${shockPanel(694, '2022', 'UKRAINE · NEON', C.amber,
     'BOTH PLANTS HALT', 'BUYERS DIVERSIFY', 'about ½ of supply · spot price 4×')}
 ${shockPanel(1284, '2024', 'SPRUCE PINE', C.green,
     `${mountain(1385, 350, C.green)}${text(1550, 354, 'HIGH-PURITY QUARTZ', { size: 17, fill: C.green, weight: 780, anchor: 'middle', tracking: 0.8 })}`,
-    'TWO-WEEK SHUTDOWN', 'STOCKPILES BRIDGE', 'estimated 70–90% source share')}
+    'TWO-WEEK SHUTDOWN', 'STOCKPILES BRIDGE', 'leading high-purity quartz source')}
 ${text(960, 988, 'The disruption was immediate; the supply response reduced repeat leverage.', { size: 24, fill: C.muted, weight: 620, anchor: 'middle' })}`,
   )
 }

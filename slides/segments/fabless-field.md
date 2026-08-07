@@ -10,9 +10,9 @@ angle: "Design is a crowd sport now — dozens of companies draw world-changing 
 runtime: ~3 min
 status: draft
 seeds: [apple-iou]                    # Apple's node buyouts planted here → cashed in tsmc
-pays_off: [owns-no-factories]         # nvidia's "owns no factories" cashed at this act-end Money Bar
+pays_off: [owns-no-factories]         # nvidia's "owns no factories" is cashed in this act-end Economics Ledger
 stamps: []                            # cards earn no chokepoint stamps
-diagrams: [map-design]                # Money Bar is inline HTML per BUILDING §4
+diagrams: [map-design, slide-047-fabless-designers]
 sources: research/fabless-field.md, research/nvidia.md
 -->
 
@@ -54,38 +54,36 @@ title: "Fabless designers"
 
 ---
 
-# Illustrative economics of a GB300-class GPU
+# Economics Ledger: fabless does not mean costless
 
-<div class="text-sm opacity-70 mb-3">One GB300-class accelerator · ~$50k street price per GPU <span class="opacity-50">(analyst estimate — Nvidia publishes no list price)</span></div>
-
-<div class="w-full border-2 border-gray-400 rounded-lg overflow-hidden mt-2">
-  <div class="flex h-16 text-white text-sm font-bold">
-<div class="bg-green-700 flex items-center justify-center" style="width:75%">Nvidia gross profit at current company margin: ~$37k</div>
-<div class="bg-gray-500 flex items-center justify-center" style="width:25%">estimated cost of revenue: ~$13k</div>
-  </div>
+<div class="grid grid-cols-2 gap-6 mt-6 text-center">
+<div class="border-2 border-gray-400 rounded-lg p-4">
+<div class="text-4xl font-bold">$3.7–4.0M</div>
+<div class="text-sm opacity-60 mt-2">third-party GB300 NVL72 full-rack estimate</div>
+<div class="text-xs opacity-45 mt-2">72 GPUs · 36 CPUs · fabric, cooling, and power delivery</div>
 </div>
-
-<div class="grid grid-cols-2 gap-8 mt-6 text-sm">
-<div>
-
-**Reported economics**
-- Nvidia company gross margin: **~75%**
-
-</div>
-<div>
-
-**Major downstream suppliers**
-- TSMC manufacturing · HBM memory · CoWoS packaging
-
+<div class="border-2 border-green-500 rounded-lg p-4">
+<div class="text-4xl font-bold">71.1%</div>
+<div class="text-sm opacity-60 mt-2">Nvidia FY26 GAAP gross margin</div>
+<div class="text-xs opacity-45 mt-2">companywide, not a GB300 product margin</div>
 </div>
 </div>
 
-<div class="text-xs opacity-40 mt-6">This is not a bill of materials. Nvidia does not disclose per-GPU supplier costs, and EDA and Arm costs are not public per-unit line items.</div>
+<div class="grid grid-cols-2 gap-6 mt-6 text-sm">
+<div class="border-l-4 border-blue-400 pl-4">
+<b>Disclosed relationships</b><br>
+TSMC fabricates logic and provides CoWoS; SK hynix, Micron, or Samsung supplies HBM.
+</div>
+<div class="border-l-4 border-gray-500 pl-4">
+<b>Not disclosed per GB300</b><br>
+Recognized revenue, gross profit, foundry cost, memory cost, and packaging cost.
+</div>
+</div>
 
 <!--
-- A GB300-class GPU may sell for about $50,000, though Nvidia publishes no list price.
-- Applying Nvidia’s companywide gross margin gives about $37,000 of gross profit and $13,000 of cost of revenue.
-- TSMC manufacturing, HBM memory, and advanced packaging make up major parts of the supplier side, but Nvidia does not disclose a product-level breakdown.
+- The $3.7 million to $4.0 million figure is a third-party estimate for a complete GB300 NVL72 rack, not Nvidia's disclosed price or recognized revenue.
+- The 71.1 percent figure is Nvidia's companywide fiscal-2026 GAAP gross margin, not a GB300 product margin.
+- Public filings identify major manufacturing relationships but do not allocate supplier costs or gross profit to one accelerator.
 -->
 
 ---

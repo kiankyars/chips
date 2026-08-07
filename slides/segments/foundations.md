@@ -12,7 +12,7 @@ status: draft
 seeds: [yield]                                     # one particle, one dead die → cashed in life-of-a-wafer, kla, intel, packaging
 pays_off: []                                       # opener of the course; nothing cashes here
 stamps: []                                         # no chokepoint proven yet
-diagrams: [journey-1]                              # structural only; teardown visuals + cost curve are inline HTML
+diagrams: [journey-1, transistor-switch-v2, density-clock-v2, transistor-planar, transistor-finfet, transistor-gaa, yield-defects]
 sources: research/foundations.md
 -->
 

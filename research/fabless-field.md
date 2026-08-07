@@ -238,10 +238,10 @@ ends Nov; Marvell FY ends Jan/Feb (so "FY2026" = calendar 2025); Apple FY ends S
 - **Qualcomm-specific:** Apple modem revenue → ~0 by 2027 [27]; QTL's Apple
   license itself runs to ~2027 with extension options <!-- VERIFY: QTL-Apple
   renewal terms -->; diversification must outrun the loss.
-- **The shared single point of failure:** all six depend on TSMC's leading edge —
-  the fabless field's collective moat sits on one island (ties into the
-  TSMC/geopolitics segments), and TSMC's 66% gross margin shows who holds pricing
-  power in the relationship. [3]
+- **The shared geographic exposure:** the six companies' leading products rely
+  heavily on TSMC's advanced nodes, clustering much of the field's manufacturing
+  dependency in Taiwan. TSMC reported a 66.2% companywide gross margin in Q1
+  2026; it does not disclose margins by customer. [3]
 - **Valuation reflexivity:** Broadcom ~$1.9T, AMD ~$675B — both price in flawless
   multi-year AI execution. [13][38]
 
