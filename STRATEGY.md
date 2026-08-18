@@ -65,15 +65,15 @@ gates, and a gatekeeper at each gate.
 
 ### The seven persistent devices
 
-1. **The Map.** One master industry map, shown fully dark in the cold open, lit region
-   by region, fully lit at minute ~100 — then re-read twice: first as a *weapons map*
+1. **The Map.** One master industry map, lit region by region as the chip advances,
+   fully lit at minute ~100 — then re-read twice: first as a *weapons map*
    in geopolitics, then as an *economics map* in synthesis. Present in every segment as a corner "you are here" navigator.
    Ships in the repo as a poster (the shareable artifact).
 2. **The Journey Bar.** PHYSICS → DESIGN → FAB → MEMORY → PACKAGE → DATA CENTER progress
    strip at every act break. The viewer can always locate themselves at minute 9 or 99.
-3. **The Chokepoint Board.** The cold open promises: *"I count seven supply-chain
-   control points that are hard to replace."* A stamp is earned on screen each time
-   one is proven; the completed board opens the geopolitics act. The board deliberately
+3. **The Chokepoint Board.** The board first appears when leading-edge EDA earns
+   chokepoint #1. A stamp is added on screen each time another control point is proven;
+   the completed board opens the geopolitics act. The board deliberately
    mixes sole sources, small qualified sets, and geographic clusters; the criteria are
    fixed in curriculum.md before recording.
 4. **The Economics Ledger.** Act-end entries record only what public data can
@@ -132,8 +132,8 @@ would otherwise die.
   These are hand-built SVGs living in `diagrams/` and versioned like everything else.
   GPT-image prompts remain for decorative one-offs.
 - **Record act-by-act, never in one sitting.** Narrator energy is the unmodeled variable.
-- **Build and record the cold open LAST.** It front-loads four promises (map, board,
-  economics ledger, "seven"); it can only be cut once every device has survived the build.
+- **Build and record the cold open LAST.** It establishes the object, architecture,
+  economic scale, route, and Economics Ledger; lock it only after those threads survive the build.
 - **Geopolitics slides built swappable.** Export rules move monthly; single slides must
   be replaceable without re-recording neighbors.
 - **Pre-record refresh pass.** Every dated number re-verified within 30 days of recording;
@@ -146,12 +146,13 @@ would otherwise die.
 - **Runtime creep** (118 min nominal before pressure-valve cuts): ensemble/montage segments are the
   designated pressure valves — cut there first, never from protagonists.
 - **The "seven" is contestable** (is Zeiss inside ASML? does TSMC count twice?):
-  the criteria and count are fixed in curriculum.md before the cold open is recorded;
+  the criteria and count are fixed in curriculum.md before the Board first appears;
   "TSMC appears on this board twice" is itself a line that lands.
 - **Fact rot** (HBM share, Intel status, export rules move monthly): course-as-code is
   the mitigation — regenerate slides from refreshed packs.
-- **The chip device dates the course:** the chip's identity lives in one intro slide and
-  the economics-ledger scope labels; swappable for the 2028 refresh.
+- **The chip device dates the course:** Blackwell Ultra is explicitly labeled the 2025–26
+  tracer case, followed by a short current-frontier bridge. The dependency map matters
+  more than claiming the tracer is the newest shipping architecture.
 - **Nitpick risk from expert viewers:** beat sheets carry "this is simplified — here's
   the direction of the lie" hedges for the narrator to voice.
 

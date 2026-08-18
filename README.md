@@ -7,11 +7,12 @@ View the published course at <https://kiankyars.github.io/chips/>.
 
 ## The premise
 
-**Follow one chip.** A Blackwell-class AI accelerator is followed from idea → design
-file → the island → the fab → memory → package → data center. Every company in the
+**Follow one chip.** A 2025–26 Blackwell Ultra accelerator is the case study, followed
+from idea → design file → the island → the fab → memory → package → data center. A
+short Rubin bridge keeps the frontier current without replacing the tracer mid-story. Every company in the
 industry is encountered at the exact moment the chip cannot proceed without it —
 never as an entry in a list. One master map lights up region by region; a Chokepoint
-Board fills toward a number promised in the cold open; an Economics Ledger keeps
+Board fills as each hard-to-replace control point is proved; an Economics Ledger keeps
 company margins, product estimates, and supplier relationships in their disclosed
 scopes. See `STRATEGY.md` for the full design system and
 `curriculum.md` for the course map.
@@ -31,7 +32,7 @@ chips/
   curriculum.md        ← the course map: acts, segments, minutes, devices
   slides.md            ← Slidev entry deck; imports each segment
   slides/segments/     ← one markdown file per segment
-  research/            ← fact packs w/ sources, one per segment (Claude's job)
+  research/            ← source-linked fact packs declared by each segment
   diagrams/
     rendered/          ← SVGs (structural, hand-authored) + PNGs (generated)
     prompts/           ← GPT-image prompts for decorative one-offs
@@ -68,7 +69,7 @@ also be run manually from the repository's Actions tab.
 ## Status
 
 - ✅ Design system + curriculum v2 (`STRATEGY.md`, `curriculum.md`)
-- ✅ Research fact packs, source-linked and refreshed through July 2026;
+- ✅ Research fact packs with explicit as-of dates for volatile material;
   unresolved claims are marked `VERIFY` (`research/`)
 - ✅ All segments drafted with proposed angles (`slides/segments/`), awaiting your
   angle pass + redline (the two human steps in `AUTHORING.md`)
