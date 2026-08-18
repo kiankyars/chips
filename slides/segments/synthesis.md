@@ -1,5 +1,5 @@
 ---
-layout: section
+layout: default
 ---
 
 <!-- SEGMENT
@@ -7,78 +7,14 @@ id: synthesis
 act: VI — The Board Is the World
 tier: —            # finale synthesis — no new player, re-reads the whole board
 angle: "Follow the economics: hard-to-replace capabilities can support margins, but business mix, capital intensity, and cycles determine what companies report."   # PROPOSED — YOU OWN THIS LINE
-runtime: ~5 min
+runtime: ~4 min
 status: draft
 seeds: []
-pays_off: [owns-no-factories]      # the Economics Ledger closes without inventing a per-product waterfall
+pays_off: []                       # the owns-no-factories ledger closes in `fabless-field`
 stamps: []                         # no new stamps — board-7 is a callback, complete
 diagrams: [map-full, journey-6, replacement-horizon, slide-153-additional-concentration-risks, chip-rack-grid]
 sources: research/nvidia.md, research/memory-hbm.md, research/packaging.md, research/tsmc.md, research/eda.md, research/asml.md, research/kla.md, research/equipment-dep-etch.md, research/materials.md
 -->
-
-
-# Economics reflect moats, mix, and capital intensity
-
-<div class="text-xl opacity-70 mt-2">Part 6 · Scope-safe comparisons across the supply chain</div>
-
-<div class="grid grid-cols-2 gap-8 mt-8 items-center">
-<div>
-
-![industry map — fully lit](/diagrams/rendered/map-full.svg)
-
-</div>
-<div class="text-lg opacity-80 leading-relaxed">
-The map and dependency inventory are complete.<br><br>
-Supplier margins vary with substitution difficulty, business mix, capital intensity, and the cycle.
-</div>
-</div>
-
-<!--
-- The completed map connects supplier economics to substitution.
-- Scarcity can support margins, but software mix, capital intensity, and cyclicality also shape reported economics.
-- Relative replacement difficulty provides a second lens without pretending that one variable explains every margin.
--->
-
----
-
-# Economics Ledger: what public data reveals about GB300
-
-<div class="grid grid-cols-2 gap-6 mt-6 text-center">
-<div class="border-2 border-gray-400 rounded-lg p-4">
-<div class="text-4xl font-bold">$3.7–4.0M</div>
-<div class="text-sm opacity-60 mt-2">third-party GB300 NVL72 full-rack estimate</div>
-<div class="text-xs opacity-45 mt-2">72 GPUs · 36 CPUs · fabric, cooling, and power delivery</div>
-</div>
-<div class="border-2 border-green-500 rounded-lg p-4">
-<div class="text-4xl font-bold">71.1%</div>
-<div class="text-sm opacity-60 mt-2">Nvidia FY26 GAAP gross margin</div>
-<div class="text-xs opacity-45 mt-2">companywide, not a GB300 product margin</div>
-</div>
-</div>
-
-<div class="grid grid-cols-2 gap-6 mt-6 text-center">
-  <div class="border-2 border-purple-500 rounded-lg p-4">
-    <div class="text-3xl font-bold">HBM &gt;50%</div>
-    <div class="text-sm opacity-60 mt-2">third-party physical package-cost estimate</div>
-  </div>
-  <div class="border-2 border-gray-500 rounded-lg p-4">
-    <div class="text-3xl font-bold">UNDISCLOSED</div>
-    <div class="text-sm opacity-60 mt-2">remainder is not publicly split by component</div>
-  </div>
-</div>
-
-<div class="text-xs opacity-60 mt-5 leading-relaxed">
-Physical package inputs include HBM, logic dies, interposer or RDL, substrate, lid, and assembly materials. Supplier prices embed depreciation, consumables, labor, yield loss, and margin. EDA and design costs are amortized, not package components.
-</div>
-
-<!--
-- Nvidia does not disclose a GB300 list price, recognized revenue per GPU, product margin, or product cost.
-- Companywide gross margin cannot turn a third-party market-price estimate into a per-GPU build cost.
-- Third-party estimates place HBM above half of the physical bill of materials; the remaining component split is not public.
-- EDA and design spending are amortized costs, not physical components inside the package.
--->
-
----
 
 # Company gross margins require like-for-like scope
 
@@ -102,7 +38,7 @@ Physical package inputs include HBM, logic dies, interposer or RDL, substrate, l
 <!--
 - These are companywide gross margins, not product margins; each row keeps its fiscal year visible.
 - Software-heavy Synopsys and platform-driven Nvidia sit above equipment and foundry companies, while OSAT assembly sits lower.
-- Concentration can support pricing, but mix, capital intensity, accounting, and the memory cycle prevent a one-variable ranking.
+- Hard-to-replace capabilities can support pricing, but mix, capital intensity, accounting, and the memory cycle prevent a one-variable ranking.
 -->
 
 ---
@@ -172,10 +108,6 @@ layout: center
 # The accelerator reaches the data center
 
 ![journey bar — complete](/diagrams/rendered/journey-6.svg)
-
-<div class="text-xl opacity-75 mt-8 text-center">
-Installed in a powered, cooled rack, the package completes the journey from design file to operating compute system.
-</div>
 
 <!--
 - Packaging produces a tested accelerator, but deployment is complete only after system integration, power, cooling, and networking are in place.

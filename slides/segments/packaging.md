@@ -1,5 +1,5 @@
 ---
-layout: section
+layout: default
 ---
 
 <!-- SEGMENT
@@ -7,7 +7,7 @@ id: packaging
 act: V — Memory & The Assembly
 tier: P-lite
 angle: "In 2023–25, AI accelerators remained supply-constrained even as front-end output ramped: CoWoS capacity, HBM, and later substrates limited shipments. A packaging stage offshored to cut costs in 1963 had become a gate for AI compute."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~8 min
+runtime: ~6 min
 status: draft
 seeds: []                                   # no new forward seed; hands the completed Board into geopolitics
 pays_off: [reticle-limit, yield]            # reticle-limit (from nvidia) cashed; yield chain returns as chiplets (foundations→life-of-a-wafer→kla→intel→HERE)
@@ -19,17 +19,21 @@ sources: research/packaging.md, research/nvidia.md
 
 # The bottleneck moved into the package
 
-<div class="text-xl opacity-70 mt-2">Part 5 · Memory and packaging · back-end assembly</div>
-
 <div class="grid grid-cols-2 gap-8 mt-8 items-center">
 <div>
 
 ![industry map — backend region lit](/diagrams/rendered/map-backend.svg)
 
 </div>
-<div class="text-2xl leading-relaxed">
-During the 2023–25 shortage, TSMC had GPU wafers<br>
-but too little CoWoS capacity to assemble them.
+<div>
+<div class="text-2xl italic leading-relaxed">
+"It's not the shortage of AI chips.<br>
+It's the shortage of our <b>CoWoS</b> capacity."
+</div>
+<div class="opacity-60 mt-3">— TSMC Chairman Mark Liu, Sept 2023</div>
+<div class="text-base opacity-70 mt-7 leading-relaxed">
+Packaging had moved from offshored assembly to the gate on finished AI accelerators.
+</div>
 </div>
 </div>
 
@@ -37,70 +41,8 @@ but too little CoWoS capacity to assemble them.
 
 <!--
 - Fabricated GPU dies and HBM stacks still need a package that connects them at high bandwidth.
-- During the 2023 to 2025 shortage, TSMC had logic wafers available but lacked enough CoWoS capacity to assemble complete accelerators.
--->
-
----
-
-# TSMC ran out of CoWoS capacity
-
-<div class="text-2xl italic leading-relaxed mt-6 text-center">
-"It's not the shortage of AI chips.<br>
-It's the shortage of our <b>CoWoS</b> capacity."
-</div>
-
-<div class="text-center opacity-60 mt-3">— TSMC Chairman Mark Liu, Sept 2023</div>
-
-<div class="grid grid-cols-3 gap-6 mt-10 text-center">
-<div>
-<div class="text-4xl font-bold">1963</div>
-<div class="text-sm opacity-60 mt-2">packaging offshored first — a converted rubber-shoe factory in Kowloon</div>
-</div>
-<div>
-<div class="text-4xl font-bold">conventional packaging</div>
-<div class="text-sm opacity-60 mt-2">die attach, wire bonding, and epoxy encapsulation; historically treated as low-value assembly</div>
-</div>
-<div>
-<div class="text-4xl font-bold">near 7nm</div>
-<div class="text-sm opacity-60 mt-2">reported CoWoS packaging-wafer price, comparable with a 7nm logic wafer</div>
-</div>
-</div>
-
-<!--
-- Chip packaging began as labor-intensive assembly.
-- Packaging entered the first wave of offshoring through facilities such as Fairchild's 1963 plant in a converted Hong Kong shoe factory.
-- Advanced packaging now adds dense silicon wiring and can command prices near those of a 7nm logic wafer.
-- TSMC identified CoWoS capacity as the main AI-chip shortage in 2023.
--->
-
----
-
-# Reticle limits forced Nvidia to use multiple dies
-
-<div class="grid grid-cols-3 gap-6 mt-8 text-center">
-<div>
-<div class="text-5xl font-bold">858 mm²</div>
-<div class="text-sm opacity-60 mt-2">maximum field for one standard EUV exposure</div>
-</div>
-<div>
-<div class="text-5xl font-bold">814 mm²</div>
-<div class="text-sm opacity-60 mt-2">H100 die, 95% of the reticle field</div>
-</div>
-<div>
-<div class="text-5xl font-bold">2 dies</div>
-<div class="text-sm opacity-60 mt-2">Blackwell uses two dies linked at 10 TB/s; 208B transistors total</div>
-</div>
-</div>
-
-<div class="border-2 border-amber-500 rounded-lg p-4 mt-10 text-center">
-<div class="font-bold">H100 nearly filled a standard reticle field. Blackwell crossed the limit by using two dies.</div>
-<div class="text-sm opacity-60 mt-1">High-NA EUV halves the field to 429 mm², increasing the need for multi-die designs.</div>
-</div>
-
-<!--
-- A standard EUV exposure covers at most about 858 square millimeters, and the H100 die used 814.
-- Blackwell crossed that limit by joining two compute dies with a 10-terabyte-per-second link.
-- High-NA EUV halves the exposure field, which gives designers another reason to divide large processors into chiplets.
+- During the 2023 to 2025 shortage, TSMC identified CoWoS, rather than front-end logic wafers, as the constraint on complete accelerators.
+- The reversal is the point: a stage offshored as low-value assembly in the 1960s had become a control point for AI compute.
 -->
 
 ---
@@ -114,13 +56,13 @@ title: "Why chiplets win"
   <img src="/diagrams/rendered/chiplet-yield-v2.png" alt="One defect scraps a monolithic die but only one of four chiplets, while an interposer combines compute, mature-node input-output, and nearby HBM" />
 </div>
 
-<div class="visual-sequence__caption"><strong>Split the die.</strong><span>Lose less silicon, mix process nodes, and place HBM nearby.</span></div>
-<div class="visual-sequence__source">AMD estimate · four small dies cost &lt;60% of one monolith</div>
+<div class="visual-sequence__caption"><strong>The earlier reticle limit cashes out here.</strong><span>Split the die, lose less silicon, mix nodes, and place HBM nearby.</span></div>
+<div class="visual-sequence__source">NVIDIA Blackwell · AMD chiplet cost estimate</div>
 
 <!--
-- Chiplets split one large design into smaller dies, improving yield because a defect destroys less silicon.
-- Designers can also mix process nodes and place memory close to compute.
-- AMD estimated that four small dies can cost less than 60 percent of an equivalent monolithic design.
+- Earlier, H100 nearly filled one standard exposure field. Blackwell answers the same size constraint by packaging two compute dies as one accelerator.
+- Smaller dies also improve yield because one defect destroys less silicon; designers can mix process nodes and place HBM close to compute.
+- AMD estimated that four small dies can cost less than 60 percent of an equivalent monolithic design. The package turns those separate dies back into one usable system.
 -->
 
 ---
@@ -288,14 +230,8 @@ title: "Package assembly · 4 / 4"
 
 </div>
 
-<div class="grid grid-cols-3 gap-6 mt-3 items-start">
-<div class="col-span-2 text-base leading-relaxed">
-
-<b>The completed package leaves for system integration.</b><br>
+<div class="text-center text-base opacity-80 mt-3">
 TSMC appears twice because leading-edge wafer fabrication and advanced packaging are separate constrained capabilities.
-
-</div>
-<div class="text-sm opacity-60 text-right">Next: when do supply dependencies become geopolitical leverage?</div>
 </div>
 
 <!--

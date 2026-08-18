@@ -1,5 +1,7 @@
 ---
-layout: section
+layout: default
+class: visual-sequence paper-visual
+title: "Fabless designers"
 ---
 
 <!-- SEGMENT
@@ -7,35 +9,14 @@ id: fabless-field
 act: II — The Blueprint
 tier: C            # C cards (ensemble card montage; pressure valve 🔧)
 angle: "Design is a crowd sport now — dozens of companies draw world-changing chips — precisely because manufacturing collapsed to almost nobody. Every blueprint in this segment ends the same way: on a flight to one island."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~3 min
+runtime: ~2 min
 status: draft
 seeds: [apple-iou]                    # Apple's node buyouts planted here → cashed in tsmc
 pays_off: [owns-no-factories]         # nvidia's "owns no factories" is cashed in this act-end Economics Ledger
 stamps: []                            # cards earn no chokepoint stamps
-diagrams: [map-design, slide-047-fabless-designers]
+diagrams: [slide-047-fabless-designers]
 sources: research/fabless-field.md, research/nvidia.md
 -->
-
-
-# Major fabless chip designers
-
-<div class="text-xl opacity-70 mt-2">AMD, Apple, Qualcomm, Broadcom, Marvell, and MediaTek also design chips without owning leading-edge fabs.</div>
-
-![map — design lit](/diagrams/rendered/map-design.svg)
-
-<div class="text-sm opacity-60 mt-4">
-Design is distributed across many firms; leading-edge manufacturing is concentrated among three.
-</div>
-
-<!--
-- AMD, Apple, Qualcomm, Broadcom, Marvell, MediaTek, and Nvidia design advanced chips without owning leading-edge fabs because EDA tools, licensable instruction sets, and foundry access let many firms compete.
-- Manufacturing remains far more concentrated, with three companies at the leading edge.
--->
-
----
-class: visual-sequence paper-visual
-title: "Fabless designers"
----
 
 <div class="visual-sequence__kicker">FABLESS DESIGNERS</div>
 
@@ -43,13 +24,13 @@ title: "Fabless designers"
   <img src="/diagrams/rendered/slide-047-fabless-designers.svg" alt="Six fabless design companies sending completed layout files to one outside foundry" />
 </div>
 
-<div class="visual-sequence__caption"><strong>Six fabless designers send layout files to outside foundries.</strong></div>
+<div class="visual-sequence__caption"><strong>CPUs, phones, custom AI, and networking.</strong><span>Different products; the same advanced foundry bottleneck.</span></div>
 <div class="visual-sequence__source">AMD · Apple · Qualcomm · Broadcom · Marvell · MediaTek</div>
 
 <!--
 - These six companies use the fabless model in different markets.
 - AMD builds CPUs and accelerators; Apple its own chips; Qualcomm mobile silicon; Broadcom and Marvell networking and custom silicon; MediaTek high-volume mobile chips.
-- Each sends completed layouts to an outside foundry.
+- Their product markets differ, but each design must secure capacity from the much smaller set of advanced foundries.
 -->
 
 ---
@@ -90,19 +71,19 @@ Recognized revenue, gross profit, foundry cost, memory cost, and packaging cost.
 layout: center
 ---
 
-# Fabless designers depend on outside manufacturing
+# Apple treats wafer capacity as part of the product roadmap
 
 <div class="text-lg opacity-80 mt-6 leading-relaxed max-w-2xl">
-These companies send completed chip layouts to foundries for manufacturing.
+A finished layout becomes a product only after a foundry reserves wafer starts.
 </div>
 
 <div class="text-base opacity-60 mt-8">
-For leading-edge production, many of these designs<br>
-go to TSMC in Taiwan.
+Apple's early access to new TSMC nodes shows how<br>
+a design roadmap becomes a capacity commitment.
 </div>
 
 <!--
 - A foundry must reserve wafer starts before a finished layout becomes a product.
-- Many independent designers compete for capacity from a small group of advanced manufacturers, with TSMC receiving much of the leading-edge work.
-- That dependence shifts bargaining power from the crowded design layer toward the fabs.
+- Apple has repeatedly been an anchor customer on new TSMC nodes, aligning product launches with access to manufacturing capacity.
+- The fabless field is broad, but many leading-edge roadmaps converge on the same foundry in Taiwan.
 -->

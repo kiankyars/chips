@@ -19,8 +19,6 @@ sources: research/equipment-dep-etch.md
 
 # Deposition and etch
 
-<div class="text-xl opacity-70 mt-2">Part 4 · Fabrication · deposition and etch</div>
-
 <div class="grid grid-cols-2 gap-8 mt-6 items-center">
 <div>
 

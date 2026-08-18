@@ -19,39 +19,15 @@ sources: research/foundries-field.md, research/foundations.md
 
 # Other leading-edge foundries
 
-<div class="text-xl opacity-70 mt-2">Samsung, Intel, and state-backed challengers</div>
+<div class="text-xl opacity-70 mt-2">The frontier shrank from roughly 25 manufacturers to TSMC, Samsung, and Intel.</div>
 
 ![map manufacture](/diagrams/rendered/map-manufacture.svg){class="absolute bottom-4 right-4 w-40 opacity-80"}
 
 <!--
+- The fab-cost curve has already narrowed commercial leading-edge logic from roughly 25 manufacturers in 2001 to three today.
 - TSMC, Samsung, and Intel now ship leading-edge logic at scale, with state-backed Rapidus trying to join them.
-- Samsung and Intel remain despite weak foundry economics because each new process generation demands more capital, volume, and learning.
--->
-
----
-
-# Leading-edge manufacturers: about 25 in 2001, three today
-
-<div class="grid grid-cols-9 gap-1 items-end mt-8 h-56 text-center text-xs">
-  <div class="flex flex-col justify-end"><div class="bg-gray-400 rounded-t" style="height:100%"></div><div class="mt-2 font-bold">~25</div><div class="opacity-60">130nm<br>2001</div></div>
-  <div class="flex flex-col justify-end"><div class="bg-gray-400 rounded-t" style="height:68%"></div><div class="mt-2 font-bold">~17</div><div class="opacity-60">90nm<br>2003</div></div>
-  <div class="flex flex-col justify-end"><div class="bg-gray-400 rounded-t" style="height:56%"></div><div class="mt-2 font-bold">~14</div><div class="opacity-60">65nm<br>2005</div></div>
-  <div class="flex flex-col justify-end"><div class="bg-gray-400 rounded-t" style="height:48%"></div><div class="mt-2 font-bold">~12</div><div class="opacity-60">45nm<br>2007</div></div>
-  <div class="flex flex-col justify-end"><div class="bg-gray-400 rounded-t" style="height:36%"></div><div class="mt-2 font-bold">~9</div><div class="opacity-60">32nm<br>2009</div></div>
-  <div class="flex flex-col justify-end"><div class="bg-gray-400 rounded-t" style="height:24%"></div><div class="mt-2 font-bold">~6</div><div class="opacity-60">22nm<br>2012</div></div>
-  <div class="flex flex-col justify-end"><div class="bg-gray-500 rounded-t" style="height:16%"></div><div class="mt-2 font-bold">4</div><div class="opacity-60">14nm<br>2015</div></div>
-  <div class="flex flex-col justify-end"><div class="bg-gray-600 rounded-t" style="height:12%"></div><div class="mt-2 font-bold">3</div><div class="opacity-60">7/5nm<br>2018–20</div></div>
-  <div class="flex flex-col justify-end"><div class="bg-black dark:bg-white rounded-t" style="height:12%"></div><div class="mt-2 font-bold">3</div><div class="opacity-60">3/2nm<br>2022–26</div></div>
-</div>
-
-<div class="text-sm opacity-60 mt-6 text-center">
-As leading-edge fab costs rose, the number of manufacturers fell from about 25 to three.
-</div>
-
-<!--
-- The number of leading-edge manufacturers fell from about 25 in 2001 to three by the late 2010s as fab costs climbed.
 - High wafer volume improves yield and lowers unit cost, so the largest producer learns faster and wins more customers.
-- TSMC now has a foundry revenue share many times Samsung's, reinforcing this cycle.
+- Samsung and Intel remain despite weak foundry economics because each new process generation demands more capital, volume, and learning.
 -->
 
 ---
