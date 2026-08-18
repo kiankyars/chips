@@ -9,17 +9,15 @@ tier: —            # keystone teach — concept segment, no company tier
 angle: "Nobody builds a chip — a chip survives. One seven-step loop, run ~80 times over three months, where a single invisible particle kills a die worth more than gold; every company you're about to meet exists because it owns exactly one of those steps."   # YOU OWN THIS LINE — rewrite in your voice
 runtime: ~5 min
 status: draft
-seeds: [japan-under-everything]     # stamp #3 opens the Japan cluster; `materials` cashes the full basement tour
-pays_off: [yield]                   # stage 2 of the yield chain: foundations → HERE → kla → intel → packaging (chiplets)
-stamps: [japan-materials]           # stamp #3 — Japan's materials cluster
-diagrams: [map-equipment, journey-3, flow-strip, flow-coat, board-3, chip-interconnect-stack, wafer-particle-defect, flow-expose]
+seeds: [japan-under-everything, spruce-pine]  # `materials` later cashes the district's supply-shock consequence
+pays_off: [yield]                   # foundations plants the size penalty; this segment makes fabrication yield tangible
+stamps: []                          # materials proves and awards the Japan-cluster stamp
+diagrams: [map-equipment, journey-3, flow-strip, chip-interconnect-stack, wafer-particle-defect, flow-expose]
 sources: research/foundations.md, research/materials.md
 -->
 
 
 # Inside a leading-edge fab
-
-<div class="text-2xl opacity-80 mt-2">Three to four months and roughly 1,000 process steps</div>
 
 <div class="grid grid-cols-2 gap-8 mt-8 items-center">
 <div>
@@ -30,8 +28,7 @@ sources: research/foundations.md, research/materials.md
 <div class="text-2xl leading-relaxed">
 A leading-edge wafer passes through<br>
 <b>roughly 1,000 process steps</b><br>
-over <b>three to four months</b>.<br>
-<span class="opacity-60 text-lg">The next sections follow its equipment and materials.</span>
+over <b>three to four months</b>.
 </div>
 </div>
 
@@ -64,10 +61,18 @@ over <b>three to four months</b>.<br>
 </div>
 </div>
 
+<div class="mt-7 text-center">
+<div class="text-sm tracking-widest opacity-50">BEFORE THE FAB</div>
+<div class="text-lg mt-2"><b>Spruce Pine Mining District, North Carolina</b> · 25 × 10 miles across three counties</div>
+<div class="opacity-70 mt-1">high-purity quartz → fused-quartz crucible → holds the silicon melt while one crystal is pulled</div>
+<div class="text-sm opacity-50 mt-1">The quartz makes the crucible; it does not become the wafer.</div>
+</div>
+
 <!--
 - The fab starts with a polished 300 millimetre silicon wafer that costs about $100 to $200 and reaches 99.999999999 percent purity.
 - The design arrives as 60 to 100 patterned reticles, with roughly one reticle per mask level; a multi-patterned layer may need several.
 - A leading-edge mask set therefore costs millions of dollars.
+- The Spruce Pine Mining District spans three North Carolina counties; its high-purity quartz becomes the crucible around the silicon melt, not the wafer.
 -->
 
 ---
@@ -86,31 +91,6 @@ over <b>three to four months</b>.<br>
 - The fab deposits a film, coats it with light-sensitive resist, exposes a pattern, etches the open regions, implants dopants where needed, polishes the surface, and measures the result.
 - The fab repeats variations of this cycle across about 80 to 120 mask levels.
 - Each exposure patterns billions of features across the wafer at once.
--->
-
----
-
-# Japan supplies the wafer, resist, and EUV mask blanks
-
-![coat step glowing](/diagrams/rendered/flow-coat.svg)
-
-<div class="grid grid-cols-3 gap-6 mt-6 text-center text-lg">
-<div><b>The wafer</b><div class="opacity-70 text-sm mt-1">Shin-Etsu + SUMCO<br>&gt;half of world silicon</div></div>
-<div><b>The resist</b><div class="opacity-70 text-sm mt-1">Japanese suppliers<br>dominate advanced resists</div></div>
-<div><b>The mask blanks</b><div class="opacity-70 text-sm mt-1">Hoya + AGC<br>leading commercial EUV suppliers</div></div>
-</div>
-
-<div class="mt-8 text-center">
-
-![chokepoint board — third stamp](/diagrams/rendered/board-3.svg)
-
-<div class="text-lg mt-2"><b>CHOKEPOINT #3 · Japan's materials cluster</b></div>
-</div>
-
-<!--
-- Fabs qualify wafers and photoresists; mask shops turn blanks into the patterned reticles required for each design.
-- A replacement can change film thickness, pattern dimensions, defect rates, or yield, so the fab must test it across many wafers before release.
-- That requalification can take one to two years, making concentrated supply hard to replace.
 -->
 
 ---

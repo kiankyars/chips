@@ -10,22 +10,29 @@ angle: "Everyone's afraid of the machines. But the machine you buy once; the res
 runtime: ~3 min
 status: draft
 seeds: []                                         # no ledger seed planted here
-pays_off: []                                      # Japan-materials stamp was earned at life-of-a-wafer; DEEPENED here, not re-earned
-stamps: []                                        # no NEW stamp — this segment thickens Stamp #3 (Japan cluster, board-3)
-diagrams: [map-equipment, flow-strip, slide-104-material-shocks-substitution]
+pays_off: [spruce-pine, japan-under-everything]   # physical inputs and concentration now land in the dedicated segment
+stamps: [japan-materials]                         # stamp #3 — Japan's qualified materials cluster
+diagrams: [map-equipment, board-3, flow-strip, slide-104-material-shocks-substitution]
 sources: research/materials.md
 -->
 
 
-# Japan's share of semiconductor materials
+# Japan's qualified materials cluster
 
-<div class="text-xl opacity-70 mt-3">Materials and tooling used across fab process steps</div>
+<div class="text-xl opacity-70 mt-3">Wafers, advanced resists, and EUV mask blanks are concentrated in a small qualified supplier set.</div>
 
-![map: equipment lit](/diagrams/rendered/map-equipment.svg)
+<div class="mt-7">
+  <img class="w-4/5 mx-auto" src="/diagrams/rendered/board-3.svg" alt="Chokepoint board with Japan's materials cluster added as the third control point" />
+</div>
+
+<img class="absolute bottom-4 right-4 w-28 opacity-70" src="/diagrams/rendered/map-equipment.svg" alt="Industry-map navigator with fabrication equipment and materials highlighted" />
+
+<div class="text-lg mt-5 text-center"><b>CHOKEPOINT #3</b> · substitutes require process requalification</div>
 
 <!--
 - Fabs buy major equipment at long intervals but consume photoresist, gases, slurries, and other materials every day.
 - Japanese suppliers hold about half of the global semiconductor materials market, even though Japan's share of chip manufacturing has fallen from its 1980s peak.
+- Wafers, resists, and mask blanks are qualified into specific processes; changing one can alter dimensions, defects, and yield, so substitutes can take months or years to qualify.
 -->
 
 ---
@@ -58,7 +65,7 @@ sources: research/materials.md
 </div>
 
 <!--
-- Spruce Pine is a leading source of high-purity quartz used in crucibles for growing single-crystal silicon.
+- Wafer making consumes purified silicon feedstock and high-purity quartz crucibles; the Spruce Pine Mining District supplies a leading source of crucible-grade quartz.
 - Coating consumes photoresist from a supplier set concentrated in Japan.
 - Exposure projects a patterned reticle; DUV light sources use krypton-fluoride or argon-fluoride excimer-laser mixtures.
 - Etch, cleaning, and polishing consume high-purity chemicals, slurries, and pads that fabs qualify to a specific process.
@@ -81,7 +88,7 @@ title: "Material shocks"
 <!--
 - Japan restricted three semiconductor materials sold to South Korea in 2019, and Korean manufacturers responded by qualifying local and third-country suppliers.
 - Russia's invasion of Ukraine disrupted a large share of semiconductor-grade neon in 2022, prompting stockpiling and new capacity.
-- Hurricane Helene closed Spruce Pine quartz mines in 2024, but they restarted within weeks.
+- Hurricane Helene paused both Spruce Pine producers in 2024; Sibelco announced a restart about two weeks later, while The Quartz Corp resumed in phases.
 - Each shock accelerated supplier diversification.
 -->
 
@@ -108,22 +115,4 @@ No public source allocates those costs per GB300.
 <!--
 - A blank 300 millimetre wafer costs about $150; industry estimates put processed 3nm wafers near $19,500, including equipment, materials, labor, overhead, and foundry margin.
 - Public reporting does not separate those components for a specific accelerator.
--->
-
----
-layout: center
----
-
-# Most chips are made on mature process nodes
-
-<div class="text-xl opacity-70 mt-4">Mature-node fabs still use ultrapure silicon and process chemicals, but they do not require EUV lithography.</div>
-
-<div class="text-2xl mt-10 leading-relaxed">
-Cars, appliances, and industrial systems<br>
-use large numbers of mature-node chips.
-</div>
-
-<!--
-- Most chips use mature nodes because analog, power, and embedded-control functions benefit from low cost, voltage handling, proven reliability, and long qualification histories.
-- These fabs skip EUV, but they still depend on ultrapure silicon wafers, photoresist, specialty gases, wet chemicals, and polishing consumables.
 -->

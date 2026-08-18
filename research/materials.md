@@ -141,10 +141,11 @@ requalification cycles. Japan quietly owns most of this layer.
 - The CZ crucible that holds molten silicon must itself be ultra-pure fused
   quartz — impurities leach straight into the melt. The feedstock:
   **high-purity quartz (HPQ)**.
-- **Spruce Pine, North Carolina** hosts both U.S. producers of high-purity
-  quartz. USGS estimates that the United States leads global HPQ production but
-  does not publish country shares; it also lists sources in Australia, Brazil,
-  Canada, China, India, and Russia. [48]
+- The **Spruce Pine Mining District** spans roughly 25 by 10 miles across parts
+  of Mitchell, Avery, and Yancey counties in North Carolina and hosts both U.S.
+  producers of high-purity quartz. USGS estimates that the United States leads
+  global HPQ production but does not publish country shares; it also lists
+  sources in Australia, Brazil, Canada, China, India, and Russia. [48][52]
 - Sibelco mines its IOTA quartz from two Spruce Pine ore bodies and identifies
   fused-quartz crucibles for Czochralski silicon growth as a semiconductor use.
   [49]
@@ -155,8 +156,9 @@ requalification cycles. Japan quietly owns most of this layer.
   restart from late Oct 2024. Semiconductor impact ended up minimal —
   inventories plus fast restart. [34][35]
 - Fresh twist (this month): **July 2026 — The Quartz Corp closed its Altapass
-  processing facility in Spruce Pine "indefinitely"** (~20–30 jobs), explicitly
-  *not* Helene-related — blamed on the weak solar/renewables market. [36][37]
+  processing facility in Spruce Pine "indefinitely"** (~20–30 jobs), while its
+  other U.S. locations were unaffected. The restructuring cited weakness in
+  renewable-energy markets rather than Hurricane Helene. [53]
   The same town can be both irreplaceable (semis) and demand-whipsawed (solar).
 - Cross-ref (equipment layer, same pattern): **Carl Zeiss SMT** is the
   effectively sole source for ASML's EUV optics — see `research/asml.md`.
@@ -181,8 +183,8 @@ requalification cycles. Japan quietly owns most of this layer.
   segment (+9.3%), led by substrates. [1]
 
 ## Risks
-- **Concentration below the concentration**: one town (Spruce Pine HPQ), one
-  company (Ajinomoto in ABF; DuPont in pads), a small supplier set (EUV mask
+- **Concentration below the concentration**: one mining district (Spruce Pine
+  HPQ), one company (Ajinomoto in ABF; DuPont in pads), a small supplier set (EUV mask
   blanks), one geography (Ukraine neon before 2022), and one country (Japan
   across advanced materials). Each can gate a much larger downstream market.
 - **Geography risk**: Japan = earthquakes. The 2011 Tōhoku quake knocked out
@@ -195,18 +197,20 @@ requalification cycles. Japan quietly owns most of this layer.
 - **Requalification lock-in**: switching a qualified fab chemical takes ~1–2
   years of testing — shares are sticky in peacetime, but it also means *any*
   disruption has no quick substitute. <!-- VERIFY: typical qual duration -->
-- **Demand whiplash on niche mines/plants**: TQC's 2026 Spruce Pine closure
-  shows solar-driven demand swings can shutter "strategic" assets no one
-  individually protects. [36]
+- **Demand whiplash on niche mines/plants**: TQC's 2026 closure of one Spruce
+  Pine processing facility shows solar-driven demand swings can shutter
+  "strategic" assets no one individually protects. Its other U.S. locations
+  were unaffected. [53]
 
 ## Fact ammo — lines that land
 - **The MSG company**: every advanced CPU and AI GPU on Earth sits on an
   insulating film made by Ajinomoto — the Japanese seasoning company — which
   holds ~95% of the market. Your chip is packaged by the people who invented
   MSG. [38][39]
-- **One town**: Spruce Pine, NC hosts both U.S. high-purity-quartz producers,
-  and USGS estimates that the United States leads global production. HPQ has no
-  economic substitute for most uses, including fused-quartz crucibles. [48]
+- **One mining district**: Spruce Pine spans roughly 25 by 10 miles across three
+  North Carolina counties and hosts both U.S. high-purity-quartz producers.
+  USGS estimates that the United States leads global production. HPQ has no
+  economic substitute for most uses, including fused-quartz crucibles. [48][52]
 - **Eleven nines**: wafer-grade silicon is 99.999999999% pure — about one
   foreign atom per hundred billion. It is routinely called the purest material
   humans mass-produce. [8][9]
@@ -271,7 +275,9 @@ requalification cycles. Japan quietly owns most of this layer.
 45. Mordor Intelligence, Specialty Gas Market (top-5 ~55–70% of high-purity gas) — https://www.mordorintelligence.com/industry-reports/specialty-gas-market
 46. Market Research Future, Electronic Specialty Gases Market ($15.98B 2024) — https://www.marketresearchfuture.com/reports/electronic-specialty-gases-market-39391
 47. Digitimes, "Shinko Electric to delist in June…" (Mar 2025) — https://www.digitimes.com/news/a20250321PD206/shinko-electric-mitsui-chemicals-materials-partnership-fujitsu.html
-48. USGS, *Mineral Commodity Summaries 2024: Quartz (High-Purity and Industrial Cultured Crystal)* (Spruce Pine production, crucible use, global sources, and substitutes) — https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-quartz.pdf
+48. USGS, *Mineral Commodity Summaries 2026: Quartz (High-Purity and Industrial Cultured Crystal)* (two U.S. HPQ producers around Spruce Pine, crucible use, global sources, and substitutes) — https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-quartz.pdf
 49. Sibelco, "High Purity Quartz" (Spruce Pine IOTA ore bodies and fused-quartz crucibles for the CZ process) — https://www.sibelco.com/en/materials/high-purity-quartz
 50. ASML, "Light & lasers" (DUV excimer-laser gas mixtures; KrF and ArF sources) — https://www.asml.com/en/technology/lithography-principles/light-and-lasers
 51. ASML, "Indistinguishable from magic: the EUV pellicle" (the patterned reticle or mask carries the pattern printed on the wafer) — https://www.asml.com/en/company/stories/2022/the-euv-pellicle-indistinguishable-from-magic
+52. North Carolina Department of Natural and Cultural Resources, "Spruce Pine Mining District (N-45)" (25 by 10 miles across Mitchell, Avery, and Yancey counties) — https://www.dncr.nc.gov/blog/2024/01/18/spruce-pine-mining-district-n-45
+53. The Quartz Corp, "Restructuring U.S." (2026-06-30; one Spruce Pine production facility closed indefinitely, other U.S. locations unaffected) — https://www.thequartzcorp.com/articles/restructuring-us

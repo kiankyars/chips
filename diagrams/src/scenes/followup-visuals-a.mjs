@@ -329,7 +329,7 @@ ${text(x + 266, 864, metrics, { size: 20, fill: C.muted, weight: 690, anchor: 'm
 function materialShocksSubstitution() {
   return svgDoc(
     'Three concentrated-material shocks led to substitution or inventory buffering',
-    'Three panels show Japanese chemical restrictions in 2019 followed by Korean localization, the 2022 halt in Ukrainian neon followed by supplier diversification, and the 2024 Spruce Pine quartz shutdown bridged by stockpiles.',
+    'Three panels show Japanese chemical restrictions in 2019 followed by Korean localization, the 2022 halt in Ukrainian neon followed by supplier diversification, and the 2024 Spruce Pine quartz pause bridged by stockpiles.',
     `${header('Materials', 'Supply shocks opened replacement paths')}
 ${shockPanel(104, '2019', 'JAPAN → KOREA', C.blue,
     `${chemicalDrums(258, 362, C.blue)}${text(370, 354, 'PHOTORESIST · HF · POLYIMIDE', { size: 16, fill: C.blue, weight: 760, anchor: 'middle', tracking: 0.6 })}`,
@@ -339,7 +339,7 @@ ${shockPanel(694, '2022', 'UKRAINE · NEON', C.amber,
     'BOTH PLANTS HALT', 'BUYERS DIVERSIFY', 'about ½ of supply · spot price 4×')}
 ${shockPanel(1284, '2024', 'SPRUCE PINE', C.green,
     `${mountain(1385, 350, C.green)}${text(1550, 354, 'HIGH-PURITY QUARTZ', { size: 17, fill: C.green, weight: 780, anchor: 'middle', tracking: 0.8 })}`,
-    'TWO-WEEK SHUTDOWN', 'STOCKPILES BRIDGE', 'leading high-purity quartz source')}
+    'MINES PAUSE', 'STOCKPILES BRIDGE', 'Sibelco restart · about 2 weeks')}
 ${text(960, 988, 'The disruption was immediate; the supply response reduced repeat leverage.', { size: 24, fill: C.muted, weight: 620, anchor: 'middle' })}`,
   )
 }
