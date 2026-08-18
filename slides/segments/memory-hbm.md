@@ -1,5 +1,6 @@
 ---
-layout: section
+layout: default
+class: stage-map-focus
 ---
 
 <!-- SEGMENT
@@ -7,33 +8,23 @@ id: memory-hbm
 act: V — Memory & The Assembly
 tier: D            # duel — a three-way contest told as one story (SK hynix · Samsung · Micron)
 angle: "Logic sells genius; memory sells nerve. For fifty years memory was the industry's commodity purgatory — until HBM welded it to the GPU and, by third-party estimates, became the largest physical package-cost line in B300."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~9 min
+runtime: ~8 min
 status: draft
 seeds: []                          # nothing new planted for a later segment; the closer hands off to `packaging`
 pays_off: [memory-wall]            # the bandwidth problem seeded in `nvidia` gets its bill here
 stamps: [hbm]                      # chokepoint #6 — qualified HBM capacity
-diagrams: [map-memory, journey-4, memory-types-v2, hbm-package-v2, hbm-supplier-race, board-6, dram-revenue-surge]
+diagrams: [map-memory, journey-4, memory-types-v2, hbm-package-v2, board-6, dram-revenue-surge]
 sources: research/memory-hbm.md
 -->
 
 
 # High-bandwidth memory
 
-<div class="text-xl opacity-70 mt-2">Part 5 · Memory and packaging · Icheon, Suwon, and Boise</div>
-
-<div class="grid grid-cols-2 gap-8 mt-8 items-center">
-<div>
-
-![industry map — MEMORY region lit](/diagrams/rendered/map-memory.svg)
-
-</div>
-<div class="text-lg opacity-80 leading-relaxed">
-The GPU dies are fabricated.<br>
-The next constraint is memory bandwidth.
-</div>
+<div class="stage-map-focus__map">
+  <img src="/diagrams/rendered/map-memory.svg" alt="Industry map with high-bandwidth memory suppliers highlighted" />
 </div>
 
-![journey bar — MEMORY active](/diagrams/rendered/journey-4.svg)
+<img class="stage-map-focus__journey" src="/diagrams/rendered/journey-4.svg" alt="Chip journey with memory active" />
 
 <!--
 - The logic dies are finished, but their compute units need data at much higher bandwidth than conventional memory can deliver.
@@ -118,8 +109,8 @@ Dozens of DRAM makers in the '80s–'90s → <b>3 companies ≈ 90% of DRAM</b> 
 </div>
 <div class="border-2 border-amber-500 rounded-lg p-3">
 <div class="text-lg font-bold">2025</div>
-<div class="opacity-60">SK hynix takes #1</div>
-<div class="mt-2">The lead stays in Korea,<br>driven by <b>HBM</b></div>
+<div class="opacity-60">quarterly DRAM lead changes</div>
+<div class="mt-2">SK hynix led Q1–Q3;<br><b>Samsung retook Q4</b></div>
 </div>
 </div>
 
@@ -129,7 +120,8 @@ DRAM leaders kept investing during downturns.
 
 <!--
 - US companies created the commercial DRAM market, Japanese suppliers held about three quarters of it in the 1980s, and Korean firms then took the lead.
-- Samsung became number one in 1992, while SK hynix moved ahead in 2025 as HBM demand rewarded its manufacturing investment.
+- Samsung became number one in 1992; SK hynix led quarterly DRAM revenue from Q1 through Q3 2025 before Samsung retook the lead in Q4.
+- SK hynix remained the HBM-share leader entering 2026, so DRAM scale and HBM leadership are different scoreboards.
 -->
 
 ---
@@ -231,27 +223,8 @@ HBM4 allows <b>customer-specific logic base dies</b>.<br>
 -->
 
 ---
-class: visual-sequence paper-visual
-title: "HBM supplier race"
----
 
-<div class="visual-sequence__kicker">HBM SUPPLIER RACE</div>
-
-<div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/hbm-supplier-race.svg" alt="Three supplier lanes show SK hynix, Samsung, and Micron as NVIDIA-named Rubin HBM4 sources" />
-</div>
-
-<div class="visual-sequence__caption"><strong>All three suppliers</strong><span>were publicly named by NVIDIA for Rubin HBM4 by mid-2026.</span></div>
-<div class="visual-sequence__source">Q1 2026 HBM share estimates</div>
-
-<!--
-- SK hynix entered 2026 with about 56 percent of the HBM market, while Micron held about one fifth.
-- NVIDIA publicly named Samsung, SK hynix, and Micron as Rubin HBM4 sources by mid-2026; their available volume and yield positions still differed.
--->
-
----
-
-# HBM supplier positioning
+# HBM supplier race: DRAM scale ≠ HBM leadership
 
 <div class="grid grid-cols-3 gap-4 mt-4">
 
@@ -323,7 +296,8 @@ title: "The memory supercycle"
 ![chokepoint board — 6 stamps](/diagrams/rendered/board-6.svg)
 
 <div class="text-xl mt-6 text-center">
-NVIDIA named three Rubin HBM4 sources, but SK hynix entered 2026 with about <b>56% of HBM</b>.
+Three named suppliers do not make qualified HBM interchangeable.<br>
+<b>Allocation shifts still require product-specific qualification, volume, and packaging yield.</b>
 </div>
 
 <div class="text-sm opacity-60 mt-10 text-center">
@@ -332,6 +306,5 @@ HBM stacks and GPU dies still have to be joined in one package.
 
 <!--
 - Nvidia publicly named Samsung, SK hynix, and Micron as Rubin HBM4 sources, so the Board is not making a single-supplier claim.
-- SK hynix entered 2026 with about 56 percent of HBM and has served as Nvidia's main supplier since H100.
-- Shifting a large allocation still requires product-specific qualification and volume, even with three Nvidia-named sources.
+- Shifting a large allocation still requires product-specific qualification, volume, and package yield, even with three named sources.
 -->

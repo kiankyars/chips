@@ -1,5 +1,5 @@
 # Research — Memory & HBM
-As-of: 2026-07
+As-of: 2026-08-18
 
 Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 `<!-- VERIFY -->` = not fully confident, check before recording.
@@ -37,8 +37,6 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 - Samsung **regained #1 in 4Q25** as conventional DRAM prices exploded (its
   legacy capacity became a money-printer), and widened the gap in 1Q26 (DRAM
   sales +95% QoQ to $37.4B vs SK hynix $28.0B). [6][9]
-- Full-year 2025 DRAM revenue: SK hynix ~$49.6B vs Samsung ~$46.4B — SK hynix
-  likely edged the full year. [10] <!-- VERIFY: these were S&P forecasts; check final-year actuals -->
 - SK hynix: higher **profitability** per bit than Samsung (HBM-heavy mix) even
   where revenue trails. [6]
 
@@ -84,7 +82,7 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   stacked vertically, connected by **through-silicon vias (TSVs)** — thousands
   of copper elevator shafts drilled through each die — on top of a base die.
   The stack sits millimeters from the GPU over a high-density in-package
-  interconnect: a full silicon interposer, RDL interposer, or local bridge. [20][71]
+  interconnect: a full silicon interposer, RDL interposer, or local bridge. [20][68]
 - Analogy: DDR on the motherboard = a **suburb** — cheap land, long commute on
   a narrow road (64-bit channel). HBM = an **apartment tower downtown** —
   expensive per square meter, but 1024–2048 lanes wide and a one-minute walk
@@ -99,17 +97,17 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 ### HBM3E in production
 - HBM3E is the **fifth HBM generation**, extending HBM3 rather than defining a
   separately named fifth-generation standard. SK hynix began volume production
-  in March 2024. [66]
+  in March 2024. [63]
 - Commercial configurations include **24 GB with eight DRAM dies** and **36 GB
   with twelve dies**. The stack connects through a **1,024-bit interface** and
-  delivers about **1.2 TB/s**; exact rates vary by supplier and product. [66][67][68]
+  delivers about **1.2 TB/s**; exact rates vary by supplier and product. [63][64][65]
 - SK hynix, Micron, and Samsung all manufacture HBM3E. That does not mean every
-  supplier is qualified for every accelerator. [66][67][68]
+  supplier is qualified for every accelerator. [63][64][65]
 - NVIDIA lists Blackwell Ultra at **288 GB of HBM3E** and up to **8 TB/s** per
-  GPU, configured as **eight 12-high stacks**. [69]
+  GPU, configured as **eight 12-high stacks**. [66]
 - Power comparisons are vendor-specific. Micron claims 30% less power than
   competing HBM3E products and 2.5 times HBM2E performance per watt; those are
-  not general HBM3E specifications. [67]
+  not general HBM3E specifications. [64]
 
 ### HBM3E → HBM4 transition (status mid-2026)
 - **HBM4 (JEDEC JESD270-4, Apr 2025):** interface doubles to **2048-bit**, up
@@ -124,7 +122,7 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   <!-- VERIFY: "who was first" is contested marketing; both started ~Feb 2026 -->
 - NVIDIA publicly named **Samsung, SK hynix, and Micron** as Vera Rubin HBM4
   sources by June 2026. NVIDIA did not disclose a formal qualification
-  milestone in that statement. [13][24][70]
+  milestone in that statement. [13][24][67]
 - Next lap already started: SK hynix shipped **12-layer HBM4E samples June
   2026**, ahead of schedule; SK hynix showed **16-high 48GB HBM4** at CES 2026;
   Samsung unveiled HBM4E at GTC 2026. [25][26][27]
@@ -139,7 +137,7 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 - **The trade ratio:** Micron estimates that HBM3E consumes roughly **3× the
   wafer supply** of DDR5 to produce a given number of bits at the same process
   node. That capacity intensity raises the opportunity cost of allocating DRAM
-  output to HBM during a constrained cycle. [32][72]
+  output to HBM during a constrained cycle. [32][69]
 - HBM consumes roughly **a fifth of all DRAM wafer capacity in 2026**.
   <!-- VERIFY: ~20–23% figures circulating; find TrendForce primary -->
 - **HBM sells like logic, not memory:** customer-qualified (Nvidia quals take
@@ -184,7 +182,7 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   prices and quietly downgrade RAM specs. [46][47]
 - **Scale of the boom (TrendForce):** DRAM industry $165.7B in 2025 (+73%) →
   forecast **$404.3B in 2026 (+144%)**; NAND +112% to $147.3B; total memory
-  **$551.6B in 2026**, peaking ~$842.7B in 2027. [48] <!-- VERIFY: 2026-27 are forecasts; treat as scenario, not fact -->
+  **$551.6B in 2026**, peaking ~$842.7B in 2027. [28] <!-- VERIFY: 2026-27 are forecasts; treat as scenario, not fact -->
 - HBM contract prices expected to surge "multiples higher" again in 2027
   (TrendForce, Jun 2026). [30]
 - Hedge to voice: every memory cycle in history ended in a glut; the bulls'
@@ -194,25 +192,25 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 ## China memory (honest threat assessment)
 ### CXMT (DRAM)
 - China's DRAM champion; capacity ~**265k wafer-starts/month** end-2025 —
-  already big-league scale. [49]
+  already big-league scale. [48]
 - **DDR5: real but behind.** Cost per bit >30% above the big-3; sells at only
   ~5–10% below big-3 ASPs (shortage pricing lifted everyone); densest die
-  (24Gb) ~one generation behind big-3 32Gb-class. [49][50]
+  (24Gb) ~one generation behind big-3 32Gb-class. [48][49]
 - **HBM: barely exists.** ~5k wspm of HBM capacity end-2025 (~2% of its own
-  fab space), plans ~30k by end-2026 — years from Nvidia-class HBM. [49]
+  fab space), plans ~30k by end-2026 — years from Nvidia-class HBM. [48]
 - Beachhead dynamics: big-3 abandoned DDR4/legacy to chase HBM → CXMT inherits
   the low end; Chinese module makers and even Corsair/HP/Dell adopting CXMT
-  DDR5. [51]
+  DDR5. [50]
 - Verdict: credible commodity supplier by 2027, not an AI-memory threat this
   decade unless HBM packaging leapfrogs. <!-- VERIFY: editorial judgment, not a sourced fact -->
 
 ### YMTC (NAND)
 - Despite Entity List sanctions: shipping 5th-gen **294-layer** TLC NAND
-  (two bonded decks, 150+144, Xtacking 4.0 hybrid bonding). [52]
-- ~**13% NAND share 1Q26 — tied with Micron and SanDisk**. [15][53]
+  (two bonded decks, 150+144, Xtacking 4.0 hybrid bonding). [51]
+- ~**13% NAND share 1Q26 — tied with Micron and SanDisk**. [15][52]
 - Building a production line on **domestic (non-US) tools**, targeting ~15% of
   NAND output by end-2026; third Wuhan fab underway; >300-layer mass production
-  planned. [53]
+  planned. [52]
 - Verdict: NAND is the more commoditized market (no HBM-equivalent moat), so
   China bites here first and hardest. Sanctions slowed, did not stop.
 - Teach: memory is China's most credible semiconductor beachhead — exactly
@@ -223,36 +221,36 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 ### Like-for-like DRAM market snapshot
 - TrendForce's **1Q26 branded-DRAM revenue / share**: Samsung **$37.32B / 38.5%**,
   SK hynix **$27.98B / 28.8%**, and Micron **$21.75B / 22.4%**. These are DRAM
-  market metrics, not companywide revenue or HBM share. [73]
+  market metrics, not companywide revenue or HBM share. [3]
 
 ### SK hynix
 - **FY2025 (record):** revenue **₩97.15T**, operating profit **₩47.21T** (49%
   margin — beat Samsung's whole company), net **₩42.95T**. HBM revenue more
-  than doubled YoY. [54]
+  than doubled YoY. [53]
 - **1Q26 (record, all-time highs):** revenue **₩52.58T** (+60% QoQ, +198% YoY —
   first ₩50T quarter), operating profit **₩37.61T** (**72% margin**), net
-  ₩40.35T. Capex up in 2026: M16 ramp, Yongin cluster, EUV purchases. [55]
-- **Nasdaq ADR listing July 10, 2026** (ticker SKHY): ~**$28–29.4B** raise —
-  the **largest ADR listing in history** (tops Alibaba's $21.8B, 2014);
-  proceeds → fabs + EUV. [56][11]
+  ₩40.35T. Capex up in 2026: M16 ramp, Yongin cluster, EUV purchases. [26]
+- **Nasdaq ADR listing July 10, 2026** (ticker SKHY): the completed offering
+  raised **$26.507B**. The exact amount and July 14 closing are reported in
+  SK hynix's SEC filing. [54]
 ### Micron (fiscal year ends Aug)
 - **FY2025:** revenue **$37.38B** (vs $25.11B), GAAP net income **$8.54B**,
-  capex $13.8B — record year. [57]
+  capex $13.8B — record year. [55]
 - **FQ3-26 (Mar–May 2026, reported Jun 24):** revenue **$41.46B** — more than
   its entire FY2025, 4.5× the year-ago quarter ($9.30B); GAAP gross margin
   **84.6%**; GAAP net income **$28.24B**; EPS $24.67. Guides FQ4 to **$50B ±1B
-  at ~86% GM**. HBM4 in high-volume shipment for lead customer (Nvidia). [58]
+  at ~86% GM**. HBM4 in high-volume shipment for lead customer (Nvidia). [56]
 - 16 strategic capacity agreements signed, >**$100B** committed contract value;
-  HBM sold out through calendar 2026. [59] <!-- VERIFY: from earnings-call summaries, not the press release -->
+  HBM sold out through calendar 2026. [34] <!-- VERIFY: from earnings-call summaries, not the press release -->
 ### Samsung (memory division inside DS)
-- **4Q25:** company record — revenue ₩93.8T, operating profit ₩20.1T. [60]
+- **4Q25:** company record — revenue ₩93.8T, operating profit ₩20.1T. [57]
 - **1Q26:** company OP **₩57.2T** — more than all of FY2025 combined. DS
   division: revenue ₩81.7T, **OP ₩53.7T** (vs ~₩1T a year earlier — ~48×);
-  memory alone **₩74.8T revenue (~$51B)**, all-time high. [41][61][62]
+  memory alone **₩74.8T revenue (~$51B)**, all-time high. [41][58][59]
 - **2Q26 preliminary (July 7, 2026):** revenue ~₩171T, operating profit
   **₩89.4T (~$59B) — up ~19× YoY**, ~₩1T of profit per day; stock still fell
   ~7% on capex-expansion fears. Analysts est. DS OP >₩100T before ~₩15–20T
-  employee-bonus provisions. [63]
+  employee-bonus provisions. [60]
 
 ## History pattern (the 4-beat arc)
 1. **America invented it.** DRAM concept: Robert Dennard, IBM, 1966–68
@@ -260,7 +258,7 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   by 1972 the world's best-selling semiconductor chip. DRAM revenue built
   Intel. (Hedge: Intel's literal first product was the 3101 SRAM, 1969 — the
   1103 was its first hit. Direction of the lie: "Intel's first product" slightly
-  overstates.) [64]
+  overstates.) [61]
 2. **Japan won it in the '80s.** NEC, Hitachi, Toshiba, Fujitsu, Mitsubishi out-
   invested and out-yielded the US; Japan reached roughly **~75–80% of world
   DRAM by the late '80s** <!-- VERIFY: exact peak share -->; the 1985 crash
@@ -270,28 +268,31 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 3. **Korea won it in the '90s.** Samsung entered in 1983 (Lee Byung-chul's
   "Tokyo Declaration"), invested straight through the busts that bankrupted
   rivals, and took **#1 in DRAM in 1992 — a crown it then held for 33 years,
-  until SK hynix took it in Q1 2025**. [7] Japan consolidated and exited:
+  until SK hynix took the quarterly revenue lead in Q1 2025**. SK hynix held it
+  through Q3; Samsung regained the quarterly lead in Q4 2025. [7][8][9]
+  Japan consolidated and exited:
   Elpida bankrupt 2012 (bought by Micron); Germany's Qimonda dead 2009.
   <!-- VERIFY: Elpida/Qimonda dates -->
 4. **The lesson:** memory leadership migrates — it belongs to whoever keeps
   writing capex checks at the bottom of the cycle when incumbents flinch.
-  US → Japan → Korea, each handoff via a downturn. The 2025 twist: the crown
-  moved *within* Korea, to the company that bet on HBM early. China is now
-  running the identical playbook from below.
+  US → Japan → Korea, each handoff via a downturn. The 2025 twist: SK hynix's
+  HBM bet briefly moved the quarterly DRAM crown within Korea before Samsung's
+  commodity-DRAM scale reclaimed it. China is now running the same playbook
+  from below.
 
 ## Risks
 - **Cycle risk, the eternal one:** record prices → record capex (DRAM capex
   ~$53.7B 2025 → ~$61.3B 2026) → the 2027–28 glut candidate. Every prior
-  supercycle ended in oversupply; TrendForce's own curve peaks in 2027. [65][48]
+  supercycle ended in oversupply; TrendForce's own curve peaks in 2027. [62][28]
 - **AI-demand concentration:** HBM demand is essentially Nvidia + a few
   hyperscalers; an AI-capex pause hits memory harder than logic (commodity DRAM
   can't absorb the wafers coming back).
 - **Untested contracts:** the multi-year "presold" LTAs have never been through
   a downturn; take-or-pay enforcement vs hyperscalers is an open question.
 - **Samsung capex overshoot:** market already punishing expansion signals
-  (−7% on a record quarter). [63]
+  (−7% on a record quarter). [60]
 - **China at the low end:** CXMT + YMTC undercut commodity DRAM/NAND from
-  below, compressing the cushion the big-3 fall back on in a bust. [49][53]
+  below, compressing the cushion the big-3 fall back on in a bust. [48][52]
 - **Geographic concentration:** the world's working memory is overwhelmingly
   fabbed in Korea (Icheon, Cheongju, Pyeongtaek, Hwaseong) — a Taiwan-style
   single-region exposure nobody talks about; plus SK hynix legacy fab exposure
@@ -308,19 +309,18 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 - **Micron just posted an 84.9% gross margin** — guiding to 86% — numbers
   usually reserved for software companies, from a company that sells the most
   commodity product in silicon. Its quarter ($41.5B) beat its entire previous
-  fiscal year. [58]
+  fiscal year. [56]
 - **Samsung earned ~₩1 trillion per day in Q2 2026** (₩89.4T ≈ $59B operating
   profit, up ~19× YoY) — and its stock *fell 7%*, because in memory, record
-  profits are how every crash begins. [63]
+  profits are how every crash begins. [60]
 - **A fixed bit volume produced as HBM consumes roughly 3× the wafer capacity
   of DDR5.** That capacity trade-off raises the opportunity cost of commodity
   DRAM during a constrained cycle. [32][43]
-- **Samsung lost the DRAM crown in Q1 2025 for the first time since 1992** —
-  33 years of dominance ended not by a foreign rival but by its neighbor
-  SK hynix betting earlier on HBM. [7]
-- **Five days ago SK hynix pulled off the largest ADR listing in history**
-  (~$28B+ on Nasdaq, July 10, 2026 — bigger than Alibaba's 2014 debut), to
-  fund more fabs and more EUV. Capex courage, the 2026 edition. [56]
+- **Samsung lost the quarterly DRAM revenue lead in Q1 2025 for the first time
+  since 1992**, then regained it in Q4. SK hynix's earlier HBM bet still left it
+  leading HBM share entering 2026. [7][9][11]
+- **SK hynix's ADRs began trading on Nasdaq on July 10, 2026** after a
+  $26.507B offering. Memory's capex race now has capital-market scale. [54]
 
 ---
 
@@ -372,29 +372,25 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 45. Wikipedia, "2025–present global memory supply shortage" — https://en.wikipedia.org/wiki/2025%E2%80%93present_global_memory_supply_shortage
 46. TrendForce, "Rising Memory Prices Weigh on Consumer Markets; 2026 Smartphone and Notebook Outlook Revised Downward" — https://www.trendforce.com/presscenter/news/20251117-12784.html
 47. TrendForce, "Memory Price Surge to Persist in 1Q26; Smartphone and Notebook Brands Begin Raising Prices and Downgrading Specs" — https://www.trendforce.com/presscenter/news/20251211-12831.html
-48. TrendForce (via press), 2026 memory market $551.6B / DRAM $404.3B forecast — https://www.trendforce.com/presscenter/news/20260122-12893.html
-49. SemiAnalysis, "China's CXMT Is Set to Challenge DRAM Incumbents" — https://newsletter.semianalysis.com/p/chinas-cxmt-is-set-to-challenge-dram
-50. Wccftech, "CXMT's 'Cheap' DDR5 Is a Myth — Prices Match Samsung, SK Hynix & Micron" — https://wccftech.com/cxmt-cheap-ddr5-is-a-myth-memory-vendors-tell-us-prices-match-samsung-sk-hynix-micron/
-51. Tom's Hardware, "Chinese memory brands ditch Samsung and Micron for homegrown CXMT and YMTC silicon" — https://www.tomshardware.com/pc-components/ram/chinese-memory-vendors-snub-industry-giants-in-favor-of-homegrown-ram-chips-samsung-micron-and-sk-hynix-face-a-chinese-supply-chain-revolt
-52. Tom's Hardware, "YMTC quietly begins shipping 5th Gen 3D TLC NAND (294 layers)" — https://www.tomshardware.com/pc-components/ssds/chinese-chipmaker-ships-record-breaking-chips-ymtc-quietly-begins-shipping-5th-gen-3d-tlc-nand
-53. Tom's Hardware, "China's YMTC moves to break free of U.S. sanctions — aims for 15% of NAND by late 2026" — https://www.tomshardware.com/pc-components/ssds/chinas-ymtc-moves-to-break-free-of-u-s-sanctions-by-building-production-line-with-homegrown-tools-aims-to-capture-15-percent-of-nand-market-by-late-2026
-54. SK hynix / PR Newswire, "SK hynix Announces FY25 Financial Results — Record-High" — https://www.prnewswire.com/news-releases/sk-hynix-announces-fy25-financial-results-posts-record-high-results-and-delivers-highest-shareholder-returns-302672384.html
-55. StorageNewsletter, "SK hynix Fiscal 1Q26 Financial Results" — https://www.storagenewsletter.com/2026/04/29/sk-hynix-fiscal-1q26-financial-results/
-56. CNBC, "SK Hynix plans to raise $29 billion via Nasdaq listing as soon as July 10" — https://www.cnbc.com/2026/06/24/sk-hynix-nasdaq-adr-listing-south-korea.html
-57. Micron 8-K, "Results for the Fourth Quarter and Full Year of Fiscal 2025" — https://www.sec.gov/Archives/edgar/data/723125/000072312525000024/a2025q4ex991-pressrelease.htm
-58. Micron IR, "Micron Reports Record Results for the Third Quarter of Fiscal 2026" — https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter
-59. Money Morning / MLQ summaries of Micron FQ3-26 call ($100B strategic capacity agreements) — https://mlq.ai/research/micron-q3-fy2026-earnings-hbm-drives-a-346-revenue-surge-and-a-50b-q4-outlook/
-60. Samsung Newsroom, "Samsung Electronics Announces Fourth Quarter and FY 2025 Results" — https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results
-61. The Elec, "Samsung Posts Record 57.2 Trillion Won Operating Profit in Q1" — https://www.thelec.net/news/articleView.html?idxno=10127
-62. Data Center Dynamics, "Samsung Q1 '26 operating profit exceeds company's FY25 full-year total" — https://www.datacenterdynamics.com/en/news/samsung-electronics-q1-26-operating-profit-exceeds-companys-fy25-full-year-total/
-63. CNBC, "Samsung Electronics shares fall as capex concerns outweigh strong Q2" (Q2-26 prelim, Jul 7, 2026) — https://www.cnbc.com/2026/07/07/samsung-electronics-preliminary-second-quarter-profit-hits-fresh-high.html
-64. Wikipedia, "Intel 1103" — https://en.wikipedia.org/wiki/Intel_1103
-65. TrendForce, "Memory Industry to Maintain Cautious CapEx in 2026" (DRAM capex $53.7B → $61.3B) — https://www.trendforce.com/presscenter/news/20251113-12780.html
-66. SK hynix, "SK hynix Begins Volume Production of Industry's First HBM3E" (fifth generation, 1.18 TB/s, production) — https://news.skhynix.com/sk-hynix-begins-volume-production-of-industry-first-hbm3e/
-67. Micron, "HBM3E" and product brief (24/36 GB, eight/twelve-high, 1,024 I/O pins, >9.2 Gb/s, >1.2 TB/s) — https://www.micron.com/products/memory/hbm/hbm3e
-68. Samsung Semiconductor, "HBM" (24/36 GB, eight/twelve-high, up to 9.2 Gb/s and 1.18 TB/s) — https://semiconductor.samsung.com/dram/hbm/
-69. NVIDIA, "Inside NVIDIA Blackwell Ultra" (288 GB HBM3E, 8 TB/s, eight 12-high stacks) — https://developer.nvidia.com/blog/inside-nvidia-blackwell-ultra-the-chip-powering-the-ai-factory-era/
-70. NVIDIA, GTC Taipei 2026 session (Micron, SK hynix, and Samsung named as Rubin HBM4 sources) — https://www.nvidia.com/en-us/on-demand/session/gtctaipei26-stw61044/
-71. TSMC, "CoWoS" (CoWoS-S silicon interposer, CoWoS-R RDL interposer, and CoWoS-L RDL with local silicon interconnect) — https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm
-72. Micron, "High Bandwidth Memory: The Need for a Memory Revolution" (HBM3E consumes about three times the wafer supply of D5 for a given bit volume at the same node), June 2024 — https://investors.micron.com/static-files/a531c7f0-fca2-48f3-8f24-79c945aaa2d2
-73. TrendForce, "Rapid Contract Price Surge Drives 1Q26 DRAM Industry Up 81% QoQ" (supplier DRAM revenue and shares) — https://www.trendforce.com/presscenter/news/20260601-13070.html
+48. SemiAnalysis, "China's CXMT Is Set to Challenge DRAM Incumbents" — https://newsletter.semianalysis.com/p/chinas-cxmt-is-set-to-challenge-dram
+49. Wccftech, "CXMT's 'Cheap' DDR5 Is a Myth — Prices Match Samsung, SK Hynix & Micron" — https://wccftech.com/cxmt-cheap-ddr5-is-a-myth-memory-vendors-tell-us-prices-match-samsung-sk-hynix-micron/
+50. Tom's Hardware, "Chinese memory brands ditch Samsung and Micron for homegrown CXMT and YMTC silicon" — https://www.tomshardware.com/pc-components/ram/chinese-memory-vendors-snub-industry-giants-in-favor-of-homegrown-ram-chips-samsung-micron-and-sk-hynix-face-a-chinese-supply-chain-revolt
+51. Tom's Hardware, "YMTC quietly begins shipping 5th Gen 3D TLC NAND (294 layers)" — https://www.tomshardware.com/pc-components/ssds/chinese-chipmaker-ships-record-breaking-chips-ymtc-quietly-begins-shipping-5th-gen-3d-tlc-nand
+52. Tom's Hardware, "China's YMTC moves to break free of U.S. sanctions — aims for 15% of NAND by late 2026" — https://www.tomshardware.com/pc-components/ssds/chinas-ymtc-moves-to-break-free-of-u-s-sanctions-by-building-production-line-with-homegrown-tools-aims-to-capture-15-percent-of-nand-market-by-late-2026
+53. SK hynix / PR Newswire, "SK hynix Announces FY25 Financial Results — Record-High" — https://www.prnewswire.com/news-releases/sk-hynix-announces-fy25-financial-results-posts-record-high-results-and-delivers-highest-shareholder-returns-302672384.html
+54. SK hynix Form 6-K (15 Jul 2026; $26.5071B ADR offering amount and July closing) — https://www.sec.gov/Archives/edgar/data/2120882/000119312526303972/d143606d6k.htm
+55. Micron 8-K, "Results for the Fourth Quarter and Full Year of Fiscal 2025" — https://www.sec.gov/Archives/edgar/data/723125/000072312525000024/a2025q4ex991-pressrelease.htm
+56. Micron IR, "Micron Reports Record Results for the Third Quarter of Fiscal 2026" — https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter
+57. Samsung Newsroom, "Samsung Electronics Announces Fourth Quarter and FY 2025 Results" — https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results
+58. The Elec, "Samsung Posts Record 57.2 Trillion Won Operating Profit in Q1" — https://www.thelec.net/news/articleView.html?idxno=10127
+59. Data Center Dynamics, "Samsung Q1 '26 operating profit exceeds company's FY25 full-year total" — https://www.datacenterdynamics.com/en/news/samsung-electronics-q1-26-operating-profit-exceeds-companys-fy25-full-year-total/
+60. CNBC, "Samsung Electronics shares fall as capex concerns outweigh strong Q2" (Q2-26 prelim, Jul 7, 2026) — https://www.cnbc.com/2026/07/07/samsung-electronics-preliminary-second-quarter-profit-hits-fresh-high.html
+61. Wikipedia, "Intel 1103" — https://en.wikipedia.org/wiki/Intel_1103
+62. TrendForce, "Memory Industry to Maintain Cautious CapEx in 2026" (DRAM capex $53.7B → $61.3B) — https://www.trendforce.com/presscenter/news/20251113-12780.html
+63. SK hynix, "SK hynix Begins Volume Production of Industry's First HBM3E" (fifth generation, 1.18 TB/s, production) — https://news.skhynix.com/sk-hynix-begins-volume-production-of-industry-first-hbm3e/
+64. Micron, "HBM3E" and product brief (24/36 GB, eight/twelve-high, 1,024 I/O pins, >9.2 Gb/s, >1.2 TB/s) — https://www.micron.com/products/memory/hbm/hbm3e
+65. Samsung Semiconductor, "HBM" (24/36 GB, eight/twelve-high, up to 9.2 Gb/s and 1.18 TB/s) — https://semiconductor.samsung.com/dram/hbm/
+66. NVIDIA, "Inside NVIDIA Blackwell Ultra" (288 GB HBM3E, 8 TB/s, eight 12-high stacks) — https://developer.nvidia.com/blog/inside-nvidia-blackwell-ultra-the-chip-powering-the-ai-factory-era/
+67. NVIDIA, GTC Taipei 2026 session (Micron, SK hynix, and Samsung named as Rubin HBM4 sources) — https://www.nvidia.com/en-us/on-demand/session/gtctaipei26-stw61044/
+68. TSMC, "CoWoS" (CoWoS-S silicon interposer, CoWoS-R RDL interposer, and CoWoS-L RDL with local silicon interconnect) — https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm
+69. Micron, "High Bandwidth Memory: The Need for a Memory Revolution" (HBM3E consumes about three times the wafer supply of D5 for a given bit volume at the same node), June 2024 — https://investors.micron.com/static-files/a531c7f0-fca2-48f3-8f24-79c945aaa2d2

@@ -58,26 +58,31 @@ Arm licenses CPU designs and architecture. Most contracts include an upfront fee
 
 ---
 
-# Two Arm license models
+# Arm now spans IP, subsystems, and silicon
 
-<div class="grid grid-cols-2 gap-8 mt-8">
+<div class="grid grid-cols-3 gap-5 mt-8">
 <div class="border-2 border-gray-400 rounded-lg p-5">
-<div class="text-2xl font-bold">Core license</div>
-<div class="opacity-70 mt-3 leading-relaxed">License a finished Cortex or Neoverse CPU design for integration into a chip.</div>
+<div class="text-2xl font-bold">Core / architecture IP</div>
+<div class="opacity-70 mt-3 leading-relaxed">License a finished CPU core, or the instruction set for a custom compatible core.</div>
 </div>
 <div class="border-2 border-gray-400 rounded-lg p-5">
-<div class="text-2xl font-bold">Architecture license</div>
-<div class="opacity-70 mt-3 leading-relaxed">License the instruction set and design a custom Arm-compatible CPU. Apple, Qualcomm, Nvidia, and a small group of others use this model.</div>
+<div class="text-2xl font-bold">Compute Subsystem</div>
+<div class="opacity-70 mt-3 leading-relaxed">Adopt a more complete, integrated platform instead of assembling every block from IP.</div>
+</div>
+<div class="border-2 border-amber-500 rounded-lg p-5">
+<div class="text-2xl font-bold">Arm silicon</div>
+<div class="opacity-70 mt-3 leading-relaxed">Deploy Arm's AGI data-center CPU, its first production silicon product, announced in March 2026.</div>
 </div>
 </div>
 
 <div class="text-sm opacity-60 mt-8 text-center">
-Arm sued over whether Nuvia's architecture license transferred to Qualcomm. In 2024, the jury found Qualcomm had not breached its own license but deadlocked on Nuvia; a 2025 judgment found no Nuvia breach.
+More integration can raise Arm's value per system, but selling silicon also puts it closer to its licensees.
 </div>
 
 <!--
-- A core license supplies a finished Cortex or Neoverse CPU; an architecture license lets companies such as Apple and Qualcomm create compatible cores.
-- The Qualcomm-Nuvia dispute showed that control over those license terms can affect acquisitions and product plans.
+- Arm still licenses finished cores and architecture rights, but CSS bundles more of the system into a near-complete platform.
+- In March 2026 Arm added its own AGI data-center CPU, the first production silicon product in company history.
+- That expands customer choice while creating potential channel conflict with companies that license Arm technology to build competing CPUs.
 -->
 
 ---
@@ -133,25 +138,25 @@ RISC-V International moved from the United States to Switzerland in 2019, citing
 
 ---
 
-# Arm remains dominant in smartphones
+# Arm's model is expanding
 
 <div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
   <div class="grid grid-cols-5 gap-4 text-center">
-    <div><div class="text-3xl font-bold">$4.9 B</div><div class="text-sm opacity-60">revenue FY26 (ended Mar '26)</div></div>
-    <div><div class="text-3xl font-bold">350B+</div><div class="text-sm opacity-60">chips shipped cumulatively</div></div>
-    <div><div class="text-3xl font-bold">&gt;99%</div><div class="text-sm opacity-60">of smartphones</div></div>
-<div><div class="text-xl font-bold leading-tight mt-2">mature mobile software ecosystem</div></div>
-    <div><div class="text-xl font-bold leading-tight mt-2">ecosystem</div><div class="text-sm opacity-60">must be rebuilt</div></div>
+    <div><div class="text-3xl font-bold">$4.92B</div><div class="text-sm opacity-60">revenue FY26 (ended Mar '26)</div></div>
+    <div><div class="text-3xl font-bold">$1.29B</div><div class="text-sm opacity-60">revenue Q1 FY27</div></div>
+    <div><div class="text-3xl font-bold">&gt;$2B</div><div class="text-sm opacity-60">reported AGI CPU demand, FY27–28</div></div>
+    <div><div class="text-xs opacity-50 tracking-widest">ARM MOAT</div><div class="text-xl font-bold leading-tight mt-2">mature mobile software ecosystem</div></div>
+    <div><div class="text-xs opacity-50 tracking-widest">RISC-V TRADEOFF</div><div class="text-xl font-bold leading-tight mt-2">open ISA; ecosystem varies by market</div></div>
   </div>
-  <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
+  <div class="text-xs opacity-40 text-right mt-2">as of July 29, 2026</div>
 </div>
 
 <div class="text-sm opacity-60 mt-8 text-center">
-RISC-V is an open standard, so adoption is measured through compatible cores and products rather than company revenue.
+Customers can now adopt Arm through IP, CSS, or Arm-designed silicon; RISC-V remains strongest in embedded and control roles.
 </div>
 
 <!--
-- Arm reported $4.9 billion in FY2026 revenue and remains in more than 99 percent of smartphones.
-- Its installed software base and 350 billion shipped chips make substitution an ecosystem migration, not a forecastable countdown.
+- Arm reported $1.29 billion of Q1 FY2027 revenue, up 22 percent year over year.
+- Arm said AGI CPU demand exceeded $2 billion across FY2027 and FY2028, with initial products delivered to multiple customers.
 - RISC-V offers an open alternative, but its commercial adoption remains concentrated in embedded and control applications.
 -->

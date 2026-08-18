@@ -1,5 +1,5 @@
 # Research — Semiconductor IP: Arm & RISC-V
-As-of: 2026-07
+As-of: 2026-08-18
 
 Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 `<!-- VERIFY -->` = not fully confident, check before recording.
@@ -9,8 +9,9 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   fixed list of instructions (add, load, branch, …) software is compiled into.
   Any CPU that implements the vocabulary runs the software; the ISA is the
   contract between hardware and every program ever written for it.
-- Arm doesn't make chips. It sells **blueprints**: you don't buy a chip from Arm,
-  you buy the right to *design or use* one. Two tiers:
+- Arm historically sold **blueprints** rather than chips: customers bought the
+  right to design or use Arm technology. Since March 2026, Arm also offers its
+  own AGI CPU production silicon. The licensing base still has two tiers:
   - **Core license** (a.k.a. TLA / IP license): you buy a finished, verified CPU
     design (Cortex-A/M/R, Neoverse) and drop it into your chip. Most licensees. [4]
   - **Architecture license** (ALA): you buy the right to the *vocabulary only* and
@@ -33,6 +34,8 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   **$2.307B** (+25%) — roughly a 53/47 royalty/licensing split. Q4 alone: $1.49B.
   Third straight fiscal year of 20%+ growth since IPO. [1][2]
 - **FY2025**: revenue **$4.007B** — Arm's first $4B year (licensing $1.84B). [3]
+- **Q1 FY2027** (quarter ended June 30, 2026): revenue **$1.29B**, +22% YoY;
+  royalty revenue $715M and licensing revenue $574M, both up more than 20%. [37]
 - **>99% of the world's smartphones** sold contain Arm CPUs (Arm's own annual
   report). [3]
 - Cumulative Arm-based chips shipped: **>350 billion** — ~40+ chips for every
@@ -76,14 +79,15 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 - IDC: Arm-based servers = **>45% of data-center server *revenue*** in Q1 2026 —
   caveat: revenue-weighted, inflated by Grace CPUs riding inside million-dollar
   NVL AI racks; x86 still ships more standalone server CPUs. [14]
-- **>1 billion Neoverse cores** deployed across datacenter CPUs/DPUs. [18]
+- **>1.5 billion Neoverse cores** shipped; the most recent 500 million shipped
+  in the nine months through June 2026. [37]
 - Arm data-center **royalty more than doubled YoY** in FY26. [1]
 - **The rubicon — Arm now sells chips (2026)**: on 24 Mar 2026 Arm announced the
   **Arm AGI CPU** — the first Arm-*designed production silicon* in its 35-year
   history. Up to **136 Neoverse V3 cores**, TSMC **3nm**, chiplet-based, 300W,
-  aimed at AI-inference/agentic workloads. Lead customer **Meta**; OpenAI,
-  Cerebras, Cloudflare, SAP, SK Telecom signed on; broad availability H2 2026;
-  Arm cites **>$2B customer demand** across FY27–28. [1][15][16][17]
+  aimed at AI-inference/agentic workloads. Lead customer **Meta**; Arm said in
+  July that initial product had reached multiple customers and reported
+  **>$2B of demand** across FY27–28. [15][16][17][37]
   - The tension: Arm now **competes with its own licensees** (Ampere, Graviton,
     Grace…) — the channel-conflict story writes itself. [16][17]
 - **Ampere Computing**: acquired not by Arm but by parent **SoftBank** — $6.5B
@@ -245,3 +249,4 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 34. Omdia, "RISC-V adoption will be accelerated by AI" (17B chips / ~25% share by 2030) — https://omdia.tech.informa.com/pr/2024/may/risc-v-adoption-will-be-accelerated-by-ai-according-to-new-omdia-research
 35. The SHD Group, "RISC-V Market Report: Application Forecasts in a Heterogeneous World" — https://theshdgroup.com/wp-content/uploads/2024/01/RISC-V-Market-Analysis-2024-Abridged-Report-2.pdf
 36. Tom's Hardware, "RISC-V set to announce 25% market penetration" — https://www.tomshardware.com/tech-industry/semiconductors/risc-v-set-to-announce-25-percent-market-penetration-open-standard-isa-is-ahead-of-schedule-securing-fast-growing-silicon-footprint
+37. Arm Newsroom, "Arm delivers record first-quarter for total revenue" (Q1 FYE27, 29 Jul 2026; financials, Neoverse shipments, and AGI CPU demand) — https://newsroom.arm.com/news/arm-q1-fye27-results
