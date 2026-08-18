@@ -569,3 +569,18 @@
     -webkit-print-color-adjust: exact;
   }
 }
+
+.slidev-layout.full-slide-visual {
+  padding: 0;
+  overflow: hidden;
+}
+
+.slidev-layout.full-slide-visual > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  object-fit: cover;
+  filter: none;
+}

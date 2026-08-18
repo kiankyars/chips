@@ -1,6 +1,6 @@
 # CHIPS — curriculum v2
 
-One course, 109 min nominal after consolidation (target 105–115). The spine: **follow one chip** —
+One course, 110 min nominal after consolidation (target 105–115). The spine: **follow one chip** —
 a 2025–26 Blackwell Ultra/GB300 Nvidia accelerator — from idea to installed rack, with
 a short Rubin bridge to the 2026 frontier. Every player
 is encountered at the moment the chip cannot proceed without them. See `STRATEGY.md`
@@ -16,11 +16,11 @@ Comparable Scoreboard blocks for selected players, with every metric explicitly 
 
 ---
 
-## ACT 0 — THE OBJECT (5 min)
+## ACT 0 — THE OBJECT (6 min)
 
 | id | title | min | tier | covers |
 |---|---|---|---|---|
-| `cold-open` | The Object | 5 | — | One 2025–26 GB300-class accelerator held on screen; zoom into one dual-die Blackwell Ultra GPU; scale from 208B transistors to ~$800B of 2026 hyperscaler capex and the near-$1T 2027 forecast; bridge to Rubin without changing the dependency map; introduce the six-stage production route. Journey Bar introduced. Title card. **Build and record LAST.** |
+| `cold-open` | The Object | 6 | — | One 2025–26 GB300-class accelerator held on screen; zoom into one dual-die Blackwell Ultra GPU; walk one inference request through network ingress, Grace, HBM, shared L2, and an SM while separating the occasional SSD model-load path; scale from 208B transistors to ~$800B of 2026 hyperscaler capex and the near-$1T 2027 forecast; bridge to Rubin without changing the dependency map; introduce the six-stage production route. Journey Bar introduced. Title card. **Build and record LAST.** |
 
 ## ACT I — THE IMPOSSIBLE OBJECT (11 min)
 
@@ -118,7 +118,7 @@ wafers, Advantest test) appear as "honorable mentions" in synthesis.
 
 ## Runtime budget
 
-5 + 11 + 16 + 18 + 24 + 5 + 14 + 16 = **109 min nominal** after the duplicate-content
+6 + 11 + 16 + 18 + 24 + 5 + 14 + 16 = **110 min nominal** after the duplicate-content
 pass. Pressure valves 🔧 (`fabless-field`, `foundries-field`, `materials`, `other-90`)
 can still absorb a few minutes if the recorded delivery runs long.
 

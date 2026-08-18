@@ -133,27 +133,50 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   75–85% by end-2026 as TPUs/ASICs ramp — falling share of an exploding pie. [5]
 
 ## The tech — CPU vs GPU (the teachable)
-- **CPU**: dozens to hundreds of independently scheduled cores built to do *one
-  thing after another* as fast as possible — a latency machine. Great at
-  branching logic: run the OS, parse a spreadsheet.
-- **GPU**: B300 groups thousands of arithmetic lanes into **160 streaming
-  multiprocessors** and adds **640 Tensor Cores** for matrix operations. The
-  hardware schedules groups of threads across those lanes for throughput; a
-  marketed "CUDA core" is not comparable to an independently scheduled CPU
-  core. [7]
-- Analogy that lands: a CPU is a small team of generalists optimized to finish
-  one complicated task quickly; a GPU is a large set of coordinated crews
-  applying the same operations across many data elements.
-- Why that equals AI: a neural network is essentially **stacked matrix
-  multiplications** (every layer = multiply a grid of numbers by a grid of
-  weights). Matrix math decomposes into millions of independent multiply-adds —
-  perfectly parallel. Graphics was matrix math on pixels; AI is matrix math on
-  everything. The gaming chip was accidentally the AI chip.
-- Since 2017 Nvidia also packs dedicated **Tensor Cores** (matrix-multiply
-  units) — the honest version is that modern Nvidia DC chips are matrix engines
-  with a GPU heritage, not graphics cards.
-- Direction-of-the-lie hedge: CPU-core and CUDA-core counts are different units;
-  compare workload throughput, not the marketed counts.
+- **CPU core**: a complete, independently controlled processor optimized for
+  low-latency and irregular work, with substantial cache, branch prediction,
+  and out-of-order machinery. CPUs are also parallel and vectorized; "CPU =
+  serial" is not an honest distinction.
+- **GPU hierarchy**: Blackwell Ultra is one CUDA-programmed GPU built from two
+  reticle-sized dies joined by NV-HBI. It contains up to **160 physical
+  streaming multiprocessors** in total, with the enabled count varying by SKU.
+  Each SM contains **128 CUDA arithmetic lanes** and **four fifth-generation
+  Tensor Cores**: 20,480 lanes and 640 Tensor Cores across the GPU. These are
+  nested hardware units, not virtualized or CPU-equivalent core counts. [7]
+- **SIMT execution**: CUDA organizes threads into 32-thread warps. A warp
+  advances through a common instruction stream across different data values,
+  amortizing instruction and control work across many lanes. Divergent branches
+  reduce utilization, so GPUs do not accelerate arbitrary code equally. [54]
+- **Why that fits AI**: large neural-network matrix multiplications divide into
+  many output tiles that can be computed concurrently. The work is highly
+  data-parallel, though reductions, data movement, dependencies between layers,
+  and communication still constrain realized throughput.
+- **Tensor Cores** operate directly on small matrix tiles, performing matrix
+  multiply-accumulate in one instruction. Modern Nvidia data-center GPUs are
+  specialized matrix-throughput engines with GPU heritage, not merely graphics
+  cards. [7]
+- **Memory is the feed system**: up to 8 TB/s of HBM3E bandwidth and on-chip
+  data reuse help keep the wide execution engine occupied; they enable the
+  throughput but are not the source of the workload's parallelism. [7]
+
+## One inference request — load path versus hot path
+- **Model load is not the request path.** During service startup, model weights
+  are loaded from checkpoint files into GPU memory; the same GPU-memory budget
+  also holds activations, KV cache, communication buffers, and runtime state.
+  GB300 compute trays include local NVMe devices used as OS storage and fast
+  cache, but an ordinary request does not traverse that SSD. [55][56]
+- **Teaching-path request flow:** client/network → NIC or DPU → Grace host
+  runtime and LPDDR5X → NVLink-C2C → GPU HBM. The runtime tokenizes, queues,
+  batches, and launches work; exact data movement can vary, including
+  GPUDirect paths that avoid a CPU-memory bounce buffer. [55][57]
+- **Inside the GPU:** HBM is CUDA global memory; a larger L2 cache is shared by
+  all SMs, while each SM has its own register file and unified L1/shared-memory
+  cache. GPCs and TPCs organize SMs; they are physical groupings, not serial
+  cache levels. Blackwell Ultra adds 256 KB of TMEM and four Tensor Cores per
+  SM. [7][58]
+- **One answer requires repeated execution.** Prefill processes the input tokens
+  once and populates KV state; decode then generates one token at a time while
+  reading prior keys and values from the GPU-resident KV cache. [59]
 
 ## Supply chain (why Nvidia's supply = everyone's bottleneck)
 - **TSMC, logic**: Blackwell on custom **4NP** (5nm-class); Rubin moves to
@@ -331,3 +354,9 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 51. NVIDIA, GTC Taipei 2026 session (Micron, SK hynix, and Samsung named as Rubin HBM4 sources) — https://www.nvidia.com/en-us/on-demand/session/gtctaipei26-stw61044/
 52. NVIDIA, "Vera Rubin Ramps Into Full Production" (2026-05-31; shipments scheduled for fall 2026; Grace Blackwell described as previous generation) — https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Vera-Rubin-Ramps-Into-Full-Production-to-Power-Agentic-AI-Factories-Worldwide/default.aspx
 53. NVIDIA Technical Blog, "Inside NVIDIA Rubin GPU Architecture" (2026-07; 336B transistors, TSMC 3nm, 288 GB HBM4, 22 TB/s) — https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/
+54. NVIDIA CUDA Programming Guide, "Advanced Kernel Programming — SIMT Execution Model" (accessed 2026-08-18; 32-thread warps, common instruction execution, and branch divergence) — https://docs.nvidia.com/cuda/cuda-programming-guide/03-advanced/advanced-kernel-programming.html
+55. NVIDIA, "NVL72 AI Factory — System Hardware & Components" (GB300 tray: Grace, ConnectX-8, BlueField-3, M.2 NVMe, E1.S NVMe cache) — https://docs.nvidia.com/enterprise-reference-architectures/nvl72-ai-factory/latest/components.html
+56. NVIDIA NIM for LLMs, "Troubleshooting GPU Memory Out-of-Memory Errors" (startup weight loading; weights, activations, KV cache, and runtime allocations in GPU memory) — https://docs.nvidia.com/nim/large-language-models/latest/troubleshooting/memory.html
+57. NVIDIA, "GPUDirect Storage Design Guide" (ordinary CPU bounce buffer versus direct DMA path into GPU memory) — https://docs.nvidia.com/gpudirect-storage/design-guide/index.html
+58. NVIDIA CUDA Programming Guide, "Programming Model" (GPC/SM hierarchy; GPU global memory; shared L2; per-SM registers and L1/shared memory) — https://docs.nvidia.com/cuda/cuda-programming-guide/01-introduction/programming-model.html
+59. NVIDIA Technical Blog, "Mastering LLM Techniques: Inference Optimization" (prefill, autoregressive decode, and GPU-resident KV cache) — https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/

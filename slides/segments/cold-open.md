@@ -9,12 +9,12 @@ id: cold-open
 act: 0 — The Object
 tier: —
 angle: "Use one 2025–26 GB300-class accelerator as the stable tracer case, then bridge once to the Rubin frontier."
-runtime: ~5 min
+runtime: ~6 min
 status: draft
 seeds: [the-object]
 pays_off: []
 stamps: []
-diagrams: [journey-0]
+diagrams: [inference-forward-pass, journey-0]
 sources: research/nvidia.md, research/foundations.md
 note: BUILD AND RECORD LAST — this opening establishes the object, its scale, and the course route.
 -->
@@ -52,6 +52,19 @@ title: "Inside one Blackwell Ultra GPU"
 - The board on the previous slide carries two of these GPUs; this diagram zooms into one Blackwell Ultra GPU, not the full GB300 superchip.
 - Two reticle-sized dies connect at 10 TB/s through NV-HBI and appear to CUDA as one GPU with up to 160 streaming multiprocessors and 640 Tensor Cores.
 - The edge interfaces cross scales: HBM feeds the package, NVLink reaches the rack fabric, NVLink-C2C reaches Grace, and PCIe reaches a host.
+-->
+
+---
+class: full-slide-visual
+title: "One inference forward pass"
+---
+
+<img src="/diagrams/rendered/inference-forward-pass.png" alt="A two-lane schematic separates the occasional model-load path through remote storage, local NVMe, Grace memory, and HBM from the per-request path through networking, the Grace CPU, HBM, shared L2, and a streaming multiprocessor inside the GPU compute hierarchy" />
+
+<!--
+- SSD is for model loading, not every request: checkpoints may be cached locally, staged through Grace memory, then kept resident in HBM.
+- Each request enters through networking; Grace tokenizes, batches, and launches work against resident HBM weights and KV cache.
+- Shared L2 feeds SM-local memory and Tensor Cores; GPCs and TPCs are containers. Decode repeats the pass per generated token.
 -->
 
 ---
