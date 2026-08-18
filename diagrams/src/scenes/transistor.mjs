@@ -48,7 +48,7 @@ function baseLayers() {
   return `<rect width="${W}" height="${H}" fill="${C.bg}"/>
 <rect width="${W}" height="${H}" fill="url(#spot)"/>
 <rect width="${W}" height="${H}" fill="url(#grid)"/>
-<text x="960" y="104" text-anchor="middle" fill="${C.muted}" font-size="25" font-weight="650" letter-spacing="5">CROSS-SECTION BENEATH THE GATE</text>
+  <text x="960" y="104" text-anchor="middle" fill="${C.muted}" font-size="25" font-weight="650" letter-spacing="5">TRANSVERSE CHANNEL CROSS-SECTION · CURRENT INTO PAGE</text>
 <path d="M 380 906 H 1540" stroke="#526078" stroke-width="2" opacity="0.6"/>
 <rect x="380" y="650" width="1160" height="256" rx="8" fill="url(#substrate)" stroke="#526078" stroke-width="3"/>
 <path d="M 410 680 H 1510" stroke="#94a3b8" stroke-width="2" opacity="0.17"/>`
@@ -63,7 +63,7 @@ function callout(label, x, y, x2, y2, color) {
 function commonCallouts(gateTarget, channelTarget) {
   return `${callout('GATE', 1580, 332, gateTarget[0], gateTarget[1], C.gate)}
 ${callout('CHANNEL', 1580, 518, channelTarget[0], channelTarget[1], C.silicon)}
-${callout('SILICON', 1580, 790, 1480, 790, C.muted)}`
+${callout('SILICON SUBSTRATE', 1580, 790, 1480, 790, C.muted)}`
 }
 
 function planar() {
@@ -92,7 +92,7 @@ function nanosheet(y) {
 
 function gaa() {
   return `${baseLayers()}
-<rect x="620" y="200" width="680" height="500" rx="34" fill="url(#gate)" stroke="${C.gate}" stroke-width="4"/>
+<rect x="620" y="200" width="680" height="450" rx="34" fill="url(#gate)" stroke="${C.gate}" stroke-width="4"/>
 ${nanosheet(284)}
 ${nanosheet(424)}
 ${nanosheet(564)}
@@ -100,27 +100,27 @@ ${nanosheet(564)}
 ${commonCallouts([1298, 332], [1130, 462])}`
 }
 
-function svg(body) {
+function svg(title, description, body) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-<title id="title">Transistor gate geometry</title>
-<desc id="desc">A fixed cross-section shows how the gate controls a planar channel, a vertical fin, or stacked nanosheets.</desc>
+<title id="title">${title}</title>
+<desc id="desc">${description}</desc>
 ${sceneDefs()}
 ${body}
 </svg>\n`
 }
 
 const SCENES = [
-  ['transistor-planar.svg', planar],
-  ['transistor-finfet.svg', finfet],
-  ['transistor-gaa.svg', gaa],
+  ['transistor-planar.svg', 'Planar transistor gate geometry', 'Simplified transverse cross-section through a planar transistor gate. The gate controls one channel surface, and current runs into the page.', planar],
+  ['transistor-finfet.svg', 'FinFET transistor gate geometry', 'Simplified transverse cross-section through a FinFET gate. The gate controls the top and both sidewalls of the silicon fin, and current runs into the page.', finfet],
+  ['transistor-gaa.svg', 'Nanosheet gate-all-around transistor geometry', 'Simplified transverse cross-section through a nanosheet gate-all-around transistor. The gate surrounds three stacked horizontal channels, and current runs into the page.', gaa],
 ]
 
 export function generateTransistorScenes(outDir) {
   mkdirSync(outDir, { recursive: true })
   const written = []
-  for (const [name, render] of SCENES) {
+  for (const [name, title, description, render] of SCENES) {
     const path = join(outDir, name)
-    writeFileSync(path, svg(render()))
+    writeFileSync(path, svg(title, description, render()))
     written.push(path)
   }
   return written

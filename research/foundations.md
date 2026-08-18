@@ -21,16 +21,27 @@ Feeds: cold open, foundations, great-unbundling, life-of-a-wafer segments.
   be on); in parallel → OR-like (any one suffices); CMOS pairs an n-type and
   p-type transistor so one always blocks — near-zero current except when
   switching. NAND gate = 4 transistors; every computer is just billions of these.
+- **Logic-die structure**: digital logic is assembled from optimized standard-cell
+  libraries, embedded SRAM, and custom datapaths, then placed and routed against
+  timing, power, and area constraints. Standard-cell libraries deliberately offer
+  high-speed, high-density, and low-power tradeoffs. [52]
+- **DRAM-die structure**: each storage cell pairs one access transistor with one
+  capacitor; dense arrays share wordlines, bitlines, sense amplifiers, and refresh
+  circuitry. The useful distinction is the dominant structure and optimization,
+  not "logic has no memory": GPU logic dies contain substantial SRAM. [53]
 - **Transistor-count ladder** (the course's zoom-out shot):
   - Intel **4004** (1971): **2,300** transistors, 10 µm process, first commercial
     microprocessor. [1]
+  - Federico Faggin laid out the 4004 by hand using a straightedge and colored
+    pencils; MCS-4 mask patterns were then transferred to Rubylith and cut by
+    hand. [54][55]
   - Intel Pentium (1993): **3.1M**. <!-- VERIFY: 3.1M widely cited, confirm against Intel museum page -->
   - Apple A17 Pro (2023): **~19B** (first 3nm phone chip). <!-- VERIFY: Apple keynote figure -->
   - Nvidia **H100** (2022): **80B**, TSMC 4N, ~814 mm². [2]
   - Nvidia **Blackwell B200** (2024): **208B** across two reticle-limit dies
     fused with a 10 TB/s die-to-die link. [3]
-  - Nvidia **Rubin** (unveiled GTC 2026, shipping late 2026): reported **336B**
-    across two dies on TSMC 3nm-class. [4] <!-- VERIFY: 336B is from early GTC-2026 coverage; confirm against Nvidia's official spec sheet before recording -->
+  - Nvidia **Rubin** (architecture detailed July 2026): **336B** across two
+    reticle-limited compute dies. [4]
   - Cerebras **WSE-3** (2024): **4 trillion** — one chip the size of an entire
     wafer (46,225 mm², 900,000 cores), ~50× an H100. [5]
   - 4004 → Rubin: ~**146-million-×** more transistors in 55 years. (computed)
@@ -64,8 +75,8 @@ Feeds: cold open, foundations, great-unbundling, life-of-a-wafer segments.
 
 ## What a node really is
 
-- **"3nm" and "2nm" are product names, not measurements.** No feature on a
-  "3nm" chip measures 3 nm.
+- **"3nm" and "2nm" are process-family names, not measurements.** The label
+  does not specify any single physical feature with that dimension.
 - Actual dimensions at TSMC N3: **contacted gate pitch ~45 nm** (tightest ever
   reported by a foundry at intro), **minimum metal pitch ~23 nm**. [9][10]
 - For scale: a silicon lattice constant is 0.543 nm — the "3nm" node's smallest
@@ -259,11 +270,13 @@ Feeds: cold open, foundations, great-unbundling, life-of-a-wafer segments.
   — **~8 trillion per second**, ~25× the stars in the Milky Way *every second*;
   estimates now exceed ~20 trillion/second. [44]
   <!-- VERIFY: the >20T/sec updated figure — weaker sourcing than the 2014 IEEE number -->
-- **AI capex backdrop**: big-five hyperscalers (Amazon, Microsoft, Google, Meta,
-  Oracle) 2026 capex forecast **>$600B, +~36% YoY**; post-Q1-2026-earnings
-  estimates run **~$690–725B**. Treat those totals as infrastructure-demand
-  context, not as chip TAM: the companies do not report a comparable
-  semiconductor split. [45][46]
+- **AI capex backdrop**: Moody's estimates capital investment by six major US
+  hyperscalers (Microsoft, AWS, Alphabet, Meta, Oracle, and CoreWeave) could
+  approach **$785B in 2026**, with annual spending forecast to near **$1T in
+  2027**. AWS-only capex is estimated because Amazon does not disclose it
+  separately. Treat these totals as infrastructure-demand context, not as chip
+  TAM: they include buildings, power, networking, servers, and other equipment.
+  [51]
 
 ## Wafer prices
 
@@ -307,8 +320,8 @@ Feeds: cold open, foundations, great-unbundling, life-of-a-wafer segments.
 1. Intel, "The Story of the Intel 4004" — https://www.intel.com/content/www/us/en/history/museum-story-of-intel-4004.html
 2. Nvidia, H100 Tensor Core GPU (80B transistors, TSMC 4N) — https://www.nvidia.com/en-us/data-center/h100/
 3. Nvidia newsroom, Blackwell platform launch (208B transistors) — https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing
-4. Tech-Insider, "NVIDIA Rubin GPU: 336B transistors" (GTC 2026 coverage) — https://tech-insider.org/nvidia-gtc-2026-rubin-gpu-analysis/
-5. Tom's Hardware, Cerebras WSE-3 launch (4T transistors, 46,225 mm²) — https://www.tomshardware.com/tech-industry/artificial-intelligence/cerebras-launches-900000-core-125-petaflops-wafer-scale-processor-for-ai-theoretically-equivalent-to-about-62-nvidia-h100-gpus
+4. Nvidia Technical Blog, "Inside NVIDIA Rubin GPU Architecture" (336B transistors across two reticle-limited compute dies) — https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/
+5. Cerebras, WSE-3 product page (4T transistors, 46,225 mm²) — https://www.cerebras.ai/chip
 6. Rapidus, "What Are the Raw Materials of Semiconductors?" (11N standard) — https://www.rapidus.inc/en/tech/te0015/
 7. Bernreuter Research, "A silicon purity of 12N only exists in the world of marketers" — https://www.bernreuter.com/newsroom/polysilicon-news/article/a-silicon-purity-of-12n-only-exists-in-the-world-of-marketers/
 8. Wikipedia, Monocrystalline silicon (CZ process, ingot dimensions, wafer thickness) — https://en.wikipedia.org/wiki/Monocrystalline_silicon
@@ -354,3 +367,8 @@ Feeds: cold open, foundations, great-unbundling, life-of-a-wafer segments.
 48. Tom's Hardware, "TSMC's 2nm process will reportedly get another price hike — $30,000 per wafer" — https://www.tomshardware.com/tech-industry/tsmcs-2nm-will-reportedly-receive-a-price-hike-once-again-usd30-000-per-wafer
 49. Tom's Hardware, "TSMC could charge up to $45,000 for 1.6nm wafers" — https://www.tomshardware.com/tech-industry/semiconductors/tsmc-could-charge-up-to-usd45-000-for-1-6nm-wafers-rumors-allege-a-50-percent-increase-in-pricing-over-prior-gen-wafers
 50. Silicon Analysts, "Wafer Pricing by Process Node (2026)" ($3,000 at 28nm to $20,000+ at 3nm) — https://siliconanalysts.com/data/wafer-pricing
+51. Moody's, "Power without delivery" (2026-07-31; ~$785B 2026 capex across six major US hyperscalers and a near-$1T 2027 forecast) — https://www.moodys.com/web/en/us/insights/credit-risk/private-credit/power-without-delivery.html
+52. Synopsys, "Logic Library IP" (standard-cell architectures and performance, power, area tradeoffs) — https://www.synopsys.com/designware-ip/memories-logic-libraries/standard-cell.html
+53. Micron, "Introduction to Memory" (DRAM cell construction and operation) — https://www.micron.com/educatorhub/courses/intro-to-memory
+54. Computer History Museum, "Oral History Panel of the Intel 4004 Microprocessor" (Federico Faggin on hand-drawn layouts and hand-cut Rubylith masks) — https://archive.computerhistory.org/resources/text/Oral_History/Intel_4004_2/102658187.05.01.acc.pdf
+55. IEEE Spectrum, "AI Alone Isn't Ready for Chip Design" (the Intel 4004 layout was completed with a straightedge and colored pencils) — https://spectrum.ieee.org/chip-design-ai

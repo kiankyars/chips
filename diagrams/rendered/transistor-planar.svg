@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-<title id="title">Transistor gate geometry</title>
-<desc id="desc">A fixed cross-section shows how the gate controls a planar channel, a vertical fin, or stacked nanosheets.</desc>
+<title id="title">Planar transistor gate geometry</title>
+<desc id="desc">Simplified transverse cross-section through a planar transistor gate. The gate controls one channel surface, and current runs into the page.</desc>
 <defs>
   <radialGradient id="spot" cx="50%" cy="48%" r="56%">
     <stop offset="0%" stop-color="#17284a" stop-opacity="0.72"/>
@@ -26,7 +26,7 @@
 <rect width="1920" height="1080" fill="#080c14"/>
 <rect width="1920" height="1080" fill="url(#spot)"/>
 <rect width="1920" height="1080" fill="url(#grid)"/>
-<text x="960" y="104" text-anchor="middle" fill="#a8b3c7" font-size="25" font-weight="650" letter-spacing="5">CROSS-SECTION BENEATH THE GATE</text>
+  <text x="960" y="104" text-anchor="middle" fill="#a8b3c7" font-size="25" font-weight="650" letter-spacing="5">TRANSVERSE CHANNEL CROSS-SECTION · CURRENT INTO PAGE</text>
 <path d="M 380 906 H 1540" stroke="#526078" stroke-width="2" opacity="0.6"/>
 <rect x="380" y="650" width="1160" height="256" rx="8" fill="url(#substrate)" stroke="#526078" stroke-width="3"/>
 <path d="M 410 680 H 1510" stroke="#94a3b8" stroke-width="2" opacity="0.17"/>
@@ -42,5 +42,5 @@
 <text x="1580" y="518" text-anchor="start" fill="#fbbf24" font-size="24" font-weight="700" letter-spacing="2">CHANNEL</text>
 <path d="M 1558 782 L 1480 790" fill="none" stroke="#a8b3c7" stroke-width="2.5" opacity="0.82"/>
 <circle cx="1480" cy="790" r="5" fill="#a8b3c7"/>
-<text x="1580" y="790" text-anchor="start" fill="#a8b3c7" font-size="24" font-weight="700" letter-spacing="2">SILICON</text>
+<text x="1580" y="790" text-anchor="start" fill="#a8b3c7" font-size="24" font-weight="700" letter-spacing="2">SILICON SUBSTRATE</text>
 </svg>

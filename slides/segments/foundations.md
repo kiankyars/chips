@@ -30,24 +30,52 @@ sources: research/foundations.md
 -->
 
 ---
-class: visual-sequence paper-visual
-title: "The basic switch"
----
 
-<div class="visual-sequence__kicker">THE BASIC SWITCH</div>
+# Logic and DRAM optimize different constraints
 
-<div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/transistor-switch-v2.png" alt="An n-type MOSFET shown off and on; positive gate voltage opens an electron channel from source to drain" />
+<div class="grid grid-cols-2 gap-12 mt-8">
+<div class="pr-8 border-r border-gray-500">
+<div class="text-sm opacity-60 tracking-widest">LOGIC DIE</div>
+<div class="text-3xl font-bold mt-2">Timing-driven networks</div>
+<div class="text-lg mt-5 leading-relaxed">Standard cells, SRAM, and custom datapaths are placed and routed to meet timing.</div>
+<div class="text-sm opacity-70 mt-5">OPTIMIZES · speed · energy · interconnect</div>
 </div>
 
-<div class="visual-sequence__caption"><strong>n-type</strong><span>Positive gate voltage opens the channel; p-type uses the opposite polarity.</span></div>
-<div class="visual-sequence__source">n-type: electrons · p-type: holes · CMOS pairs both</div>
+<div>
+<div class="text-sm opacity-60 tracking-widest">HBM DRAM DIE</div>
+<div class="text-3xl font-bold mt-2">Density-driven arrays</div>
+<div class="text-lg mt-5 leading-relaxed">Billions of 1T–1C cells share wordlines, bitlines, sense amplifiers, and refresh.</div>
+<div class="text-sm opacity-70 mt-5">OPTIMIZES · bits/mm² · retention · yield</div>
+</div>
+</div>
+
+<div class="text-center text-lg mt-9 opacity-80">Different dominant structures and processes; both rely on transistor switches.</div>
 
 <!--
-- This diagram shows an n-type MOSFET: positive gate-to-source voltage creates an electron channel between source and drain.
-- A p-type MOSFET uses holes as carriers and switches with the opposite gate polarity.
-- CMOS pairs both types so one path is normally off, reducing static current.
-- Modern chips repeat these complementary switches hundreds of billions of times.
+- Logic combines standard cells, SRAM, and custom datapaths. Placement and wiring must close timing across irregular networks.
+- HBM repeats 1T–1C DRAM cells in dense arrays served by shared circuitry.
+- Logic still contains SRAM; the distinction is dominant circuit structure and process optimization.
+- Both rely on MOSFET switching, so we now zoom into the common device.
+-->
+
+---
+class: visual-sequence paper-visual
+title: "Voltage-controlled switch"
+---
+
+<div class="visual-sequence__kicker">VOLTAGE-CONTROLLED SWITCH</div>
+
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/transistor-switch-v2.png" alt="A simplified n-channel planar MOSFET shown off and on; gate voltage creates a conductive channel from source to drain" />
+</div>
+
+<div class="visual-sequence__caption"><strong>Voltage at the gate</strong><span>opens or closes a channel between source and drain.</span></div>
+<div class="visual-sequence__source">Shown: n-channel MOSFET · CMOS pairs complementary n- and p-channel devices</div>
+
+<!--
+- This is a simplified n-channel planar MOSFET shown off and on. Voltage on the gate controls whether current can flow between source and drain.
+- CMOS logic pairs n- and p-channel devices that switch with opposite polarity. This keeps static current low in stable states.
+- Polarity is separate from the geometry change shown later. Carry forward one idea: this switch is repeated billions of times across a modern chip.
 -->
 
 ---
@@ -73,68 +101,42 @@ title: "The basic switch"
 
 <div class="text-sm opacity-50 mt-6 text-center">Cerebras WSE-3 (2024): 4 trillion transistors on one wafer-sized chip — ~50× an H100.</div>
 
+<div class="text-center text-xl mt-7"><b>Two routes to scale:</b> denser processes or more silicon.</div>
+
 <!--
 - Counting one transistor per second would take 38 minutes for the first chip and more than 10,000 years for the second.
-- That 146-million-fold increase gives designers enough circuitry for parallel arithmetic, memory control, and data movement on one accelerator package.
+- Counts rose through denser processes and larger systems. Cerebras makes the second route explicit by using nearly an entire wafer.
+- The next slide isolates the density route. First, we need to decode what a process name such as "2 nm" means.
 -->
 
 ---
 
-# Logic computes; memory stores data
+# "2 nm" is a generation label, not a physical measurement
 
-<div class="grid grid-cols-2 gap-8 mt-8">
-
-<div class="border-2 border-gray-400 rounded-lg p-6">
-<div class="text-3xl font-bold">LOGIC</div>
-<div class="opacity-70 mt-1">compute circuitry</div>
-<div class="mt-4 text-sm leading-relaxed">
-Billions of custom switches perform arithmetic and control. This is the GPU die itself.
-</div>
+<div class="grid grid-cols-[0.8fr_2fr] gap-12 mt-8 items-center">
+<div class="text-center">
+<div class="text-8xl font-bold leading-none">2 nm</div>
+<div class="text-xl opacity-70 mt-4">process family</div>
+<div class="text-sm opacity-60 mt-2">not a ruler reading</div>
 </div>
 
-<div class="border-2 border-gray-400 rounded-lg p-6">
-<div class="text-3xl font-bold">MEMORY</div>
-<div class="opacity-70 mt-1">repeated storage cells</div>
-<div class="mt-4 text-sm leading-relaxed">
-A regular grid of identical cells stores data. Different companies fabricate it and place it beside the logic dies.
+<div>
+<div class="text-lg opacity-70 text-center mb-5">TSMC N2 versus N3E</div>
+<div class="grid grid-cols-3 gap-5 text-center">
+<div><div class="text-4xl font-bold whitespace-nowrap">10–15%</div><div class="opacity-70 mt-2">faster<br>at the same power</div></div>
+<div><div class="text-4xl font-bold whitespace-nowrap">25–30%</div><div class="opacity-70 mt-2">less power<br>at the same speed</div></div>
+<div><div class="text-4xl font-bold whitespace-nowrap">&gt;15%</div><div class="opacity-70 mt-2">greater<br>chip density</div></div>
+</div>
 </div>
 </div>
 
-</div>
-
-<div class="text-sm opacity-60 mt-8 text-center">Both use silicon, but they require different circuit structures, processes, and suppliers.</div>
+<div class="text-center text-xl mt-9">Node names identify the generation. PPA states what improved.</div>
 
 <!--
-- Logic uses custom transistor networks to perform arithmetic and control, while memory uses regular arrays of cells to retain data.
-- An accelerator needs both, but companies fabricate them with different processes and place the memory beside the logic dies.
--->
-
----
-
-# "2 nm" names a process generation, not a dimension
-
-<div class="text-center text-2xl mt-6">On a "3 nm" process, the name does not specify a <b>3 nm feature.</b></div>
-
-<div class="grid grid-cols-3 gap-6 mt-10 text-center">
-<div>
-<div class="text-5xl font-bold">~45 nm</div>
-<div class="opacity-70 mt-2">real gate pitch (N3)</div>
-</div>
-<div>
-<div class="text-5xl font-bold">~23 nm</div>
-<div class="opacity-70 mt-2">tightest metal pitch (N3)</div>
-</div>
-<div>
-<div class="text-5xl font-bold">PPA</div>
-<div class="opacity-70 mt-2">power · performance · area · the design targets for each generation</div>
-</div>
-</div>
-
-<div class="text-sm opacity-60 mt-10 text-center">Node names stopped matching a physical dimension in the late 1990s. They now distinguish process generations.</div>
-
-<!--
-- Node names identify process generations: TSMC N3, for example, has a gate pitch near 45 nm and a tightest metal pitch near 23 nm.
-- Each generation targets better power, performance, and area, though gains depend on the design.
+- A node name identifies a process family, not a literal two-nanometre feature.
+- Against N3E, TSMC reports 10–15% more speed at the same power or 25–30% less power at the same speed.
+- Chip density rises more than 15%; speed and power are alternative operating points.
+- Gains depend on the design. Next comes the GAA geometry behind N2.
 -->
 
 ---
@@ -149,13 +151,13 @@ title: "Transistor geometry · 1 / 3"
   <img src="/diagrams/rendered/transistor-planar.svg" alt="Cross-section of a planar transistor with its gate above a flat channel" />
 </div>
 
-<div class="visual-sequence__caption"><strong>Planar</strong><span>The gate controls the channel from above.</span></div>
-<div class="visual-sequence__source">Leading-edge transition to FinFETs began · 2011</div>
+<div class="visual-sequence__caption"><strong>Planar</strong><span>The gate controls the channel from one surface.</span></div>
+<div class="visual-sequence__source">Planar MOSFET · one controlled surface</div>
 
 <!--
-- Amber is the channel, blue is the gate, and cyan marks their interface.
+- Amber is the silicon channel, blue is the gate, and cyan is the gate dielectric between them.
 - A planar gate controls the channel from above.
-- As the channel shrinks, current leaks when the switch is off.
+- As planar gate lengths shrink, electrostatic control weakens and off-state leakage rises.
 - FinFETs and gate-all-around designs control more of the channel surface.
 -->
 
@@ -171,8 +173,8 @@ title: "Transistor geometry · 2 / 3"
   <img src="/diagrams/rendered/transistor-finfet.svg" alt="Cross-section of a FinFET with its gate wrapped around the top and sides of a vertical silicon fin" />
 </div>
 
-<div class="visual-sequence__caption"><strong>FinFET</strong><span>Raise the channel; the gate now controls three sides.</span></div>
-<div class="visual-sequence__source">Intel 22nm announcement · 2011</div>
+<div class="visual-sequence__caption"><strong>FinFET / Tri-Gate</strong><span>Raise the channel into a fin; the gate controls the top and both sidewalls.</span></div>
+<div class="visual-sequence__source">Intel 22 nm tri-gate · announced 2011 · shipped 2012</div>
 
 <!--
 - A FinFET raises the channel into a vertical fin so the gate controls the top and both sides, improving control over a short channel and reducing leakage.
@@ -191,12 +193,13 @@ title: "Transistor geometry · 3 / 3"
   <img src="/diagrams/rendered/transistor-gaa.svg" alt="Cross-section of a gate-all-around transistor with a gate surrounding three stacked silicon nanosheets" />
 </div>
 
-<div class="visual-sequence__caption"><strong>Gate-all-around</strong><span>Split the fin into sheets; the gate surrounds every channel.</span></div>
-<div class="visual-sequence__source">Samsung 3nm production · 2022</div>
+<div class="visual-sequence__caption"><strong>Nanosheet GAA</strong><span>Stack horizontal channels; the gate surrounds all four sides of each sheet.</span></div>
+<div class="visual-sequence__source">Samsung 3 nm GAA · initial production 2022</div>
 
 <!--
-- A gate-all-around transistor divides the fin into stacked nanosheets and surrounds the top, bottom, and sides of each sheet with gate material, giving tighter control as channels shrink.
-- Samsung began 3 nm production with this geometry in 2022.
+- A stacked-nanosheet GAA transistor places several horizontal silicon channels above the substrate. The gate wraps the top, bottom, and both sidewalls of each sheet.
+- This tighter electrostatic control supports continued scaling, and sheet width gives designers another way to tune drive current.
+- Samsung announced initial 3 nm production with nanosheet GAA in June 2022.
 -->
 
 ---
@@ -211,32 +214,55 @@ title: "Yield"
 </div>
 
 <div class="visual-sequence__caption"><strong>At the same defect density,</strong><span>larger dies lose more yield.</span></div>
-<div class="visual-sequence__source">First-order yield model · e<sup>−A·D₀</sup></div>
 
 <!--
 - A stray particle or process defect can ruin the die beneath it.
 - Larger dies cover more wafer area, so they encounter defects more often and produce fewer working chips per wafer.
-- Accelerator designers split large designs into chiplets to improve yield, then reconnect the smaller dies inside one package.
+- Hold the size penalty here. Packaging later shows how designers work around it.
+-->
+
+---
+class: yield-model
+title: "The first-order yield model"
+---
+
+# One equation explains the size penalty
+
+<div class="yield-model__equation"><var>Y</var> = e<sup>−<var>A</var>·<var>D</var>₀</sup></div>
+
+<div class="yield-model__terms">
+  <div><strong>Y</strong><span>working dies ÷ total dies</span></div>
+  <div><strong>A</strong><span>area of one die</span></div>
+  <div><strong>D₀</strong><span>killer defects per unit area</span></div>
+</div>
+
+<div class="yield-model__takeaway">Larger die or more defects → exponentially fewer working dies.</div>
+<div class="yield-model__limit">Assumes defects land randomly and independently. Clustering needs a richer model.</div>
+
+<!--
+- Y is the probability that a die contains zero killer defects; e is Euler's number.
+- A·D₀ is the expected number of killer defects per die. Larger area or higher defect density lowers yield exponentially.
+- Poisson assumes random, independent defects. Real fabs may use clustered-defect models such as the negative binomial.
 -->
 
 ---
 class: visual-sequence paper-visual
-title: "The power wall"
+title: "Dennard scaling"
 ---
 
-<div class="visual-sequence__kicker">THE POWER WALL</div>
+<div class="visual-sequence__kicker">THE END OF DENNARD SCALING</div>
 
 <div class="visual-sequence__frame">
   <img src="/diagrams/rendered/density-clock-v2.png" alt="Transistor count continues rising while clock speed plateaus around 2004, leading designers toward many parallel cores" />
 </div>
 
-<div class="visual-sequence__caption"><strong>Clock speeds stalled after 2004.</strong><span>Designers added cores instead.</span></div>
-<div class="visual-sequence__source">Pentium 4 · ~3.8 GHz · 2004</div>
+<div class="visual-sequence__caption"><strong>Dennard scaling ended.</strong><span>Voltage stopped falling fast enough to keep power density flat.</span></div>
+<div class="visual-sequence__source">The power wall · frequency scaling stalls · ~2004–06</div>
 
 <!--
-- Until the mid-2000s, shrinking transistors allowed clock speeds to rise without a matching increase in power.
-- Leakage broke that relationship, and processor clocks stalled around the Pentium 4’s 3.8 GHz level.
-- Designers continued adding transistors by building more cores, which made parallel processors such as GPUs more important.
+- Dennard scaling said smaller transistors could run faster while falling voltage kept power density roughly constant.
+- By the mid-2000s, voltage scaling slowed and leakage rose; frequency increases ran into the power and thermal wall.
+- Designers spent new transistor budgets on multiple cores and parallel accelerators, making GPUs increasingly important.
 -->
 
 ---
