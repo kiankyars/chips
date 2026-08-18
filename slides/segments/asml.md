@@ -25,12 +25,12 @@ sources: research/asml.md
   <img src="/diagrams/rendered/asml-scanner-scale.svg" alt="A High-NA EUV scanner drawn beside a person, with its dimensions marked" />
 </div>
 
-<div class="visual-sequence__caption">14 m × 4 m × 4 m · 150 tonnes · High-NA EXE platform</div>
-<div class="visual-sequence__source">ASML · High-NA EUV system specifications</div>
+<div class="visual-sequence__caption">High-NA EXE platform · more than 150 tonnes at Intel's first installation</div>
+<div class="visual-sequence__source">ASML · Intel High-NA EUV press kit</div>
 
 <!--
-- ASML's High-NA EXE platform stretches 14 metres, about the length of a semi-trailer.
-- That enclosure contains the light source, vacuum chambers, mirror train, and precision stages needed to keep a moving wafer aligned at nanometre scale.
+- The installed High-NA system weighs more than 150 metric tons; Intel received its first one in 43 freight containers.
+- Inside are the light source, vacuum chambers, mirror train, and precision stages needed to keep a moving wafer aligned at nanometre scale.
 -->
 
 ---
@@ -96,84 +96,86 @@ title: "The machine is an integrated supply chain"
 
 ---
 
-# ASML and Zeiss are single-source dependencies
+# ASML and ZEISS form a nested dependency
 
 ![chokepoint board — 5 of 7](/diagrams/rendered/board-5.svg)
 
 <div class="text-sm opacity-60 mt-6 text-center">
-ASML is the sole EUV scanner supplier; Zeiss is the sole supplier of its optics. Both enter the dependency map.
+ASML is the sole EUV scanner supplier; ZEISS is ASML's sole supplier of critical lithography optics. Both enter the dependency map.
 </div>
 
 <!--
-- ASML has a monopoly on production EUV scanners, and ZEISS has a monopoly on the optical system inside them.
-- A leading-edge fab depends on both single-source suppliers within the same machine, so losing either would stop new EUV capacity.
+- ASML is the world's only production EUV scanner manufacturer, and its annual report identifies ZEISS as its sole supplier of critical lithography optics.
+- A leading-edge fab therefore depends on one single-source relationship nested inside another; losing either would stop new EUV capacity.
 -->
 
 ---
 
-# ASML financials — FY2025
+# ASML — Q2 2026 snapshot
 
 <div class="grid grid-cols-2 gap-x-12 gap-y-6 mt-8 text-lg">
 
-<div><b>€32.7B</b> — total net sales <span class="opacity-50">(+16% YoY)</span></div>
-<div><b>€9.6B</b> — net income</div>
-<div><b>52.8%</b> — gross margin</div>
-<div><b>€28.0B</b> — FY2025 net bookings</div>
-<div><b>48</b> — EUV systems shipped</div>
-<div><b>€11.6B</b> — EUV sales <span class="opacity-50">(+39%)</span></div>
+<div><b>€9.3B</b> — Q2 total net sales</div>
+<div><b>€2.9B</b> — Q2 net income</div>
+<div><b>54.0%</b> — Q2 gross margin</div>
+<div><b>86</b> — new lithography systems sold <span class="opacity-50">all types</span></div>
+<div><b>€43–45B</b> — FY2026 sales outlook</div>
+<div><b>≈65</b> — planned 2026 low-NA EUV capacity</div>
 
 </div>
 
-<div class="text-xs opacity-40 text-right mt-4">FY2025 results</div>
+<div class="text-xs opacity-40 text-right mt-4">Q2 actuals · FY2026 company outlook · July 15, 2026</div>
 
 <!--
-- An EUV scanner takes months to assemble, calibrate, and install, while ZEISS optics and source modules limit how fast ASML can add capacity.
-- ASML shipped 48 EUV systems in FY2025 while taking €28 billion in bookings.
-- Customers order years ahead because annual supply remains constrained.
+- Q2 sales were 9.3 billion euros at a 54 percent gross margin; the 86 systems sold span ASML's full lithography portfolio, not EUV alone.
+- ASML raised its full-year outlook to 43 to 45 billion euros and described first-half order intake as extremely strong.
+- Management says 2027 low-NA EUV capacity is nearly covered by orders. That is order coverage, not a newly disclosed backlog figure.
 -->
 
 ---
 
-# High-NA EUV raises numerical aperture to 0.55
+# High-NA EUV has entered production — on selected layers
 
 <div class="grid grid-cols-3 gap-6 mt-10 text-center">
 <div>
-<div class="text-6xl font-bold">$400M</div>
-<div class="opacity-70 mt-2">per EXE:5200-class tool</div>
-</div>
-<div>
 <div class="text-6xl font-bold">0.55</div>
-<div class="opacity-70 mt-2">numerical aperture (vs 0.33)</div>
+<div class="opacity-70 mt-2">numerical aperture</div>
 </div>
 <div>
-<div class="text-6xl font-bold">&lt;12</div>
-<div class="opacity-70 mt-2">installed worldwide</div>
+<div class="text-6xl font-bold">8 nm</div>
+<div class="opacity-70 mt-2">EXE platform resolution</div>
+</div>
+<div>
+<div class="text-6xl font-bold">175</div>
+<div class="opacity-70 mt-2">wafers/hour · EXE:5200B</div>
 </div>
 </div>
 
 <div class="text-sm opacity-60 mt-10 text-center">
-Higher NA prints smaller features in one exposure. <b>Multi-patterning</b> uses several masks for one layer, adding process time, cost, and yield risk.
+Intel now ships a subset of Panther Lake made with High-NA on selected 18A layers.<br>
+<b>A production milestone—not an industry-wide switchover.</b>
 </div>
 
 <!--
-- High-NA EUV raises numerical aperture from 0.33 to 0.55, allowing smaller features in one exposure.
-- Each EXE:5200-class tool costs about $400 million, and fabs have installed fewer than twelve.
-- Without that resolution, a fab can use several masks for one layer, adding process steps, cost, and yield risk.
+- High-NA raises numerical aperture from 0.33 to 0.55; ASML specifies 8-nanometre resolution and 175 wafers per hour for the EXE:5200B.
+- In July 2026, Intel said selected 18A layers were dual-qualified on High-NA at yields matched to its NXE process.
+- The scope matters: only a subset of Panther Lake and selected layers use High-NA. This is production evidence, not wholesale replacement of low-NA EUV.
 -->
 
 ---
 
-# Export licenses restrict where ASML can ship EUV tools
+# Export licenses gate where controlled ASML tools can ship
 
 <div class="text-3xl mt-12 leading-relaxed">
-Dutch export licenses determine which customers can buy ASML's EUV systems.
+Dutch and US rules determine whether controlled ASML tools and services can ship to specific destinations and customers.
 </div>
 
 <div class="text-sm opacity-60 mt-10">
-ASML cannot sell EUV systems to China under Dutch export controls coordinated with the United States. Those rules are central to current chip policy.
+Dutch rules require authorization for covered advanced equipment shipped outside the EU; US rules add entity- and fab-specific restrictions. This is targeted licensing, not a ban on every ASML sale.
 </div>
 
 <!--
-- ASML needs Dutch government licenses to export its EUV systems, and the Netherlands blocks sales to China in coordination with the United States.
-- Because ASML has no production competitor, one export license can determine whether a country can buy the equipment needed for leading-edge chip production.
+- ASML needs export licenses for EUV, specific DUV immersion systems, and other controlled products. Dutch authorities assess covered exports outside the EU case by case.
+- US rules add restrictions involving particular Chinese entities and advanced-node fabs. The policy lever is targeted licensing, not a blanket ban on every ASML product.
+- Because ASML has no production EUV competitor, a license decision can still determine access to the equipment needed for leading-edge production.
 -->

@@ -1,6 +1,6 @@
 # Research — TSMC
 
-As-of: 2026-07
+As-of: 2026-08-18
 
 Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 `<!-- VERIFY -->` = not fully confident, check before recording.
@@ -96,15 +96,15 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   net margin 48.3%. [1]
 
 ### 2026 so far (freshest numbers)
-- **Q1 2026:** revenue **US$35.90B** (+40.6% YoY), gross margin **66.2%**,
-  operating margin 58.1%, **net margin 50.5%** — net income NT$572.5B, +58% YoY.
-  Node mix: 3nm 25%, 5nm 36%, 7nm 13% (advanced 74%). **HPC hit 61% of
-  revenue.** [3][6][36]
-- **Q2 2026 guidance:** revenue **US$39.0–40.2B**, GM 65.5–67.5%, OM 56.5–58.5%. [3]
-- Monthly revenue (TSMC reports monthly; unaudited) [4][5]: Jan NT$401.3B
-  (+36.8% YoY) · Feb NT$317.7B (+22.2%) · Mar NT$415.2B (+45.2%) · Apr NT$410.7B
-  (+17.5%) · May NT$417.0B (+30.1%). **Jan–May cumulative NT$1,961.8B, +30.0%
-  YoY.** June report due 13 Jul 2026 (pushed from 10 Jul by a typhoon day-off). [4]
+- **Q2 2026 actual:** revenue **US$40.20B** (+33.7% YoY), gross margin
+  **67.7%**, operating margin **60.3%**, and net margin **55.6%**. Net income
+  was NT$706.56B, +77.4% YoY. [41]
+- Q2 wafer-revenue mix: 2nm 3%, 3nm 30%, 5nm 33%, and 7nm 11%; advanced
+  technologies at 7nm and below were **77%**. [41]
+- **Q1 2026:** revenue **US$35.90B**, gross margin **66.2%**, operating margin
+  58.1%, and net margin 50.5%. HPC was 61% of revenue. [3][6][36]
+- **Q3 2026 guidance:** revenue **US$44.6–45.8B**, gross margin 65–67%, and
+  operating margin 56–58%. [41]
 - **FY2026 guidance:** revenue **+close to 30%** in USD; capex **US$52–56B**
   (70–80% leading edge, ~10% specialty, 10–20% advanced packaging/mask);
   depreciation +high-teens %; overseas-fab gross-margin dilution 2–3pp; foundry
@@ -210,8 +210,8 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 - Reported leading-edge wafer prices: **N3 ~US$20k**, **N2 ~US$30k**,
   **A16 ~US$45k** per 300mm wafer (vs ~$18k-class for N4/N5). [27]
   <!-- VERIFY: wafer prices are never officially disclosed; these are widely-reported supply-chain figures — use "reportedly". -->
-- The tell in the P&L: gross margin 59.9% (2025) → **66.2% (Q1 2026)** while
-  spending $40B+/yr on capex — customers are absorbing the increases. [1][3]
+- The tell in the P&L: gross margin 59.9% (2025) → **67.7% (Q2 2026)** while
+  spending $40B+/yr on capex — customers are absorbing the increases. [1][41]
 
 ## Risks
 - **AI concentration:** HPC = 61% of Q1 2026 revenue; top two customers ≈ 36%
@@ -235,9 +235,9 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 ## Fact ammo — lines that land
 - **One company, one island, ~90% of the world's most advanced chips** — and
   72.3% of the entire global foundry market, 11× the size of #2 Samsung. [7][34][37]
-- **In Q1 2026 TSMC kept 50.5 cents of every revenue dollar as net profit** —
-  66.2% gross margin — margins software companies envy, earned in the most
-  capital-intensive factories ever built. [3]
+- **In Q2 2026 TSMC kept 55.6 cents of every revenue dollar as net profit** —
+  67.7% gross margin — margins software companies envy, earned in the most
+  capital-intensive factories ever built. [41]
 - **Nvidia dethroned Apple as customer #1 in 2025** (~19% vs ~17% of revenue)
   — the AI era changing the guard inside TSMC's ledger after more than a decade
   of iPhone primacy. [9][10]
@@ -293,3 +293,4 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 38. TrendForce, "TSMC speeds up expansion in Taiwan: up to 10 fabs reportedly under construction or starting in 2026" — https://www.trendforce.com/news/2026/02/23/news-tsmc-speeds-up-expansion-in-taiwan-up-to-10-fabs-reportedly-under-construction-or-starting-in-2026/
 39. TSMC PR, "ESMC breaks ground on Dresden fab" (JV structure: TSMC 70%, Bosch/Infineon/NXP 10% each) — https://pr.tsmc.com/english/news/3169
 40. TSMC, "CoWoS" (CoWoS-S, CoWoS-R, and CoWoS-L interconnect structures) — https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm
+41. TSMC Q2 2026 earnings release (16 Jul 2026; revenue, margins, node mix, and Q3 guidance) — https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf

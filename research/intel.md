@@ -1,6 +1,6 @@
 # Research — Intel
 
-As-of: 2026-07
+As-of: 2026-08-18
 
 Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 `<!-- VERIFY -->` = not fully confident, check before recording.
@@ -138,7 +138,7 @@ Tier: **T (tragedy)** — the fallen king arc.
   *orders* — that's the open question (see 14A).
 
 ## 18A & 14A — the last stand
-### 18A (2nm-class) — status as of 2026-07
+### 18A (2nm-class) — status as of 2026-08
 - The tech: **RibbonFET** (Intel's first gate-all-around transistor) +
   **PowerVia** (industry-first backside power delivery) — Intel got to
   backside power *before* TSMC. ~15% perf/watt and ~30% density gain vs
@@ -162,13 +162,13 @@ Tier: **T (tragedy)** — the fallen king arc.
 - **External customers (still the sore spot):** committed — **Microsoft**
   (chip on 18A, announced Feb 2024), **Amazon/AWS** (AI fabric chip on 18A,
   multi-year framework, Sept 2024), **US DoD** (RAMP-C / Secure Enclave);
-  mature-node deals with MediaTek, Tower, UMC. But only Intel itself consumes
-  18A in volume: external foundry revenue was **$174M in Q1 2026** (~3% of
-  foundry revenue) — Intel Foundry is still overwhelmingly Intel's own
-  customer. [21][42][43][44]
+  mature-node deals with MediaTek, Tower, UMC. Intel Foundry external revenue
+  reached **$293M in Q2 2026**, but Intel said the increase was primarily Altera
+  becoming an external customer after its deconsolidation. Intersegment revenue
+  was still $5.5B of the segment's $5.8B total. [21][42][43][57]
   <!-- VERIFY: press reports since late 2025 say Apple took the 18A-P PDK and began evaluation/qualification — rumor-tier, do not state as fact [42] -->
 
-### 14A — the explicit existential wager
+### 14A — committed, but demand-gated
 - 14A: Intel's first **High-NA EUV** node; early PDKs with customers; risk
   production ~2027. [47] <!-- VERIFY: current 14A production-ready date -->
 - **The 10-Q/10-K warning (July 2025), in Intel's own words:** if it fails "to
@@ -177,9 +177,11 @@ Tier: **T (tragedy)** — the fallen king arc.
   Intel 14A and successor leading-edge nodes" — i.e., the first time Intel put
   *exiting leading-edge manufacturing* in an SEC filing. It also said future
   nodes beyond 18A could be outsourced to TSMC. [45][46]
-- Jan 9, 2026 (post-CES): Tan reverses tone — "We are going big time into
-  14A… to serve the customer well" — read by press as implying at least one
-  external anchor customer; **none publicly named as of 2026-07**. [47]
+- **Current stance changed in Q2 2026:** Intel committed to completing 14A
+  development, added multiple future Intel products designed for the node, and
+  started manufacturing-expansion projects. The scale and pace of those fabs
+  still depend on committed demand from Intel products and significant external
+  design wins. No significant external 14A customer was publicly named. [57]
 
 ## Financials
 - Revenue slide: **$79.0B (2021) → $63.1B (2022) → $54.2B (2023) → $53.1B
@@ -188,18 +190,21 @@ Tier: **T (tragedy)** — the fallen king arc.
   restructuring). [50]
 - 2025: net loss trimmed to **$267M**; Q4'25 still soft. [2]
 - **Intel Foundry losses**: **-$7.0B** (2023) → **-$13.4B** (2024, the trough)
-  → **-$10.3B** (2025, on $17.8B segment revenue) → **-$2.4B** (Q1'26) ≈
-  **~$33B cumulative** since 2023 reporting began. Break-even target: ~2027. [49][2][44]
+  → **-$10.3B** (2025, on $17.8B segment revenue) → **-$4.53B** (H1'26) ≈
+  **$35.2B cumulative** since 2023 reporting began. [49][2][57]
 - **Q1 2026** (reported Apr 2026): revenue **$13.6B** (+7% YoY, ~$1.4B above
   guidance midpoint, 6th straight beat); CCG $7.7B (+1%), DCAI $5.1B (+22%),
   Foundry $5.4B (+16%, external only $174M); non-GAAP GM **41%** (18A yields
   helping); EPS $0.29. [44][51]
+- **Q2 2026** (reported Jul 2026): revenue **$16.1B** (+25% YoY); Intel Products
+  $15.1B, Foundry $5.8B before $5.5B of intersegment eliminations; non-GAAP
+  gross margin **41.8%**. External foundry revenue was $293M. [56][57]
 - Stock, the whiplash year: government bought at **$20.47** (Aug 2025), Nvidia
   at **$23.28** (Sept 2025); ~$37 at New Year 2026; ~**$140** June 30, 2026
   (+~270% YTD — cleared the Aug-2000 dot-com ceiling for the first time in 26
   years [10]); **-21% in the first week of July** to ~$110. [3][39]
 - Valuation stretch: ~**100× forward earnings** vs TSMC's ~27.5× — priced for
-  a flawless turnaround. [3] Next catalyst: Q2'26 earnings late July 2026.
+  a flawless turnaround. [3]
 - Government stake scoreboard: 433.3M shares × ~$110 ≈ **$47B** — a ~5×
   paper gain for taxpayers in under a year. [28][3]
 
@@ -207,7 +212,7 @@ Tier: **T (tragedy)** — the fallen king arc.
 - It is the **only American-owned, America-based leading-edge logic
   manufacturer**. 18A is the first 2nm-class node developed *and* made in the
   US. [4] TSMC Arizona fabs are a hedge, but the frontier R&D stays in Taiwan.
-- If the 14A warning executes, the entire global leading edge is **TSMC
+- If 14A ultimately fails to win sufficient demand, the global leading edge becomes **TSMC
   (Taiwan) + Samsung (Korea)** — 100% of frontier logic development inside
   China's missile envelope. That's what the segment's stakes are. [45][46]
 - The DoD already treats Intel as critical infrastructure: Secure Enclave
@@ -224,8 +229,9 @@ Tier: **T (tragedy)** — the fallen king arc.
 - **Yield slip = everything slip:** 18A profitable-yield timing already moved
   once (July 2026); "industry-standard in early 2027" is a promise, not a
   result. [38][39]
-- **14A anchor customer still unnamed** — Tan's optimism ≠ a signed logo; the
-  10-K exit language stays live until one lands. [45][47]
+- **14A external demand remains unproven** — Intel committed to completing node
+  development, but said manufacturing expansion still scales with committed
+  internal demand and significant external design wins. [57]
 - **x86 is structurally shrinking:** AMD at 46% of server-CPU dollars, Arm
   >50% of new AWS capacity, Apple gone — even a perfect foundry doesn't fix
   the product franchise. [18][19][17]
@@ -325,3 +331,5 @@ Tier: **T (tragedy)** — the fallen king arc.
 53. Intel, "2019 Year in Review" (10nm Ice Lake mobile volume production) — https://download.intel.com/newsroom/d/newtech/2019-yearbook.pdf
 54. Intel, "Intel at CES 2021" (Alder Lake as the next-generation desktop processor on enhanced 10nm SuperFin) — https://www.intel.com/content/www/us/en/newsroom/news/ces-2021-four-new-processor-families.html
 55. Intel, 2025 Form 10-K (18A high-volume manufacturing status and process disclosures) — https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000011/intc-20251227.htm
+56. Intel, Q2 2026 earnings release (23 Jul 2026; revenue, margins, segment results, and foundry milestones) — https://www.sec.gov/Archives/edgar/data/50863/000005086326000155/q226earningsrelease.htm
+57. Intel, Form 10-Q for Q2 2026 (external foundry revenue, H1 foundry loss, and current 14A commitment) — https://www.sec.gov/Archives/edgar/data/50863/000005086326000157/intc-20260627.htm

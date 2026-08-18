@@ -1,6 +1,6 @@
 # Research — KLA ⭐
 
-As-of: 2026-08-06
+As-of: 2026-08-18
 
 Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 `<!-- VERIFY -->` = not fully confident, check before recording.

@@ -7,7 +7,7 @@ id: tsmc
 act: III — The Island
 tier: P            # protagonist — the crown jewel of the episode
 angle: "TSMC's real invention wasn't a chip — it was a promise: manufacture for everyone, compete with no one. Forty years of compounded trust and yield learning turned that promise into the deepest moat in capitalism, and parked it on one island."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~10 min
+runtime: ~9 min
 status: draft
 seeds: [taiwan-flag]          # planted here — DETONATES in geopolitics, not here
 pays_off: [apple-iou]         # planted in fabless-field
@@ -188,9 +188,9 @@ TSMC plans no <b>High-NA EUV</b> in production through 2029; it is extending exi
 
 <div class="text-sm opacity-50 mt-3 text-center">reported figures — TSMC never publishes wafer prices</div>
 
-<div class="grid grid-cols-2 gap-8 mt-10 text-center">
-<div><div class="text-5xl font-bold">59.9% → 66.2%</div><div class="opacity-70 mt-2">gross margin, FY25 → Q1 2026</div></div>
-<div><div class="text-5xl font-bold">50.5¢</div><div class="opacity-70 mt-2">of every Q1 2026 revenue dollar retained as net profit</div></div>
+<div class="mt-10 text-center">
+<div class="text-3xl font-bold">A wafer quote is not a finished-chip cost.</div>
+<div class="opacity-70 mt-3">Die area, usable dies, yield, memory, and packaging determine the cost per accelerator.</div>
 </div>
 
 <!--
@@ -222,12 +222,12 @@ TSMC plans no <b>High-NA EUV</b> in production through 2029; it is extending exi
 <div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
   <div class="grid grid-cols-5 gap-4 text-center">
     <div><div class="text-3xl font-bold">$122 B</div><div class="text-sm opacity-60">revenue FY25 (+36%)</div></div>
-    <div><div class="text-3xl font-bold">59.9%</div><div class="text-sm opacity-60">gross margin FY25 (66.2% Q1'26)</div></div>
+    <div><div class="text-3xl font-bold">67.7%</div><div class="text-sm opacity-60">gross margin Q2'26</div></div>
     <div><div class="text-3xl font-bold">72.3%</div><div class="text-sm opacity-60">global foundry share (Q1'26)</div></div>
     <div><div class="text-xl font-bold leading-tight mt-2">pure-play model + 30 years of yield data</div></div>
     <div><div class="text-xl font-bold leading-tight mt-2">ecosystem</div><div class="text-sm opacity-60">must be rebuilt</div></div>
   </div>
-  <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
+  <div class="text-xs opacity-40 text-right mt-2">company results: Q2'26 · foundry share: Q1'26 estimate</div>
 </div>
 
 <div class="text-sm opacity-60 mt-8 text-center">
@@ -235,7 +235,8 @@ TSMC plans no <b>High-NA EUV</b> in production through 2029; it is extending exi
 </div>
 
 <!--
-- TSMC reported $122 billion in FY2025 revenue, a 59.9 percent gross margin, and 72.3 percent of foundry revenue in Q1 2026, about eleven times Samsung's share.
+- TSMC reported $122 billion in FY2025 revenue and a 67.7 percent gross margin in Q2 2026.
+- TrendForce estimated TSMC at 72.3 percent of foundry revenue in Q1 2026, about eleven times Samsung's share.
 - Replacing this capability would require new fabs, scarce equipment, a full design ecosystem, and accumulated yield learning; no single countdown captures that task.
 -->
 
@@ -256,45 +257,5 @@ title: "TSMC's footprint"
 <!--
 - TSMC's Arizona fab produces N4, while its sites in Japan and Germany focus on mature and specialty nodes.
 - N2 volume starts in Hsinchu and Kaohsiung and A14 in Taiwan, so overseas fabs add diversity while the newest processes, research base, and largest engineering concentration stay there.
--->
-
----
-
-# Leading-edge production remains concentrated in Taiwan
-
-<div class="text-3xl mt-14 leading-relaxed text-center">
-TSMC fabricates an estimated ~90% of ≤7 nm-class merchant logic,<br>
-with its most advanced production concentrated in <b>Taiwan</b>.
-</div>
-
-<div class="text-sm opacity-60 mt-12 text-center">
-This geographic concentration is central to the policy discussion in Part 6.
-</div>
-
-<!--
-- TSMC's newest processes remain concentrated in Taiwan, about 130 kilometres from China's coast.
-- Arizona, Japan, and Germany add geographic diversity but trail Taiwan in process generation; N2 and future A14 begin there, so disruption would hit the leading edge first.
--->
-
----
-
-# TSMC leads advanced foundry manufacturing
-
-<div class="text-xl mt-10 leading-relaxed">
-
-- TSMC manufactures customer designs without selling chips of its own
-- High production volume generates defect data, which improves yield and attracts the next design
-- TSMC holds 72.3% of foundry revenue and an estimated ~90% of ≤7nm-class merchant output
-
-</div>
-
-<div class="text-lg opacity-70 mt-12">
-TSMC overtook Intel in process technology around 2020.<br>
-<b>Intel had led the industry for roughly five decades.</b>
-</div>
-
-<!--
-- TSMC's customer-neutral model attracts designs.
-- Running more wafers produces more defect data, improves yield, lowers cost, and wins more volume.
-- This feedback loop helped TSMC overtake Intel in process technology around 2020 after Intel had led the industry for about five decades.
+- This concentration is the Taiwan-risk seed that returns in Part 6.
 -->

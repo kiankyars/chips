@@ -66,8 +66,13 @@ TSMC shipped N7 in 2018, N7+ with EUV in 2019, and N5 in 2020.<br>
 On July 24, 2020, Intel announced another 7 nm delay; its shares fell 16% that day.
 </div>
 
+<div class="text-xs opacity-50 mt-4 text-center">
+EUV uses shorter-wavelength light to reduce multipatterning; without it, Intel split critical layers across more masks and alignment steps.
+</div>
+
 <!--
 - Intel targeted a 2.7-fold density gain at 10nm without EUV, using a complex multi-patterning process instead.
+- EUV prints finer patterns in fewer passes; Intel instead split critical layers across more masks, exposures, and alignment steps.
 - Intel reached volume 10nm first in mobile Ice Lake in 2019; mainstream desktop remained on 14nm until 10nm-class Alder Lake arrived in 2021.
 - During that delay, TSMC shipped N7, N7+ with EUV, and N5.
 -->
@@ -125,8 +130,8 @@ title: "Intel's missed shifts"
 
 <div class="flex flex-col gap-6 text-center justify-center">
 <div><div class="text-5xl font-bold">2025</div><div class="text-sm opacity-60 mt-1">18A high-volume manufacturing began; no comparable product-level yield disclosed</div></div>
-<div><div class="text-5xl font-bold">$174M</div><div class="text-sm opacity-60 mt-1">external foundry revenue, Q1 2026 — ~3% of foundry revenue</div></div>
-<div><div class="text-5xl font-bold">−$33B</div><div class="text-sm opacity-60 mt-1">cumulative foundry losses since 2023</div></div>
+<div><div class="text-5xl font-bold">$293M</div><div class="text-sm opacity-60 mt-1">external foundry revenue, Q2 2026 — mostly Altera after deconsolidation</div></div>
+<div><div class="text-5xl font-bold">&gt;$35B</div><div class="text-sm opacity-60 mt-1">cumulative foundry operating losses since 2023</div></div>
 </div>
 
 </div>
@@ -134,8 +139,8 @@ title: "Intel's missed shifts"
 <!--
 - Intel's 18A process combines RibbonFET transistors with backside power delivery and now ships Panther Lake and Clearwater Forest products.
 - Intel says 18A entered high-volume manufacturing in 2025; no numeric yield is shown because public estimates use incompatible product and yield definitions.
-- External foundry revenue remained $174 million in Q1 2026.
-- Cumulative foundry losses since 2023 reached about $33 billion.
+- External foundry revenue reached $293 million in Q2 2026, primarily because Altera became an external customer after deconsolidation.
+- Cumulative foundry operating losses since 2023 exceeded $35 billion by mid-2026.
 -->
 
 ---
@@ -149,13 +154,13 @@ title: "Intel 14A"
   <img src="/diagrams/rendered/slide-069-intel-investment-lifeline.svg" alt="The US government, SoftBank, and Nvidia investing in Intel while no external 14A anchor customer is publicly named" />
 </div>
 
-<div class="visual-sequence__caption"><strong>Three investors bought $15.9B of Intel equity; no external 14A anchor customer was publicly named.</strong></div>
+<div class="visual-sequence__caption"><strong>Capital arrived.</strong><span>Intel committed to complete 14A development; expansion remains demand-gated.</span></div>
 <div class="visual-sequence__source">US government · $8.9B · SoftBank · $2B · Nvidia · $5B</div>
 
 <!--
 - The US government, SoftBank, and Nvidia bought a combined $15.9 billion of Intel equity.
-- The equity strengthened Intel's balance sheet but was not a 14A customer order.
-- A foundry needs customer volume as well as financing to sustain a new leading-edge node.
+- In Q2 2026 Intel committed to completing 14A, with future Intel products designed for it.
+- Fab expansion still depends on committed internal demand and significant external design wins; no external anchor was publicly named.
 -->
 
 ---
@@ -164,8 +169,8 @@ title: "Intel 14A"
 
 <div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
   <div class="grid grid-cols-5 gap-4 text-center">
-    <div><div class="text-3xl font-bold">$52.9B</div><div class="text-sm opacity-60">revenue FY25</div></div>
-    <div><div class="text-3xl font-bold">41%</div><div class="text-sm opacity-60">gross margin (non-GAAP, Q1'26)</div></div>
+    <div><div class="text-3xl font-bold">$16.1B</div><div class="text-sm opacity-60">revenue Q2'26</div></div>
+    <div><div class="text-3xl font-bold">41.8%</div><div class="text-sm opacity-60">non-GAAP gross margin Q2'26</div></div>
     <div><div class="text-3xl font-bold">~70%</div><div class="text-sm opacity-60">PC CPU share</div></div>
     <div><div class="text-xl font-bold leading-tight mt-2">only US-owned leading-edge logic manufacturer</div></div>
     <div><div class="text-xl font-bold leading-tight mt-2">capability</div><div class="text-sm opacity-60">must scale</div></div>
@@ -178,7 +183,7 @@ TSMC, Samsung, and Intel are the only companies currently producing leading-edge
 </div>
 
 <!--
-- Intel remains the sole US-owned company manufacturing leading-edge logic at home, with $52.9 billion in 2025 revenue and about 70 percent of the PC CPU market.
+- Intel remains the sole US-owned company manufacturing leading-edge logic at home; it reported $16.1 billion of Q2 2026 revenue and about 70 percent of the PC CPU market.
 - TSMC, Samsung, and Intel are the three companies producing leading-edge logic at commercial scale.
 - Intel's position now depends on 18A yield and foundry demand.
 -->

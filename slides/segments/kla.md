@@ -19,8 +19,6 @@ sources: research/kla.md
 
 # Inspection and metrology
 
-<div class="text-xl opacity-70 mt-2">Part 4 · Fabrication · inspection and metrology</div>
-
 <div class="grid grid-cols-[3fr_1fr] gap-6 mt-6 items-center">
 <div>
 
@@ -90,17 +88,17 @@ title: "Inspection scale"
 
 <div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
   <div class="grid grid-cols-5 gap-4 text-center">
-    <div><div class="text-3xl font-bold">$12.2B</div><div class="text-sm opacity-60">revenue FY25</div></div>
-    <div><div class="text-3xl font-bold">60.9%</div><div class="text-sm opacity-60">FY25 GAAP gross margin</div></div>
+    <div><div class="text-3xl font-bold">$13.58B</div><div class="text-sm opacity-60">revenue FY26</div></div>
+    <div><div class="text-3xl font-bold">61.3%</div><div class="text-sm opacity-60">FY26 GAAP gross margin</div></div>
     <div><div class="text-3xl font-bold">56–58%</div><div class="text-sm opacity-60">market share</div></div>
     <div><div class="text-lg font-bold leading-tight mt-1">~7× the nearest rival in process control</div></div>
     <div><div class="text-xl font-bold leading-tight mt-2">capability</div><div class="text-sm opacity-60">must scale</div></div>
   </div>
-  <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
+  <div class="text-xs opacity-40 text-right mt-2">FY2026 ended June 30, 2026</div>
 </div>
 
 <div class="text-center text-xl mt-8 leading-relaxed">
-KLA's FY2025 GAAP gross margin was <b>60.9%</b>.<br>
+KLA's FY2026 GAAP gross margin was <b>61.3%</b>.<br>
 <span class="opacity-60 text-lg">Process-control software and service revenue reinforce the hardware franchise.</span>
 </div>
 
