@@ -1,5 +1,6 @@
 ---
-layout: section
+layout: default
+class: map-only-focus
 ---
 
 <!-- SEGMENT
@@ -19,9 +20,9 @@ sources: research/eda.md
 
 # The software behind chip design
 
-<div class="text-xl opacity-70 mt-2">Engineers design modern chips through EDA software</div>
-
-![industry map — design region lit](/diagrams/rendered/map-design.svg)
+<div class="map-only-focus__map">
+  <img src="/diagrams/rendered/map-design.svg" alt="Industry map with EDA and the design stage highlighted" />
+</div>
 
 <!--
 - Electronic design automation, or EDA, is the software engineers use to turn a chip specification into a manufacturable layout.
@@ -124,7 +125,7 @@ title: "Electronic design automation"
 layout: center
 ---
 
-# Limited substitutes: leading-edge EDA
+# Chokepoint #1: leading-edge EDA
 
 ![chokepoint board — first stamp earned](/diagrams/rendered/board-1.svg)
 

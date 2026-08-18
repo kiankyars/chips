@@ -1,6 +1,6 @@
 # Research — Nvidia
 
-As-of: 2026-07
+As-of: 2026-08-18
 
 Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 `<!-- VERIFY -->` = not fully confident, check before recording.
@@ -34,7 +34,7 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   (FY2023) <!-- VERIFY: FY23 DC $15.0B, from memory --> to **$193.7B** (FY2026);
   gaming — once the whole company — is now ~7% of revenue. [2]
 
-## The one chip — GB300 / Blackwell Ultra (the course's tracer bullet)
+## The 2025–26 case study — GB300 / Blackwell Ultra
 - **Package**: B300 "Blackwell Ultra" GPU = **two reticle-sized dies** stitched
   together. A standard 26 × 33 mm exposure field is ~858mm², but Nvidia does not
   publish the exact die area (predecessor Hopper was 814mm² single-die). Joined by
@@ -62,10 +62,12 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   of revenue, not product-level economics for one GB300. Applying the FY2026
   gross margin to a third-party full-rack price estimate does not produce a valid
   product bill of materials. [2]
-- Timeline: unveiled GTC Mar 2025; ramped H2 2025; the volume workhorse of the
-  2026 buildout. [7][15]
+- Timeline: unveiled GTC Mar 2025; ramped H2 2025; GB300 systems are commercially
+  available in 2026. Nvidia now calls Grace Blackwell the previous generation
+  relative to Vera Rubin, so the deck labels Blackwell Ultra as its stable tracer
+  case rather than the latest architecture. [7][9][52]
 
-## Financials (freshest as of 2026-07)
+## Financials (freshest reported quarter as of 2026-08-18)
 - **FY2026** (ended Jan 25, 2026): revenue **$215.9B** (+65% YoY); data center
   **$193.7B** (+68%, = **90%** of revenue); gaming $16.0B; GAAP net income
   **$120.1B** (a ~56% net margin); GAAP gross margin **71.1%** (depressed by
@@ -98,11 +100,12 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   Ultra GB300 (2025–26)** → **Vera Rubin VR200 (H2 2026)** → Rubin Ultra +
   "Kyber" NVL576 rack (planned 2027) → "Feynman" (2028). [14][16]
   <!-- VERIFY: Feynman name/date, announced GTC 2025, from memory -->
-- **Vera Rubin status (mid-2026)**: announced full production at CES Jan 2026;
-  first shipments **Q3 2026**, volume ramp Q4 2026. New Arm "Vera" CPU + R200
-  GPU: **336B transistors**, TSMC **3nm**, **288GB HBM4**, ~22 TB/s bandwidth,
-  ~5× B200 inference FLOPS. First deployers: AWS, Google Cloud, Microsoft, OCI,
-  CoreWeave et al. [15][16][17]
+- **Vera Rubin status (2026-08-18)**: Nvidia said on May 31 that the platform was
+  ramping into full production, with system builders in full-scale production and
+  production shipments scheduled to begin in fall 2026. The Rubin GPU has **336B
+  transistors**, uses TSMC **3nm**, and carries up to **288GB HBM4** at **22 TB/s**;
+  the broader platform introduces Spectrum-X Ethernet Photonics in production.
+  [52][53]
 - The cadence *is* strategy: each generation cuts cost-per-token (Rubin claimed
   up to ~10× vs Blackwell), so waiting is expensive and rivals chase a moving
   target. [2]
@@ -326,3 +329,5 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 49. Fortune, "Nvidia is officially the world's first $5 trillion company" (2025-10-29) — https://fortune.com/2025/10/29/nvidia-first-5-trillion-company-ceo-jensen-huang-500-billion-revenue-blackwell-rubin-gpus-china/
 50. NVIDIA, "GTC 2026 News and Announcements" (more than 6 million developers) — https://blogs.nvidia.com/blog/gtc-2026-news/
 51. NVIDIA, GTC Taipei 2026 session (Micron, SK hynix, and Samsung named as Rubin HBM4 sources) — https://www.nvidia.com/en-us/on-demand/session/gtctaipei26-stw61044/
+52. NVIDIA, "Vera Rubin Ramps Into Full Production" (2026-05-31; shipments scheduled for fall 2026; Grace Blackwell described as previous generation) — https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Vera-Rubin-Ramps-Into-Full-Production-to-Power-Agentic-AI-Factories-Worldwide/default.aspx
+53. NVIDIA Technical Blog, "Inside NVIDIA Rubin GPU Architecture" (2026-07; 336B transistors, TSMC 3nm, 288 GB HBM4, 22 TB/s) — https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/

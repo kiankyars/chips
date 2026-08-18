@@ -1,5 +1,6 @@
 ---
-layout: section
+layout: default
+class: stage-map-focus
 ---
 
 <!-- SEGMENT
@@ -7,7 +8,7 @@ id: nvidia
 act: II — The Blueprint
 tier: P
 angle: "Nvidia's product isn't a chip — it's a file plus a twenty-year software moat. The most valuable company on Earth owns no factories, and that one fact is the reason the rest of this journey exists."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~7 min
+runtime: ~5 min
 status: draft
 seeds: [memory-wall, reticle-limit, owns-no-factories]
 pays_off: []
@@ -19,21 +20,11 @@ sources: research/nvidia.md
 
 # Nvidia designs the accelerator
 
-<div class="text-xl opacity-70 mt-2">Chip architecture and software · Santa Clara, California</div>
-
-<div class="grid grid-cols-2 gap-8 mt-8 items-center">
-<div>
-
-![industry map — DESIGN region lit](/diagrams/rendered/map-design.svg)
-
-</div>
-<div class="text-lg opacity-80 leading-relaxed">
-Nvidia produces the chip design and software.<br>
-Manufacturing comes later.
-</div>
+<div class="stage-map-focus__map">
+  <img src="/diagrams/rendered/map-design.svg" alt="Industry map with Nvidia and the design stage highlighted" />
 </div>
 
-![journey bar — DESIGN active](/diagrams/rendered/journey-2.svg)
+<img class="stage-map-focus__journey" src="/diagrams/rendered/journey-2.svg" alt="Chip journey with design active" />
 
 <!--
 - Nvidia defines the accelerator architecture and software in Santa Clara, then sends the completed design into a manufacturing chain of foundries, memory suppliers, and packaging companies.
@@ -139,26 +130,6 @@ Neural-network workloads rely heavily on matrix multiplication, which maps effic
 -->
 
 ---
-
-# Nvidia's FY26 GAAP gross margin was 71.1%
-
-<div class="text-center mt-10">
-<div class="text-8xl font-bold">71.1%</div>
-<div class="opacity-70 mt-3">FY2026 GAAP gross margin</div>
-</div>
-
-<div class="text-center text-lg opacity-70 mt-10">
-Companywide across accelerators, networking, and systems.<br>
-It is not a product-level margin for one GB300.
-</div>
-
-<!--
-- Nvidia reported a 71.1 percent GAAP gross margin for fiscal 2026.
-- CUDA switching costs, accelerator share, networking, and integrated systems support companywide pricing.
-- Nvidia does not disclose a gross margin for one GB300 product.
--->
-
----
 class: visual-sequence paper-visual
 title: "Fabless"
 ---
@@ -196,32 +167,4 @@ title: "Fabless"
 - Nvidia reported $215.9 billion of FY2026 revenue and a 71.1 percent GAAP gross margin.
 - Nvidia holds about 90 percent of AI accelerator revenue, supported by twenty years of CUDA libraries and developer adoption.
 - Replacing the hardware is easier than rebuilding the software ecosystem and supply relationships.
--->
-
----
-
-# Company margin is not a GB300 bill of materials
-
-<div class="grid grid-cols-2 gap-8 mt-10 text-center">
-<div class="border-2 border-green-500 rounded-lg p-6">
-<div class="text-5xl font-bold">71.1%</div>
-<div class="opacity-70 mt-2">Nvidia FY26 GAAP gross margin</div>
-<div class="text-sm opacity-50 mt-3">companywide · all products and systems</div>
-</div>
-<div class="border-2 border-gray-400 rounded-lg p-6">
-<div class="text-5xl font-bold">$3.7–4.0M</div>
-<div class="opacity-70 mt-2">third-party GB300 NVL72 full-rack estimate</div>
-<div class="text-sm opacity-50 mt-3">72 GPUs · 36 CPUs · fabric, cooling, and power delivery</div>
-</div>
-</div>
-
-<div class="text-xl text-center mt-10 opacity-80 leading-relaxed">
-Nvidia does not disclose product-level revenue, gross margin, or cost for one GB300.<br>
-The next sections trace physical suppliers without claiming a complete product cost.
-</div>
-
-<!--
-- Nvidia's 71.1 percent FY2026 gross margin covers the whole company, not one GPU.
-- The $3.7 million to $4.0 million figure is a third-party estimate for a complete GB300 NVL72 rack, not Nvidia's disclosed list price or recognized revenue.
-- Applying one to the other would mix incompatible scopes, so the course traces suppliers without inventing a complete bill of materials.
 -->

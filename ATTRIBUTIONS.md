@@ -12,6 +12,15 @@
   Original asset:
   https://developer-blogs.nvidia.com/wp-content/uploads/2025/08/ConnectX-8-SuperNICs-png.webp
 
+- `public/assets/nvidia-blackwell-ultra-gpu-architecture.webp` — official NVIDIA
+  architecture diagram of one Blackwell Ultra GPU, showing its dual-die layout,
+  compute clusters, memory controllers, and external interfaces, from “Inside
+  NVIDIA Blackwell Ultra: The Chip Powering the AI Factory Era.” Copyright NVIDIA;
+  no open-content license is stated. Source:
+  https://developer.nvidia.com/blog/inside-nvidia-blackwell-ultra-the-chip-powering-the-ai-factory-era/
+  Original asset:
+  https://developer-blogs.nvidia.com/wp-content/uploads/2025/08/NVIDIA-Blackwell-Ultra-GPU-chip-png.webp
+
 - `public/assets/sk-hynix-hbm3e-blackwell-display.png` — official SK hynix
   newsroom photograph of a 36 GB 12-layer HBM3E package displayed beside an
   NVIDIA GB300 Grace Blackwell Ultra module. Copyright SK hynix; no open-content

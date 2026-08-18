@@ -185,7 +185,7 @@ function buildMap(state) {
 
   // --- AI DATA CENTERS (far right)
   parts.push(g('datacenter', [
-    box(1424, 500, 460, 170, ['AI DATA CENTERS'], { ...C.datacenter, fs: 30, bold: true, sub: 'within ~$600B/yr hyperscaler capex' }),
+    box(1424, 500, 460, 170, ['AI DATA CENTERS'], { ...C.datacenter, fs: 30, bold: true, sub: 'within ~$800B/yr 2026E capex' }),
     `<text x="1654" y="710" text-anchor="middle" font-size="18" fill="${C.inkSoft}">…and every phone, car, and grid</text>`,
   ].join('\n')))
 
@@ -205,7 +205,43 @@ for (const s of ['dark', 'design', 'manufacture', 'equipment', 'memory', 'backen
 
 // ============================================================ JOURNEY BAR
 const STAGES = ['PHYSICS', 'DESIGN', 'FAB', 'MEMORY', 'PACKAGE', 'DATA CENTER']
-function journeyBar(active /* 0=none yet, 1..6 = stage index+1 */) {
+const JOURNEY_OVERVIEW_STAGES = [
+  { label: ['PHYSICS'], fill: '#0f3038', edge: '#67e8f9' },
+  { label: ['DESIGN'], ...C.design },
+  { label: ['FAB'], ...C.manufacture },
+  { label: ['MEMORY'], ...C.memory },
+  { label: ['PACKAGE'], ...C.backend },
+  { label: ['DATA', 'CENTER'], ...C.datacenter },
+]
+
+function journeyOverview() {
+  const W = 1920, H = 420, bw = 252, bh = 270, gap = 54
+  const x0 = (W - (JOURNEY_OVERVIEW_STAGES.length * bw + (JOURNEY_OVERVIEW_STAGES.length - 1) * gap)) / 2
+  const y = (H - bh) / 2
+  const cy = H / 2
+  const arrows = []
+  const cards = []
+
+  JOURNEY_OVERVIEW_STAGES.forEach((stage, i) => {
+    const x = x0 + i * (bw + gap)
+    if (i < JOURNEY_OVERVIEW_STAGES.length - 1) {
+      arrows.push(arrow(x + bw + 10, cy, x + bw + gap - 10, cy, { color: C.ink, width: 5 }))
+    }
+
+    const labelY = stage.label.length === 1 ? y + 164 : y + 143
+    const labels = stage.label.map((line, lineIndex) =>
+      `<text x="${x + bw / 2}" y="${labelY + lineIndex * 48}" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="800" fill="${C.ink}">${line}</text>`
+    ).join('\n')
+
+    cards.push(`<rect x="${x}" y="${y}" width="${bw}" height="${bh}" rx="30" fill="${stage.fill}" stroke="${stage.edge}" stroke-width="4"/>
+<text x="${x + bw / 2}" y="${y + 58}" text-anchor="middle" dominant-baseline="central" font-size="25" font-weight="800" letter-spacing="4" fill="${stage.edge}">${String(i + 1).padStart(2, '0')}</text>
+${labels}`)
+  })
+
+  return svgDoc(W, H, [...arrows, ...cards].join('\n'))
+}
+
+function journeyBar(active /* 1..6 = stage index+1 */) {
   const W = 1920, H = 150, bw = 264, gap = 40, x0 = (W - (STAGES.length * bw + (STAGES.length - 1) * gap)) / 2
   const parts = []
   STAGES.forEach((s, i) => {
@@ -220,7 +256,8 @@ function journeyBar(active /* 0=none yet, 1..6 = stage index+1 */) {
   })
   return svgDoc(W, H, parts.join('\n'))
 }
-for (let k = 0; k <= 6; k++) writeFileSync(join(OUT, `journey-${k}.svg`), journeyBar(k))
+writeFileSync(join(OUT, 'journey-0.svg'), journeyOverview())
+for (let k = 1; k <= 6; k++) writeFileSync(join(OUT, `journey-${k}.svg`), journeyBar(k))
 
 // ============================================================= FLOW STRIP
 // The fab loop. Highlight states per step for each Act IV player.

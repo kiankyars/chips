@@ -8,15 +8,15 @@ title: "The object"
 id: cold-open
 act: 0 — The Object
 tier: —
-angle: "Use one GB300-class accelerator as the physical object whose supply chain the course will trace."
-runtime: ~4 min
+angle: "Use one 2025–26 GB300-class accelerator as the stable tracer case, then bridge once to the Rubin frontier."
+runtime: ~5 min
 status: draft
-seeds: [the-object, the-seven, the-economics-ledger]
+seeds: [the-object]
 pays_off: []
 stamps: []
-diagrams: [map-dark, board-0, journey-0]
+diagrams: [journey-0]
 sources: research/nvidia.md, research/foundations.md
-note: BUILD AND RECORD LAST — this front-loads four promises (map, board, economics ledger, "seven"). Only lock it once every device has survived the build.
+note: BUILD AND RECORD LAST — this opening establishes the object, its scale, and the course route.
 -->
 
 
@@ -27,7 +27,7 @@ note: BUILD AND RECORD LAST — this front-loads four promises (map, board, econ
 </div>
 
 <div class="visual-sequence__caption"><strong>Grace Blackwell Ultra</strong><span>Two GPUs · one Grace CPU · two ConnectX-8 SuperNICs</span></div>
-<div class="visual-sequence__source">Official NVIDIA image</div>
+<div class="visual-sequence__source">Official NVIDIA image · 2025–26 tracer case</div>
 
 <!--
 - This GB300 compute board carries two Blackwell Ultra GPUs, one Grace CPU, and two ConnectX-8 SuperNICs.
@@ -35,8 +35,28 @@ note: BUILD AND RECORD LAST — this front-loads four promises (map, board, econ
 -->
 
 ---
+class: visual-sequence paper-visual
+title: "Inside one Blackwell Ultra GPU"
+---
 
-# From one accelerator to industry spending
+<div class="visual-sequence__kicker">INSIDE ONE OF THE TWO GPUS</div>
+
+<div class="visual-sequence__frame">
+  <img src="/assets/nvidia-blackwell-ultra-gpu-architecture.webp" alt="Official NVIDIA diagram of one Blackwell Ultra GPU, showing two reticle-sized dies joined by NV-HBI, HBM controllers, graphics processing clusters, L2 cache, and PCIe, NVLink, and NVLink-C2C interfaces" />
+</div>
+
+<div class="visual-sequence__caption"><strong>One GPU, two reticle-sized dies.</strong><span>NV-HBI bridges them at 10 TB/s.</span></div>
+<div class="visual-sequence__source">NVIDIA Technical Blog · Figure 1</div>
+
+<!--
+- The board on the previous slide carries two of these GPUs; this diagram zooms into one Blackwell Ultra GPU, not the full GB300 superchip.
+- Two reticle-sized dies connect at 10 TB/s through NV-HBI and appear to CUDA as one GPU with up to 160 streaming multiprocessors and 640 Tensor Cores.
+- The edge interfaces cross scales: HBM feeds the package, NVLink reaches the rack fabric, NVLink-C2C reaches Grace, and PCIe reaches a host.
+-->
+
+---
+
+# One GPU sits inside an $800B buildout
 
 <div class="grid grid-cols-3 gap-8 mt-12 text-center">
 <div>
@@ -48,67 +68,58 @@ note: BUILD AND RECORD LAST — this front-loads four promises (map, board, econ
 <div class="opacity-70 mt-3">estimated price for a 72-GPU rack drawing about 135 kW</div>
 </div>
 <div>
-<div class="text-6xl font-bold">~$600 B</div>
-<div class="opacity-70 mt-3">estimated 2026 hyperscaler capital spending, including AI infrastructure</div>
+<div class="text-6xl font-bold">~$800 B</div>
+<div class="opacity-70 mt-3">estimated 2026 capex across six U.S. hyperscalers; near $1T projected for 2027</div>
 </div>
 </div>
 
+<div class="text-sm opacity-50 mt-10 text-center">Capex estimate: Moody's · July 2026</div>
+
 <!--
-- These numbers trace the scaling chain.
-- One package has 208 billion transistors; 72 packages become a $4 million rack with a facility-scale power load.
-- Hyperscaler spending shows how demand for that hardware propagates through the semiconductor industry.
+- The scale jumps from 208 billion transistors in one GPU to 72 GPUs in a rack and about $800 billion of annual infrastructure spending.
+- Moody's estimates six U.S. hyperscalers could approach $785 billion in 2026, with spending projected to near $1 trillion in 2027.
+- These totals include buildings, power, networking, servers, and other infrastructure; they are not Nvidia revenue or chip spending alone.
 -->
 
 ---
 
-# The companies behind one accelerator
+# Blackwell is the case study; Rubin is the frontier
 
-![the industry map — dark](/diagrams/rendered/map-dark.svg)
-
-<div class="text-lg opacity-70 mt-6 text-center">
-This map follows the accelerator from design software to the finished package. Each section adds the suppliers responsible for one stage.
+<div class="grid grid-cols-2 gap-10 mt-9">
+<div class="border-2 border-gray-400 rounded-lg p-6">
+<div class="text-sm opacity-60 tracking-widest">2025–26 TRACER CASE</div>
+<div class="text-3xl font-bold mt-2">Blackwell Ultra</div>
+<div class="mt-5 leading-relaxed">TSMC 4NP · HBM3E · CoWoS-L<br>GB300 systems available now</div>
+</div>
+<div class="border-2 border-cyan-500 rounded-lg p-6">
+<div class="text-sm opacity-60 tracking-widest">2026 FRONTIER</div>
+<div class="text-3xl font-bold mt-2">Vera Rubin</div>
+<div class="mt-5 leading-relaxed">TSMC 3 nm · HBM4 · production photonics<br>shipments scheduled to begin in fall 2026</div>
+</div>
 </div>
 
+<div class="text-xl mt-9 text-center"><b>The parts advance.</b> The dependency map survives.</div>
+<div class="text-sm opacity-50 mt-5 text-center">NVIDIA · May and July 2026</div>
+
 <!--
-- No company owns the whole route.
-- Nvidia designs the accelerator, TSMC fabricates its logic, memory suppliers build HBM, and packaging firms assemble the final module.
-- The finished device records all of those dependencies.
+- Nvidia now describes Grace Blackwell as the previous generation relative to Vera Rubin, so this course does not pretend the tracer is the newest architecture.
+- Blackwell remains the cleaner case study because its logic, HBM3E, and CoWoS-L supply chain is already visible in shipping systems.
+- Rubin changes the node, memory generation, and system networking, but it still depends on design software, TSMC logic, qualified HBM, advanced packaging, and rack integration.
 -->
 
 ---
+layout: default
+class: journey-overview
+title: "One accelerator, six stages"
+---
 
-# Seven supply-chain control points
+# One accelerator, six stages
 
-![the chokepoint board — empty](/diagrams/rendered/board-0.svg)
-
-<div class="text-lg opacity-70 mt-6 text-center">
-Each concentrates a technology or qualified capacity that leading-edge production cannot replace quickly. Later sections test the severity against share, qualification, and time to scale.
+<div class="journey-overview__graphic">
+  <img src="/diagrams/rendered/journey-0.svg" alt="The course route from physics through design, fabrication, memory, packaging, and deployment in a data center" />
 </div>
 
 <!--
-- A high market share alone does not make a chokepoint.
-- The stronger test is whether a disruption constrains production before another supplier, qualified set, or region can scale.
--->
-
----
-layout: center
----
-
-# From design file to data center
-
-![journey bar — start](/diagrams/rendered/journey-0.svg)
-
-<div class="text-lg opacity-70 mt-8">
-PHYSICS → DESIGN → FAB → MEMORY → PACKAGE → DATA CENTER.<br>
-The course starts with the device's physical constraints, then follows one accelerator through design, production, and deployment.
-</div>
-
-<div class="border border-cyan-400 rounded-lg px-5 py-3 mt-6 text-base text-center">
-Beginning in Act II, each act closes with an <b>Economics Ledger</b> that separates company financials, product estimates, and supplier relationships.
-</div>
-
-<!--
-- The production chain starts with silicon, passes through chip design and wafer fabrication, then adds memory and packaging before deployment in a data center.
-- Following one accelerator in this order connects each physical step to the companies that perform it.
-- The Economics Ledger keeps unlike financial scopes separate as the supply chain fills in.
+- The course follows one accelerator from the physics of a transistor to an operating compute system installed in a powered and cooled data center.
+- Each stage introduces a different set of companies, physical constraints, and supply-chain control points.
 -->

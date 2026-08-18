@@ -1,25 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 150" font-family="Inter, -apple-system, sans-serif">
-<rect width="1920" height="150" fill="#080c14"/>
-<rect x="68" y="40" width="264" height="70" rx="35" fill="#111827" stroke="#526078" stroke-width="2.5"/>
-<text x="200" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="600" fill="#526078">PHYSICS</text>
-<line x1="338" y1="75" x2="366" y2="75" stroke="#526078" stroke-width="3.5" />
-<polygon points="366,75 354.12984377594,80.3008858897744 354.12984377594,69.6991141102256" fill="#526078"/>
-<rect x="372" y="40" width="264" height="70" rx="35" fill="#111827" stroke="#526078" stroke-width="2.5"/>
-<text x="504" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="600" fill="#526078">DESIGN</text>
-<line x1="642" y1="75" x2="670" y2="75" stroke="#526078" stroke-width="3.5" />
-<polygon points="670,75 658.12984377594,80.3008858897744 658.12984377594,69.6991141102256" fill="#526078"/>
-<rect x="676" y="40" width="264" height="70" rx="35" fill="#111827" stroke="#526078" stroke-width="2.5"/>
-<text x="808" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="600" fill="#526078">FAB</text>
-<line x1="946" y1="75" x2="974" y2="75" stroke="#526078" stroke-width="3.5" />
-<polygon points="974,75 962.12984377594,80.3008858897744 962.12984377594,69.6991141102256" fill="#526078"/>
-<rect x="980" y="40" width="264" height="70" rx="35" fill="#111827" stroke="#526078" stroke-width="2.5"/>
-<text x="1112" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="600" fill="#526078">MEMORY</text>
-<line x1="1250" y1="75" x2="1278" y2="75" stroke="#526078" stroke-width="3.5" />
-<polygon points="1278,75 1266.12984377594,80.3008858897744 1266.12984377594,69.6991141102256" fill="#526078"/>
-<rect x="1284" y="40" width="264" height="70" rx="35" fill="#111827" stroke="#526078" stroke-width="2.5"/>
-<text x="1416" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="600" fill="#526078">PACKAGE</text>
-<line x1="1554" y1="75" x2="1582" y2="75" stroke="#526078" stroke-width="3.5" />
-<polygon points="1582,75 1570.12984377594,80.3008858897744 1570.12984377594,69.6991141102256" fill="#526078"/>
-<rect x="1588" y="40" width="264" height="70" rx="35" fill="#111827" stroke="#526078" stroke-width="2.5"/>
-<text x="1720" y="75" text-anchor="middle" dominant-baseline="central" font-size="26" font-weight="600" fill="#526078">DATA CENTER</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 420" font-family="Inter, -apple-system, sans-serif">
+<rect width="1920" height="420" fill="#080c14"/>
+<line x1="331" y1="210" x2="365" y2="210" stroke="#f8fafc" stroke-width="5" />
+<polygon points="365,210 353.12984377594,215.3008858897744 353.12984377594,204.6991141102256" fill="#f8fafc"/>
+<line x1="637" y1="210" x2="671" y2="210" stroke="#f8fafc" stroke-width="5" />
+<polygon points="671,210 659.12984377594,215.3008858897744 659.12984377594,204.6991141102256" fill="#f8fafc"/>
+<line x1="943" y1="210" x2="977" y2="210" stroke="#f8fafc" stroke-width="5" />
+<polygon points="977,210 965.12984377594,215.3008858897744 965.12984377594,204.6991141102256" fill="#f8fafc"/>
+<line x1="1249" y1="210" x2="1283" y2="210" stroke="#f8fafc" stroke-width="5" />
+<polygon points="1283,210 1271.12984377594,215.3008858897744 1271.12984377594,204.6991141102256" fill="#f8fafc"/>
+<line x1="1555" y1="210" x2="1589" y2="210" stroke="#f8fafc" stroke-width="5" />
+<polygon points="1589,210 1577.12984377594,215.3008858897744 1577.12984377594,204.6991141102256" fill="#f8fafc"/>
+<rect x="69" y="75" width="252" height="270" rx="30" fill="#0f3038" stroke="#67e8f9" stroke-width="4"/>
+<text x="195" y="133" text-anchor="middle" dominant-baseline="central" font-size="25" font-weight="800" letter-spacing="4" fill="#67e8f9">01</text>
+<text x="195" y="239" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="800" fill="#f8fafc">PHYSICS</text>
+<rect x="375" y="75" width="252" height="270" rx="30" fill="#102a4f" stroke="#60a5fa" stroke-width="4"/>
+<text x="501" y="133" text-anchor="middle" dominant-baseline="central" font-size="25" font-weight="800" letter-spacing="4" fill="#60a5fa">02</text>
+<text x="501" y="239" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="800" fill="#f8fafc">DESIGN</text>
+<rect x="681" y="75" width="252" height="270" rx="30" fill="#10382f" stroke="#34d399" stroke-width="4"/>
+<text x="807" y="133" text-anchor="middle" dominant-baseline="central" font-size="25" font-weight="800" letter-spacing="4" fill="#34d399">03</text>
+<text x="807" y="239" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="800" fill="#f8fafc">FAB</text>
+<rect x="987" y="75" width="252" height="270" rx="30" fill="#2d2050" stroke="#a78bfa" stroke-width="4"/>
+<text x="1113" y="133" text-anchor="middle" dominant-baseline="central" font-size="25" font-weight="800" letter-spacing="4" fill="#a78bfa">04</text>
+<text x="1113" y="239" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="800" fill="#f8fafc">MEMORY</text>
+<rect x="1293" y="75" width="252" height="270" rx="30" fill="#441b2a" stroke="#fb7185" stroke-width="4"/>
+<text x="1419" y="133" text-anchor="middle" dominant-baseline="central" font-size="25" font-weight="800" letter-spacing="4" fill="#fb7185">05</text>
+<text x="1419" y="239" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="800" fill="#f8fafc">PACKAGE</text>
+<rect x="1599" y="75" width="252" height="270" rx="30" fill="#172033" stroke="#94a3b8" stroke-width="4"/>
+<text x="1725" y="133" text-anchor="middle" dominant-baseline="central" font-size="25" font-weight="800" letter-spacing="4" fill="#94a3b8">06</text>
+<text x="1725" y="218" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="800" fill="#f8fafc">DATA</text>
+<text x="1725" y="266" text-anchor="middle" dominant-baseline="central" font-size="42" font-weight="800" fill="#f8fafc">CENTER</text>
 </svg>
