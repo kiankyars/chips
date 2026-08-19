@@ -8,21 +8,9 @@ View the published course at <https://kiankyars.github.io/chips/>.
 ## The premise
 
 **Follow one chip.** A 2025–26 Blackwell Ultra accelerator is the case study, followed
-from idea → design file → the island → the fab → memory → package → data center. A
-short Rubin bridge keeps the frontier current without replacing the tracer mid-story. Every company in the
-industry is encountered at the exact moment the chip cannot proceed without it —
-never as an entry in a list. One master map lights up region by region; a Chokepoint
-Board fills as each hard-to-replace control point is proved; an Economics Ledger keeps
-company margins, product estimates, and supplier relationships in their disclosed
-scopes. See `STRATEGY.md` for the full design system and
-`curriculum.md` for the course map.
+from idea → design file → the island → the fab → memory → package → data center.
 
-## The core idea: course-as-code
-
-This repository is the **single source of truth**. Everything — the slides, your
-narration beats, the research, the diagrams — lives here as plain text you can
-diff, regenerate, and version. From this one source we render a real presentation
-you screen-record.
+## Tree
 
 ```
 chips/
@@ -38,19 +26,6 @@ chips/
     prompts/           ← GPT-image prompts for decorative one-offs
 ```
 
-## How the labor splits (so you're never just a narrator)
-
-| Layer | Owner |
-|---|---|
-| Research, facts, sourcing | **Claude** |
-| Editorial **angle** per segment | **You** (Claude proposes, you redline) |
-| Structure, slides, diagram prompts | **Claude** |
-| The actual words spoken | **You**, live, from the beat sheet |
-
-Speaker notes are short bullet prompts designed to be scanned while speaking.
-Sources and verification detail stay in `research/`. See `AUTHORING.md` for the
-full loop.
-
 ## Running the deck
 
 ```bash
@@ -65,12 +40,3 @@ npm run build:pages  # production build for https://kiankyars.github.io/chips/
 
 Pushes to `main` deploy the production build to GitHub Pages. The workflow can
 also be run manually from the repository's Actions tab.
-
-## Status
-
-- ✅ Design system + curriculum v2 (`STRATEGY.md`, `curriculum.md`)
-- ✅ Research fact packs with explicit as-of dates for volatile material;
-  unresolved claims are marked `VERIFY` (`research/`)
-- ✅ All segments drafted with proposed angles (`slides/segments/`), awaiting your
-  angle pass + redline (the two human steps in `AUTHORING.md`)
-- Recording order & production rules: end of `STRATEGY.md`
