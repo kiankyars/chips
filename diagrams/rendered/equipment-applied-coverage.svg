@@ -21,55 +21,35 @@
 <rect width="1920" height="1080" fill="#f3efe6"/>
 <rect width="1920" height="1080" fill="url(#paper-grid)"/>
 <text x="104" y="92" fill="#7b827f" font-size="20" font-weight="760" text-anchor="start" letter-spacing="3.6" opacity="1">PROCESS COVERAGE</text>
-<text x="104" y="156" fill="#171a1f" font-size="48" font-weight="760" text-anchor="start" letter-spacing="0" opacity="1">Applied spans six tool categories</text>
+<text x="104" y="156" fill="#171a1f" font-size="48" font-weight="760" text-anchor="start" letter-spacing="0" opacity="1">Applied participates in six of eight wafer-fab tool categories</text>
 <path d="M104 190H1816" stroke="#c9c1b3" stroke-width="2"/>
-<path d="M126 286V258H1340V286" fill="none" stroke="#c17a1b" stroke-width="5"/>
-<text x="733" y="248" fill="#c17a1b" font-size="23" font-weight="820" text-anchor="middle" letter-spacing="2.1" opacity="1">APPLIED MATERIALS</text>
-<rect x="104" y="346" width="184" height="288" rx="22" fill="#f2e2c7" stroke="#c17a1b" stroke-width="3" filter="url(#paper-shadow)"/>
-<path d="M141 507H251M148 487H244M156 467H236" stroke="#c17a1b" stroke-width="9" stroke-linecap="round"/>
-<path d="M160 411V445M196 397V445M232 411V445" stroke="#c17a1b" stroke-width="4" marker-end="url(#arrow-amber)"/>
-<text x="196" y="588" fill="#c17a1b" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0.8" opacity="1">DEPOSITION</text>
-<text x="196" y="617" fill="#c17a1b" font-size="14" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">APPLIED</text>
-<rect x="314" y="346" width="184" height="288" rx="22" fill="#f2e2c7" stroke="#c17a1b" stroke-width="3" filter="url(#paper-shadow)"/>
-<path d="M348 421H390V509H422V421H464" fill="none" stroke="#c17a1b" stroke-width="10" stroke-linejoin="round"/>
-<path d="M406 387V447" stroke="#c17a1b" stroke-width="4" marker-end="url(#arrow-amber)"/>
-<text x="406" y="588" fill="#c17a1b" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="0.8" opacity="1">ETCH</text>
-<text x="406" y="617" fill="#c17a1b" font-size="14" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">APPLIED</text>
-<rect x="524" y="346" width="184" height="288" rx="22" fill="#f2e2c7" stroke="#c17a1b" stroke-width="3" filter="url(#paper-shadow)"/>
-<path d="M564 507H668" stroke="#c17a1b" stroke-width="10" stroke-linecap="round"/>
-<circle cx="578" cy="483" r="6" fill="#c17a1b"/><path d="M578 401V463" stroke="#c17a1b" stroke-width="3" marker-end="url(#arrow-amber)"/><circle cx="598" cy="483" r="6" fill="#c17a1b"/><path d="M598 401V463" stroke="#c17a1b" stroke-width="3" marker-end="url(#arrow-amber)"/><circle cx="618" cy="483" r="6" fill="#c17a1b"/><path d="M618 401V463" stroke="#c17a1b" stroke-width="3" marker-end="url(#arrow-amber)"/><circle cx="638" cy="483" r="6" fill="#c17a1b"/><path d="M638 401V463" stroke="#c17a1b" stroke-width="3" marker-end="url(#arrow-amber)"/><circle cx="658" cy="483" r="6" fill="#c17a1b"/><path d="M658 401V463" stroke="#c17a1b" stroke-width="3" marker-end="url(#arrow-amber)"/>
-<text x="616" y="588" fill="#c17a1b" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="0.8" opacity="1">IMPLANT</text>
-<text x="616" y="617" fill="#c17a1b" font-size="14" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">APPLIED</text>
-<rect x="734" y="346" width="184" height="288" rx="22" fill="#f2e2c7" stroke="#c17a1b" stroke-width="3" filter="url(#paper-shadow)"/>
-<ellipse cx="826" cy="499" rx="58" ry="18" fill="none" stroke="#c17a1b" stroke-width="8"/>
-<circle cx="826" cy="453" r="40" fill="none" stroke="#c17a1b" stroke-width="8"/><path d="M804 453H854" stroke="#c17a1b" stroke-width="6" marker-end="url(#arrow-amber)"/>
-<text x="826" y="588" fill="#c17a1b" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="0.8" opacity="1">POLISH</text>
-<text x="826" y="617" fill="#c17a1b" font-size="14" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">APPLIED</text>
-<rect x="944" y="346" width="184" height="288" rx="22" fill="#f2e2c7" stroke="#c17a1b" stroke-width="3" filter="url(#paper-shadow)"/>
-<rect x="976" y="409" width="120" height="112" rx="14" fill="none" stroke="#c17a1b" stroke-width="7"/>
-<path d="M1002 487C982 461 1022 450 1002 423M1036 487C1016 461 1056 450 1036 423M1070 487C1050 461 1090 450 1070 423" fill="none" stroke="#c17a1b" stroke-width="5"/>
-<text x="1036" y="588" fill="#c17a1b" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="0.8" opacity="1">THERMAL</text>
-<text x="1036" y="617" fill="#c17a1b" font-size="14" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">APPLIED</text>
-<rect x="1154" y="346" width="184" height="288" rx="22" fill="#f2e2c7" stroke="#c17a1b" stroke-width="3" filter="url(#paper-shadow)"/>
-<circle cx="1234" cy="455" r="42" fill="none" stroke="#c17a1b" stroke-width="8"/><path d="M1266 487L1308 529" stroke="#c17a1b" stroke-width="10" stroke-linecap="round"/><path d="M1178 527H1314" stroke="#c17a1b" stroke-width="8"/>
-<text x="1246" y="588" fill="#c17a1b" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="0.8" opacity="1">METROLOGY</text>
-<text x="1246" y="617" fill="#c17a1b" font-size="14" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">APPLIED</text>
-<rect x="1364" y="346" width="184" height="288" rx="22" fill="#fffaf0" stroke="#4f5965" stroke-width="3" filter="url(#paper-shadow)"/>
-<path d="M1456 393C1420 445 1408 469 1408 489A48 48 0 0 0 1504 489C1504 469 1492 445 1456 393Z" fill="none" stroke="#4f5965" stroke-width="7"/><path d="M1394 535H1518" stroke="#4f5965" stroke-width="9"/>
-<text x="1456" y="588" fill="#4f5965" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="0.8" opacity="1">TRACK</text>
-<text x="1456" y="617" fill="#7b827f" font-size="14" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">TEL</text>
-<rect x="1574" y="346" width="184" height="288" rx="22" fill="#fffaf0" stroke="#4f5965" stroke-width="3" filter="url(#paper-shadow)"/>
-<rect x="1608" y="413" width="116" height="80" rx="8" fill="none" stroke="#4f5965" stroke-width="7"/><path d="M1628 433H1704M1628 455H1704M1666 495V537" stroke="#4f5965" stroke-width="5"/><path d="M1634 537H1698" stroke="#4f5965" stroke-width="9"/>
-<text x="1666" y="588" fill="#4f5965" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0.8" opacity="1">LITHOGRAPHY</text>
-<text x="1666" y="617" fill="#7b827f" font-size="14" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">ASML</text>
-<rect x="250" y="734" width="650" height="174" rx="24" fill="#fffaf0" stroke="#c9c1b3" stroke-width="2" filter="url(#paper-shadow)"/>
-<text x="288" y="784" fill="#7b827f" font-size="18" font-weight="760" text-anchor="start" letter-spacing="1.9" opacity="1">TRANSISTOR SHAPE CHANGES</text>
-<text x="288" y="832" fill="#171a1f" font-size="27" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">GAA</text>
-<text x="818" y="832" fill="#c17a1b" font-size="30" font-weight="820" text-anchor="end" letter-spacing="0" opacity="1">+~$1B</text>
-<text x="288" y="881" fill="#171a1f" font-size="24" font-weight="760" text-anchor="start" letter-spacing="0" opacity="1">BACKSIDE POWER</text>
-<text x="818" y="881" fill="#c17a1b" font-size="30" font-weight="820" text-anchor="end" letter-spacing="0" opacity="1">+~$1B</text>
-<path d="M930 820H1170" stroke="#c17a1b" stroke-width="6" marker-end="url(#arrow-amber)"/>
-<text x="1202" y="812" fill="#c17a1b" font-size="24" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">MORE PROCESS STEPS</text>
-<text x="1202" y="854" fill="#4f5965" font-size="23" font-weight="580" text-anchor="start" letter-spacing="0" opacity="1">more tools per wafer</text>
-<text x="1816" y="1012" fill="#7b827f" font-size="18" font-weight="740" text-anchor="end" letter-spacing="2" opacity="1">BREADTH, NOT ONE MONOPOLY TOOL</text>
+<path d="M112 352V300H1356V352" fill="none" stroke="#c17a1b" stroke-width="6"/>
+<text x="734" y="276" fill="#c17a1b" font-size="24" font-weight="840" text-anchor="middle" letter-spacing="2.2" opacity="1">APPLIED MATERIALS</text>
+<rect x="112" y="420" width="184" height="170" rx="18" fill="#f2e2c7" stroke="#c17a1b" stroke-width="4"/>
+<text x="204" y="502" fill="#c17a1b" font-size="17" font-weight="820" text-anchor="middle" letter-spacing="0.8" opacity="1">DEPOSITION</text>
+<text x="204" y="548" fill="#c17a1b" font-size="15" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">COVERED</text>
+<rect x="324" y="420" width="184" height="170" rx="18" fill="#f2e2c7" stroke="#c17a1b" stroke-width="4"/>
+<text x="416" y="502" fill="#c17a1b" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0.8" opacity="1">ETCH</text>
+<text x="416" y="548" fill="#c17a1b" font-size="15" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">COVERED</text>
+<rect x="536" y="420" width="184" height="170" rx="18" fill="#f2e2c7" stroke="#c17a1b" stroke-width="4"/>
+<text x="628" y="502" fill="#c17a1b" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0.8" opacity="1">IMPLANT</text>
+<text x="628" y="548" fill="#c17a1b" font-size="15" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">COVERED</text>
+<rect x="748" y="420" width="184" height="170" rx="18" fill="#f2e2c7" stroke="#c17a1b" stroke-width="4"/>
+<text x="840" y="502" fill="#c17a1b" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0.8" opacity="1">POLISH</text>
+<text x="840" y="548" fill="#c17a1b" font-size="15" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">COVERED</text>
+<rect x="960" y="420" width="184" height="170" rx="18" fill="#f2e2c7" stroke="#c17a1b" stroke-width="4"/>
+<text x="1052" y="502" fill="#c17a1b" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0.8" opacity="1">THERMAL</text>
+<text x="1052" y="548" fill="#c17a1b" font-size="15" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">COVERED</text>
+<rect x="1172" y="420" width="184" height="170" rx="18" fill="#f2e2c7" stroke="#c17a1b" stroke-width="4"/>
+<text x="1264" y="502" fill="#c17a1b" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0.8" opacity="1">METROLOGY</text>
+<text x="1264" y="548" fill="#c17a1b" font-size="15" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">COVERED</text>
+<rect x="1384" y="420" width="184" height="170" rx="18" fill="#fffaf0" stroke="#4f5965" stroke-width="4"/>
+<text x="1476" y="502" fill="#4f5965" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0.8" opacity="1">TRACK</text>
+<text x="1476" y="548" fill="#7b827f" font-size="15" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">TEL</text>
+<rect x="1596" y="420" width="184" height="170" rx="18" fill="#fffaf0" stroke="#4f5965" stroke-width="4"/>
+<text x="1688" y="502" fill="#4f5965" font-size="17" font-weight="820" text-anchor="middle" letter-spacing="0.8" opacity="1">LITHOGRAPHY</text>
+<text x="1688" y="548" fill="#7b827f" font-size="15" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">ASML</text>
+<path d="M112 680H1816" stroke="#c9c1b3" stroke-width="3"/>
+<text x="112" y="756" fill="#c17a1b" font-size="22" font-weight="820" text-anchor="start" letter-spacing="2" opacity="1">BREADTH</text>
+<text x="112" y="812" fill="#171a1f" font-size="31" font-weight="650" text-anchor="start" letter-spacing="0" opacity="1">One supplier can capture spend across most process steps—without owning lithography or track.</text>
 </svg>

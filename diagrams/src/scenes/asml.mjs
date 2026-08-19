@@ -35,6 +35,7 @@ function svgDoc(title, description, body, defs = '') {
   </filter>
   <marker id="arrow-cyan" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="${C.cyan}"/></marker>
   <marker id="arrow-amber" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="${C.amber}"/></marker>
+  <marker id="arrow-rose" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="${C.rose}"/></marker>
 ${defs}
 </defs>
 <rect width="${W}" height="${H}" fill="${C.bg}"/>
@@ -57,73 +58,76 @@ ${label(x1 + 30, mid + 9, value, { size: 30, fill: C.cyan, weight: 720 })}`
 ${label(mid, y1 - 24, value, { size: 30, fill: C.cyan, weight: 720, anchor: 'middle' })}`
 }
 
-function person(x, floorY, scale = 1) {
-  const headY = floorY - 142 * scale
-  return `<g fill="none" stroke="${C.ink}" stroke-width="${8 * scale}" stroke-linecap="round" stroke-linejoin="round" opacity="0.92">
-  <circle cx="${x}" cy="${headY}" r="${17 * scale}" fill="${C.ink}" stroke="none"/>
-  <path d="M${x} ${headY + 24 * scale}V${floorY - 58 * scale}M${x - 40 * scale} ${headY + 56 * scale}L${x} ${headY + 42 * scale}L${x + 39 * scale} ${headY + 66 * scale}M${x} ${floorY - 58 * scale}L${x - 30 * scale} ${floorY}M${x} ${floorY - 58 * scale}L${x + 34 * scale} ${floorY}"/>
+function humanSilhouette(x, floorY, height) {
+  const top = floorY - height
+  const headR = height * 0.075
+  const headY = top + headR
+  const shoulderY = top + height * 0.23
+  const hipY = top + height * 0.61
+  return `<g fill="${C.ink}" opacity="0.82">
+  <circle cx="${x}" cy="${headY}" r="${headR}"/>
+  <path d="M${x - height * 0.11} ${shoulderY}Q${x} ${top + height * 0.17} ${x + height * 0.11} ${shoulderY}L${x + height * 0.085} ${hipY}H${x - height * 0.085}Z"/>
+  <path d="M${x - height * 0.08} ${shoulderY + height * 0.04}L${x - height * 0.19} ${top + height * 0.5}L${x - height * 0.14} ${top + height * 0.53}L${x} ${top + height * 0.31}L${x + height * 0.14} ${top + height * 0.53}L${x + height * 0.19} ${top + height * 0.5}L${x + height * 0.08} ${shoulderY + height * 0.04}Z"/>
+  <path d="M${x - height * 0.08} ${hipY}H${x - height * 0.005}L${x - height * 0.12} ${floorY}H${x - height * 0.18}Z"/>
+  <path d="M${x + height * 0.005} ${hipY}H${x + height * 0.08}L${x + height * 0.18} ${floorY}H${x + height * 0.12}Z"/>
 </g>`
 }
 
 function scannerScaleScene() {
-  const floorY = 885
-  const machineX = 350
-  const machineY = 540
-  const machineW = 1120
-  const machineH = 320
+  const machineX = 300
+  const machineY = 350
+  const machineW = 1330
+  const machineH = 380
+  const floorY = machineY + machineH
+  const personHeight = machineH * (1.75 / 4)
 
   const machine = `<g>
-  <rect x="${machineX}" y="${machineY}" width="${machineW}" height="${machineH}" rx="18" fill="${C.panel}" stroke="${C.line}" stroke-width="4"/>
-  <path d="M${machineX + 26} ${machineY + 238}H${machineX + machineW - 24}" stroke="${C.line}" stroke-width="3"/>
-  <rect x="${machineX + 32}" y="${machineY + 36}" width="218" height="188" rx="10" fill="#1a2740" stroke="${C.blue}" stroke-width="3"/>
-  <circle cx="${machineX + 142}" cy="${machineY + 130}" r="52" fill="none" stroke="${C.blue}" stroke-width="4"/>
-  <path d="M${machineX + 286} ${machineY + 48}H${machineX + 598}V${machineY + 224}H${machineX + 286}Z" fill="#151f31" stroke="${C.line}" stroke-width="3"/>
-  <path d="M${machineX + 626} ${machineY + 34}H${machineX + 854}V${machineY + 224}H${machineX + 626}Z" fill="#151f31" stroke="${C.line}" stroke-width="3"/>
-  <rect x="${machineX + 884}" y="${machineY + 50}" width="200" height="174" rx="9" fill="#17263a" stroke="${C.cyan}" stroke-width="3"/>
-  <g fill="${C.line}">
-    <rect x="${machineX + 52}" y="${machineY + 264}" width="186" height="28" rx="4"/>
-    <rect x="${machineX + 282}" y="${machineY + 264}" width="304" height="28" rx="4"/>
-    <rect x="${machineX + 630}" y="${machineY + 264}" width="210" height="28" rx="4"/>
-    <rect x="${machineX + 884}" y="${machineY + 264}" width="200" height="28" rx="4"/>
-  </g>
-  <g fill="${C.muted}" opacity="0.62">
-    <circle cx="${machineX + 314}" cy="${machineY + 84}" r="7"/><circle cx="${machineX + 348}" cy="${machineY + 84}" r="7"/><circle cx="${machineX + 382}" cy="${machineY + 84}" r="7"/>
-    <path d="M${machineX + 664} ${machineY + 94}H${machineX + 816}M${machineX + 664} ${machineY + 126}H${machineX + 816}M${machineX + 664} ${machineY + 158}H${machineX + 816}" stroke="${C.muted}" stroke-width="5"/>
-  </g>
+  <path d="M${machineX + 20} ${machineY}H${machineX + machineW - 30}L${machineX + machineW} ${machineY + 30}V${machineY + machineH - 20}L${machineX + machineW - 20} ${machineY + machineH}H${machineX + 20}L${machineX} ${machineY + machineH - 20}V${machineY + 20}Z" fill="${C.panel}" stroke="${C.cyan}" stroke-width="4"/>
+  <path d="M${machineX + 350} ${machineY + 28}V${machineY + machineH - 48}M${machineX + 892} ${machineY + 28}V${machineY + machineH - 48}" stroke="${C.line}" stroke-width="3"/>
+  ${label(machineX + 42, machineY + 58, 'SOURCE', { size: 20, fill: C.blue, weight: 760, tracking: 2 })}
+  ${label(machineX + 392, machineY + 58, 'ILLUMINATION + PROJECTION OPTICS', { size: 20, fill: C.violet, weight: 760, tracking: 1.7 })}
+  ${label(machineX + 934, machineY + 58, 'RETICLE + WAFER STAGES', { size: 20, fill: C.green, weight: 760, tracking: 1.7 })}
+  <circle cx="${machineX + 174}" cy="${machineY + 190}" r="74" fill="${C.panel2}" stroke="${C.blue}" stroke-width="4"/>
+  <circle cx="${machineX + 174}" cy="${machineY + 190}" r="35" fill="none" stroke="${C.blue}" stroke-width="3" opacity="0.65"/>
+  <path d="M${machineX + 84} ${machineY + 190}H${machineX + 264}" stroke="${C.blue}" stroke-width="3" opacity="0.44"/>
+  <path d="M${machineX + 430} ${machineY + 214}Q${machineX + 496} ${machineY + 270} ${machineX + 562} ${machineY + 214}M${machineX + 610} ${machineY + 246}Q${machineX + 676} ${machineY + 190} ${machineX + 742} ${machineY + 246}" fill="none" stroke="${C.violet}" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+  <path d="M${machineX + 496} ${machineY + 248}L${machineX + 676} ${machineY + 212}" stroke="${C.violet}" stroke-width="3" opacity="0.38"/>
+  <rect x="${machineX + 950}" y="${machineY + 118}" width="128" height="170" rx="8" fill="${C.panel2}" stroke="${C.green}" stroke-width="3"/>
+  <rect x="${machineX + 1112}" y="${machineY + 118}" width="128" height="170" rx="8" fill="${C.panel2}" stroke="${C.green}" stroke-width="3"/>
+  <path d="M${machineX + 924} ${machineY + 312}H${machineX + 1270}" stroke="${C.green}" stroke-width="5" opacity="0.65"/>
+  <path d="M${machineX + 84} ${machineY + machineH - 36}H${machineX + machineW - 80}" stroke="${C.line}" stroke-width="3"/>
+  ${label(machineX + 42, machineY + machineH - 62, 'EXE HIGH-NA EUV · INSTALLED SYSTEM ENVELOPE', { size: 21, fill: C.muted, weight: 700, tracking: 1.8 })}
 </g>`
 
   return svgDoc(
     'High-NA EUV scanner at human scale',
     'A 14 metre long, 4 metre high High-NA EUV scanner is shown beside a 1.75 metre person.',
-    `<path d="M110 885H1780" stroke="${C.line}" stroke-width="3"/>
-${scannerScaleSceneGrid()}
+    `${label(104, 126, 'SIDE ELEVATION · SHARED SCALE', { size: 20, fill: C.muted, weight: 760, tracking: 2.4 })}
+<path d="M96 ${floorY}H1778" stroke="${C.line}" stroke-width="3"/>
 ${machine}
-${person(224, floorY, 1)}
-${dimension(machineX, 470, machineX + machineW, 470, '14 m')}
-${dimension(1532, machineY, 1532, machineY + machineH, '4 m', { vertical: true })}
-${label(224, 928, '1.75 m', { size: 24, fill: C.muted, anchor: 'middle', weight: 560 })}
-${label(machineX + 40, machineY + machineH - 20, 'HIGH-NA EUV · EXE PLATFORM', { size: 22, fill: C.muted, tracking: 2.2, weight: 700 })}
-${label(1710, 710, '150 t', { size: 54, fill: C.ink, anchor: 'middle', weight: 740 })}
-${label(1710, 748, 'system weight', { size: 22, fill: C.muted, anchor: 'middle', weight: 520 })}`,
+${humanSilhouette(190, floorY, personHeight)}
+${dimension(machineX, 266, machineX + machineW, 266, '14 m')}
+${dimension(1688, machineY, 1688, machineY + machineH, '4 m', { vertical: true })}
+<path d="M98 ${floorY - personHeight}H126M112 ${floorY - personHeight}V${floorY}M98 ${floorY}H126" fill="none" stroke="${C.cyan}" stroke-width="3"/>
+${label(190, floorY - personHeight - 20, '1.75 m', { size: 26, fill: C.cyan, weight: 720, anchor: 'middle' })}
+${label(1628, 866, '>150 t', { size: 58, fill: C.ink, anchor: 'end', weight: 780 })}
+${label(1628, 906, 'installed system', { size: 21, fill: C.muted, anchor: 'end', weight: 560 })}`,
   )
-}
-
-function scannerScaleSceneGrid() {
-  const verticals = Array.from({ length: 18 }, (_, i) => `<path d="M${110 + i * 95} 885V925" stroke="${C.line}" stroke-width="2" opacity="0.42"/>`).join('')
-  return `<g>${verticals}</g>`
 }
 
 function reticleFieldScene() {
   const waferCx = 1450
-  const waferCy = 545
+  const waferCy = 520
   const waferR = 300
   const fieldW = 66
   const fieldH = 52
-  const fieldX = waferCx - fieldW / 2 + 34
-  const fieldY = waferCy - fieldH / 2 - 52
+  const fieldX = waferCx - fieldW / 2
+  const fieldY = waferCy - fieldH / 2
   const fields = []
-  for (let y = waferCy - 260; y <= waferCy + 230; y += fieldH + 7) {
-    for (let x = waferCx - 270; x <= waferCx + 240; x += fieldW + 7) {
+  for (let row = -5; row <= 5; row++) {
+    for (let col = -5; col <= 5; col++) {
+      const x = fieldX + col * (fieldW + 7)
+      const y = fieldY + row * (fieldH + 7)
       fields.push(`<rect x="${x}" y="${y}" width="${fieldW}" height="${fieldH}" rx="2" fill="none" stroke="${C.line}" stroke-width="1.5" opacity="0.58"/>`)
     }
   }
@@ -132,31 +136,42 @@ function reticleFieldScene() {
   return svgDoc(
     'Reticle, exposure field and wafer at one physical scale',
     'A reticle pattern is reduced four times to a 26 by 33 millimetre exposure field, which is stepped across a 300 millimetre wafer.',
-    `<g>
-  <rect x="178" y="386" width="304" height="304" rx="10" fill="${C.panel}" stroke="${C.muted}" stroke-width="3"/>
-  <rect x="198" y="434" width="264" height="208" fill="#162b36" stroke="${C.cyan}" stroke-width="4"/>
-  <g stroke="${C.cyan}" stroke-width="1.4" opacity="0.35">
-    <path d="M224 434V642M250 434V642M276 434V642M302 434V642M328 434V642M354 434V642M380 434V642M406 434V642M432 434V642"/>
-    <path d="M198 460H462M198 486H462M198 512H462M198 538H462M198 564H462M198 590H462M198 616H462"/>
-  </g>
-  ${label(330, 344, 'RETICLE', { size: 25, fill: C.muted, anchor: 'middle', weight: 700, tracking: 2.4 })}
-  ${label(330, 734, 'pattern · 132 × 104 mm', { size: 25, fill: C.ink, anchor: 'middle', weight: 620 })}
-</g>
-<path d="M520 538H840" fill="none" stroke="${C.cyan}" stroke-width="4" marker-end="url(#arrow-cyan)"/>
-${label(680, 505, '4× reduction', { size: 27, fill: C.cyan, anchor: 'middle', weight: 700 })}
+    `${label(104, 126, 'DRAWN AT ONE PHYSICAL SCALE', { size: 20, fill: C.muted, weight: 760, tracking: 2.4 })}
 <g>
-  <rect x="876" y="512" width="66" height="52" rx="3" fill="rgba(251,191,36,0.2)" stroke="${C.amber}" stroke-width="4"/>
-  ${dimension(876, 607, 942, 607, '33 mm')}
-  ${label(966, 548, '26 mm', { size: 24, fill: C.cyan, weight: 700 })}
-  ${label(909, 475, 'ONE EXPOSURE', { size: 23, fill: C.muted, anchor: 'middle', weight: 700, tracking: 2 })}
+  <rect x="126" y="350" width="304" height="304" rx="10" fill="${C.panel}" stroke="${C.muted}" stroke-width="3"/>
+  <rect x="146" y="398" width="264" height="208" fill="#162b36" stroke="${C.cyan}" stroke-width="4"/>
+  <g fill="none" stroke="${C.cyan}" stroke-width="2" opacity="0.48">
+    <path d="M164 420H250V468H310V444H392M164 494H220V548H288V514H392M164 580H246V530H332V568H392"/>
+    <rect x="178" y="438" width="42" height="34"/><rect x="252" y="488" width="52" height="42"/><rect x="328" y="452" width="46" height="52"/><rect x="188" y="548" width="62" height="34"/><rect x="292" y="544" width="68" height="38"/>
+  </g>
+  ${label(278, 304, 'RETICLE PATTERN', { size: 25, fill: C.muted, anchor: 'middle', weight: 700, tracking: 2.4 })}
+  ${label(278, 706, '132 × 104 mm', { size: 25, fill: C.ink, anchor: 'middle', weight: 650 })}
 </g>
-<path d="M990 538C1080 538 1090 490 1145 474" fill="none" stroke="${C.amber}" stroke-width="3" stroke-dasharray="8 8" marker-end="url(#arrow-amber)"/>
+
+<path d="M410 398L628 466M410 606L628 544" fill="none" stroke="${C.cyan}" stroke-width="3" opacity="0.72"/>
+<path d="M628 466Q662 500 628 544" fill="none" stroke="${C.cyan}" stroke-width="9" stroke-linecap="round"/>
+<path d="M636 466L798 486M636 544L798 538" fill="none" stroke="${C.cyan}" stroke-width="3" opacity="0.72"/>
+${label(626, 390, '4:1 LINEAR REDUCTION', { size: 22, fill: C.cyan, anchor: 'middle', weight: 760, tracking: 1.7 })}
+
+<g>
+  <rect x="798" y="486" width="66" height="52" rx="3" fill="rgba(251,191,36,0.18)" stroke="${C.amber}" stroke-width="4"/>
+  <path d="M806 498H824V507H838V496H856M806 526H822V516H842V530H856" fill="none" stroke="${C.amber}" stroke-width="1.8" opacity="0.72"/>
+  ${label(831, 452, 'EXPOSURE FIELD', { size: 20, fill: C.amber, anchor: 'middle', weight: 760, tracking: 1.5 })}
+  <path d="M798 564V584M798 574H864M864 564V584" fill="none" stroke="${C.amber}" stroke-width="2.5"/>
+  ${label(831, 614, '33 mm', { size: 21, fill: C.amber, anchor: 'middle', weight: 700 })}
+  <path d="M884 486H904M894 486V538M884 538H904" fill="none" stroke="${C.amber}" stroke-width="2.5"/>
+  ${label(922, 520, '26 mm', { size: 21, fill: C.amber, weight: 700 })}
+</g>
+
+<path d="M972 512H1128" fill="none" stroke="${C.amber}" stroke-width="3" marker-end="url(#arrow-amber)"/>
+${label(1048, 478, 'STEP + REPEAT', { size: 20, fill: C.muted, anchor: 'middle', weight: 760, tracking: 1.8 })}
 <g>
   <circle cx="${waferCx}" cy="${waferCy}" r="${waferR}" fill="#0b1523" stroke="${C.muted}" stroke-width="4"/>
   <path d="M${waferCx - 52} ${waferCy + waferR - 2}H${waferCx + 52}" stroke="${C.muted}" stroke-width="8"/>
   <g clip-path="url(#wafer-clip)">${fields.join('')}</g>
-  <rect x="${fieldX}" y="${fieldY}" width="${fieldW}" height="${fieldH}" rx="3" fill="rgba(251,191,36,0.3)" stroke="${C.amber}" stroke-width="4" filter="url(#glow)"/>
-  ${label(waferCx, 196, '300 mm WAFER', { size: 25, fill: C.muted, anchor: 'middle', weight: 700, tracking: 2.4 })}
+  <rect x="${fieldX}" y="${fieldY}" width="${fieldW}" height="${fieldH}" rx="3" fill="rgba(251,191,36,0.32)" stroke="${C.amber}" stroke-width="4"/>
+  <path d="M${fieldX + 8} ${fieldY + 12}H${fieldX + 26}V${fieldY + 21}H${fieldX + 40}V${fieldY + 10}H${fieldX + 58}M${fieldX + 8} ${fieldY + 40}H${fieldX + 24}V${fieldY + 30}H${fieldX + 44}V${fieldY + 44}H${fieldX + 58}" fill="none" stroke="${C.amber}" stroke-width="1.8" opacity="0.78"/>
+  ${label(waferCx, 190, '300 mm WAFER', { size: 25, fill: C.muted, anchor: 'middle', weight: 700, tracking: 2.4 })}
 </g>`,
     defs,
   )
@@ -170,91 +185,85 @@ function mirror(x, y, rotation = 0, scale = 1) {
 }
 
 function euvPathScene() {
-  const beam = 'M612 542L750 704L910 356L1100 257L1265 388L1430 559L1592 744'
+  const arrow = (x1, x2, y, color = C.rose) => `<path d="M${x1} ${y}H${x2}" fill="none" stroke="${color}" stroke-width="5" marker-end="url(#${color === C.amber ? 'arrow-amber' : 'arrow-rose'})"/>`
+  const step = (x, number, title, sub, color) => `<g>
+  <circle cx="${x}" cy="320" r="28" fill="${color}"/>
+  ${label(x, 329, number, { size: 24, fill: C.bg, weight: 820, anchor: 'middle' })}
+  ${label(x, 400, title, { size: 24, fill: color, weight: 780, anchor: 'middle', tracking: 1.5 })}
+  ${label(x, 438, sub, { size: 20, fill: C.muted, weight: 580, anchor: 'middle' })}
+</g>`
+
   return svgDoc(
-    'The causal EUV light path',
-    'A carbon dioxide laser strikes tin to create plasma. Thirteen point five nanometre light then reflects through mirrors, the reticle and projection optics to a wafer in vacuum.',
-    `<rect x="430" y="122" width="1360" height="790" rx="34" fill="none" stroke="${C.line}" stroke-width="3" stroke-dasharray="13 12"/>
-${label(465, 174, 'VACUUM · EUV IS ABSORBED BY AIR AND GLASS', { size: 22, fill: C.muted, weight: 700, tracking: 1.8 })}
-<g>
-  <rect x="68" y="468" width="300" height="146" rx="16" fill="#2c2412" stroke="${C.amber}" stroke-width="3"/>
-  ${label(218, 525, 'TRUMPF', { size: 31, fill: C.ink, anchor: 'middle', weight: 760 })}
-  ${label(218, 563, 'CO₂ laser · 30 kW', { size: 22, fill: C.amber, anchor: 'middle', weight: 620 })}
-</g>
-<path d="M368 541H502" fill="none" stroke="${C.amber}" stroke-width="8" stroke-linecap="round"/>
-<path d="M486 528L510 541L486 554Z" fill="${C.amber}"/>
-<g>
-  <circle cx="518" cy="542" r="13" fill="${C.ink}"/>
-  <circle cx="584" cy="542" r="54" fill="rgba(251,113,133,0.2)" stroke="${C.rose}" stroke-width="5" filter="url(#glow)"/>
-  <path d="M550 508L618 576M550 576L618 508" stroke="${C.rose}" stroke-width="5" opacity="0.75"/>
-  ${label(518, 616, 'TIN', { size: 21, fill: C.muted, anchor: 'middle', weight: 700 })}
-  ${label(584, 638, 'PLASMA', { size: 21, fill: C.rose, anchor: 'middle', weight: 700 })}
-</g>
-<path d="${beam}" fill="none" stroke="${C.rose}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
-${mirror(750, 704, 0, 1.05)}
-${mirror(910, 356, 180, 0.9)}
-<g transform="translate(1100 257) rotate(-11)">
-  <rect x="-92" y="-13" width="184" height="26" rx="4" fill="#183446" stroke="${C.cyan}" stroke-width="4"/>
-  <path d="M-68 -4H68" stroke="${C.cyan}" stroke-width="2" stroke-dasharray="6 5"/>
-</g>
-${mirror(1265, 388, 180, 0.92)}
-${mirror(1430, 559, 0, 0.92)}
-<g transform="translate(1592 744) rotate(-10)">
-  <ellipse cx="0" cy="0" rx="128" ry="34" fill="#123529" stroke="${C.green}" stroke-width="5"/>
-  <path d="M-112 0H112" stroke="${C.green}" stroke-width="2" opacity="0.7"/>
-</g>
-${label(684, 820, 'COLLECT', { size: 21, fill: C.muted, anchor: 'middle', weight: 700 })}
-${label(910, 262, 'ILLUMINATE', { size: 21, fill: C.muted, anchor: 'middle', weight: 700 })}
-${label(1100, 205, 'RETICLE', { size: 21, fill: C.cyan, anchor: 'middle', weight: 700 })}
-${label(1348, 300, '4× PROJECTION', { size: 21, fill: C.muted, anchor: 'middle', weight: 700 })}
-${label(1592, 832, 'WAFER', { size: 23, fill: C.green, anchor: 'middle', weight: 720 })}
-${label(738, 564, '13.5 nm', { size: 40, fill: C.rose, weight: 760 })}`,
+    'EUV requires plasma, vacuum and reflective optics',
+    'A carbon dioxide laser strikes tin to create plasma. The plasma emits 13.5 nanometre light, which reflective optics collect, pattern, shrink four to one and project onto a wafer in vacuum.',
+    `${label(104, 126, 'CAUSE → LIGHT → PATTERN', { size: 20, fill: C.muted, weight: 760, tracking: 2.4 })}
+<path d="M622 220H1788V858H622" fill="none" stroke="${C.line}" stroke-width="3" stroke-dasharray="12 11"/>
+${label(658, 264, 'VACUUM · AIR AND GLASS ABSORB EUV', { size: 21, fill: C.muted, weight: 720, tracking: 1.8 })}
+
+${step(190, '1', 'CO₂ LASER', 'drives the source', C.amber)}
+<rect x="88" y="500" width="204" height="118" rx="16" fill="${C.panel}" stroke="${C.amber}" stroke-width="4"/>
+<path d="M126 559H250" stroke="${C.amber}" stroke-width="9" stroke-linecap="round"/>
+<path d="M232 541L266 559L232 577Z" fill="${C.amber}"/>
+
+${arrow(308, 402, 559, C.amber)}
+${step(500, '2', 'TIN PLASMA', 'emits 13.5 nm EUV', C.rose)}
+<circle cx="500" cy="559" r="54" fill="${C.panel}" stroke="${C.rose}" stroke-width="5"/>
+<circle cx="500" cy="559" r="12" fill="${C.ink}"/>
+<path d="M500 486V512M500 606V632M427 559H453M547 559H573M449 508L468 527M532 591L551 610M449 610L468 591M532 527L551 508" stroke="${C.rose}" stroke-width="5" stroke-linecap="round"/>
+
+${arrow(572, 700, 559)}
+${step(786, '3', 'COLLECT', 'multilayer mirror', C.violet)}
+${mirror(786, 559, 0, 0.86)}
+
+${arrow(866, 1004, 559)}
+${step(1090, '4', 'PATTERN', 'reflective reticle', C.cyan)}
+<rect x="1012" y="524" width="156" height="70" rx="7" fill="${C.panel2}" stroke="${C.cyan}" stroke-width="4"/>
+<path d="M1032 544H1072V574H1106V542H1148" fill="none" stroke="${C.cyan}" stroke-width="3"/>
+
+${arrow(1184, 1308, 559)}
+${step(1400, '5', 'SHRINK 4:1', 'projection mirrors', C.violet)}
+${mirror(1360, 538, 0, 0.55)}
+${mirror(1442, 584, 180, 0.5)}
+
+${arrow(1498, 1630, 559)}
+${step(1710, '6', 'EXPOSE', 'one wafer field', C.green)}
+<ellipse cx="1710" cy="559" rx="88" ry="28" fill="${C.panel}" stroke="${C.green}" stroke-width="5"/>
+<rect x="1682" y="548" width="56" height="22" fill="rgba(251,191,36,0.25)" stroke="${C.amber}" stroke-width="3"/>
+
+<path d="M500 750H1710" stroke="${C.rose}" stroke-width="3" opacity="0.65"/>
+<path d="M500 736V764M1710 736V764" stroke="${C.rose}" stroke-width="3"/>
+${label(1105, 812, '13.5 nm light stays in vacuum and touches only reflective optics', { size: 27, fill: C.ink, weight: 680, anchor: 'middle' })}`,
   )
 }
 
 function supplierModulesScene() {
   const modules = [
-    { x: 128, w: 326, edge: C.amber, company: 'TRUMPF', module: '30 kW CO₂ laser', tag: 'Germany' },
-    { x: 494, w: 326, edge: C.rose, company: 'CYMER (ASML)', module: 'tin-droplet source', tag: 'United States' },
-    { x: 860, w: 456, edge: C.violet, company: 'ZEISS', module: 'collector + imaging optics', tag: 'Germany' },
-    { x: 1356, w: 436, edge: C.cyan, company: 'ASML', module: 'architecture + integration', tag: 'Netherlands' },
+    { x: 118, w: 350, edge: C.amber, company: 'TRUMPF', module: '30 kW CO₂ laser', tag: 'DRIVE' },
+    { x: 538, w: 350, edge: C.rose, company: 'CYMER', module: 'tin-droplet source', tag: 'CREATE EUV' },
+    { x: 958, w: 350, edge: C.violet, company: 'ZEISS', module: 'collector + optics', tag: 'SHAPE LIGHT' },
+    { x: 1378, w: 424, edge: C.cyan, company: 'ASML', module: 'stages + control', tag: 'PLACE PATTERN' },
   ]
 
-  const blockSvg = modules.map(({ x, w, edge, company, module, tag }, i) => `<g>
-  <rect x="${x}" y="384" width="${w}" height="284" rx="18" fill="${C.panel}" stroke="${edge}" stroke-width="4"/>
-  <rect x="${x}" y="384" width="${w}" height="12" rx="6" fill="${edge}"/>
-  ${label(x + 28, 463, company, { size: 31, fill: C.ink, weight: 760 })}
-  ${label(x + 28, 512, module, { size: 23, fill: edge, weight: 620 })}
-  ${label(x + 28, 624, tag.toUpperCase(), { size: 18, fill: C.muted, weight: 700, tracking: 1.8 })}
-  ${moduleIcon(i, x, w, edge)}
+  const blockSvg = modules.map(({ x, w, edge, company, module, tag }) => `<g>
+  <rect x="${x}" y="402" width="${w}" height="238" rx="16" fill="${C.panel}" stroke="${edge}" stroke-width="4"/>
+  <rect x="${x}" y="402" width="${w}" height="10" rx="5" fill="${edge}"/>
+  ${label(x + w / 2, 474, tag, { size: 18, fill: C.muted, weight: 760, anchor: 'middle', tracking: 2 })}
+  ${label(x + w / 2, 540, company, { size: 31, fill: C.ink, weight: 780, anchor: 'middle' })}
+  ${label(x + w / 2, 584, module, { size: 22, fill: edge, weight: 620, anchor: 'middle' })}
 </g>`).join('\n')
 
   return svgDoc(
     'Supplier modules inside an ASML EUV system',
     'TRUMPF supplies the carbon dioxide laser, Cymer supplies the source, ZEISS supplies the optics, and ASML supplies stages, control and system integration.',
-    `<path d="M128 296V240H1792V296" fill="none" stroke="${C.cyan}" stroke-width="4"/>
-${label(960, 196, 'ASML · SYSTEM ARCHITECT AND INTEGRATOR', { size: 27, fill: C.cyan, anchor: 'middle', weight: 740, tracking: 2.3 })}
+    `<path d="M118 318V244H1802V318" fill="none" stroke="${C.cyan}" stroke-width="4"/>
+${label(960, 198, 'INTEGRATION BOUNDARY', { size: 27, fill: C.cyan, anchor: 'middle', weight: 760, tracking: 2.2 })}
 ${blockSvg}
-<path d="M454 526H486M820 526H852M1316 526H1348" stroke="${C.muted}" stroke-width="4" stroke-dasharray="7 8"/>
-${label(960, 764, 'one calibrated system', { size: 25, fill: C.muted, anchor: 'middle', weight: 560 })}
-<path d="M330 808H1590" stroke="${C.line}" stroke-width="3"/>
-<circle cx="330" cy="808" r="7" fill="${C.amber}"/><circle cx="1590" cy="808" r="7" fill="${C.cyan}"/>
-${label(960, 854, 'laser  →  source  →  optics  →  pattern placement', { size: 26, fill: C.ink, anchor: 'middle', weight: 620 })}`,
+<path d="M468 521H526" stroke="${C.muted}" stroke-width="4" marker-end="url(#arrow-cyan)"/>
+<path d="M888 521H946" stroke="${C.muted}" stroke-width="4" marker-end="url(#arrow-cyan)"/>
+<path d="M1308 521H1366" stroke="${C.muted}" stroke-width="4" marker-end="url(#arrow-cyan)"/>
+${label(960, 760, 'vacuum · alignment · sensors · software', { size: 27, fill: C.ink, anchor: 'middle', weight: 620 })}
+${label(960, 812, 'qualified together as one production scanner', { size: 22, fill: C.muted, anchor: 'middle', weight: 580 })}`,
   )
-}
-
-function moduleIcon(index, x, width, edge) {
-  const cx = x + width - 74
-  if (index === 0) {
-    return `<path d="M${cx - 38} 568H${cx + 18}" stroke="${edge}" stroke-width="8"/><path d="M${cx + 18} 548L${cx + 50} 568L${cx + 18} 588Z" fill="${edge}"/>`
-  }
-  if (index === 1) {
-    return `<circle cx="${cx - 12}" cy="565" r="13" fill="${edge}"/><circle cx="${cx + 24}" cy="565" r="38" fill="none" stroke="${edge}" stroke-width="5" filter="url(#glow)"/>`
-  }
-  if (index === 2) {
-    return `${mirror(cx - 16, 558, 0, 0.58)}${mirror(cx + 52, 602, 180, 0.48)}`
-  }
-  return `<ellipse cx="${cx}" cy="570" rx="58" ry="17" fill="none" stroke="${edge}" stroke-width="5"/><path d="M${cx - 42} 570H${cx + 42}" stroke="${edge}" stroke-width="3"/>`
 }
 
 export function generateAsmlScenes(outDir) {

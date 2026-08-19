@@ -59,12 +59,12 @@ class: full-slide-visual
 title: "One inference forward pass"
 ---
 
-<img src="/diagrams/rendered/inference-forward-pass.png" alt="A two-lane schematic separates the occasional model-load path through remote storage, local NVMe, Grace memory, and HBM from the per-request path through networking, the Grace CPU, HBM, shared L2, and a streaming multiprocessor inside the GPU compute hierarchy" />
+<img src="/diagrams/rendered/inference-forward-pass.png" alt="A two-path inference schematic shows live requests moving through networking, Grace, HBM, shared L2 and SM compute, while model checkpoints load separately through storage and Grace memory" />
 
 <!--
-- SSD is for model loading, not every request: checkpoints may be cached locally, staged through Grace memory, then kept resident in HBM.
-- Each request enters through networking; Grace tokenizes, batches, and launches work against resident HBM weights and KV cache.
-- Shared L2 feeds SM-local memory and Tensor Cores; GPCs and TPCs are containers. Decode repeats the pass per generated token.
+- At worker startup, weights can move from a registry through local NVMe and Grace memory into HBM; the exact staging path varies by system.
+- During serving, requests enter through networking; Grace tokenizes, queues, batches, and launches work against weights and KV cache resident in HBM.
+- HBM traffic passes through shared L2 to SM and Tensor Core compute; prefill runs once per prompt, while decode repeats per generated token.
 -->
 
 ---
@@ -110,9 +110,6 @@ title: "One inference forward pass"
 <div class="mt-5 leading-relaxed">TSMC 3 nm · HBM4 · production photonics<br>shipments scheduled to begin in fall 2026</div>
 </div>
 </div>
-
-<div class="text-xl mt-9 text-center"><b>The parts advance.</b> The dependency map survives.</div>
-<div class="text-sm opacity-50 mt-5 text-center">NVIDIA · May and July 2026</div>
 
 <!--
 - Nvidia now describes Grace Blackwell as the previous generation relative to Vera Rubin, so this course does not pretend the tracer is the newest architecture.

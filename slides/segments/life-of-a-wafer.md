@@ -1,46 +1,20 @@
 ---
-layout: section
+layout: default
 ---
 
 <!-- SEGMENT
 id: life-of-a-wafer
 act: IV — The Fab Tour
 tier: —            # keystone teach — concept segment, no company tier
-angle: "Nobody builds a chip — a chip survives. One seven-step loop, run ~80 times over three months, where a single invisible particle kills a die worth more than gold; every company you're about to meet exists because it owns exactly one of those steps."   # YOU OWN THIS LINE — rewrite in your voice
+angle: "Nobody builds a chip — a chip survives. A recurring process loop transfers roughly 80–100-plus distinct patterns over months, while one invisible particle can kill a die worth more than gold."   # YOU OWN THIS LINE — rewrite in your voice
 runtime: ~5 min
 status: draft
 seeds: [japan-under-everything, spruce-pine]  # `materials` later cashes the district's supply-shock consequence
 pays_off: [yield]                   # foundations plants the size penalty; this segment makes fabrication yield tangible
 stamps: []                          # materials proves and awards the Japan-cluster stamp
-diagrams: [map-equipment, journey-3, flow-strip, chip-interconnect-stack, wafer-particle-defect, flow-expose]
+diagrams: [flow-strip, chip-interconnect-stack, wafer-particle-defect]
 sources: research/foundations.md, research/materials.md
 -->
-
-
-# Inside a leading-edge fab
-
-<div class="grid grid-cols-2 gap-8 mt-8 items-center">
-<div>
-
-![industry map — equipment region lit](/diagrams/rendered/map-equipment.svg)
-
-</div>
-<div class="text-2xl leading-relaxed">
-A leading-edge wafer passes through<br>
-<b>roughly 1,000 process steps</b><br>
-over <b>three to four months</b>.
-</div>
-</div>
-
-![journey bar — FAB](/diagrams/rendered/journey-3.svg)
-
-<!--
-- A leading-edge wafer passes through about a thousand process steps over three to four months.
-- Different machines deposit material, print patterns, remove material, and inspect the result.
-- Much of the cycle time comes from waiting between those operations rather than active processing.
--->
-
----
 
 # A wafer and a mask set enter the fab
 
@@ -54,43 +28,148 @@ over <b>three to four months</b>.
 </div>
 <div class="border-2 border-gray-400 rounded-lg p-6 text-center">
 <div class="text-sm opacity-60 mb-2">THE MASKS</div>
-<div class="text-5xl font-bold">60–100</div>
-<div class="opacity-70 mt-2">patterned reticles — roughly one per mask level</div>
+<div class="text-5xl font-bold">~80–100+</div>
+<div class="opacity-70 mt-2">unique mask patterns · process-dependent</div>
 <div class="text-lg mt-4">~<b>$5–15M</b> per design</div>
-<div class="text-sm opacity-60 mt-2">one EUV mask: $500k–1M</div>
 </div>
 </div>
 
 <div class="mt-7 text-center">
 <div class="text-sm tracking-widest opacity-50">BEFORE THE FAB</div>
-<div class="text-lg mt-2"><b>Spruce Pine Mining District, North Carolina</b> · 25 × 10 miles across three counties</div>
+<div class="text-lg mt-2"><b>Spruce Pine Mining District, North Carolina</b></div>
 <div class="opacity-70 mt-1">high-purity quartz → fused-quartz crucible → holds the silicon melt while one crystal is pulled</div>
-<div class="text-sm opacity-50 mt-1">The quartz makes the crucible; it does not become the wafer.</div>
 </div>
 
 <!--
-- The fab starts with a polished 300 millimetre silicon wafer that costs about $100 to $200 and reaches 99.999999999 percent purity.
-- The design arrives as 60 to 100 patterned reticles, with roughly one reticle per mask level; a multi-patterned layer may need several.
-- A leading-edge mask set therefore costs millions of dollars.
-- The Spruce Pine Mining District spans three North Carolina counties; its high-purity quartz becomes the crucible around the silicon melt, not the wafer.
+- The fab starts with a polished 300 millimetre silicon wafer at eleven-nines purity.
+- A leading-edge design typically needs roughly eighty to one hundred-plus unique mask patterns; exact counts vary by process.
+- Those masks mix DUV and EUV, and the full set can cost millions of dollars.
+- Spruce Pine quartz becomes the crucible around the silicon melt, not the wafer itself.
 -->
 
 ---
 
-# The fabrication cycle repeats for each layer
+# Each new pattern triggers another process loop
 
 ![flow strip: deposit → coat → expose → etch → implant → polish → measure](/diagrams/rendered/flow-strip.svg)
 
-<div class="grid grid-cols-3 gap-6 mt-10 text-center">
-<div><div class="text-4xl font-bold">1 mask level</div><div class="text-sm opacity-60">one lithography pattern</div></div>
-<div><div class="text-4xl font-bold">~80–120</div><div class="text-sm opacity-60">mask levels per design</div></div>
-<div><div class="text-4xl font-bold">billions</div><div class="text-sm opacity-60">features patterned across each wafer</div></div>
+<div class="text-center text-2xl mt-12">
+The <b>wafer</b> stays in the fab; the tools, materials, and masks change around it.
 </div>
 
 <!--
-- The fab deposits a film, coats it with light-sensitive resist, exposes a pattern, etches the open regions, implants dopants where needed, polishes the surface, and measures the result.
-- The fab repeats variations of this cycle across about 80 to 120 mask levels.
-- Each exposure patterns billions of features across the wafer at once.
+- The fab coats the wafer, exposes one reticle, and then etches or implants the revealed pattern.
+- Each pass transfers one pattern into the wafer, then metrology aligns the next pattern to what already exists.
+- The wafer stays in the fab while masks and process conditions change around it.
+-->
+
+---
+
+# Doping controls which charge carrier dominates
+
+<div class="grid grid-cols-[1fr_auto_1.15fr_auto_1fr] gap-7 mt-14 items-center text-center">
+<div>
+  <div class="text-sm tracking-[0.22em] opacity-55">PATTERN</div>
+  <div class="text-3xl font-bold mt-4">Choose the region</div>
+  <div class="text-lg opacity-65 mt-3">a mask shields the rest</div>
+</div>
+<div class="text-5xl opacity-35">→</div>
+<div>
+  <div class="text-sm tracking-[0.22em] opacity-55">IMPLANT</div>
+  <div class="text-3xl font-bold mt-4">Set dose + depth</div>
+  <div class="text-base mt-3 leading-relaxed"><div class="text-rose-300">boron → p-type</div><div class="text-cyan-300">phosphorus / arsenic → n-type</div></div>
+</div>
+<div class="text-5xl opacity-35">→</div>
+<div>
+  <div class="text-sm tracking-[0.22em] opacity-55">ANNEAL</div>
+  <div class="text-3xl font-bold mt-4">Repair + activate</div>
+  <div class="text-lg opacity-65 mt-3">a short heat treatment</div>
+</div>
+</div>
+
+<div class="border-t border-slate-600 mt-14 pt-8 text-center">
+  <div class="text-3xl font-bold"><span class="text-rose-300">p-type: holes dominate</span><span class="opacity-35 mx-6">·</span><span class="text-cyan-300">n-type: electrons dominate</span></div>
+  <div class="text-xl opacity-70 mt-4">Species, location, dose, and depth help define a transistor's electrical behavior.</div>
+</div>
+
+<!--
+- Doping adds a precisely controlled concentration of other atoms so selected silicon regions carry charge differently.
+- Boron creates p-type material with more holes; phosphorus or arsenic creates n-type material with more electrons.
+- The mask sets location, the beam sets dose and depth, and annealing repairs lattice damage and electrically activates the dopants.
+- Implantation is one doping method; three-dimensional devices may also use plasma doping or doped epitaxial growth.
+-->
+
+---
+
+# One pass through the loop: deposit, pattern, etch
+
+<div class="grid grid-cols-[1fr_auto_1fr_auto_1fr] gap-5 mt-10 items-center text-center">
+<div>
+  <div class="text-sm tracking-[0.22em] opacity-60 mb-4">DEPOSIT</div>
+  <div class="mx-auto w-52 h-28 relative">
+    <div class="absolute bottom-0 left-0 right-0 h-12 bg-slate-600"></div>
+    <div class="absolute bottom-12 left-0 right-0 h-10 bg-amber-400"></div>
+  </div>
+  <div class="text-lg mt-4">add a blanket film</div>
+</div>
+<div class="text-5xl opacity-35">→</div>
+<div>
+  <div class="text-sm tracking-[0.22em] opacity-60 mb-4">PATTERN</div>
+  <div class="mx-auto w-52 h-28 relative">
+    <div class="absolute bottom-0 left-0 right-0 h-12 bg-slate-600"></div>
+    <div class="absolute bottom-12 left-0 right-0 h-10 bg-amber-400"></div>
+    <div class="absolute bottom-[5.5rem] left-0 w-16 h-6 bg-cyan-300"></div>
+    <div class="absolute bottom-[5.5rem] right-0 w-16 h-6 bg-cyan-300"></div>
+  </div>
+  <div class="text-lg mt-4">open selected regions</div>
+</div>
+<div class="text-5xl opacity-35">→</div>
+<div>
+  <div class="text-sm tracking-[0.22em] opacity-60 mb-4">ETCH</div>
+  <div class="mx-auto w-52 h-28 relative">
+    <div class="absolute bottom-0 left-0 right-0 h-12 bg-slate-600"></div>
+    <div class="absolute bottom-12 left-0 w-16 h-10 bg-amber-400"></div>
+    <div class="absolute bottom-12 right-0 w-16 h-10 bg-amber-400"></div>
+  </div>
+  <div class="text-lg mt-4">remove exposed material</div>
+</div>
+</div>
+
+<div class="text-center text-xl mt-10 opacity-75">The pattern decides where the deposited film remains.</div>
+
+<!--
+- Deposition first covers the surface with a film; lithography then defines where that film should remain.
+- Etching removes the unprotected regions, turning a flat coating into one patterned feature layer.
+- Variations of this add, pattern, and remove sequence recur throughout the full fabrication loop.
+-->
+
+---
+
+# Why one wafer spends months in the fab
+
+<div class="grid grid-cols-[1fr_auto_0.8fr_auto_1fr] gap-8 mt-16 items-center text-center">
+  <div>
+    <div class="text-5xl font-bold">~1–1.5 days</div>
+    <div class="text-lg opacity-65 mt-3">average cycle time<br>per mask level</div>
+  </div>
+  <div class="text-5xl opacity-40">×</div>
+  <div>
+    <div class="text-4xl font-bold">the full<br>mask set</div>
+  </div>
+  <div class="text-5xl opacity-40">≈</div>
+  <div>
+    <div class="text-5xl font-bold text-amber-400">~3–4 months</div>
+    <div class="text-lg opacity-65 mt-3">typical leading-edge<br>fab cycle</div>
+  </div>
+</div>
+
+<div class="text-center text-xl opacity-70 mt-16">
+Most elapsed time is queueing, transport, and rework between tools—not the exposure itself.
+</div>
+
+<!--
+- 100km travelled!
+- Most elapsed time is queueing, transport, holds, and rework between tools rather than the exposure itself.
 -->
 
 ---
@@ -105,12 +184,70 @@ title: "Inside the die"
 </div>
 
 <div class="visual-sequence__caption"><strong>Transistors occupy the floor.</strong><span>More than fifteen layers of wiring rise above them.</span></div>
-<div class="visual-sequence__source">N5 · 81 mask layers · roughly three months in process</div>
+<div class="visual-sequence__source">Conceptual cross-section · transistors + multilayer interconnect</div>
 
 <!--
 - Transistors occupy a thin device layer at the bottom, while more than fifteen interconnect layers above them route signals and power.
-- Each mask level adds several process steps and more queue time, and each added step creates another chance for contamination or process drift.
-- Eighty-one mask levels can keep an N5 wafer in the fab for months.
+- Dozens of distinct patterns build contacts, vias, cuts, and wiring into the three-dimensional structure above them.
+- Exact mask counts are process-specific and typically proprietary; advanced logic is roughly an eighty-to-one-hundred-plus-mask undertaking.
+-->
+
+---
+class: mask-level-stack
+title: "A mask level is one patterning operation"
+---
+
+<img class="mask-level-stack__art" src="/assets/mask-level-stack.png" alt="Conceptual exploded stack of distinct photomask patterns aligned above one semiconductor chip" />
+<div class="mask-level-stack__scrim"></div>
+
+<div class="mask-level-stack__copy">
+  <div class="mask-level-stack__kicker">MASKS, LEVELS, SETS</div>
+  <h1>A mask level is one patterning operation</h1>
+  <div class="mask-level-stack__terms">
+    <div><strong>MASK / RETICLE</strong><span>The physical master pattern.</span></div>
+    <div><strong>MASK LEVEL</strong><span>One distinct lithography pattern.</span></div>
+    <div><strong>MASK SET</strong><span>Every reticle needed for one design.</span></div>
+  </div>
+  <div class="mask-level-stack__takeaway">Not one-to-one with physical layers.</div>
+</div>
+
+<div class="mask-level-stack__source">SEMI terminology · TSMC mask services · ZEISS</div>
+
+<!--
+- A mask or reticle is the physical master pattern loaded into the lithography scanner.
+- A mask level is one distinct patterning operation, not one completed wiring or material layer.
+- Cuts, vias, implants, and dense features can each require separate mask levels.
+- The mask set is the complete collection needed to manufacture one design.
+-->
+
+---
+class: mask-patterning-compare
+title: "One design layer can require several masks"
+---
+
+<img class="mask-patterning-compare__art" src="/assets/duv-euv-mask-patterning.png" alt="Four separate DUV mask patterns and one EUV mask pattern producing the same dense line layer" />
+<div class="mask-patterning-compare__shade"></div>
+
+<h1>One design layer can require several masks</h1>
+
+<div class="mask-patterning-compare__label mask-patterning-compare__label--duv">
+  <strong>UP TO 4</strong>
+  <span>193 nm DUV masks</span>
+</div>
+
+<div class="mask-patterning-compare__label mask-patterning-compare__label--euv">
+  <strong>1</strong>
+  <span>13.5 nm EUV mask</span>
+</div>
+
+<div class="mask-patterning-compare__takeaway"><strong>EUV can collapse several exposures into one.</strong><span>It does not replace every DUV mask.</span></div>
+<div class="mask-patterning-compare__source">Samsung 7LPP example · ASML · ZEISS</div>
+
+<!--
+- Dense patterns can be split across multiple masks, exposed separately, and aligned on the same intended layer.
+- Samsung says its 7LPP flow could use one EUV mask where ArF DUV required up to four.
+- That is one process example, not a universal rule; sufficiently tight EUV patterns can also require multi-patterning.
+- Leading-edge sets still mix many DUV masks with selected EUV masks.
 -->
 
 ---
@@ -124,26 +261,12 @@ title: "Contamination"
   <img src="/diagrams/rendered/wafer-particle-defect.png" alt="A nearly invisible particle on a wafer, magnified to show it shorting two metal lines on one die" />
 </div>
 
-<div class="visual-sequence__caption"><strong>One particle can bridge two wires.</strong><span>The bridged die fails.</span></div>
-<div class="visual-sequence__source">Blank wafer · ~$150 · months of accumulated process value at risk</div>
+<div class="visual-sequence__caption"><strong>ISO 5 ≤ 100,000 particles/m³</strong><span>ISO 1 ≤ 10 particles/m³.</span></div>
+<div class="visual-sequence__source">At ≥0.1 µm · clean-zone classification · lower is cleaner</div>
 
 <!--
 - A particle about 100 nanometres wide can bridge nearby wires and kill a die.
-- Cleanrooms and sealed wafer carriers limit contamination because one defect late in the process wastes months of work.
-- Larger dies expose more area to defects, so inspection and process control have a direct effect on the number of sellable chips.
--->
-
----
-
-# Exposure requires the fab's most expensive tool
-
-![expose step glowing](/diagrams/rendered/flow-expose.svg)
-
-<div class="text-2xl mt-10 text-center leading-relaxed">
-EUV scanners perform the exposure step and cost more than any other fab tool.
-</div>
-
-<!--
-- During exposure, a lithography scanner projects the reticle pattern into photoresist on the wafer.
-- EUV can replace several DUV exposures and reduce masks and process steps, but its scanner is the most expensive tool in the fab.
+- ISO class applies to a measured cleanroom or zone, not the whole fab; lower numbers mean cleaner air.
+- ISO Class 5 is common in semiconductor production; critical zones can reach Class 1, with only ten qualifying particles in 1,000 litres.
+- Sealed wafer carriers add a cleaner mini-environment around the product because one late defect wastes months of accumulated process value.
 -->

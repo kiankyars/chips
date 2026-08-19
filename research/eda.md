@@ -1,6 +1,6 @@
 # Research — EDA (Synopsys · Cadence · Siemens EDA)
 
-As-of: 2026-07
+As-of: 2026-08-18
 
 Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 `<!-- VERIFY -->` = not fully confident, check before recording.
@@ -24,14 +24,19 @@ Fiscal calendars: **Synopsys FY ends Oct 31** (FY2025 = Nov'24–Oct'25); **Cade
      literally the blueprint TSMC prints.
 - So the honest one-liner: **chips are not drawn, they are compiled.** Humans
   write intent; software produces the 200-billion-transistor artifact.
-- Verification eats the budget: **~50%+ of total project time** goes to
-  verification, stable for a decade (Wilson Research Group / Siemens studies);
-  even *design* engineers spend **~40–47%** of their own time on verification;
-  demand for verification engineers grew **6.2%/yr** vs 2.7%/yr for designers
-  (2007–2022). [2][3]
-- Design cost per chip at the edge (IBS estimates): 28nm **~$40M** → 7nm
-  **~$217M** → 5nm **~$416–449M** → 3nm **~$581–590M** → 2nm **~$724M** —
-  before a single wafer is bought. [4] <!-- VERIFY: IBS figures vary by vintage/source; use as order-of-magnitude -->
+- Verification consumes substantial engineering effort. In the 2022 Wilson
+  Research Group study, IC/ASIC design engineers reported spending **49%** of
+  their time on verification. Verification-engineer demand grew **6.2%/yr**
+  versus 2.7%/yr for design engineers from 2007 to 2022; average peak staffing
+  was roughly one verification engineer per design engineer across most market
+  segments. [2]
+- **IBS ceiling-case model, not an EDA bill:** public coverage of an
+  International Business Strategies chart put total development of a large
+  2nm-class chip built from scratch at **~$724M–$725M**. The model assumes no
+  reusable IP or prior design platform and reportedly allocates about **$314M**
+  to software development and **$154M** to verification. Treat it as a
+  greenfield total-development illustration, not a typical incumbent project
+  cost or EDA-license estimate. [4]
 
 ## The triopoly & market shares
 - Electronic System Design industry revenue (EDA + design IP + services, per
@@ -202,9 +207,9 @@ Fiscal calendars: **Synopsys FY ends Oct 31** (FY2025 = Nov'24–Oct'25); **Cade
   they're **compiled**." [1]
 - "The entire EDA industry is about **$21B** — under 3% of the $792B chip
   industry. Delete these three companies and the other 97% stops." [5][6]
-- "**Half** of chip design isn't designing — it's *verifying*. A 2nm design
-  costs ~$724M before you've manufactured anything, and proving it works is
-  the biggest line item." [2][4]
+- "IC/ASIC design engineers reported spending **49%** of their time on
+  verification. A separate IBS ceiling-case model put a large greenfield 2nm
+  program near **$725M** in total — not in EDA licenses." [2][4]
 - "In May 2025 one letter from the Commerce Department switched off China's
   access to chip-design software. Six weeks later, a rare-earths deal
   switched it back on. Chip software is now literally traded against
@@ -219,9 +224,9 @@ Fiscal calendars: **Synopsys FY ends Oct 31** (FY2025 = Nov'24–Oct'25); **Cade
 
 ## Sources
 1. NVIDIA press release, "NVIDIA Blackwell Platform Arrives…" (208B transistors) — https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing
-2. Siemens Verification Horizons, 2022 Wilson Research Group Functional Verification Study (Part 4: project time / engineer time) — https://blogs.sw.siemens.com/verificationhorizons/2022/11/06/part-4-the-2022-wilson-research-group-functional-verification-study/
+2. Siemens Verification Horizons, 2022 Wilson Research Group Functional Verification Study, Part 8 (IC/ASIC resource trends; design engineers spent 49% of time on verification; design/verification staffing growth) — https://blogs.sw.siemens.com/verificationhorizons/2022/12/12/part-8-the-2022-wilson-research-group-functional-verification-study/
 3. Siemens Verification Horizons, 2022 Wilson study (Part 3: demand CAGR design vs verification engineers) — https://blogs.sw.siemens.com/verificationhorizons/2022/10/30/part-3-the-2022-wilson-research-group-functional-verification-study/
-4. SemiEngineering, "Facing Off Against Growing Chip Design Complexity" (IBS design-cost-by-node estimates) — https://semiengineering.com/facing-off-against-growing-chip-design-complexity/
+4. Tom's Hardware, "Firm Estimates a 2nm Chip Now Costs $725 Million to Design" (2023 coverage of an IBS chart publicly relayed by The Transcript; large greenfield chip, no reusable IP; ~$314M software development and ~$154M verification) — https://www.tomshardware.com/news/firm-estimates-a-2nm-chip-now-costs-dollar725-million-to-design ; underlying chart repost — https://twitter.com/TheTranscript_/status/1694122303691624819
 5. SEMI ESD Alliance, Q4 2025 ESD industry revenue release (plus Q1–Q3 2025 releases) — https://www.semi.org/en/semi-press-release/esd-alliance-reports-electronic-system-design-industry-posts-5.5-billion-dollars-in-revenue-in-q4-2025
 6. SIA, "Global Annual Semiconductor Sales Increase 25.6% to $791.7 Billion in 2025" — https://www.semiconductors.org/global-annual-semiconductor-sales-increase-25-6-to-791-7-billion-in-2025/
 7. WSTS, Spring 2026 forecast ($1.5T 2026, memory-driven) — https://www.wsts.org/76/Recent-News-Release

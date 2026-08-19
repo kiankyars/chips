@@ -87,6 +87,9 @@ Feeds: cold open, foundations, great-unbundling, life-of-a-wafer segments.
   "equivalent scaling." By FinFET era the number was pure branding.
   <!-- VERIFY: exact era when gate length decoupled from node name; often quoted as ~0.35µm or ~45nm depending on the metric -->
 - **What actually improves: PPA** — power, performance, area:
+  - PPA belongs to a particular implementation, not to a node in isolation.
+    Architecture, cell libraries, voltage, workload, memories, timing target,
+    and physical layout can change the result. [56]
   - Peak logic density: TSMC N5 ~**138 MTr/mm²**; N3E up to ~**215 MTr/mm²**
     (densest library). [11][9]
   - N2 vs N3E: **+15% density** (mixed logic/SRAM designs) to **+20%** (pure
@@ -170,6 +173,14 @@ Feeds: cold open, foundations, great-unbundling, life-of-a-wafer segments.
   *expose* (lithography prints the layer's pattern) → *develop* → *etch* the
   pattern into the film → *strip* resist → (front-end layers:) *implant* dopants
   + *anneal* → *polish flat* (CMP) → *measure/inspect* → repeat.
+- **Doping changes electrical behavior**: boron produces p-type silicon with
+  holes as the majority carrier; phosphorus or arsenic produces n-type silicon
+  with electrons as the majority carrier. [58][59]
+- **Implant, then anneal**: a mask selects the region while ion species, dose,
+  and energy control what enters the silicon and how deeply. Annealing repairs
+  lattice damage and activates the dopants. Ion implantation is one form of
+  doping; three-dimensional structures can also require plasma or conformal
+  methods. [58][60]
 - **Mask layers**: TSMC N7 ≈ **87 masks**; N5 ≈ **81 masks** — and without EUV,
   N5 would have needed ~**115** (EUV's single-exposure replacing multi-patterning
   is the whole point). N5 uses EUV on up to ~14 layers. [27]
@@ -198,12 +209,12 @@ Feeds: cold open, foundations, great-unbundling, life-of-a-wafer segments.
 - **Why dust kills**: a killer particle only needs to be a fraction of the
   feature size — at ~20nm pitches, a 100nm particle (1/1000th a hair's width)
   shorts wires or blocks an exposure → that die is dead.
-- **Cleanroom classes**: ISO 1 = **≤10 particles ≥0.1µm per m³**. Urban outdoor
-  air ≈ **35,000,000 particles ≥0.5µm per m³** (≈ ISO 9). Fab production bays run
-  ~ISO 3–5 with ISO 1–2 mini-environments around the wafers (FOUPs). Hospital
-  operating rooms are typically only ~ISO 6–7 — the air around a wafer is
-  thousands of times cleaner than a surgical theater. [31]
-  <!-- VERIFY: OR ISO class range + fab bay class ranges before quoting a specific multiplier -->
+- **Cleanroom classes**: ISO 14644-1 classifies a cleanroom or clean zone by the
+  maximum airborne-particle concentration at specified size thresholds; it is
+  not one blanket rating for an entire fab. At the ≥0.1µm threshold, ISO Class 5
+  allows **100,000 particles/m³**, while ISO Class 1 allows only **10 particles/m³**.
+  Imec says Class 5 is common in semiconductor manufacturing; exact zoning and
+  cleaner mini-environments vary by fab. [31][57]
 - **Yield learning = profit**: a new node launches at low yield and climbs; the
   faster the D₀ ramp, the more of the fixed $20B+ fab cost turns into sellable
   dies. TSMC's advantage compounds because every wafer teaches the process.
@@ -347,7 +358,7 @@ Feeds: cold open, foundations, great-unbundling, life-of-a-wafer segments.
 28. Semiconductor Engineering, "Battling Fab Cycle Times" (1–1.5 days per mask layer) — https://semiengineering.com/battling-fab-cycle-times/
 29. Vik's Newsletter, "How Foundries Calculate Die Yield" (Poisson model, D₀ 0.1 ≈ 90%) — https://www.viksnewsletter.com/p/how-foundries-calculate-die-yield
 30. Tom's Hardware, "TSMC discloses N2 defect density — lower than N3 at the same stage" — https://www.tomshardware.com/tech-industry/tsmc-discloses-n2-defect-density-lower-than-n3-at-the-same-stage-of-development
-31. Wikipedia, Cleanroom (ISO 14644-1 particle counts; urban air ~35M/m³) — https://en.wikipedia.org/wiki/Cleanroom
+31. ISO, ISO 14644-1:2015, "Classification of air cleanliness by particle concentration" — https://www.iso.org/standard/53394.html
 32. Semiconductor Engineering, "Foundry Wars Begin" (~26 players at 130nm) — https://semiengineering.com/foundry-wars-begin/
 33. Jason Sachs / Embedded Related, "Supply Chain Games, Part 3" (leading-edge player counts 90nm→7nm) — https://www.embeddedrelated.com/showarticle/1489.php
 34. Semiconductor Engineering, "5nm Vs. 3nm" (only TSMC/Samsung foundries at 7/5nm) — https://semiengineering.com/5nm-vs-3nm/
@@ -372,3 +383,8 @@ Feeds: cold open, foundations, great-unbundling, life-of-a-wafer segments.
 53. Micron, "Introduction to Memory" (DRAM cell construction and operation) — https://www.micron.com/educatorhub/courses/intro-to-memory
 54. Computer History Museum, "Oral History Panel of the Intel 4004 Microprocessor" (Federico Faggin on hand-drawn layouts and hand-cut Rubylith masks) — https://archive.computerhistory.org/resources/text/Oral_History/Intel_4004_2/102658187.05.01.acc.pdf
 55. IEEE Spectrum, "AI Alone Isn't Ready for Chip Design" (the Intel 4004 layout was completed with a straightedge and colored pencils) — https://spectrum.ieee.org/chip-design-ai
+56. Arm, "PPA Analysis Overview" (fair comparisons require equivalent configurations and disclosed process, library, voltage, and timing assumptions) — https://documentation-service.arm.com/static/6322ff9edefc2c309b712454
+57. imec, "How are microchips made? A microchip manufacturing journey" (ISO Class 5 common in semiconductor manufacturing; ISO Class 1 and 5 limits at 0.1µm) — https://www.imec-int.com/en/semiconductor-education-and-workforce-development/microchips/how-are-microchips-made/cleanroom
+58. Applied Materials, "Modify Materials" (ion implantation changes electrical properties; annealing restores the silicon lattice) — https://www.appliedmaterials.com/sg/en/semiconductor/semiconductor-capabilities/modify.html
+59. Samsung Semiconductor, "Giving Semiconductors Electrical Properties" (boron for p-type; phosphorus and arsenic for n-type) — https://semiconductor.samsung.com/support/tools-resources/fabrication-process/eight-essential-semiconductor-fabrication-processes-part-6-deposition-and-ion-implantation-for-the-electrical-properties/
+60. Applied Materials, "Ion Implant" (ion implantation as one form of doping; plasma doping for conformal three-dimensional regions) — https://www.appliedmaterials.com/content/applied-materials/il/en/semiconductor/products/processes/implant

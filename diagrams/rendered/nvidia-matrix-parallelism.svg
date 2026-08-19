@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="660" viewBox="0 0 1920 660" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">One AI layer creates many independent tile jobs</title>
+<desc id="desc">One activation block-row and one weight block-column are multiplied and accumulated into one output tile. A full layer repeats that job across an output grid, and a scheduler assigns ready jobs across the streaming-multiprocessor pool.</desc>
+<defs>
+  <pattern id="nvidia-grid" width="80" height="80" patternUnits="userSpaceOnUse">
+    <path d="M80 0H0V80" fill="none" stroke="#1f2937" stroke-width="1" opacity="0.42"/>
+  </pattern>
+  <marker id="nvidia-arrow" markerWidth="13" markerHeight="13" refX="11" refY="6.5" orient="auto">
+    <path d="M0 0L13 6.5L0 13Z" fill="#526078"/>
+  </marker>
+</defs>
+<rect width="1920" height="660" fill="#080c14"/>
+<rect width="1920" height="660" fill="url(#nvidia-grid)"/>
+<text x="80" y="62" fill="#a8b3c7" font-size="20" font-weight="820" text-anchor="start" letter-spacing="1.8" opacity="1">ONE TILE JOB</text>
+<text x="82" y="150" fill="#60a5fa" font-size="18" font-weight="780" text-anchor="start" letter-spacing="1.1" opacity="1">ACTIVATION BLOCK-ROW</text>
+<rect x="82" y="184" width="42" height="42" rx="7" fill="#60a5fa" opacity="0.22" stroke="#60a5fa" stroke-width="2"/>
+<rect x="134" y="184" width="42" height="42" rx="7" fill="#60a5fa" opacity="0.3" stroke="#60a5fa" stroke-width="2"/>
+<rect x="186" y="184" width="42" height="42" rx="7" fill="#60a5fa" opacity="0.38" stroke="#60a5fa" stroke-width="2"/>
+<rect x="238" y="184" width="42" height="42" rx="7" fill="#60a5fa" opacity="0.45999999999999996" stroke="#60a5fa" stroke-width="2"/>
+<rect x="290" y="184" width="42" height="42" rx="7" fill="#60a5fa" opacity="0.54" stroke="#60a5fa" stroke-width="2"/>
+<text x="362" y="213" fill="#a8b3c7" font-size="44" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1">×</text>
+<rect x="412" y="100" width="42" height="42" rx="7" fill="#a78bfa" opacity="0.22" stroke="#a78bfa" stroke-width="2"/>
+<rect x="412" y="152" width="42" height="42" rx="7" fill="#a78bfa" opacity="0.3" stroke="#a78bfa" stroke-width="2"/>
+<rect x="412" y="204" width="42" height="42" rx="7" fill="#a78bfa" opacity="0.38" stroke="#a78bfa" stroke-width="2"/>
+<rect x="412" y="256" width="42" height="42" rx="7" fill="#a78bfa" opacity="0.45999999999999996" stroke="#a78bfa" stroke-width="2"/>
+<rect x="412" y="308" width="42" height="42" rx="7" fill="#a78bfa" opacity="0.54" stroke="#a78bfa" stroke-width="2"/>
+<text x="433" y="86" fill="#a78bfa" font-size="18" font-weight="780" text-anchor="middle" letter-spacing="1.1" opacity="1">WEIGHT</text>
+<path d="M486 206L566 206" fill="none" stroke="#526078" stroke-width="5" stroke-linecap="round" marker-end="url(#nvidia-arrow)"/>
+<rect x="590" y="148" width="116" height="116" rx="16" fill="#3b2b10" stroke="#fbbf24" stroke-width="4"/>
+<rect x="614" y="172" width="20.62666666666667" height="20.62666666666667" rx="2.4752" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="637.6866666666667" y="172" width="20.62666666666667" height="20.62666666666667" rx="2.4752" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="661.3733333333333" y="172" width="20.62666666666667" height="20.62666666666667" rx="2.4752" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="614" y="195.68666666666667" width="20.62666666666667" height="20.62666666666667" rx="2.4752" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="637.6866666666667" y="195.68666666666667" width="20.62666666666667" height="20.62666666666667" rx="2.4752" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="661.3733333333333" y="195.68666666666667" width="20.62666666666667" height="20.62666666666667" rx="2.4752" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="614" y="219.37333333333333" width="20.62666666666667" height="20.62666666666667" rx="2.4752" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="637.6866666666667" y="219.37333333333333" width="20.62666666666667" height="20.62666666666667" rx="2.4752" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="661.3733333333333" y="219.37333333333333" width="20.62666666666667" height="20.62666666666667" rx="2.4752" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="648" y="300" fill="#fbbf24" font-size="18" font-weight="820" text-anchor="middle" letter-spacing="1.1" opacity="1">ONE OUTPUT TILE</text>
+<text x="392" y="426" fill="#f8fafc" font-size="23" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1">multiply + accumulate</text>
+
+<path d="M766 90V522" stroke="#526078" stroke-width="2" opacity="0.55"/>
+<text x="834" y="62" fill="#34d399" font-size="20" font-weight="820" text-anchor="start" letter-spacing="1.5" opacity="1">SAME JOB, MANY POSITIONS</text>
+<rect x="834" y="132" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M846 149H876M846 159H876M846 169H876" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="902" y="132" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M914 149H944M914 159H944M914 169H944" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="970" y="132" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M982 149H1012M982 159H1012M982 169H1012" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="1038" y="132" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M1050 149H1080M1050 159H1080M1050 169H1080" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="1106" y="132" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M1118 149H1148M1118 159H1148M1118 169H1148" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="834" y="200" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M846 217H876M846 227H876M846 237H876" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="902" y="200" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M914 217H944M914 227H944M914 237H944" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="970" y="200" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M982 217H1012M982 227H1012M982 237H1012" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="1038" y="200" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M1050 217H1080M1050 227H1080M1050 237H1080" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="1106" y="200" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M1118 217H1148M1118 227H1148M1118 237H1148" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="834" y="268" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M846 285H876M846 295H876M846 305H876" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="902" y="268" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M914 285H944M914 295H944M914 305H944" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="970" y="268" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M982 285H1012M982 295H1012M982 305H1012" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="1038" y="268" width="54" height="54" rx="9" fill="#3b2b10" stroke="#fbbf24" stroke-width="4" opacity="1"/>
+<path d="M1050 285H1080M1050 295H1080M1050 305H1080" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="1106" y="268" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M1118 285H1148M1118 295H1148M1118 305H1148" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="834" y="336" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M846 353H876M846 363H876M846 373H876" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="902" y="336" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M914 353H944M914 363H944M914 373H944" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="970" y="336" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M982 353H1012M982 363H1012M982 373H1012" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="1038" y="336" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M1050 353H1080M1050 363H1080M1050 373H1080" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="1106" y="336" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M1118 353H1148M1118 363H1148M1118 373H1148" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="834" y="404" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M846 421H876M846 431H876M846 441H876" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="902" y="404" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M914 421H944M914 431H944M914 441H944" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="970" y="404" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M982 421H1012M982 431H1012M982 441H1012" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="1038" y="404" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M1050 421H1080M1050 431H1080M1050 441H1080" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<rect x="1106" y="404" width="54" height="54" rx="9" fill="#10382f" stroke="#34d399" stroke-width="2" opacity="0.76"/>
+<path d="M1118 421H1148M1118 431H1148M1118 441H1148" stroke="#34d399" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+<text x="997" y="510" fill="#f8fafc" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1">ready tiles can run concurrently</text>
+
+<path d="M1204 300L1302 300" fill="none" stroke="#526078" stroke-width="5" stroke-linecap="round" marker-end="url(#nvidia-arrow)"/>
+<path d="M1294 90V522" stroke="#526078" stroke-width="2" opacity="0.55"/>
+<text x="1378" y="62" fill="#60a5fa" font-size="20" font-weight="820" text-anchor="start" letter-spacing="1.8" opacity="1">GPU SM POOL</text>
+<rect x="1378" y="112" width="388" height="70" rx="18" fill="#102a4f" stroke="#60a5fa" stroke-width="3"/>
+<text x="1572" y="156" fill="#60a5fa" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="1.1" opacity="1">SCHEDULER ASSIGNS READY WORK</text>
+<path d="M1572 190L1572 230" fill="none" stroke="#60a5fa" stroke-width="4" stroke-linecap="round" marker-end="url(#nvidia-arrow)"/>
+<rect x="1378" y="254" width="82" height="64" rx="12" fill="#172033" stroke="#60a5fa" stroke-width="3"/>
+<text x="1419" y="295" fill="#60a5fa" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="1480" y="254" width="82" height="64" rx="12" fill="#172033" stroke="#60a5fa" stroke-width="3"/>
+<text x="1521" y="295" fill="#60a5fa" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="1582" y="254" width="82" height="64" rx="12" fill="#172033" stroke="#60a5fa" stroke-width="3"/>
+<text x="1623" y="295" fill="#60a5fa" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="1684" y="254" width="82" height="64" rx="12" fill="#172033" stroke="#60a5fa" stroke-width="3"/>
+<text x="1725" y="295" fill="#60a5fa" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="1378" y="340" width="82" height="64" rx="12" fill="#172033" stroke="#60a5fa" stroke-width="3"/>
+<text x="1419" y="381" fill="#60a5fa" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="1480" y="340" width="82" height="64" rx="12" fill="#172033" stroke="#60a5fa" stroke-width="3"/>
+<text x="1521" y="381" fill="#60a5fa" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="1582" y="340" width="82" height="64" rx="12" fill="#172033" stroke="#60a5fa" stroke-width="3"/>
+<text x="1623" y="381" fill="#60a5fa" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="1684" y="340" width="82" height="64" rx="12" fill="#172033" stroke="#60a5fa" stroke-width="3"/>
+<text x="1725" y="381" fill="#60a5fa" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="1378" y="426" width="82" height="64" rx="12" fill="#172033" stroke="#60a5fa" stroke-width="3"/>
+<text x="1419" y="467" fill="#60a5fa" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="1480" y="426" width="82" height="64" rx="12" fill="#172033" stroke="#60a5fa" stroke-width="3"/>
+<text x="1521" y="467" fill="#60a5fa" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="1582" y="426" width="82" height="64" rx="12" fill="#172033" stroke="#60a5fa" stroke-width="3"/>
+<text x="1623" y="467" fill="#60a5fa" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="1684" y="426" width="82" height="64" rx="12" fill="#172033" stroke="#60a5fa" stroke-width="3"/>
+<text x="1725" y="467" fill="#60a5fa" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<text x="1572" y="510" fill="#f8fafc" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1">many physical blocks stay busy</text>
+
+</svg>

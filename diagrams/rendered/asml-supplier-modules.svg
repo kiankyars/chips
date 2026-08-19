@@ -8,52 +8,43 @@
   </filter>
   <marker id="arrow-cyan" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#67e8f9"/></marker>
   <marker id="arrow-amber" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#fbbf24"/></marker>
+  <marker id="arrow-rose" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#fb7185"/></marker>
 
 </defs>
 <rect width="1920" height="1080" fill="#05080e"/>
-<path d="M128 296V240H1792V296" fill="none" stroke="#67e8f9" stroke-width="4"/>
-<text x="960" y="196" fill="#67e8f9" font-size="27" font-weight="740" text-anchor="middle" letter-spacing="2.3">ASML · SYSTEM ARCHITECT AND INTEGRATOR</text>
+<path d="M118 318V244H1802V318" fill="none" stroke="#67e8f9" stroke-width="4"/>
+<text x="960" y="198" fill="#67e8f9" font-size="27" font-weight="760" text-anchor="middle" letter-spacing="2.2">INTEGRATION BOUNDARY</text>
 <g>
-  <rect x="128" y="384" width="326" height="284" rx="18" fill="#101827" stroke="#fbbf24" stroke-width="4"/>
-  <rect x="128" y="384" width="326" height="12" rx="6" fill="#fbbf24"/>
-  <text x="156" y="463" fill="#f8fafc" font-size="31" font-weight="760" text-anchor="start" letter-spacing="0">TRUMPF</text>
-  <text x="156" y="512" fill="#fbbf24" font-size="23" font-weight="620" text-anchor="start" letter-spacing="0">30 kW CO₂ laser</text>
-  <text x="156" y="624" fill="#9aa9bd" font-size="18" font-weight="700" text-anchor="start" letter-spacing="1.8">GERMANY</text>
-  <path d="M342 568H398" stroke="#fbbf24" stroke-width="8"/><path d="M398 548L430 568L398 588Z" fill="#fbbf24"/>
-</g>
-<g>
-  <rect x="494" y="384" width="326" height="284" rx="18" fill="#101827" stroke="#fb7185" stroke-width="4"/>
-  <rect x="494" y="384" width="326" height="12" rx="6" fill="#fb7185"/>
-  <text x="522" y="463" fill="#f8fafc" font-size="31" font-weight="760" text-anchor="start" letter-spacing="0">CYMER (ASML)</text>
-  <text x="522" y="512" fill="#fb7185" font-size="23" font-weight="620" text-anchor="start" letter-spacing="0">tin-droplet source</text>
-  <text x="522" y="624" fill="#9aa9bd" font-size="18" font-weight="700" text-anchor="start" letter-spacing="1.8">UNITED STATES</text>
-  <circle cx="734" cy="565" r="13" fill="#fb7185"/><circle cx="770" cy="565" r="38" fill="none" stroke="#fb7185" stroke-width="5" filter="url(#glow)"/>
+  <rect x="118" y="402" width="350" height="238" rx="16" fill="#101827" stroke="#fbbf24" stroke-width="4"/>
+  <rect x="118" y="402" width="350" height="10" rx="5" fill="#fbbf24"/>
+  <text x="293" y="474" fill="#9aa9bd" font-size="18" font-weight="760" text-anchor="middle" letter-spacing="2">DRIVE</text>
+  <text x="293" y="540" fill="#f8fafc" font-size="31" font-weight="780" text-anchor="middle" letter-spacing="0">TRUMPF</text>
+  <text x="293" y="584" fill="#fbbf24" font-size="22" font-weight="620" text-anchor="middle" letter-spacing="0">30 kW CO₂ laser</text>
 </g>
 <g>
-  <rect x="860" y="384" width="456" height="284" rx="18" fill="#101827" stroke="#c084fc" stroke-width="4"/>
-  <rect x="860" y="384" width="456" height="12" rx="6" fill="#c084fc"/>
-  <text x="888" y="463" fill="#f8fafc" font-size="31" font-weight="760" text-anchor="start" letter-spacing="0">ZEISS</text>
-  <text x="888" y="512" fill="#c084fc" font-size="23" font-weight="620" text-anchor="start" letter-spacing="0">collector + imaging optics</text>
-  <text x="888" y="624" fill="#9aa9bd" font-size="18" font-weight="700" text-anchor="start" letter-spacing="1.8">GERMANY</text>
-  <g transform="translate(1226 558) rotate(0) scale(0.58)">
-  <path d="M-58 -13Q0 24 58 -13" fill="none" stroke="#c084fc" stroke-width="12" stroke-linecap="round"/>
-  <path d="M-53 -7Q0 24 53 -7" fill="none" stroke="#f8fafc" stroke-width="2" opacity="0.65"/>
-</g><g transform="translate(1294 602) rotate(180) scale(0.48)">
-  <path d="M-58 -13Q0 24 58 -13" fill="none" stroke="#c084fc" stroke-width="12" stroke-linecap="round"/>
-  <path d="M-53 -7Q0 24 53 -7" fill="none" stroke="#f8fafc" stroke-width="2" opacity="0.65"/>
-</g>
+  <rect x="538" y="402" width="350" height="238" rx="16" fill="#101827" stroke="#fb7185" stroke-width="4"/>
+  <rect x="538" y="402" width="350" height="10" rx="5" fill="#fb7185"/>
+  <text x="713" y="474" fill="#9aa9bd" font-size="18" font-weight="760" text-anchor="middle" letter-spacing="2">CREATE EUV</text>
+  <text x="713" y="540" fill="#f8fafc" font-size="31" font-weight="780" text-anchor="middle" letter-spacing="0">CYMER</text>
+  <text x="713" y="584" fill="#fb7185" font-size="22" font-weight="620" text-anchor="middle" letter-spacing="0">tin-droplet source</text>
 </g>
 <g>
-  <rect x="1356" y="384" width="436" height="284" rx="18" fill="#101827" stroke="#67e8f9" stroke-width="4"/>
-  <rect x="1356" y="384" width="436" height="12" rx="6" fill="#67e8f9"/>
-  <text x="1384" y="463" fill="#f8fafc" font-size="31" font-weight="760" text-anchor="start" letter-spacing="0">ASML</text>
-  <text x="1384" y="512" fill="#67e8f9" font-size="23" font-weight="620" text-anchor="start" letter-spacing="0">architecture + integration</text>
-  <text x="1384" y="624" fill="#9aa9bd" font-size="18" font-weight="700" text-anchor="start" letter-spacing="1.8">NETHERLANDS</text>
-  <ellipse cx="1718" cy="570" rx="58" ry="17" fill="none" stroke="#67e8f9" stroke-width="5"/><path d="M1676 570H1760" stroke="#67e8f9" stroke-width="3"/>
+  <rect x="958" y="402" width="350" height="238" rx="16" fill="#101827" stroke="#c084fc" stroke-width="4"/>
+  <rect x="958" y="402" width="350" height="10" rx="5" fill="#c084fc"/>
+  <text x="1133" y="474" fill="#9aa9bd" font-size="18" font-weight="760" text-anchor="middle" letter-spacing="2">SHAPE LIGHT</text>
+  <text x="1133" y="540" fill="#f8fafc" font-size="31" font-weight="780" text-anchor="middle" letter-spacing="0">ZEISS</text>
+  <text x="1133" y="584" fill="#c084fc" font-size="22" font-weight="620" text-anchor="middle" letter-spacing="0">collector + optics</text>
 </g>
-<path d="M454 526H486M820 526H852M1316 526H1348" stroke="#9aa9bd" stroke-width="4" stroke-dasharray="7 8"/>
-<text x="960" y="764" fill="#9aa9bd" font-size="25" font-weight="560" text-anchor="middle" letter-spacing="0">one calibrated system</text>
-<path d="M330 808H1590" stroke="#435168" stroke-width="3"/>
-<circle cx="330" cy="808" r="7" fill="#fbbf24"/><circle cx="1590" cy="808" r="7" fill="#67e8f9"/>
-<text x="960" y="854" fill="#f8fafc" font-size="26" font-weight="620" text-anchor="middle" letter-spacing="0">laser  →  source  →  optics  →  pattern placement</text>
+<g>
+  <rect x="1378" y="402" width="424" height="238" rx="16" fill="#101827" stroke="#67e8f9" stroke-width="4"/>
+  <rect x="1378" y="402" width="424" height="10" rx="5" fill="#67e8f9"/>
+  <text x="1590" y="474" fill="#9aa9bd" font-size="18" font-weight="760" text-anchor="middle" letter-spacing="2">PLACE PATTERN</text>
+  <text x="1590" y="540" fill="#f8fafc" font-size="31" font-weight="780" text-anchor="middle" letter-spacing="0">ASML</text>
+  <text x="1590" y="584" fill="#67e8f9" font-size="22" font-weight="620" text-anchor="middle" letter-spacing="0">stages + control</text>
+</g>
+<path d="M468 521H526" stroke="#9aa9bd" stroke-width="4" marker-end="url(#arrow-cyan)"/>
+<path d="M888 521H946" stroke="#9aa9bd" stroke-width="4" marker-end="url(#arrow-cyan)"/>
+<path d="M1308 521H1366" stroke="#9aa9bd" stroke-width="4" marker-end="url(#arrow-cyan)"/>
+<text x="960" y="760" fill="#f8fafc" font-size="27" font-weight="620" text-anchor="middle" letter-spacing="0">vacuum · alignment · sensors · software</text>
+<text x="960" y="812" fill="#9aa9bd" font-size="22" font-weight="580" text-anchor="middle" letter-spacing="0">qualified together as one production scanner</text>
 </svg>

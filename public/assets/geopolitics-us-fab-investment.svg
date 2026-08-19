@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+  <title id="title">US industrial fab investments</title>
+  <desc id="desc">A simplified US map and summary metrics show federal support, announced company investments, and projected advanced-logic capacity growth.</desc>
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#102A43" flood-opacity="0.09"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6L0 12Z" fill="#667085"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6L0 12Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6L0 12Z" fill="#C3475D"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#F6F8FB"/>
+  <text x="84" y="72" fill="#667085" font-size="18" font-weight="750" text-anchor="start" letter-spacing="2.4" opacity="1">ANNOUNCED INVESTMENT</text>
+  <text x="84" y="132" fill="#0B1F3A" font-size="52" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">U.S. industrial fab investments</text>
+  <text x="84" y="178" fill="#667085" font-size="24" font-weight="500" text-anchor="start" letter-spacing="0" opacity="1">Federal incentives and company commitments are expanding domestic semiconductor capacity.</text>
+  <line x1="84" y1="206" x2="1836" y2="206" stroke="#D9E2EC" stroke-width="2" stroke-linecap="round"/>
+  <rect x="84" y="248" width="390" height="676" rx="26" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2" filter="url(#shadow)"/>
+  <text x="122" y="300" fill="#2563EB" font-size="18" font-weight="800" text-anchor="start" letter-spacing="2" opacity="1">FEDERAL SUPPORT</text>
+  <text x="122" y="390" fill="#2563EB" font-size="51" font-weight="820" text-anchor="start" letter-spacing="0" opacity="1">$52.7B</text>
+  <text x="122" y="432" fill="#667085" font-size="18" font-weight="720" text-anchor="start" letter-spacing="1.2" opacity="1">CHIPS ACT &#xB7; 2022</text>
+  <line x1="122" y1="536" x2="436" y2="536" stroke="#D9E2EC" stroke-width="2" stroke-linecap="round"/>
+  <text x="122" y="580" fill="#16805B" font-size="51" font-weight="820" text-anchor="start" letter-spacing="0" opacity="1">+25%</text>
+  <text x="122" y="622" fill="#667085" font-size="18" font-weight="720" text-anchor="start" letter-spacing="1.2" opacity="1">INVESTMENT TAX CREDIT</text>
+  <line x1="122" y1="726" x2="436" y2="726" stroke="#D9E2EC" stroke-width="2" stroke-linecap="round"/>
+  <text x="122" y="770" fill="#7552B3" font-size="51" font-weight="820" text-anchor="start" letter-spacing="0" opacity="1">$8.9B</text>
+  <text x="122" y="812" fill="#667085" font-size="18" font-weight="720" text-anchor="start" letter-spacing="1.2" opacity="1">9.9% OF INTEL</text>
+  <text x="122" y="848" fill="#667085" font-size="16" font-weight="500" text-anchor="start" letter-spacing="0" opacity="1">direct federal equity &#xB7; Aug 2025</text>
+  <rect x="510" y="248" width="1326" height="676" rx="26" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2" filter="url(#shadow)"/>
+  <text x="554" y="298" fill="#667085" font-size="18" font-weight="800" text-anchor="start" letter-spacing="2" opacity="1">SELECTED U.S. COMMITMENTS · LOCATIONS APPROXIMATE</text>
+  <path d="M620 430 L735 360 L900 382 L1038 352 L1158 397 L1330 392 L1455 468 L1535 530 L1505 615 L1415 638 L1378 712 L1278 734 L1185 795 L1040 775 L928 804 L802 744 L725 668 L642 595 Z" fill="#E8F0F8" stroke="#7AA7D6" stroke-width="4" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="820" cy="560" r="22" fill="#FFFFFF" stroke="#16805B" stroke-width="5"/>
+  <circle cx="820" cy="560" r="8" fill="#16805B" stroke="none" stroke-width="0"/>
+  <text x="700" y="494" fill="#16805B" font-size="20" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">TSMC &#xB7; ARIZONA</text>
+  <text x="700" y="525" fill="#667085" font-size="16" font-weight="600" text-anchor="start" letter-spacing="0" opacity="1">$165B announced</text>
+  <circle cx="1240" cy="468" r="22" fill="#FFFFFF" stroke="#7552B3" stroke-width="5"/>
+  <circle cx="1240" cy="468" r="8" fill="#7552B3" stroke="none" stroke-width="0"/>
+  <text x="1270" y="434" fill="#7552B3" stroke="#E8F0F8" stroke-width="8" paint-order="stroke" stroke-linejoin="round" font-size="20" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">MICRON · MULTI-STATE</text>
+  <text x="1270" y="465" fill="#667085" stroke="#E8F0F8" stroke-width="8" paint-order="stroke" stroke-linejoin="round" font-size="16" font-weight="600" text-anchor="start" letter-spacing="0" opacity="1">more than $250B through 2035</text>
+  <circle cx="1225" cy="710" r="22" fill="#FFFFFF" stroke="#C3475D" stroke-width="5"/>
+  <circle cx="1225" cy="710" r="8" fill="#C3475D" stroke="none" stroke-width="0"/>
+  <text x="1260" y="702" fill="#C3475D" stroke="#E8F0F8" stroke-width="8" paint-order="stroke" stroke-linejoin="round" font-size="20" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">SAMSUNG · CENTRAL TEXAS</text>
+  <text x="1260" y="733" fill="#667085" stroke="#E8F0F8" stroke-width="8" paint-order="stroke" stroke-linejoin="round" font-size="16" font-weight="600" text-anchor="start" letter-spacing="0" opacity="1">more than $40B expected</text>
+  <circle cx="1430" cy="570" r="22" fill="#FFFFFF" stroke="#2563EB" stroke-width="5"/>
+  <circle cx="1430" cy="570" r="8" fill="#2563EB" stroke="none" stroke-width="0"/>
+  <text x="1390" y="548" fill="#2563EB" font-size="20" font-weight="800" text-anchor="end" letter-spacing="0" opacity="1">INTEL · U.S. FABS</text>
+  <text x="1390" y="579" fill="#667085" font-size="16" font-weight="600" text-anchor="end" letter-spacing="0" opacity="1">federal stake shown at left</text>
+  <text x="560" y="820" fill="#667085" font-size="17" font-weight="800" text-anchor="start" letter-spacing="1.8" opacity="1">U.S. SHARE OF GLOBAL LOGIC CAPACITY BELOW 10 NM</text>
+  <line x1="610" y1="880" x2="1705" y2="880" stroke="#D9E2EC" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1690 861L1722 880L1690 899Z" fill="#667085"/>
+  <circle cx="590" cy="880" r="14" fill="#2563EB" stroke="none" stroke-width="0"/>
+  <circle cx="1740" cy="880" r="14" fill="#16805B" stroke="none" stroke-width="0"/>
+  <text x="590" y="852" fill="#2563EB" font-size="29" font-weight="800" text-anchor="middle" letter-spacing="0" opacity="1">0%</text>
+  <text x="590" y="922" fill="#667085" font-size="17" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1">2022</text>
+  <text x="1740" y="852" fill="#16805B" font-size="29" font-weight="800" text-anchor="middle" letter-spacing="0" opacity="1">28%</text>
+  <text x="1740" y="922" fill="#667085" font-size="17" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1">2032 PROJECTED</text>
+</svg>

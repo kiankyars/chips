@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-<title id="title">The United States led and China led AI stacks use different components</title>
-<desc id="desc">Two vertical stacks compare accelerators, software, foundries, and toolchains. The United States led stack uses Nvidia, CUDA, TSMC, and ASML plus United States and Japanese equipment. The China led stack uses Huawei Ascend, CANN, SMIC, and a domestic toolchain.</desc>
+<title id="title">The United States led and China led AI stacks are diverging but still interdependent</title>
+<desc id="desc">Aligned rows compare accelerators, software, foundries, and production tools in the United States led and China led AI stacks. The tools row makes continuing foreign dependencies explicit.</desc>
 <defs>
   <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
     <path d="M48 0H0V48" fill="none" stroke="#ddd5c8" stroke-width="1" opacity="0.22"/>
@@ -23,58 +23,36 @@
 </defs>
 <rect width="1920" height="1080" fill="#f4efe6"/>
 <rect width="1920" height="1080" fill="url(#paper-grid)"/>
-<text x="132" y="112" fill="#3977a8" font-size="21" font-weight="780" text-anchor="start" letter-spacing="2.2" opacity="1">US-LED STACK</text>
-<text x="1788" y="112" fill="#ad4f5d" font-size="21" font-weight="780" text-anchor="end" letter-spacing="2.2" opacity="1">CHINA-LED STACK</text>
-<g filter="url(#shadow)">
-  <rect x="122" y="180" width="670" height="124" rx="22" fill="#fffaf0" stroke="#3977a8" stroke-width="4"/>
-  <rect x="122" y="180" width="20" height="124" rx="10" fill="#3977a8"/>
-  <text x="180" y="231" fill="#3977a8" font-size="28" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">ACCELERATOR</text>
-  <text x="180" y="268" fill="#777c79" font-size="20" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">Nvidia GPU</text>
+<text x="84" y="72" fill="#777c79" font-size="21" font-weight="780" text-anchor="start" letter-spacing="2.2" opacity="1">AI ECOSYSTEMS</text>
+<text x="84" y="136" fill="#1f272d" font-size="52" font-weight="820" text-anchor="start" letter-spacing="0" opacity="1">Two AI stacks are diverging, not yet independent</text>
+<text x="84" y="181" fill="#777c79" font-size="23" font-weight="540" text-anchor="start" letter-spacing="0" opacity="1">Accelerators and software differ; tools and materials still cross borders.</text>
+<path d="M84 210L1836 210" fill="none" stroke="#ddd5c8" stroke-width="2"/>
+<text x="170" y="280" fill="#3977a8" font-size="21" font-weight="780" text-anchor="start" letter-spacing="2.2" opacity="1">US-LED</text>
+<text x="960" y="280" fill="#777c79" font-size="21" font-weight="780" text-anchor="middle" letter-spacing="2.2" opacity="1">LAYER</text>
+<text x="1750" y="280" fill="#ad4f5d" font-size="21" font-weight="780" text-anchor="end" letter-spacing="2.2" opacity="1">CHINA-LED</text>
+<g>
+  <path d="M112 424L1808 424" fill="none" stroke="#ddd5c8" stroke-width="2"/>
+  <text x="170" y="368" fill="#1f272d" font-size="30" font-weight="720" text-anchor="start" letter-spacing="0" opacity="1">Nvidia GPU</text>
+  <text x="1750" y="368" fill="#1f272d" font-size="30" font-weight="720" text-anchor="end" letter-spacing="0" opacity="1">Huawei Ascend</text>
+  <text x="960" y="368" fill="#3977a8" font-size="21" font-weight="840" text-anchor="middle" letter-spacing="1.2" opacity="1">ACCELERATOR</text>
 </g>
-<g filter="url(#shadow)">
-  <rect x="122" y="362" width="670" height="124" rx="22" fill="#fffaf0" stroke="#7358a3" stroke-width="4"/>
-  <rect x="122" y="362" width="20" height="124" rx="10" fill="#7358a3"/>
-  <text x="180" y="413" fill="#7358a3" font-size="28" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">SOFTWARE</text>
-  <text x="180" y="450" fill="#777c79" font-size="20" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">CUDA</text>
+<g>
+  <path d="M112 564L1808 564" fill="none" stroke="#ddd5c8" stroke-width="2"/>
+  <text x="170" y="508" fill="#1f272d" font-size="30" font-weight="720" text-anchor="start" letter-spacing="0" opacity="1">CUDA</text>
+  <text x="1750" y="508" fill="#1f272d" font-size="30" font-weight="720" text-anchor="end" letter-spacing="0" opacity="1">CANN</text>
+  <text x="960" y="508" fill="#7358a3" font-size="21" font-weight="840" text-anchor="middle" letter-spacing="1.2" opacity="1">SOFTWARE</text>
 </g>
-<g filter="url(#shadow)">
-  <rect x="122" y="544" width="670" height="124" rx="22" fill="#fffaf0" stroke="#397a66" stroke-width="4"/>
-  <rect x="122" y="544" width="20" height="124" rx="10" fill="#397a66"/>
-  <text x="180" y="595" fill="#397a66" font-size="28" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">FOUNDRY</text>
-  <text x="180" y="632" fill="#777c79" font-size="20" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">TSMC</text>
+<g>
+  <path d="M112 704L1808 704" fill="none" stroke="#ddd5c8" stroke-width="2"/>
+  <text x="170" y="648" fill="#1f272d" font-size="30" font-weight="720" text-anchor="start" letter-spacing="0" opacity="1">TSMC</text>
+  <text x="1750" y="648" fill="#1f272d" font-size="30" font-weight="720" text-anchor="end" letter-spacing="0" opacity="1">SMIC</text>
+  <text x="960" y="648" fill="#397a66" font-size="21" font-weight="840" text-anchor="middle" letter-spacing="1.2" opacity="1">FOUNDRY</text>
 </g>
-<g filter="url(#shadow)">
-  <rect x="122" y="726" width="670" height="124" rx="22" fill="#fffaf0" stroke="#bd7b25" stroke-width="4"/>
-  <rect x="122" y="726" width="20" height="124" rx="10" fill="#bd7b25"/>
-  <text x="180" y="777" fill="#bd7b25" font-size="28" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">TOOLS</text>
-  <text x="180" y="814" fill="#777c79" font-size="20" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">ASML + US / Japan equipment</text>
+<g>
+  <path d="M112 844L1808 844" fill="none" stroke="#ddd5c8" stroke-width="2"/>
+  <text x="170" y="788" fill="#1f272d" font-size="25" font-weight="720" text-anchor="start" letter-spacing="0" opacity="1">ASML + US/Japan equipment</text>
+  <text x="1750" y="788" fill="#1f272d" font-size="23" font-weight="720" text-anchor="end" letter-spacing="0" opacity="1">Domestic tools + foreign dependencies</text>
+  <text x="960" y="788" fill="#bd7b25" font-size="21" font-weight="840" text-anchor="middle" letter-spacing="1.2" opacity="1">TOOLS</text>
 </g>
-<g filter="url(#shadow)">
-  <rect x="1128" y="180" width="670" height="124" rx="22" fill="#fffaf0" stroke="#ad4f5d" stroke-width="4"/>
-  <rect x="1128" y="180" width="20" height="124" rx="10" fill="#ad4f5d"/>
-  <text x="1186" y="231" fill="#ad4f5d" font-size="28" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">ACCELERATOR</text>
-  <text x="1186" y="268" fill="#777c79" font-size="20" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">Huawei Ascend</text>
-</g>
-<g filter="url(#shadow)">
-  <rect x="1128" y="362" width="670" height="124" rx="22" fill="#fffaf0" stroke="#7358a3" stroke-width="4"/>
-  <rect x="1128" y="362" width="20" height="124" rx="10" fill="#7358a3"/>
-  <text x="1186" y="413" fill="#7358a3" font-size="28" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">SOFTWARE</text>
-  <text x="1186" y="450" fill="#777c79" font-size="20" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">CANN</text>
-</g>
-<g filter="url(#shadow)">
-  <rect x="1128" y="544" width="670" height="124" rx="22" fill="#fffaf0" stroke="#397a66" stroke-width="4"/>
-  <rect x="1128" y="544" width="20" height="124" rx="10" fill="#397a66"/>
-  <text x="1186" y="595" fill="#397a66" font-size="28" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">FOUNDRY</text>
-  <text x="1186" y="632" fill="#777c79" font-size="20" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">SMIC</text>
-</g>
-<g filter="url(#shadow)">
-  <rect x="1128" y="726" width="670" height="124" rx="22" fill="#fffaf0" stroke="#bd7b25" stroke-width="4"/>
-  <rect x="1128" y="726" width="20" height="124" rx="10" fill="#bd7b25"/>
-  <text x="1186" y="777" fill="#bd7b25" font-size="28" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">TOOLS</text>
-  <text x="1186" y="814" fill="#777c79" font-size="20" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">domestic toolchain</text>
-</g>
-<path d="M930 150V898" stroke="#ad4f5d" stroke-width="5" stroke-dasharray="16 13"/>
-<path d="M990 150V898" stroke="#3977a8" stroke-width="5" stroke-dasharray="16 13"/>
-<path d="M894 445L1026 565M1026 445L894 565" stroke="#4f5965" stroke-width="9" stroke-linecap="round"/>
-<text x="960" y="970" fill="#ad4f5d" font-size="23" font-weight="800" text-anchor="middle" letter-spacing="1.2" opacity="1">CURRENT MINERAL-CONTROL PAUSES EXPIRE · NOVEMBER 2026</text>
+<text x="960" y="975" fill="#ad4f5d" font-size="31" font-weight="760" text-anchor="middle" letter-spacing="0" opacity="1">Divergence is real; self-sufficiency is not.</text>
 </svg>

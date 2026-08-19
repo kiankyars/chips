@@ -12,22 +12,29 @@ status: draft
 seeds: []                                         # no ledger seed planted here
 pays_off: [spruce-pine, japan-under-everything]   # physical inputs and concentration now land in the dedicated segment
 stamps: [japan-materials]                         # stamp #3 — Japan's qualified materials cluster
-diagrams: [map-equipment, board-3, flow-strip, slide-104-material-shocks-substitution]
+diagrams: [slide-104-material-shocks-substitution]
 sources: research/materials.md
 -->
 
 
-# Japan's qualified materials cluster
+# Japan's materials moat
 
-<div class="text-xl opacity-70 mt-3">Wafers, advanced resists, and EUV mask blanks are concentrated in a small qualified supplier set.</div>
-
-<div class="mt-7">
-  <img class="w-4/5 mx-auto" src="/diagrams/rendered/board-3.svg" alt="Chokepoint board with Japan's materials cluster added as the third control point" />
+<div class="grid grid-cols-3 gap-10 mt-8 text-center">
+<div><div class="text-2xl font-bold">300 mm wafers</div><div class="opacity-60 mt-2">Shin-Etsu · SUMCO</div></div>
+<div><div class="text-2xl font-bold">Advanced resists</div><div class="opacity-60 mt-2">JSR · TOK</div></div>
+<div><div class="text-2xl font-bold">EUV mask blanks</div><div class="opacity-60 mt-2">Hoya · AGC</div></div>
 </div>
 
-<img class="absolute bottom-4 right-4 w-28 opacity-70" src="/diagrams/rendered/map-equipment.svg" alt="Industry-map navigator with fabrication equipment and materials highlighted" />
+<div class="text-4xl text-center opacity-35 my-5">↓</div>
 
-<div class="text-lg mt-5 text-center"><b>CHOKEPOINT #3</b> · substitutes require process requalification</div>
+<div class="mx-auto w-4/5 border-y border-slate-500 py-6 text-center">
+  <div class="text-3xl font-bold">QUALIFIED FAB RECIPE + YIELD BASELINE</div>
+</div>
+
+<div class="text-4xl text-center opacity-35 my-5">↓</div>
+
+<div class="text-center text-2xl"><b>New supplier</b> → months or years of requalification</div>
+<div class="text-center text-sm tracking-[0.22em] opacity-60 mt-7">CHOKEPOINT 3 / 7</div>
 
 <!--
 - Fabs buy major equipment at long intervals but consume photoresist, gases, slurries, and other materials every day.
@@ -37,35 +44,21 @@ sources: research/materials.md
 
 ---
 
-# What each step depends on
+# Five qualified inputs enter the fab loop
 
-![flow strip](/diagrams/rendered/flow-strip.svg)
-
-<div class="grid grid-cols-6 gap-4 mt-5 text-sm">
-<div class="col-span-2 border-l-4 border-gray-400 pl-3">
-<div class="font-bold">WAFER MAKING → silicon + quartz</div>
-<div class="opacity-60">High-purity quartz forms crystal-growth crucibles</div>
-</div>
-<div class="col-span-2 border-l-4 border-gray-400 pl-3">
-<div class="font-bold">COAT → photoresist</div>
-<div class="opacity-60">Japanese suppliers dominate advanced resists</div>
-</div>
-<div class="col-span-2 border-l-4 border-gray-400 pl-3">
-<div class="font-bold">EXPOSE → reticle + light source</div>
-<div class="opacity-60">The reticle carries the pattern; DUV uses ArF or KrF gas mixtures</div>
-</div>
-<div class="col-span-3 border-l-4 border-gray-400 pl-3">
-<div class="font-bold">ETCH / CLEAN → wet chemicals</div>
-<div class="opacity-60">Electronic-grade HF is one input</div>
-</div>
-<div class="col-span-3 border-l-4 border-gray-400 pl-3">
-<div class="font-bold">POLISH → slurry + pad</div>
-<div class="opacity-60">Entegris slurry, DuPont pads</div>
-</div>
+<div class="grid grid-cols-[0.85fr_1.15fr_2fr] mt-8 text-lg">
+<div class="text-sm tracking-[0.18em] opacity-55 pb-3 border-b border-slate-600">STAGE</div>
+<div class="text-sm tracking-[0.18em] opacity-55 pb-3 border-b border-slate-600">INPUT</div>
+<div class="text-sm tracking-[0.18em] opacity-55 pb-3 border-b border-slate-600">EXAMPLE</div>
+<div class="py-4 border-b border-slate-700 font-bold">WAFER START</div><div class="py-4 border-b border-slate-700">silicon substrate</div><div class="py-4 border-b border-slate-700 opacity-65">Shin-Etsu · SUMCO</div>
+<div class="py-4 border-b border-slate-700 font-bold">COAT</div><div class="py-4 border-b border-slate-700">photoresist</div><div class="py-4 border-b border-slate-700 opacity-65">Japan-concentrated supply</div>
+<div class="py-4 border-b border-slate-700 font-bold">EXPOSE</div><div class="py-4 border-b border-slate-700">reticle + light source</div><div class="py-4 border-b border-slate-700 opacity-65">ArF / KrF for DUV</div>
+<div class="py-4 border-b border-slate-700 font-bold">ETCH / CLEAN</div><div class="py-4 border-b border-slate-700">wet chemicals</div><div class="py-4 border-b border-slate-700 opacity-65">electronic-grade HF</div>
+<div class="py-4 font-bold">POLISH</div><div class="py-4">slurry + pad</div><div class="py-4 opacity-65">Entegris · DuPont</div>
 </div>
 
 <!--
-- Wafer making consumes purified silicon feedstock and high-purity quartz crucibles; the Spruce Pine Mining District supplies a leading source of crucible-grade quartz.
+- Shin-Etsu and SUMCO supply qualified 300 millimetre silicon wafers to leading fabs.
 - Coating consumes photoresist from a supplier set concentrated in Japan.
 - Exposure projects a patterned reticle; DUV light sources use krypton-fluoride or argon-fluoride excimer-laser mixtures.
 - Etch, cleaning, and polishing consume high-purity chemicals, slurries, and pads that fabs qualify to a specific process.
@@ -76,43 +69,13 @@ class: visual-sequence paper-visual
 title: "Material shocks"
 ---
 
-<div class="visual-sequence__kicker">MATERIAL SHOCKS</div>
-
 <div class="visual-sequence__frame">
   <img src="/diagrams/rendered/slide-104-material-shocks-substitution.svg" alt="Three material supply shocks followed by localization, supplier diversification, or stockpile use" />
 </div>
-
-<div class="visual-sequence__caption"><strong>Customers added local suppliers, second sources, or stockpiles.</strong></div>
-<div class="visual-sequence__source">Japan–Korea · 2019 · Ukraine neon · 2022 · Spruce Pine quartz · 2024</div>
 
 <!--
 - Japan restricted three semiconductor materials sold to South Korea in 2019, and Korean manufacturers responded by qualifying local and third-country suppliers.
 - Russia's invasion of Ukraine disrupted a large share of semiconductor-grade neon in 2022, prompting stockpiling and new capacity.
 - Hurricane Helene paused both Spruce Pine producers in 2024; Sibelco announced a restart about two weeks later, while The Quartz Corp resumed in phases.
 - Each shock accelerated supplier diversification.
--->
-
----
-
-# Economics Ledger: wafer prices combine many inputs
-
-<div class="grid grid-cols-2 gap-10 mt-10 text-center">
-<div class="border-2 border-gray-400 rounded-lg p-6">
-<div class="text-5xl font-bold">~$150</div>
-<div class="text-sm opacity-60 mt-2">industry estimate: blank 300 mm wafer</div>
-</div>
-<div class="border-2 border-gray-400 rounded-lg p-6">
-<div class="text-5xl font-bold">~$19,500</div>
-<div class="text-sm opacity-60 mt-2">industry estimate after 3 nm processing</div>
-</div>
-</div>
-
-<div class="text-lg opacity-80 mt-10 text-center leading-relaxed">
-The difference includes equipment depreciation, consumables, labor, overhead, and foundry margin.<br>
-No public source allocates those costs per GB300.
-</div>
-
-<!--
-- A blank 300 millimetre wafer costs about $150; industry estimates put processed 3nm wafers near $19,500, including equipment, materials, labor, overhead, and foundry margin.
-- Public reporting does not separate those components for a specific accelerator.
 -->

@@ -1,6 +1,6 @@
 ---
-layout: default
-class: stage-map-focus
+class: visual-sequence paper-visual
+title: "Memory cells"
 ---
 
 <!-- SEGMENT
@@ -13,37 +13,16 @@ status: draft
 seeds: []                          # nothing new planted for a later segment; the closer hands off to `packaging`
 pays_off: [memory-wall]            # the bandwidth problem seeded in `nvidia` gets its bill here
 stamps: [hbm]                      # chokepoint #6 — qualified HBM capacity
-diagrams: [map-memory, journey-4, memory-types-v2, hbm-package-v2, board-6, dram-revenue-surge]
+diagrams: [memory-types, hbm-package, dram-revenue-surge]
 sources: research/memory-hbm.md
 -->
 
 
-# High-bandwidth memory
-
-<div class="stage-map-focus__map">
-  <img src="/diagrams/rendered/map-memory.svg" alt="Industry map with high-bandwidth memory suppliers highlighted" />
-</div>
-
-<img class="stage-map-focus__journey" src="/diagrams/rendered/journey-4.svg" alt="Chip journey with memory active" />
-
-<!--
-- The logic dies are finished, but their compute units need data at much higher bandwidth than conventional memory can deliver.
-- The accelerator now adds HBM dies beside the GPU and joins them through advanced packaging.
--->
-
----
-class: visual-sequence paper-visual
-title: "Memory cells"
----
-
-<div class="visual-sequence__kicker">MEMORY CELLS</div>
+<div class="visual-sequence__kicker">DRAM REFRESHES; NAND RETAINS</div>
 
 <div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/memory-types-v2.png" alt="A leaking DRAM capacitor cell that must refresh beside a vertical 3D NAND charge-storage structure" />
+  <img src="/diagrams/rendered/memory-types.svg" alt="A DRAM capacitor cell that must refresh beside a vertical NAND charge-storage structure" />
 </div>
-
-<div class="visual-sequence__caption"><strong>DRAM needs refresh.</strong><span>NAND retains data without power.</span></div>
-<div class="visual-sequence__source">DRAM · ~64 ms refresh · NAND · 200–400+ layers</div>
 
 <!--
 - DRAM stores each bit as charge in a tiny capacitor and refreshes it on a cycle of about 64 milliseconds.
@@ -53,32 +32,32 @@ title: "Memory cells"
 
 ---
 
-# Capacity additions drive DRAM price cycles
+# A two-year fab lag turns shortages into memory cycles
 
-<div class="grid grid-cols-2 gap-8 mt-6 items-center">
-<div>
-
-<div class="text-lg leading-relaxed">
-New fabs take <b>~2 years</b> and <b>&gt;$15B</b> to build.<br>
-Suppliers expand during shortages; the new capacity arrives together and drives prices down.
+<div class="grid grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr_auto_1fr] gap-3 items-center mt-12 text-center">
+<div><div class="text-xl font-bold">SHORTAGE</div><div class="text-sm opacity-60 mt-2">prices rise</div></div>
+<div class="text-3xl opacity-40">→</div>
+<div><div class="text-xl font-bold">BUILD</div><div class="text-sm opacity-60 mt-2">&gt;$15B per fab</div></div>
+<div class="text-3xl opacity-40">→</div>
+<div><div class="text-xl font-bold">WAIT</div><div class="text-sm opacity-60 mt-2">~2 years</div></div>
+<div class="text-3xl opacity-40">→</div>
+<div><div class="text-xl font-bold">CAPACITY ARRIVES</div><div class="text-sm opacity-60 mt-2">projects overlap</div></div>
+<div class="text-3xl opacity-40">→</div>
+<div><div class="text-xl font-bold">BUST</div><div class="text-sm opacity-60 mt-2">prices fall</div></div>
 </div>
 
-<div class="text-sm opacity-60 mt-6">
-Dozens of DRAM makers in the '80s–'90s → <b>3 companies ≈ 90% of DRAM</b> today.
+<div class="grid grid-cols-2 gap-12 mt-12">
+<div class="border-t-2 border-red-400 pt-4">
+<div class="text-xl font-bold">2022–23</div>
+<div class="opacity-65 mt-1">prices roughly halved · inventories ~31 weeks</div>
+</div>
+<div class="border-t-2 border-green-500 pt-4">
+<div class="text-xl font-bold">2025–26</div>
+<div class="opacity-65 mt-1">DRAM contracts +93–98% in one quarter</div>
+</div>
 </div>
 
-</div>
-<div class="flex flex-col gap-4">
-<div class="border-2 border-red-400 rounded-lg p-4 text-center">
-<div class="text-2xl font-bold">2022–23 bust</div>
-<div class="text-sm opacity-70 mt-1">DRAM/NAND prices roughly <b>halved</b> · inventories ~31 weeks</div>
-</div>
-<div class="border-2 border-green-500 rounded-lg p-4 text-center">
-<div class="text-2xl font-bold">2025–26 boom</div>
-<div class="text-sm opacity-70 mt-1">conventional DRAM contracts <b>+93–98%</b> in a single quarter</div>
-</div>
-</div>
-</div>
+<div class="text-center text-base opacity-60 mt-9">Repeated cycles left three companies with ≈90% of DRAM.</div>
 
 <!--
 - Memory suppliers add capacity during shortages, but a new fab takes about two years and more than $15 billion.
@@ -89,34 +68,21 @@ Dozens of DRAM makers in the '80s–'90s → <b>3 companies ≈ 90% of DRAM</b> 
 
 ---
 
-# DRAM leadership moved from the US to Japan to Korea
+# DRAM leadership followed the firms that kept investing
 
-<div class="grid grid-cols-4 gap-3 mt-8 text-center text-sm">
-<div class="border rounded-lg p-3">
-<div class="text-lg font-bold">America</div>
-<div class="opacity-60">first commercial success</div>
-<div class="mt-2">Intel 1103, 1970 —<br>best-selling chip in the world by '72</div>
-</div>
-<div class="border rounded-lg p-3">
-<div class="text-lg font-bold">Japan</div>
-<div class="opacity-60">~75–80% share in the 1980s</div>
-<div class="mt-2">~75–80% of world DRAM;<br>the '85 crash drove <b>Intel out of memory</b></div>
-</div>
-<div class="border rounded-lg p-3">
-<div class="text-lg font-bold">Korea</div>
-<div class="opacity-60">Samsung took #1 in 1992</div>
-<div class="mt-2">Samsung #1 in 1992 —<br>held it <b>33 years</b></div>
-</div>
-<div class="border-2 border-amber-500 rounded-lg p-3">
-<div class="text-lg font-bold">2025</div>
-<div class="opacity-60">quarterly DRAM lead changes</div>
-<div class="mt-2">SK hynix led Q1–Q3;<br><b>Samsung retook Q4</b></div>
-</div>
+<div class="grid grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr_auto_1.2fr] gap-3 items-center mt-12 text-center">
+<div><div class="text-2xl font-bold">1970</div><div class="mt-2">U.S. creates the market</div><div class="text-sm opacity-55 mt-1">Intel 1103</div></div>
+<div class="text-3xl opacity-35">→</div>
+<div><div class="text-2xl font-bold">1980s</div><div class="mt-2">Japan reaches 75–80%</div><div class="text-sm opacity-55 mt-1">global DRAM share</div></div>
+<div class="text-3xl opacity-35">→</div>
+<div><div class="text-2xl font-bold text-red-300">1985</div><div class="mt-2">the crash pushes Intel out</div></div>
+<div class="text-3xl opacity-35">→</div>
+<div><div class="text-2xl font-bold">1992</div><div class="mt-2">Samsung becomes #1</div><div class="text-sm opacity-55 mt-1">holds the lead for 33 years</div></div>
+<div class="text-3xl opacity-35">→</div>
+<div><div class="text-2xl font-bold text-amber-300">2025</div><div class="mt-2">SK hynix leads Q1–Q3</div><div class="text-sm opacity-65 mt-1">Samsung retakes Q4</div></div>
 </div>
 
-<div class="text-center text-lg mt-8">
-DRAM leaders kept investing during downturns.
-</div>
+<div class="text-center text-xl mt-14">The leaders kept investing through downturns.</div>
 
 <!--
 - US companies created the commercial DRAM market, Japanese suppliers held about three quarters of it in the 1980s, and Korean firms then took the lead.
@@ -126,23 +92,29 @@ DRAM leaders kept investing during downturns.
 
 ---
 
-# Compute grew much faster than memory bandwidth
+# Compute grew ~60,000×; the memory feed grew ~100×
 
-<div class="grid grid-cols-2 gap-10 mt-10 text-center items-center">
+<div class="text-sm opacity-45 tracking-widest mt-7 text-center">20-YEAR SERVER COMPARISON</div>
+
+<div class="grid grid-cols-[1fr_auto_1fr_auto_1fr] gap-6 items-center mt-10 text-center">
 <div>
-<div class="text-6xl font-bold">~60,000×</div>
-<div class="opacity-70 mt-2">server compute growth, 20 yrs</div>
+<div class="text-sm opacity-50 tracking-widest">MEMORY</div>
+<div class="text-3xl font-bold mt-3">WEIGHTS</div>
 </div>
+<div class="text-4xl opacity-40">→</div>
+<div class="border-y-2 border-amber-400 py-7">
+<div class="text-5xl font-bold">~100×</div>
+<div class="opacity-65 mt-2">bandwidth growth</div>
+</div>
+<div class="text-4xl opacity-40">→</div>
 <div>
-<div class="text-6xl font-bold">~100×</div>
-<div class="opacity-70 mt-2">memory bandwidth growth, same 20 yrs</div>
+<div class="text-5xl font-bold">~60,000×</div>
+<div class="opacity-65 mt-2">compute growth</div>
+<div class="text-sm opacity-50 mt-2">GPU cores</div>
 </div>
 </div>
 
-<div class="text-center text-2xl mt-10 leading-relaxed">
-GPU cores spend much of their time waiting<br>
-for weights to arrive from memory.
-</div>
+<div class="text-center text-2xl mt-12">The narrow feed leaves arithmetic units waiting for weights.</div>
 
 <!--
 - Server compute grew about 60,000-fold over two decades, while memory bandwidth improved about 100-fold.
@@ -152,17 +124,14 @@ for weights to arrive from memory.
 
 ---
 class: visual-sequence paper-visual
-title: "High-bandwidth memory"
+title: "HBM mechanism"
 ---
 
-<div class="visual-sequence__kicker">HIGH-BANDWIDTH MEMORY</div>
+<div class="visual-sequence__kicker">STACK DRAM; CONNECT IT THROUGH TSVS AND A THOUSANDS-BIT BUS</div>
 
 <div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/hbm-package-v2.png" alt="An exploded HBM stack with DRAM dies, through-silicon vias, microbumps, a logic base die, and a wide interface to a nearby GPU on an interposer" />
+  <img src="/diagrams/rendered/hbm-package.svg" alt="An HBM stack with DRAM dies, through-silicon vias, microbumps, a logic base die, and a wide interface to a nearby GPU on an interposer" />
 </div>
-
-<div class="visual-sequence__caption"><strong>Move memory onto the package.</strong><span>Then make the connection thousands of bits wide.</span></div>
-<div class="visual-sequence__source">8 / 12 / 16 dies · 1,024–2,048-bit interface</div>
 
 <!--
 - HBM places stacks of DRAM beside the processor and connects them through an interface thousands of bits wide.
@@ -181,8 +150,8 @@ title: "HBM3E"
   <img src="/assets/sk-hynix-hbm3e-blackwell-display.png" alt="SK hynix display showing a 36 GB 12-layer HBM3E package beside an NVIDIA GB300 Grace Blackwell Ultra module" />
 </div>
 
-<div class="visual-sequence__caption"><strong>About 1.2 TB/s per stack.</strong><span>Memory sits millimetres from the GPU.</span></div>
-<div class="visual-sequence__source">24–36 GB · 8 or 12 DRAM dies · 1,024-bit interface</div>
+<div class="visual-sequence__caption"><strong>Eight stacks provide up to 288 GB.</strong><span>The full subsystem reaches up to 8 TB/s.</span></div>
+<div class="visual-sequence__source">Blackwell Ultra · HBM3E</div>
 
 <!--
 - HBM3E is the fifth HBM generation and the memory used by Blackwell Ultra.
@@ -193,28 +162,19 @@ title: "HBM3E"
 
 ---
 
-# HBM is sold through qualification and long-term contracts
+# Qualified capacity, booked 12–24 months ahead, determines HBM supply
 
-<div class="grid grid-cols-3 gap-6 mt-8 text-center">
-<div>
-<div class="text-5xl font-bold">~3×</div>
-<div class="opacity-70 mt-2">wafer capacity per GB<br>vs DDR5</div>
-</div>
-<div>
-<div class="text-5xl font-bold">&gt;50%</div>
-<div class="opacity-70 mt-2">third-party estimate: HBM share<br>of B300 physical package cost</div>
-</div>
-<div>
-<div class="text-5xl font-bold">2026</div>
-<div class="opacity-70 mt-2">supply <b>sold out</b><br>12–24 months ahead</div>
-</div>
+<div class="grid grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-4 items-center mt-12 text-center">
+<div><div class="text-5xl font-bold">~3×</div><div class="opacity-65 mt-2">wafer capacity / GB<br>vs DDR5</div></div>
+<div class="text-3xl opacity-40">→</div>
+<div><div class="text-2xl font-bold">QUALIFY</div><div class="opacity-65 mt-2">customer + accelerator</div></div>
+<div class="text-3xl opacity-40">→</div>
+<div><div class="text-2xl font-bold">CONTRACT</div><div class="opacity-65 mt-2">12–24 months ahead</div></div>
+<div class="text-3xl opacity-40">→</div>
+<div><div class="text-5xl font-bold text-amber-300">2026</div><div class="opacity-65 mt-2">supply sold out</div></div>
 </div>
 
-<div class="text-center text-lg mt-10 leading-relaxed">
-Customers qualify suppliers and negotiate contracts <b>12–24 months ahead</b>.<br>
-HBM4 allows <b>customer-specific logic base dies</b>.<br>
-<span class="opacity-70">HBM is sold mainly through qualified contracts rather than a commodity spot market.</span>
-</div>
+<div class="text-center text-xl mt-14">HBM4 custom logic base dies deepen product-specific qualification.</div>
 
 <!--
 - HBM uses about three times as much wafer capacity per gigabyte as DDR5; third-party estimates put it above half of B300 physical package cost.
@@ -224,46 +184,27 @@ HBM4 allows <b>customer-specific logic base dies</b>.<br>
 
 ---
 
-# HBM supplier race: DRAM scale ≠ HBM leadership
+# Samsung leads DRAM; SK hynix leads HBM
 
-<div class="grid grid-cols-3 gap-4 mt-4">
-
-<div class="border-2 border-green-500 rounded-lg p-3">
-<div class="text-lg font-bold text-center">SK hynix</div>
-<div class="grid grid-cols-3 gap-1 text-center mt-2 text-sm">
-<div><div class="text-xl font-bold">$27.98B</div><div class="opacity-60">DRAM rev. 1Q26</div></div>
-<div><div class="text-xl font-bold">28.8%</div><div class="opacity-60">DRAM share</div></div>
-<div><div class="text-xl font-bold">~56%</div><div class="opacity-60">HBM share est.</div></div>
+<div class="grid grid-cols-2 gap-16 mt-8">
+<div>
+<div class="text-sm opacity-50 tracking-widest mb-3">DRAM SHARE · 1Q26</div>
+<div class="flex justify-between border-b border-gray-600 py-3"><span class="text-xl font-bold">Samsung</span><span class="text-2xl font-bold">38.5%</span></div>
+<div class="flex justify-between border-b border-gray-600 py-3"><span class="text-xl font-bold">SK hynix</span><span class="text-2xl font-bold">28.8%</span></div>
+<div class="flex justify-between py-3"><span class="text-xl font-bold">Micron</span><span class="text-2xl font-bold">22.4%</span></div>
 </div>
-<div class="text-xs opacity-70 text-center mt-2">HBM yield lead and ~56% share</div>
+<div class="border-l border-gray-600 pl-12">
+<div class="text-sm opacity-50 tracking-widest mb-3">HBM POSITION · SEPARATE ESTIMATES</div>
+<div class="flex justify-between border-b border-gray-600 py-3"><span class="text-xl font-bold">SK hynix</span><span><b>~56%</b> · share leader</span></div>
+<div class="flex justify-between border-b border-gray-600 py-3"><span class="text-xl font-bold">Micron</span><span><b>~20%</b> · U.S. supplier</span></div>
+<div class="flex justify-between py-3"><span class="text-xl font-bold">Samsung</span><span>HBM3E qualified · Sep '25</span></div>
 </div>
-
-<div class="border-2 border-red-400 rounded-lg p-3">
-<div class="text-lg font-bold text-center">Samsung</div>
-<div class="grid grid-cols-3 gap-1 text-center mt-2 text-sm">
-<div><div class="text-xl font-bold">$37.32B</div><div class="opacity-60">DRAM rev. 1Q26</div></div>
-<div><div class="text-xl font-bold">38.5%</div><div class="opacity-60">DRAM share</div></div>
-<div><div class="text-xl font-bold">SEP '25</div><div class="opacity-60">HBM3E qualified</div></div>
-</div>
-<div class="text-xs opacity-70 text-center mt-2">integrates memory and 4 nm base-die production</div>
 </div>
 
-<div class="border-2 border-blue-400 rounded-lg p-3">
-<div class="text-lg font-bold text-center">Micron</div>
-<div class="grid grid-cols-3 gap-1 text-center mt-2 text-sm">
-<div><div class="text-xl font-bold">$21.75B</div><div class="opacity-60">DRAM rev. 1Q26</div></div>
-<div><div class="text-xl font-bold">22.4%</div><div class="opacity-60">DRAM share</div></div>
-<div><div class="text-xl font-bold">~20%</div><div class="opacity-60">HBM share est.</div></div>
-</div>
-<div class="text-xs opacity-70 text-center mt-2">only US supplier among the three largest</div>
-</div>
-
-</div>
-
-<div class="text-xs opacity-40 text-right mt-3">DRAM revenue/share: TrendForce 1Q26 · HBM figures: separate estimates</div>
+<div class="text-xs opacity-40 text-right mt-6">DRAM share: TrendForce 1Q26 · HBM figures: separate estimates</div>
 
 <!--
-- The first two figures in each card use the same 1Q26 DRAM revenue and market-share basis.
+- The DRAM scoreboard uses one 1Q26 market-share basis; the HBM scoreboard combines separately sourced share estimates with Samsung's qualification milestone.
 - SK hynix leads estimated HBM share; Samsung combines memory with its own logic manufacturing.
 - Micron is the only US-based company among the three leading DRAM and HBM suppliers.
 - Product qualification, packaging expertise, and booked capacity make large allocation shifts slow even with three named sources.
@@ -274,14 +215,13 @@ class: visual-sequence paper-visual
 title: "The memory supercycle"
 ---
 
-<div class="visual-sequence__kicker">THE MEMORY SUPERCYCLE</div>
+<div class="visual-sequence__kicker">HBM'S WAFER INTENSITY AMPLIFIES A FORECAST DRAM BOOM</div>
 
 <div class="visual-sequence__frame">
   <img src="/diagrams/rendered/dram-revenue-surge.svg" alt="Bars compare 2025 DRAM revenue with the 2026 forecast while three wafers show HBM's higher capacity use" />
 </div>
 
-<div class="visual-sequence__caption"><strong>Forecast DRAM revenue</strong><span>rises from $165.7B in 2025 to $404.3B in 2026.</span></div>
-<div class="visual-sequence__source">TrendForce forecast · 2026E +144%</div>
+<div class="visual-sequence__source">TrendForce forecast · 2026E</div>
 
 <!--
 - Industry forecasts put DRAM revenue at $404.3 billion in 2026, up from $165.7 billion in 2025.
@@ -291,17 +231,20 @@ title: "The memory supercycle"
 
 ---
 
-# Chokepoint #6: HBM capacity
+# Three suppliers do not make qualified HBM capacity interchangeable
 
-![chokepoint board — 6 stamps](/diagrams/rendered/board-6.svg)
+<div class="text-xs opacity-45 text-right -mt-2">CHOKEPOINTS MAPPED · 6 / 7</div>
 
-<div class="text-xl mt-6 text-center">
-Three named suppliers do not make qualified HBM interchangeable.<br>
-<b>Allocation shifts still require product-specific qualification, volume, and packaging yield.</b>
-</div>
+<div class="text-center text-base opacity-60 mt-5">Rubin HBM4 sources · SK hynix · Samsung · Micron</div>
 
-<div class="text-sm opacity-60 mt-10 text-center">
-HBM stacks and GPU dies still have to be joined in one package.
+<div class="grid grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-4 items-center mt-11 text-center">
+<div><div class="text-2xl font-bold">QUALIFICATION</div><div class="opacity-60 mt-2">product-specific</div></div>
+<div class="text-3xl opacity-40">→</div>
+<div><div class="text-2xl font-bold">VOLUME</div><div class="opacity-60 mt-2">capacity at yield</div></div>
+<div class="text-3xl opacity-40">→</div>
+<div><div class="text-2xl font-bold">PACKAGING YIELD</div><div class="opacity-60 mt-2">stack + package</div></div>
+<div class="text-3xl opacity-40">→</div>
+<div class="border-y-2 border-amber-400 py-6"><div class="text-2xl font-bold">USABLE ALLOCATION</div><div class="opacity-60 mt-2">shippable GPUs</div></div>
 </div>
 
 <!--

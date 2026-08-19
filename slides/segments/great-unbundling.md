@@ -8,7 +8,7 @@ title: "The great unbundling"
 id: great-unbundling
 act: I — The Impossible Object
 tier: —
-angle: "The industry didn't grow into four kinds of company — one graph shattered it into them. In 1987 Morris Chang read the fab-cost curve and turned manufacturing itself into a product; every company in this course is just a different survival strategy for a cost that doubles every four years."   # PROPOSED — YOU OWN THIS LINE
+angle: "The industry didn't grow into four kinds of company — rising fab cost shattered the integrated model. Foundries pooled demand, designers shed factories, and every company in this course became a different survival strategy for the same cost curve."   # PROPOSED — YOU OWN THIS LINE
 runtime: ~3 min
 status: draft
 seeds: [margin-ladder]    # the ladder is teased here, ranked in `synthesis`. Soft plant — not a formal ledger pair, but the payoff lives in another segment, so redline per that rule.
@@ -36,32 +36,31 @@ sources: research/foundations.md, research/tsmc.md
 
 ---
 
-# TSMC pooled demand without competing with customers
+# A foundry pools demand across many chip designers
 
 <div class="grid grid-cols-3 gap-6 mt-10 text-center">
 <div class="border-2 border-gray-400 rounded-lg p-6">
 <div class="text-xl font-bold mb-2">Chip designer</div>
-<div class="opacity-70">Avoids financing a leading-edge fab.</div>
+<div class="opacity-70">Pays for wafers, not an entire factory.</div>
 </div>
 <div class="border-2 border-green-500 rounded-lg p-6">
-<div class="text-xl font-bold mb-2">Pure-play foundry</div>
-<div class="opacity-70">Pools wafer orders across many customers.</div>
+<div class="text-xl font-bold mb-2">Foundry</div>
+<div class="opacity-70">Combines orders across many customers.</div>
 </div>
 <div class="border-2 border-blue-500 rounded-lg p-6">
-<div class="text-xl font-bold mb-2">Neutrality</div>
-<div class="opacity-70">Sells no competing chip of its own.</div>
+<div class="text-xl font-bold mb-2">Fab utilization</div>
+<div class="opacity-70">Spreads fixed cost across more wafers.</div>
 </div>
 </div>
 
 <div class="text-center mt-12 text-2xl opacity-80">
-Manufacturing became the product.
+Manufacturing became a product designers could buy.
 </div>
 
 <!--
-- A $20 billion fab needs a steady stream of wafers to keep its tools busy.
-- High utilization spreads the fixed costs across enough output.
-- TSMC pooled orders from many designers and promised not to sell a competing chip of its own.
-- That neutrality made manufacturing capacity a product independent designers could buy.
+- A leading-edge fab needs steady wafer demand to keep its costly tools busy.
+- A foundry combines orders from many chip companies, lifting utilization and spreading fixed cost across more wafers.
+- Fabless firms can spend on design and products rather than financing factories.
 -->
 
 ---
@@ -85,10 +84,6 @@ Manufacturing became the product.
 <div class="text-lg font-bold" style="color:#f59e0b">EQUIPMENT</div>
 <div class="opacity-70 text-sm mt-1">Supply the tools used by fabs. ASML and Applied Materials.</div>
 </div>
-</div>
-
-<div class="text-center mt-6 text-sm opacity-60">
-These models separate chip design, manufacturing, and equipment supply.
 </div>
 
 <!--

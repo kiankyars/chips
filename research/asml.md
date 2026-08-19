@@ -46,18 +46,30 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   - **Cymer**, acquired by ASML in 2013, for EUV source technology. [6]
 - EUV light path: laser pulses flatten and then vaporize tin droplets into plasma;
   the plasma emits 13.5 nm light, which mirrors carry through a vacuum to the
-  reticle and wafer. ASML's latest commercial sources repeat the process about
-  **60,000 times per second**. [2][7]
+  reticle and wafer. ASML's official NXE optical-column illustration shows the
+  reflective path inside the scanner. ASML's latest commercial sources repeat
+  the process about **60,000 times per second**. [2][7][15]
 - ZEISS EUV mirrors use more than 100 engineered layers and are polished to less
-  than an atom's thickness. At Germany scale, the largest irregularity would be
-  about 1 mm. [7]
+  than an atom's thickness. [7]
+- ZEISS says that if one of its EUV mirrors were scaled to the size of Germany,
+  its largest surface unevenness would be about **0.1 mm**. ASML separately uses
+  **1 mm** for a comparable analogy, so keep the figure tied to its source. [7][14]
 - Intel reported its first EXE:5000 installation at **more than 150 metric tons**,
   transported in 43 freight containers. [8]
 
 ## High-NA EUV — current production status
+- Numerical aperture is a **dimensionless** optical quantity: it describes the
+  angular range of light the projection optics can collect and focus, not a
+  length in nanometres. The Rayleigh relationship is `CD = k1 · λ / NA`, so at
+  the same wavelength and comparable process factor, resolution improves as NA
+  increases. [16]
 - High-NA raises numerical aperture from **0.33 to 0.55**. The EXE platform has
   **8 nm** resolution and can print features **1.7× smaller** than NXE systems,
   supporting fewer exposures on suitable critical layers. [2][9]
+- ASML's public product pages describe **8 nm resolution**; ASML and ZEISS
+  technical literature specifies this as approximately **8 nm half-pitch** for
+  dense lines. For an equal line-and-space pattern, that is a **16 nm full
+  pitch**, not an 8 nm full pitch. [9][16]
 - The TWINSCAN EXE:5200B is the second-generation High-NA system. ASML reports
   **175 wafers/hour at 50 mJ/cm²**, 60% higher productivity than EXE:5000. [2]
 - By end-2025 ASML had shipped **eight** High-NA systems; six were operating,
@@ -103,3 +115,6 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 11. ASML, High-NA readiness milestone with first high-volume logic product, July 15 2026 — https://www.asml.com/en/news/press-releases/2026/high-na-euv-reaches-new-readiness-milestone
 12. Government of the Netherlands, advanced-equipment export-control update, January 15 2025 — https://www.government.nl/latest/news/2025/01/15/klever-export-controls-on-advanced-semiconductor-manufacturing-equipment-to-be-tightened
 13. ASML, 2025 Annual Report, risk and security section — https://ourbrand.asml.com/m/71076aaad607de4d/original/Exhibit%252015.2.pdf
+14. ZEISS SMT, "EUV lithography and technology" — https://www.zeiss.com/semiconductor-manufacturing-technology/inspiring-technology/euv-lithography.html
+15. ASML, "EUV lithography systems," NXE optical-column illustration — https://www.asml.com/en/products/euv-lithography-systems
+16. ASML, "The Rayleigh criterion for resolution" — https://www.asml.com/en/technology/lithography-principles/rayleigh-criterion

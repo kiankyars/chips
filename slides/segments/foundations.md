@@ -7,7 +7,7 @@ id: foundations
 act: I — The Impossible Object
 tier: —                                            # concept segment, no player profiled
 angle: "The chip I just held up shouldn't exist — and the fastest way to understand a $600-billion-a-year industry is to take that one impossible object apart until you hit the two exponentials that built it."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~8 min
+runtime: ~9 min
 status: draft
 seeds: [yield]                                     # one particle, one dead die → cashed in life-of-a-wafer, kla, intel, packaging
 pays_off: []                                       # opener of the course; nothing cashes here
@@ -55,27 +55,27 @@ sources: research/foundations.md
 - Logic combines standard cells, SRAM, and custom datapaths. Placement and wiring must close timing across irregular networks.
 - HBM repeats 1T–1C DRAM cells in dense arrays served by shared circuitry.
 - Logic still contains SRAM; the distinction is dominant circuit structure and process optimization.
-- Both rely on MOSFET switching, so we now zoom into the common device.
+- Both rely on transistor switches, so we now zoom into the common building block.
 -->
 
 ---
 class: visual-sequence paper-visual
-title: "Voltage-controlled switch"
+title: "A transistor is a switch"
 ---
 
-<div class="visual-sequence__kicker">VOLTAGE-CONTROLLED SWITCH</div>
+<div class="visual-sequence__kicker">A TRANSISTOR IS A SWITCH</div>
 
 <div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/transistor-switch-v2.png" alt="A simplified n-channel planar MOSFET shown off and on; gate voltage creates a conductive channel from source to drain" />
+  <img src="/diagrams/rendered/transistor-switch-v2.png" alt="Two simplified views of a transistor used as a switch: without a control voltage the current path is blocked; voltage at the gate opens the path" />
 </div>
 
-<div class="visual-sequence__caption"><strong>Voltage at the gate</strong><span>opens or closes a channel between source and drain.</span></div>
-<div class="visual-sequence__source">Shown: n-channel MOSFET · CMOS pairs complementary n- and p-channel devices</div>
+<div class="visual-sequence__caption"><strong>A small voltage at the gate</strong><span>turns the path for current on or off.</span></div>
+<div class="visual-sequence__source">Simplified transistor cross-section · not to scale</div>
 
 <!--
-- This is a simplified n-channel planar MOSFET shown off and on. Voltage on the gate controls whether current can flow between source and drain.
-- CMOS logic pairs n- and p-channel devices that switch with opposite polarity. This keeps static current low in stable states.
-- Polarity is separate from the geometry change shown later. Carry forward one idea: this switch is repeated billions of times across a modern chip.
+- In digital logic, a transistor acts as a microscopic switch: it allows current through or blocks it.
+- A small voltage at the gate is the control signal. It opens or closes the path without any mechanical part moving.
+- Billions of these switches combine to store bits and perform calculations. That is the only device-level idea we need for the rest of the course.
 -->
 
 ---
@@ -111,32 +111,58 @@ title: "Voltage-controlled switch"
 
 ---
 
-# "2 nm" is a generation label, not a physical measurement
+# "2 nm" is a process name, not a physical measurement
 
-<div class="grid grid-cols-[0.8fr_2fr] gap-12 mt-8 items-center">
-<div class="text-center">
-<div class="text-8xl font-bold leading-none">2 nm</div>
-<div class="text-xl opacity-70 mt-4">process family</div>
-<div class="text-sm opacity-60 mt-2">not a ruler reading</div>
-</div>
+<div class="flex flex-col items-center text-center mt-8">
+<div class="text-[7.5rem] font-bold leading-none">2 nm</div>
+<div class="text-4xl font-bold mt-3">≠ a 2 nm feature</div>
 
-<div>
-<div class="text-lg opacity-70 text-center mb-5">TSMC N2 versus N3E</div>
-<div class="grid grid-cols-3 gap-5 text-center">
-<div><div class="text-4xl font-bold whitespace-nowrap">10–15%</div><div class="opacity-70 mt-2">faster<br>at the same power</div></div>
-<div><div class="text-4xl font-bold whitespace-nowrap">25–30%</div><div class="opacity-70 mt-2">less power<br>at the same speed</div></div>
-<div><div class="text-4xl font-bold whitespace-nowrap">&gt;15%</div><div class="opacity-70 mt-2">greater<br>chip density</div></div>
+<div class="w-4/5 border-t border-gray-600 mt-9 pt-7 text-xl leading-relaxed">
+The label bundles a <b>transistor architecture</b>, <b>wiring stack</b>,<br>
+<b>design rules</b>, <b>materials</b>, and <b>libraries</b>.
 </div>
 </div>
-</div>
-
-<div class="text-center text-xl mt-9">Node names identify the generation. PPA states what improved.</div>
 
 <!--
-- A node name identifies a process family, not a literal two-nanometre feature.
-- Against N3E, TSMC reports 10–15% more speed at the same power or 25–30% less power at the same speed.
-- Chip density rises more than 15%; speed and power are alternative operating points.
-- Gains depend on the design. Next comes the GAA geometry behind N2.
+- A node name is a process-family label; no single feature on the chip measures exactly two nanometres.
+- The name bundles the transistor architecture, interconnect stack, process rules, materials, and design libraries.
+- So the number alone cannot tell us how much better a design becomes. For that, engineers compare PPA.
+-->
+
+---
+
+# PPA: three ways a design gets better
+
+<div class="grid grid-cols-3 gap-10 mt-7 text-center">
+<div>
+<div class="text-3xl font-bold whitespace-nowrap">POWER ↓</div>
+<div class="text-lg opacity-70 mt-3">watts under a<br>stated workload</div>
+</div>
+<div>
+<div class="text-3xl font-bold whitespace-nowrap">PERFORMANCE ↑</div>
+<div class="text-lg opacity-70 mt-3">throughput or latency,<br>not clock speed alone</div>
+</div>
+<div>
+<div class="text-3xl font-bold whitespace-nowrap">AREA ↓</div>
+<div class="text-lg opacity-70 mt-3">physical silicon<br>occupied</div>
+</div>
+</div>
+
+<div class="border-t border-gray-600 mt-8 pt-6 text-center">
+<div class="text-sm tracking-widest opacity-60">TSMC N2 VERSUS N3E</div>
+<div class="grid grid-cols-[1fr_auto_1fr] gap-7 items-center mt-3">
+<div><span class="text-3xl font-bold">10–15% faster</span><br><span class="opacity-70">at the same power</span></div>
+<div class="text-2xl font-bold opacity-50">OR</div>
+<div><span class="text-3xl font-bold">25–30% less power</span><br><span class="opacity-70">at the same speed</span></div>
+</div>
+<div class="text-xl mt-4"><b>&gt;15% greater chip density</b> on the separate area axis</div>
+</div>
+
+<!--
+- PPA means power, performance, and area; it describes an implementation, not a node label.
+- Power requires a stated workload; performance means useful throughput or latency; area is occupied silicon.
+- Cell, voltage, and layout choices trade speed against leakage or area, so PPA is a frontier rather than one score.
+- TSMC compares N2 with N3E at matched points: faster at equal power or lower power at equal speed; density is separate.
 -->
 
 ---
@@ -152,7 +178,7 @@ title: "Transistor geometry · 1 / 3"
 </div>
 
 <div class="visual-sequence__caption"><strong>Planar</strong><span>The gate controls the channel from one surface.</span></div>
-<div class="visual-sequence__source">Planar MOSFET · one controlled surface</div>
+<div class="visual-sequence__source">Planar transistor · one controlled surface</div>
 
 <!--
 - Amber is the silicon channel, blue is the gate, and cyan is the gate dielectric between them.
@@ -237,7 +263,7 @@ title: "The first-order yield model"
 </div>
 
 <div class="yield-model__takeaway">Larger die or more defects → exponentially fewer working dies.</div>
-<div class="yield-model__limit">Assumes defects land randomly and independently. Clustering needs a richer model.</div>
+<div class="yield-model__limit">Poisson Model assumes defects land randomly and independently.</div>
 
 <!--
 - Y is the probability that a die contains zero killer defects; e is Euler's number.
@@ -309,8 +335,6 @@ title: "Dennard scaling"
 <div><div class="text-3xl font-bold">~5,000×</div><div class="text-sm opacity-60">fab cost, since the early 1970s</div></div>
 <div><div class="text-3xl font-bold">~25 → 3</div><div class="text-sm opacity-60">companies at the leading edge (130nm → 2nm)</div></div>
 </div>
-
-<div class="text-sm opacity-60 mt-6 text-center">As fab costs rose, the number of leading-edge manufacturers fell from roughly 25 to three.</div>
 
 <!--
 - A leading-edge fab cost about $4 million in the early 1970s and more than $20 billion today, an increase of about 5,000 times.

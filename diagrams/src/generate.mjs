@@ -13,7 +13,10 @@ import { generateEquipmentFollowupVisuals } from './scenes/followup-visuals-equi
 import { generateFollowupVisualsA } from './scenes/followup-visuals-a.mjs'
 import { generateFollowupVisualsB } from './scenes/followup-visuals-b.mjs'
 import { generateFoundationsVisuals } from './scenes/foundations-visuals.mjs'
+import { generateInferenceScenes } from './scenes/inference.mjs'
 import { generateMemoryVisuals } from './scenes/memory-visuals.mjs'
+import { generateNetworkingScenes } from './scenes/networking.mjs'
+import { generateNvidiaVisuals } from './scenes/nvidia-visuals.mjs'
 import { generatePackageScenes } from './scenes/package.mjs'
 import { generateTransistorScenes } from './scenes/transistor.mjs'
 
@@ -271,8 +274,8 @@ const STEPS = [
   ['POLISH', 'CMP, atomically flat'],
   ['MEASURE', 'inspect / metrology'],
 ]
-function flowStrip(hot = [] /* array of step indices to highlight */) {
-  const W = 1920, H = 300, bw = 210, gap = 24, x0 = (W - (STEPS.length * bw + (STEPS.length - 1) * gap)) / 2
+function flowStrip(hot = [] /* array of step indices to highlight */, { loop = true } = {}) {
+  const W = 1920, H = loop ? 300 : 190, bw = 210, gap = 24, x0 = (W - (STEPS.length * bw + (STEPS.length - 1) * gap)) / 2
   const parts = []
   STEPS.forEach(([name, sub], i) => {
     const x = x0 + i * (bw + gap)
@@ -282,14 +285,16 @@ function flowStrip(hot = [] /* array of step indices to highlight */) {
     parts.push('</g>')
     if (i < STEPS.length - 1) parts.push(arrow(x + bw + 3, 116, x + bw + gap - 3, 116, { color: C.line }))
   })
-  // loop-back arrow
-  const xEnd = x0 + STEPS.length * bw + (STEPS.length - 1) * gap
-  parts.push(`<path d="M ${xEnd - bw / 2} 168 L ${xEnd - bw / 2} 226 L ${x0 + bw / 2} 226 L ${x0 + bw / 2} 174" fill="none" stroke="${C.inkSoft}" stroke-width="3" stroke-dasharray="8 6"/>`)
-  parts.push(`<polygon points="${x0 + bw / 2},168 ${x0 + bw / 2 - 8},182 ${x0 + bw / 2 + 8},182" fill="${C.inkSoft}"/>`)
-  parts.push(`<text x="${W / 2}" y="262" text-anchor="middle" font-size="24" font-weight="700" fill="${C.inkSoft}">repeat ~1,000 steps · ~80 mask layers · 3 months per wafer</text>`)
+  if (loop) {
+    const xEnd = x0 + STEPS.length * bw + (STEPS.length - 1) * gap
+    parts.push(`<path d="M ${xEnd - bw / 2} 168 L ${xEnd - bw / 2} 226 L ${x0 + bw / 2} 226 L ${x0 + bw / 2} 174" fill="none" stroke="${C.inkSoft}" stroke-width="3" stroke-dasharray="8 6"/>`)
+    parts.push(`<polygon points="${x0 + bw / 2},168 ${x0 + bw / 2 - 8},182 ${x0 + bw / 2 + 8},182" fill="${C.inkSoft}"/>`)
+    parts.push(`<text x="${W / 2}" y="262" text-anchor="middle" font-size="24" font-weight="700" letter-spacing="2" fill="${C.inkSoft}">REPEAT FOR THE NEXT PATTERN</text>`)
+  }
   return svgDoc(W, H, parts.join('\n'))
 }
 writeFileSync(join(OUT, 'flow-strip.svg'), flowStrip())
+writeFileSync(join(OUT, 'flow-strip-steps.svg'), flowStrip([], { loop: false }))
 const FLOW_STATES = { deposit: [0], coat: [1, 3], expose: [2], etch: [4], implant: [5], polish: [6], measure: [7] }
 for (const [k, hot] of Object.entries(FLOW_STATES)) writeFileSync(join(OUT, `flow-${k}.svg`), flowStrip(hot))
 
@@ -351,7 +356,10 @@ generateAsmlScenes(OUT)
 generatePackageScenes(OUT)
 generateFoundationsVisuals(OUT)
 generateFabVisuals(OUT)
+generateInferenceScenes(OUT)
 generateMemoryVisuals(OUT)
+generateNetworkingScenes(OUT)
+generateNvidiaVisuals(OUT)
 generateEquipmentFollowupVisuals(OUT)
 generateFollowupVisualsA(OUT)
 generateFollowupVisualsB(OUT)

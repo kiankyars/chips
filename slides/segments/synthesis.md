@@ -10,13 +10,13 @@ angle: "Follow the economics: hard-to-replace capabilities can support margins, 
 runtime: ~4 min
 status: draft
 seeds: []
-pays_off: []                       # the owns-no-factories ledger closes in `fabless-field`
+pays_off: []                       # the owns-no-factories seed closes in `fabless-field`
 stamps: []                         # no new stamps — board-7 is a callback, complete
-diagrams: [map-full, journey-6, replacement-horizon, slide-153-additional-concentration-risks, chip-rack-grid]
+diagrams: [map-full, journey-6, replacement-horizon, chip-rack-grid]
 sources: research/nvidia.md, research/memory-hbm.md, research/packaging.md, research/tsmc.md, research/eda.md, research/asml.md, research/kla.md, research/equipment-dep-etch.md, research/materials.md
 -->
 
-# Company gross margins require like-for-like scope
+# Scarcity alone does not explain gross margin
 
 <div class="grid grid-cols-2 gap-6 mt-4 text-sm">
 <div class="flex flex-col gap-2">
@@ -33,8 +33,6 @@ sources: research/nvidia.md, research/memory-hbm.md, research/packaging.md, rese
 </div>
 </div>
 
-<div class="text-xs opacity-60 mt-5">Latest full fiscal year in the cited research packs · reported company gross margin · no product margins</div>
-
 <!--
 - These are companywide gross margins, not product margins; each row keeps its fiscal year visible.
 - Software-heavy Synopsys and platform-driven Nvidia sit above equipment and foundry companies, while OSAT assembly sits lower.
@@ -49,41 +47,18 @@ title: "Replacement horizon"
 <div class="visual-sequence__kicker">REPLACEMENT HORIZON</div>
 
 <div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/replacement-horizon.svg" alt="Three categories distinguish shifting qualified capacity, scaling a manufacturing capability, and rebuilding a semiconductor ecosystem" />
+  <img src="/diagrams/rendered/replacement-horizon.svg" alt="Three categories distinguish shifting qualified capacity, scaling manufacturing, and recreating an interdependent technology stack" />
 </div>
-
-<div class="visual-sequence__caption"><strong>Shifting capacity is not the same task</strong><span>as recreating a capability or ecosystem.</span></div>
-<div class="visual-sequence__source">Qualitative synthesis · no forecast in years</div>
 
 <!--
 - Existing qualified capacity can sometimes be reallocated without recreating the underlying technology.
 - Scaling HBM, materials, or process-control capability adds qualification, yield learning, and manufacturing depth.
-- EDA, CUDA, leading-edge foundries, and EUV depend on interlocking ecosystems rather than one replaceable factory.
--->
-
----
-class: visual-sequence paper-visual
-title: "Beyond the seven-point board"
----
-
-<div class="visual-sequence__kicker">BEYOND THE SEVEN-POINT BOARD</div>
-
-<div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/slide-153-additional-concentration-risks.svg" alt="Three additional semiconductor supply concentrations in ABF film, silicon wafers, and automated test equipment" />
-</div>
-
-<div class="visual-sequence__caption"><strong>Three more inputs have two or fewer dominant suppliers.</strong></div>
-<div class="visual-sequence__source">Ajinomoto · Shin-Etsu + SUMCO · Advantest + Teradyne</div>
-
-<!--
-- The seven-point list uses a strict threshold, but other concentrated inputs still deserve attention.
-- Ajinomoto dominates advanced-package insulating film, Shin-Etsu and SUMCO lead silicon wafers, and Advantest and Teradyne dominate automated test equipment.
-- These markets add risk even when they do not meet the Board's control-point criterion.
+- EDA, CUDA, leading-edge foundries, and EUV depend on interlocking tools, suppliers, and accumulated know-how rather than one replaceable factory.
 -->
 
 ---
 class: visual-sequence
-title: "From chip to system"
+title: "Rack power extends the bottleneck beyond the chip"
 ---
 
 <div class="visual-sequence__kicker">FROM CHIP TO SYSTEM</div>
@@ -126,8 +101,7 @@ title: "The semiconductor supply chain"
   <img src="/diagrams/rendered/map-full.svg" alt="The full semiconductor supply chain from design through manufacturing, equipment, memory, packaging, and data centers" />
 </div>
 
-<div class="visual-sequence__caption"><strong>Hard-to-replace capabilities can support margins.</strong><span>Business mix, capital intensity, and cycles still matter.</span></div>
-<div class="visual-sequence__source">Design · fabrication · equipment · materials · memory · packaging</div>
+<div class="visual-sequence__caption"><strong>One accelerator depends on the whole chain.</strong></div>
 
 <!--
 - The complete supply chain links supplier economics to the availability of qualified substitutes.

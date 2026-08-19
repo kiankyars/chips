@@ -132,8 +132,7 @@ layout: section
 class: act-divider act-interlude
 ---
 
-# Interlude: Mature-Node Chips
-## Most chips use older manufacturing processes
+# Interlude: The Other 90%
 
 ---
 src: ./slides/segments/other-90.md
@@ -144,8 +143,8 @@ layout: section
 class: act-divider act-five
 ---
 
-# Part 5: Memory and Packaging
-## HBM and advanced packaging complete the accelerator
+# Part 5: Memory, Packaging, and Networking
+## HBM and packaging build the accelerator; the fabric builds the system
 
 ---
 src: ./slides/segments/memory-hbm.md
@@ -156,12 +155,15 @@ src: ./slides/segments/packaging.md
 ---
 
 ---
+src: ./slides/segments/networking.md
+---
+
+---
 layout: section
 class: act-divider act-six
 ---
 
-# Part 6: Supply-Chain Leverage
-## Where supplier concentration shapes margins and state policy
+# Part 6: Chokepoints Become Policy
 
 ---
 src: ./slides/segments/geopolitics.md

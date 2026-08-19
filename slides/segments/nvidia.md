@@ -13,7 +13,7 @@ status: draft
 seeds: [memory-wall, reticle-limit, owns-no-factories]
 pays_off: []
 stamps: []
-diagrams: [map-design, journey-2, fabless-physical-chain]
+diagrams: [map-design, journey-2, nvidia-core-hierarchy, nvidia-matrix-parallelism, fabless-physical-chain]
 sources: research/nvidia.md
 -->
 
@@ -33,100 +33,67 @@ sources: research/nvidia.md
 
 ---
 
-# CPU vs GPU
+# Blackwell Ultra GPU: 160 SMs
 
-<div class="grid grid-cols-2 gap-8 mt-8">
-<div class="border-2 border-gray-400 rounded-lg p-6 text-center">
-<div class="text-5xl font-bold">dozens → hundreds</div>
-<div class="opacity-70 mt-2">independently scheduled cores</div>
-<div class="text-sm opacity-60 mt-4">optimized for low-latency serial and branch-heavy work</div>
-</div>
-<div class="border-2 border-green-500 rounded-lg p-6 text-center">
-<div class="text-5xl font-bold">160 SMs</div>
-<div class="opacity-70 mt-2">640 Tensor Cores</div>
-<div class="text-sm opacity-60 mt-4">schedule thousands of arithmetic lanes for parallel throughput</div>
-</div>
-</div>
-
-<div class="text-center text-lg opacity-70 mt-8">
-Neural-network workloads rely heavily on matrix multiplication, which maps efficiently onto SIMT execution and dedicated Tensor Cores.
+<div class="h-[350px] mt-2">
+  <img class="w-full h-full object-contain" src="/diagrams/rendered/nvidia-core-hierarchy.svg" alt="Blackwell Ultra hierarchy showing two physical dies acting as one GPU and a zoom into one streaming multiprocessor" />
 </div>
 
 <!--
-- A server CPU exposes dozens to hundreds of independently scheduled cores optimized for serial work, branches, and low latency.
-- Blackwell Ultra groups arithmetic lanes into 160 streaming multiprocessors and adds 640 Tensor Cores for matrix operations.
-- A marketed CUDA core is an execution lane, not a CPU-equivalent core; SIMT scheduling turns many lanes into throughput.
+- Streaming multiprocessors are physical compute blocks, not virtualized CPU-like cores. Nvidia says the enabled count varies by SKU; MIG partitioning is separate.
+- Two reticle-sized dies are linked by NV-HBI and exposed to CUDA as one coherent GPU.
+- The right side zooms into one SM; the bottom row gives the two chip-wide totals without introducing another unit name.
 -->
 
 ---
 
-# GB300 Blackwell Ultra by the numbers
+# Why GPUs fit AI: the same math repeats across many outputs
 
-<div class="grid grid-cols-3 gap-6 mt-8 text-center">
-<div>
-<div class="text-5xl font-bold">208 B</div>
-<div class="opacity-70 mt-2">transistors, two dies</div>
-</div>
-<div>
-<div class="text-5xl font-bold">≈858 mm²</div>
-<div class="opacity-70 mt-2">standard exposure field; exact die area not disclosed</div>
-</div>
-<div>
-<div class="text-5xl font-bold">1,400 W</div>
-<div class="opacity-70 mt-2">per GPU, liquid-cooled</div>
-</div>
-</div>
-
-<div class="grid grid-cols-2 gap-6 mt-10">
-<div class="border-2 border-amber-500 rounded-lg p-4 text-center">
-<div class="font-bold">Each compute die approaches the reticle limit.</div>
-<div class="text-sm opacity-60 mt-1">The package joins two compute dies.</div>
-</div>
-<div class="border-2 border-amber-500 rounded-lg p-4 text-center">
-<div class="font-bold">288 GB of memory at 8 TB/s.</div>
-<div class="text-sm opacity-60 mt-1">Eight 12-high HBM3E stacks keep the cores supplied with data.</div>
-</div>
+<div class="h-[390px] mt-2">
+  <img class="w-full h-full object-contain" src="/diagrams/rendered/nvidia-matrix-parallelism.svg" alt="One activation block-row and one weight block-column form an output tile; many such tile jobs can be assigned across a pool of streaming multiprocessors" />
 </div>
 
 <!--
-- GB300 joins two near-reticle-limit compute dies because one exposure cannot print a larger die.
-- Eight 12-high stacks of high-bandwidth memory, or HBM, sit beside them and deliver 8 terabytes per second.
-- HBM's bandwidth keeps 160 streaming multiprocessors and their Tensor Cores supplied with operands instead of leaving arithmetic units idle.
+- This is the causal bridge: one output tile comes from multiplying and accumulating an activation block-row against a weight block-column.
+- A full layer contains many tile jobs. Once inputs are available, the scheduler distributes them across the SM pool.
+- Parallelism is not unlimited: reductions within a tile, dependencies between layers, branches, memory bandwidth, and communication constrain utilization.
 -->
 
 ---
 
-# CUDA's 20-year software ecosystem
+# CUDA turns the GPU into a software platform
 
-<div class="grid grid-cols-4 gap-4 mt-10 text-center">
-<div>
-<div class="text-3xl font-bold">2006</div>
-<div class="text-sm opacity-60 mt-1">CUDA launches for general-purpose GPU computing</div>
-</div>
-<div>
-<div class="text-3xl font-bold">2012</div>
-<div class="text-sm opacity-60 mt-1">AlexNet — trained on two consumer gaming cards</div>
-</div>
-<div>
-<div class="text-3xl font-bold">2016</div>
-<div class="text-sm opacity-60 mt-1">Huang hand-delivers the first DGX-1 to OpenAI</div>
-</div>
-<div>
-<div class="text-3xl font-bold">2022</div>
-<div class="text-sm opacity-60 mt-1">ChatGPT drives a surge in AI-compute demand</div>
-</div>
+<div class="grid grid-cols-[0.8fr_1.4fr] gap-12 mt-10 items-center">
+<div class="text-center">
+<div class="text-7xl font-bold">CUDA</div>
+<div class="text-5xl font-bold mt-8">6M+</div>
+<div class="text-lg opacity-70 mt-2">developers</div>
 </div>
 
-<div class="text-center mt-12">
-<div class="text-6xl font-bold">6M+</div>
-<div class="opacity-70 mt-2">CUDA developers · ~20 years of libraries</div>
+<div class="space-y-7">
+<div>
+<div class="text-2xl font-bold">Programming model</div>
+<div class="text-lg opacity-70 mt-1">Exposes the GPU's parallel hardware to software.</div>
+</div>
+<div>
+<div class="text-2xl font-bold">Optimized libraries</div>
+<div class="text-lg opacity-70 mt-1">Supply tuned routines for AI math and communication.</div>
+</div>
+<div>
+<div class="text-2xl font-bold">Development tools</div>
+<div class="text-lg opacity-70 mt-1">Compile, debug, profile, and deploy GPU workloads.</div>
+</div>
+</div>
+</div>
+
+<div class="text-center text-xl mt-10">
+A competing accelerator must support the <b>code and workflows</b> teams already use.
 </div>
 
 <!--
-- CUDA let developers use Nvidia GPUs for general-purpose computing in 2006.
-- AlexNet demonstrated their value for deep learning in 2012.
-- Nvidia expanded the platform through libraries, tools, and DGX systems.
-- More than six million developers contribute to a CUDA ecosystem built over about twenty years.
+- CUDA is the programming model, libraries, and toolchain that let developers use Nvidia GPUs for general-purpose parallel computing.
+- Nvidia has accumulated about twenty years of optimized software and more than six million developers around the platform.
+- The point is compatibility: a competing chip must support existing code and workflows, not merely match hardware speed.
 -->
 
 ---
@@ -150,21 +117,19 @@ title: "Fabless"
 
 ---
 
-# Nvidia: financials and market position
+# Nvidia's scale and economics
 
 <div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
-  <div class="grid grid-cols-5 gap-4 text-center">
+  <div class="grid grid-cols-3 gap-8 text-center">
     <div><div class="text-3xl font-bold">$215.9 B</div><div class="text-sm opacity-60">revenue FY26</div></div>
-    <div><div class="text-3xl font-bold">71.1%</div><div class="text-sm opacity-60">FY26 GAAP gross margin</div></div>
+    <div><div class="text-3xl font-bold">71.1%</div><div class="text-sm opacity-60">reported gross margin</div><div class="text-xs opacity-50 mt-1">GAAP · generally accepted accounting principles</div></div>
     <div><div class="text-3xl font-bold">~90%</div><div class="text-sm opacity-60">AI-accelerator share</div></div>
-<div><div class="text-xl font-bold leading-tight mt-2">CUDA: 20 years of libraries, tools, and developer adoption</div></div>
-    <div><div class="text-xl font-bold leading-tight mt-2">ecosystem</div><div class="text-sm opacity-60">must be rebuilt</div></div>
   </div>
   <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
 </div>
 
 <!--
 - Nvidia reported $215.9 billion of FY2026 revenue and a 71.1 percent GAAP gross margin.
-- Nvidia holds about 90 percent of AI accelerator revenue, supported by twenty years of CUDA libraries and developer adoption.
-- Replacing the hardware is easier than rebuilding the software ecosystem and supply relationships.
+- GAAP means generally accepted accounting principles: the standardized reported figure rather than a company-adjusted non-GAAP measure.
+- Nvidia holds about 90 percent of AI accelerator revenue; that share is an industry estimate, not a company-reported metric.
 -->

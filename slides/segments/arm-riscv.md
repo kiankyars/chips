@@ -1,5 +1,6 @@
 ---
-layout: section
+layout: default
+class: map-only-focus
 ---
 
 <!-- SEGMENT
@@ -7,9 +8,9 @@ id: arm-riscv
 act: II — The Blueprint
 tier: D            # duel — one contest, not two profiles
 angle: "Arm collects a private tax on computing itself — and RISC-V is the tax revolt. But so far the insurgents have only captured the land the empire never bothered to tax."   # PROPOSED — YOU OWN THIS LINE
-runtime: ~4 min
+runtime: ~3 min
 status: draft
-seeds: [risc-v-china-hedge]     # light plant — pays off in geopolitics (SMIC/full-stack China push)
+seeds: []
 pays_off: []
 stamps: []                      # no chokepoint stamp — an ISA with an open rival is leverage, not a single point of failure; beats say so out loud
 diagrams: [map-design]
@@ -19,9 +20,9 @@ sources: research/arm-riscv.md
 
 # Arm and RISC-V
 
-<div class="text-xl opacity-70 mt-2">Two instruction-set models: licensed and open</div>
-
-<img src="/diagrams/rendered/map-design.svg" class="absolute bottom-4 right-4 w-56 opacity-90" alt="map — design region lit" />
+<div class="map-only-focus__map">
+  <img src="/diagrams/rendered/map-design.svg" alt="Industry map with chip-design companies and the design stage highlighted" />
+</div>
 
 <!--
 - An instruction set architecture defines the commands that software can give a processor, such as load, add, and branch.
@@ -76,12 +77,13 @@ Arm licenses CPU designs and architecture. Most contracts include an upfront fee
 </div>
 
 <div class="text-sm opacity-60 mt-8 text-center">
-More integration can raise Arm's value per system, but selling silicon also puts it closer to its licensees.
+Reported AGI CPU demand exceeds <b>$2B across FY27–28</b>; selling silicon also brings Arm closer to its licensees.
 </div>
 
 <!--
 - Arm still licenses finished cores and architecture rights, but CSS bundles more of the system into a near-complete platform.
 - In March 2026 Arm added its own AGI data-center CPU, the first production silicon product in company history.
+- Arm reported more than $2 billion of AGI CPU demand across FY2027 and FY2028.
 - That expands customer choice while creating potential channel conflict with companies that license Arm technology to build competing CPUs.
 -->
 
@@ -109,54 +111,11 @@ More integration can raise Arm's value per system, but selling silicon also puts
 </div>
 
 <div class="text-sm opacity-60 mt-10 text-center">
-Anyone may implement the RISC-V ISA without a license or royalty. Finished commercial core designs still cost money.
+RISC-V makes the instruction set free; you must still design and verify a core, or license one from a vendor.
 </div>
 
 <!--
-- RISC-V removes the ISA license and royalty, though companies still pay to design or license finished cores.
+- RISC-V removes the ISA license and royalty, not the engineering required to build a production CPU core.
 - RISC-V has strong adoption in controllers, microcontrollers, storage, and embedded systems; Nvidia ships about one billion RISC-V control cores a year.
 - Smartphones and servers remain limited because their software ecosystems favor established architectures.
--->
-
----
-
-# RISC-V and export controls
-
-<div class="text-3xl mt-14 leading-relaxed text-center">
-The RISC-V specification is public and available worldwide.
-</div>
-
-<div class="text-sm opacity-60 mt-12 text-center">
-RISC-V International moved from the United States to Switzerland in 2019, citing concerns about access restrictions.
-</div>
-
-<!--
-- The RISC-V specification is public and can be implemented worldwide without a license from one company.
-- RISC-V International moved its legal base from the United States to Switzerland in 2019, citing concern that export restrictions could limit collaboration.
-- The open specification makes access harder for any government to restrict.
--->
-
----
-
-# Arm's model is expanding
-
-<div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
-  <div class="grid grid-cols-5 gap-4 text-center">
-    <div><div class="text-3xl font-bold">$4.92B</div><div class="text-sm opacity-60">revenue FY26 (ended Mar '26)</div></div>
-    <div><div class="text-3xl font-bold">$1.29B</div><div class="text-sm opacity-60">revenue Q1 FY27</div></div>
-    <div><div class="text-3xl font-bold">&gt;$2B</div><div class="text-sm opacity-60">reported AGI CPU demand, FY27–28</div></div>
-    <div><div class="text-xs opacity-50 tracking-widest">ARM MOAT</div><div class="text-xl font-bold leading-tight mt-2">mature mobile software ecosystem</div></div>
-    <div><div class="text-xs opacity-50 tracking-widest">RISC-V TRADEOFF</div><div class="text-xl font-bold leading-tight mt-2">open ISA; ecosystem varies by market</div></div>
-  </div>
-  <div class="text-xs opacity-40 text-right mt-2">as of July 29, 2026</div>
-</div>
-
-<div class="text-sm opacity-60 mt-8 text-center">
-Customers can now adopt Arm through IP, CSS, or Arm-designed silicon; RISC-V remains strongest in embedded and control roles.
-</div>
-
-<!--
-- Arm reported $1.29 billion of Q1 FY2027 revenue, up 22 percent year over year.
-- Arm said AGI CPU demand exceeded $2 billion across FY2027 and FY2028, with initial products delivered to multiple customers.
-- RISC-V offers an open alternative, but its commercial adoption remains concentrated in embedded and control applications.
 -->

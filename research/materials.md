@@ -97,10 +97,29 @@ requalification cycles. Japan quietly owns most of this layer.
 - Finished masks: captive shops (TSMC, Samsung, Intel internal) hold ~**63%**
   of the market's value; the merchant "big three" are **Photronics (~18%,
   US), Toppan (now Tekscend Photomask) and DNP (together ~30%)**. [24][25]
-- Cost: a single EUV mask runs **$500k–$1M**; a full leading-edge mask set is
-  **60–100 masks, ~$5–15M per design at 5/3nm**, with 20–30 EUV layers at 3nm
-  pushing sets toward the high end and beyond at 2nm. [23]
+- Cost: a single EUV mask runs **$500k–$1M**; industry estimates place a full
+  leading-edge mask set around **$5–15M per design at 5/3nm**. [23]
   <!-- VERIFY: some estimates put 2nm-era sets at $20–30M+; sourced range is $5–15M -->
+- Four counts are easy to confuse. A **design or GDS layer** is an EDA data
+  category; TSMC converts incoming design data through optical-proximity
+  correction before masks are written. A **mask level** is one distinct
+  lithography patterning operation, while the **reticle** is the physical plate
+  carrying that pattern. A physical material layer therefore does not map
+  one-to-one to a mask level. [54][55]
+- In conventional multi-patterning, one intended design layer is decomposed
+  into two or more masks that are exposed separately and aligned on the wafer.
+  Self-aligned schemes are a further caveat: spacer deposition and etch can
+  multiply features from one lithography mask. [55][56][59]
+- Samsung's 7LPP example used **one EUV mask where ArF DUV required up to four**
+  for the same layer, reducing the process's total mask count by about 20%.
+  This is a concrete process example, not a universal rule; sufficiently tight
+  EUV patterns can also require multi-patterning. [57][59]
+- High-end mask sets mix multiple DUV masks with selected EUV masks. “Critical”
+  means the tightest feature-size, pattern-fidelity, and overlay requirements,
+  not greater functional importance. [58]
+- Teach the leading-edge total as **roughly 80–100+ mask levels**, with the
+  exact count dependent on process options and often proprietary. Do not call
+  that an EUV-mask count or equate it with the number of physical films.
 
 ## Ultra-pure gases & chemicals
 - **Neon — the Ukraine story.** Neon is used in DUV excimer-laser gas mixtures
@@ -281,3 +300,9 @@ requalification cycles. Japan quietly owns most of this layer.
 51. ASML, "Indistinguishable from magic: the EUV pellicle" (the patterned reticle or mask carries the pattern printed on the wafer) — https://www.asml.com/en/company/stories/2022/the-euv-pellicle-indistinguishable-from-magic
 52. North Carolina Department of Natural and Cultural Resources, "Spruce Pine Mining District (N-45)" (25 by 10 miles across Mitchell, Avery, and Yancey counties) — https://www.dncr.nc.gov/blog/2024/01/18/spruce-pine-mining-district-n-45
 53. The Quartz Corp, "Restructuring U.S." (2026-06-30; one Spruce Pine production facility closed indefinitely, other U.S. locations unaffected) — https://www.thequartzcorp.com/articles/restructuring-us
+54. TSMC, "Mask Services" (GDS conversion, OPC, mask-data preparation, and mask fabrication) — https://www.tsmc.com/english/dedicatedFoundry/services/mask_services
+55. ZEISS, "Mask Metrology" (mask-set alignment and decomposition of difficult layers into multiple layouts) — https://www.zeiss.com/semiconductor-manufacturing-technology/products/photomask-solutions/mask-metrology.html
+56. ASML, "TWINSCAN: 20 years of lithography innovation" (multiple patterning splits one complex layer into separately exposed patterns) — https://www.asml.com/en/company/stories/2021/twinscan-20-years-innovation
+57. Samsung Semiconductor, "Samsung Electronics Starts Production of EUV-Based 7nm LPP Process" (one EUV mask versus up to four ArF masks in its 7LPP example) — https://semiconductor.samsung.com/news-events/news/samsung-electronics-starts-production-of-euv-based-7nm-lpp-process/
+58. ZEISS, "Mask Tuning" (high-end mask sets contain multiple DUV masks and some EUV masks) — https://www.zeiss.com/semiconductor-manufacturing-technology/products/photomask-solutions/mask-tuning.html
+59. imec, "EUV lithography: weighing the options" (self-aligned feature multiplication and EUV multi-patterning caveats) — https://www.imec-int.com/en/imec-magazine/imec-magazine-june-2019/euv-lithography-weighing-the-options-for-future-logic-and-memory-applications

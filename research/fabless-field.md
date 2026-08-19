@@ -26,6 +26,21 @@ ends Nov; Marvell FY ends Jan/Feb (so "FY2026" = calendar 2025); Apple FY ends S
 - The model in one line: fabless companies keep the design, the software, and the
   customer; TSMC keeps the fab, the capex, and — lately — the pricing power.
 
+## Major in-house platform-silicon designers
+- **Definition:** in-house or captive silicon describes who controls and primarily
+  consumes the design, not who fabricates it. These companies can still outsource
+  wafer production and can co-develop parts of the design with an ASIC partner.
+- **Apple:** A- and M-series processors are designed for Apple products rather
+  than sold as merchant components. [52]
+- **Google:** its custom-silicon portfolio includes TPU AI accelerators and Axion
+  Arm CPUs used across Google services and Google Cloud. [53]
+- **AWS:** Graviton CPUs and Trainium AI accelerators are AWS-designed silicon for
+  the AWS platform. [54]
+- **Microsoft:** Azure Maia accelerators and Cobalt CPUs are first-party silicon
+  designed around Microsoft Cloud workloads. [55]
+- **Other major examples:** Meta’s MTIA family serves its own AI workloads, while
+  Tesla develops inference silicon for its vehicles. [56][57]
+
 ## AMD
 - **FY2025 (calendar):** record revenue **$34.6B** (+~14%); GAAP gross margin 50%;
   net income $4.3B (non-GAAP $6.8B). Data Center segment record **$16.6B, +32%**;
@@ -320,3 +335,9 @@ ends Nov; Marvell FY ends Jan/Feb (so "FY2026" = calendar 2025); Apple FY ends S
 49. CommonWealth Magazine (English), "How MediaTek Quietly Became a Core Player in Google's AI Infrastructure" (Apr 2026) — https://english.cw.com.tw/article/article.action?id=4707
 50. TrendForce, "MediaTek Seen Raising Prices 10–20%, Reportedly Wins TPU v9 Orders on SerDes Shift" (June 2026) — https://www.trendforce.com/news/2026/06/23/news-mediatek-seen-raising-prices-10-20-reportedly-wins-tpu-v9-orders-on-serdes-shift/
 51. Android Central, "Qualcomm FY Q2 2026 earnings highlight a mobile industry under pressure from the memory shortage" — https://www.androidcentral.com/phones/qualcomm/qualcomm-fy-q2-2026-earnings
+52. Apple Newsroom, "Apple announces Mac transition to Apple silicon" — https://www.apple.com/newsroom/2020/06/apple-announces-mac-transition-to-apple-silicon/
+53. Google Cloud, "Google Axion processors" — https://cloud.google.com/products/axion
+54. AWS, "AWS Silicon Innovation" — https://aws.amazon.com/silicon-innovation/
+55. Microsoft Source, "With a systems approach to chips, Microsoft aims to tailor everything from silicon to service" — https://news.microsoft.com/source/features/ai/in-house-chips-silicon-to-service-to-meet-ai-demand/
+56. Meta Newsroom, "Expanding Meta’s Custom Silicon to Power Our AI Workloads" — https://about.fb.com/news/2026/03/expanding-metas-custom-silicon-to-power-our-ai-workloads/
+57. Tesla, "AI & Robotics" — https://www.tesla.com/AI

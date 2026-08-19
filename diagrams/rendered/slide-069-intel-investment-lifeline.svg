@@ -19,62 +19,45 @@
 <text x="104" y="156" fill="#20252b" font-size="48" font-weight="760" text-anchor="start" letter-spacing="0" opacity="1">Capital arrived; no external anchor was publicly named</text>
 <path d="M104 190H1816" stroke="#cec6b9" stroke-width="2"/>
 
-<g>
-<rect x="104" y="260" width="430" height="222" rx="28" fill="#fffaf0" stroke="#2f6f9f" stroke-width="2.5" filter="url(#paper-shadow)"/>
-<g>
-<path d="M140 354L230 312L320 354Z" fill="#2f6f9f" opacity="0.16" stroke="#2f6f9f" stroke-width="4"/>
-<path d="M158 364H302M168 458H292" stroke="#2f6f9f" stroke-width="4"/>
-<path d="M186 366V452M230 366V452M274 366V452" stroke="#2f6f9f" stroke-width="7"/>
-</g>
-<text x="500" y="322" fill="#2f6f9f" font-size="21" font-weight="820" text-anchor="end" letter-spacing="1.4" opacity="1">US GOVERNMENT</text>
-<text x="500" y="382" fill="#2f6f9f" font-size="46" font-weight="850" text-anchor="end" letter-spacing="0" opacity="1">$8.9B</text>
-<text x="500" y="430" fill="#747a76" font-size="18" font-weight="680" text-anchor="end" letter-spacing="0" opacity="1">9.9% stake</text>
-</g>
-<g>
-<rect x="104" y="550" width="430" height="222" rx="28" fill="#fffaf0" stroke="#b87821" stroke-width="2.5" filter="url(#paper-shadow)"/>
-<circle cx="214" cy="660" r="66" fill="#f1e1c3" stroke="#b87821" stroke-width="4"/><text x="214" y="678" fill="#b87821" font-size="44" font-weight="850" text-anchor="middle" letter-spacing="0" opacity="1">SB</text>
-<text x="500" y="612" fill="#b87821" font-size="21" font-weight="820" text-anchor="end" letter-spacing="1.4" opacity="1">SOFTBANK</text>
-<text x="500" y="672" fill="#b87821" font-size="46" font-weight="850" text-anchor="end" letter-spacing="0" opacity="1">$2B</text>
-<text x="500" y="720" fill="#747a76" font-size="18" font-weight="680" text-anchor="end" letter-spacing="0" opacity="1">equity</text>
-</g>
-<g>
-<rect x="1386" y="405" width="430" height="222" rx="28" fill="#fffaf0" stroke="#2f7b65" stroke-width="2.5" filter="url(#paper-shadow)"/>
-<g>
-<path d="M1417.64 473.8H1428M1516.8 473.8H1527.16" stroke="#2f7b65" stroke-width="2.2199999999999998"/>
-<path d="M1442.8 448.64V459M1442.8 547.8V558.16" stroke="#2f7b65" stroke-width="2.2199999999999998"/>
-<path d="M1417.64 491.56H1428M1516.8 491.56H1527.16" stroke="#2f7b65" stroke-width="2.2199999999999998"/>
-<path d="M1460.56 448.64V459M1460.56 547.8V558.16" stroke="#2f7b65" stroke-width="2.2199999999999998"/>
-<path d="M1417.64 509.32H1428M1516.8 509.32H1527.16" stroke="#2f7b65" stroke-width="2.2199999999999998"/>
-<path d="M1478.32 448.64V459M1478.32 547.8V558.16" stroke="#2f7b65" stroke-width="2.2199999999999998"/>
-<path d="M1417.64 527.08H1428M1516.8 527.08H1527.16" stroke="#2f7b65" stroke-width="2.2199999999999998"/>
-<path d="M1496.08 448.64V459M1496.08 547.8V558.16" stroke="#2f7b65" stroke-width="2.2199999999999998"/>
-<rect x="1428" y="459" width="88.8" height="88.8" rx="10.36" fill="#2f7b65" opacity="0.13" stroke="#2f7b65" stroke-width="2.96"/>
-<path d="M1445.76 487.12H1499.04M1445.76 503.4H1481.28V527.08M1493.12 503.4V527.08" fill="none" stroke="#2f7b65" stroke-width="2.96" stroke-linecap="round"/>
-</g>
-<text x="1782" y="467" fill="#2f7b65" font-size="21" font-weight="820" text-anchor="end" letter-spacing="1.4" opacity="1">NVIDIA</text>
-<text x="1782" y="527" fill="#2f7b65" font-size="46" font-weight="850" text-anchor="end" letter-spacing="0" opacity="1">$5B</text>
-<text x="1782" y="575" fill="#747a76" font-size="18" font-weight="680" text-anchor="end" letter-spacing="0" opacity="1">equity + joint products</text>
-</g>
+<text x="104" y="276" fill="#747a76" font-size="21" font-weight="820" text-anchor="start" letter-spacing="2.2" opacity="1">ANNOUNCED EQUITY</text>
+<text x="104" y="356" fill="#20252b" font-size="68" font-weight="860" text-anchor="start" letter-spacing="0" opacity="1">$15.9B</text>
 
-<path d="M534 371C610 371 622 465 704 492" fill="none" stroke="#2f6f9f" stroke-width="6" marker-end="url(#arrow-blue)"/>
-<path d="M534 661C610 661 622 568 704 540" fill="none" stroke="#b87821" stroke-width="6" marker-end="url(#arrow-ink)"/>
-<path d="M1386 516H1282" fill="none" stroke="#2f7b65" stroke-width="6" marker-end="url(#arrow-green)"/>
+<text x="104" y="452" fill="#2f6f9f" font-size="19" font-weight="820" text-anchor="start" letter-spacing="1.2" opacity="1">US GOVERNMENT</text>
+<text x="638" y="452" fill="#2f6f9f" font-size="26" font-weight="840" text-anchor="end" letter-spacing="0" opacity="1">$8.9B</text>
+<rect x="104" y="474" width="534" height="22" rx="11" fill="#dceaf3"/>
+<rect x="104" y="474" width="534" height="22" rx="11" fill="#2f6f9f" opacity="0.88"/>
+<text x="104" y="532" fill="#2f7b65" font-size="19" font-weight="820" text-anchor="start" letter-spacing="1.2" opacity="1">NVIDIA</text>
+<text x="638" y="532" fill="#2f7b65" font-size="26" font-weight="840" text-anchor="end" letter-spacing="0" opacity="1">$5B</text>
+<rect x="104" y="554" width="534" height="22" rx="11" fill="#d9ebe3"/>
+<rect x="104" y="554" width="300" height="22" rx="11" fill="#2f7b65" opacity="0.88"/>
+<text x="104" y="612" fill="#b87821" font-size="19" font-weight="820" text-anchor="start" letter-spacing="1.2" opacity="1">SOFTBANK</text>
+<text x="638" y="612" fill="#b87821" font-size="26" font-weight="840" text-anchor="end" letter-spacing="0" opacity="1">$2B</text>
+<rect x="104" y="634" width="534" height="22" rx="11" fill="#f1e1c3"/>
+<rect x="104" y="634" width="120" height="22" rx="11" fill="#b87821" opacity="0.9"/>
+<text x="104" y="708" fill="#747a76" font-size="18" font-weight="620" text-anchor="start" letter-spacing="0" opacity="1">Equity announced in August–September 2025</text>
 
-<rect x="704" y="260" width="578" height="514" rx="28" fill="#fffaf0" stroke="#515b64" stroke-width="2.5" filter="url(#paper-shadow)"/>
-<text x="993" y="320" fill="#515b64" font-size="23" font-weight="820" text-anchor="middle" letter-spacing="2" opacity="1">INTEL</text>
-<g transform="translate(878 425) scale(1)">
+<path d="M666 520L752 520" fill="none" stroke="#515b64" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-ink)" opacity="1"/>
+
+<rect x="780" y="274" width="448" height="492" rx="28" fill="#fffaf0" stroke="#515b64" stroke-width="2.5" filter="url(#paper-shadow)"/>
+<text x="1004" y="330" fill="#515b64" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="2.2" opacity="1">INTEL</text>
+<g transform="translate(890 424) scale(1)">
 <path d="M0 150V48L86 88V48L174 88V18H228V150Z" fill="#fffaf0" stroke="#515b64" stroke-width="5" stroke-linejoin="round"/>
 <path d="M28 119H60V150H28ZM92 119H124V150H92ZM156 119H188V150H156Z" fill="#515b64" opacity="0.26" stroke="#515b64" stroke-width="3"/>
 <path d="M174 18V-24H228V18" fill="#515b64" opacity="0.18" stroke="#515b64" stroke-width="5"/>
 </g>
-<rect x="858" y="644" width="270" height="70" rx="35" fill="#e7e0f0" stroke="#705a96" stroke-width="3"/>
-<text x="993" y="689" fill="#705a96" font-size="22" font-weight="820" text-anchor="middle" letter-spacing="0.8" opacity="1">14A · HIGH-NA EUV PLAN</text>
+<text x="1004" y="650" fill="#705a96" font-size="58" font-weight="860" text-anchor="middle" letter-spacing="0" opacity="1">14A</text>
+<text x="1004" y="698" fill="#705a96" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="1.5" opacity="1">HIGH-NA EUV</text>
+<text x="1004" y="732" fill="#747a76" font-size="18" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">development committed</text>
 
-<rect x="1328" y="686" width="488" height="172" rx="24" fill="#f1dadd" stroke="#b24956" stroke-width="3" stroke-dasharray="10 8"/>
-<text x="1362" y="734" fill="#b24956" font-size="18" font-weight="780" text-anchor="start" letter-spacing="1.2" opacity="1">EXTERNAL 14A PURCHASE ORDER</text>
-<path d="M1362 782H1570" stroke="#b24956" stroke-width="4" opacity="0.32"/>
-<text x="1778" y="824" fill="#b24956" font-size="28" font-weight="850" text-anchor="end" letter-spacing="0" opacity="1">NONE PUBLICLY NAMED</text>
+<path d="M1256 520L1346 520" fill="none" stroke="#b24956" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 9" marker-end="url(#arrow-rose)" opacity="1"/>
 
-<rect x="512" y="868" width="896" height="92" rx="46" fill="#fffaf0" stroke="#cec6b9" stroke-width="3"/>
-<text x="960" y="926" fill="#20252b" font-size="31" font-weight="820" text-anchor="middle" letter-spacing="1.2" opacity="1">$15.9B OF ANNOUNCED EQUITY</text>
+<rect x="1380" y="300" width="436" height="432" rx="28" fill="#f1dadd" stroke="#b24956" stroke-width="3" stroke-dasharray="12 10"/>
+<text x="1598" y="360" fill="#b24956" font-size="19" font-weight="820" text-anchor="middle" letter-spacing="1.3" opacity="1">EXTERNAL ANCHOR CUSTOMER</text>
+<path d="M1482 426H1714M1482 470H1660M1482 514H1690" stroke="#b24956" stroke-width="4" opacity="0.28" stroke-linecap="round"/>
+<text x="1598" y="606" fill="#b24956" font-size="62" font-weight="860" text-anchor="middle" letter-spacing="0" opacity="1">NONE</text>
+<text x="1598" y="650" fill="#b24956" font-size="23" font-weight="760" text-anchor="middle" letter-spacing="0" opacity="1">publicly named</text>
+<text x="1598" y="696" fill="#747a76" font-size="17" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">fab expansion remains demand-gated</text>
+
+<path d="M104 858H1816" stroke="#cec6b9" stroke-width="2"/>
+<text x="960" y="936" fill="#20252b" font-size="27" font-weight="820" text-anchor="middle" letter-spacing="1.2" opacity="1">CAPITAL CAN FUND DEVELOPMENT · IT CANNOT CREATE CUSTOMER ORDERS</text>
 </svg>

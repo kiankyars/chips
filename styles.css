@@ -260,6 +260,180 @@
   filter: none;
 }
 
+/* Mask-level deep dive: generated technical art carries the visual story; HTML keeps terminology exact and editable. */
+.slidev-layout.mask-level-stack,
+.slidev-layout.mask-patterning-compare {
+  padding: 0;
+  background: #04070d;
+}
+
+.slidev-layout.mask-level-stack::before,
+.slidev-layout.mask-patterning-compare::before {
+  z-index: 30;
+  height: 2px;
+}
+
+.mask-level-stack__art,
+.mask-patterning-compare__art {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  border-radius: 0;
+  filter: none !important;
+}
+
+.mask-level-stack__scrim {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(4, 7, 13, 0.98) 0%, rgba(4, 7, 13, 0.9) 31%, rgba(4, 7, 13, 0.24) 54%, transparent 72%);
+}
+
+.mask-level-stack__copy {
+  position: absolute;
+  z-index: 10;
+  top: 2.65rem;
+  left: 3rem;
+  width: 43%;
+}
+
+.mask-level-stack__kicker {
+  margin-bottom: 0.75rem;
+  color: var(--chips-cyan);
+  font-size: 0.74rem;
+  font-weight: 760;
+  letter-spacing: 0.2em;
+}
+
+.slidev-layout.mask-level-stack h1 {
+  max-width: none;
+  margin: 0 0 1.75rem;
+  font-size: 3.05rem;
+  line-height: 0.98;
+}
+
+.mask-level-stack__terms {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.mask-level-stack__terms > div {
+  display: grid;
+  grid-template-columns: 9.2rem 1fr;
+  align-items: baseline;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.mask-level-stack__terms strong {
+  color: #ffffff;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+}
+
+.mask-level-stack__terms span {
+  color: #dbe5f2;
+  font-size: 1.05rem;
+}
+
+.mask-level-stack__takeaway {
+  margin-top: 1.35rem;
+  color: var(--chips-amber);
+  font-size: 1.25rem;
+  font-weight: 720;
+}
+
+.mask-level-stack__source,
+.mask-patterning-compare__source {
+  position: absolute;
+  z-index: 20;
+  right: 1.4rem;
+  bottom: 1.1rem;
+  color: rgba(168, 179, 199, 0.78);
+  font-size: 0.67rem;
+  letter-spacing: 0.025em;
+}
+
+.mask-patterning-compare__shade {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(4, 7, 13, 0.95) 0%, rgba(4, 7, 13, 0.28) 15%, transparent 28%),
+    linear-gradient(180deg, transparent 72%, rgba(4, 7, 13, 0.78) 100%);
+}
+
+.slidev-layout.mask-patterning-compare h1 {
+  position: absolute;
+  z-index: 20;
+  top: 1.25rem;
+  left: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  font-size: 2.75rem;
+  text-align: center;
+}
+
+.mask-patterning-compare__label {
+  position: absolute;
+  z-index: 20;
+  top: 7.3rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 12rem;
+  padding: 0.7rem 0.95rem 0.78rem;
+  border: 1px solid rgba(103, 232, 249, 0.3);
+  border-radius: 0.35rem;
+  background: rgba(4, 7, 13, 0.78);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(8px);
+}
+
+.mask-patterning-compare__label--duv {
+  left: 5.2rem;
+}
+
+.mask-patterning-compare__label--euv {
+  right: 5.2rem;
+}
+
+.mask-patterning-compare__label strong {
+  color: var(--chips-cyan);
+  font-size: 2.15rem;
+  line-height: 0.95;
+}
+
+.mask-patterning-compare__label span {
+  margin-top: 0.35rem;
+  color: #eef6ff;
+  font-size: 0.92rem;
+  font-weight: 650;
+}
+
+.mask-patterning-compare__takeaway {
+  position: absolute;
+  z-index: 20;
+  bottom: 1.2rem;
+  left: 2rem;
+  display: flex;
+  gap: 0.65rem;
+  align-items: baseline;
+  color: #dbe5f2;
+  font-size: 0.94rem;
+}
+
+.mask-patterning-compare__takeaway strong {
+  color: var(--chips-amber);
+  font-size: 1.1rem;
+}
+
 .slidev-layout.stage-map-focus {
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) 4.5rem;
@@ -519,6 +693,293 @@
   text-align: right;
 }
 
+.slidev-layout.euv-optics-photo {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  background: #03070d;
+}
+
+.euv-optics-photo__image {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  filter: none;
+}
+
+.slidev-layout.euv-optics-photo::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(2, 6, 12, 0.94) 0%, rgba(2, 6, 12, 0.58) 19%, rgba(2, 6, 12, 0.04) 48%, rgba(2, 6, 12, 0.18) 100%),
+    linear-gradient(90deg, rgba(2, 6, 12, 0.56) 0%, rgba(2, 6, 12, 0.08) 52%, transparent 76%);
+  content: "";
+}
+
+.euv-optics-photo__copy {
+  position: absolute;
+  z-index: 2;
+  top: 1.55rem;
+  left: 2.25rem;
+  right: 2.25rem;
+  color: #f8fafc;
+}
+
+.euv-optics-photo__kicker {
+  margin-bottom: 0.4rem;
+  color: rgba(213, 225, 240, 0.76);
+  font-size: 0.72rem;
+  font-weight: 720;
+  line-height: 1;
+  letter-spacing: 0.18em;
+}
+
+.euv-optics-photo__copy h1 {
+  margin: 0;
+  max-width: none;
+  color: #f8fafc;
+  font-size: 2.25rem;
+  font-weight: 780;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.slidev-layout.euv-optics-photo .euv-optics-photo__copy p {
+  margin: 0.72rem 0 0 !important;
+  color: #f8fafc !important;
+  font-size: 1rem;
+  font-weight: 650;
+  opacity: 1;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+}
+
+.euv-optics-photo__copy p strong {
+  color: var(--chips-cyan);
+}
+
+.euv-optics-photo__source {
+  position: absolute;
+  z-index: 2;
+  right: 1.5rem;
+  bottom: 1.15rem;
+  color: rgba(239, 246, 255, 0.72);
+  font-size: 0.62rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+}
+
+.slidev-layout.full-slide-visual {
+  padding: 0;
+  overflow: hidden;
+}
+
+.slidev-layout.full-slide-visual > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  object-fit: cover;
+  filter: none;
+}
+
+/* Dense user-supplied EDA flow: preserve the legible process map and replace its unreliable tool legend with a course-native takeaway. */
+.slidev-layout.eda-flow-detail {
+  padding: 0;
+  overflow: hidden;
+  background: #05080e;
+}
+
+.slidev-layout.eda-flow-detail::before {
+  height: 2px;
+  background: linear-gradient(90deg, var(--chips-cyan), rgba(96, 165, 250, 0.58) 38%, transparent 72%);
+}
+
+.eda-flow-detail__image {
+  position: absolute;
+  inset: 0 0 8.75rem;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.eda-flow-detail__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  margin: 0;
+  border-radius: 0;
+  filter: none;
+}
+
+.eda-flow-detail__footer {
+  position: absolute;
+  right: 2.25rem;
+  bottom: 0;
+  left: 2.25rem;
+  height: 8.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.eda-flow-detail__footer strong {
+  color: var(--chips-cyan);
+  font-size: 1.85rem;
+  font-weight: 760;
+  letter-spacing: -0.025em;
+}
+
+.eda-flow-detail__footer span {
+  color: rgba(239, 246, 255, 0.88);
+  font-size: 1.05rem;
+}
+
+/* Explain High-NA as an optical quantity before introducing its resolution payoff. */
+.slidev-layout.na-explainer {
+  padding: 2.65rem 3.5rem 2.35rem;
+}
+
+.slidev-layout.na-explainer h1 {
+  max-width: none;
+  margin-bottom: 1.15rem;
+  font-size: 2.25rem;
+  white-space: nowrap;
+}
+
+.na-explainer__definition {
+  display: flex;
+  align-items: baseline;
+  gap: 1.1rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid rgba(148, 163, 184, 0.28);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.28);
+}
+
+.na-explainer__definition span {
+  flex: 0 0 auto;
+  color: var(--chips-cyan);
+  font-size: 0.72rem;
+  font-weight: 760;
+  letter-spacing: 0.16em;
+}
+
+.na-explainer__definition strong {
+  color: #dbe5f2;
+  font-size: 1.05rem;
+  font-weight: 610;
+  letter-spacing: 0;
+}
+
+.na-explainer__comparison {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.7rem;
+}
+
+.na-explainer__system {
+  text-align: center;
+}
+
+.na-explainer__value {
+  color: rgba(226, 232, 240, 0.68);
+  font-size: 4.35rem;
+  font-weight: 760;
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+.na-explainer__system--high .na-explainer__value,
+.na-explainer__system--high .na-explainer__resolution {
+  color: var(--chips-cyan);
+}
+
+.na-explainer__value span {
+  font-size: 0.3em;
+  font-weight: 740;
+  letter-spacing: 0.08em;
+}
+
+.na-explainer__platform {
+  margin-top: 0.65rem;
+  color: rgba(203, 213, 225, 0.72);
+  font-size: 0.72rem;
+  font-weight: 740;
+  letter-spacing: 0.13em;
+}
+
+.na-explainer__resolution {
+  margin-top: 1rem;
+  color: #f8fafc;
+  font-size: 1.55rem;
+  font-weight: 740;
+}
+
+.na-explainer__resolution span {
+  color: rgba(203, 213, 225, 0.68);
+  font-size: 0.58em;
+  font-weight: 600;
+}
+
+.na-explainer__relationship {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  color: rgba(203, 213, 225, 0.64);
+  text-align: center;
+}
+
+.na-explainer__relationship::before,
+.na-explainer__relationship::after {
+  width: 100%;
+  height: 1px;
+  content: "";
+  background: linear-gradient(90deg, transparent, rgba(103, 232, 249, 0.56), transparent);
+}
+
+.na-explainer__relationship span {
+  font-size: 0.68rem;
+  font-weight: 720;
+  letter-spacing: 0.12em;
+}
+
+.na-explainer__relationship strong {
+  color: #ffffff;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 1.12rem;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+.na-explainer__pitch {
+  margin-top: 1.75rem;
+  color: #dbe5f2;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.na-explainer__pitch strong {
+  color: var(--chips-amber);
+}
+
+.na-explainer__scope {
+  margin-top: 0.55rem;
+  color: rgba(203, 213, 225, 0.64);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
 /* Presenter notes are short bullet prompts designed to be scanned while speaking. */
 .slidev-presenter .grid-section.note {
   font-size: 18px;
@@ -568,19 +1029,4 @@
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
   }
-}
-
-.slidev-layout.full-slide-visual {
-  padding: 0;
-  overflow: hidden;
-}
-
-.slidev-layout.full-slide-visual > img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  border-radius: 0;
-  object-fit: cover;
-  filter: none;
 }

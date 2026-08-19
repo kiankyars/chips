@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="660" viewBox="0 0 1920 660" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">Blackwell Ultra compute hierarchy</title>
+<desc id="desc">Two physical dies act as one CUDA-programmed GPU. A zoom into one streaming multiprocessor shows its CUDA arithmetic lanes and Tensor Cores, with GPU-wide totals below.</desc>
+<defs>
+  <pattern id="nvidia-grid" width="80" height="80" patternUnits="userSpaceOnUse">
+    <path d="M80 0H0V80" fill="none" stroke="#1f2937" stroke-width="1" opacity="0.42"/>
+  </pattern>
+  <marker id="nvidia-arrow" markerWidth="13" markerHeight="13" refX="11" refY="6.5" orient="auto">
+    <path d="M0 0L13 6.5L0 13Z" fill="#526078"/>
+  </marker>
+</defs>
+<rect width="1920" height="660" fill="#080c14"/>
+<rect width="1920" height="660" fill="url(#nvidia-grid)"/>
+<text x="80" y="58" fill="#60a5fa" font-size="22" font-weight="820" text-anchor="start" letter-spacing="1.8" opacity="1">TWO PHYSICAL DIES · ONE CUDA-PROGRAMMED GPU</text>
+<rect x="80" y="88" width="760" height="474" rx="28" fill="#111827" stroke="#60a5fa" stroke-width="4"/>
+<rect x="112" y="132" width="315" height="332" rx="20" fill="#172033" stroke="#526078" stroke-width="3"/>
+<text x="136" y="176" fill="#a8b3c7" font-size="20" font-weight="820" text-anchor="start" letter-spacing="1.8" opacity="1">DIE A</text>
+<rect x="137" y="206" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="163" y="237" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="205" y="206" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="231" y="237" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="273" y="206" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="299" y="237" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="341" y="206" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="367" y="237" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="137" y="274" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="163" y="305" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="205" y="274" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="231" y="305" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="273" y="274" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="299" y="305" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="341" y="274" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="367" y="305" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="137" y="342" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="163" y="373" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="205" y="342" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="231" y="373" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="273" y="342" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="299" y="373" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="341" y="342" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="367" y="373" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<text x="270" y="438" fill="#a8b3c7" font-size="18" font-weight="620" text-anchor="middle" letter-spacing="0" opacity="1">physical compute blocks</text>
+<rect x="493" y="132" width="315" height="332" rx="20" fill="#172033" stroke="#526078" stroke-width="3"/>
+<text x="517" y="176" fill="#a8b3c7" font-size="20" font-weight="820" text-anchor="start" letter-spacing="1.8" opacity="1">DIE B</text>
+<rect x="518" y="206" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="544" y="237" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="586" y="206" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="612" y="237" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="654" y="206" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="680" y="237" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="722" y="206" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="748" y="237" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="518" y="274" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="544" y="305" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="586" y="274" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="612" y="305" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="654" y="274" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="680" y="305" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="722" y="274" width="52" height="46" rx="8" fill="#102a4f" stroke="#60a5fa" stroke-width="4"/>
+<text x="748" y="305" fill="#60a5fa" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="518" y="342" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="544" y="373" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="586" y="342" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="612" y="373" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="654" y="342" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="680" y="373" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<rect x="722" y="342" width="52" height="46" rx="8" fill="#111827" stroke="#526078" stroke-width="2"/>
+<text x="748" y="373" fill="#a8b3c7" font-size="16" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">SM</text>
+<text x="651" y="438" fill="#a8b3c7" font-size="18" font-weight="620" text-anchor="middle" letter-spacing="0" opacity="1">physical compute blocks</text>
+<path d="M438 260H482M438 336H482" stroke="#60a5fa" stroke-width="8" stroke-linecap="round"/>
+<text x="460" y="306" fill="#60a5fa" font-size="17" font-weight="820" text-anchor="middle" letter-spacing="1.2" opacity="1">NV-HBI</text>
+<text x="460" y="510" fill="#f8fafc" font-size="20" font-weight="680" text-anchor="middle" letter-spacing="0" opacity="1">Maximum configuration; enabled SM count varies by SKU.</text>
+<text x="460" y="542" fill="#a8b3c7" font-size="18" font-weight="620" text-anchor="middle" letter-spacing="0" opacity="1">SMs are physical; virtualization is separate.</text>
+
+<path d="M840 320L930 320" fill="none" stroke="#60a5fa" stroke-width="5" stroke-linecap="round" marker-end="url(#nvidia-arrow)"/>
+<text x="885" y="286" fill="#60a5fa" font-size="17" font-weight="820" text-anchor="middle" letter-spacing="1.8" opacity="1">ZOOM</text>
+
+<rect x="960" y="72" width="880" height="500" rx="28" fill="#111827" stroke="#60a5fa" stroke-width="4"/>
+<text x="1002" y="120" fill="#60a5fa" font-size="22" font-weight="820" text-anchor="start" letter-spacing="1.7" opacity="1">ONE STREAMING MULTIPROCESSOR</text>
+<text x="1002" y="176" fill="#f8fafc" font-size="29" font-weight="760" text-anchor="start" letter-spacing="0" opacity="1">128 CUDA arithmetic lanes</text>
+<rect x="1006" y="210" width="24" height="24" rx="3" fill="#34d399" opacity="0.34"/>
+<rect x="1040" y="210" width="24" height="24" rx="3" fill="#34d399" opacity="0.45"/>
+<rect x="1074" y="210" width="24" height="24" rx="3" fill="#34d399" opacity="0.56"/>
+<rect x="1108" y="210" width="24" height="24" rx="3" fill="#34d399" opacity="0.67"/>
+<rect x="1142" y="210" width="24" height="24" rx="3" fill="#34d399" opacity="0.34"/>
+<rect x="1176" y="210" width="24" height="24" rx="3" fill="#34d399" opacity="0.45"/>
+<rect x="1210" y="210" width="24" height="24" rx="3" fill="#34d399" opacity="0.56"/>
+<rect x="1244" y="210" width="24" height="24" rx="3" fill="#34d399" opacity="0.67"/>
+<rect x="1006" y="244" width="24" height="24" rx="3" fill="#34d399" opacity="0.45"/>
+<rect x="1040" y="244" width="24" height="24" rx="3" fill="#34d399" opacity="0.56"/>
+<rect x="1074" y="244" width="24" height="24" rx="3" fill="#34d399" opacity="0.67"/>
+<rect x="1108" y="244" width="24" height="24" rx="3" fill="#34d399" opacity="0.34"/>
+<rect x="1142" y="244" width="24" height="24" rx="3" fill="#34d399" opacity="0.45"/>
+<rect x="1176" y="244" width="24" height="24" rx="3" fill="#34d399" opacity="0.56"/>
+<rect x="1210" y="244" width="24" height="24" rx="3" fill="#34d399" opacity="0.67"/>
+<rect x="1244" y="244" width="24" height="24" rx="3" fill="#34d399" opacity="0.34"/>
+<rect x="1006" y="278" width="24" height="24" rx="3" fill="#34d399" opacity="0.56"/>
+<rect x="1040" y="278" width="24" height="24" rx="3" fill="#34d399" opacity="0.67"/>
+<rect x="1074" y="278" width="24" height="24" rx="3" fill="#34d399" opacity="0.34"/>
+<rect x="1108" y="278" width="24" height="24" rx="3" fill="#34d399" opacity="0.45"/>
+<rect x="1142" y="278" width="24" height="24" rx="3" fill="#34d399" opacity="0.56"/>
+<rect x="1176" y="278" width="24" height="24" rx="3" fill="#34d399" opacity="0.67"/>
+<rect x="1210" y="278" width="24" height="24" rx="3" fill="#34d399" opacity="0.34"/>
+<rect x="1244" y="278" width="24" height="24" rx="3" fill="#34d399" opacity="0.45"/>
+<rect x="1006" y="312" width="24" height="24" rx="3" fill="#34d399" opacity="0.67"/>
+<rect x="1040" y="312" width="24" height="24" rx="3" fill="#34d399" opacity="0.34"/>
+<rect x="1074" y="312" width="24" height="24" rx="3" fill="#34d399" opacity="0.45"/>
+<rect x="1108" y="312" width="24" height="24" rx="3" fill="#34d399" opacity="0.56"/>
+<rect x="1142" y="312" width="24" height="24" rx="3" fill="#34d399" opacity="0.67"/>
+<rect x="1176" y="312" width="24" height="24" rx="3" fill="#34d399" opacity="0.34"/>
+<rect x="1210" y="312" width="24" height="24" rx="3" fill="#34d399" opacity="0.45"/>
+<rect x="1244" y="312" width="24" height="24" rx="3" fill="#34d399" opacity="0.56"/>
+
+<path d="M1450 158V392" stroke="#526078" stroke-width="2" opacity="0.65"/>
+<text x="1636" y="176" fill="#f8fafc" font-size="29" font-weight="760" text-anchor="middle" letter-spacing="0" opacity="1">4 Tensor Cores</text>
+<rect x="1532" y="188" width="82" height="76" rx="12" fill="#3b2b10" stroke="#fbbf24" stroke-width="3"/>
+<rect x="1550" y="203" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1566.0233333333333" y="203" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1582.0466666666666" y="203" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1550" y="219.02333333333334" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1566.0233333333333" y="219.02333333333334" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1582.0466666666666" y="219.02333333333334" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1550" y="235.04666666666668" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1566.0233333333333" y="235.04666666666668" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1582.0466666666666" y="235.04666666666668" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1640" y="188" width="82" height="76" rx="12" fill="#3b2b10" stroke="#fbbf24" stroke-width="3"/>
+<rect x="1658" y="203" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1674.0233333333333" y="203" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1690.0466666666666" y="203" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1658" y="219.02333333333334" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1674.0233333333333" y="219.02333333333334" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1690.0466666666666" y="219.02333333333334" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1658" y="235.04666666666668" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1674.0233333333333" y="235.04666666666668" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1690.0466666666666" y="235.04666666666668" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1532" y="290" width="82" height="76" rx="12" fill="#3b2b10" stroke="#fbbf24" stroke-width="3"/>
+<rect x="1550" y="305" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1566.0233333333333" y="305" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1582.0466666666666" y="305" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1550" y="321.0233333333333" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1566.0233333333333" y="321.0233333333333" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1582.0466666666666" y="321.0233333333333" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1550" y="337.0466666666667" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1566.0233333333333" y="337.0466666666667" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1582.0466666666666" y="337.0466666666667" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1640" y="290" width="82" height="76" rx="12" fill="#3b2b10" stroke="#fbbf24" stroke-width="3"/>
+<rect x="1658" y="305" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1674.0233333333333" y="305" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1690.0466666666666" y="305" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1658" y="321.0233333333333" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1674.0233333333333" y="321.0233333333333" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1690.0466666666666" y="321.0233333333333" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1658" y="337.0466666666667" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1674.0233333333333" y="337.0466666666667" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+<rect x="1690.0466666666666" y="337.0466666666667" width="13.953333333333333" height="13.953333333333333" rx="2" fill="#fbbf24" opacity="0.34" stroke="#fbbf24" stroke-width="1.5"/>
+
+<path d="M1002 414H1798" stroke="#526078" stroke-width="2" opacity="0.65"/>
+<text x="1002" y="454" fill="#a8b3c7" font-size="18" font-weight="820" text-anchor="start" letter-spacing="1.8" opacity="1">GPU TOTALS</text>
+<text x="1002" y="506" fill="#34d399" font-size="27" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">20,480 CUDA arithmetic lanes</text>
+<text x="1454" y="506" fill="#fbbf24" font-size="27" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">640 Tensor Cores</text>
+</svg>

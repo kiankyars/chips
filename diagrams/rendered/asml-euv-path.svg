@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-<title id="title">The causal EUV light path</title>
-<desc id="desc">A carbon dioxide laser strikes tin to create plasma. Thirteen point five nanometre light then reflects through mirrors, the reticle and projection optics to a wafer in vacuum.</desc>
+<title id="title">EUV requires plasma, vacuum and reflective optics</title>
+<desc id="desc">A carbon dioxide laser strikes tin to create plasma. The plasma emits 13.5 nanometre light, which reflective optics collect, pattern, shrink four to one and project onto a wafer in vacuum.</desc>
 <defs>
   <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
     <feGaussianBlur stdDeviation="9" result="blur"/>
@@ -8,54 +8,84 @@
   </filter>
   <marker id="arrow-cyan" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#67e8f9"/></marker>
   <marker id="arrow-amber" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#fbbf24"/></marker>
+  <marker id="arrow-rose" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#fb7185"/></marker>
 
 </defs>
 <rect width="1920" height="1080" fill="#05080e"/>
-<rect x="430" y="122" width="1360" height="790" rx="34" fill="none" stroke="#435168" stroke-width="3" stroke-dasharray="13 12"/>
-<text x="465" y="174" fill="#9aa9bd" font-size="22" font-weight="700" text-anchor="start" letter-spacing="1.8">VACUUM · EUV IS ABSORBED BY AIR AND GLASS</text>
+<text x="104" y="126" fill="#9aa9bd" font-size="20" font-weight="760" text-anchor="start" letter-spacing="2.4">CAUSE → LIGHT → PATTERN</text>
+<path d="M622 220H1788V858H622" fill="none" stroke="#435168" stroke-width="3" stroke-dasharray="12 11"/>
+<text x="658" y="264" fill="#9aa9bd" font-size="21" font-weight="720" text-anchor="start" letter-spacing="1.8">VACUUM · AIR AND GLASS ABSORB EUV</text>
+
 <g>
-  <rect x="68" y="468" width="300" height="146" rx="16" fill="#2c2412" stroke="#fbbf24" stroke-width="3"/>
-  <text x="218" y="525" fill="#f8fafc" font-size="31" font-weight="760" text-anchor="middle" letter-spacing="0">TRUMPF</text>
-  <text x="218" y="563" fill="#fbbf24" font-size="22" font-weight="620" text-anchor="middle" letter-spacing="0">CO₂ laser · 30 kW</text>
+  <circle cx="190" cy="320" r="28" fill="#fbbf24"/>
+  <text x="190" y="329" fill="#05080e" font-size="24" font-weight="820" text-anchor="middle" letter-spacing="0">1</text>
+  <text x="190" y="400" fill="#fbbf24" font-size="24" font-weight="780" text-anchor="middle" letter-spacing="1.5">CO₂ LASER</text>
+  <text x="190" y="438" fill="#9aa9bd" font-size="20" font-weight="580" text-anchor="middle" letter-spacing="0">drives the source</text>
 </g>
-<path d="M368 541H502" fill="none" stroke="#fbbf24" stroke-width="8" stroke-linecap="round"/>
-<path d="M486 528L510 541L486 554Z" fill="#fbbf24"/>
+<rect x="88" y="500" width="204" height="118" rx="16" fill="#101827" stroke="#fbbf24" stroke-width="4"/>
+<path d="M126 559H250" stroke="#fbbf24" stroke-width="9" stroke-linecap="round"/>
+<path d="M232 541L266 559L232 577Z" fill="#fbbf24"/>
+
+<path d="M308 559H402" fill="none" stroke="#fbbf24" stroke-width="5" marker-end="url(#arrow-amber)"/>
 <g>
-  <circle cx="518" cy="542" r="13" fill="#f8fafc"/>
-  <circle cx="584" cy="542" r="54" fill="rgba(251,113,133,0.2)" stroke="#fb7185" stroke-width="5" filter="url(#glow)"/>
-  <path d="M550 508L618 576M550 576L618 508" stroke="#fb7185" stroke-width="5" opacity="0.75"/>
-  <text x="518" y="616" fill="#9aa9bd" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">TIN</text>
-  <text x="584" y="638" fill="#fb7185" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">PLASMA</text>
+  <circle cx="500" cy="320" r="28" fill="#fb7185"/>
+  <text x="500" y="329" fill="#05080e" font-size="24" font-weight="820" text-anchor="middle" letter-spacing="0">2</text>
+  <text x="500" y="400" fill="#fb7185" font-size="24" font-weight="780" text-anchor="middle" letter-spacing="1.5">TIN PLASMA</text>
+  <text x="500" y="438" fill="#9aa9bd" font-size="20" font-weight="580" text-anchor="middle" letter-spacing="0">emits 13.5 nm EUV</text>
 </g>
-<path d="M612 542L750 704L910 356L1100 257L1265 388L1430 559L1592 744" fill="none" stroke="#fb7185" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
-<g transform="translate(750 704) rotate(0) scale(1.05)">
+<circle cx="500" cy="559" r="54" fill="#101827" stroke="#fb7185" stroke-width="5"/>
+<circle cx="500" cy="559" r="12" fill="#f8fafc"/>
+<path d="M500 486V512M500 606V632M427 559H453M547 559H573M449 508L468 527M532 591L551 610M449 610L468 591M532 527L551 508" stroke="#fb7185" stroke-width="5" stroke-linecap="round"/>
+
+<path d="M572 559H700" fill="none" stroke="#fb7185" stroke-width="5" marker-end="url(#arrow-rose)"/>
+<g>
+  <circle cx="786" cy="320" r="28" fill="#c084fc"/>
+  <text x="786" y="329" fill="#05080e" font-size="24" font-weight="820" text-anchor="middle" letter-spacing="0">3</text>
+  <text x="786" y="400" fill="#c084fc" font-size="24" font-weight="780" text-anchor="middle" letter-spacing="1.5">COLLECT</text>
+  <text x="786" y="438" fill="#9aa9bd" font-size="20" font-weight="580" text-anchor="middle" letter-spacing="0">multilayer mirror</text>
+</g>
+<g transform="translate(786 559) rotate(0) scale(0.86)">
   <path d="M-58 -13Q0 24 58 -13" fill="none" stroke="#c084fc" stroke-width="12" stroke-linecap="round"/>
   <path d="M-53 -7Q0 24 53 -7" fill="none" stroke="#f8fafc" stroke-width="2" opacity="0.65"/>
 </g>
-<g transform="translate(910 356) rotate(180) scale(0.9)">
+
+<path d="M866 559H1004" fill="none" stroke="#fb7185" stroke-width="5" marker-end="url(#arrow-rose)"/>
+<g>
+  <circle cx="1090" cy="320" r="28" fill="#67e8f9"/>
+  <text x="1090" y="329" fill="#05080e" font-size="24" font-weight="820" text-anchor="middle" letter-spacing="0">4</text>
+  <text x="1090" y="400" fill="#67e8f9" font-size="24" font-weight="780" text-anchor="middle" letter-spacing="1.5">PATTERN</text>
+  <text x="1090" y="438" fill="#9aa9bd" font-size="20" font-weight="580" text-anchor="middle" letter-spacing="0">reflective reticle</text>
+</g>
+<rect x="1012" y="524" width="156" height="70" rx="7" fill="#172136" stroke="#67e8f9" stroke-width="4"/>
+<path d="M1032 544H1072V574H1106V542H1148" fill="none" stroke="#67e8f9" stroke-width="3"/>
+
+<path d="M1184 559H1308" fill="none" stroke="#fb7185" stroke-width="5" marker-end="url(#arrow-rose)"/>
+<g>
+  <circle cx="1400" cy="320" r="28" fill="#c084fc"/>
+  <text x="1400" y="329" fill="#05080e" font-size="24" font-weight="820" text-anchor="middle" letter-spacing="0">5</text>
+  <text x="1400" y="400" fill="#c084fc" font-size="24" font-weight="780" text-anchor="middle" letter-spacing="1.5">SHRINK 4:1</text>
+  <text x="1400" y="438" fill="#9aa9bd" font-size="20" font-weight="580" text-anchor="middle" letter-spacing="0">projection mirrors</text>
+</g>
+<g transform="translate(1360 538) rotate(0) scale(0.55)">
   <path d="M-58 -13Q0 24 58 -13" fill="none" stroke="#c084fc" stroke-width="12" stroke-linecap="round"/>
   <path d="M-53 -7Q0 24 53 -7" fill="none" stroke="#f8fafc" stroke-width="2" opacity="0.65"/>
 </g>
-<g transform="translate(1100 257) rotate(-11)">
-  <rect x="-92" y="-13" width="184" height="26" rx="4" fill="#183446" stroke="#67e8f9" stroke-width="4"/>
-  <path d="M-68 -4H68" stroke="#67e8f9" stroke-width="2" stroke-dasharray="6 5"/>
-</g>
-<g transform="translate(1265 388) rotate(180) scale(0.92)">
+<g transform="translate(1442 584) rotate(180) scale(0.5)">
   <path d="M-58 -13Q0 24 58 -13" fill="none" stroke="#c084fc" stroke-width="12" stroke-linecap="round"/>
   <path d="M-53 -7Q0 24 53 -7" fill="none" stroke="#f8fafc" stroke-width="2" opacity="0.65"/>
 </g>
-<g transform="translate(1430 559) rotate(0) scale(0.92)">
-  <path d="M-58 -13Q0 24 58 -13" fill="none" stroke="#c084fc" stroke-width="12" stroke-linecap="round"/>
-  <path d="M-53 -7Q0 24 53 -7" fill="none" stroke="#f8fafc" stroke-width="2" opacity="0.65"/>
+
+<path d="M1498 559H1630" fill="none" stroke="#fb7185" stroke-width="5" marker-end="url(#arrow-rose)"/>
+<g>
+  <circle cx="1710" cy="320" r="28" fill="#34d399"/>
+  <text x="1710" y="329" fill="#05080e" font-size="24" font-weight="820" text-anchor="middle" letter-spacing="0">6</text>
+  <text x="1710" y="400" fill="#34d399" font-size="24" font-weight="780" text-anchor="middle" letter-spacing="1.5">EXPOSE</text>
+  <text x="1710" y="438" fill="#9aa9bd" font-size="20" font-weight="580" text-anchor="middle" letter-spacing="0">one wafer field</text>
 </g>
-<g transform="translate(1592 744) rotate(-10)">
-  <ellipse cx="0" cy="0" rx="128" ry="34" fill="#123529" stroke="#34d399" stroke-width="5"/>
-  <path d="M-112 0H112" stroke="#34d399" stroke-width="2" opacity="0.7"/>
-</g>
-<text x="684" y="820" fill="#9aa9bd" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">COLLECT</text>
-<text x="910" y="262" fill="#9aa9bd" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">ILLUMINATE</text>
-<text x="1100" y="205" fill="#67e8f9" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">RETICLE</text>
-<text x="1348" y="300" fill="#9aa9bd" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">4× PROJECTION</text>
-<text x="1592" y="832" fill="#34d399" font-size="23" font-weight="720" text-anchor="middle" letter-spacing="0">WAFER</text>
-<text x="738" y="564" fill="#fb7185" font-size="40" font-weight="760" text-anchor="start" letter-spacing="0">13.5 nm</text>
+<ellipse cx="1710" cy="559" rx="88" ry="28" fill="#101827" stroke="#34d399" stroke-width="5"/>
+<rect x="1682" y="548" width="56" height="22" fill="rgba(251,191,36,0.25)" stroke="#fbbf24" stroke-width="3"/>
+
+<path d="M500 750H1710" stroke="#fb7185" stroke-width="3" opacity="0.65"/>
+<path d="M500 736V764M1710 736V764" stroke="#fb7185" stroke-width="3"/>
+<text x="1105" y="812" fill="#f8fafc" font-size="27" font-weight="680" text-anchor="middle" letter-spacing="0">13.5 nm light stays in vacuum and touches only reflective optics</text>
 </svg>

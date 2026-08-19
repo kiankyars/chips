@@ -64,5 +64,5 @@
 </g>
 <path d="M 1779 168 L 1779 226 L 141 226 L 141 174" fill="none" stroke="#a8b3c7" stroke-width="3" stroke-dasharray="8 6"/>
 <polygon points="141,168 133,182 149,182" fill="#a8b3c7"/>
-<text x="960" y="262" text-anchor="middle" font-size="24" font-weight="700" fill="#a8b3c7">repeat ~1,000 steps · ~80 mask layers · 3 months per wafer</text>
+<text x="960" y="262" text-anchor="middle" font-size="24" font-weight="700" letter-spacing="2" fill="#a8b3c7">REPEAT FOR THE NEXT PATTERN</text>
 </svg>

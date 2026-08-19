@@ -59,6 +59,9 @@ function defs() {
     <feGaussianBlur stdDeviation="8" result="blur"/>
     <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
+  <marker id="heatArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="${C.copper}"/>
+  </marker>
 </defs>`
 }
 
@@ -143,6 +146,7 @@ function diesAndMemory() {
   return `${computeDie(745, 'GPU 1')}
 ${computeDie(980, 'GPU 2')}
 ${hbm}
+<path d="M705 500H745M705 642H745M1210 500H1225M1210 642H1225" stroke="${C.interposerEdge}" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
 <path d="M 973 540 H 982" stroke="${C.computeEdge}" stroke-width="12" filter="url(#softGlow)"/>`
 }
 
@@ -166,15 +170,43 @@ function scene(stage) {
   if (stage >= 3) parts.push(diesAndMemory())
   if (stage >= 4) parts.push(lid())
 
-  if (stage === 1) parts.push(label('ORGANIC SUBSTRATE', 1490, 720, 1400, 736, C.substrateEdge))
-  if (stage === 2) parts.push(label('RDL + LOCAL SILICON', 1460, 420, 1160, 490, C.interposerEdge))
+  if (stage === 1) parts.push(label('POWER + SIGNAL ROUTING', 1430, 720, 1390, 736, C.substrateEdge))
+  if (stage === 2) {
+    parts.push(label('RDL WIRING PLANE', 1400, 394, 1240, 430, C.interposerEdge))
+    parts.push(label('LOCAL SILICON BRIDGES', 1400, 454, 1160, 510, C.interposerEdge))
+  }
   if (stage === 3) {
-    parts.push(label('TWO COMPUTE DIES', 1510, 310, 1130, 420, C.computeEdge))
-    parts.push(label('EIGHT HBM3E STACKS', 1510, 820, 1400, 680, C.hbmEdge))
+    parts.push(label('2× COMPUTE DIES', 1450, 310, 1130, 420, C.computeEdge))
+    parts.push(label('8× 12-HIGH HBM3E', 1450, 820, 1400, 680, C.hbmEdge))
+    parts.push(label('SHORT, WIDE ROUTES', 392, 340, 725, 502, C.interposerEdge))
   }
   if (stage === 4) parts.push(label('THERMAL LID', 1510, 230, 1510, 306, C.lidEdge))
 
   return parts.join('\n')
+}
+
+function thermalSection() {
+  const fins = Array.from({ length: 11 }, (_, i) => `<rect x="${550 + i * 78}" y="188" width="34" height="120" rx="5" fill="${C.lid}" stroke="${C.lidEdge}" stroke-width="3"/>`).join('\n')
+  const heat = [700, 960, 1220].map(x => `<path d="M${x} 616V330" fill="none" stroke="${C.copper}" stroke-width="7" stroke-linecap="round" marker-end="url(#heatArrow)"/>`).join('\n')
+  return `${backdrop()}
+${fins}
+<rect x="500" y="292" width="920" height="78" rx="18" fill="${C.lid}" stroke="${C.lidEdge}" stroke-width="4"/>
+<rect x="420" y="398" width="1080" height="92" rx="20" fill="${C.lid}" stroke="${C.lidEdge}" stroke-width="5"/>
+<rect x="450" y="490" width="1020" height="28" rx="8" fill="#d7dce3" stroke="${C.ink}" stroke-width="2"/>
+<rect x="560" y="534" width="300" height="122" rx="14" fill="${C.compute}" stroke="${C.computeEdge}" stroke-width="5"/>
+<rect x="1060" y="534" width="300" height="122" rx="14" fill="${C.compute}" stroke="${C.computeEdge}" stroke-width="5"/>
+<rect x="360" y="554" width="150" height="102" rx="13" fill="${C.hbm}" stroke="${C.hbmEdge}" stroke-width="4"/>
+<rect x="1410" y="554" width="150" height="102" rx="13" fill="${C.hbm}" stroke="${C.hbmEdge}" stroke-width="4"/>
+<rect x="330" y="676" width="1260" height="70" rx="14" fill="${C.interposer}" stroke="${C.interposerEdge}" stroke-width="5"/>
+<rect x="260" y="770" width="1400" height="112" rx="20" fill="${C.substrate}" stroke="${C.substrateEdge}" stroke-width="5"/>
+${heat}
+${label('COOLER', 1520, 246, 1400, 286, C.lidEdge)}
+${label('THERMAL LID', 1560, 420, 1470, 442, C.lidEdge)}
+${label('THERMAL INTERFACE MATERIAL', 1550, 520, 1458, 504, C.ink)}
+${label('COMPUTE DIES + HBM', 1540, 630, 1360, 598, C.computeEdge)}
+${label('INTERPOSER', 1540, 722, 1480, 710, C.interposerEdge)}
+${label('ORGANIC SUBSTRATE', 1540, 850, 1510, 826, C.substrateEdge)}
+${label('HEAT FLOW', 270, 380, 700, 382, C.copper)}`
 }
 
 function svg(stage) {
@@ -188,7 +220,7 @@ function svg(stage) {
 <title id="title">Accelerator package assembly, state ${stage} of 4</title>
 <desc id="desc">${descriptions[stage]}</desc>
 ${defs()}
-${scene(stage)}
+${stage === 4 ? thermalSection() : scene(stage)}
 </svg>\n`
 }
 

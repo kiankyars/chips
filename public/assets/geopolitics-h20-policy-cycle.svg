@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+  <title id="title">Nvidia China policy cycle</title>
+  <desc id="desc">Five dated policy gates track Nvidia H20 and H200 access to China from October 2023 to January 2026.</desc>
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#102A43" flood-opacity="0.09"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6L0 12Z" fill="#667085"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6L0 12Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6L0 12Z" fill="#C3475D"/>
+    </marker>
+  </defs>
+  <rect width="1920" height="1080" fill="#F6F8FB"/>
+  <text x="84" y="72" fill="#667085" font-size="18" font-weight="750" text-anchor="start" letter-spacing="2.4" opacity="1">ACCESS TO CHINA</text>
+  <text x="84" y="132" fill="#0B1F3A" font-size="52" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">Nvidia&#x2019;s China-access policy cycle</text>
+  <text x="84" y="178" fill="#667085" font-size="24" font-weight="500" text-anchor="start" letter-spacing="0" opacity="1">Compliance products did not create stable market access.</text>
+  <line x1="84" y1="206" x2="1836" y2="206" stroke="#D9E2EC" stroke-width="2" stroke-linecap="round"/>
+  <line x1="148" y1="492" x2="1774" y2="492" stroke="#667085" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="190" y="268" fill="#667085" font-size="19" font-weight="800" text-anchor="middle" letter-spacing="1.4" opacity="1">OCT 2023</text>
+  <rect x="45" y="318" width="290" height="304" rx="26" fill="#EAF7F1" stroke="#16805B" stroke-width="2.5"/>
+  <line x1="142" y1="374" x2="142" y2="468" stroke="#16805B" stroke-width="7" stroke-linecap="round"/>
+  <line x1="238" y1="374" x2="238" y2="468" stroke="#16805B" stroke-width="7" stroke-linecap="round"/>
+  <line x1="128" y1="374" x2="252" y2="374" stroke="#16805B" stroke-width="7" stroke-linecap="round"/>
+  <line x1="238" y1="374" x2="238" y2="326" stroke="#16805B" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="190" cy="432" r="21" fill="#FFFFFF" stroke="#16805B" stroke-width="4"/>
+  <path d="M180 432 L188 441 L205 420" fill="none" stroke="#16805B" stroke-width="5" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="190" y="535" fill="#16805B" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="0.7" opacity="1">H20 DESIGNED</text>
+  <text x="190" y="572" fill="#667085" font-size="17" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1">A800/H800 route closes</text>
+  <text x="555" y="268" fill="#667085" font-size="19" font-weight="800" text-anchor="middle" letter-spacing="1.4" opacity="1">APR 2025</text>
+  <rect x="410" y="318" width="290" height="304" rx="26" fill="#FCECEF" stroke="#C3475D" stroke-width="2.5"/>
+  <line x1="507" y1="374" x2="507" y2="468" stroke="#C3475D" stroke-width="7" stroke-linecap="round"/>
+  <line x1="603" y1="374" x2="603" y2="468" stroke="#C3475D" stroke-width="7" stroke-linecap="round"/>
+  <line x1="493" y1="374" x2="617" y2="374" stroke="#C3475D" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="555" cy="432" r="21" fill="#FFFFFF" stroke="#C3475D" stroke-width="4"/>
+  <line x1="546" y1="423" x2="564" y2="441" stroke="#C3475D" stroke-width="4" stroke-linecap="round"/>
+  <line x1="564" y1="423" x2="546" y2="441" stroke="#C3475D" stroke-width="4" stroke-linecap="round"/>
+  <text x="555" y="535" fill="#C3475D" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="0.7" opacity="1">LICENSE REQUIRED</text>
+  <text x="555" y="572" fill="#667085" font-size="17" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1">$4.5B charge</text>
+  <text x="920" y="268" fill="#667085" font-size="19" font-weight="800" text-anchor="middle" letter-spacing="1.4" opacity="1">JUL&#x2013;AUG 2025</text>
+  <rect x="775" y="318" width="290" height="304" rx="26" fill="#FFF5E4" stroke="#C97A12" stroke-width="2.5"/>
+  <line x1="872" y1="374" x2="872" y2="468" stroke="#C97A12" stroke-width="7" stroke-linecap="round"/>
+  <line x1="968" y1="374" x2="968" y2="468" stroke="#C97A12" stroke-width="7" stroke-linecap="round"/>
+  <line x1="858" y1="374" x2="982" y2="374" stroke="#C97A12" stroke-width="7" stroke-linecap="round"/>
+  <line x1="968" y1="374" x2="968" y2="326" stroke="#C97A12" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="920" cy="432" r="21" fill="#FFFFFF" stroke="#C97A12" stroke-width="4"/>
+  <path d="M910 432 L918 441 L935 420" fill="none" stroke="#C97A12" stroke-width="5" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="920" y="524" fill="#C97A12" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="0.7" opacity="1">SALES PARTLY</text>
+  <text x="920" y="548" fill="#C97A12" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="0.7" opacity="1">REOPENED</text>
+  <text x="920" y="582" fill="#667085" font-size="17" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1">reported 15% licensing deal</text>
+  <text x="1285" y="268" fill="#667085" font-size="19" font-weight="800" text-anchor="middle" letter-spacing="1.4" opacity="1">AUG 2025</text>
+  <rect x="1140" y="318" width="290" height="304" rx="26" fill="#FCECEF" stroke="#C3475D" stroke-width="2.5"/>
+  <line x1="1237" y1="374" x2="1237" y2="468" stroke="#C3475D" stroke-width="7" stroke-linecap="round"/>
+  <line x1="1333" y1="374" x2="1333" y2="468" stroke="#C3475D" stroke-width="7" stroke-linecap="round"/>
+  <line x1="1223" y1="374" x2="1347" y2="374" stroke="#C3475D" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="1285" cy="432" r="21" fill="#FFFFFF" stroke="#C3475D" stroke-width="4"/>
+  <line x1="1276" y1="423" x2="1294" y2="441" stroke="#C3475D" stroke-width="4" stroke-linecap="round"/>
+  <line x1="1294" y1="423" x2="1276" y2="441" stroke="#C3475D" stroke-width="4" stroke-linecap="round"/>
+  <text x="1285" y="524" fill="#C3475D" font-size="18" font-weight="800" text-anchor="middle" letter-spacing="0.5" opacity="1">PRODUCTION REPORTEDLY</text>
+  <text x="1285" y="548" fill="#C3475D" font-size="18" font-weight="800" text-anchor="middle" letter-spacing="0.5" opacity="1">HALTED</text>
+  <text x="1285" y="582" fill="#667085" font-size="17" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1">China discourages sales</text>
+  <text x="1650" y="268" fill="#667085" font-size="19" font-weight="800" text-anchor="middle" letter-spacing="1.4" opacity="1">JAN 2026</text>
+  <rect x="1505" y="318" width="290" height="304" rx="26" fill="#FFF5E4" stroke="#C97A12" stroke-width="2.5"/>
+  <line x1="1602" y1="374" x2="1602" y2="468" stroke="#C97A12" stroke-width="7" stroke-linecap="round"/>
+  <line x1="1698" y1="374" x2="1698" y2="468" stroke="#C97A12" stroke-width="7" stroke-linecap="round"/>
+  <line x1="1588" y1="374" x2="1712" y2="374" stroke="#C97A12" stroke-width="7" stroke-linecap="round"/>
+  <line x1="1698" y1="374" x2="1698" y2="326" stroke="#C97A12" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="1650" cy="432" r="21" fill="#FFFFFF" stroke="#C97A12" stroke-width="4"/>
+  <path d="M1640 432 L1648 441 L1665 420" fill="none" stroke="#C97A12" stroke-width="5" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1650" y="535" fill="#C97A12" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="0.7" opacity="1">H200 CASE-BY-CASE</text>
+  <text x="1650" y="572" fill="#667085" font-size="17" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1">conditional license review</text>
+  <rect x="500" y="732" width="920" height="202" rx="26" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="650" y="780" width="140" height="112" rx="16" fill="#FFFFFF" stroke="#2563EB" stroke-width="4"/>
+  <line x1="672" y1="770" x2="672" y2="780" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+  <line x1="672" y1="892" x2="672" y2="902" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+  <line x1="696" y1="770" x2="696" y2="780" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+  <line x1="696" y1="892" x2="696" y2="902" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+  <line x1="720" y1="770" x2="720" y2="780" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+  <line x1="720" y1="892" x2="720" y2="902" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+  <line x1="744" y1="770" x2="744" y2="780" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+  <line x1="744" y1="892" x2="744" y2="902" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+  <line x1="768" y1="770" x2="768" y2="780" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+  <line x1="768" y1="892" x2="768" y2="902" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+  <rect x="678" y="807" width="84" height="58" rx="12" fill="#EAF2FF" stroke="#2563EB" stroke-width="2"/>
+  <text x="720" y="844" fill="#2563EB" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="1" opacity="1">H20</text>
+  <rect x="1130" y="780" width="140" height="112" rx="16" fill="#FFFFFF" stroke="#7552B3" stroke-width="4"/>
+  <line x1="1152" y1="770" x2="1152" y2="780" stroke="#7552B3" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1152" y1="892" x2="1152" y2="902" stroke="#7552B3" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1176" y1="770" x2="1176" y2="780" stroke="#7552B3" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1176" y1="892" x2="1176" y2="902" stroke="#7552B3" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1200" y1="770" x2="1200" y2="780" stroke="#7552B3" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1200" y1="892" x2="1200" y2="902" stroke="#7552B3" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1224" y1="770" x2="1224" y2="780" stroke="#7552B3" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1224" y1="892" x2="1224" y2="902" stroke="#7552B3" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1248" y1="770" x2="1248" y2="780" stroke="#7552B3" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1248" y1="892" x2="1248" y2="902" stroke="#7552B3" stroke-width="3" stroke-linecap="round"/>
+  <rect x="1158" y="807" width="84" height="58" rx="12" fill="#F2EEFB" stroke="#7552B3" stroke-width="2"/>
+  <text x="1200" y="844" fill="#7552B3" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="1" opacity="1">H200</text>
+  <line x1="835" y1="836" x2="1085" y2="836" stroke="#667085" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="10 9"/>
+  <text x="960" y="810" fill="#667085" font-size="16" font-weight="800" text-anchor="middle" letter-spacing="1.4" opacity="1">POLICY TARGET SHIFTS</text>
+  <text x="960" y="966" fill="#0B1F3A" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1">H20 compliance route fails &#x2192; H200 moves to case-by-case licensing</text>
+</svg>

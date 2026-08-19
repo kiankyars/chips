@@ -124,48 +124,59 @@ function waferIcon(cx, cy, r, color = C.green) {
 
 // --------------------------------------------------------- slide 047
 
-function designerCard(x, y, name, tag, color) {
+function fablessCompany(x, y, name, tag, color, { nameSize = 24, tagSize = 17 } = {}) {
   return `<g>
-${panel(x, y, 330, 222, color)}
-${chipIcon(x + 32, y + 50, color, 0.88)}
-${text(x + 178, y + 84, name, { size: 25, fill: color, weight: 800 })}
-${text(x + 178, y + 120, tag, { size: 18, fill: C.muted, weight: 720, tracking: 0.8 })}
-<path d="M${x + 178} ${y + 153}H${x + 286}" stroke="${color}" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
-<path d="M${x + 178} ${y + 176}H${x + 256}" stroke="${color}" stroke-width="4" stroke-linecap="round" opacity="0.28"/>
+${text(x, y, name, { size: nameSize, fill: color, weight: 820, tracking: 0.6 })}
+${text(x, y + 36, tag, { size: tagSize, fill: C.muted, weight: 650 })}
 </g>`
 }
 
 function fablessDesigners() {
-  const cards = [
-    [104, 244, 'AMD', 'CPU + AI', C.rose],
-    [470, 244, 'APPLE', 'A · M · C', C.blue],
-    [836, 244, 'QUALCOMM', 'MOBILE + RADIO', C.amber],
-    [104, 548, 'BROADCOM', 'CUSTOM AI', C.violet],
-    [470, 548, 'MARVELL', 'NETWORKING', C.green],
-    [836, 548, 'MEDIATEK', 'MOBILE + AI', C.blue],
-  ]
-  const routes = cards.map(([x, y, , , color]) => `<path d="M${x + 330} ${y + 111}C1210 ${y + 111} 1204 532 1280 532" fill="none" stroke="${color}" stroke-width="3.5" stroke-dasharray="8 8" opacity="0.54"/>`).join('\n')
-
   return svgDoc(
-    'Six fabless designers converge on one manufacturing gate',
-    'Six named design companies create different processors and accelerators. Their completed layout files converge at an outside foundry, illustrating diversity in design and concentration in manufacturing.',
-    `${header('Fabless designers', 'Six designers, one manufacturing gate')}
-${routes}
-${cards.map(args => designerCard(...args)).join('\n')}
+    'Fabless is a manufacturing model, not a business model',
+    'Merchant chip vendors, in-house platform designers, and custom-silicon partners differ in how they sell or consume their chips, but all can outsource wafer fabrication to contract foundries.',
+    `${header('DESIGN WITHOUT FABS', 'Fabless is a manufacturing model—not a business model')}
 
-<rect x="1202" y="454" width="164" height="156" rx="18" fill="${C.blueSoft}" stroke="${C.blue}" stroke-width="4" filter="url(#paper-shadow)"/>
-<path d="M1226 454V424H1290L1314 454" fill="${C.blueSoft}" stroke="${C.blue}" stroke-width="4" stroke-linejoin="round"/>
-${text(1284, 522, 'GDSII', { size: 25, fill: C.blue, weight: 820, anchor: 'middle', tracking: 1.4 })}
-${text(1284, 558, 'LAYOUTS', { size: 17, fill: C.muted, weight: 740, anchor: 'middle', tracking: 1.6 })}
-${line(1368, 532, 1452, 532, { color: C.graphite, width: 5, marker: 'arrow-ink' })}
+<rect x="104" y="230" width="1160" height="226" rx="24" fill="${C.rose}" opacity="0.075" stroke="${C.rose}" stroke-width="3"/>
+${text(142, 294, 'MERCHANT CHIPS', { size: 22, fill: C.rose, weight: 820, tracking: 1.8 })}
+${text(142, 332, 'standard products', { size: 18, fill: C.muted, weight: 620 })}
+${text(142, 360, 'sold to many customers', { size: 18, fill: C.muted, weight: 620 })}
+<path d="M370 266V420" stroke="${C.rose}" stroke-width="3" opacity="0.28"/>
+${fablessCompany(414, 310, 'NVIDIA', 'AI accelerators', C.green)}
+${fablessCompany(622, 310, 'AMD', 'CPU + AI', C.rose)}
+${fablessCompany(790, 310, 'QUALCOMM', 'mobile + modem', C.amber)}
+${fablessCompany(1040, 310, 'MEDIATEK', 'mobile SoCs', C.blue)}
 
-${panel(1456, 244, 360, 608, C.green, C.greenSoft)}
-${text(1636, 304, 'OUTSIDE FOUNDRY', { size: 22, fill: C.green, weight: 820, anchor: 'middle', tracking: 1.6 })}
-${fabIcon(1522, 390, C.green, 1)}
-${waferIcon(1636, 700, 92, C.green)}
-${text(1636, 825, 'PHYSICAL CHIPS', { size: 21, fill: C.green, weight: 800, anchor: 'middle', tracking: 1.4 })}
-${text(104, 966, 'DESIGN IS DISTRIBUTED', { size: 19, fill: C.muted, weight: 760, tracking: 2.4 })}
-${text(1816, 966, 'LEADING-EDGE MANUFACTURING IS NOT', { size: 19, fill: C.green, weight: 800, anchor: 'end', tracking: 2.1 })}`,
+<rect x="104" y="482" width="1160" height="178" rx="24" fill="${C.blue}" opacity="0.075" stroke="${C.blue}" stroke-width="3"/>
+${text(142, 548, 'IN-HOUSE SILICON', { size: 22, fill: C.blue, weight: 820, tracking: 1.5 })}
+${text(142, 586, 'used in own products', { size: 18, fill: C.muted, weight: 620 })}
+${text(142, 614, 'or cloud platforms', { size: 18, fill: C.muted, weight: 620 })}
+<path d="M370 518V624" stroke="${C.blue}" stroke-width="3" opacity="0.28"/>
+${fablessCompany(414, 554, 'APPLE', 'A + M series', C.blue, { nameSize: 21, tagSize: 15 })}
+${fablessCompany(604, 554, 'GOOGLE', 'TPU + Axion', C.green, { nameSize: 21, tagSize: 15 })}
+${fablessCompany(806, 554, 'AWS', 'Graviton + Trainium', C.amber, { nameSize: 21, tagSize: 15 })}
+${fablessCompany(1030, 554, 'MICROSOFT', 'Cobalt + Maia', C.violet, { nameSize: 21, tagSize: 15 })}
+
+<rect x="104" y="686" width="1160" height="226" rx="24" fill="${C.violet}" opacity="0.075" stroke="${C.violet}" stroke-width="3"/>
+${text(142, 750, 'CUSTOM SILICON', { size: 22, fill: C.violet, weight: 820, tracking: 1.8 })}
+${text(142, 788, 'co-designed for', { size: 18, fill: C.muted, weight: 620 })}
+${text(142, 816, 'a specific customer', { size: 18, fill: C.muted, weight: 620 })}
+<path d="M370 722V876" stroke="${C.violet}" stroke-width="3" opacity="0.28"/>
+${fablessCompany(414, 766, 'BROADCOM', 'custom AI + networking', C.violet)}
+${fablessCompany(786, 766, 'MARVELL', 'custom AI + interconnect', C.green)}
+
+${line(1268, 343, 1410, 343, { color: C.rose, width: 4, marker: 'arrow-ink' })}
+${line(1268, 571, 1410, 571, { color: C.blue, width: 4, marker: 'arrow-ink' })}
+${line(1268, 799, 1410, 799, { color: C.violet, width: 4, marker: 'arrow-ink' })}
+
+${panel(1420, 230, 396, 682, C.green, C.greenSoft)}
+${text(1618, 294, 'CONTRACT FOUNDRIES', { size: 22, fill: C.green, weight: 820, anchor: 'middle', tracking: 1.6 })}
+${fabIcon(1504, 388, C.green, 1)}
+${waferIcon(1618, 686, 94, C.green)}
+${text(1618, 826, 'WAFER FABRICATION', { size: 21, fill: C.green, weight: 800, anchor: 'middle', tracking: 1.4 })}
+${text(1618, 864, 'TSMC · SAMSUNG', { size: 18, fill: C.muted, weight: 720, anchor: 'middle', tracking: 1.2 })}
+
+`,
   )
 }
 
@@ -242,53 +253,49 @@ ${text(960, 986, 'Each shift redirected demand toward a different architecture o
   )
 }
 
-// --------------------------------------------------------- slide 069
-
-function governmentIcon(x, y, color) {
-  return `<g>
-<path d="M${x} ${y + 42}L${x + 90} ${y}L${x + 180} ${y + 42}Z" fill="${color}" opacity="0.16" stroke="${color}" stroke-width="4"/>
-<path d="M${x + 18} ${y + 52}H${x + 162}M${x + 28} ${y + 146}H${x + 152}" stroke="${color}" stroke-width="4"/>
-<path d="M${x + 46} ${y + 54}V${y + 140}M${x + 90} ${y + 54}V${y + 140}M${x + 134} ${y + 54}V${y + 140}" stroke="${color}" stroke-width="7"/>
-</g>`
-}
-
-function investorCard(x, y, width, name, amount, detail, color, icon) {
-  return `<g>
-${panel(x, y, width, 222, color)}
-${icon}
-${text(x + width - 34, y + 62, name, { size: 21, fill: color, weight: 820, anchor: 'end', tracking: 1.4 })}
-${text(x + width - 34, y + 122, amount, { size: 46, fill: color, weight: 850, anchor: 'end' })}
-${text(x + width - 34, y + 170, detail, { size: 18, fill: C.muted, weight: 680, anchor: 'end' })}
-</g>`
-}
-
 function intelInvestmentLifeline() {
   return svgDoc(
     'Three investors supplied Intel capital; no external 14A anchor customer was publicly named',
     'The US government, SoftBank, and Nvidia bought 15.9 billion dollars of Intel equity. A separate box notes that Intel had not publicly named an external 14A anchor customer.',
     `${header('Intel 14A', 'Capital arrived; no external anchor was publicly named')}
 
-${investorCard(104, 260, 430, 'US GOVERNMENT', '$8.9B', '9.9% stake', C.blue, governmentIcon(140, 312, C.blue))}
-${investorCard(104, 550, 430, 'SOFTBANK', '$2B', 'equity', C.amber, `<circle cx="214" cy="660" r="66" fill="${C.amberSoft}" stroke="${C.amber}" stroke-width="4"/>${text(214, 678, 'SB', { size: 44, fill: C.amber, weight: 850, anchor: 'middle' })}`)}
-${investorCard(1386, 405, 430, 'NVIDIA', '$5B', 'equity + joint products', C.green, chipIcon(1428, 459, C.green, 0.74))}
+${text(104, 276, 'ANNOUNCED EQUITY', { size: 21, fill: C.muted, weight: 820, tracking: 2.2 })}
+${text(104, 356, '$15.9B', { size: 68, fill: C.ink, weight: 860 })}
 
-<path d="M534 371C610 371 622 465 704 492" fill="none" stroke="${C.blue}" stroke-width="6" marker-end="url(#arrow-blue)"/>
-<path d="M534 661C610 661 622 568 704 540" fill="none" stroke="${C.amber}" stroke-width="6" marker-end="url(#arrow-ink)"/>
-<path d="M1386 516H1282" fill="none" stroke="${C.green}" stroke-width="6" marker-end="url(#arrow-green)"/>
+${text(104, 452, 'US GOVERNMENT', { size: 19, fill: C.blue, weight: 820, tracking: 1.2 })}
+${text(638, 452, '$8.9B', { size: 26, fill: C.blue, weight: 840, anchor: 'end' })}
+<rect x="104" y="474" width="534" height="22" rx="11" fill="${C.blueSoft}"/>
+<rect x="104" y="474" width="534" height="22" rx="11" fill="${C.blue}" opacity="0.88"/>
+${text(104, 532, 'NVIDIA', { size: 19, fill: C.green, weight: 820, tracking: 1.2 })}
+${text(638, 532, '$5B', { size: 26, fill: C.green, weight: 840, anchor: 'end' })}
+<rect x="104" y="554" width="534" height="22" rx="11" fill="${C.greenSoft}"/>
+<rect x="104" y="554" width="300" height="22" rx="11" fill="${C.green}" opacity="0.88"/>
+${text(104, 612, 'SOFTBANK', { size: 19, fill: C.amber, weight: 820, tracking: 1.2 })}
+${text(638, 612, '$2B', { size: 26, fill: C.amber, weight: 840, anchor: 'end' })}
+<rect x="104" y="634" width="534" height="22" rx="11" fill="${C.amberSoft}"/>
+<rect x="104" y="634" width="120" height="22" rx="11" fill="${C.amber}" opacity="0.9"/>
+${text(104, 708, 'Equity announced in August–September 2025', { size: 18, fill: C.muted, weight: 620 })}
 
-${panel(704, 260, 578, 514, C.graphite)}
-${text(993, 320, 'INTEL', { size: 23, fill: C.graphite, weight: 820, anchor: 'middle', tracking: 2 })}
-${fabIcon(878, 425, C.graphite, 1)}
-<rect x="858" y="644" width="270" height="70" rx="35" fill="${C.violetSoft}" stroke="${C.violet}" stroke-width="3"/>
-${text(993, 689, '14A · HIGH-NA EUV PLAN', { size: 22, fill: C.violet, weight: 820, anchor: 'middle', tracking: 0.8 })}
+${line(666, 520, 752, 520, { color: C.graphite, width: 5, marker: 'arrow-ink' })}
 
-<rect x="1328" y="686" width="488" height="172" rx="24" fill="${C.roseSoft}" stroke="${C.rose}" stroke-width="3" stroke-dasharray="10 8"/>
-${text(1362, 734, 'EXTERNAL 14A PURCHASE ORDER', { size: 18, fill: C.rose, weight: 780, tracking: 1.2 })}
-<path d="M1362 782H1570" stroke="${C.rose}" stroke-width="4" opacity="0.32"/>
-${text(1778, 824, 'NONE PUBLICLY NAMED', { size: 28, fill: C.rose, weight: 850, anchor: 'end' })}
+${panel(780, 274, 448, 492, C.graphite)}
+${text(1004, 330, 'INTEL', { size: 21, fill: C.graphite, weight: 820, anchor: 'middle', tracking: 2.2 })}
+${fabIcon(890, 424, C.graphite, 1)}
+${text(1004, 650, '14A', { size: 58, fill: C.violet, weight: 860, anchor: 'middle' })}
+${text(1004, 698, 'HIGH-NA EUV', { size: 21, fill: C.violet, weight: 820, anchor: 'middle', tracking: 1.5 })}
+${text(1004, 732, 'development committed', { size: 18, fill: C.muted, weight: 650, anchor: 'middle' })}
 
-<rect x="512" y="868" width="896" height="92" rx="46" fill="${C.paper}" stroke="${C.hairline}" stroke-width="3"/>
-${text(960, 926, '$15.9B OF ANNOUNCED EQUITY', { size: 31, fill: C.ink, weight: 820, anchor: 'middle', tracking: 1.2 })}`,
+${line(1256, 520, 1346, 520, { color: C.rose, width: 5, dash: '10 9', marker: 'arrow-rose' })}
+
+<rect x="1380" y="300" width="436" height="432" rx="28" fill="${C.roseSoft}" stroke="${C.rose}" stroke-width="3" stroke-dasharray="12 10"/>
+${text(1598, 360, 'EXTERNAL ANCHOR CUSTOMER', { size: 19, fill: C.rose, weight: 820, anchor: 'middle', tracking: 1.3 })}
+<path d="M1482 426H1714M1482 470H1660M1482 514H1690" stroke="${C.rose}" stroke-width="4" opacity="0.28" stroke-linecap="round"/>
+${text(1598, 606, 'NONE', { size: 62, fill: C.rose, weight: 860, anchor: 'middle' })}
+${text(1598, 650, 'publicly named', { size: 23, fill: C.rose, weight: 760, anchor: 'middle' })}
+${text(1598, 696, 'fab expansion remains demand-gated', { size: 17, fill: C.muted, weight: 650, anchor: 'middle' })}
+
+<path d="M104 858H1816" stroke="${C.hairline}" stroke-width="2"/>
+${text(960, 936, 'CAPITAL CAN FUND DEVELOPMENT · IT CANNOT CREATE CUSTOMER ORDERS', { size: 27, fill: C.ink, weight: 820, anchor: 'middle', tracking: 1.2 })}`,
   )
 }
 

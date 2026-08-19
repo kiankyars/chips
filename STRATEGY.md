@@ -73,7 +73,7 @@ gates, and a gatekeeper at each gate.
    strip at every act break. The viewer can always locate themselves at minute 9 or 99.
 3. **The Chokepoint Board.** The board first appears when leading-edge EDA earns
    chokepoint #1. A stamp is added on screen each time another control point is proven;
-   the completed board opens the geopolitics act. The board deliberately
+   the completed board closes packaging and hands directly into geopolitics. The board deliberately
    mixes sole sources, small qualified sets, and geographic clusters; the criteria are
    fixed in curriculum.md before recording.
 4. **The Economics Ledger.** Act-end entries record only what public data can
@@ -120,7 +120,7 @@ gates, and a gatekeeper at each gate.
 
 No two adjacent segments in the same register: physics → business → human tragedy →
 process tour → war story. Recap machinery: 20–30s "what you now know" closers, two
-45s act-break map rebuilds, and a 60s callback montage immediately before the
+45s act-break map rebuilds, and a completed-board handoff immediately before the
 geopolitics climax. The deliberate breather ("The Other 90%" — analog/mature) sits
 right after the deepest technical stretch (the fab tour), where the retention graph
 would otherwise die.

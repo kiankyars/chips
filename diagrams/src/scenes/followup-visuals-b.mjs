@@ -92,6 +92,13 @@ function sectionLabel(value, x, y, color = C.muted, anchor = 'start') {
   return text(x, y, value, { size: 21, fill: color, weight: 780, anchor, tracking: 2.2 })
 }
 
+function header(kicker, title, subtitle = '') {
+  return `${sectionLabel(kicker, 84, 72)}
+${text(84, 136, title, { size: 52, fill: C.ink, weight: 820 })}
+${subtitle ? text(84, 181, subtitle, { size: 23, fill: C.muted, weight: 540 }) : ''}
+${rule(84, 210, 1836, 210, { color: C.faint, width: 2 })}`
+}
+
 function hbmStack(x, y, color, { scale = 1, layers = 7 } = {}) {
   const w = 170 * scale
   const h = 34 * scale
@@ -182,22 +189,6 @@ ${text(118, 1000, 'Forecast revenue · HBM capacity intensity raises the wafer b
   )
 }
 
-function processBox(x, y, w, label, sub, color) {
-  return `<g filter="url(#shadow)">
-  <rect x="${x}" y="${y}" width="${w}" height="210" rx="26" fill="${C.paper}" stroke="${color}" stroke-width="4"/>
-  <rect x="${x}" y="${y}" width="${w}" height="18" rx="9" fill="${color}"/>
-  ${text(x + w / 2, y + 82, label, { size: 30, fill: color, weight: 800, anchor: 'middle', tracking: 1.2 })}
-  ${text(x + w / 2, y + 131, sub, { size: 22, fill: C.muted, weight: 570, anchor: 'middle' })}
-</g>`
-}
-
-function stopGate(x, y, color) {
-  return `<g>
-  <circle cx="${x}" cy="${y}" r="49" fill="${C.paper}" stroke="${color}" stroke-width="7"/>
-  <path d="M${x - 24} ${y - 24}L${x + 24} ${y + 24}M${x + 24} ${y - 24}L${x - 24} ${y + 24}" stroke="${color}" stroke-width="8" stroke-linecap="round"/>
-</g>`
-}
-
 function accessGate(x, y, color, open = false) {
   const rightTop = open ? y - 72 : y
   return `<g>
@@ -209,58 +200,56 @@ function accessGate(x, y, color, open = false) {
 }
 
 function policyControlPoints() {
-  const boxes = [
-    { x: 92, label: 'DESIGN', sub: 'EDA software', color: C.blue },
-    { x: 536, label: 'FAB', sub: 'foreign production', color: C.green },
-    { x: 980, label: 'EQUIPMENT', sub: 'EUV scanner', color: C.amber },
-    { x: 1424, label: 'IMPORT', sub: 'advanced chips', color: C.violet },
-  ]
-  const labels = [
-    { x: 277, title: 'US EDA CONTROL', sub: 'license required' },
-    { x: 721, title: 'FDPR', sub: 'rule reaches TSMC' },
-    { x: 1165, title: 'NL EUV LICENSE', sub: 'shipment can be denied' },
-    { x: 1609, title: 'SECTION 232', sub: '25% tariff' },
+  const gates = [
+    { y: 370, color: C.blue, transaction: 'EDA LICENSE', from: 'US supplier', to: 'chip designer', lever: 'US export control' },
+    { y: 520, color: C.green, transaction: 'FAB ORDER', from: 'chip designer', to: 'foreign fab', lever: 'FDPR reaches production' },
+    { y: 670, color: C.amber, transaction: 'SCANNER SHIPMENT', from: 'ASML', to: 'leading-edge fab', lever: 'Dutch EUV license' },
+    { y: 820, color: C.violet, transaction: 'CHIP IMPORT', from: 'exporter', to: 'US market', lever: 'Section 232 tariff' },
   ]
 
   return svgDoc(
     'Four policy controls act at different points in the semiconductor supply chain',
-    'A horizontal supply chain marks export control points at EDA design software, foreign fab production under the foreign direct product rule, Dutch EUV export licensing, and United States imports under Section 232 tariffs.',
-    `${sectionLabel('FOUR CONTROL POINTS', 92, 120)}
-${rule(218, 470, 1702, 470, { color: C.graphite, width: 6, marker: 'arrow-ink' })}
-${boxes.map(box => processBox(box.x, 365, 370, box.label, box.sub, box.color)).join('\n')}
-${labels.map((label, i) => `<g>
-${stopGate(label.x, 680, [C.blue, C.rose, C.amber, C.violet][i])}
-${rule(label.x, 631, label.x, 575, { color: [C.blue, C.rose, C.amber, C.violet][i], width: 4, dash: '8 7' })}
-${text(label.x, 786, label.title, { size: 24, fill: [C.blue, C.rose, C.amber, C.violet][i], weight: 800, anchor: 'middle', tracking: 1 })}
-${text(label.x, 826, label.sub, { size: 20, fill: C.muted, weight: 560, anchor: 'middle' })}
+    'Four separate transaction arrows show gates at EDA software licensing, foreign fab orders under the foreign direct product rule, Dutch EUV shipment licensing, and United States chip imports.',
+    `${header('POLICY CONTROL POINTS', 'Four separate transactions can be blocked', 'Leverage sits where software, fabrication, equipment, and finished chips change hands.')}
+${sectionLabel('SENDER', 118, 270, C.muted)}
+${sectionLabel('CONTROLLED TRANSACTION', 700, 270, C.muted, 'middle')}
+${sectionLabel('RECIPIENT', 1010, 270, C.muted)}
+${sectionLabel('POLICY LEVER', 1350, 270, C.muted)}
+${rule(1260, 286, 1260, 866, { color: C.faint, width: 2 })}
+${gates.map(gate => `<g>
+  ${text(118, gate.y + 8, gate.from, { size: 23, fill: C.ink, weight: 680 })}
+  ${rule(390, gate.y, 930, gate.y, { color: C.graphite, width: 5, marker: 'arrow-ink' })}
+  <circle cx="700" cy="${gate.y}" r="19" fill="${C.paper}" stroke="${gate.color}" stroke-width="6"/>
+  <path d="M700 ${gate.y - 42}V${gate.y + 42}" stroke="${gate.color}" stroke-width="6" stroke-linecap="round"/>
+  ${text(700, gate.y - 50, gate.transaction, { size: 20, fill: gate.color, weight: 830, anchor: 'middle', tracking: 0.8 })}
+  ${text(1010, gate.y + 8, gate.to, { size: 23, fill: C.ink, weight: 680 })}
+  ${text(1350, gate.y + 8, gate.lever, { size: 21, fill: gate.color, weight: 720 })}
 </g>`).join('\n')}
-${text(960, 972, 'Each rule acts on a different transaction.', { size: 31, fill: C.ink, weight: 680, anchor: 'middle' })}`,
+${text(960, 970, 'Each rule targets a transaction, not the entire supply chain.', { size: 29, fill: C.ink, weight: 680, anchor: 'middle' })}`,
   )
 }
 
-function scopeRing(x, y, r, color, label, sub) {
-  return `<g>
-  <circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="${color}" stroke-width="${Math.max(5, r / 18)}" opacity="0.78"/>
-  <circle cx="${x}" cy="${y}" r="${r * 0.12}" fill="${color}"/>
-  ${text(x, y + r + 56, label, { size: 26, fill: color, weight: 800, anchor: 'middle' })}
-  ${text(x, y + r + 90, sub, { size: 19, fill: C.muted, weight: 560, anchor: 'middle' })}
-</g>`
-}
-
 function exportControlExpansion() {
+  const steps = [
+    { y: 330, width: 430, date: 'MAY 2019', scope: 'NAMED COMPANY', detail: 'Huawei · Entity List' },
+    { y: 475, width: 760, date: 'MAY 2020', scope: 'FOREIGN PRODUCTION', detail: 'FDPR reaches foreign fabs' },
+    { y: 620, width: 1090, date: 'OCT 2022', scope: 'ADVANCED TECHNOLOGIES', detail: 'advanced chips + fab tools' },
+    { y: 765, width: 1430, date: 'DEC 2024', scope: 'SUPPLY CATEGORIES', detail: 'HBM · 140 entities · 27 categories' },
+  ]
+
   return svgDoc(
     'United States semiconductor controls expanded in scope from 2019 through 2024',
-    'Four circles grow along a timeline. Controls begin with Huawei in 2019, reach foreign fabs using United States technology in 2020, expand to advanced computing chips and manufacturing equipment in 2022, and add HBM, 140 entities, and 27 tool and software categories in 2024.',
-    `${sectionLabel('CONTROL SCOPE', 92, 114)}
-${rule(190, 546, 1740, 546, { color: C.rose, width: 7, marker: 'arrow-red' })}
-${scopeRing(300, 546, 74, C.rose, 'MAY 2019', 'Huawei · Entity List')}
-${scopeRing(720, 546, 114, C.rose, 'MAY 2020', 'FDPR reaches foreign fabs')}
-${scopeRing(1150, 546, 158, C.rose, 'OCT 2022', 'advanced chips + fab tools')}
-${scopeRing(1590, 546, 205, C.rose, 'DEC 2024', 'HBM · 140 entities · 27 categories')}
-${text(300, 318, 'ONE COMPANY', { size: 20, fill: C.muted, weight: 760, anchor: 'middle', tracking: 2 })}
-${text(1590, 254, 'COUNTRY-WIDE CAPABILITY', { size: 20, fill: C.rose, weight: 800, anchor: 'middle', tracking: 2 })}
-<path d="M370 270C700 122 1240 122 1520 226" fill="none" stroke="${C.rose}" stroke-width="4" stroke-dasharray="11 10" marker-end="url(#arrow-red)" opacity="0.7"/>
-${text(960, 990, 'The rule set grew outward from a named company to technologies and supply categories.', { size: 28, fill: C.ink, weight: 640, anchor: 'middle' })}`,
+    'Four progressively wider bands show controls moving from one named company to foreign production, advanced technologies, and broad supply categories.',
+    `${header('CONTROL SCOPE · 2019–2024', 'US controls widened from one company to an upstream technology stack', 'The bands show categories added over time; their widths are ordinal, not quantitative.')}
+${steps.map(step => `<g>
+  ${text(112, step.y + 32, step.date, { size: 22, fill: C.rose, weight: 820, tracking: 1.2 })}
+  <rect x="310" y="${step.y}" width="${step.width}" height="68" rx="8" fill="${C.roseSoft}" stroke="${C.rose}" stroke-width="3"/>
+  ${text(344, step.y + 29, step.scope, { size: 20, fill: C.rose, weight: 820, tracking: 1.4 })}
+  ${text(344, step.y + 55, step.detail, { size: 18, fill: C.ink, weight: 610 })}
+</g>`).join('\n')}
+${rule(1780, 318, 1780, 855, { color: C.rose, width: 5, marker: 'arrow-red' })}
+${text(1748, 300, 'WIDER REACH', { size: 18, fill: C.rose, weight: 820, anchor: 'end', tracking: 1.7 })}
+${text(960, 955, 'From a named firm to the capability required to build advanced chips.', { size: 28, fill: C.ink, weight: 650, anchor: 'middle' })}`,
   )
 }
 
@@ -276,26 +265,92 @@ function policyGate(x, y, state, label, detail) {
 
 function h20PolicyCycle() {
   const dates = [
-    { x: 230, date: 'OCT 2023', state: 'open', label: 'H20 CREATED', detail: 'H800 exception closes' },
-    { x: 590, date: 'APR 2025', state: 'closed', label: 'LICENSED', detail: '$4.5B charge' },
-    { x: 950, date: 'JUL–AUG 2025', state: 'limited', label: 'REOPENED', detail: '15% revenue share' },
-    { x: 1310, date: 'AUG 2025', state: 'closed', label: 'PRODUCTION STOPS', detail: 'China discourages sales' },
-    { x: 1670, date: 'JAN 2026', state: 'limited', label: 'H200 CASE-BY-CASE', detail: '25% tariff' },
+    { x: 230, y: 400, date: 'OCT 2023', color: C.green, label: 'H20 DESIGNED', detail: 'H800 route closes', labelY: 328 },
+    { x: 580, y: 600, date: 'APR 2025', color: C.rose, label: 'LICENSE REQUIRED', detail: '$4.5B charge', labelY: 660 },
+    { x: 930, y: 460, date: 'JUL–AUG 2025', color: C.amber, label: 'PARTLY REOPENED', detail: 'reported 15% licensing deal', labelY: 408 },
+    { x: 1280, y: 770, date: 'AUG 2025', color: C.rose, label: 'PRODUCTION HALTED', detail: 'China discourages sales', labelY: 716 },
+    { x: 1630, y: 570, date: 'JAN 2026', color: C.violet, label: 'H200 CASE-BY-CASE', detail: 'conditional review', labelY: 630 },
   ]
 
   return svgDoc(
     'Policy repeatedly opened and closed the market for Nvidia China chips',
-    'Five policy gates track the H20 and H200 from October 2023 to January 2026: the H20 is created after the H800 exception closes, receives a license requirement in April 2025, briefly reopens with a revenue share, stops production after Chinese discouragement, and is followed by case by case H200 licensing with a tariff.',
-    `${sectionLabel('ACCESS TO CHINA', 92, 110)}
-${rule(160, 520, 1760, 520, { color: C.graphite, width: 5, marker: 'arrow-ink' })}
+    'An access-state line tracks the H20 from its October 2023 design through licensing, a partial reopening, halted production, and January 2026 case-by-case review for H200.',
+    `${header('ACCESS TO CHINA · OCT 2023–JAN 2026', "Policy repeatedly opened and closed Nvidia's China market", 'A compliance product did not create stable market access.')}
+${text(150, 352, 'OPEN', { size: 17, fill: C.green, weight: 820, anchor: 'end', tracking: 1.5 })}
+${text(150, 560, 'LICENSED', { size: 17, fill: C.amber, weight: 820, anchor: 'end', tracking: 1.5 })}
+${text(150, 776, 'BLOCKED', { size: 17, fill: C.rose, weight: 820, anchor: 'end', tracking: 1.5 })}
+${rule(188, 360, 188, 790, { color: C.faint, width: 4 })}
+<path d="M230 400H405V600H755V460H1105V770H1455V570H1630" fill="none" stroke="${C.graphite}" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 ${dates.map(item => `<g>
-${text(item.x, 216, item.date, { size: 20, fill: C.muted, weight: 800, anchor: 'middle', tracking: 1.3 })}
-${policyGate(item.x, 520, item.state, item.label, item.detail)}
+  ${rule(item.x, 286, item.x, 840, { color: C.faint, width: 2, dash: '8 10' })}
+  ${text(item.x, 270, item.date, { size: 19, fill: C.muted, weight: 820, anchor: 'middle', tracking: 1.2 })}
+  <circle cx="${item.x}" cy="${item.y}" r="17" fill="${C.paper}" stroke="${item.color}" stroke-width="7"/>
+  ${text(item.x, item.labelY, item.label, { size: 20, fill: item.color, weight: 820, anchor: 'middle', tracking: 0.6 })}
+  ${text(item.x, item.labelY + 30, item.detail, { size: 17, fill: C.muted, weight: 560, anchor: 'middle' })}
 </g>`).join('\n')}
-${chipIcon(826, 845, C.blue, { scale: 0.72, label: 'H20' })}
-${rule(980, 903, 1125, 903, { color: C.blue, width: 5, marker: 'arrow-blue' })}
-${chipIcon(1140, 845, C.violet, { scale: 0.72, label: 'H200' })}
-${text(960, 1020, 'Compliance product → licensed sale → partial reopening → halted production', { size: 25, fill: C.ink, weight: 630, anchor: 'middle' })}`,
+${text(960, 930, 'H20 compliance route', { size: 22, fill: C.blue, weight: 760, anchor: 'end' })}
+${rule(982, 923, 1138, 923, { color: C.graphite, width: 4, marker: 'arrow-ink' })}
+${text(1160, 930, 'H200 case-by-case review', { size: 22, fill: C.violet, weight: 760 })}`,
+  )
+}
+
+function chinaMineralResponse() {
+  return svgDoc(
+    'China mirrored United States semiconductor controls within twenty-four hours',
+    'A causal timeline links the December 2 2024 United States HBM export rule to China banning gallium and germanium exports to the United States one day later, followed by extraterritorial rare-earth rules in October 2025.',
+    `${header('MINERAL COUNTER-CONTROLS', 'China mirrored US controls within 24 hours', 'The response moved from a bilateral mineral ban to rules that reach foreign-made goods.')}
+${rule(166, 520, 1760, 520, { color: C.graphite, width: 6, marker: 'arrow-ink' })}
+<g>
+  <circle cx="300" cy="520" r="24" fill="${C.paper}" stroke="${C.blue}" stroke-width="7"/>
+  ${text(300, 388, 'DEC 2, 2024', { size: 21, fill: C.blue, weight: 820, anchor: 'middle', tracking: 1.2 })}
+  ${text(300, 435, 'US BANS HBM', { size: 27, fill: C.ink, weight: 800, anchor: 'middle' })}
+  ${text(300, 472, 'to China', { size: 19, fill: C.muted, weight: 560, anchor: 'middle' })}
+</g>
+<g>
+  <rect x="485" y="476" width="220" height="88" rx="44" fill="${C.amberSoft}" stroke="${C.amber}" stroke-width="3"/>
+  ${text(595, 533, '24 HOURS', { size: 29, fill: C.amber, weight: 840, anchor: 'middle', tracking: 1.5 })}
+</g>
+<g>
+  <circle cx="900" cy="520" r="24" fill="${C.paper}" stroke="${C.rose}" stroke-width="7"/>
+  ${text(900, 388, 'DEC 3, 2024', { size: 21, fill: C.rose, weight: 820, anchor: 'middle', tracking: 1.2 })}
+  ${text(900, 435, 'CHINA BANS Ga + Ge', { size: 27, fill: C.ink, weight: 800, anchor: 'middle' })}
+  ${text(900, 472, 'to the United States', { size: 19, fill: C.muted, weight: 560, anchor: 'middle' })}
+</g>
+<g>
+  <circle cx="1420" cy="520" r="24" fill="${C.paper}" stroke="${C.violet}" stroke-width="7"/>
+  ${text(1420, 388, 'OCT 2025', { size: 21, fill: C.violet, weight: 820, anchor: 'middle', tracking: 1.2 })}
+  ${text(1420, 435, 'RARE-EARTH FDPR', { size: 27, fill: C.ink, weight: 800, anchor: 'middle' })}
+  ${text(1420, 472, 'reaches foreign goods', { size: 19, fill: C.muted, weight: 560, anchor: 'middle' })}
+</g>
+${rule(1420, 550, 1420, 714, { color: C.violet, width: 4, dash: '10 9' })}
+<rect x="1030" y="714" width="780" height="116" rx="18" fill="${C.paper}" stroke="${C.faint}" stroke-width="3"/>
+${text(1420, 758, 'CURRENT PAUSES EXPIRE', { size: 19, fill: C.amber, weight: 820, anchor: 'middle', tracking: 1.7 })}
+${text(1420, 800, 'NOV 10 + NOV 27, 2026', { size: 29, fill: C.ink, weight: 800, anchor: 'middle' })}
+${text(960, 946, 'The chokepoint moved from advanced chips to the minerals used across manufacturing.', { size: 27, fill: C.ink, weight: 650, anchor: 'middle' })}`,
+  )
+}
+
+function nexperiaSupplyShock() {
+  const events = [
+    { x: 250, number: '1', color: C.blue, over: 'SEP 2025', label: 'DUTCH CONTROL ORDER', detail: 'technology-transfer concerns' },
+    { x: 700, number: '2', color: C.rose, over: 'OCT 2025', label: 'CHINA BLOCKS EXPORTS', detail: 'Nexperia · Dongguan' },
+    { x: 1150, number: '3', color: C.amber, over: 'SUPPLY EXPOSURE', label: '>50B SIMPLE CHIPS / YEAR', detail: 'mature-node volume' },
+    { x: 1600, number: '4', color: C.rose, over: 'CONSEQUENCE', label: 'AUTOMAKERS WARN', detail: 'within days · production stoppages' },
+  ]
+
+  return svgDoc(
+    'A Nexperia control dispute created an automotive supply shock',
+    "A four-step causal timeline connects the Dutch government control order, China's Dongguan export block, more than fifty billion mature-node chips per year, and automaker warnings of production stoppages within days.",
+    `${header('MATURE-NODE LEVERAGE', 'A chip-control dispute became an automotive supply shock', 'The vulnerable component was a high-volume, cents-priced mature-node part.')}
+${rule(158, 520, 1760, 520, { color: C.graphite, width: 6, marker: 'arrow-ink' })}
+${events.map(event => `<g>
+  <circle cx="${event.x}" cy="520" r="27" fill="${event.color}"/>
+  ${text(event.x, 529, event.number, { size: 24, fill: C.paper, weight: 850, anchor: 'middle' })}
+  ${text(event.x, 382, event.over, { size: 23, fill: event.color, weight: 840, anchor: 'middle', tracking: 1 })}
+  ${text(event.x, 625, event.label, { size: event.number === '3' ? 20 : 22, fill: C.ink, weight: 820, anchor: 'middle', tracking: 0.5 })}
+  ${text(event.x, 662, event.detail, { size: 19, fill: C.muted, weight: 560, anchor: 'middle' })}
+</g>`).join('\n')}
+${text(960, 880, 'Cents-priced mature-node parts became the bottleneck.', { size: 31, fill: C.ink, weight: 700, anchor: 'middle' })}`,
   )
 }
 
@@ -313,142 +368,136 @@ function rackIcon(x, y, color, scale = 1) {
 }
 
 function chinaCapabilityCost() {
-  const manyRacks = [0, 1, 2, 3].map(i => rackIcon(1240 + (i % 2) * 250, 285 + Math.floor(i / 2) * 340, C.rose, 0.72)).join('\n')
-
   return svgDoc(
     'Chinese firms can manufacture advanced chips with yield and power penalties',
-    'The left panel shows repeated DUV patterning producing 7 nanometre class logic with estimated yields of 20 to 40 percent and prices 40 to 50 percent above TSMC. The right panel shows Huawei using 384 chips across 16 racks and about four times the power to exceed a GB200 NVL72 in aggregate compute.',
-    `${panel(86, 96, 830, 870, { shadow: true })}
-${panel(1004, 96, 830, 870, { shadow: true })}
-${sectionLabel('SMIC · LOGIC', 142, 170, C.green)}
-${text(142, 218, 'DUV MULTI-PATTERNING', { size: 31, fill: C.ink, weight: 780 })}
-${multiPatternChip(244, 360)}
-${rule(470, 610, 470, 716, { color: C.green, width: 6, marker: 'arrow-green' })}
-${pill(158, 748, 'YIELD ~20–40%', C.rose, C.roseSoft, 310, { size: 24 })}
-${pill(490, 748, 'PRICE +40–50%', C.amber, C.amberSoft, 330, { size: 24 })}
-${text(490, 866, '7 nm-class shipping · 5 nm-class through repeated exposures', { size: 22, fill: C.muted, weight: 560, anchor: 'middle' })}
-
-${sectionLabel('HUAWEI · AI SYSTEM', 1060, 170, C.rose)}
-${pill(1170, 208, 'AGGREGATE COMPUTE > GB200 NVL72', C.rose, C.roseSoft, 528, { size: 18 })}
-${manyRacks}
-${text(1138, 352, '384', { size: 54, fill: C.rose, weight: 820, anchor: 'middle' })}
-${text(1138, 395, 'CHIPS', { size: 19, fill: C.muted, weight: 780, anchor: 'middle', tracking: 2 })}
-${text(1138, 548, '16', { size: 54, fill: C.rose, weight: 820, anchor: 'middle' })}
-${text(1138, 591, 'RACKS', { size: 19, fill: C.muted, weight: 780, anchor: 'middle', tracking: 2 })}
-${text(1138, 744, '~4×', { size: 54, fill: C.amber, weight: 820, anchor: 'middle' })}
-${text(1138, 787, 'POWER', { size: 19, fill: C.muted, weight: 780, anchor: 'middle', tracking: 2 })}
-`,
+    'A single tradeoff flow shows repeated DUV exposures lowering estimated yield and raising wafer price, followed by Huawei compensating with 384 chips across 16 racks and about four times the power.',
+    `${header('ADVANCED COMPUTE · 2026 ESTIMATES', 'China trades yield and power for capability', 'Multi-patterning raises manufacturing cost; system scale raises energy use.')}
+${sectionLabel('SMIC · LOGIC', 118, 286, C.green)}
+${text(118, 334, 'REPEATED DUV EXPOSURES', { size: 28, fill: C.ink, weight: 800 })}
+${multiPatternChip(220, 430)}
+${text(260, 742, '~20–40%', { size: 48, fill: C.rose, weight: 840, anchor: 'middle' })}
+${text(260, 780, 'ESTIMATED YIELD', { size: 18, fill: C.muted, weight: 780, anchor: 'middle', tracking: 1.5 })}
+${text(600, 742, '+40–50%', { size: 48, fill: C.amber, weight: 840, anchor: 'middle' })}
+${text(600, 780, 'PRICE VS TSMC', { size: 18, fill: C.muted, weight: 780, anchor: 'middle', tracking: 1.5 })}
+${rule(788, 540, 1088, 540, { color: C.graphite, width: 7, marker: 'arrow-ink' })}
+${text(938, 500, 'SYSTEM COMPENSATION', { size: 18, fill: C.muted, weight: 820, anchor: 'middle', tracking: 1.4 })}
+${sectionLabel('HUAWEI · CLOUDMATRIX 384', 1150, 286, C.rose)}
+${rackIcon(1370, 350, C.rose, 1.08)}
+${text(1230, 414, '384', { size: 52, fill: C.rose, weight: 840, anchor: 'middle' })}
+${text(1230, 452, 'CHIPS', { size: 18, fill: C.muted, weight: 780, anchor: 'middle', tracking: 1.6 })}
+${text(1230, 586, '16', { size: 52, fill: C.rose, weight: 840, anchor: 'middle' })}
+${text(1230, 624, 'RACKS', { size: 18, fill: C.muted, weight: 780, anchor: 'middle', tracking: 1.6 })}
+${text(1230, 758, '~4×', { size: 52, fill: C.amber, weight: 840, anchor: 'middle' })}
+${text(1230, 796, 'POWER VS ONE NVL72', { size: 15, fill: C.muted, weight: 780, anchor: 'middle', tracking: 1 })}
+${text(1565, 824, 'AGGREGATE COMPUTE', { size: 17, fill: C.muted, weight: 760, anchor: 'middle', tracking: 1 })}
+${text(1565, 858, '> ONE GB200 NVL72', { size: 25, fill: C.rose, weight: 820, anchor: 'middle' })}
+${text(960, 995, 'SMIC + Huawei · estimates vary by product and workload', { size: 19, fill: C.muted, weight: 560, anchor: 'middle' })}`,
   )
-}
-
-function gapRow(y, label, china, benchmark, color) {
-  const start = 590
-  const end = 1730
-  const current = 735
-  return `<g>
-  ${text(110, y - 8, label, { size: 29, fill: color, weight: 800 })}
-  ${text(110, y + 28, china, { size: 19, fill: C.muted, weight: 560 })}
-  ${rule(start, y, end, y, { color: C.faint, width: 8, dash: '12 10', marker: 'arrow-ink' })}
-  ${rule(start, y, current, y, { color, width: 12 })}
-  <circle cx="${current}" cy="${y}" r="18" fill="${C.paper}" stroke="${color}" stroke-width="6"/>
-  ${text(end, y - 24, benchmark, { size: 20, fill: C.ink, weight: 700, anchor: 'end' })}
-</g>`
 }
 
 function chinaTechnologyGap() {
+  const rows = [
+    { y: 342, label: 'EUV', color: C.amber, domestic: 'Prototype · 100–150 W', reference: "Below production; source trails ASML's 2017 benchmark" },
+    { y: 492, label: 'DUV', color: C.rose, domestic: '110 nm dry scanner', reference: 'Not the claimed 28 nm immersion class' },
+    { y: 642, label: 'HBM', color: C.violet, domestic: 'HBM3 targeted end-2026', reference: 'About 3–4 years behind Korea' },
+    { y: 792, label: 'EDA', color: C.blue, domestic: 'Empyrean · ~10–12% of China market', reference: 'Advanced flows still rely on foreign tools' },
+  ]
+
   return svgDoc(
     'China has different gaps in lithography, memory, and EDA',
-    'Four horizontal rows compare the current reported state of Chinese EUV, DUV, HBM, and EDA with external benchmarks. The EUV prototype reports 100 to 150 watts, the announced DUV tool resolves 110 nanometres, HBM remains three to four years behind Korea, and Empyrean holds about 10 to 12 percent of the Chinese EDA market.',
-    `${sectionLabel('DIFFERENT TECHNOLOGIES · DIFFERENT GAPS', 110, 110)}
-${sectionLabel('REPORTED DOMESTIC STATE', 590, 176, C.muted)}
-${sectionLabel('EXTERNAL REFERENCE', 1730, 176, C.muted, 'end')}
-${gapRow(280, 'EUV', 'prototype · 100–150 W', 'comparable with ASML around 2017', C.amber)}
-${gapRow(465, 'DUV', '110 nm dry scanner', 'not the claimed 28 nm class', C.rose)}
-${gapRow(650, 'HBM', 'HBM3 targeted end-2026', 'about 3–4 years behind Korea', C.violet)}
-${gapRow(835, 'EDA', 'Empyrean · ~10–12% of China market', 'advanced flow still relies on foreign tools', C.blue)}
-<rect x="554" y="930" width="812" height="72" rx="36" fill="${C.roseSoft}" stroke="${C.rose}" stroke-width="3"/>
-${text(960, 976, 'ESTIMATED LEADING-EDGE GAP · ABOUT FIVE YEARS', { size: 25, fill: C.rose, weight: 800, anchor: 'middle', tracking: 1.2 })}`,
+    'A comparison table lists the reported domestic state and a relevant external reference for EUV, DUV, HBM, and EDA without placing unlike metrics on one numeric scale.',
+    `${header('TECHNOLOGY SUBSTITUTION', "China's technology gaps are not one number", 'EUV power, lithography resolution, HBM timing, and EDA coverage require different comparisons.')}
+${sectionLabel('TECHNOLOGY', 112, 270, C.muted)}
+${sectionLabel('REPORTED DOMESTIC STATE', 430, 270, C.muted)}
+${sectionLabel('EXTERNAL REFERENCE / LIMIT', 1040, 270, C.muted)}
+${rows.map(row => `<g>
+  ${rule(102, row.y + 58, 1818, row.y + 58, { color: C.faint, width: 2 })}
+  <rect x="108" y="${row.y - 36}" width="12" height="72" rx="6" fill="${row.color}"/>
+  ${text(150, row.y + 8, row.label, { size: 32, fill: row.color, weight: 840 })}
+  ${text(430, row.y + 8, row.domestic, { size: 23, fill: C.ink, weight: 680 })}
+  ${text(1040, row.y + 8, row.reference, { size: 22, fill: C.ink, weight: 650 })}
+</g>`).join('\n')}`,
   )
-}
-
-function mapPin(x, y, color, title, value, align = 'start') {
-  const dx = align === 'start' ? 34 : -34
-  return `<g>
-  <circle cx="${x}" cy="${y}" r="24" fill="${C.paper}" stroke="${color}" stroke-width="6"/>
-  <circle cx="${x}" cy="${y}" r="9" fill="${color}"/>
-  ${text(x + dx, y - 8, title, { size: 22, fill: color, weight: 800, anchor: align })}
-  ${text(x + dx, y + 25, value, { size: 19, fill: C.muted, weight: 580, anchor: align })}
-</g>`
 }
 
 function usFabInvestment() {
-  const usOutline = `<path d="M502 324L635 238L822 260L960 230L1088 281L1280 274L1418 358L1510 430L1474 530L1366 558L1320 648L1198 676L1100 748L934 725L806 760L662 690L574 598L480 512Z" fill="${C.blueSoft}" stroke="${C.blue}" stroke-width="5"/>`
-
   return svgDoc(
-    'United States industrial policy funds semiconductor capacity through incentives and equity',
-    'A simplified United States map marks TSMC in Arizona, Micron, Samsung in Taylor Texas, and the federal equity investment in Intel. Side panels show the 52.7 billion dollar CHIPS Act, a 25 percent investment tax credit, and a projected rise in United States advanced logic capacity from zero percent in 2022 to 28 percent in 2032.',
-    `${panel(76, 96, 374, 868, { shadow: true })}
-${sectionLabel('FEDERAL SUPPORT', 126, 174, C.blue)}
-${text(126, 270, '$52.7B', { size: 58, fill: C.blue, weight: 820 })}
-${text(126, 312, 'CHIPS ACT · 2022', { size: 20, fill: C.muted, weight: 760, tracking: 1.4 })}
-${text(126, 430, '+25%', { size: 58, fill: C.green, weight: 820 })}
-${text(126, 472, 'INVESTMENT TAX CREDIT', { size: 20, fill: C.muted, weight: 760, tracking: 1.2 })}
-${text(126, 594, '$8.9B', { size: 58, fill: C.violet, weight: 820 })}
-${text(126, 636, '9.9% OF INTEL', { size: 20, fill: C.muted, weight: 760, tracking: 1.4 })}
-${text(126, 684, 'direct federal equity · Aug 2025', { size: 18, fill: C.muted, weight: 560 })}
+    'Export controls buy time while domestic semiconductor capacity builds resilience',
+    'A single progression shows the projected United States share of global below ten nanometre logic capacity rising from zero percent in 2022 to twenty-eight percent in 2032, with incentives, construction, qualification, and yield ramp between them.',
+    `${header('US INDUSTRIAL POLICY', 'Export controls buy time; domestic capacity builds resilience', 'The domestic half of semiconductor policy is a capacity build, not another restriction.')}
+${sectionLabel('PROJECTED U.S. SHARE OF GLOBAL <10 nm LOGIC CAPACITY', 960, 350, C.violet, 'middle')}
 
-${panel(490, 96, 1354, 868, { shadow: true })}
-${usOutline}
-${mapPin(715, 470, C.green, 'TSMC · ARIZONA', '$165B announced')}
-${mapPin(1145, 392, C.violet, 'MICRON', 'up to $250B US plan')}
-${mapPin(1105, 624, C.rose, 'SAMSUNG · TAYLOR', '~$37B')}
-${mapPin(1336, 494, C.blue, 'INTEL', 'federal government · 9.9%', 'end')}
-<path d="M602 864H1698" stroke="${C.faint}" stroke-width="18" stroke-linecap="round"/>
-<path d="M602 864H909" stroke="${C.blue}" stroke-width="18" stroke-linecap="round"/>
-<circle cx="602" cy="864" r="15" fill="${C.blue}"/>
-<circle cx="1698" cy="864" r="15" fill="${C.green}"/>
-${text(602, 828, '0%', { size: 31, fill: C.blue, weight: 800, anchor: 'middle' })}
-${text(602, 912, '2022', { size: 20, fill: C.muted, weight: 700, anchor: 'middle' })}
-${text(1698, 828, '28%', { size: 31, fill: C.green, weight: 800, anchor: 'middle' })}
-${text(1698, 912, '2032 PROJECTED', { size: 20, fill: C.muted, weight: 700, anchor: 'middle' })}
-${text(1150, 917, 'US ADVANCED-LOGIC CAPACITY', { size: 19, fill: C.muted, weight: 760, anchor: 'middle', tracking: 1.5 })}`,
+${text(248, 640, '0%', { size: 156, fill: C.blue, weight: 860, anchor: 'middle' })}
+${text(248, 704, '2022', { size: 27, fill: C.muted, weight: 800, anchor: 'middle', tracking: 1.5 })}
+
+${rule(438, 600, 1448, 600, { color: C.graphite, width: 9, marker: 'arrow-ink' })}
+
+<circle cx="650" cy="600" r="15" fill="${C.blue}"/>
+${text(650, 486, 'PUBLIC INCENTIVES', { size: 21, fill: C.blue, weight: 840, anchor: 'middle', tracking: 1.2 })}
+${text(650, 528, 'grants · loans · equity · 25% credit', { size: 21, fill: C.muted, weight: 580, anchor: 'middle' })}
+
+<circle cx="960" cy="600" r="15" fill="${C.violet}"/>
+${text(960, 486, 'CONSTRUCTION', { size: 21, fill: C.violet, weight: 840, anchor: 'middle', tracking: 1.2 })}
+${text(960, 528, 'build and equip the fabs', { size: 21, fill: C.muted, weight: 580, anchor: 'middle' })}
+
+<circle cx="1270" cy="600" r="15" fill="${C.green}"/>
+${text(1270, 486, 'QUALIFICATION + YIELD', { size: 21, fill: C.green, weight: 840, anchor: 'middle', tracking: 1.2 })}
+${text(1270, 528, 'turn capacity into usable output', { size: 21, fill: C.muted, weight: 580, anchor: 'middle' })}
+
+${text(1665, 640, '28%', { size: 156, fill: C.green, weight: 870, anchor: 'middle' })}
+${text(1665, 704, '2032E', { size: 27, fill: C.muted, weight: 800, anchor: 'middle', tracking: 1.5 })}
+
+${text(960, 1000, 'SIA / BCG · May 2024', { size: 18, fill: C.muted, weight: 600, anchor: 'middle', tracking: 0.5 })}`,
   )
 }
 
-function stackLayer(x, y, w, label, sub, color) {
-  return `<g filter="url(#shadow)">
-  <rect x="${x}" y="${y}" width="${w}" height="124" rx="22" fill="${C.paper}" stroke="${color}" stroke-width="4"/>
-  <rect x="${x}" y="${y}" width="20" height="124" rx="10" fill="${color}"/>
-  ${text(x + 58, y + 51, label, { size: 28, fill: color, weight: 800 })}
-  ${text(x + 58, y + 88, sub, { size: 20, fill: C.muted, weight: 560 })}
-</g>`
+function taiwanConcentration() {
+  const barX = 190
+  const barW = 1540
+  const taiwanW = barW * 0.92
+
+  return svgDoc(
+    'Taiwan held ninety-two percent of global sub-ten-nanometre capacity in 2022',
+    'A share bar shows Taiwan at ninety-two percent and the rest of the world at eight percent of sub-ten-nanometre capacity in 2022. A separate forward-looking line notes that TSMC N2 capacity was committed through the second quarter of 2027.',
+    `${header('ADVANCED-LOGIC CONCENTRATION', 'Taiwan held 92% of global sub-10 nm capacity', 'The capacity share is a 2022 snapshot; the N2 order signal below is forward-looking.')}
+${sectionLabel('2022 CAPACITY SHARE', barX, 328, C.blue)}
+<rect x="${barX}" y="390" width="${barW}" height="132" rx="18" fill="${C.faint}"/>
+<path d="M${barX + 18} 390H${barX + taiwanW}V522H${barX + 18}Q${barX} 522 ${barX} 504V408Q${barX} 390 ${barX + 18} 390Z" fill="${C.blue}"/>
+${text(barX + 44, 470, 'TAIWAN · 92%', { size: 42, fill: C.paper, weight: 850, tracking: 0.8 })}
+${text(barX + barW - 40, 470, '8%', { size: 36, fill: C.graphite, weight: 840, anchor: 'end' })}
+${text(barX + barW - 40, 552, 'REST OF WORLD', { size: 17, fill: C.muted, weight: 760, anchor: 'end', tracking: 1.3 })}
+${rule(190, 636, 1730, 636, { color: C.faint, width: 2 })}
+${sectionLabel('SEPARATE FORWARD SIGNAL', 190, 702, C.violet)}
+${text(190, 772, 'TSMC N2 capacity', { size: 31, fill: C.ink, weight: 720 })}
+${rule(535, 762, 1398, 762, { color: C.violet, width: 6, marker: 'arrow-ink' })}
+${text(1460, 728, 'COMMITTED THROUGH', { size: 18, fill: C.muted, weight: 780, tracking: 1 })}
+${text(1460, 779, 'Q2 2027', { size: 45, fill: C.violet, weight: 850 })}
+${text(960, 944, 'Capacity concentration and committed demand are different measures of the same exposure.', { size: 27, fill: C.ink, weight: 650, anchor: 'middle' })}`,
+  )
 }
 
 function splitAiStacks() {
-  const left = [
-    ['ACCELERATOR', 'Nvidia GPU', C.blue],
-    ['SOFTWARE', 'CUDA', C.violet],
-    ['FOUNDRY', 'TSMC', C.green],
-    ['TOOLS', 'ASML + US / Japan equipment', C.amber],
-  ]
-  const right = [
-    ['ACCELERATOR', 'Huawei Ascend', C.rose],
-    ['SOFTWARE', 'CANN', C.violet],
-    ['FOUNDRY', 'SMIC', C.green],
-    ['TOOLS', 'domestic toolchain', C.amber],
+  const rows = [
+    { y: 360, layer: 'ACCELERATOR', left: 'Nvidia GPU', right: 'Huawei Ascend', color: C.blue },
+    { y: 500, layer: 'SOFTWARE', left: 'CUDA', right: 'CANN', color: C.violet },
+    { y: 640, layer: 'FOUNDRY', left: 'TSMC', right: 'SMIC', color: C.green },
+    { y: 780, layer: 'TOOLS', left: 'ASML + US/Japan equipment', right: 'Domestic tools + foreign dependencies', color: C.amber },
   ]
 
   return svgDoc(
-    'The United States led and China led AI stacks use different components',
-    'Two vertical stacks compare accelerators, software, foundries, and toolchains. The United States led stack uses Nvidia, CUDA, TSMC, and ASML plus United States and Japanese equipment. The China led stack uses Huawei Ascend, CANN, SMIC, and a domestic toolchain.',
-    `${sectionLabel('US-LED STACK', 132, 112, C.blue)}
-${sectionLabel('CHINA-LED STACK', 1788, 112, C.rose, 'end')}
-${left.map((item, i) => stackLayer(122, 180 + i * 182, 670, item[0], item[1], item[2])).join('\n')}
-${right.map((item, i) => stackLayer(1128, 180 + i * 182, 670, item[0], item[1], item[2])).join('\n')}
-<path d="M930 150V898" stroke="${C.rose}" stroke-width="5" stroke-dasharray="16 13"/>
-<path d="M990 150V898" stroke="${C.blue}" stroke-width="5" stroke-dasharray="16 13"/>
-<path d="M894 445L1026 565M1026 445L894 565" stroke="${C.graphite}" stroke-width="9" stroke-linecap="round"/>
-${text(960, 970, 'CURRENT MINERAL-CONTROL PAUSES EXPIRE · NOVEMBER 2026', { size: 23, fill: C.rose, weight: 800, anchor: 'middle', tracking: 1.2 })}`,
+    'The United States led and China led AI stacks are diverging but still interdependent',
+    'Aligned rows compare accelerators, software, foundries, and production tools in the United States led and China led AI stacks. The tools row makes continuing foreign dependencies explicit.',
+    `${header('AI ECOSYSTEMS', 'Two AI stacks are diverging, not yet independent', 'Accelerators and software differ; tools and materials still cross borders.')}
+${sectionLabel('US-LED', 170, 280, C.blue)}
+${sectionLabel('LAYER', 960, 280, C.muted, 'middle')}
+${sectionLabel('CHINA-LED', 1750, 280, C.rose, 'end')}
+${rows.map(row => `<g>
+  ${rule(112, row.y + 64, 1808, row.y + 64, { color: C.faint, width: 2 })}
+  ${text(170, row.y + 8, row.left, { size: row.layer === 'TOOLS' ? 25 : 30, fill: C.ink, weight: 720 })}
+  ${text(1750, row.y + 8, row.right, { size: row.layer === 'TOOLS' ? 23 : 30, fill: C.ink, weight: 720, anchor: 'end' })}
+  ${text(960, row.y + 8, row.layer, { size: 21, fill: row.color, weight: 840, anchor: 'middle', tracking: 1.2 })}
+</g>`).join('\n')}
+${text(960, 975, 'Divergence is real; self-sufficiency is not.', { size: 31, fill: C.rose, weight: 760, anchor: 'middle' })}`,
   )
 }
 
@@ -458,9 +507,12 @@ const VISUALS = [
   ['policy-control-points.svg', policyControlPoints],
   ['export-control-expansion.svg', exportControlExpansion],
   ['h20-policy-cycle.svg', h20PolicyCycle],
+  ['china-mineral-response.svg', chinaMineralResponse],
+  ['nexperia-supply-shock.svg', nexperiaSupplyShock],
   ['china-capability-cost.svg', chinaCapabilityCost],
   ['china-technology-gap.svg', chinaTechnologyGap],
   ['us-fab-investment.svg', usFabInvestment],
+  ['taiwan-concentration.svg', taiwanConcentration],
   ['split-ai-stacks.svg', splitAiStacks],
 ]
 

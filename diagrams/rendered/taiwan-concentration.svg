@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">Taiwan held ninety-two percent of global sub-ten-nanometre capacity in 2022</title>
+<desc id="desc">A share bar shows Taiwan at ninety-two percent and the rest of the world at eight percent of sub-ten-nanometre capacity in 2022. A separate forward-looking line notes that TSMC N2 capacity was committed through the second quarter of 2027.</desc>
+<defs>
+  <pattern id="paper-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#ddd5c8" stroke-width="1" opacity="0.22"/>
+  </pattern>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#493f30" flood-opacity="0.13"/>
+  </filter>
+  <marker id="arrow-ink" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#4f5965"/>
+  </marker>
+  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#3977a8"/>
+  </marker>
+  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#397a66"/>
+  </marker>
+  <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#ad4f5d"/>
+  </marker>
+</defs>
+<rect width="1920" height="1080" fill="#f4efe6"/>
+<rect width="1920" height="1080" fill="url(#paper-grid)"/>
+<text x="84" y="72" fill="#777c79" font-size="21" font-weight="780" text-anchor="start" letter-spacing="2.2" opacity="1">ADVANCED-LOGIC CONCENTRATION</text>
+<text x="84" y="136" fill="#1f272d" font-size="52" font-weight="820" text-anchor="start" letter-spacing="0" opacity="1">Taiwan held 92% of global sub-10 nm capacity</text>
+<text x="84" y="181" fill="#777c79" font-size="23" font-weight="540" text-anchor="start" letter-spacing="0" opacity="1">The capacity share is a 2022 snapshot; the N2 order signal below is forward-looking.</text>
+<path d="M84 210L1836 210" fill="none" stroke="#ddd5c8" stroke-width="2"/>
+<text x="190" y="328" fill="#3977a8" font-size="21" font-weight="780" text-anchor="start" letter-spacing="2.2" opacity="1">2022 CAPACITY SHARE</text>
+<rect x="190" y="390" width="1540" height="132" rx="18" fill="#ddd5c8"/>
+<path d="M208 390H1606.8V522H208Q190 522 190 504V408Q190 390 208 390Z" fill="#3977a8"/>
+<text x="234" y="470" fill="#fffaf0" font-size="42" font-weight="850" text-anchor="start" letter-spacing="0.8" opacity="1">TAIWAN · 92%</text>
+<text x="1690" y="470" fill="#4f5965" font-size="36" font-weight="840" text-anchor="end" letter-spacing="0" opacity="1">8%</text>
+<text x="1690" y="552" fill="#777c79" font-size="17" font-weight="760" text-anchor="end" letter-spacing="1.3" opacity="1">REST OF WORLD</text>
+<path d="M190 636L1730 636" fill="none" stroke="#ddd5c8" stroke-width="2"/>
+<text x="190" y="702" fill="#7358a3" font-size="21" font-weight="780" text-anchor="start" letter-spacing="2.2" opacity="1">SEPARATE FORWARD SIGNAL</text>
+<text x="190" y="772" fill="#1f272d" font-size="31" font-weight="720" text-anchor="start" letter-spacing="0" opacity="1">TSMC N2 capacity</text>
+<path d="M535 762L1398 762" fill="none" stroke="#7358a3" stroke-width="6" marker-end="url(#arrow-ink)"/>
+<text x="1460" y="728" fill="#777c79" font-size="18" font-weight="780" text-anchor="start" letter-spacing="1" opacity="1">COMMITTED THROUGH</text>
+<text x="1460" y="779" fill="#7358a3" font-size="45" font-weight="850" text-anchor="start" letter-spacing="0" opacity="1">Q2 2027</text>
+<text x="960" y="944" fill="#1f272d" font-size="27" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">Capacity concentration and committed demand are different measures of the same exposure.</text>
+</svg>

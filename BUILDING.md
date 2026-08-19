@@ -42,7 +42,7 @@ Scene source belongs in `diagrams/src/scenes/` and must be called from
 |---|---|
 | `map-<state>.svg` | `dark, design, manufacture, equipment, memory, backend, full` (cumulative lighting) |
 | `journey-<k>.svg` | `0`(none) … `6`(DATA CENTER active) |
-| `flow-strip.svg` / `flow-<step>.svg` | steps: `deposit, coat, expose, etch, implant, polish, measure` |
+| `flow-strip.svg` / `flow-strip-steps.svg` / `flow-<step>.svg` | loop with cadence, compact steps-only strip, and highlighted steps |
 | `board-<n>.svg` | `0`…`7` chokepoint stamps, fills in earn order |
 | `euv-light-path.svg` | one state |
 | `transistor-*.svg` | planar, FinFET, and gate-all-around locked-camera states |
@@ -50,7 +50,7 @@ Scene source belongs in `diagrams/src/scenes/` and must be called from
 | `package-*.svg` | substrate, interposer, dies/HBM, and completed package |
 
 **Map state per segment**: cold-open `dark` · great-unbundling `full` (first
-reveal) · Act II segments `design` · Act III + other-90 `manufacture` ·
+reveal) · Act II segments `design` · Act III `manufacture` ·
 Act IV `equipment` · memory-hbm `memory` · packaging `backend` ·
 geopolitics/synthesis `full`. foundations uses no map (it's inside the object).
 
@@ -59,15 +59,15 @@ tsmc `3` (stays through Act IV) · memory-hbm `4` · packaging `5` (fills to `6`
 on the "chip is done" slide) · geopolitics `6`.
 
 **Board state after stamps**: eda → `board-1` · tsmc → `board-2` ·
-life-of-a-wafer → `board-3` · asml → `board-5` (earns #4 ASML and #5 Zeiss) ·
+materials → `board-3` · asml → `board-5` (earns #4 ASML and #5 Zeiss) ·
 memory-hbm → `board-6` · packaging → `board-7` (complete). geopolitics opens on
-`board-7` as the callback.
+the concentration argument without replaying the completed board.
 
 ## Recurring slide patterns
 
-**1. Opener/navigator (every segment's first slide).** Section title + the
-segment's map state + one-line angle setup. The region lighting IS the "you are
-here."
+**1. Opener/navigator (act boundaries and major mode changes).** Section title +
+the relevant map state + one-line angle setup. Omit a repeated locator when the
+preceding divider already establishes the same region.
 
 **2. Evidence frame (every major player).** Lead with the artifact, process,
 factory, machine, or measured comparison that proves the point. A scoreboard is
@@ -95,8 +95,8 @@ compares those categories without inventing a countdown.
 **3. Stamp slide (when a chokepoint is proven).** The proof beat, then
 `board-<n>.svg` + one line naming what was just stamped.
 
-**4. Economics Ledger (act-end segments only: `fabless-field`, `foundries-field`,
-`materials`, `packaging`, `synthesis`).** Record a compact, scope-labeled snapshot
+**4. Economics Ledger (act-end segments only: `materials`, `packaging`,
+`synthesis`).** Record a compact, scope-labeled snapshot
 of what public data supports. Every financial number names its entity, metric,
 period, and estimate status. Keep companywide margins, market-price estimates,
 and supplier relationships separate; never derive per-GPU cost or margin by

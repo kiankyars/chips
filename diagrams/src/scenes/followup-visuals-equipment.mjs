@@ -109,34 +109,26 @@ function appliedCoverage() {
     ['TRACK', 'track'],
     ['LITHOGRAPHY', 'litho'],
   ]
-  const row = tools.map(([label, kind], index) => {
-    const x = 104 + index * 210
+  const row = tools.map(([label], index) => {
+    const x = 112 + index * 212
     const covered = index < 6
     const color = covered ? C.amber : C.graphite
     const fill = covered ? C.amberSoft : C.paper
-    return `${card(x, 346, 184, 288, color, fill)}
-${toolGlyph(kind, x + 92, 465, color)}
-${text(x + 92, 588, label, { size: label.length > 9 ? 17 : 20, fill: color, weight: 800, anchor: 'middle', tracking: 0.8 })}
-${covered ? text(x + 92, 617, 'APPLIED', { size: 14, fill: C.amber, weight: 760, anchor: 'middle', tracking: 1.8 }) : text(x + 92, 617, index === 6 ? 'TEL' : 'ASML', { size: 14, fill: C.muted, weight: 760, anchor: 'middle', tracking: 1.8 })}`
+    return `<rect x="${x}" y="420" width="184" height="170" rx="18" fill="${fill}" stroke="${color}" stroke-width="4"/>
+${text(x + 92, 502, label, { size: label.length > 9 ? 17 : 20, fill: color, weight: 820, anchor: 'middle', tracking: 0.8 })}
+${covered ? text(x + 92, 548, 'COVERED', { size: 15, fill: C.amber, weight: 760, anchor: 'middle', tracking: 1.8 }) : text(x + 92, 548, index === 6 ? 'TEL' : 'ASML', { size: 15, fill: C.muted, weight: 760, anchor: 'middle', tracking: 1.8 })}`
   }).join('\n')
 
   return svgDoc(
     'Applied Materials process coverage',
     'Eight tool categories are shown. Applied Materials covers deposition, etch, implant, polish, thermal processing, and metrology, while track and lithography remain outside its portfolio.',
-    `${header('Process coverage', 'Applied spans six tool categories')}
-<path d="M126 286V258H1340V286" fill="none" stroke="${C.amber}" stroke-width="5"/>
-${text(733, 248, 'APPLIED MATERIALS', { size: 23, fill: C.amber, weight: 820, anchor: 'middle', tracking: 2.1 })}
+    `${header('Process coverage', 'Applied participates in six of eight wafer-fab tool categories')}
+<path d="M112 352V300H1356V352" fill="none" stroke="${C.amber}" stroke-width="6"/>
+${text(734, 276, 'APPLIED MATERIALS', { size: 24, fill: C.amber, weight: 840, anchor: 'middle', tracking: 2.2 })}
 ${row}
-<rect x="250" y="734" width="650" height="174" rx="24" fill="${C.paper}" stroke="${C.hairline}" stroke-width="2" filter="url(#paper-shadow)"/>
-${text(288, 784, 'TRANSISTOR SHAPE CHANGES', { size: 18, fill: C.muted, weight: 760, tracking: 1.9 })}
-${text(288, 832, 'GAA', { size: 27, fill: C.ink, weight: 800 })}
-${text(818, 832, '+~$1B', { size: 30, fill: C.amber, weight: 820, anchor: 'end' })}
-${text(288, 881, 'BACKSIDE POWER', { size: 24, fill: C.ink, weight: 760 })}
-${text(818, 881, '+~$1B', { size: 30, fill: C.amber, weight: 820, anchor: 'end' })}
-<path d="M930 820H1170" stroke="${C.amber}" stroke-width="6" marker-end="url(#arrow-amber)"/>
-${text(1202, 812, 'MORE PROCESS STEPS', { size: 24, fill: C.amber, weight: 800 })}
-${text(1202, 854, 'more tools per wafer', { size: 23, fill: C.graphite, weight: 580 })}
-${text(1816, 1012, 'BREADTH, NOT ONE MONOPOLY TOOL', { size: 18, fill: C.muted, weight: 740, anchor: 'end', tracking: 2 })}`,
+<path d="M112 680H1816" stroke="${C.hairline}" stroke-width="3"/>
+${text(112, 756, 'BREADTH', { size: 22, fill: C.amber, weight: 820, tracking: 2 })}
+${text(112, 812, 'One supplier can capture spend across most process steps—without owning lithography or track.', { size: 31, fill: C.ink, weight: 650 })}`,
   )
 }
 
@@ -160,24 +152,16 @@ function lamDeepEtch() {
 ${text(388, 716, 'BILLIONS OF CHANNELS / WAFER', { size: 21, fill: C.graphite, weight: 780, anchor: 'middle', tracking: 1.4 })}
 <path d="M612 520H742" stroke="${C.graphite}" stroke-width="4" stroke-dasharray="8 9" marker-end="url(#arrow-ink)"/>
 
-<rect x="760" y="242" width="790" height="728" rx="30" fill="${C.paper}" stroke="${C.hairline}" stroke-width="2" filter="url(#paper-shadow)"/>
-${nandStack(900, 318, 510, 548, 28)}
-<rect x="1127" y="304" width="56" height="588" rx="28" fill="${C.bg}" stroke="${C.amber}" stroke-width="8"/>
-<path d="M1155 236V306" stroke="${C.amber}" stroke-width="8" marker-end="url(#arrow-amber)"/>
-${text(1155, 278, 'LAM DRY ETCH', { size: 20, fill: C.amber, weight: 820, anchor: 'middle', tracking: 1.5 })}
-<path d="M1458 318H1500M1458 866H1500M1480 318V866" stroke="${C.graphite}" stroke-width="3"/>
-${text(1524, 568, '~50×', { size: 34, fill: C.ink, weight: 820 })}
-${text(1524, 605, 'DEEPER', { size: 17, fill: C.muted, weight: 760, tracking: 1.5 })}
-<path d="M1127 922V950M1183 922V950M1127 938H1183" stroke="${C.graphite}" stroke-width="3"/>
-${text(1155, 1000, '1× WIDE', { size: 18, fill: C.muted, weight: 760, anchor: 'middle', tracking: 1.5 })}
-
-<rect x="1605" y="300" width="210" height="418" rx="24" fill="${C.amberSoft}" stroke="${C.amber}" stroke-width="3"/>
-${text(1710, 366, 'ONE PASS', { size: 23, fill: C.amber, weight: 820, anchor: 'middle', tracking: 1.5 })}
-${text(1710, 438, '100+', { size: 54, fill: C.ink, weight: 820, anchor: 'middle' })}
-${text(1710, 473, 'LAYERS', { size: 18, fill: C.muted, weight: 760, anchor: 'middle', tracking: 1.8 })}
-<path d="M1650 548H1770M1650 580H1770M1650 612H1770M1650 644H1770" stroke="${C.amber}" stroke-width="10" stroke-linecap="round"/>
-${text(1710, 782, '~1/1000', { size: 36, fill: C.danger, weight: 820, anchor: 'middle' })}
-${text(1710, 817, 'OF A HAIR', { size: 18, fill: C.muted, weight: 760, anchor: 'middle', tracking: 1.7 })}`,
+<rect x="760" y="242" width="1056" height="728" rx="30" fill="${C.paper}" stroke="${C.hairline}" stroke-width="2" filter="url(#paper-shadow)"/>
+${nandStack(938, 318, 610, 548, 28)}
+<rect x="1215" y="304" width="56" height="588" rx="28" fill="${C.bg}" stroke="${C.amber}" stroke-width="8"/>
+<path d="M1243 236V306" stroke="${C.amber}" stroke-width="8" marker-end="url(#arrow-amber)"/>
+${text(1243, 278, 'LAM DRY ETCH', { size: 20, fill: C.amber, weight: 820, anchor: 'middle', tracking: 1.5 })}
+<path d="M1585 318H1627M1585 866H1627M1606 318V866" stroke="${C.graphite}" stroke-width="3"/>
+${text(1648, 548, '~50:1', { size: 40, fill: C.ink, weight: 820 })}
+${text(1648, 592, 'ASPECT RATIO', { size: 17, fill: C.muted, weight: 760, tracking: 1.5 })}
+${text(1648, 684, 'ONE PASS', { size: 23, fill: C.amber, weight: 820, tracking: 1.5 })}
+${text(1648, 730, '100+ LAYERS', { size: 24, fill: C.ink, weight: 780 })}`,
   )
 }
 

@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">One inference forward pass through a GB300-class node</title>
+<desc id="desc">Two paths meet in GPU high-bandwidth memory. At service startup, a model checkpoint can move from remote storage through local NVMe and Grace memory into HBM. For each request, prompt data arrives through the network, is prepared by the Grace CPU, and is executed using HBM, shared L2 cache, and streaming multiprocessors nested inside GPCs and TPCs.</desc>
+<defs>
+  <pattern id="inference-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#ded7cb" stroke-width="1" opacity="0.24"/>
+  </pattern>
+  <filter id="inference-shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="13" flood-color="#493f30" flood-opacity="0.12"/>
+  </filter>
+  <marker id="arrow-blue" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto">
+    <path d="M0 0L18 9L0 18Z" fill="#2f6f9f"/>
+  </marker>
+  <marker id="arrow-blue-start" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="2" refY="9" orient="auto">
+    <path d="M18 0L0 9L18 18Z" fill="#2f6f9f"/>
+  </marker>
+  <marker id="arrow-amber" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto">
+    <path d="M0 0L18 9L0 18Z" fill="#b87821"/>
+  </marker>
+</defs>
+<rect width="1920" height="1080" fill="#f3efe7"/>
+<rect width="1920" height="1080" fill="url(#inference-grid)"/>
+
+<text x="84" y="72" fill="#747a76" font-size="19" font-weight="780" text-anchor="start" letter-spacing="3.2" opacity="1">INFERENCE WALKTHROUGH</text>
+<text x="84" y="132" fill="#20252b" font-size="50" font-weight="800" text-anchor="start" letter-spacing="0" opacity="1">The model loads once; each forward pass reuses it from HBM</text>
+<text x="84" y="176" fill="#747a76" font-size="23" font-weight="540" text-anchor="start" letter-spacing="0" opacity="1">A live request uses the hot path; SSD appears only during model loading.</text>
+<path d="M84 206H1836" stroke="#cec6b9" stroke-width="2"/>
+
+<text x="84" y="250" fill="#2f6f9f" font-size="19" font-weight="840" text-anchor="start" letter-spacing="2.2" opacity="1">HOT PATH · EVERY REQUEST</text>
+<rect x="890" y="258" width="946" height="486" rx="26" fill="#d9ebe3" stroke="#2f7b65" stroke-width="2.5" filter="url(#inference-shadow)"/>
+<text x="930" y="302" fill="#2f7b65" font-size="20" font-weight="840" text-anchor="start" letter-spacing="2.1" opacity="1">ONE BLACKWELL ULTRA GPU</text>
+
+<rect x="1395" y="316" width="360" height="324" rx="22" fill="#fffaf0" stroke="#2f7b65" stroke-width="2.5"/>
+<text x="1422" y="350" fill="#2f7b65" font-size="22" font-weight="840" text-anchor="start" letter-spacing="1.4" opacity="1">GPC</text>
+<text x="1480" y="350" fill="#747a76" font-size="16" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">organizes TPCs</text>
+<rect x="1430" y="374" width="290" height="224" rx="18" fill="#e7e0f0" stroke="#705a96" stroke-width="2.5"/>
+<text x="1452" y="405" fill="#705a96" font-size="19" font-weight="840" text-anchor="start" letter-spacing="1.2" opacity="1">TPC</text>
+<text x="1504" y="405" fill="#747a76" font-size="15" font-weight="560" text-anchor="start" letter-spacing="0" opacity="1">organizes SMs</text>
+
+<path d="M260 450H300" fill="none" stroke="#2f6f9f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" opacity="1"/>
+<path d="M510 450H550" fill="none" stroke="#2f6f9f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" opacity="1"/>
+<path d="M820 450H938" fill="none" stroke="#2f6f9f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" opacity="1"/>
+<path d="M1140 465H1182" fill="none" stroke="#2f6f9f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" opacity="1"/>
+<path d="M1352 465H1468" fill="none" stroke="#2f6f9f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" opacity="1"/>
+<path d="M1688 470H1790" fill="none" stroke="#2f6f9f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" opacity="1"/>
+<path d="M1790 500V684H684V582" fill="none" stroke="#2f6f9f" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)" opacity="0.58"/>
+
+<path d="M370 900H440" fill="none" stroke="#b87821" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 9" marker-end="url(#arrow-amber)" opacity="1"/>
+<path d="M690 900H760" fill="none" stroke="#b87821" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 9" marker-end="url(#arrow-amber)" opacity="1"/>
+<path d="M1040 900C1125 900 1038 696 1038 588" fill="none" stroke="#b87821" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 9" marker-end="url(#arrow-amber)" opacity="1"/>
+
+<g>
+<rect x="80" y="340" width="180" height="220" rx="26" fill="#dceaf3" stroke="#2f6f9f" stroke-width="2.5" filter="url(#inference-shadow)"/>
+<text x="170" y="404" fill="#2f6f9f" font-size="24" font-weight="840" text-anchor="middle" letter-spacing="1" opacity="1">REQUEST</text>
+<text x="170" y="448" fill="#20252b" font-size="20" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">text prompt</text>
+<text x="170" y="526" fill="#747a76" font-size="17" font-weight="570" text-anchor="middle" letter-spacing="0" opacity="1">client → rack</text>
+</g>
+<g>
+<rect x="300" y="340" width="210" height="220" rx="26" fill="#dceaf3" stroke="#2f6f9f" stroke-width="2.5" filter="url(#inference-shadow)"/>
+<text x="405" y="404" fill="#2f6f9f" font-size="24" font-weight="840" text-anchor="middle" letter-spacing="1" opacity="1">NIC / DPU</text>
+<text x="405" y="448" fill="#20252b" font-size="20" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">network ingress</text>
+<text x="405" y="526" fill="#747a76" font-size="17" font-weight="570" text-anchor="middle" letter-spacing="0" opacity="1">BlueField / ConnectX</text>
+</g>
+<g>
+<rect x="550" y="320" width="270" height="260" rx="26" fill="#dceaf3" stroke="#2f6f9f" stroke-width="2.5" filter="url(#inference-shadow)"/>
+<text x="685" y="384" fill="#2f6f9f" font-size="24" font-weight="840" text-anchor="middle" letter-spacing="1" opacity="1">GRACE CPU</text>
+<text x="685" y="428" fill="#20252b" font-size="20" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">tokenize · queue · batch</text>
+<text x="685" y="546" fill="#747a76" font-size="17" font-weight="570" text-anchor="middle" letter-spacing="0" opacity="1">LPDDR5X host memory</text>
+</g>
+<text x="878" y="408" fill="#2f6f9f" font-size="15" font-weight="820" text-anchor="middle" letter-spacing="1.2" opacity="1">NVLINK</text>
+<text x="878" y="429" fill="#2f6f9f" font-size="15" font-weight="820" text-anchor="middle" letter-spacing="1.2" opacity="1">C2C</text>
+
+<rect x="938" y="350" width="202" height="238" rx="20" fill="#e7e0f0" stroke="#705a96" stroke-width="2.5"/>
+<text x="1039" y="399" fill="#705a96" font-size="29" font-weight="860" text-anchor="middle" letter-spacing="0" opacity="1">HBM3E</text>
+<text x="1039" y="446" fill="#20252b" font-size="19" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">model weights</text>
+<text x="1039" y="480" fill="#20252b" font-size="19" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">KV cache</text>
+<text x="1039" y="514" fill="#20252b" font-size="19" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">activations</text>
+<text x="1039" y="556" fill="#747a76" font-size="15" font-weight="560" text-anchor="middle" letter-spacing="0" opacity="1">resident GPU memory</text>
+
+<rect x="1182" y="385" width="170" height="160" rx="18" fill="#f1dadd" stroke="#b24956" stroke-width="2.5"/>
+<text x="1267" y="445" fill="#b24956" font-size="22" font-weight="840" text-anchor="middle" letter-spacing="0" opacity="1">SHARED L2</text>
+<text x="1267" y="485" fill="#747a76" font-size="17" font-weight="600" text-anchor="middle" letter-spacing="0" opacity="1">all SMs</text>
+
+<rect x="1468" y="420" width="220" height="172" rx="16" fill="#fffaf0" stroke="#b87821" stroke-width="2.5"/>
+<text x="1578" y="451" fill="#b87821" font-size="23" font-weight="860" text-anchor="middle" letter-spacing="1.1" opacity="1">SM</text>
+<text x="1578" y="471" fill="#747a76" font-size="13" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">streaming multiprocessor</text>
+<rect x="1492" y="480" width="172" height="28" rx="8" fill="#f1e1c3"/>
+<text x="1578" y="500" fill="#20252b" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1">L1 · shared · TMEM</text>
+<rect x="1500" y="510" width="34" height="34" rx="6" fill="#f1e1c3" stroke="#b87821" stroke-width="2.5"/>
+<rect x="1547" y="510" width="34" height="34" rx="6" fill="#f1e1c3" stroke="#b87821" stroke-width="2.5"/>
+<rect x="1594" y="510" width="34" height="34" rx="6" fill="#f1e1c3" stroke="#b87821" stroke-width="2.5"/>
+<rect x="1641" y="510" width="34" height="34" rx="6" fill="#f1e1c3" stroke="#b87821" stroke-width="2.5"/>
+<text x="1578" y="568" fill="#b87821" font-size="14" font-weight="840" text-anchor="middle" letter-spacing="0.8" opacity="1">4 TENSOR CORES</text>
+
+<text x="1774" y="405" fill="#2f6f9f" font-size="17" font-weight="840" text-anchor="middle" letter-spacing="1.2" opacity="1">LOGITS</text>
+<text x="1774" y="430" fill="#747a76" font-size="17" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">next token</text>
+<text x="1260" y="716" fill="#2f6f9f" font-size="18" font-weight="700" text-anchor="middle" letter-spacing="0" opacity="1">sampled token returns to CPU → network → client</text>
+<text x="1575" y="650" fill="#747a76" font-size="17" font-weight="620" text-anchor="middle" letter-spacing="0" opacity="1">GPCs and TPCs organize SMs; they are not cache stages.</text>
+
+<text x="84" y="800" fill="#b87821" font-size="19" font-weight="840" text-anchor="start" letter-spacing="2.2" opacity="1">MODEL LOAD · OCCASIONAL</text>
+<g>
+<rect x="90" y="832" width="280" height="136" rx="26" fill="#f1e1c3" stroke="#b87821" stroke-width="2.5" filter="url(#inference-shadow)"/>
+<text x="230" y="896" fill="#b87821" font-size="24" font-weight="840" text-anchor="middle" letter-spacing="1" opacity="1">MODEL REGISTRY</text>
+<text x="230" y="940" fill="#20252b" font-size="20" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">remote checkpoint</text>
+
+</g>
+<g>
+<rect x="440" y="832" width="250" height="136" rx="26" fill="#f1e1c3" stroke="#b87821" stroke-width="2.5" filter="url(#inference-shadow)"/>
+<text x="565" y="896" fill="#b87821" font-size="24" font-weight="840" text-anchor="middle" letter-spacing="1" opacity="1">LOCAL NVMe SSD</text>
+<text x="565" y="940" fill="#20252b" font-size="20" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">optional cache</text>
+
+</g>
+<g>
+<rect x="760" y="832" width="280" height="136" rx="26" fill="#f1e1c3" stroke="#b87821" stroke-width="2.5" filter="url(#inference-shadow)"/>
+<text x="900" y="896" fill="#b87821" font-size="24" font-weight="840" text-anchor="middle" letter-spacing="1" opacity="1">GRACE MEMORY</text>
+<text x="900" y="940" fill="#20252b" font-size="20" font-weight="650" text-anchor="middle" letter-spacing="0" opacity="1">ordinary staging path</text>
+
+</g>
+<text x="1190" y="874" fill="#b87821" font-size="31" font-weight="820" text-anchor="start" letter-spacing="0" opacity="1">SSD is not traversed per request.</text>
+<text x="1190" y="918" fill="#747a76" font-size="20" font-weight="620" text-anchor="start" letter-spacing="0" opacity="1">Weights stay resident in HBM while the service runs.</text>
+
+<path d="M84 1000H1836" stroke="#cec6b9" stroke-width="2"/>
+<text x="960" y="1040" fill="#20252b" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="1.1" opacity="1">ONE FORWARD PASS → LOGITS · PREFILL ONCE · ONE DECODE PASS PER GENERATED TOKEN</text>
+</svg>

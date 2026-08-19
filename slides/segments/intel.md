@@ -1,5 +1,6 @@
 ---
-layout: section
+layout: default
+class: map-only-focus
 ---
 
 <!-- SEGMENT
@@ -19,9 +20,9 @@ sources: research/intel.md
 
 # Intel lost the process lead
 
-<div class="text-xl opacity-70 mt-2">10nm delays, missed markets, and the 18A recovery attempt</div>
-
-<img src="/diagrams/rendered/map-manufacture.svg" class="h-44 mx-auto mt-8 opacity-80" alt="master map — manufacturing region lit" />
+<div class="map-only-focus__map">
+  <img src="/diagrams/rendered/map-manufacture.svg" alt="Industry map with Intel and the manufacturing stage highlighted" />
+</div>
 
 <!--
 - Intel once led both processor design and leading-edge manufacturing.
@@ -53,7 +54,7 @@ Intel reached a $500B market cap in August 2000 and did not surpass it for 26 ye
 
 ---
 
-# 10nm delays cost Intel the process lead
+# A 2.7× density bet without EUV broke Intel's cadence
 
 <div class="grid grid-cols-3 gap-8 mt-10 text-center">
 <div><div class="text-6xl font-bold">2.7×</div><div class="opacity-70 mt-2">targeted density increase<br><span class="text-sm opacity-60">typical per node: 1.5–2×</span></div></div>
@@ -79,10 +80,8 @@ EUV uses shorter-wavelength light to reduce multipatterning; without it, Intel s
 
 ---
 class: visual-sequence paper-visual
-title: "Intel's missed shifts"
+title: "Demand moved beyond x86"
 ---
-
-<div class="visual-sequence__kicker">INTEL'S MISSED SHIFTS</div>
 
 <div class="visual-sequence__frame">
   <img src="/diagrams/rendered/slide-066-intel-missed-shifts.svg" alt="Mobile, Arm processors, and AI accelerators redirecting demand away from Intel" />
@@ -100,13 +99,11 @@ title: "Intel's missed shifts"
 
 # 2024 was Intel's first annual loss since 1986
 
-<div class="grid grid-cols-3 gap-x-8 gap-y-10 mt-10 text-center">
-<div><div class="text-5xl font-bold">−$18.8B</div><div class="text-sm opacity-60 mt-2">2024 net loss, the first annual loss since <b>1986</b></div></div>
+<div class="grid grid-cols-2 gap-x-10 gap-y-12 mt-10 text-center">
+<div><div class="text-5xl font-bold">−$18.8B</div><div class="text-sm opacity-60 mt-2">2024 net loss</div></div>
 <div><div class="text-5xl font-bold">−26%</div><div class="text-sm opacity-60 mt-2">one-day share decline in Aug 2024; dividend suspended</div></div>
 <div><div class="text-5xl font-bold">15,000</div><div class="text-sm opacity-60 mt-2">layoffs announced in August 2024</div></div>
-<div><div class="text-5xl font-bold">4</div><div class="text-sm opacity-60 mt-2">CEOs since 2018</div></div>
 <div><div class="text-5xl font-bold">108,900 → ~75,000</div><div class="text-sm opacity-60 mt-2">employees, end-2024 → end-2025 plan</div></div>
-<div><div class="text-5xl font-bold">1986</div><div class="text-sm opacity-60 mt-2">Intel's previous annual loss</div></div>
 </div>
 
 <!--
@@ -148,14 +145,9 @@ class: visual-sequence paper-visual
 title: "Intel 14A"
 ---
 
-<div class="visual-sequence__kicker">INTEL 14A</div>
-
 <div class="visual-sequence__frame">
   <img src="/diagrams/rendered/slide-069-intel-investment-lifeline.svg" alt="The US government, SoftBank, and Nvidia investing in Intel while no external 14A anchor customer is publicly named" />
 </div>
-
-<div class="visual-sequence__caption"><strong>Capital arrived.</strong><span>Intel committed to complete 14A development; expansion remains demand-gated.</span></div>
-<div class="visual-sequence__source">US government · $8.9B · SoftBank · $2B · Nvidia · $5B</div>
 
 <!--
 - The US government, SoftBank, and Nvidia bought a combined $15.9 billion of Intel equity.
@@ -168,22 +160,16 @@ title: "Intel 14A"
 # Intel in 2026
 
 <div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
-  <div class="grid grid-cols-5 gap-4 text-center">
+  <div class="grid grid-cols-4 gap-4 text-center">
     <div><div class="text-3xl font-bold">$16.1B</div><div class="text-sm opacity-60">revenue Q2'26</div></div>
     <div><div class="text-3xl font-bold">41.8%</div><div class="text-sm opacity-60">non-GAAP gross margin Q2'26</div></div>
     <div><div class="text-3xl font-bold">~70%</div><div class="text-sm opacity-60">PC CPU share</div></div>
     <div><div class="text-xl font-bold leading-tight mt-2">only US-owned leading-edge logic manufacturer</div></div>
-    <div><div class="text-xl font-bold leading-tight mt-2">capability</div><div class="text-sm opacity-60">must scale</div></div>
   </div>
   <div class="text-xs opacity-40 text-right mt-2">as of Q2 2026</div>
 </div>
 
-<div class="text-center text-lg mt-10 opacity-80">
-TSMC, Samsung, and Intel are the only companies currently producing leading-edge logic at commercial scale.
-</div>
-
 <!--
 - Intel remains the sole US-owned company manufacturing leading-edge logic at home; it reported $16.1 billion of Q2 2026 revenue and about 70 percent of the PC CPU market.
-- TSMC, Samsung, and Intel are the three companies producing leading-edge logic at commercial scale.
 - Intel's position now depends on 18A yield and foundry demand.
 -->

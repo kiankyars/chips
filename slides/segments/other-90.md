@@ -1,5 +1,5 @@
 ---
-layout: section
+layout: default
 ---
 
 <!-- SEGMENT
@@ -7,36 +7,18 @@ id: other-90
 act: INTERLUDE — The Other 90%
 tier: E            # ensemble sweep · 🔧 pressure valve (cut here first if over runtime)
 angle: "The leading edge is the smallest part of the story: most chips by volume are cheap, decades-old, and invisible — and it was a thirty-cent one, not a $40,000 GPU, that halted the world's car factories."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~5 min
+runtime: ~3 min
 status: draft
 seeds: []
 pays_off: []
 stamps: []         # deliberately none — the honesty beat is that this layer has NO single-company chokepoint
-diagrams: [map-manufacture, analog-embedded-objects, auto-chip-shortage, slide-111-analog-300mm-economics-v2]
+diagrams: [analog-embedded-objects, auto-chip-shortage, slide-111-analog-300mm-economics-v2]
 sources: research/idm-analog.md
 -->
 
-
-# Most chips use mature process nodes
-
-<div class="text-xl opacity-70 mt-2">Analog chips, microcontrollers, and power semiconductors</div>
-
-![](/diagrams/rendered/map-manufacture.svg)
-
-<!--
-- Most semiconductors do not use the newest process node.
-- Analog chips, microcontrollers, and power devices often favor mature processes because those nodes offer proven reliability, lower cost, and the stable high-voltage handling their applications require.
--->
-
----
-
 # Analog and microcontrollers use mature nodes
 
-<div class="grid grid-cols-3 gap-8 mt-10 text-center">
-<div>
-<div class="text-6xl font-bold">$791.7B</div>
-<div class="opacity-70 mt-2">whole chip market, 2025 <span class="opacity-50">(+25.6%)</span></div>
-</div>
+<div class="grid grid-cols-2 gap-12 mt-12 text-center">
 <div>
 <div class="text-6xl font-bold">~$90B</div>
 <div class="opacity-70 mt-2">analog <span class="opacity-50">(+7%)</span></div>
@@ -48,12 +30,11 @@ sources: research/idm-analog.md
 </div>
 
 <div class="text-base opacity-70 mt-12 text-center leading-relaxed">
-These products use nodes introduced <b>15–40 years ago</b> and do not require EUV or leading-edge fab equipment.<br>
-Logic and memory were 2025's fastest-growing product categories; WSTS's autumn estimate put analog growth at 7%.
+These products use nodes introduced <b>15–40 years ago</b> and do not require EUV or leading-edge fab equipment.
 </div>
 
 <!--
-- The global chip market reached $791.7 billion in 2025, while analog and microcontrollers accounted for about $90 billion and $30 billion.
+- Analog and microcontrollers accounted for about $90 billion and $30 billion of 2025 semiconductor sales.
 - Many of these products use 15- to 40-year-old process nodes and need neither EUV nor the newest fab equipment.
 -->
 
@@ -114,19 +95,4 @@ title: "The chips inside everything else"
 - Cars, factories, appliances, and medical equipment combine many specialized chips rather than relying on one processor.
 - Analog chips measure real-world signals, power semiconductors control electricity, and microcontrollers run local tasks.
 - TI, Infineon, STMicro, NXP, Renesas, and Analog Devices supply much of this market.
--->
-
----
-
-# A processor still needs memory
-
-<div class="text-3xl mt-16 leading-relaxed">
-The fabricated GPU die needs nearby memory<br>
-to keep its cores supplied with data.
-</div>
-
-<!--
-- A processor performs work when memory delivers instructions and data.
-- After fabrication, an accelerator still needs nearby high-bandwidth memory to keep thousands of compute units active.
-- That requirement moves the supply chain from mature devices and logic into memory production.
 -->

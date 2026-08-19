@@ -74,7 +74,7 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   **Nvidia ~19%** of revenue (~US$23.4B — overtook Apple for the first time in
   over a decade), **Apple ~17%** (NT$645B). [9][10] Next tier: MediaTek,
   Qualcomm, Broadcom, AMD roughly ~5–9% each. <!-- VERIFY: next-tier splits are pre-2025 analyst projections (MediaTek ~9%, Qualcomm ~8%, AMD ~7%); TSMC only discloses anonymized >10% customers. -->
-- Replacement difficulty: **ecosystem must be rebuilt** — the task requires
+- Replacement difficulty: the task requires recreating an interdependent stack of
   Intel-scale fabs, ASML allocation, the PDK/IP ecosystem, and accumulated
   yield learning. A single countdown would imply more precision than the evidence supports.
 
@@ -141,6 +141,22 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   Intel's High-NA bet). [14][15]
 - Cost physics: capex to build 1k wpm of N2 is "substantially higher" than N3,
   and A14 higher still (CFO, Jan 2026). [2]
+
+### Feature timing versus production leadership
+- TSMC is not first to every transistor feature. Samsung began initial 3nm GAA
+  production in June 2022; Intel 18A combined RibbonFET GAA with PowerVia
+  backside power and entered production in 2025. [42][43]
+- TSMC staged the same two architectural transitions: N3 retained FinFET, N2
+  introduced GAA in Q4 2025, and A16 is planned to add backside power in H2
+  2026. That is a sequencing choice, not evidence that competitors tested
+  proprietary technology for TSMC. [2]
+- The commercially relevant unit is a production platform: process recipe,
+  qualified PDK and IP, reliability, yield learning, and capacity. TSMC says
+  each new technology passes a rigorous qualification procedure and defined
+  release criteria before transfer into manufacturing. [44]
+- Avoid a universal "18 months ahead" claim. Leadership clocks differ by
+  feature, product qualification, yield, merchant-customer volume, and design
+  ecosystem; calendar-first on one feature is not the same as platform leadership.
 
 ## Packaging (the second product line — and the AI bottleneck)
 - **Why packaging gates AI supply:** Nvidia and AMD AI accelerators combine logic
@@ -294,3 +310,6 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
 39. TSMC PR, "ESMC breaks ground on Dresden fab" (JV structure: TSMC 70%, Bosch/Infineon/NXP 10% each) — https://pr.tsmc.com/english/news/3169
 40. TSMC, "CoWoS" (CoWoS-S, CoWoS-R, and CoWoS-L interconnect structures) — https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm
 41. TSMC Q2 2026 earnings release (16 Jul 2026; revenue, margins, node mix, and Q3 guidance) — https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/a80d7933be643644081584087731f73b22ea5a2c/2Q26%20EarningsRelease.pdf
+42. Samsung Global Newsroom, "Samsung Begins Chip Production Using 3nm Process Technology With GAA Architecture" (30 Jun 2022) — https://news.samsung.com/global/samsung-begins-chip-production-using-3nm-process-technology-with-gaa-architecture
+43. Intel, "Intel 18A" (RibbonFET GAA, industry-first PowerVia backside power, and high-volume production status) — https://www.intel.com/content/www/us/en/foundry/process/18a.html
+44. TSMC, "Quality Policy" (qualification, release criteria, reliability control, and manufacturing transfer) — https://www.tsmc.com/english/aboutTSMC/quality_and_reliability

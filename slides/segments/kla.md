@@ -10,30 +10,26 @@ angle: "KLA's core process-control franchise measures rather than depositing, et
 runtime: ~3 min
 status: draft
 seeds: []                       # plants nothing new — closes out the fab-tour equipment leg
-pays_off: [yield]               # stage 3 of the yield chain: foundations → life-of-a-wafer → HERE → intel → chiplets in packaging (do NOT close it — intel & packaging still cash it)
+pays_off: [yield]               # stage 3 of the yield chain: foundations → life-of-a-wafer → HERE → intel → packaging callback
 stamps: []                      # NO new stamp — board stays at board-5 (ASML + Zeiss)
-diagrams: [map-equipment, flow-measure, process-drift-v2, defect-scale-v2]
+diagrams: [process-drift, defect-scale]
 sources: research/kla.md
 -->
 
 
-# Inspection and metrology
+# Measure between critical steps—not only at final test
 
-<div class="grid grid-cols-[3fr_1fr] gap-6 mt-6 items-center">
-<div>
-
-![the loop ends on the measure step](/diagrams/rendered/flow-measure.svg)
-
-</div>
-<div class="opacity-70">
-
-![industry map — equipment region lit](/diagrams/rendered/map-equipment.svg)
-
-</div>
+<div class="grid grid-cols-[1fr_auto_1fr_auto_1.15fr] gap-5 mt-11 items-center text-center">
+<div class="border-t-4 border-amber-400 pt-5"><div class="text-2xl font-bold">PROCESS STEP</div><div class="opacity-60 mt-2">deposit · expose · etch</div></div>
+<div class="text-5xl opacity-35">→</div>
+<div class="border-t-4 border-blue-400 pt-5"><div class="text-2xl font-bold">INSPECT + MEASURE</div><div class="opacity-60 mt-2">defects · dimensions · overlay</div></div>
+<div class="text-5xl opacity-35">→</div>
+<div class="border-2 border-slate-500 rounded-full py-7"><div class="text-2xl font-bold">WITHIN SPEC?</div></div>
 </div>
 
-<div class="text-lg opacity-80 mt-4 text-center">
-KLA's inspection and metrology tools find defects and verify dimensions after process steps.
+<div class="grid grid-cols-2 gap-14 mt-10">
+<div class="text-center"><div class="text-emerald-300 tracking-[0.18em] text-sm">YES</div><div class="text-3xl font-bold mt-2">NEXT STEP →</div></div>
+<div class="text-center"><div class="text-rose-300 tracking-[0.18em] text-sm">NO</div><div class="text-2xl font-bold mt-2">HOLD LOT → ADJUST TOOL → REMEASURE ↺</div></div>
 </div>
 
 <!--
@@ -47,14 +43,9 @@ class: visual-sequence paper-visual
 title: "Process control"
 ---
 
-<div class="visual-sequence__kicker">PROCESS CONTROL</div>
-
 <div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/process-drift-v2.png" alt="Without inspection, drift reaches scrap at final test; an early inspection confines the loss to one lot" />
+  <img src="/diagrams/rendered/process-drift.svg" alt="Without inspection, drift reaches scrap at final test; an inspection at the next step confines the loss to one lot" />
 </div>
-
-<div class="visual-sequence__caption"><strong>Measure at step 401.</strong><span>Do not discover the drift at final test.</span></div>
-<div class="visual-sequence__source">Early detection limits the work-in-process exposed after an excursion</div>
 
 <!--
 - In this illustration, a process drifts at step 400.
@@ -67,14 +58,9 @@ class: visual-sequence paper-visual
 title: "Inspection scale"
 ---
 
-<div class="visual-sequence__kicker">INSPECTION SCALE</div>
-
 <div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/defect-scale-v2.png" alt="A nested zoom from a 300 millimeter wafer to one die, metal lines, and a 20 nanometer defect" />
+  <img src="/diagrams/rendered/defect-scale.svg" alt="A nested zoom from a 300 millimeter wafer to one die, metal lines, and a 20 nanometer defect" />
 </div>
-
-<div class="visual-sequence__caption"><strong>20 nanometers against 300 millimeters.</strong><span>A 15-million-fold scale difference.</span></div>
-<div class="visual-sequence__source">Optical inspection for coverage · targeted e-beam review for classification</div>
 
 <!--
 - A 20-nanometre defect against a 300-millimetre wafer is a 15-million-fold scale difference; at golf-ball size, the wafer would span about 600 kilometres.
@@ -84,22 +70,19 @@ title: "Inspection scale"
 
 ---
 
-# KLA leads process control
+# KLA's process-control lead is unusually wide
 
-<div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
-  <div class="grid grid-cols-5 gap-4 text-center">
-    <div><div class="text-3xl font-bold">$13.58B</div><div class="text-sm opacity-60">revenue FY26</div></div>
-    <div><div class="text-3xl font-bold">61.3%</div><div class="text-sm opacity-60">FY26 GAAP gross margin</div></div>
-    <div><div class="text-3xl font-bold">56–58%</div><div class="text-sm opacity-60">market share</div></div>
-    <div><div class="text-lg font-bold leading-tight mt-1">~7× the nearest rival in process control</div></div>
-    <div><div class="text-xl font-bold leading-tight mt-2">capability</div><div class="text-sm opacity-60">must scale</div></div>
-  </div>
-  <div class="text-xs opacity-40 text-right mt-2">FY2026 ended June 30, 2026</div>
+<div class="grid grid-cols-[1.25fr_1fr] gap-12 mt-9 items-center">
+<div class="text-center">
+  <div class="text-8xl font-bold">56–58%</div>
+  <div class="text-xl opacity-65 mt-2">process-control market share</div>
+  <div class="text-3xl font-bold mt-8">~7× <span class="text-lg font-normal opacity-60">the nearest rival</span></div>
 </div>
-
-<div class="text-center text-xl mt-8 leading-relaxed">
-KLA's FY2026 GAAP gross margin was <b>61.3%</b>.<br>
-<span class="opacity-60 text-lg">Process-control software and service revenue reinforce the hardware franchise.</span>
+<div class="border-l border-slate-600 pl-10 space-y-7">
+  <div><div class="text-4xl font-bold">$13.58B</div><div class="opacity-60">FY2026 revenue</div></div>
+  <div><div class="text-4xl font-bold">61.3%</div><div class="opacity-60">FY2026 GAAP gross margin</div></div>
+  <div class="text-lg opacity-75">Layer-specific recipes and defect baselines raise switching costs.</div>
+</div>
 </div>
 
 <!--

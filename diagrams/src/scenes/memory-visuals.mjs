@@ -257,23 +257,23 @@ function replacementHorizonScene() {
     {
       x: 90,
       color: C.green,
-      title: 'CAPACITY CAN SHIFT',
-      sub: 'within an existing qualified ecosystem',
+      title: 'SHIFT QUALIFIED CAPACITY',
+      sub: 'among already qualified sources',
       items: ['OSAT assembly + test', 'allocation among qualified sources'],
     },
     {
       x: 700,
       color: C.violet,
-      title: 'CAPABILITY MUST SCALE',
+      title: 'SCALE MANUFACTURING CAPABILITY',
       sub: 'qualification, yield, and manufacturing depth',
       items: ['HBM manufacturing at scale', 'advanced materials', 'process-control tools'],
     },
     {
       x: 1310,
       color: C.amber,
-      title: 'ECOSYSTEM MUST BE REBUILT',
-      sub: 'interdependent tools, IP, suppliers, and know-how',
-      items: ['EDA + CUDA ecosystems', 'leading-edge logic + CoWoS', 'EUV scanners + optics'],
+      title: 'RECREATE A COMPATIBLE STACK',
+      sub: 'tools, IP, suppliers, and know-how must align',
+      items: ['EDA + CUDA', 'leading-edge logic + CoWoS', 'EUV scanners + optics'],
     },
   ]
 
@@ -291,9 +291,9 @@ ${itemSvg}`
 
   return svgDoc(
     'Relative replacement difficulty across semiconductor capabilities',
-    'Three categories distinguish shifting existing qualified capacity, scaling a competitive manufacturing capability, and rebuilding a deeply interdependent ecosystem. The ordering is qualitative rather than a forecast in years.',
+    'Three categories distinguish shifting existing qualified capacity, scaling a competitive manufacturing capability, and recreating an interdependent technology stack. The ordering is qualitative rather than a forecast in years.',
     `${text(960, 82, 'RELATIVE REPLACEMENT DIFFICULTY', { size: 26, fill: C.muted, weight: 800, anchor: 'middle', tracking: 2.4 })}
-${text(960, 132, 'Capacity substitution is not the same task as recreating a capability or ecosystem', { size: 25, fill: C.ink, weight: 650, anchor: 'middle' })}
+${text(960, 132, 'Each step requires more capital, qualification, and accumulated know-how', { size: 25, fill: C.ink, weight: 650, anchor: 'middle' })}
 ${columnSvg}
 <path d="M620 520H675" stroke="${C.line}" stroke-width="5" marker-end="url(#arrow-ink)"/>
 <path d="M1230 520H1285" stroke="${C.line}" stroke-width="5" marker-end="url(#arrow-ink)"/>

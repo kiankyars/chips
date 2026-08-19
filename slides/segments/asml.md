@@ -14,18 +14,18 @@ status: draft
 seeds: [multi-patterning, euv-export-license]
 pays_off: []
 stamps: [asml, zeiss]
-diagrams: [asml-scanner-scale, asml-reticle-field-wafer, asml-euv-path, asml-supplier-modules, board-5]
+diagrams: [asml-scanner-scale, asml-reticle-field-wafer, asml-supplier-modules]
 sources: research/asml.md
 -->
 
 
-<div class="visual-sequence__kicker">EUV · physical scale</div>
+<div class="visual-sequence__kicker">HIGH-NA EUV IS INDUSTRIAL-SCALE PRECISION EQUIPMENT</div>
 
 <div class="visual-sequence__frame">
   <img src="/diagrams/rendered/asml-scanner-scale.svg" alt="A High-NA EUV scanner drawn beside a person, with its dimensions marked" />
 </div>
 
-<div class="visual-sequence__caption">High-NA EXE platform · more than 150 tonnes at Intel's first installation</div>
+<div class="visual-sequence__caption">Intel's first EXE installation arrived in 43 freight containers.</div>
 <div class="visual-sequence__source">ASML · Intel High-NA EUV press kit</div>
 
 <!--
@@ -39,14 +39,14 @@ transition: fade
 title: "Reticle → field → wafer"
 ---
 
-<div class="visual-sequence__kicker">Reticle → field → wafer</div>
+<div class="visual-sequence__kicker">THE OPTICS SHRINK EACH RETICLE IMAGE 4:1, THEN STEP IT ACROSS THE WAFER</div>
 
 <div class="visual-sequence__frame">
   <img src="/diagrams/rendered/asml-reticle-field-wafer.svg" alt="A reticle pattern reduced four times to one exposure field that is stepped across a 300 millimetre wafer" />
 </div>
 
-<div class="visual-sequence__caption">The reticle image shrinks 4× to one 26 × 33 mm field, repeated across a 300 mm wafer.</div>
-<div class="visual-sequence__source">ASML · TWINSCAN NXE:3400C and NXE:3600D</div>
+<div class="visual-sequence__caption">The reticle pattern and wafer are drawn at the same physical scale.</div>
+<div class="visual-sequence__source">ASML · NXE:3400C / 3600D</div>
 
 <!--
 - A reticle holds the pattern for one exposure field, and projection optics shrink the image to one quarter of its linear size.
@@ -54,39 +54,40 @@ title: "Reticle → field → wafer"
 -->
 
 ---
-class: visual-sequence
+class: euv-optics-photo
 transition: fade
-title: "One causal light path"
+title: "EUV optical column"
 ---
 
-<div class="visual-sequence__kicker">One causal light path</div>
+<img class="euv-optics-photo__image" src="/assets/asml-nxe-optical-column.jpg" alt="Official ASML illustration of EUV light reflecting through the mirror train inside an NXE optical column" />
 
-<div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/asml-euv-path.svg" alt="A laser strikes tin plasma and the resulting EUV light reflects from mirrors through a reticle to a wafer" />
+<div class="euv-optics-photo__copy">
+  <div class="euv-optics-photo__kicker">INSIDE THE EUV OPTICAL COLUMN</div>
+  <h1>EUV travels through vacuum and mirrors</h1>
+  <p>Air and glass absorb 13.5 nm light.<br><strong>ZEISS precision:</strong> Germany-sized mirror → ≈0.1 mm maximum unevenness.</p>
 </div>
 
-<div class="visual-sequence__caption">Tin plasma emits 13.5 nm light. Mirrors carry the pattern to the wafer.</div>
-<div class="visual-sequence__source">ASML · ZEISS SMT · EUV lithography principles</div>
+<div class="euv-optics-photo__source">ILLUSTRATION · ©ASML · PRECISION ANALOGY · ZEISS SMT</div>
 
 <!--
-- TRUMPF's carbon-dioxide laser flattens a molten tin droplet and then vaporizes it, creating plasma that emits 13.5 nanometre light.
-- Air and glass absorb EUV, so the scanner keeps the light path in a vacuum and uses mirrors.
-- Those mirrors shape the light at the reticle and project the reduced pattern onto the wafer.
+- ASML generates 13.5 nanometre EUV from laser-produced tin plasma before sending it into this optical column.
+- Air and transmissive glass absorb EUV, so the machine encloses the path in high vacuum and uses multilayer mirrors.
+- The rendered beam is illustrative; the mirrors steer and reduce the reflected reticle pattern onto the wafer.
+- ZEISS says a Germany-sized EUV mirror would have no surface unevenness taller than about 0.1 millimetres.
 -->
 
 ---
 class: visual-sequence
 transition: fade
-title: "The machine is an integrated supply chain"
+title: "One calibrated scanner"
 ---
 
-<div class="visual-sequence__kicker">The machine is an integrated supply chain</div>
+<div class="visual-sequence__kicker">ASML INTEGRATES SPECIALIST MODULES INTO ONE CALIBRATED SCANNER</div>
 
 <div class="visual-sequence__frame">
   <img src="/diagrams/rendered/asml-supplier-modules.svg" alt="Critical EUV modules supplied by TRUMPF, Cymer, ZEISS and ASML inside one integrated system" />
 </div>
 
-<div class="visual-sequence__caption">ASML integrates TRUMPF's laser, Cymer's source and ZEISS optics into one scanner.</div>
 <div class="visual-sequence__source">ASML · Making EUV: from lab to fab</div>
 
 <!--
@@ -96,13 +97,17 @@ title: "The machine is an integrated supply chain"
 
 ---
 
-# ASML and ZEISS form a nested dependency
+# One EUV monopoly contains another
 
-![chokepoint board — 5 of 7](/diagrams/rendered/board-5.svg)
-
-<div class="text-sm opacity-60 mt-6 text-center">
-ASML is the sole EUV scanner supplier; ZEISS is ASML's sole supplier of critical lithography optics. Both enter the dependency map.
+<div class="grid grid-cols-[1fr_auto_1fr_auto_1fr] gap-5 mt-14 items-center text-center">
+<div><div class="text-3xl font-bold">LEADING-EDGE FAB</div><div class="opacity-55 mt-2">needs EUV capacity</div></div>
+<div><div class="text-sm opacity-55 mb-2">DEPENDS ON</div><div class="text-5xl opacity-35">→</div></div>
+<div class="border-y-4 border-cyan-400 py-8"><div class="text-4xl font-bold">ASML</div><div class="opacity-65 mt-2">sole production EUV supplier</div></div>
+<div><div class="text-sm opacity-55 mb-2">DEPENDS ON</div><div class="text-5xl opacity-35">→</div></div>
+<div class="border-y-4 border-violet-400 py-8"><div class="text-4xl font-bold">ZEISS SMT</div><div class="opacity-65 mt-2">sole critical-optics supplier</div></div>
 </div>
+
+<div class="text-center text-sm tracking-[0.22em] opacity-60 mt-12">5 / 7 CONTROL POINTS MAPPED</div>
 
 <!--
 - ASML is the world's only production EUV scanner manufacturer, and its annual report identifies ZEISS as its sole supplier of critical lithography optics.
@@ -111,16 +116,14 @@ ASML is the sole EUV scanner supplier; ZEISS is ASML's sole supplier of critical
 
 ---
 
-# ASML — Q2 2026 snapshot
+# ASML expects €43–45B of 2026 sales while expanding EUV capacity
 
-<div class="grid grid-cols-2 gap-x-12 gap-y-6 mt-8 text-lg">
+<div class="grid grid-cols-2 gap-x-16 gap-y-10 mt-10 text-center">
 
-<div><b>€9.3B</b> — Q2 total net sales</div>
-<div><b>€2.9B</b> — Q2 net income</div>
-<div><b>54.0%</b> — Q2 gross margin</div>
-<div><b>86</b> — new lithography systems sold <span class="opacity-50">all types</span></div>
-<div><b>€43–45B</b> — FY2026 sales outlook</div>
-<div><b>≈65</b> — planned 2026 low-NA EUV capacity</div>
+<div><div class="text-5xl font-bold">€9.3B</div><div class="opacity-60 mt-2">Q2 sales</div></div>
+<div><div class="text-5xl font-bold">54.0%</div><div class="opacity-60 mt-2">Q2 gross margin</div></div>
+<div><div class="text-5xl font-bold">€43–45B</div><div class="opacity-60 mt-2">FY2026 outlook</div></div>
+<div><div class="text-5xl font-bold">≈65</div><div class="opacity-60 mt-2">planned low-NA EUV capacity</div></div>
 
 </div>
 
@@ -133,49 +136,43 @@ ASML is the sole EUV scanner supplier; ZEISS is ASML's sole supplier of critical
 -->
 
 ---
-
-# High-NA EUV has entered production — on selected layers
-
-<div class="grid grid-cols-3 gap-6 mt-10 text-center">
-<div>
-<div class="text-6xl font-bold">0.55</div>
-<div class="opacity-70 mt-2">numerical aperture</div>
-</div>
-<div>
-<div class="text-6xl font-bold">8 nm</div>
-<div class="opacity-70 mt-2">EXE platform resolution</div>
-</div>
-<div>
-<div class="text-6xl font-bold">175</div>
-<div class="opacity-70 mt-2">wafers/hour · EXE:5200B</div>
-</div>
-</div>
-
-<div class="text-sm opacity-60 mt-10 text-center">
-Intel now ships a subset of Panther Lake made with High-NA on selected 18A layers.<br>
-<b>A production milestone—not an industry-wide switchover.</b>
-</div>
-
-<!--
-- High-NA raises numerical aperture from 0.33 to 0.55; ASML specifies 8-nanometre resolution and 175 wafers per hour for the EXE:5200B.
-- In July 2026, Intel said selected 18A layers were dual-qualified on High-NA at yields matched to its NXE process.
-- The scope matters: only a subset of Panther Lake and selected layers use High-NA. This is production evidence, not wholesale replacement of low-NA EUV.
--->
-
+class: na-explainer
+title: "High-NA resolution"
 ---
 
-# Export licenses gate where controlled ASML tools can ship
+# 0.55 NA lets the same EUV light resolve finer detail
 
-<div class="text-3xl mt-12 leading-relaxed">
-Dutch and US rules determine whether controlled ASML tools and services can ship to specific destinations and customers.
+<div class="na-explainer__definition">
+  <span>NUMERICAL APERTURE</span>
+  <strong>A unitless measure of the light angles the mirrors can collect and focus.</strong>
 </div>
 
-<div class="text-sm opacity-60 mt-10">
-Dutch rules require authorization for covered advanced equipment shipped outside the EU; US rules add entity- and fab-specific restrictions. This is targeted licensing, not a ban on every ASML sale.
+<div class="na-explainer__comparison">
+  <div class="na-explainer__system na-explainer__system--low">
+    <div class="na-explainer__value">0.33 <span>NA</span></div>
+    <div class="na-explainer__platform">NXE · CURRENT EUV</div>
+    <div class="na-explainer__resolution">≈13 nm <span>resolution</span></div>
+  </div>
+
+  <div class="na-explainer__relationship">
+    <span>SAME 13.5 nm LIGHT</span>
+    <strong>feature size ∝ 1 / NA</strong>
+    <span>NA INCREASES 1.67×</span>
+  </div>
+
+  <div class="na-explainer__system na-explainer__system--high">
+    <div class="na-explainer__value">0.55 <span>NA</span></div>
+    <div class="na-explainer__platform">EXE · HIGH-NA EUV</div>
+    <div class="na-explainer__resolution">≈8 nm <span>resolution</span></div>
+  </div>
 </div>
+
+<div class="na-explainer__pitch"><strong>8 nm half-pitch</strong> means an 8 nm line beside an 8 nm space: a 16 nm repeat.</div>
+<div class="na-explainer__scope">Production use remains selective: Intel has qualified specific 18A layers, not every layer.</div>
 
 <!--
-- ASML needs export licenses for EUV, specific DUV immersion systems, and other controlled products. Dutch authorities assess covered exports outside the EU case by case.
-- US rules add restrictions involving particular Chinese entities and advanced-node fabs. The policy lever is targeted licensing, not a blanket ban on every ASML product.
-- Because ASML has no production EUV competitor, a license decision can still determine access to the equipment needed for leading-edge production.
+- Numerical aperture is dimensionless: in vacuum, it is approximately the sine of the half-angle of light the mirrors collect and focus.
+- At the same 13.5-nanometre wavelength, increasing NA from 0.33 to 0.55 lowers comparable ideal feature size by about 40 percent.
+- Eight-nanometre half-pitch means an eight-nanometre line beside an eight-nanometre space, repeating every 16 nanometres.
+- Intel has qualified selected 18A layers, not every layer, on High-NA.
 -->

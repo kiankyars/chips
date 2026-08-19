@@ -8,40 +8,42 @@
   </filter>
   <marker id="arrow-cyan" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#67e8f9"/></marker>
   <marker id="arrow-amber" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#fbbf24"/></marker>
+  <marker id="arrow-rose" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#fb7185"/></marker>
 
 </defs>
 <rect width="1920" height="1080" fill="#05080e"/>
-<path d="M110 885H1780" stroke="#435168" stroke-width="3"/>
-<g><path d="M110 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M205 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M300 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M395 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M490 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M585 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M680 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M775 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M870 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M965 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M1060 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M1155 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M1250 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M1345 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M1440 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M1535 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M1630 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/><path d="M1725 885V925" stroke="#435168" stroke-width="2" opacity="0.42"/></g>
+<text x="104" y="126" fill="#9aa9bd" font-size="20" font-weight="760" text-anchor="start" letter-spacing="2.4">SIDE ELEVATION · SHARED SCALE</text>
+<path d="M96 730H1778" stroke="#435168" stroke-width="3"/>
 <g>
-  <rect x="350" y="540" width="1120" height="320" rx="18" fill="#101827" stroke="#435168" stroke-width="4"/>
-  <path d="M376 778H1446" stroke="#435168" stroke-width="3"/>
-  <rect x="382" y="576" width="218" height="188" rx="10" fill="#1a2740" stroke="#60a5fa" stroke-width="3"/>
-  <circle cx="492" cy="670" r="52" fill="none" stroke="#60a5fa" stroke-width="4"/>
-  <path d="M636 588H948V764H636Z" fill="#151f31" stroke="#435168" stroke-width="3"/>
-  <path d="M976 574H1204V764H976Z" fill="#151f31" stroke="#435168" stroke-width="3"/>
-  <rect x="1234" y="590" width="200" height="174" rx="9" fill="#17263a" stroke="#67e8f9" stroke-width="3"/>
-  <g fill="#435168">
-    <rect x="402" y="804" width="186" height="28" rx="4"/>
-    <rect x="632" y="804" width="304" height="28" rx="4"/>
-    <rect x="980" y="804" width="210" height="28" rx="4"/>
-    <rect x="1234" y="804" width="200" height="28" rx="4"/>
-  </g>
-  <g fill="#9aa9bd" opacity="0.62">
-    <circle cx="664" cy="624" r="7"/><circle cx="698" cy="624" r="7"/><circle cx="732" cy="624" r="7"/>
-    <path d="M1014 634H1166M1014 666H1166M1014 698H1166" stroke="#9aa9bd" stroke-width="5"/>
-  </g>
+  <path d="M320 350H1600L1630 380V710L1610 730H320L300 710V370Z" fill="#101827" stroke="#67e8f9" stroke-width="4"/>
+  <path d="M650 378V682M1192 378V682" stroke="#435168" stroke-width="3"/>
+  <text x="342" y="408" fill="#60a5fa" font-size="20" font-weight="760" text-anchor="start" letter-spacing="2">SOURCE</text>
+  <text x="692" y="408" fill="#c084fc" font-size="20" font-weight="760" text-anchor="start" letter-spacing="1.7">ILLUMINATION + PROJECTION OPTICS</text>
+  <text x="1234" y="408" fill="#34d399" font-size="20" font-weight="760" text-anchor="start" letter-spacing="1.7">RETICLE + WAFER STAGES</text>
+  <circle cx="474" cy="540" r="74" fill="#172136" stroke="#60a5fa" stroke-width="4"/>
+  <circle cx="474" cy="540" r="35" fill="none" stroke="#60a5fa" stroke-width="3" opacity="0.65"/>
+  <path d="M384 540H564" stroke="#60a5fa" stroke-width="3" opacity="0.44"/>
+  <path d="M730 564Q796 620 862 564M910 596Q976 540 1042 596" fill="none" stroke="#c084fc" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+  <path d="M796 598L976 562" stroke="#c084fc" stroke-width="3" opacity="0.38"/>
+  <rect x="1250" y="468" width="128" height="170" rx="8" fill="#172136" stroke="#34d399" stroke-width="3"/>
+  <rect x="1412" y="468" width="128" height="170" rx="8" fill="#172136" stroke="#34d399" stroke-width="3"/>
+  <path d="M1224 662H1570" stroke="#34d399" stroke-width="5" opacity="0.65"/>
+  <path d="M384 694H1550" stroke="#435168" stroke-width="3"/>
+  <text x="342" y="668" fill="#9aa9bd" font-size="21" font-weight="700" text-anchor="start" letter-spacing="1.8">EXE HIGH-NA EUV · INSTALLED SYSTEM ENVELOPE</text>
 </g>
-<g fill="none" stroke="#f8fafc" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.92">
-  <circle cx="224" cy="743" r="17" fill="#f8fafc" stroke="none"/>
-  <path d="M224 767V827M184 799L224 785L263 809M224 827L194 885M224 827L258 885"/>
+<g fill="#f8fafc" opacity="0.82">
+  <circle cx="190" cy="576.21875" r="12.46875"/>
+  <path d="M171.7125 601.9875Q190 592.0125 208.2875 601.9875L204.13125 665.1625H175.86875Z"/>
+  <path d="M176.7 608.6374999999999L158.4125 646.875L166.725 651.8625L190 615.2875L213.275 651.8625L221.5875 646.875L203.3 608.6374999999999Z"/>
+  <path d="M176.7 665.1625H189.16875L170.05 730H160.075Z"/>
+  <path d="M190.83125 665.1625H203.3L219.925 730H209.95Z"/>
 </g>
-<path d="M350 456V484M350 470H1470M1470 456V484" fill="none" stroke="#67e8f9" stroke-width="3"/>
-<text x="910" y="446" fill="#67e8f9" font-size="30" font-weight="720" text-anchor="middle" letter-spacing="0">14 m</text>
-<path d="M1518 540H1546M1532 540V860M1518 860H1546" fill="none" stroke="#67e8f9" stroke-width="3"/>
-<text x="1562" y="709" fill="#67e8f9" font-size="30" font-weight="720" text-anchor="start" letter-spacing="0">4 m</text>
-<text x="224" y="928" fill="#9aa9bd" font-size="24" font-weight="560" text-anchor="middle" letter-spacing="0">1.75 m</text>
-<text x="390" y="840" fill="#9aa9bd" font-size="22" font-weight="700" text-anchor="start" letter-spacing="2.2">HIGH-NA EUV · EXE PLATFORM</text>
-<text x="1710" y="710" fill="#f8fafc" font-size="54" font-weight="740" text-anchor="middle" letter-spacing="0">150 t</text>
-<text x="1710" y="748" fill="#9aa9bd" font-size="22" font-weight="520" text-anchor="middle" letter-spacing="0">system weight</text>
+<path d="M300 252V280M300 266H1630M1630 252V280" fill="none" stroke="#67e8f9" stroke-width="3"/>
+<text x="965" y="242" fill="#67e8f9" font-size="30" font-weight="720" text-anchor="middle" letter-spacing="0">14 m</text>
+<path d="M1674 350H1702M1688 350V730M1674 730H1702" fill="none" stroke="#67e8f9" stroke-width="3"/>
+<text x="1718" y="549" fill="#67e8f9" font-size="30" font-weight="720" text-anchor="start" letter-spacing="0">4 m</text>
+<path d="M98 563.75H126M112 563.75V730M98 730H126" fill="none" stroke="#67e8f9" stroke-width="3"/>
+<text x="190" y="543.75" fill="#67e8f9" font-size="26" font-weight="720" text-anchor="middle" letter-spacing="0">1.75 m</text>
+<text x="1628" y="866" fill="#f8fafc" font-size="58" font-weight="780" text-anchor="end" letter-spacing="0">&gt;150 t</text>
+<text x="1628" y="906" fill="#9aa9bd" font-size="21" font-weight="560" text-anchor="end" letter-spacing="0">installed system</text>
 </svg>

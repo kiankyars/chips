@@ -1,5 +1,6 @@
 ---
-layout: section
+layout: default
+class: map-only-focus
 ---
 
 <!-- SEGMENT
@@ -7,36 +8,25 @@ id: tsmc
 act: III — The Island
 tier: P            # protagonist — the crown jewel of the episode
 angle: "TSMC's real invention wasn't a chip — it was a promise: manufacture for everyone, compete with no one. Forty years of compounded trust and yield learning turned that promise into the deepest moat in capitalism, and parked it on one island."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~9 min
+runtime: ~10 min
 status: draft
 seeds: [taiwan-flag]          # planted here — DETONATES in geopolitics, not here
 pays_off: [apple-iou]         # planted in fabless-field
 stamps: [tsmc-wafers]         # chokepoint #2 — leading-edge logic
-diagrams: [map-manufacture, journey-3, board-2, tsmc-geography]
+diagrams: [map-manufacture, board-2, tsmc-footprint]
 sources: research/tsmc.md
 -->
 
 
 # TSMC
 
-<div class="text-xl opacity-70 mt-2">The world's largest contract chip manufacturer</div>
-
-<div class="grid grid-cols-2 gap-8 mt-8 items-center">
-<div>
-
-![journey — FAB](/diagrams/rendered/journey-3.svg)
-
-</div>
-<div>
-
-![map — manufacture lit](/diagrams/rendered/map-manufacture.svg)
-
-</div>
+<div class="map-only-focus__map">
+  <img src="/diagrams/rendered/map-manufacture.svg" alt="Industry map with TSMC and the manufacturing stage highlighted" />
 </div>
 
 <!--
 - TSMC is the world's first and largest pure-play foundry.
-- TSMC turns customer designs into chips without selling its own processors, so customers share its fabs without competing with their manufacturer; this neutrality creates trust.
+- Its current advantage combines advanced-node scale, yield learning, and a co-qualified design ecosystem.
 -->
 
 ---
@@ -46,7 +36,7 @@ sources: research/tsmc.md
 <div class="grid grid-cols-2 gap-10 mt-8">
 <div>
 <div class="text-7xl font-bold">56</div>
-<div class="opacity-70 mt-2">Morris Chang's age when he founded<br>what became the world's largest foundry</div>
+<div class="opacity-70 mt-2">Morris Chang's age<br>when he founded TSMC</div>
 </div>
 <div class="flex flex-col justify-center gap-3 text-lg">
 
@@ -61,38 +51,6 @@ sources: research/tsmc.md
 <!--
 - Morris Chang founded TSMC in 1987 after 25 years at Texas Instruments.
 - Taiwan's state fund supplied 48.3 percent of the startup capital and Philips supplied 27.5 percent, giving the company patient backing when American chipmakers declined to invest.
-- TSMC used that capital to build a customer-neutral foundry that manufactured designs without selling competing chips.
--->
-
----
-
-# TSMC manufactures without competing with its customers
-
-<div class="grid grid-cols-2 gap-10 mt-8">
-<div class="text-lg leading-relaxed">
-<div class="font-bold text-2xl mb-4">What a foundry sells</div>
-
-- a **process recipe** (the node)
-- a **PDK** — process rules and device models used by EDA tools
-- **qualified IP** libraries
-- **yield** — the percentage of dies that pass test
-
-</div>
-<div class="text-lg leading-relaxed">
-<div class="font-bold text-2xl mb-4">How TSMC avoids customer conflict</div>
-
-- no branded processors of its own
-- customer designs remain confidential even when rival firms share the same fabs
-
-</div>
-</div>
-
-<div class="text-sm opacity-60 mt-8">TSMC manufactures customer designs without selling competing chips.</div>
-
-<!--
-- TSMC sells a manufacturing process, a process design kit, qualified IP, and reliable yield.
-- TSMC does not sell branded processors, so rival customers can use the same fabs without competing against their manufacturer.
-- Its process rules also connect to major EDA tools and IP libraries, making a finished design expensive to move to another foundry.
 -->
 
 ---
@@ -140,10 +98,6 @@ MORE CAPACITY ← REINVESTED REVENUE ← NEW CUSTOMER DESIGNS
 </div>
 </div>
 
-<div class="text-sm opacity-60 mt-10">
-<b>3nm = 24%</b> of FY2025 wafer revenue. Apple has historically led TSMC's first large-volume ramps on new nodes.
-</div>
-
 <!--
 - Apple committed enough iPhone volume to make new-node ramps economically viable.
 - Those early wafers gave TSMC defect data, helped yields mature, and spread fixed costs across large production runs.
@@ -152,26 +106,76 @@ MORE CAPACITY ← REINVESTED REVENUE ← NEW CUSTOMER DESIGNS
 
 ---
 
-# The roadmap, as of 2026
+# Foundry leadership requires more than being first
+
+<div class="grid grid-cols-2 gap-16 mt-12 text-center">
+<div class="border-t-4 border-violet-400 pt-7">
+<div class="text-sm tracking-[0.2em] opacity-55">GATE-ALL-AROUND FIRST</div>
+<div class="text-4xl font-bold mt-4">Samsung · 2022</div>
+<div class="text-lg opacity-65 mt-2">initial 3 nm production</div>
+</div>
+<div class="border-t-4 border-blue-400 pt-7">
+<div class="text-sm tracking-[0.2em] opacity-55">GAA + BACKSIDE POWER FIRST</div>
+<div class="text-4xl font-bold mt-4">Intel 18A · 2025</div>
+<div class="text-lg opacity-65 mt-2">production introduction</div>
+</div>
+</div>
+
+<div class="text-center text-2xl mt-16">TSMC led production by qualifying the whole platform, not one feature.</div>
+
+<!--
+- Samsung began initial 3 nm GAA production in 2022; Intel 18A combined GAA and backside power in 2025.
+- TSMC remained the production leader by qualifying each change with IP, reliability, yield, and capacity.
+- Feature-first dates are not the same as high-volume platform readiness.
+-->
+
+---
+
+# A dependable foundry platform needs all five
+
+<div class="grid grid-cols-[1fr_auto_1.25fr_auto_1fr_auto_1fr_auto_1fr] gap-4 items-center mt-20 text-center">
+  <div class="text-2xl font-bold leading-tight text-cyan-300">PROCESS<br>TECHNOLOGY</div>
+  <div class="text-4xl opacity-45">+</div>
+  <div class="text-2xl font-bold leading-tight text-violet-300">QUALIFIED<br>PDK + IP</div>
+  <div class="text-4xl opacity-45">+</div>
+  <div class="text-2xl font-bold leading-tight text-amber-300">RELIABILITY</div>
+  <div class="text-4xl opacity-45">+</div>
+  <div class="text-2xl font-bold leading-tight text-emerald-300">YIELD</div>
+  <div class="text-4xl opacity-45">+</div>
+  <div class="text-2xl font-bold leading-tight text-blue-300">CAPACITY</div>
+</div>
+
+<div class="flex items-center justify-center gap-7 mt-16">
+  <div class="text-5xl opacity-45">=</div>
+  <div class="text-4xl font-bold tracking-wide">DEPENDABLE FOUNDRY PLATFORM</div>
+</div>
+
+<!--
+- A new transistor structure is only the process technology; customers also need qualified design rules, reusable IP, reliability data, economic yield, and enough production capacity.
+- All five must mature together before customers can commit a high-volume product to the node.
+- That is why being first to announce a feature can differ from sustained production leadership.
+-->
+
+---
+
+# N2 is shipping; A16 adds backside power
 
 <div class="mt-8 text-lg">
-<div class="grid grid-cols-4 gap-4 text-center">
+<div class="grid grid-cols-4 gap-5 text-center">
 <div><div class="text-3xl font-bold">N3</div><div class="text-sm opacity-70 mt-1">ramped 2023–25<br>24% of FY2025 wafer revenue</div></div>
-<div><div class="text-3xl font-bold">N2</div><div class="text-sm opacity-70 mt-1">HVM since Q4 2025<br><b>first gate-all-around</b></div></div>
-<div><div class="text-3xl font-bold">A16</div><div class="text-sm opacity-70 mt-1">late 2026 → volume 2027<br><b>backside power</b></div></div>
+<div><div class="text-3xl font-bold">N2</div><div class="text-sm opacity-70 mt-1">HVM since<br>Q4 2025<br><b>first gate-all-around</b></div></div>
+<div><div class="text-3xl font-bold">A16</div><div class="text-sm opacity-70 mt-1">planned H2 2026<br><b>backside power</b></div></div>
 <div><div class="text-3xl font-bold">A14</div><div class="text-sm opacity-70 mt-1">2028<br>2nd-gen GAA</div></div>
 </div>
 </div>
 
 <div class="text-sm opacity-60 mt-10 text-center">
-"2nm" is a product generation, not a measured feature size.<br>
 TSMC plans no <b>High-NA EUV</b> in production through 2029; it is extending existing EUV tools.
 </div>
 
 <!--
-- Node names such as N2 identify process generations rather than a measured feature size.
 - N2 introduced TSMC's first gate-all-around transistor and entered high-volume manufacturing in late 2025.
-- A16 adds backside power, moving power wiring below the transistors, and A14 follows in 2028.
+- A16 is planned to add backside power in the second half of 2026, moving power wiring below the transistors; A14 follows in 2028.
 - TSMC plans to extend current EUV systems without production High-NA EUV through 2029.
 -->
 
@@ -217,21 +221,19 @@ TSMC plans no <b>High-NA EUV</b> in production through 2029; it is extending exi
 
 ---
 
-# TSMC financials and market share
+# TSMC is 11× larger than Samsung Foundry
 
 <div class="border-2 border-gray-400 rounded-lg p-4 mt-6">
-  <div class="grid grid-cols-5 gap-4 text-center">
+  <div class="grid grid-cols-3 gap-8 text-center">
     <div><div class="text-3xl font-bold">$122 B</div><div class="text-sm opacity-60">revenue FY25 (+36%)</div></div>
     <div><div class="text-3xl font-bold">67.7%</div><div class="text-sm opacity-60">gross margin Q2'26</div></div>
     <div><div class="text-3xl font-bold">72.3%</div><div class="text-sm opacity-60">global foundry share (Q1'26)</div></div>
-    <div><div class="text-xl font-bold leading-tight mt-2">pure-play model + 30 years of yield data</div></div>
-    <div><div class="text-xl font-bold leading-tight mt-2">ecosystem</div><div class="text-sm opacity-60">must be rebuilt</div></div>
   </div>
   <div class="text-xs opacity-40 text-right mt-2">company results: Q2'26 · foundry share: Q1'26 estimate</div>
 </div>
 
 <div class="text-sm opacity-60 mt-8 text-center">
-72.3% of the global foundry market — <b>11× the size of #2</b> (Samsung, 6.5%).
+Samsung held 6.5% in the same Q1'26 estimate.
 </div>
 
 <!--
@@ -241,18 +243,11 @@ TSMC plans no <b>High-NA EUV</b> in production through 2029; it is extending exi
 -->
 
 ---
-class: visual-sequence paper-visual
-title: "TSMC's footprint"
+class: full-slide-visual
+title: "TSMC's global footprint"
 ---
 
-<div class="visual-sequence__kicker">TSMC'S FOOTPRINT</div>
-
-<div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/tsmc-geography.svg" alt="TSMC fabs in Arizona, Kumamoto, and Dresden compared with its leading-edge production center in Taiwan" />
-</div>
-
-<div class="visual-sequence__caption"><strong>Overseas fabs diversify capacity.</strong><span>The leading edge remains centered in Taiwan.</span></div>
-<div class="visual-sequence__source">Arizona · N4 · Kumamoto / Dresden · mature nodes · Taiwan · N2</div>
+<img src="/diagrams/rendered/tsmc-footprint.png" alt="World map showing TSMC's overseas fabs in Arizona, Dresden, and Kumamoto while its N2, A16, and A14 leading-edge roadmap remains concentrated in Taiwan" />
 
 <!--
 - TSMC's Arizona fab produces N4, while its sites in Japan and Germany focus on mature and specialty nodes.

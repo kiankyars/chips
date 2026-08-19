@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">All-reduce sums every GPU gradient and returns the result to all GPUs</title>
+<desc id="desc">Four GPUs begin with local gradient arrays. Reduce-scatter leaves one summed shard on each GPU, then all-gather leaves the same complete summed array on every GPU.</desc>
+<defs>
+  <pattern id="network-grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#ded7cb" stroke-width="1" opacity="0.24"/>
+  </pattern>
+  <filter id="network-shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="13" flood-color="#493f30" flood-opacity="0.12"/>
+  </filter>
+  <marker id="network-arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#515b64"/>
+  </marker>
+  <marker id="network-arrow-rose" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#b24956"/>
+  </marker>
+</defs>
+<rect width="1920" height="1080" fill="#f3efe7"/>
+<rect width="1920" height="1080" fill="url(#network-grid)"/>
+<text x="104" y="92" fill="#747a76" font-size="20" font-weight="760" text-anchor="start" letter-spacing="3.6" opacity="1">COLLECTIVE COMMUNICATION</text>
+<text x="104" y="156" fill="#20252b" font-size="48" font-weight="760" text-anchor="start" letter-spacing="0" opacity="1">All-reduce sums gradients—then returns the result to all</text>
+<path d="M104 190H1816" stroke="#cec6b9" stroke-width="2"/>
+<rect x="104" y="230" width="510" height="670" rx="28" fill="#d9ebe3" stroke="#2f7b65" stroke-width="2.5" filter="url(#network-shadow)"/>
+<rect x="705" y="230" width="510" height="670" rx="28" fill="#e7e0f0" stroke="#705a96" stroke-width="2.5" filter="url(#network-shadow)"/>
+<rect x="1306" y="230" width="510" height="670" rx="28" fill="#dceaf3" stroke="#2f6f9f" stroke-width="2.5" filter="url(#network-shadow)"/>
+
+<text x="359" y="298" fill="#2f7b65" font-size="22" font-weight="840" text-anchor="middle" letter-spacing="1.3" opacity="1">1 · LOCAL GRADIENTS</text>
+<text x="359" y="338" fill="#747a76" font-size="18" font-weight="620" text-anchor="middle" letter-spacing="0" opacity="1">one full array per GPU</text>
+<g>
+<g>
+<path d="M186 440H196M292 440H302" stroke="#2f7b65" stroke-width="3"/>
+<path d="M186 463H196M292 463H302" stroke="#2f7b65" stroke-width="3"/>
+<path d="M186 486H196M292 486H302" stroke="#2f7b65" stroke-width="3"/>
+<rect x="196" y="420" width="96" height="96" rx="13" fill="#2f7b65" opacity="0.14" stroke="#2f7b65" stroke-width="4"/>
+<text x="244" y="476" fill="#2f7b65" font-size="19" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">GPU 1</text>
+</g>
+<text x="244" y="558" fill="#2f7b65" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">g1</text>
+</g>
+<g>
+<g>
+<path d="M410 440H420M516 440H526" stroke="#2f6f9f" stroke-width="3"/>
+<path d="M410 463H420M516 463H526" stroke="#2f6f9f" stroke-width="3"/>
+<path d="M410 486H420M516 486H526" stroke="#2f6f9f" stroke-width="3"/>
+<rect x="420" y="420" width="96" height="96" rx="13" fill="#2f6f9f" opacity="0.14" stroke="#2f6f9f" stroke-width="4"/>
+<text x="468" y="476" fill="#2f6f9f" font-size="19" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">GPU 2</text>
+</g>
+<text x="468" y="558" fill="#2f6f9f" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">g2</text>
+</g>
+<g>
+<g>
+<path d="M186 680H196M292 680H302" stroke="#b24956" stroke-width="3"/>
+<path d="M186 703H196M292 703H302" stroke="#b24956" stroke-width="3"/>
+<path d="M186 726H196M292 726H302" stroke="#b24956" stroke-width="3"/>
+<rect x="196" y="660" width="96" height="96" rx="13" fill="#b24956" opacity="0.14" stroke="#b24956" stroke-width="4"/>
+<text x="244" y="716" fill="#b24956" font-size="19" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">GPU 3</text>
+</g>
+<text x="244" y="798" fill="#b24956" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">g3</text>
+</g>
+<g>
+<g>
+<path d="M410 680H420M516 680H526" stroke="#b87821" stroke-width="3"/>
+<path d="M410 703H420M516 703H526" stroke="#b87821" stroke-width="3"/>
+<path d="M410 726H420M516 726H526" stroke="#b87821" stroke-width="3"/>
+<rect x="420" y="660" width="96" height="96" rx="13" fill="#b87821" opacity="0.14" stroke="#b87821" stroke-width="4"/>
+<text x="468" y="716" fill="#b87821" font-size="19" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">GPU 4</text>
+</g>
+<text x="468" y="798" fill="#b87821" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">g4</text>
+</g>
+
+<text x="960" y="298" fill="#705a96" font-size="22" font-weight="840" text-anchor="middle" letter-spacing="1.3" opacity="1">2 · REDUCE-SCATTER</text>
+<text x="960" y="338" fill="#747a76" font-size="18" font-weight="620" text-anchor="middle" letter-spacing="0" opacity="1">one summed shard per GPU</text>
+<g>
+<g>
+<path d="M787 440H797M893 440H903" stroke="#2f7b65" stroke-width="3"/>
+<path d="M787 463H797M893 463H903" stroke="#2f7b65" stroke-width="3"/>
+<path d="M787 486H797M893 486H903" stroke="#2f7b65" stroke-width="3"/>
+<rect x="797" y="420" width="96" height="96" rx="13" fill="#2f7b65" opacity="0.14" stroke="#2f7b65" stroke-width="4"/>
+<text x="845" y="476" fill="#2f7b65" font-size="19" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">GPU 1</text>
+</g>
+<text x="845" y="558" fill="#2f7b65" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">Σ shard 1</text>
+</g>
+<g>
+<g>
+<path d="M1011 440H1021M1117 440H1127" stroke="#2f6f9f" stroke-width="3"/>
+<path d="M1011 463H1021M1117 463H1127" stroke="#2f6f9f" stroke-width="3"/>
+<path d="M1011 486H1021M1117 486H1127" stroke="#2f6f9f" stroke-width="3"/>
+<rect x="1021" y="420" width="96" height="96" rx="13" fill="#2f6f9f" opacity="0.14" stroke="#2f6f9f" stroke-width="4"/>
+<text x="1069" y="476" fill="#2f6f9f" font-size="19" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">GPU 2</text>
+</g>
+<text x="1069" y="558" fill="#2f6f9f" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">Σ shard 2</text>
+</g>
+<g>
+<g>
+<path d="M787 680H797M893 680H903" stroke="#b24956" stroke-width="3"/>
+<path d="M787 703H797M893 703H903" stroke="#b24956" stroke-width="3"/>
+<path d="M787 726H797M893 726H903" stroke="#b24956" stroke-width="3"/>
+<rect x="797" y="660" width="96" height="96" rx="13" fill="#b24956" opacity="0.14" stroke="#b24956" stroke-width="4"/>
+<text x="845" y="716" fill="#b24956" font-size="19" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">GPU 3</text>
+</g>
+<text x="845" y="798" fill="#b24956" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">Σ shard 3</text>
+</g>
+<g>
+<g>
+<path d="M1011 680H1021M1117 680H1127" stroke="#b87821" stroke-width="3"/>
+<path d="M1011 703H1021M1117 703H1127" stroke="#b87821" stroke-width="3"/>
+<path d="M1011 726H1021M1117 726H1127" stroke="#b87821" stroke-width="3"/>
+<rect x="1021" y="660" width="96" height="96" rx="13" fill="#b87821" opacity="0.14" stroke="#b87821" stroke-width="4"/>
+<text x="1069" y="716" fill="#b87821" font-size="19" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">GPU 4</text>
+</g>
+<text x="1069" y="798" fill="#b87821" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">Σ shard 4</text>
+</g>
+
+<text x="1561" y="298" fill="#2f6f9f" font-size="22" font-weight="840" text-anchor="middle" letter-spacing="1.3" opacity="1">3 · ALL-GATHER</text>
+<text x="1561" y="338" fill="#747a76" font-size="18" font-weight="620" text-anchor="middle" letter-spacing="0" opacity="1">same full sum on every GPU</text>
+<g>
+<g>
+<path d="M1388 440H1398M1494 440H1504" stroke="#2f7b65" stroke-width="3"/>
+<path d="M1388 463H1398M1494 463H1504" stroke="#2f7b65" stroke-width="3"/>
+<path d="M1388 486H1398M1494 486H1504" stroke="#2f7b65" stroke-width="3"/>
+<rect x="1398" y="420" width="96" height="96" rx="13" fill="#2f7b65" opacity="0.14" stroke="#2f7b65" stroke-width="4"/>
+<text x="1446" y="476" fill="#2f7b65" font-size="19" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">GPU 1</text>
+</g>
+<text x="1446" y="558" fill="#2f7b65" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">Σg</text>
+</g>
+<g>
+<g>
+<path d="M1612 440H1622M1718 440H1728" stroke="#2f6f9f" stroke-width="3"/>
+<path d="M1612 463H1622M1718 463H1728" stroke="#2f6f9f" stroke-width="3"/>
+<path d="M1612 486H1622M1718 486H1728" stroke="#2f6f9f" stroke-width="3"/>
+<rect x="1622" y="420" width="96" height="96" rx="13" fill="#2f6f9f" opacity="0.14" stroke="#2f6f9f" stroke-width="4"/>
+<text x="1670" y="476" fill="#2f6f9f" font-size="19" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">GPU 2</text>
+</g>
+<text x="1670" y="558" fill="#2f6f9f" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">Σg</text>
+</g>
+<g>
+<g>
+<path d="M1388 680H1398M1494 680H1504" stroke="#b24956" stroke-width="3"/>
+<path d="M1388 703H1398M1494 703H1504" stroke="#b24956" stroke-width="3"/>
+<path d="M1388 726H1398M1494 726H1504" stroke="#b24956" stroke-width="3"/>
+<rect x="1398" y="660" width="96" height="96" rx="13" fill="#b24956" opacity="0.14" stroke="#b24956" stroke-width="4"/>
+<text x="1446" y="716" fill="#b24956" font-size="19" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">GPU 3</text>
+</g>
+<text x="1446" y="798" fill="#b24956" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">Σg</text>
+</g>
+<g>
+<g>
+<path d="M1612 680H1622M1718 680H1728" stroke="#b87821" stroke-width="3"/>
+<path d="M1612 703H1622M1718 703H1728" stroke="#b87821" stroke-width="3"/>
+<path d="M1612 726H1622M1718 726H1728" stroke="#b87821" stroke-width="3"/>
+<rect x="1622" y="660" width="96" height="96" rx="13" fill="#b87821" opacity="0.14" stroke="#b87821" stroke-width="4"/>
+<text x="1670" y="716" fill="#b87821" font-size="19" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">GPU 4</text>
+</g>
+<text x="1670" y="798" fill="#b87821" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">Σg</text>
+</g>
+
+<path d="M630 565L680 565" fill="none" stroke="#515b64" stroke-width="5" stroke-linecap="round" marker-end="url(#network-arrow)" opacity="1"/>
+<path d="M1231 565L1281 565" fill="none" stroke="#515b64" stroke-width="5" stroke-linecap="round" marker-end="url(#network-arrow)" opacity="1"/>
+
+<text x="960" y="982" fill="#20252b" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="1.4" opacity="1">THE NEXT COMPUTE STEP WAITS UNTIL EVERY GPU HOLDS THE SAME SUM</text>
+</svg>

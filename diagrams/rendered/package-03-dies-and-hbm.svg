@@ -36,6 +36,9 @@
     <feGaussianBlur stdDeviation="8" result="blur"/>
     <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
+  <marker id="heatArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#fbbf24"/>
+  </marker>
 </defs>
 <rect width="1920" height="1080" fill="#05080e"/>
 <rect width="1920" height="1080" fill="url(#spot)"/>
@@ -199,11 +202,15 @@
   <rect x="1360" y="672" width="95" height="10" rx="3" fill="#bb8be0" opacity="0.6900000000000001"/>
 
 </g>
+<path d="M705 500H745M705 642H745M1210 500H1225M1210 642H1225" stroke="#67e8f9" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
 <path d="M 973 540 H 982" stroke="#93c5fd" stroke-width="12" filter="url(#softGlow)"/>
-<path d="M 1486 302 L 1130 420" fill="none" stroke="#93c5fd" stroke-width="2.5" opacity="0.76"/>
+<path d="M 1426 302 L 1130 420" fill="none" stroke="#93c5fd" stroke-width="2.5" opacity="0.76"/>
 <circle cx="1130" cy="420" r="5" fill="#93c5fd"/>
-<text x="1510" y="310" fill="#93c5fd" font-size="25" font-weight="760" letter-spacing="2">TWO COMPUTE DIES</text>
-<path d="M 1486 812 L 1400 680" fill="none" stroke="#d8b4fe" stroke-width="2.5" opacity="0.76"/>
+<text x="1450" y="310" fill="#93c5fd" font-size="25" font-weight="760" letter-spacing="2">2× COMPUTE DIES</text>
+<path d="M 1426 812 L 1400 680" fill="none" stroke="#d8b4fe" stroke-width="2.5" opacity="0.76"/>
 <circle cx="1400" cy="680" r="5" fill="#d8b4fe"/>
-<text x="1510" y="820" fill="#d8b4fe" font-size="25" font-weight="760" letter-spacing="2">EIGHT HBM3E STACKS</text>
+<text x="1450" y="820" fill="#d8b4fe" font-size="25" font-weight="760" letter-spacing="2">8× 12-HIGH HBM3E</text>
+<path d="M 368 332 L 725 502" fill="none" stroke="#67e8f9" stroke-width="2.5" opacity="0.76"/>
+<circle cx="725" cy="502" r="5" fill="#67e8f9"/>
+<text x="392" y="340" fill="#67e8f9" font-size="25" font-weight="760" letter-spacing="2">SHORT, WIDE ROUTES</text>
 </svg>

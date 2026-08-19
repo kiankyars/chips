@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
 <title id="title">Relative replacement difficulty across semiconductor capabilities</title>
-<desc id="desc">Three categories distinguish shifting existing qualified capacity, scaling a competitive manufacturing capability, and rebuilding a deeply interdependent ecosystem. The ordering is qualitative rather than a forecast in years.</desc>
+<desc id="desc">Three categories distinguish shifting existing qualified capacity, scaling a competitive manufacturing capability, and recreating an interdependent technology stack. The ordering is qualitative rather than a forecast in years.</desc>
 <defs>
   <filter id="shadow" x="-25%" y="-25%" width="150%" height="170%">
     <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#1f272d" flood-opacity="0.13"/>
@@ -20,16 +20,16 @@
 </defs>
 <rect width="1920" height="1080" fill="#f4efe6"/>
 <text x="960" y="82" fill="#74746f" font-size="26" font-weight="800" text-anchor="middle" letter-spacing="2.4">RELATIVE REPLACEMENT DIFFICULTY</text>
-<text x="960" y="132" fill="#1f272d" font-size="25" font-weight="650" text-anchor="middle" letter-spacing="0">Capacity substitution is not the same task as recreating a capability or ecosystem</text>
+<text x="960" y="132" fill="#1f272d" font-size="25" font-weight="650" text-anchor="middle" letter-spacing="0">Each step requires more capital, qualification, and accumulated know-how</text>
 <rect x="90" y="216" width="520" height="606" rx="34" fill="#fbf8f1" stroke="#ddd6c9" stroke-width="3"/>
-<text x="350" y="286" fill="#4f8064" font-size="25" font-weight="820" text-anchor="middle" letter-spacing="1.2">CAPACITY CAN SHIFT</text>
-<text x="350" y="326" fill="#74746f" font-size="18" font-weight="560" text-anchor="middle" letter-spacing="0">within an existing qualified ecosystem</text>
+<text x="350" y="286" fill="#4f8064" font-size="25" font-weight="820" text-anchor="middle" letter-spacing="1.2">SHIFT QUALIFIED CAPACITY</text>
+<text x="350" y="326" fill="#74746f" font-size="18" font-weight="560" text-anchor="middle" letter-spacing="0">among already qualified sources</text>
 <rect x="132" y="400" width="436" height="82" rx="20" fill="#4f8064" opacity="0.12" stroke="#4f8064" stroke-width="3"/>
 <text x="350" y="451" fill="#4f8064" font-size="24" font-weight="720" text-anchor="middle" letter-spacing="0">OSAT assembly + test</text>
 <rect x="132" y="526" width="436" height="82" rx="20" fill="#4f8064" opacity="0.12" stroke="#4f8064" stroke-width="3"/>
 <text x="350" y="577" fill="#4f8064" font-size="24" font-weight="720" text-anchor="middle" letter-spacing="0">allocation among qualified sources</text>
 <rect x="700" y="216" width="520" height="606" rx="34" fill="#fbf8f1" stroke="#ddd6c9" stroke-width="3"/>
-<text x="960" y="286" fill="#7358a3" font-size="25" font-weight="820" text-anchor="middle" letter-spacing="1.2">CAPABILITY MUST SCALE</text>
+<text x="960" y="286" fill="#7358a3" font-size="25" font-weight="820" text-anchor="middle" letter-spacing="1.2">SCALE MANUFACTURING CAPABILITY</text>
 <text x="960" y="326" fill="#74746f" font-size="18" font-weight="560" text-anchor="middle" letter-spacing="0">qualification, yield, and manufacturing depth</text>
 <rect x="742" y="400" width="436" height="82" rx="20" fill="#7358a3" opacity="0.12" stroke="#7358a3" stroke-width="3"/>
 <text x="960" y="451" fill="#7358a3" font-size="24" font-weight="720" text-anchor="middle" letter-spacing="0">HBM manufacturing at scale</text>
@@ -38,10 +38,10 @@
 <rect x="742" y="652" width="436" height="82" rx="20" fill="#7358a3" opacity="0.12" stroke="#7358a3" stroke-width="3"/>
 <text x="960" y="703" fill="#7358a3" font-size="24" font-weight="720" text-anchor="middle" letter-spacing="0">process-control tools</text>
 <rect x="1310" y="216" width="520" height="606" rx="34" fill="#fbf8f1" stroke="#ddd6c9" stroke-width="3"/>
-<text x="1570" y="286" fill="#c3842e" font-size="25" font-weight="820" text-anchor="middle" letter-spacing="1.2">ECOSYSTEM MUST BE REBUILT</text>
-<text x="1570" y="326" fill="#74746f" font-size="18" font-weight="560" text-anchor="middle" letter-spacing="0">interdependent tools, IP, suppliers, and know-how</text>
+<text x="1570" y="286" fill="#c3842e" font-size="25" font-weight="820" text-anchor="middle" letter-spacing="1.2">RECREATE A COMPATIBLE STACK</text>
+<text x="1570" y="326" fill="#74746f" font-size="18" font-weight="560" text-anchor="middle" letter-spacing="0">tools, IP, suppliers, and know-how must align</text>
 <rect x="1352" y="400" width="436" height="82" rx="20" fill="#c3842e" opacity="0.12" stroke="#c3842e" stroke-width="3"/>
-<text x="1570" y="451" fill="#c3842e" font-size="24" font-weight="720" text-anchor="middle" letter-spacing="0">EDA + CUDA ecosystems</text>
+<text x="1570" y="451" fill="#c3842e" font-size="24" font-weight="720" text-anchor="middle" letter-spacing="0">EDA + CUDA</text>
 <rect x="1352" y="526" width="436" height="82" rx="20" fill="#c3842e" opacity="0.12" stroke="#c3842e" stroke-width="3"/>
 <text x="1570" y="577" fill="#c3842e" font-size="24" font-weight="720" text-anchor="middle" letter-spacing="0">leading-edge logic + CoWoS</text>
 <rect x="1352" y="652" width="436" height="82" rx="20" fill="#c3842e" opacity="0.12" stroke="#c3842e" stroke-width="3"/>

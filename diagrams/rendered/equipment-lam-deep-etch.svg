@@ -30,49 +30,41 @@
 <text x="388" y="716" fill="#4f5965" font-size="21" font-weight="780" text-anchor="middle" letter-spacing="1.4" opacity="1">BILLIONS OF CHANNELS / WAFER</text>
 <path d="M612 520H742" stroke="#4f5965" stroke-width="4" stroke-dasharray="8 9" marker-end="url(#arrow-ink)"/>
 
-<rect x="760" y="242" width="790" height="728" rx="30" fill="#fffaf0" stroke="#c9c1b3" stroke-width="2" filter="url(#paper-shadow)"/>
-<g><rect x="900" y="318" width="510" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
-<rect x="900" y="337.57142857142856" width="510" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
-<rect x="900" y="357.14285714285717" width="510" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
-<rect x="900" y="376.7142857142857" width="510" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
-<rect x="900" y="396.2857142857143" width="510" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
-<rect x="900" y="415.8571428571429" width="510" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
-<rect x="900" y="435.42857142857144" width="510" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
-<rect x="900" y="455" width="510" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
-<rect x="900" y="474.57142857142856" width="510" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
-<rect x="900" y="494.14285714285717" width="510" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
-<rect x="900" y="513.7142857142858" width="510" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
-<rect x="900" y="533.2857142857143" width="510" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
-<rect x="900" y="552.8571428571429" width="510" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
-<rect x="900" y="572.4285714285714" width="510" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
-<rect x="900" y="592" width="510" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
-<rect x="900" y="611.5714285714287" width="510" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
-<rect x="900" y="631.1428571428571" width="510" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
-<rect x="900" y="650.7142857142858" width="510" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
-<rect x="900" y="670.2857142857143" width="510" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
-<rect x="900" y="689.8571428571429" width="510" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
-<rect x="900" y="709.4285714285714" width="510" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
-<rect x="900" y="729" width="510" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
-<rect x="900" y="748.5714285714287" width="510" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
-<rect x="900" y="768.1428571428571" width="510" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
-<rect x="900" y="787.7142857142858" width="510" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
-<rect x="900" y="807.2857142857143" width="510" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
-<rect x="900" y="826.8571428571429" width="510" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
-<rect x="900" y="846.4285714285714" width="510" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/></g>
-<rect x="1127" y="304" width="56" height="588" rx="28" fill="#f3efe6" stroke="#c17a1b" stroke-width="8"/>
-<path d="M1155 236V306" stroke="#c17a1b" stroke-width="8" marker-end="url(#arrow-amber)"/>
-<text x="1155" y="278" fill="#c17a1b" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="1.5" opacity="1">LAM DRY ETCH</text>
-<path d="M1458 318H1500M1458 866H1500M1480 318V866" stroke="#4f5965" stroke-width="3"/>
-<text x="1524" y="568" fill="#171a1f" font-size="34" font-weight="820" text-anchor="start" letter-spacing="0" opacity="1">~50×</text>
-<text x="1524" y="605" fill="#7b827f" font-size="17" font-weight="760" text-anchor="start" letter-spacing="1.5" opacity="1">DEEPER</text>
-<path d="M1127 922V950M1183 922V950M1127 938H1183" stroke="#4f5965" stroke-width="3"/>
-<text x="1155" y="1000" fill="#7b827f" font-size="18" font-weight="760" text-anchor="middle" letter-spacing="1.5" opacity="1">1× WIDE</text>
-
-<rect x="1605" y="300" width="210" height="418" rx="24" fill="#f2e2c7" stroke="#c17a1b" stroke-width="3"/>
-<text x="1710" y="366" fill="#c17a1b" font-size="23" font-weight="820" text-anchor="middle" letter-spacing="1.5" opacity="1">ONE PASS</text>
-<text x="1710" y="438" fill="#171a1f" font-size="54" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">100+</text>
-<text x="1710" y="473" fill="#7b827f" font-size="18" font-weight="760" text-anchor="middle" letter-spacing="1.8" opacity="1">LAYERS</text>
-<path d="M1650 548H1770M1650 580H1770M1650 612H1770M1650 644H1770" stroke="#c17a1b" stroke-width="10" stroke-linecap="round"/>
-<text x="1710" y="782" fill="#ad4355" font-size="36" font-weight="820" text-anchor="middle" letter-spacing="0" opacity="1">~1/1000</text>
-<text x="1710" y="817" fill="#7b827f" font-size="18" font-weight="760" text-anchor="middle" letter-spacing="1.7" opacity="1">OF A HAIR</text>
+<rect x="760" y="242" width="1056" height="728" rx="30" fill="#fffaf0" stroke="#c9c1b3" stroke-width="2" filter="url(#paper-shadow)"/>
+<g><rect x="938" y="318" width="610" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
+<rect x="938" y="337.57142857142856" width="610" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
+<rect x="938" y="357.14285714285717" width="610" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
+<rect x="938" y="376.7142857142857" width="610" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
+<rect x="938" y="396.2857142857143" width="610" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
+<rect x="938" y="415.8571428571429" width="610" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
+<rect x="938" y="435.42857142857144" width="610" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
+<rect x="938" y="455" width="610" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
+<rect x="938" y="474.57142857142856" width="610" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
+<rect x="938" y="494.14285714285717" width="610" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
+<rect x="938" y="513.7142857142858" width="610" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
+<rect x="938" y="533.2857142857143" width="610" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
+<rect x="938" y="552.8571428571429" width="610" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
+<rect x="938" y="572.4285714285714" width="610" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
+<rect x="938" y="592" width="610" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
+<rect x="938" y="611.5714285714287" width="610" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
+<rect x="938" y="631.1428571428571" width="610" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
+<rect x="938" y="650.7142857142858" width="610" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
+<rect x="938" y="670.2857142857143" width="610" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
+<rect x="938" y="689.8571428571429" width="610" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
+<rect x="938" y="709.4285714285714" width="610" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
+<rect x="938" y="729" width="610" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
+<rect x="938" y="748.5714285714287" width="610" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
+<rect x="938" y="768.1428571428571" width="610" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
+<rect x="938" y="787.7142857142858" width="610" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
+<rect x="938" y="807.2857142857143" width="610" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/>
+<rect x="938" y="826.8571428571429" width="610" height="17.571428571428573" fill="#f2e2c7" stroke="#c17a1b" stroke-width="1.2"/>
+<rect x="938" y="846.4285714285714" width="610" height="17.571428571428573" fill="#fffaf0" stroke="#c9c1b3" stroke-width="1.2"/></g>
+<rect x="1215" y="304" width="56" height="588" rx="28" fill="#f3efe6" stroke="#c17a1b" stroke-width="8"/>
+<path d="M1243 236V306" stroke="#c17a1b" stroke-width="8" marker-end="url(#arrow-amber)"/>
+<text x="1243" y="278" fill="#c17a1b" font-size="20" font-weight="820" text-anchor="middle" letter-spacing="1.5" opacity="1">LAM DRY ETCH</text>
+<path d="M1585 318H1627M1585 866H1627M1606 318V866" stroke="#4f5965" stroke-width="3"/>
+<text x="1648" y="548" fill="#171a1f" font-size="40" font-weight="820" text-anchor="start" letter-spacing="0" opacity="1">~50:1</text>
+<text x="1648" y="592" fill="#7b827f" font-size="17" font-weight="760" text-anchor="start" letter-spacing="1.5" opacity="1">ASPECT RATIO</text>
+<text x="1648" y="684" fill="#c17a1b" font-size="23" font-weight="820" text-anchor="start" letter-spacing="1.5" opacity="1">ONE PASS</text>
+<text x="1648" y="730" fill="#171a1f" font-size="24" font-weight="780" text-anchor="start" letter-spacing="0" opacity="1">100+ LAYERS</text>
 </svg>
