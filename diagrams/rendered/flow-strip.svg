@@ -1,68 +1,76 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 300" font-family="Inter, -apple-system, sans-serif">
 <rect width="1920" height="300" fill="#080c14"/>
 <g opacity="1">
-<rect x="36" y="70" width="210" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
-<text x="141" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">DEPOSIT</text>
-<text x="141" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">add a film, atoms thick</text>
+<rect x="34" y="70" width="188" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
+<text x="128" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">DEPOSIT</text>
+<text x="128" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">add a film, atoms thick</text>
 
 </g>
-<line x1="249" y1="116" x2="267" y2="116" stroke="#526078" stroke-width="3.5" />
-<polygon points="267,116 255.12984377594,121.3008858897744 255.12984377594,110.6991141102256" fill="#526078"/>
+<line x1="225" y1="116" x2="239" y2="116" stroke="#526078" stroke-width="3.5" />
+<polygon points="239,116 227.12984377594,121.3008858897744 227.12984377594,110.6991141102256" fill="#526078"/>
 <g opacity="1">
-<rect x="270" y="70" width="210" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
-<text x="375" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">COAT</text>
-<text x="375" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">photoresist</text>
+<rect x="242" y="70" width="188" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
+<text x="336" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">COAT</text>
+<text x="336" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">photoresist</text>
 
 </g>
-<line x1="483" y1="116" x2="501" y2="116" stroke="#526078" stroke-width="3.5" />
-<polygon points="501,116 489.12984377594,121.3008858897744 489.12984377594,110.6991141102256" fill="#526078"/>
+<line x1="433" y1="116" x2="447" y2="116" stroke="#526078" stroke-width="3.5" />
+<polygon points="447,116 435.12984377594,121.3008858897744 435.12984377594,110.6991141102256" fill="#526078"/>
 <g opacity="1">
-<rect x="504" y="70" width="210" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
-<text x="609" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">EXPOSE</text>
-<text x="609" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">lithography</text>
+<rect x="450" y="70" width="188" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
+<text x="544" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">EXPOSE</text>
+<text x="544" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">lithography</text>
 
 </g>
-<line x1="717" y1="116" x2="735" y2="116" stroke="#526078" stroke-width="3.5" />
-<polygon points="735,116 723.12984377594,121.3008858897744 723.12984377594,110.6991141102256" fill="#526078"/>
+<line x1="641" y1="116" x2="655" y2="116" stroke="#526078" stroke-width="3.5" />
+<polygon points="655,116 643.12984377594,121.3008858897744 643.12984377594,110.6991141102256" fill="#526078"/>
 <g opacity="1">
-<rect x="738" y="70" width="210" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
-<text x="843" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">DEVELOP</text>
-<text x="843" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">reveal the pattern</text>
+<rect x="658" y="70" width="188" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
+<text x="752" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">DEVELOP</text>
+<text x="752" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">reveal the pattern</text>
 
 </g>
-<line x1="951" y1="116" x2="969" y2="116" stroke="#526078" stroke-width="3.5" />
-<polygon points="969,116 957.12984377594,121.3008858897744 957.12984377594,110.6991141102256" fill="#526078"/>
+<line x1="849" y1="116" x2="863" y2="116" stroke="#526078" stroke-width="3.5" />
+<polygon points="863,116 851.12984377594,121.3008858897744 851.12984377594,110.6991141102256" fill="#526078"/>
 <g opacity="1">
-<rect x="972" y="70" width="210" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
-<text x="1077" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">ETCH</text>
-<text x="1077" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">carve it</text>
+<rect x="866" y="70" width="188" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
+<text x="960" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">ETCH</text>
+<text x="960" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">carve it</text>
 
 </g>
-<line x1="1185" y1="116" x2="1203" y2="116" stroke="#526078" stroke-width="3.5" />
-<polygon points="1203,116 1191.12984377594,121.3008858897744 1191.12984377594,110.6991141102256" fill="#526078"/>
+<line x1="1057" y1="116" x2="1071" y2="116" stroke="#526078" stroke-width="3.5" />
+<polygon points="1071,116 1059.12984377594,121.3008858897744 1059.12984377594,110.6991141102256" fill="#526078"/>
 <g opacity="1">
-<rect x="1206" y="70" width="210" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
-<text x="1311" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">IMPLANT</text>
-<text x="1311" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">dope + anneal</text>
+<rect x="1074" y="70" width="188" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
+<text x="1168" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">STRIP / CLEAN</text>
+<text x="1168" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">resist + residues</text>
 
 </g>
-<line x1="1419" y1="116" x2="1437" y2="116" stroke="#526078" stroke-width="3.5" />
-<polygon points="1437,116 1425.12984377594,121.3008858897744 1425.12984377594,110.6991141102256" fill="#526078"/>
+<line x1="1265" y1="116" x2="1279" y2="116" stroke="#526078" stroke-width="3.5" />
+<polygon points="1279,116 1267.12984377594,121.3008858897744 1267.12984377594,110.6991141102256" fill="#526078"/>
 <g opacity="1">
-<rect x="1440" y="70" width="210" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
-<text x="1545" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">POLISH</text>
-<text x="1545" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">CMP, atomically flat</text>
+<rect x="1282" y="70" width="188" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
+<text x="1376" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">IMPLANT</text>
+<text x="1376" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">dope + anneal</text>
 
 </g>
-<line x1="1653" y1="116" x2="1671" y2="116" stroke="#526078" stroke-width="3.5" />
-<polygon points="1671,116 1659.12984377594,121.3008858897744 1659.12984377594,110.6991141102256" fill="#526078"/>
+<line x1="1473" y1="116" x2="1487" y2="116" stroke="#526078" stroke-width="3.5" />
+<polygon points="1487,116 1475.12984377594,121.3008858897744 1475.12984377594,110.6991141102256" fill="#526078"/>
 <g opacity="1">
-<rect x="1674" y="70" width="210" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
-<text x="1779" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">MEASURE</text>
-<text x="1779" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">inspect / metrology</text>
+<rect x="1490" y="70" width="188" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
+<text x="1584" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">POLISH</text>
+<text x="1584" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">CMP, atomically flat</text>
 
 </g>
-<path d="M 1779 168 L 1779 226 L 141 226 L 141 174" fill="none" stroke="#a8b3c7" stroke-width="3" stroke-dasharray="8 6"/>
-<polygon points="141,168 133,182 149,182" fill="#a8b3c7"/>
+<line x1="1681" y1="116" x2="1695" y2="116" stroke="#526078" stroke-width="3.5" />
+<polygon points="1695,116 1683.12984377594,121.3008858897744 1683.12984377594,110.6991141102256" fill="#526078"/>
+<g opacity="1">
+<rect x="1698" y="70" width="188" height="92" rx="10" fill="#111827" stroke="#526078" stroke-width="2.5"/>
+<text x="1792" y="109" text-anchor="middle" dominant-baseline="central" font-size="24" font-weight="500" fill="#f8fafc">MEASURE</text>
+<text x="1792" y="137" text-anchor="middle" dominant-baseline="central" font-size="17.28" fill="#a8b3c7">inspect / metrology</text>
+
+</g>
+<path d="M 1792 168 L 1792 226 L 128 226 L 128 174" fill="none" stroke="#a8b3c7" stroke-width="3" stroke-dasharray="8 6"/>
+<polygon points="128,168 120,182 136,182" fill="#a8b3c7"/>
 <text x="960" y="262" text-anchor="middle" font-size="24" font-weight="700" letter-spacing="2" fill="#a8b3c7">REPEAT FOR THE NEXT PATTERN</text>
 </svg>

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Generates every structural SVG for the course into diagrams/rendered/.
 // One source of truth: edit the data below, re-run `npm run diagrams`.
-// No dependencies. See STRATEGY.md ("structural diagrams are code").
+// No dependencies; generated SVGs are committed alongside the deck.
 
 import { mkdirSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
@@ -270,12 +270,13 @@ const STEPS = [
   ['EXPOSE', 'lithography'],
   ['DEVELOP', 'reveal the pattern'],
   ['ETCH', 'carve it'],
+  ['STRIP / CLEAN', 'resist + residues'],
   ['IMPLANT', 'dope + anneal'],
   ['POLISH', 'CMP, atomically flat'],
   ['MEASURE', 'inspect / metrology'],
 ]
 function flowStrip(hot = [] /* array of step indices to highlight */, { loop = true } = {}) {
-  const W = 1920, H = loop ? 300 : 190, bw = 210, gap = 24, x0 = (W - (STEPS.length * bw + (STEPS.length - 1) * gap)) / 2
+  const W = 1920, H = loop ? 300 : 190, bw = 188, gap = 20, x0 = (W - (STEPS.length * bw + (STEPS.length - 1) * gap)) / 2
   const parts = []
   STEPS.forEach(([name, sub], i) => {
     const x = x0 + i * (bw + gap)
@@ -295,7 +296,7 @@ function flowStrip(hot = [] /* array of step indices to highlight */, { loop = t
 }
 writeFileSync(join(OUT, 'flow-strip.svg'), flowStrip())
 writeFileSync(join(OUT, 'flow-strip-steps.svg'), flowStrip([], { loop: false }))
-const FLOW_STATES = { deposit: [0], coat: [1, 3], expose: [2], etch: [4], implant: [5], polish: [6], measure: [7] }
+const FLOW_STATES = { deposit: [0], coat: [1, 3], expose: [2], etch: [4, 5], implant: [6], polish: [7], measure: [8] }
 for (const [k, hot] of Object.entries(FLOW_STATES)) writeFileSync(join(OUT, `flow-${k}.svg`), flowStrip(hot))
 
 // ======================================================== CHOKEPOINT BOARD

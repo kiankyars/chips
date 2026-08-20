@@ -2,9 +2,6 @@
 
 As-of: 2026-08-18
 
-Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
-`<!-- VERIFY -->` = not fully confident, check before recording.
-
 ## What they are
 - Taiwan Semiconductor Manufacturing Company (Hsinchu, Taiwan). The world's
   first and largest **pure-play foundry**: it manufactures chips designed by
@@ -247,26 +244,6 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   not technical leapfrog. <!-- VERIFY: Intel/Samsung 2026 ramp status + Tesla-Samsung deal terms from memory; check before use. -->
 - Taiwan physical constraints: power, water, land, engineers — 10 simultaneous
   fab projects strain all four. [38]
-
-## Fact ammo — lines that land
-- **One company, one island, ~90% of the world's most advanced chips** — and
-  72.3% of the entire global foundry market, 11× the size of #2 Samsung. [7][34][37]
-- **In Q2 2026 TSMC kept 55.6 cents of every revenue dollar as net profit** —
-  67.7% gross margin — margins software companies envy, earned in the most
-  capital-intensive factories ever built. [41]
-- **Nvidia dethroned Apple as customer #1 in 2025** (~19% vs ~17% of revenue)
-  — the AI era changing the guard inside TSMC's ledger after more than a decade
-  of iPhone primacy. [9][10]
-- **A single 30cm wafer of A16 silicon reportedly sells for ~$45,000** — the
-  price of a car for a dinner-plate-sized disc, and customers queue for it. [27]
-- **Capex 2026: $52–56B — roughly $150M every single day** — more than most
-  competitors' total annual revenue, spent every year, mostly on machines that
-  live in Taiwan. [2]
-- **After Taiwan's strongest earthquake in 25 years, 70% of TSMC's tools were
-  back online within 10 hours**; the quarter's damage: NT$3B, a ~0.1%-of-revenue
-  rounding error. The fabs are engineered like the national asset they are. [31][33]
-
----
 
 ## Sources
 1. TSMC 4Q25 earnings release (Form 6-K, 15 Jan 2026) — https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm

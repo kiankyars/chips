@@ -2,9 +2,6 @@
 
 As-of: 2026-08-18
 
-Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
-`<!-- VERIFY -->` = not fully confident, check before recording.
-
 ## What they are
 - **Fabless** chip designer (Santa Clara, CA). Designs GPUs and AI systems; owns
   **zero fabs** — every data-center chip is manufactured by TSMC, memory comes
@@ -282,23 +279,6 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   bargaining; the 15–25% license fees set a precedent of taxing exports. [22][23]
 - **Valuation**: at ~$5T, Nvidia alone is ~7% of the S&P 500 <!-- VERIFY: current index weight -->;
   the market prices flawless execution.
-
-## Fact ammo — lines that land
-- Nvidia booked **$81.6B in a single quarter** (Q1 FY27) — more than it made in
-  the *entire year* two years earlier. [1] <!-- VERIFY: FY24 = $60.9B, from memory -->
-- It took Nvidia **30 years to reach $1T** in value — then **three months** to
-  go from $4T to $5T (Jul→Oct 2025). [5]
-- The B300 package carries **208 billion transistors** — about one for every
-  star in the Milky Way — and drinks **1,400W**, a hairdryer running flat out. [7][8]
-- One GB300 NVL72 rack ≈ **$4M** (est.) and pulls ~**135kW** — the average
-  power draw of about **110 American homes** — and hyperscalers are installing
-  them by the thousand. [10][12]
-- Three customers = **54%** of the revenue of the world's most valuable
-  company. [3]
-- The US government literally takes a **15–25% cut** of Nvidia's China chip
-  sales — an export tax invented for one company. [22]
-- Nvidia's **FY2026 companywide GAAP gross margin was 71.1%**. It is evidence of
-  platform economics, not a disclosed margin for one accelerator. [2]
 
 ## Sources
 1. Nvidia, "Financial Results for Q1 Fiscal 2027" (quarter ended 2026-04-26) — https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027

@@ -1,20 +1,7 @@
 ---
 layout: default
+sources: [research/nvidia.md, research/memory-hbm.md, research/packaging.md, research/tsmc.md, research/eda.md, research/asml.md, research/kla.md, research/equipment-dep-etch.md, research/materials.md]
 ---
-
-<!-- SEGMENT
-id: synthesis
-act: VI — The Board Is the World
-tier: —            # finale synthesis — no new player, re-reads the whole board
-angle: "Follow the economics: hard-to-replace capabilities can support margins, but business mix, capital intensity, and cycles determine what companies report."   # PROPOSED — YOU OWN THIS LINE
-runtime: ~4 min
-status: draft
-seeds: []
-pays_off: []                       # the owns-no-factories seed closes in `fabless-field`
-stamps: []                         # no new stamps — board-7 is a callback, complete
-diagrams: [map-full, journey-6, replacement-horizon, chip-rack-grid]
-sources: research/nvidia.md, research/memory-hbm.md, research/packaging.md, research/tsmc.md, research/eda.md, research/asml.md, research/kla.md, research/equipment-dep-etch.md, research/materials.md
--->
 
 # Scarcity alone does not explain gross margin
 

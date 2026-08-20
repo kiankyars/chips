@@ -1,22 +1,8 @@
 ---
 class: visual-sequence paper-visual
 title: "Memory cells"
+sources: [research/memory-hbm.md]
 ---
-
-<!-- SEGMENT
-id: memory-hbm
-act: V — Memory & The Assembly
-tier: D            # duel — a three-way contest told as one story (SK hynix · Samsung · Micron)
-angle: "Logic sells genius; memory sells nerve. For fifty years memory was the industry's commodity purgatory — until HBM welded it to the GPU and, by third-party estimates, became the largest physical package-cost line in B300."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~8 min
-status: draft
-seeds: []                          # nothing new planted for a later segment; the closer hands off to `packaging`
-pays_off: [memory-wall]            # the bandwidth problem seeded in `nvidia` gets its bill here
-stamps: [hbm]                      # chokepoint #6 — qualified HBM capacity
-diagrams: [memory-types, hbm-package, dram-revenue-surge]
-sources: research/memory-hbm.md
--->
-
 
 <div class="visual-sequence__kicker">DRAM REFRESHES; NAND RETAINS</div>
 

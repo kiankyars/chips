@@ -1,9 +1,6 @@
 # Research — Semiconductor IP: Arm & RISC-V
 As-of: 2026-08-18
 
-Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
-`<!-- VERIFY -->` = not fully confident, check before recording.
-
 ## What IP / an ISA is (teachable)
 - An **ISA** (instruction set architecture) = the *vocabulary* a chip speaks — the
   fixed list of instructions (add, load, branch, …) software is compiled into.
@@ -191,26 +188,6 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   flawless datacenter + own-silicon execution. [8][10]
 - **SoftBank overhang**: ~87–90% owner; float is thin; SoftBank's AI ambitions
   (Ampere, Stargate) may steer Arm's roadmap. [8][19]
-
-## Fact ammo — lines that land
-- **350+ billion** Arm chips shipped — 40+ for every human alive; and Arm has
-  never fabbed a single one. [1]
-- Over **99% of smartphones** run on Arm — whoever won the phone war, Arm won. [3]
-- Arm's royalty is **pennies per chip (~1–2% of price)** — the entire company's
-  revenue is $4.9B, yet it's valued at ~$320B+: the market pricing a *tax on
-  computing itself*. [1][4][8]
-- Founded 1990: **12 engineers in a Cambridge barn**, seeded with $3M from Apple
-  to power the Newton — the flop that accidentally created the mobile era's
-  most important company. [11][12]
-- The biggest shipper of Arm's would-be killer? **Nvidia — ~1 billion RISC-V
-  cores a year**, hidden inside its GPUs. [28]
-- June 2026, Computex: Arm crosses **~50% of hyperscaler CPU compute** — the
-  x86 server monopoly ended not with a bang but with a cloud invoice. [1][13]
-- March 2026: after 35 years of "we don't make chips," Arm started making chips
-  (AGI CPU, Meta as lead customer) — the blueprint company crossed its own
-  rubicon. [15][16]
-
----
 
 ## Sources
 1. Arm Newsroom, "Arm delivers record-breaking quarter and full-year results" (Q4 FYE26, May 2026) — https://newsroom.arm.com/news/arm-q4-fye26-results

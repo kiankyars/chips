@@ -2,8 +2,6 @@
 
 As-of: 2026-07
 
-Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
-`<!-- VERIFY -->` = not fully confident, check before recording.
 Covers wafer-fab equipment beyond litho (→ research/asml.md) and process
 control (→ KLA's own pack).
 
@@ -214,28 +212,6 @@ control (→ KLA's own pack).
   dep/etch could partially reverse. <!-- VERIFY: counterargument — High-NA adoption is slow and layer counts keep rising; net effect still favors dep/etch through 2028 per most analysts -->
 - **Customer concentration**: five-ish buyers (TSMC, Samsung, Intel, SK Hynix,
   Micron + Kioxia/YMTC-era China) set the entire demand curve.
-
-## Fact ammo — lines that land
-- **An oligopoly of monopolies**: five companies — ASML, Applied, Lam, TEL,
-  KLA — control ~**70%** of the ~$116B wafer-fab-equipment market, and each one
-  dominates a *different* step of the same production line. [1][4]
-- **The hole that stores your data**: a 3D NAND memory channel is **1/1000th
-  the width of a human hair and 50× deeper than it is wide** — Lam has etched
-  those channels into **over 100 million wafers**. [9][12]
-- **The monopoly nobody's heard of**: TEL's coater/developer — the machine
-  bolted to every ASML scanner — has **>90% global share**, a tighter grip than
-  ASML's own share of litho. [11][16]
-- **The architecture toll-booth**: Applied Materials makes **~$1B more per
-  100,000 wafer-starts/month** every time the transistor changes shape — GAA is
-  one extra billion, backside power the next. [7]
-- **One atomic layer at a time**: ASM's ALD tools deposit films a single layer
-  of atoms per cycle; when 2nm gate-all-around made that indispensable, ASM
-  posted a record **€3.2B** year at a record **51.8%** gross margin. [15]
-- **Sell it once, service it for 25 years**: Lam's ~**100,000** installed
-  chambers make **36%** of its revenue recurring; Applied's $6.4B services arm
-  is now structured to be entirely recurring. [13][14][5][22]
-
----
 
 ## Sources
 1. SEMI, "Global Semiconductor Equipment Sales Projected to Reach a Record of $156 Billion in 2027" (Dec 2025 year-end forecast; 2025 = $133B, WFE $115.7B) — https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-projected-to-reach-a-record-of-156-billion-dollars-in-2027-semi-reports (mirror: https://www.prnewswire.com/news-releases/global-semiconductor-equipment-sales-projected-to-reach-a-record-of-156-billion-in-2027-semi-reports-302640433.html)

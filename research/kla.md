@@ -2,8 +2,6 @@
 
 As-of: 2026-08-18
 
-Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
-`<!-- VERIFY -->` = not fully confident, check before recording.
 Note: KLA's fiscal year ends June 30. FY2026 results were released July 28, 2026.
 
 ## What KLA is
@@ -138,24 +136,6 @@ Q3 FY2026 operating snapshot (March 2026 quarter) [2]:
   ever matches optical throughput, KLA's BBP moat narrows.
 - Valuation/expectations: priced as the quality compounder of the group; a WFE
   digestion year hits the multiple.
-
-## Fact ammo — lines that land
-- "A wafer takes three to four months and up to a thousand process steps. KLA's
-  machines are how you find out at step 401 — not step 1,000 — that step 400 went
-  wrong." [8][9]
-- "A process excursion caught in-line exposes one lot; the same excursion found
-  at final test can expose weeks of work-in-process." [8][9]
-- "KLA's share of process control is about 7× its nearest competitor — a more
-  lopsided lead than almost anywhere else in semiconductors, and it's still
-  gaining share." [2]
-- "KLA's process-control franchise helped the company report a 61.3% FY2026
-  GAAP gross margin." [17]
-- "Finding a 20-nanometer defect on a 300mm wafer is like finding one golf ball
-  on a disc 600 km wide." (arithmetic)
-- "China went from 43% of KLA's revenue to 24% in about two years — the quiet
-  chokepoint story of the export-control era." [2][3]
-
----
 
 ## Sources
 1. KLA, "Fiscal 2025 Fourth Quarter and Full Year Results" (8-K exhibit, July 31, 2025) — https://www.sec.gov/Archives/edgar/data/319201/000031920125000020/exhibit991earningsrelease7.htm (also: https://ir.kla.com/news-events/press-releases/detail/500/kla-corporation-reports-fiscal-2025-fourth-quarter-and-full)

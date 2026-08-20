@@ -1,21 +1,7 @@
 ---
 layout: default
+sources: [research/packaging.md, research/nvidia.md]
 ---
-
-<!-- SEGMENT
-id: packaging
-act: V — Memory & The Assembly
-tier: P-lite
-angle: "In 2023–25, AI accelerators remained supply-constrained even as front-end output ramped: CoWoS capacity, HBM, and later substrates limited shipments. A packaging stage offshored to cut costs in 1963 had become a gate for AI compute."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~6 min
-status: draft
-seeds: []                                   # no new forward seed; hands the completed Board into geopolitics
-pays_off: [reticle-limit, yield]            # both seeds return briefly inside the progressive package build
-stamps: [tsmc-cowos]                        # stamp #7 — the Board completes; TSMC's second constrained capability
-diagrams: [package-01-substrate, package-02-interposer, package-03-dies-and-hbm, package-04-complete]
-sources: research/packaging.md, research/nvidia.md
--->
-
 
 # By 2023, CoWoS—not front-end wafers—limited accelerator output
 

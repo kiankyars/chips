@@ -1,22 +1,7 @@
 ---
 layout: section
+sources: [research/geopolitics.md]
 ---
-
-<!-- SEGMENT
-id: geopolitics
-act: VI — The Board Is the World
-tier: —            # climax; no cast tier — this is the payoff of the whole board
-angle: "The chip war has no new characters. It's the map you've spent two hours lighting up — re-read as a weapons diagram. Once you can see the seven chokepoints, you can read every headline yourself."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~11 min
-status: draft
-seeds: []                                                    # climax plants nothing forward
-pays_off: [multi-patterning, taiwan-flag, euv-export-license, smic-iou]
-stamps: []                                                   # board already complete (board-7) — this segment re-reads it, earns none
-diagrams: [policy-control-points, export-control-expansion, h20-policy-cycle, china-mineral-response, nexperia-supply-shock, china-capability-cost, china-technology-gap, taiwan-concentration, split-ai-stacks]
-sources: research/geopolitics.md
-swappable: true    # export rules move monthly — ONE topic per slide, NO cross-slide dependencies; any single slide can be re-recorded without touching its neighbors
--->
-
 
 # Concentration makes policy coercive
 

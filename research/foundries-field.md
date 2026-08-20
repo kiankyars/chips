@@ -2,8 +2,6 @@
 
 As-of: 2026-07
 
-Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
-`<!-- VERIFY -->` = not fully confident, check before recording.
 Covers: Samsung Foundry, GlobalFoundries, SMIC, UMC, Rapidus. TSMC and Intel
 Foundry have their own packs.
 
@@ -218,28 +216,6 @@ Foundry have their own packs.
   likewise Chinese mature-node overcapacity is compressing UMC/GF pricing.
 - Rapidus status changes quarterly; verify pilot-line/customer news within a
   month of recording.
-
-## Fact ammo — lines that land
-
-- **TSMC holds 72.3% of the foundry market. Number two — Samsung, one of the
-  biggest companies on Earth — has 6.5%. That's an 11-to-1 gap.** [1]
-- **Being #1 in foundry earned TSMC a 59.9% gross margin in 2025. Being #2
-  cost Samsung roughly $10B in losses over three years. Same industry, same
-  years.** [12][20]
-- **Samsung beat TSMC to the GAA transistor by three years — and lost the node
-  anyway.** First 3nm GAA in June 2022; yields reportedly ~20%; Qualcomm took
-  its flagships to TSMC's older-architecture FinFET instead. [3][4]
-- **SMIC's entire record year — $9.3 billion — is about four weeks of TSMC.** [20][25]
-- **In 2015 IBM paid GlobalFoundries $1.5B to take its chip factories. Chip
-  manufacturing was such a bad business you had to pay someone to take it —
-  ten years before it became the most strategic industry on Earth.** [15]
-- **Japan has put roughly ¥2.35 trillion (~$16B) of public money behind
-  Rapidus — a company that has never sold a chip.** [34][37]
-- **The Huawei Mate 60 Pro (Aug 2023): a 7nm Chinese chip, made with machines
-  the export controls allowed — the single most famous headline against the
-  sanctions regime.** [24]
-
----
 
 ## Sources
 

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-<title id="title">Planar transistor gate geometry</title>
-<desc id="desc">Simplified transverse cross-section through a planar transistor gate. The gate controls one channel surface, and current runs into the page.</desc>
+<title id="title">Planar transistor source-to-drain leakage</title>
+<desc id="desc">Longitudinal nMOS cross-section with source at left and drain at right. A dashed electron-leakage path runs beneath the off gate, while a channel-length bracket shows why closer source and drain regions weaken electrostatic control.</desc>
 <defs>
   <radialGradient id="spot" cx="50%" cy="48%" r="56%">
     <stop offset="0%" stop-color="#17284a" stop-opacity="0.72"/>
@@ -26,21 +26,43 @@
 <rect width="1920" height="1080" fill="#080c14"/>
 <rect width="1920" height="1080" fill="url(#spot)"/>
 <rect width="1920" height="1080" fill="url(#grid)"/>
-  <text x="960" y="104" text-anchor="middle" fill="#a8b3c7" font-size="25" font-weight="650" letter-spacing="5">TRANSVERSE CHANNEL CROSS-SECTION · CURRENT INTO PAGE</text>
+  <text x="960" y="104" text-anchor="middle" fill="#a8b3c7" font-size="25" font-weight="650" letter-spacing="5">LONGITUDINAL CHANNEL CROSS-SECTION · ELECTRONS FLOW SOURCE → DRAIN</text>
 <path d="M 380 906 H 1540" stroke="#526078" stroke-width="2" opacity="0.6"/>
 <rect x="380" y="650" width="1160" height="256" rx="8" fill="url(#substrate)" stroke="#526078" stroke-width="3"/>
 <path d="M 410 680 H 1510" stroke="#94a3b8" stroke-width="2" opacity="0.17"/>
-<rect x="590" y="622" width="740" height="28" rx="12" fill="#fbbf24"/>
-<rect x="550" y="574" width="820" height="48" rx="12" fill="#67e8f9" opacity="0.9" filter="url(#controlGlow)"/>
-<rect x="540" y="330" width="840" height="244" rx="16" fill="url(#gate)" stroke="#60a5fa" stroke-width="4"/>
-<path d="M 590 622 H 1330" stroke="#fff3c4" stroke-width="4" opacity="0.72"/>
-<path d="M 1558 324 L 1368 402" fill="none" stroke="#60a5fa" stroke-width="2.5" opacity="0.82"/>
-<circle cx="1368" cy="402" r="5" fill="#60a5fa"/>
-<text x="1580" y="332" text-anchor="start" fill="#60a5fa" font-size="24" font-weight="700" letter-spacing="2">GATE</text>
-<path d="M 1558 510 L 1314 636" fill="none" stroke="#fbbf24" stroke-width="2.5" opacity="0.82"/>
-<circle cx="1314" cy="636" r="5" fill="#fbbf24"/>
-<text x="1580" y="518" text-anchor="start" fill="#fbbf24" font-size="24" font-weight="700" letter-spacing="2">CHANNEL</text>
-<path d="M 1558 782 L 1480 790" fill="none" stroke="#a8b3c7" stroke-width="2.5" opacity="0.82"/>
-<circle cx="1480" cy="790" r="5" fill="#a8b3c7"/>
-<text x="1580" y="790" text-anchor="start" fill="#a8b3c7" font-size="24" font-weight="700" letter-spacing="2">SILICON SUBSTRATE</text>
+<defs>
+  <marker id="leakArrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto">
+    <path d="M0 0L18 9L0 18Z" fill="#fb7185"/>
+  </marker>
+</defs>
+<rect x="420" y="650" width="350" height="210" rx="10" fill="#10382f" stroke="#34d399" stroke-width="4"/>
+<rect x="1150" y="650" width="350" height="210" rx="10" fill="#10382f" stroke="#34d399" stroke-width="4"/>
+
+<path d="M 770 650 H 1150" stroke="#fbbf24" stroke-width="16" opacity="0.92"/>
+<rect x="730" y="594" width="460" height="56" rx="12" fill="#67e8f9" opacity="0.9" filter="url(#controlGlow)"/>
+<rect x="700" y="322" width="520" height="272" rx="16" fill="url(#gate)" stroke="#60a5fa" stroke-width="4"/>
+
+<text x="960" y="440" text-anchor="middle" fill="#f8fafc" font-size="40" font-weight="780">GATE OFF · 0 V</text>
+<text x="960" y="492" text-anchor="middle" fill="#67e8f9" font-size="24" font-weight="650" letter-spacing="1.5">CONTROLS THE BARRIER FROM ABOVE</text>
+
+<text x="595" y="750" text-anchor="middle" fill="#34d399" font-size="34" font-weight="800" letter-spacing="3">SOURCE</text>
+<text x="595" y="794" text-anchor="middle" fill="#a8b3c7" font-size="22" font-weight="620">electrons enter</text>
+<text x="1325" y="750" text-anchor="middle" fill="#34d399" font-size="34" font-weight="800" letter-spacing="3">DRAIN</text>
+<text x="1325" y="794" text-anchor="middle" fill="#a8b3c7" font-size="22" font-weight="620">electrons leave</text>
+
+<path d="M 800 684 H 1128" fill="none" stroke="#fb7185" stroke-width="6" stroke-linecap="round" stroke-dasharray="12 12" marker-end="url(#leakArrow)"/>
+<circle cx="820" cy="679" r="7" fill="#fb7185"/>
+<circle cx="867" cy="689" r="7" fill="#fb7185"/>
+<circle cx="914" cy="679" r="7" fill="#fb7185"/>
+<circle cx="961" cy="689" r="7" fill="#fb7185"/>
+<circle cx="1008" cy="679" r="7" fill="#fb7185"/>
+<circle cx="1055" cy="689" r="7" fill="#fb7185"/>
+<circle cx="1102" cy="679" r="7" fill="#fb7185"/>
+<text x="960" y="742" text-anchor="middle" fill="#fb7185" font-size="24" font-weight="760" letter-spacing="1.6">OFF-STATE ELECTRON LEAKAGE</text>
+
+<path d="M 770 824 V 876 M 1150 824 V 876 M 770 858 H 1150" fill="none" stroke="#a8b3c7" stroke-width="3"/>
+<path d="M 770 858 L 790 848 V 868 Z M 1150 858 L 1130 848 V 868 Z" fill="#a8b3c7"/>
+<text x="960" y="842" text-anchor="middle" fill="#f8fafc" font-size="25" font-weight="740" letter-spacing="1.5">CHANNEL LENGTH L ↓</text>
+
+<text x="960" y="236" text-anchor="middle" fill="#fb7185" font-size="30" font-weight="780" letter-spacing="1.2">SHORTER L → WEAKER GATE CONTROL → MORE I<tspan baseline-shift="sub" font-size="21">OFF</tspan></text>
 </svg>

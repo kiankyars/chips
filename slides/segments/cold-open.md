@@ -2,23 +2,8 @@
 layout: default
 class: visual-sequence paper-visual
 title: "The object"
+sources: [research/nvidia.md, research/foundations.md]
 ---
-
-<!-- SEGMENT
-id: cold-open
-act: 0 — The Object
-tier: —
-angle: "Use one 2025–26 GB300-class accelerator as the stable tracer case, then bridge once to the Rubin frontier."
-runtime: ~6 min
-status: draft
-seeds: [the-object]
-pays_off: []
-stamps: []
-diagrams: [inference-forward-pass, journey-0]
-sources: research/nvidia.md, research/foundations.md
-note: BUILD AND RECORD LAST — this opening establishes the object, its scale, and the course route.
--->
-
 
 <div class="visual-sequence__kicker">THE OBJECT</div>
 
@@ -60,6 +45,11 @@ title: "One inference forward pass"
 ---
 
 <img src="/diagrams/rendered/inference-forward-pass.png" alt="A two-path inference schematic shows live requests moving through networking, Grace, HBM, shared L2 and SM compute, while model checkpoints load separately through storage and Grace memory" />
+
+<figure class="inference-hardware-inset">
+  <img src="/assets/nvidia-grace-blackwell-ultra-superchip.webp" alt="Physical Grace Blackwell Ultra board with its two Blackwell Ultra GPUs, Grace CPU, and ConnectX-8 SuperNICs labeled" />
+  <figcaption>PHYSICAL GB300 BOARD</figcaption>
+</figure>
 
 <!--
 - At worker startup, weights can move from a registry through local NVMe and Grace memory into HBM; the exact staging path varies by system.

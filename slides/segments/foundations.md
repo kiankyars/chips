@@ -1,21 +1,7 @@
 ---
 layout: section
+sources: [research/foundations.md]
 ---
-
-<!-- SEGMENT
-id: foundations
-act: I — The Impossible Object
-tier: —                                            # concept segment, no player profiled
-angle: "The chip I just held up shouldn't exist — and the fastest way to understand a $600-billion-a-year industry is to take that one impossible object apart until you hit the two exponentials that built it."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~9 min
-status: draft
-seeds: [yield]                                     # one particle, one dead die → cashed in life-of-a-wafer, kla, intel, packaging
-pays_off: []                                       # opener of the course; nothing cashes here
-stamps: []                                         # no chokepoint proven yet
-diagrams: [journey-1, transistor-switch-v2, density-clock-v2, transistor-planar, transistor-finfet, transistor-gaa, yield-defects]
-sources: research/foundations.md
--->
-
 
 # Inside the accelerator
 
@@ -70,7 +56,6 @@ title: "A transistor is a switch"
 </div>
 
 <div class="visual-sequence__caption"><strong>A small voltage at the gate</strong><span>turns the path for current on or off.</span></div>
-<div class="visual-sequence__source">Simplified transistor cross-section · not to scale</div>
 
 <!--
 - In digital logic, a transistor acts as a microscopic switch: it allows current through or blocks it.
@@ -174,17 +159,21 @@ title: "Transistor geometry · 1 / 3"
 <div class="visual-sequence__kicker">TRANSISTOR GEOMETRY · 1 / 3</div>
 
 <div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/transistor-planar.svg" alt="Cross-section of a planar transistor with its gate above a flat channel" />
+  <img src="/diagrams/rendered/transistor-planar.svg" alt="Longitudinal nMOS cross-section with source at left, drain at right, an off gate above the channel, and a dashed electron-leakage path running left to right" />
 </div>
 
-<div class="visual-sequence__caption"><strong>Planar</strong><span>The gate controls the channel from one surface.</span></div>
-<div class="visual-sequence__source">Planar transistor · one controlled surface</div>
+<div class="visual-sequence__caption"><strong>Planar</strong><span>As source and drain move closer, off-state leakage rises.</span></div>
+<div class="visual-sequence__source">Longitudinal nMOS cross-section · conceptual · not to scale</div>
 
 <!--
-- Amber is the silicon channel, blue is the gate, and cyan is the gate dielectric between them.
-- A planar gate controls the channel from above.
-- As planar gate lengths shrink, electrostatic control weakens and off-state leakage rises.
-- FinFETs and gate-all-around designs control more of the channel surface.
+- This view looks along the channel: source is left, drain is right, and electron flow is left to right. Conventional current points the other way.
+- The gate does not pass charge through its oxide; its electric field controls the source-to-channel barrier from above.
+- With the gate off, that barrier is not infinite. As channel length shrinks, the drain field reaches farther under the gate and lowers the barrier, so more electrons leak from source to drain.
+- The next slide rotates the view 90 degrees. FinFETs and gate-all-around designs wrap more channel surfaces to restore electrostatic control.
+
+[Sources]
+- MIT OpenCourseWare, 6.720J Lecture 31, “The Short MOSFET” — https://ocw.mit.edu/courses/6-720j-integrated-microelectronic-devices-spring-2007/188675286579933499c7d5b6c9920681_lecture31.pdf
+[/Sources]
 -->
 
 ---
@@ -226,49 +215,6 @@ title: "Transistor geometry · 3 / 3"
 - A stacked-nanosheet GAA transistor places several horizontal silicon channels above the substrate. The gate wraps the top, bottom, and both sidewalls of each sheet.
 - This tighter electrostatic control supports continued scaling, and sheet width gives designers another way to tune drive current.
 - Samsung announced initial 3 nm production with nanosheet GAA in June 2022.
--->
-
----
-class: visual-sequence paper-visual
-title: "Yield"
----
-
-<div class="visual-sequence__kicker">YIELD</div>
-
-<div class="visual-sequence__frame">
-  <img src="/diagrams/rendered/yield-defects.svg" alt="The same six defects distributed across grids of small and large dies, showing that larger dies lose more yield" />
-</div>
-
-<div class="visual-sequence__caption"><strong>At the same defect density,</strong><span>larger dies lose more yield.</span></div>
-
-<!--
-- A stray particle or process defect can ruin the die beneath it.
-- Larger dies cover more wafer area, so they encounter defects more often and produce fewer working chips per wafer.
-- Hold the size penalty here. Packaging later shows how designers work around it.
--->
-
----
-class: yield-model
-title: "The first-order yield model"
----
-
-# One equation explains the size penalty
-
-<div class="yield-model__equation"><var>Y</var> = e<sup>−<var>A</var>·<var>D</var>₀</sup></div>
-
-<div class="yield-model__terms">
-  <div><strong>Y</strong><span>working dies ÷ total dies</span></div>
-  <div><strong>A</strong><span>area of one die</span></div>
-  <div><strong>D₀</strong><span>killer defects per unit area</span></div>
-</div>
-
-<div class="yield-model__takeaway">Larger die or more defects → exponentially fewer working dies.</div>
-<div class="yield-model__limit">Poisson Model assumes defects land randomly and independently.</div>
-
-<!--
-- Y is the probability that a die contains zero killer defects; e is Euler's number.
-- A·D₀ is the expected number of killer defects per die. Larger area or higher defect density lowers yield exponentially.
-- Poisson assumes random, independent defects. Real fabs may use clustered-defect models such as the negative binomial.
 -->
 
 ---

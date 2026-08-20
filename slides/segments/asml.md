@@ -2,22 +2,8 @@
 class: visual-sequence
 transition: fade
 title: "EUV · physical scale"
+sources: [research/asml.md]
 ---
-
-<!-- SEGMENT
-id: asml
-act: IV — The Fab Tour
-tier: P
-angle: "ASML is the sole supplier of production EUV scanners and integrates critical modules from ZEISS, TRUMPF, and Cymer."
-runtime: ~8 min
-status: draft
-seeds: [multi-patterning, euv-export-license]
-pays_off: []
-stamps: [asml, zeiss]
-diagrams: [asml-scanner-scale, asml-reticle-field-wafer, asml-supplier-modules]
-sources: research/asml.md
--->
-
 
 <div class="visual-sequence__kicker">HIGH-NA EUV IS INDUSTRIAL-SCALE PRECISION EQUIPMENT</div>
 

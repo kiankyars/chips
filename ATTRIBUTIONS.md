@@ -4,6 +4,11 @@
   Wikimedia Commons user 90lbNose, dedicated to the public domain under CC0 1.0.
   Source: https://commons.wikimedia.org/wiki/File:OxidizedSiliconWafer.jpg
 
+- `public/assets/asml-nxe-optical-column.jpg` — official ASML illustration of
+  the optical column in an NXE EUV lithography system. Copyright ASML; no
+  open-content license is stated. Source:
+  https://www.asml.com/en/products/euv-lithography-systems
+
 - `public/assets/nvidia-grace-blackwell-ultra-superchip.webp` — official NVIDIA
   image of the Grace Blackwell Ultra Superchip with ConnectX-8 SuperNICs, from
   “Inside NVIDIA Blackwell Ultra: The Chip Powering the AI Factory Era.” Copyright

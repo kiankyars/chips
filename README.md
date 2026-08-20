@@ -5,38 +5,50 @@ data center, and which companies control each step.
 
 View the published course at <https://kiankyars.github.io/chips/>.
 
-## The premise
+The course follows a 2025–26 Blackwell Ultra accelerator from design file to
+finished system. The current sequence is summarized in `curriculum.md`.
 
-**Follow one chip.** A 2025–26 Blackwell Ultra accelerator is the case study, followed
-from idea → design file → the island → the fab → memory → package → data center.
+## Repository
 
-## Tree
+- `slides.md` sets the deck order and imports the segments.
+- `slides/segments/` contains the slides and speaker notes.
+- `research/` contains the evidence and source lists behind each segment.
+- `diagrams/src/` generates reusable SVG diagrams into `diagrams/rendered/`.
+- `public/assets/` contains photographs and other static assets.
+- `styles.css` contains course-wide Slidev styles.
+- `ATTRIBUTIONS.md` records third-party visual sources and licenses.
 
+## Work on the course
+
+Edit the layer that owns the thing you want to change. There is no required
+agent workflow, segment lifecycle, slide template, or visual formula. Existing
+slides are examples, not constraints.
+
+Each segment lists the research files it uses in its first-slide frontmatter:
+
+```yaml
+---
+layout: default
+sources: [research/nvidia.md]
+---
 ```
-chips/
-  README.md            ← you are here
-  STRATEGY.md          ← the design system: why v2 looks like this
-  AUTHORING.md         ← the co-design workflow + every file convention
-  curriculum.md        ← the course map: acts, segments, minutes, devices
-  slides.md            ← Slidev entry deck; imports each segment
-  slides/segments/     ← one markdown file per segment
-  research/            ← source-linked fact packs declared by each segment
-  diagrams/
-    rendered/          ← SVGs (structural, hand-authored) + PNGs (generated)
-    prompts/           ← GPT-image prompts for decorative one-offs
-```
 
-## Running the deck
+Put evidence and links in the relevant research file. Speaker notes are ordinary
+trailing HTML comments in each slide. Unresolved claims can stay marked with a
+`VERIFY` comment in research, but should not move into the published deck. For
+generated SVGs, edit the JavaScript in `diagrams/src/` and run `npm run diagrams`;
+other images can be placed directly in `diagrams/rendered/` or `public/assets/`.
+
+## Commands
 
 ```bash
-npm install          # one time
-npm run dev          # live presentation at localhost:3030 (press F for fullscreen)
-npm run dev -- --presenter   # presenter view: slide + your beats side-by-side
-npm run export       # render slides.md -> dist PDF
-npm run diagrams     # regenerate every structural SVG
-npm run check        # regenerate diagrams, validate sources/assets, and build the deck
-npm run build:pages  # production build for https://kiankyars.github.io/chips/
+npm install              # install dependencies
+npm run dev              # open the deck at localhost:3030
+npm run dev -- --presenter
+npm run diagrams         # regenerate code-built SVGs
+npm run check            # validate links and citations, then build
+npm run export           # export the deck to PDF
+npm run build:pages      # production build with the GitHub Pages base path
 ```
 
-Pushes to `main` deploy the production build to GitHub Pages. The workflow can
-also be run manually from the repository's Actions tab.
+Pushes to `main` deploy through `.github/workflows/deploy-pages.yml`.

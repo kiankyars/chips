@@ -2,10 +2,6 @@
 
 As-of: 2026-08-18
 
-Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
-`<!-- VERIFY -->` = not fully confident, check before recording.
-Tier: **T (tragedy)** — the fallen king arc.
-
 ## What Intel is
 - American company (Santa Clara, CA; founded 1968 by Robert Noyce & Gordon
   Moore, Andy Grove first hire). The archetypal **IDM** — designs *and*
@@ -249,31 +245,6 @@ Tier: **T (tragedy)** — the fallen king arc.
 - Simplification hedge for air: "Intel lost the crown because of 10nm" is the
   compressed teach — the honest version is 10nm *and* a decade of missed
   platform shifts (mobile → cloud Arm → AI) stacked on top.
-
-## Fact ammo — lines that land
-- **The iPhone pass:** Otellini, on turning down the chip for the first
-  iPhone: "We ended up not winning it or passing on it… and the world would
-  have been a lot different if we'd done it." The volume turned out to be
-  **100× the forecast**. [14][15]
-- **The 1986 rhyme:** Intel's last annual loss before 2024 was **1986** — the
-  year after Grove walked Intel out of the memory business. The **$18.8B**
-  2024 loss landed while Intel debated, in an SEC filing, walking out of
-  leading-edge logic. [50][45]
-- **The taxpayer trade of the decade (so far):** Washington converted grants
-  into shares at $20.47 in Aug 2025; eleven months later the 9.9% stake was
-  worth ~**$47B** — a ~5× paper gain on money originally meant to be a
-  subsidy. [28][3]
-- **From ~99% to out-earned:** mid-2010s Intel had ~99% of data-center CPUs;
-  in Q1 2026 AMD's data-center business out-earned Intel's for the first time
-  in history ($5.8B vs $5.1B). [9][18]
-- **$5B is six days:** Nvidia's "seismic" $5B stake in Intel equals roughly
-  six days of Nvidia's data-center revenue ($75.2B/quarter). [32][3]
-- **26 years to get home, one week to stumble:** Intel only re-cleared its
-  Aug-2000 dot-com market-cap ceiling in 2026 — on 18A hope — then dropped
-  21% in a week on a single yield report. The entire ~$550B valuation is a
-  bet on one fab in Arizona. [10][39][3]
-
----
 
 ## Sources
 1. Wikipedia, Intel — https://en.wikipedia.org/wiki/Intel

@@ -2,8 +2,6 @@
 
 As-of: 2026-07
 
-Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
-`<!-- VERIFY -->` = not fully confident, check before recording.
 
 Covers: TI, ADI, Infineon, STMicro, NXP, Renesas, onsemi, Microchip — the layer
 that needs **no leading edge**: analog, power, microcontrollers. Chips that cost
@@ -222,26 +220,6 @@ when missing.
 - Counter-risk to the "boring is safe" thesis: this layer has no ASML-style
   pricing power — fragmented share, and its moat (old cheap fabs) is exactly
   what China can replicate first.
-
-## Fact ammo — lines that land
-- **"A chip that costs less than a cup of coffee shut down factories building
-  $40,000 trucks — $210B of cars never got built in 2021."** [25]
-- **"Your car has more chips than your laptop — somewhere between 1,000 and
-  3,500 of them — and almost none are made by the companies you've heard of."** [37][38]
-- **"Texas Instruments' trick: take the giant 300mm wafers designed for cutting-
-  edge chips and run 30-year-old designs on them — 40% cheaper per chip, forever.
-  Then do it $60B bigger: seven new US fabs, the largest foundational-chip
-  investment in American history."** [2][5]
-- **"The first mass-market EV inverter breakthrough wasn't Silicon Valley — it
-  was 48 silicon-carbide dies from a fab in Catania, Sicily, inside the 2018
-  Tesla Model 3."** [14]
-- **"SiC wafers went from $1,500 to $400 in three years of Chinese capacity —
-  and America's silicon-carbide champion, Wolfspeed, went through bankruptcy in
-  91 days."** [23][31][32]
-- **"ST will promise you the same microcontroller for 20 years. Try getting that
-  from a smartphone chip."** [15]
-
----
 
 ## Sources
 1. TI, "Q4 2025 and 2025 financial results" (PR Newswire) — https://www.prnewswire.com/news-releases/ti-reports-q4-2025-and-2025-financial-results-and-shareholder-returns-302671690.html

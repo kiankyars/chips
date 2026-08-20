@@ -2,8 +2,6 @@
 
 As-of: 2026-08-18
 
-Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
-`<!-- VERIFY -->` = not fully confident, check before recording.
 Fiscal calendars: **Synopsys FY ends Oct 31** (FY2025 = Nov'24–Oct'25); **Cadence FY = calendar year**. Quote dates accordingly.
 
 ## What EDA is (teachable)
@@ -200,27 +198,6 @@ Fiscal calendars: **Synopsys FY ends Oct 31** (FY2025 = Nov'24–Oct'25); **Cade
 - **AI disruption**: if LLMs commoditize RTL/verification, the seat-license
   model could erode — though incumbents currently monetize AI as premium
   add-ons, and margins say they're winning so far.
-
-## Fact ammo — lines that land
-- "Nobody draws chips. NVIDIA's Blackwell has **208 billion transistors** —
-  at one per second, that's 6,600 years of drawing. Chips aren't drawn,
-  they're **compiled**." [1]
-- "The entire EDA industry is about **$21B** — under 3% of the $792B chip
-  industry. Delete these three companies and the other 97% stops." [5][6]
-- "IC/ASIC design engineers reported spending **49%** of their time on
-  verification. A separate IBS ceiling-case model put a large greenfield 2nm
-  program near **$725M** in total — not in EDA licenses." [2][4]
-- "In May 2025 one letter from the Commerce Department switched off China's
-  access to chip-design software. Six weeks later, a rare-earths deal
-  switched it back on. Chip software is now literally traded against
-  minerals." [30][32]
-- "China approved the biggest EDA merger ever with **one day** to spare — and
-  attached 10 years of conditions. The US controls the software; China
-  discovered it controls the *permission slip*." [13][14]
-- "Cadence's emulator runs on NVIDIA chips, and NVIDIA's chips are designed on
-  Cadence software. AI is now designing the chips that AI runs on." [1][22]
-
----
 
 ## Sources
 1. NVIDIA press release, "NVIDIA Blackwell Platform Arrives…" (208B transistors) — https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing

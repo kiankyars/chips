@@ -2,21 +2,8 @@
 layout: default
 class: visual-sequence paper-visual
 title: "3D NAND"
+sources: [research/equipment-dep-etch.md]
 ---
-
-<!-- SEGMENT
-id: equipment-dep-etch
-act: IV — The Fab Tour
-tier: E            # ensemble sweep — two ⭐ players + two cards, one continuous story
-angle: "When shrinking sideways got too hard, the industry started building upward, moving more process difficulty and recurring value from the printer to the deposition and etch specialists."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~5 min
-status: draft
-seeds: []
-pays_off: []
-stamps: []          # NO new stamp — board stays at board-5 (from asml); these players are dominant but not on the locked seven
-diagrams: [equipment-applied-coverage, equipment-lam-deep-etch, equipment-tel-asm]
-sources: research/equipment-dep-etch.md
--->
 
 <div class="visual-sequence__kicker">WHEN SHRINKING SIDEWAYS GOT HARDER, NAND STACKED UPWARD</div>
 

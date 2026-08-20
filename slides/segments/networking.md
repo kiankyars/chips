@@ -2,21 +2,8 @@
 layout: default
 class: visual-sequence paper-visual
 title: "Scale-up and scale-out"
+sources: [research/networking.md]
 ---
-
-<!-- SEGMENT
-id: networking
-act: V — Memory, Packaging & Networking
-tier: P-lite
-angle: "Packaging creates one accelerator. The network turns many accelerators into one computer."
-runtime: ~4 min
-status: draft
-seeds: []
-pays_off: []
-stamps: []
-diagrams: [networking-scale, networking-allreduce, networking-path]
-sources: research/networking.md
--->
 
 <div class="visual-sequence__frame">
   <img src="/diagrams/rendered/networking-scale.svg" alt="NVLink and NVSwitch connect GPUs inside one rack while SuperNICs and a leaf-spine fabric connect complete racks" />

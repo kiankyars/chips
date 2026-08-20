@@ -2,22 +2,8 @@
 layout: default
 class: visual-sequence paper-visual
 title: "The great unbundling"
+sources: [research/foundations.md, research/tsmc.md]
 ---
-
-<!-- SEGMENT
-id: great-unbundling
-act: I — The Impossible Object
-tier: —
-angle: "The industry didn't grow into four kinds of company — rising fab cost shattered the integrated model. Foundries pooled demand, designers shed factories, and every company in this course became a different survival strategy for the same cost curve."   # PROPOSED — YOU OWN THIS LINE
-runtime: ~3 min
-status: draft
-seeds: [margin-ladder]    # the ladder is teased here, ranked in `synthesis`. Soft plant — not a formal ledger pair, but the payoff lives in another segment, so redline per that rule.
-pays_off: []              # cashes no prior ledger seed; it consumes foundations' cost-curve concept, which is a dependency, not a seed
-stamps: []                # no chokepoint proven here — first stamp (EDA) is earned in `eda`
-diagrams: [unbundling-design-fab]
-sources: research/foundations.md, research/tsmc.md
--->
-
 
 <div class="visual-sequence__kicker">THE GREAT UNBUNDLING</div>
 

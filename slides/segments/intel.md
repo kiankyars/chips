@@ -1,22 +1,8 @@
 ---
 layout: default
 class: map-only-focus
+sources: [research/intel.md]
 ---
-
-<!-- SEGMENT
-id: intel
-act: III — The Island
-tier: T            # tragedy — deliberate register shift, the emotional midpoint of the episode
-angle: "Intel didn't lose to a rival — it lost to yield; and the rescue that followed (the state, its own tormentors, one Arizona fab) is the receipt for what a leading edge is actually worth to a superpower."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~6 min
-status: draft
-seeds: [euv-pass, state-equity]    # euv-pass → asml (next act: the machine Intel said no to) · state-equity → geopolitics (CHIPS Act → equity era)
-pays_off: [yield]                  # planted in foundations, felt in life-of-a-wafer/kla — here it kills a king
-stamps: []                         # no chokepoint stamp — that absence is part of the story
-diagrams: [map-manufacture, slide-066-intel-missed-shifts, slide-069-intel-investment-lifeline]
-sources: research/intel.md
--->
-
 
 # Intel lost the process lead
 

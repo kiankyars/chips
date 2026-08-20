@@ -1,20 +1,7 @@
 ---
 layout: default
+sources: [research/idm-analog.md]
 ---
-
-<!-- SEGMENT
-id: other-90
-act: INTERLUDE — The Other 90%
-tier: E            # ensemble sweep · 🔧 pressure valve (cut here first if over runtime)
-angle: "The leading edge is the smallest part of the story: most chips by volume are cheap, decades-old, and invisible — and it was a thirty-cent one, not a $40,000 GPU, that halted the world's car factories."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~3 min
-status: draft
-seeds: []
-pays_off: []
-stamps: []         # deliberately none — the honesty beat is that this layer has NO single-company chokepoint
-diagrams: [analog-embedded-objects, auto-chip-shortage, slide-111-analog-300mm-economics-v2]
-sources: research/idm-analog.md
--->
 
 # Analog and microcontrollers use mature nodes
 

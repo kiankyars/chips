@@ -1,20 +1,7 @@
 ---
 layout: default
+sources: [research/foundations.md, research/materials.md]
 ---
-
-<!-- SEGMENT
-id: life-of-a-wafer
-act: IV — The Fab Tour
-tier: —            # keystone teach — concept segment, no company tier
-angle: "Nobody builds a chip — a chip survives. A recurring process loop transfers roughly 80–100-plus distinct patterns over months, while one invisible particle can kill a die worth more than gold."   # YOU OWN THIS LINE — rewrite in your voice
-runtime: ~5 min
-status: draft
-seeds: [japan-under-everything, spruce-pine]  # `materials` later cashes the district's supply-shock consequence
-pays_off: [yield]                   # foundations plants the size penalty; this segment makes fabrication yield tangible
-stamps: []                          # materials proves and awards the Japan-cluster stamp
-diagrams: [flow-strip, chip-interconnect-stack, wafer-particle-defect]
-sources: research/foundations.md, research/materials.md
--->
 
 # A wafer and a mask set enter the fab
 
@@ -51,7 +38,7 @@ sources: research/foundations.md, research/materials.md
 
 # Each new pattern triggers another process loop
 
-![flow strip: deposit → coat → expose → etch → implant → polish → measure](/diagrams/rendered/flow-strip.svg)
+![flow strip: deposit → coat → expose → develop → etch → strip and clean → implant → polish → measure](/diagrams/rendered/flow-strip.svg)
 
 <div class="text-center text-2xl mt-12">
 The <b>wafer</b> stays in the fab; the tools, materials, and masks change around it.
@@ -59,8 +46,14 @@ The <b>wafer</b> stays in the fab; the tools, materials, and masks change around
 
 <!--
 - The fab coats the wafer, exposes one reticle, and then etches or implants the revealed pattern.
+- After etch or implant, the temporary resist mask is stripped and residues are cleaned away; cleaning also recurs between other critical steps.
+- This is a map of recurring operations, not one fixed recipe: a developed pattern may guide etch or implant, and CMP appears only when the process calls for it.
 - Each pass transfers one pattern into the wafer, then metrology aligns the next pattern to what already exists.
 - The wafer stays in the fab while masks and process conditions change around it.
+
+[Sources]
+- Lam Research, “Strip & Clean” — https://www.lamresearch.com/products/our-processes/strip-clean/
+[/Sources]
 -->
 
 ---

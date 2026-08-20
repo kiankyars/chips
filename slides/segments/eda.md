@@ -1,22 +1,8 @@
 ---
 layout: default
 class: map-only-focus
+sources: [research/eda.md]
 ---
-
-<!-- SEGMENT
-id: eda
-act: II — The Blueprint
-tier: D            # duel — Synopsys vs Cadence told as one 40-year contest; Siemens EDA is a card
-angle: "The $792B chip industry depends on a roughly $21B electronic-system-design market — tools, IP, and services anchored by Synopsys and Cadence, with Siemens a consequential third — and export controls turn access to that toolchain into leverage."   # PROPOSED — YOU OWN THIS LINE
-runtime: ~5 min
-status: draft
-seeds: [eda-export-lever]     # EDA as an export-control weapon → pays off in geopolitics
-pays_off: []
-stamps: [eda-duopoly]         # Chokepoint #1: Synopsys + Cadence
-diagrams: [map-design, board-1]
-sources: research/eda.md
--->
-
 
 # The software behind chip design
 

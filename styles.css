@@ -790,57 +790,41 @@
   filter: none;
 }
 
-/* Dense user-supplied EDA flow: preserve the legible process map and replace its unreliable tool legend with a course-native takeaway. */
-.slidev-layout.eda-flow-detail {
-  padding: 0;
-  overflow: hidden;
-  background: #05080e;
-}
-
-.slidev-layout.eda-flow-detail::before {
-  height: 2px;
-  background: linear-gradient(90deg, var(--chips-cyan), rgba(96, 165, 250, 0.58) 38%, transparent 72%);
-}
-
-.eda-flow-detail__image {
+/* Keep the inference flow tied to the physical GB300 board without covering its path labels. */
+.inference-hardware-inset {
   position: absolute;
-  inset: 0 0 8.75rem;
-  overflow: hidden;
-  background: #ffffff;
+  z-index: 20;
+  top: 20.9rem;
+  right: 0.6rem;
+  width: 11.7rem;
+  margin: 0;
 }
 
-.eda-flow-detail__image img {
+.inference-hardware-inset img {
   display: block;
   width: 100%;
   height: auto;
-  max-width: none;
   margin: 0;
-  border-radius: 0;
+  border: 1px solid rgba(47, 123, 101, 0.72);
+  border-radius: 0.45rem;
+  background: #fff;
+  box-shadow: 0 0.55rem 1.4rem rgba(32, 37, 43, 0.18);
   filter: none;
 }
 
-.eda-flow-detail__footer {
+.inference-hardware-inset figcaption {
   position: absolute;
-  right: 2.25rem;
-  bottom: 0;
-  left: 2.25rem;
-  height: 8.75rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.6rem;
-}
-
-.eda-flow-detail__footer strong {
-  color: var(--chips-cyan);
-  font-size: 1.85rem;
-  font-weight: 760;
-  letter-spacing: -0.025em;
-}
-
-.eda-flow-detail__footer span {
-  color: rgba(239, 246, 255, 0.88);
-  font-size: 1.05rem;
+  top: -1rem;
+  right: 0;
+  padding: 0.24rem 0.42rem 0.2rem;
+  border: 1px solid rgba(47, 123, 101, 0.72);
+  border-radius: 0.3rem 0.3rem 0 0;
+  color: #2f7b65;
+  background: #fffaf0;
+  font-size: 0.52rem;
+  font-weight: 820;
+  line-height: 1;
+  letter-spacing: 0.1em;
 }
 
 /* Explain High-NA as an optical quantity before introducing its resolution payoff. */

@@ -2,8 +2,6 @@
 
 As-of: 2026-07
 
-Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
-`<!-- VERIFY -->` = not fully confident, check before recording.
 
 Framing: the deeper you go down the supply chain, the *more* concentrated it
 gets. Fabs → dozens. Equipment → a handful. Materials → often two companies,
@@ -164,7 +162,9 @@ requalification cycles. Japan quietly owns most of this layer.
   of Mitchell, Avery, and Yancey counties in North Carolina and hosts both U.S.
   producers of high-purity quartz. USGS estimates that the United States leads
   global HPQ production but does not publish country shares; it also lists
-  sources in Australia, Brazil, Canada, China, India, and Russia. [48][52]
+  sources in Australia, Brazil, Canada, China, India, and Russia. USGS reports
+  no economic substitute for HPQ in most uses, including fused-quartz crucibles.
+  [48][52]
 - Sibelco mines its IOTA quartz from two Spruce Pine ore bodies and identifies
   fused-quartz crucibles for Czochralski silicon growth as a semiconductor use.
   [49]
@@ -220,31 +220,6 @@ requalification cycles. Japan quietly owns most of this layer.
   Pine processing facility shows solar-driven demand swings can shutter
   "strategic" assets no one individually protects. Its other U.S. locations
   were unaffected. [53]
-
-## Fact ammo — lines that land
-- **The MSG company**: every advanced CPU and AI GPU on Earth sits on an
-  insulating film made by Ajinomoto — the Japanese seasoning company — which
-  holds ~95% of the market. Your chip is packaged by the people who invented
-  MSG. [38][39]
-- **One mining district**: Spruce Pine spans roughly 25 by 10 miles across three
-  North Carolina counties and hosts both U.S. high-purity-quartz producers.
-  USGS estimates that the United States leads global production. HPQ has no
-  economic substitute for most uses, including fused-quartz crucibles. [48][52]
-- **Eleven nines**: wafer-grade silicon is 99.999999999% pure — about one
-  foreign atom per hundred billion. It is routinely called the purest material
-  humans mass-produce. [8][9]
-- **The pen in the tin**: the crystal-pulling method every wafer starts with
-  was discovered in 1916 when Jan Czochralski absent-mindedly dipped his pen
-  into molten tin instead of his inkwell — and pulled out a single crystal.
-  A trillion-dollar industry runs on a fixed act of clumsiness. [10][11]
-- **Two companies in a war zone**: about half the world's chip-laser neon came
-  from two Ukrainian firms — in Mariupol and Odesa. Prices quadrupled within
-  weeks of the 2022 invasion. [26][27][28]
-- **$150 → $20,000 → $500,000**: a blank wafer costs about as much as a pair of
-  sneakers; processed at 3nm it's a ~$20k object; diced into AI chips it can be
-  worth more than a house. [12][13] <!-- VERIFY: retail end-value math -->
-
----
 
 ## Sources
 1. SEMI, "Global Semiconductor Materials Market Revenue Reaches Record $73.2 Billion in 2025" — https://www.semi.org/en/semi-press-release/global-semiconductor-materials-market-revenue-reaches-record-73.2-billion-dollars-in-2025-semi-reports

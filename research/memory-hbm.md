@@ -1,9 +1,6 @@
 # Research — Memory & HBM
 As-of: 2026-08-18
 
-Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
-`<!-- VERIFY -->` = not fully confident, check before recording.
-
 ## Memory vs logic (teachable)
 - **DRAM** = working memory. 1 transistor + 1 capacitor per bit; the capacitor
   leaks, so every bit is refreshed ~every 64 ms ("Dynamic"); nanosecond access;
@@ -299,30 +296,6 @@ Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
   in Wuxi, China. <!-- VERIFY: current Wuxi share of SK hynix DRAM output -->
 - **Demand destruction below:** memory-driven PC/phone price hikes are already
   shrinking the consumer TAM that pays for half the industry. [47]
-
-## Fact ammo — lines that land
-- **In 20 years, GPU compute grew ~60,000×. Memory bandwidth grew ~100×.**
-  That 600-fold gap is the memory wall — and the entire reason HBM exists. [19]
-- **On a Blackwell B200, the memory costs more than the GPU die** — HBM is
-  ~45% of build cost (~$2.9k of ~$6.4k); on B300, over half. Nvidia sells
-  compute; it *buys* memory. [37][38]
-- **Micron just posted an 84.9% gross margin** — guiding to 86% — numbers
-  usually reserved for software companies, from a company that sells the most
-  commodity product in silicon. Its quarter ($41.5B) beat its entire previous
-  fiscal year. [56]
-- **Samsung earned ~₩1 trillion per day in Q2 2026** (₩89.4T ≈ $59B operating
-  profit, up ~19× YoY) — and its stock *fell 7%*, because in memory, record
-  profits are how every crash begins. [60]
-- **A fixed bit volume produced as HBM consumes roughly 3× the wafer capacity
-  of DDR5.** That capacity trade-off raises the opportunity cost of commodity
-  DRAM during a constrained cycle. [32][43]
-- **Samsung lost the quarterly DRAM revenue lead in Q1 2025 for the first time
-  since 1992**, then regained it in Q4. SK hynix's earlier HBM bet still left it
-  leading HBM share entering 2026. [7][9][11]
-- **SK hynix's ADRs began trading on Nasdaq on July 10, 2026** after a
-  $26.507B offering. Memory's capex race now has capital-market scale. [54]
-
----
 
 ## Sources
 1. The Register, "SK hynix sees first loss in 10 years as memory prices fall" — https://www.theregister.com/2023/02/01/sk_hynix_q4_22/

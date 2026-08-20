@@ -1,22 +1,8 @@
 ---
 layout: default
 class: map-only-focus
+sources: [research/tsmc.md, research/foundations.md]
 ---
-
-<!-- SEGMENT
-id: tsmc
-act: III — The Island
-tier: P            # protagonist — the crown jewel of the episode
-angle: "TSMC's real invention wasn't a chip — it was a promise: manufacture for everyone, compete with no one. Forty years of compounded trust and yield learning turned that promise into the deepest moat in capitalism, and parked it on one island."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~10 min
-status: draft
-seeds: [taiwan-flag]          # planted here — DETONATES in geopolitics, not here
-pays_off: [apple-iou]         # planted in fabless-field
-stamps: [tsmc-wafers]         # chokepoint #2 — leading-edge logic
-diagrams: [map-manufacture, board-2, tsmc-footprint]
-sources: research/tsmc.md
--->
-
 
 # TSMC
 
@@ -51,6 +37,50 @@ sources: research/tsmc.md
 <!--
 - Morris Chang founded TSMC in 1987 after 25 years at Texas Instruments.
 - Taiwan's state fund supplied 48.3 percent of the startup capital and Philips supplied 27.5 percent, giving the company patient backing when American chipmakers declined to invest.
+-->
+
+---
+class: visual-sequence paper-visual
+title: "Yield"
+---
+
+<div class="visual-sequence__kicker">YIELD</div>
+
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/yield-defects.svg" alt="The same six defects distributed across grids of small and large dies, showing that larger dies lose more yield" />
+</div>
+
+<div class="visual-sequence__caption"><strong>At the same defect density,</strong><span>larger dies lose more yield.</span></div>
+
+<!--
+- A stray particle or process defect can ruin the die beneath it.
+- Larger dies cover more wafer area, so they encounter defects more often and produce fewer working chips per wafer.
+- The next slide turns that size penalty into a first-order model; packaging later shows how designers work around it.
+-->
+
+---
+class: yield-model
+title: "The first-order yield model"
+---
+
+# One equation explains the size penalty
+
+<div class="yield-model__equation"><var>Y</var> = e<sup>−<var>A</var>·<var>D</var>₀</sup></div>
+
+<div class="yield-model__terms">
+  <div><strong>Y</strong><span>working dies ÷ total dies</span></div>
+  <div><strong>A</strong><span>area of one die</span></div>
+  <div><strong>D₀</strong><span>killer defects per unit area</span></div>
+</div>
+
+<div class="yield-model__takeaway">Larger die or more defects → exponentially fewer working dies.</div>
+<div class="yield-model__limit">Poisson Model assumes defects land randomly and independently.</div>
+
+<!--
+- Y is the probability that a die contains zero killer defects; e is Euler's number.
+- A·D₀ is the expected number of killer defects per die. Larger area or higher defect density lowers yield exponentially.
+- Poisson assumes random, independent defects. Real fabs may use clustered-defect models such as the negative binomial.
+- With the model in hand, the next slide shows why more defect data can create a foundry scale flywheel.
 -->
 
 ---

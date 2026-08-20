@@ -1,22 +1,8 @@
 ---
 layout: default
 class: map-only-focus
+sources: [research/foundries-field.md, research/foundations.md]
 ---
-
-<!-- SEGMENT
-id: foundries-field
-act: III — The Island
-tier: C            # cards — a montage on the Map, not four equal profiles
-angle: "There is no real market at the leading edge — only a winner and the three runners-up a government or a memory business pays to keep losing to it. The grid shrank from ~25 to 3 because whoever runs the most wafers wins by default."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~2 min
-status: draft
-seeds: [smic-iou]              # planted here → cashed in geopolitics
-pays_off: []                   # this segment cashes no earlier seed; it reuses Act I's cost curve
-stamps: []                     # no chokepoint earned here (TSMC already stamped #2)
-diagrams: [map-manufacture, foundry-frontier-race]
-sources: research/foundries-field.md, research/foundations.md
--->
-
 
 # The foundry frontier
 

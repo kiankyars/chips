@@ -1,21 +1,7 @@
 ---
 layout: section
+sources: [research/materials.md]
 ---
-
-<!-- SEGMENT
-id: materials
-act: IV — The Fab Tour
-tier: E            # ensemble sweep · 🔧 pressure valve (cut here before protagonists)
-angle: "Everyone's afraid of the machines. But the machine you buy once; the resist, the gas, the slurry you pour in every single day — and the deeper down that supply you go, the more it belongs to Japan."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~3 min
-status: draft
-seeds: []                                         # no ledger seed planted here
-pays_off: [spruce-pine, japan-under-everything]   # physical inputs and concentration now land in the dedicated segment
-stamps: [japan-materials]                         # stamp #3 — Japan's qualified materials cluster
-diagrams: [slide-104-material-shocks-substitution]
-sources: research/materials.md
--->
-
 
 # Japan's materials moat
 

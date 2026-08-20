@@ -1,21 +1,7 @@
 ---
 layout: section
+sources: [research/kla.md]
 ---
-
-<!-- SEGMENT
-id: kla
-act: IV — The Fab Tour
-tier: P-lite
-angle: "KLA's core process-control franchise measures rather than depositing, etching, or printing, supporting one of wafer-fab equipment's highest company gross margins. If you can't measure it, you can't build it."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~3 min
-status: draft
-seeds: []                       # plants nothing new — closes out the fab-tour equipment leg
-pays_off: [yield]               # stage 3 of the yield chain: foundations → life-of-a-wafer → HERE → intel → packaging callback
-stamps: []                      # NO new stamp — board stays at board-5 (ASML + Zeiss)
-diagrams: [process-drift, defect-scale]
-sources: research/kla.md
--->
-
 
 # Measure between critical steps—not only at final test
 

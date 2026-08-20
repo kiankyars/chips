@@ -1,9 +1,6 @@
 # Research — Geopolitics (why chips are on the news)
 As-of: 2026-07
 
-Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
-`<!-- VERIFY -->` = not fully confident, check before recording.
-
 ## The chokepoints in numbers
 - **Lithography**: ASML (Netherlands) = **100%** of EUV — sole supplier on Earth. [1]
 - **Leading-edge logic**: TSMC = **72.3%** of ALL foundry revenue (Q1 2026) [2];
@@ -280,27 +277,6 @@ foreign AI chips from state data centers (Nov 2025) [47].
   US goals partially contradict. [75]
 - **Legacy-chip flood**: China's mature-node overcapacity as the next trade fight
   (autos, industrial), previewed by Nexperia. <!-- VERIFY: EU/US legacy-chip probes status 2026 -->
-
-## Fact ammo — lines that land
-- One Dutch company is 100% of EUV; China's crash program — 3,000+ researchers across
-  Huawei, SiCarrier and state institutes — has, after years, produced a prototype whose
-  light source hits 100–150W… the power level ASML passed in **2017**. [1][56][57]
-- Bloomberg's model of a Taiwan war: **$10.6 trillion gone in year one** — roughly 10%
-  of world GDP, more than COVID and the 2008 crisis. [74]
-- The United States government is now **Intel's largest shareholder**: 9.9% for $8.9B —
-  paid for with the subsidy money Congress passed to *grant*, not to invest. [39][65]
-- Nvidia wrote off **$4.5B in one quarter** when the H20 was banned — four months later
-  the ban was traded away for **15% of its China revenue**. An export control became a
-  toll booth. [16][17]
-- Dec 2, 2024: US bans HBM to China. Dec 3, 2024: China bans gallium and germanium to the
-  US. Retaliation now runs on a **24-hour clock**. [12][36]
-- The Nexperia fight proved you can hold the global car industry hostage with chips that
-  cost **pennies**: one Dutch government seizure, one Chinese export halt at a Dongguan
-  plant that packages **50+ billion chips a year**. [40][41]
-- SMIC will sell you a 7nm wafer — at a **40–50% premium** over TSMC. Export controls
-  work like a tax, and right now China is paying it in silicon. [49]
-
----
 
 ## Sources
 1. Counterpoint Research — ASML sole EUV supplier / 2025 results — https://counterpointresearch.com/en/insights/asml-2025-revenue-up-16-yoy-as-strong-euv-shipments-boost-systems-and-service-performance

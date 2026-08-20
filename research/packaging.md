@@ -2,8 +2,6 @@
 
 As-of: 2026-07
 
-Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
-`<!-- VERIFY -->` = not fully confident, check before recording.
 Segment frame ("The Twist"): in 2023–25, AI accelerators remained constrained
 as front-end output ramped; CoWoS capacity, HBM, and later substrates limited
 shipments at different points.
@@ -277,31 +275,6 @@ shipments at different points.
 - **Simplification hedge**: "CoWoS gated ALL AI supply" is directionally right
   for 2023–25 but HBM supply and (later) substrates were co-bottlenecks at
   various moments; say "the binding constraint most of the time."
-
-## Fact ammo — lines that land
-
-- **The confession**: "It's not the shortage of AI chips. It's the shortage of
-  our CoWoS capacity." — TSMC Chairman Mark Liu, Sept 2023. The wafers existed;
-  the packaging slots didn't. [15]
-- **The street price**: Musk, May 2023: GPUs are "considerably harder to get
-  than drugs" — while H100 lead times ran up to a year. [16][17]
-- **The wall**: an H100 die is 814 mm² against a hard physical print limit of
-  858 mm² — 95% of the biggest chip physics allows. Nvidia's answer wasn't a
-  bigger die (impossible); it was two dies welded at 10 TB/s inside the
-  package. [8][9]
-- **The MSG company**: >95% of the world's advanced CPU/GPU packages are
-  insulated with film from Ajinomoto — the company that invented MSG seasoning
-  — at reported >50% margins. [54][55][56]
-- **The possible 10×**: industry estimates put CoWoS at ~13–15k wafers/month at
-  end-2023 and target ~120–140k by end-2026. The latter is a forecast, while
-  industry reporting describes repeated expansion and continued tightness.
-  [18][19][21]
-- **The tester tax**: a phone chip passes test in under a minute; a
-  Blackwell-class AI package can sit on the tester for 20+ minutes — which is
-  why the test duopoly (Advantest + Teradyne) is having the best years in its
-  history. [53][50]
-
----
 
 ## Sources
 

@@ -1,22 +1,8 @@
 ---
 layout: default
 class: map-only-focus
+sources: [research/arm-riscv.md]
 ---
-
-<!-- SEGMENT
-id: arm-riscv
-act: II — The Blueprint
-tier: D            # duel — one contest, not two profiles
-angle: "Arm collects a private tax on computing itself — and RISC-V is the tax revolt. But so far the insurgents have only captured the land the empire never bothered to tax."   # PROPOSED — YOU OWN THIS LINE
-runtime: ~3 min
-status: draft
-seeds: []
-pays_off: []
-stamps: []                      # no chokepoint stamp — an ISA with an open rival is leverage, not a single point of failure; beats say so out loud
-diagrams: [map-design]
-sources: research/arm-riscv.md
--->
-
 
 # Arm and RISC-V
 

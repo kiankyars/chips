@@ -2,9 +2,7 @@
 
 As-of: 2026-07
 
-Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
-`<!-- VERIFY -->` = not fully confident, check before recording.
-Feeds: cold open, foundations, great-unbundling, life-of-a-wafer segments.
+Feeds: cold open, foundations, great-unbundling, tsmc, life-of-a-wafer segments.
 
 ## The transistor
 
@@ -301,30 +299,6 @@ Feeds: cold open, foundations, great-unbundling, life-of-a-wafer segments.
   → $18k 3nm). [47]
 - Handle: a 300mm wafer weighs ~125 g → a $30k N2 wafer ≈ **$240/gram — roughly
   double the price of gold by weight**. (computed) <!-- VERIFY: gold ~$110–160/g range in 2026 before using -->
-
-## Fact ammo — lines that land
-
-- Humanity manufactures ~**8+ trillion transistors every second** — more than
-  25× the number of stars in the Milky Way, per second; more transistors are now
-  made *each second* than in the entire year of 1980. [44] <!-- VERIFY: the 1980 comparison line's source (Qualman) -->
-- The Intel 4004 had **2,300 transistors**; Nvidia's 2026 Rubin has a reported
-  **336 billion** — a ~146-million-fold increase in one human lifetime. [1][4]
-- **Nothing on a "3nm" chip measures 3 nanometers** — the smallest real wire
-  pitch is ~23 nm. The node name is a brand, like a perfume called "Midnight."
-  [9][10]
-- Semiconductor-grade silicon is **99.999999999% pure (11N)** — one wrong atom
-  per hundred billion, refined from ordinary quartz. [7]
-- A leading-edge fab cost **~$4M in the early 1970s; today $20B+** — the machine
-  that makes the cheapest objects ever manufactured is the most expensive
-  factory ever built. [18]
-- The air in a fab's wafer environment (ISO 1–3) is **millions of times cleaner
-  than city air** (≤10 vs ~35,000,000 particles/m³) — cleaner than any operating
-  room on Earth. [31]
-- One 2nm wafer sells for ~**$30,000 — about twice its weight in gold** — and
-  three months earlier it was melted sand. [48] (gold comparison computed —
-  verify spot price)
-
----
 
 ## Sources
 

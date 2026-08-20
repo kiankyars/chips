@@ -1,22 +1,8 @@
 ---
 layout: default
 class: stage-map-focus
+sources: [research/nvidia.md]
 ---
-
-<!-- SEGMENT
-id: nvidia
-act: II — The Blueprint
-tier: P
-angle: "Nvidia's product isn't a chip — it's a file plus a twenty-year software moat. The most valuable company on Earth owns no factories, and that one fact is the reason the rest of this journey exists."   # YOU OWN THIS LINE — rewrite it in your voice
-runtime: ~5 min
-status: draft
-seeds: [memory-wall, reticle-limit, owns-no-factories]
-pays_off: []
-stamps: []
-diagrams: [map-design, journey-2, nvidia-core-hierarchy, nvidia-matrix-parallelism, fabless-physical-chain]
-sources: research/nvidia.md
--->
-
 
 # Nvidia designs the accelerator
 

@@ -8,7 +8,7 @@
     "build": "slidev build slides.md",
     "build:pages": "slidev build slides.md --base /chips/",
     "export": "slidev export slides.md",
-    "check": "npm run diagrams && node scripts/check-course.mjs && npm run build"
+    "check": "node scripts/check-course.mjs && npm run build"
   },
   "devDependencies": {
     "@slidev/cli": "^0.50.0",

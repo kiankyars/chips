@@ -2,8 +2,6 @@
 
 As-of: 2026-07
 
-Fact pack. Ammunition only, no prose. `[n]` → source list at bottom.
-`<!-- VERIFY -->` = not fully confident, check before recording.
 Nvidia is deliberately excluded — it has its own pack (`research/nvidia.md`).
 Fiscal years differ: AMD/MediaTek = calendar; Qualcomm FY ends Sept; Broadcom FY
 ends Nov; Marvell FY ends Jan/Feb (so "FY2026" = calendar 2025); Apple FY ends Sept.
@@ -259,29 +257,6 @@ ends Nov; Marvell FY ends Jan/Feb (so "FY2026" = calendar 2025); Apple FY ends S
   2026; it does not disclose margins by customer. [3]
 - **Valuation reflexivity:** Broadcom ~$1.9T, AMD ~$675B — both price in flawless
   multi-year AI execution. [13][38]
-
-## Fact ammo — lines that land
-- Lisa Su took AMD from a ~$2B near-bankruptcy in 2014 to ~$675B in 2026 — the
-  stock is up more than 14,000%, a ~300× — arguably the greatest turnaround in
-  tech history. [12][13]
-- The top ten fabless companies grew 44% in 2025 to $359B — and Nvidia alone was
-  57% of that. Everyone else in this segment is fighting over the other $154B. [1]
-- TSMC's gross margin hit 66% in early 2026 — the factory now earns fatter margins
-  than most of the "asset-light" designers who hire it. The fabless model's core
-  arbitrage has quietly inverted. [3][5]
-- In three weeks of October 2025, OpenAI signed ~26 gigawatts of chip deals across
-  Nvidia (10), AMD (6), and Broadcom (10) — the AMD deal alone could hand OpenAI
-  ~10% of the company via warrants. [6][7][34]
-- Broadcom's AI revenue: $20B in FY2025, ~$56B guided for FY2026, over $100B
-  guided for FY2027 — a 5× in two years, built almost entirely on other companies'
-  chips (Google's, Meta's, OpenAI's) that Broadcom co-designs. [30][31][32]
-- Apple spent six years and bought Intel's whole modem division to replace one
-  Qualcomm part — and Qualcomm still collects a patent royalty on every iPhone
-  sold. [18][19][24]
-- MediaTek quietly powers roughly one in three smartphones on Earth — and in 2026
-  it's co-designing Google TPUs. [47][49]
-
----
 
 ## Sources
 1. TrendForce, "AI Compute Demand Drives 44% YoY Growth for Top 10 Global Fabless IC Firms in 2025" — https://www.trendforce.com/presscenter/news/20260401-12996.html
