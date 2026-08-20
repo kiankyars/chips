@@ -29,6 +29,9 @@
   <pattern id="microbumps" width="18" height="18" patternUnits="userSpaceOnUse">
     <circle cx="4" cy="4" r="1.7" fill="#a5f3fc" opacity="0.42"/>
   </pattern>
+  <pattern id="landingPads" width="34" height="34" patternUnits="userSpaceOnUse">
+    <circle cx="8" cy="8" r="3.2" fill="#fbbf24" opacity="0.38"/>
+  </pattern>
   <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
     <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.5"/>
   </filter>
@@ -39,6 +42,12 @@
   <marker id="heatArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
     <path d="M0 0L12 6L0 12Z" fill="#fbbf24"/>
   </marker>
+  <marker id="packageArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#526078"/>
+  </marker>
+  <marker id="packageArrowCyan" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#67e8f9"/>
+  </marker>
 </defs>
 <rect width="1920" height="1080" fill="#05080e"/>
 <rect width="1920" height="1080" fill="url(#spot)"/>
@@ -46,6 +55,7 @@
 <g filter="url(#shadow)">
   <rect x="330" y="300" width="1260" height="520" rx="42" fill="url(#substrateTop)" stroke="#f3b35f" stroke-width="5"/>
   <rect x="350" y="320" width="1220" height="480" rx="34" fill="#211813" opacity="0.2"/>
+  <rect x="455" y="345" width="1010" height="400" rx="24" fill="url(#landingPads)" stroke="#f3b35f" stroke-width="3" stroke-dasharray="12 10" opacity="0.62"/>
   <path d="M 390 420 H 560 L 690 520" fill="none" stroke="#fbbf24" stroke-width="4" opacity="0.34"/>
   <path d="M 1530 420 H 1360 L 1230 520" fill="none" stroke="#fbbf24" stroke-width="4" opacity="0.34"/>
   <path d="M 390 474 H 572 L 698 538" fill="none" stroke="#fbbf24" stroke-width="4" opacity="0.34"/>
@@ -94,14 +104,17 @@
   <path d="M 520 545 H 1400 M 960 390 V 700" stroke="#a5f3fc" stroke-width="2" opacity="0.24"/>
   <path d="M 560 430 C 730 430 690 510 820 510 M 1360 430 C 1190 430 1230 510 1100 510" fill="none" stroke="#a5f3fc" stroke-width="4" opacity="0.42"/>
   <path d="M 560 660 C 730 660 690 580 820 580 M 1360 660 C 1190 660 1230 580 1100 580" fill="none" stroke="#a5f3fc" stroke-width="4" opacity="0.42"/>
-  <rect x="690" y="470" width="150" height="150" rx="10" fill="#0b3140" stroke="#67e8f9" stroke-width="3" stroke-dasharray="9 7" opacity="0.9"/>
-  <rect x="885" y="470" width="150" height="150" rx="10" fill="#0b3140" stroke="#67e8f9" stroke-width="3" stroke-dasharray="9 7" opacity="0.9"/>
-  <rect x="1080" y="470" width="150" height="150" rx="10" fill="#0b3140" stroke="#67e8f9" stroke-width="3" stroke-dasharray="9 7" opacity="0.9"/>
+  <g><rect x="700" y="480" width="78" height="132" rx="8" fill="#081f2b" stroke="#67e8f9" stroke-width="3" stroke-dasharray="8 6" opacity="0.94"/>
+    <path d="M710 504H768M710 530H768M710 556H768M710 582H768" stroke="#67e8f9" stroke-width="2" opacity="0.52"/></g>
+  <g><rect x="940" y="480" width="40" height="132" rx="8" fill="#081f2b" stroke="#67e8f9" stroke-width="3" stroke-dasharray="8 6" opacity="0.94"/>
+    <path d="M950 504H970M950 530H970M950 556H970M950 582H970" stroke="#67e8f9" stroke-width="2" opacity="0.52"/></g>
+  <g><rect x="1182" y="480" width="78" height="132" rx="8" fill="#081f2b" stroke="#67e8f9" stroke-width="3" stroke-dasharray="8 6" opacity="0.94"/>
+    <path d="M1192 504H1250M1192 530H1250M1192 556H1250M1192 582H1250" stroke="#67e8f9" stroke-width="2" opacity="0.52"/></g>
 </g>
 <path d="M 1376 386 L 1240 430" fill="none" stroke="#67e8f9" stroke-width="2.5" opacity="0.76"/>
 <circle cx="1240" cy="430" r="5" fill="#67e8f9"/>
-<text x="1400" y="394" fill="#67e8f9" font-size="25" font-weight="760" letter-spacing="2">RDL WIRING PLANE</text>
-<path d="M 1376 446 L 1160 510" fill="none" stroke="#67e8f9" stroke-width="2.5" opacity="0.76"/>
-<circle cx="1160" cy="510" r="5" fill="#67e8f9"/>
-<text x="1400" y="454" fill="#67e8f9" font-size="25" font-weight="760" letter-spacing="2">LOCAL SILICON BRIDGES</text>
+<text x="1400" y="394" text-anchor="start" fill="#67e8f9" font-size="25" font-weight="760" letter-spacing="2">RDL WIRING PLANE</text>
+<path d="M 1376 446 L 1218 520" fill="none" stroke="#67e8f9" stroke-width="2.5" opacity="0.76"/>
+<circle cx="1218" cy="520" r="5" fill="#67e8f9"/>
+<text x="1400" y="454" text-anchor="start" fill="#67e8f9" font-size="25" font-weight="760" letter-spacing="2">EMBEDDED LSI BRIDGES</text>
 </svg>

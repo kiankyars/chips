@@ -52,6 +52,9 @@ function defs() {
   <pattern id="microbumps" width="18" height="18" patternUnits="userSpaceOnUse">
     <circle cx="4" cy="4" r="1.7" fill="#a5f3fc" opacity="0.42"/>
   </pattern>
+  <pattern id="landingPads" width="34" height="34" patternUnits="userSpaceOnUse">
+    <circle cx="8" cy="8" r="3.2" fill="${C.copper}" opacity="0.38"/>
+  </pattern>
   <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
     <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.5"/>
   </filter>
@@ -61,6 +64,12 @@ function defs() {
   </filter>
   <marker id="heatArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
     <path d="M0 0L12 6L0 12Z" fill="${C.copper}"/>
+  </marker>
+  <marker id="packageArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="${C.line}"/>
+  </marker>
+  <marker id="packageArrowCyan" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="${C.interposerEdge}"/>
   </marker>
 </defs>`
 }
@@ -87,6 +96,7 @@ function substrate() {
   return `<g filter="url(#shadow)">
   <rect x="330" y="300" width="1260" height="520" rx="42" fill="url(#substrateTop)" stroke="${C.substrateEdge}" stroke-width="5"/>
   <rect x="350" y="320" width="1220" height="480" rx="34" fill="#211813" opacity="0.2"/>
+  <rect x="455" y="345" width="1010" height="400" rx="24" fill="url(#landingPads)" stroke="${C.substrateEdge}" stroke-width="3" stroke-dasharray="12 10" opacity="0.62"/>
   ${traces.join('\n  ')}
   <rect x="330" y="788" width="1260" height="64" rx="24" fill="${C.substrate}" stroke="${C.substrateEdge}" stroke-width="4"/>
   ${contacts.join('\n  ')}
@@ -95,11 +105,12 @@ function substrate() {
 
 function interposer() {
   const localSiliconInterconnects = [
-    [690, 470, 150, 150],
-    [885, 470, 150, 150],
-    [1080, 470, 150, 150],
+    [700, 480, 78, 132],
+    [940, 480, 40, 132],
+    [1182, 480, 78, 132],
   ].map(([x, y, width, height]) =>
-    `<rect x="${x}" y="${y}" width="${width}" height="${height}" rx="10" fill="#0b3140" stroke="${C.interposerEdge}" stroke-width="3" stroke-dasharray="9 7" opacity="0.9"/>`,
+    `<g><rect x="${x}" y="${y}" width="${width}" height="${height}" rx="8" fill="#081f2b" stroke="${C.interposerEdge}" stroke-width="3" stroke-dasharray="8 6" opacity="0.94"/>
+    <path d="M${x + 10} ${y + 24}H${x + width - 10}M${x + 10} ${y + 50}H${x + width - 10}M${x + 10} ${y + 76}H${x + width - 10}M${x + 10} ${y + 102}H${x + width - 10}" stroke="${C.interposerEdge}" stroke-width="2" opacity="0.52"/></g>`,
   )
 
   return `<g filter="url(#shadow)">
@@ -158,10 +169,14 @@ function lid() {
 </g>`
 }
 
-function label(text, x, y, targetX, targetY, color) {
-  return `<path d="M ${x - 24} ${y - 8} L ${targetX} ${targetY}" fill="none" stroke="${color}" stroke-width="2.5" opacity="0.76"/>
+function label(text, x, y, targetX, targetY, color, anchor = 'start', size = 25) {
+  const estimatedWidth = text.length * size * 0.62
+  let leadX = x - 24
+  if (anchor === 'start' && targetX > x) leadX = x + estimatedWidth + 24
+  if (anchor === 'end') leadX = targetX < x ? x - estimatedWidth - 24 : x + 24
+  return `<path d="M ${leadX} ${y - 8} L ${targetX} ${targetY}" fill="none" stroke="${color}" stroke-width="2.5" opacity="0.76"/>
 <circle cx="${targetX}" cy="${targetY}" r="5" fill="${color}"/>
-<text x="${x}" y="${y}" fill="${color}" font-size="25" font-weight="760" letter-spacing="2">${text}</text>`
+<text x="${x}" y="${y}" text-anchor="${anchor}" fill="${color}" font-size="${size}" font-weight="760" letter-spacing="2">${text}</text>`
 }
 
 function scene(stage) {
@@ -170,10 +185,13 @@ function scene(stage) {
   if (stage >= 3) parts.push(diesAndMemory())
   if (stage >= 4) parts.push(lid())
 
-  if (stage === 1) parts.push(label('POWER + SIGNAL ROUTING', 1430, 720, 1390, 736, C.substrateEdge))
+  if (stage === 1) {
+    parts.push(label('PACKAGE LANDING FIELD', 380, 260, 505, 350, C.substrateEdge))
+    parts.push(label('POWER + SIGNAL ROUTING', 1430, 720, 1390, 736, C.substrateEdge))
+  }
   if (stage === 2) {
     parts.push(label('RDL WIRING PLANE', 1400, 394, 1240, 430, C.interposerEdge))
-    parts.push(label('LOCAL SILICON BRIDGES', 1400, 454, 1160, 510, C.interposerEdge))
+    parts.push(label('EMBEDDED LSI BRIDGES', 1400, 454, 1218, 520, C.interposerEdge))
   }
   if (stage === 3) {
     parts.push(label('2× COMPUTE DIES', 1450, 310, 1130, 420, C.computeEdge))
@@ -188,6 +206,8 @@ function scene(stage) {
 function thermalSection() {
   const fins = Array.from({ length: 11 }, (_, i) => `<rect x="${550 + i * 78}" y="188" width="34" height="120" rx="5" fill="${C.lid}" stroke="${C.lidEdge}" stroke-width="3"/>`).join('\n')
   const heat = [700, 960, 1220].map(x => `<path d="M${x} 616V330" fill="none" stroke="${C.copper}" stroke-width="7" stroke-linecap="round" marker-end="url(#heatArrow)"/>`).join('\n')
+  const hbmHeat = `<path d="M435 566C435 506 560 502 570 440V330" fill="none" stroke="${C.copper}" stroke-width="5" stroke-linecap="round" marker-end="url(#heatArrow)" opacity="0.62"/>
+<path d="M1485 566C1485 506 1360 502 1350 440V330" fill="none" stroke="${C.copper}" stroke-width="5" stroke-linecap="round" marker-end="url(#heatArrow)" opacity="0.62"/>`
   return `${backdrop()}
 ${fins}
 <rect x="500" y="292" width="920" height="78" rx="18" fill="${C.lid}" stroke="${C.lidEdge}" stroke-width="4"/>
@@ -200,13 +220,90 @@ ${fins}
 <rect x="330" y="676" width="1260" height="70" rx="14" fill="${C.interposer}" stroke="${C.interposerEdge}" stroke-width="5"/>
 <rect x="260" y="770" width="1400" height="112" rx="20" fill="${C.substrate}" stroke="${C.substrateEdge}" stroke-width="5"/>
 ${heat}
-${label('COOLER', 1520, 246, 1400, 286, C.lidEdge)}
-${label('THERMAL LID', 1560, 420, 1470, 442, C.lidEdge)}
-${label('THERMAL INTERFACE MATERIAL', 1550, 520, 1458, 504, C.ink)}
-${label('COMPUTE DIES + HBM', 1540, 630, 1360, 598, C.computeEdge)}
-${label('INTERPOSER', 1540, 722, 1480, 710, C.interposerEdge)}
-${label('ORGANIC SUBSTRATE', 1540, 850, 1510, 826, C.substrateEdge)}
+${hbmHeat}
+${label('COOLER', 1540, 246, 1400, 286, C.lidEdge, 'start', 23)}
+${label('THERMAL LID', 1540, 420, 1470, 442, C.lidEdge, 'start', 23)}
+${label('THERMAL INTERFACE (TIM)', 1540, 520, 1458, 504, C.ink, 'start', 22)}
+${label('COMPUTE DIES + HBM', 1540, 630, 1360, 598, C.computeEdge, 'start', 22)}
+${label('INTERPOSER', 1540, 722, 1480, 710, C.interposerEdge, 'start', 23)}
+${label('ORGANIC SUBSTRATE', 1540, 850, 1510, 826, C.substrateEdge, 'start', 23)}
 ${label('HEAT FLOW', 270, 380, 700, 382, C.copper)}`
+}
+
+function packageEcosystem() {
+  const beam = (x1, y1, x2, y2, color = C.line) => `<path d="M${x1} ${y1}C${(x1 + x2) / 2} ${y1} ${(x1 + x2) / 2} ${y2} ${x2} ${y2}" fill="none" stroke="${color}" stroke-width="5" stroke-linecap="round" marker-end="url(#${color === C.interposerEdge ? 'packageArrowCyan' : 'packageArrow'})" opacity="0.88"/>`
+  const supplierTag = (x, y, text, color) => `<rect x="${x}" y="${y}" width="330" height="44" rx="22" fill="${color}" opacity="0.14" stroke="${color}" stroke-width="2"/>
+<text x="${x + 165}" y="${y + 29}" text-anchor="middle" fill="${color}" font-size="18" font-weight="760" letter-spacing="1.1">${text}</text>`
+  const hbm = [756, 1120].map(x => `<g>
+  <rect x="${x}" y="454" width="92" height="116" rx="10" fill="url(#hbmTop)" stroke="${C.hbmEdge}" stroke-width="4"/>
+  <path d="M${x + 12} 478H${x + 80}M${x + 12} 500H${x + 80}M${x + 12} 522H${x + 80}M${x + 12} 544H${x + 80}" stroke="${C.hbmEdge}" stroke-width="3" opacity="0.55"/>
+</g>`).join('\n')
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+<title id="title">Advanced packaging is a qualified ecosystem</title>
+<desc id="desc">Substrate materials, advanced integration, assembly and test capacity, and automated test equipment converge on a qualified accelerator package. Supplier names are examples of roles rather than one universal handoff route.</desc>
+${defs()}
+${backdrop()}
+<text x="104" y="86" fill="${C.muted}" font-size="20" font-weight="760" letter-spacing="3.5">ASSEMBLY + TEST ECOSYSTEM</text>
+<text x="104" y="150" fill="${C.ink}" font-size="48" font-weight="780">A qualified package combines four specialized capabilities</text>
+<path d="M104 188H1816" stroke="${C.line}" stroke-width="2" opacity="0.62"/>
+
+<g>
+  <circle cx="228" cy="344" r="54" fill="${C.substrate}" opacity="0.25" stroke="${C.substrateEdge}" stroke-width="4"/>
+  <path d="M194 322H262M194 342H262M194 362H262" stroke="${C.substrateEdge}" stroke-width="6" stroke-linecap="round"/>
+  <text x="316" y="314" fill="${C.substrateEdge}" font-size="24" font-weight="820" letter-spacing="1.8">SUBSTRATE MATERIALS</text>
+  <text x="316" y="352" fill="${C.ink}" font-size="23" font-weight="650">ABF dielectric + copper build-up</text>
+  ${supplierTag(316, 378, 'AJINOMOTO · SUBSTRATE MAKERS', C.substrateEdge)}
+</g>
+
+<g>
+  <circle cx="228" cy="714" r="54" fill="${C.interposer}" opacity="0.28" stroke="${C.interposerEdge}" stroke-width="4"/>
+  <path d="M192 716H264M204 694H250M204 738H250" stroke="${C.interposerEdge}" stroke-width="5" stroke-linecap="round"/>
+  <text x="316" y="684" fill="${C.interposerEdge}" font-size="24" font-weight="820" letter-spacing="1.8">ADVANCED INTEGRATION</text>
+  <text x="316" y="722" fill="${C.ink}" font-size="23" font-weight="650">RDL + local silicon + die / HBM placement</text>
+  ${supplierTag(316, 748, 'TSMC COWOS-L · QUALIFIED PARTNERS', C.interposerEdge)}
+</g>
+
+${beam(650, 344, 752, 472, C.substrateEdge)}
+${beam(650, 714, 752, 632, C.interposerEdge)}
+
+<g filter="url(#shadow)">
+  <rect x="712" y="360" width="500" height="342" rx="34" fill="url(#substrateTop)" stroke="${C.substrateEdge}" stroke-width="5"/>
+  <rect x="752" y="414" width="420" height="226" rx="20" fill="url(#interposerTop)" stroke="${C.interposerEdge}" stroke-width="5"/>
+  <rect x="864" y="446" width="116" height="164" rx="12" fill="url(#computeTop)" stroke="${C.computeEdge}" stroke-width="4"/>
+  <rect x="990" y="446" width="116" height="164" rx="12" fill="url(#computeTop)" stroke="${C.computeEdge}" stroke-width="4"/>
+  ${hbm}
+  <path d="M980 528H990" stroke="${C.computeEdge}" stroke-width="10"/>
+  <path d="M730 676H1194" stroke="${C.copper}" stroke-width="4" stroke-dasharray="10 8" opacity="0.6"/>
+</g>
+<text x="962" y="756" text-anchor="middle" fill="${C.ink}" font-size="25" font-weight="780" letter-spacing="1.6">THE PHYSICAL PACKAGE</text>
+
+${beam(1668, 344, 1210, 472)}
+${beam(1668, 714, 1210, 632)}
+
+<g>
+  <circle cx="1692" cy="344" r="54" fill="${C.compute}" opacity="0.24" stroke="${C.computeEdge}" stroke-width="4"/>
+  <path d="M1663 328H1721V360H1663ZM1675 316V328M1709 316V328M1675 360V372M1709 360V372" fill="none" stroke="${C.computeEdge}" stroke-width="5" stroke-linecap="round"/>
+  <text x="1604" y="314" text-anchor="end" fill="${C.computeEdge}" font-size="24" font-weight="820" letter-spacing="1.8">ASSEMBLY + TEST CAPACITY</text>
+  <text x="1604" y="352" text-anchor="end" fill="${C.ink}" font-size="23" font-weight="650">attach · protect · qualify the package</text>
+  <g transform="translate(1274 378)">${supplierTag(0, 0, 'ASE · AMKOR · JCET · OTHER OSATS', C.computeEdge)}</g>
+</g>
+
+<g>
+  <circle cx="1692" cy="714" r="54" fill="${C.hbm}" opacity="0.24" stroke="${C.hbmEdge}" stroke-width="4"/>
+  <path d="M1658 728L1672 710L1688 722L1706 688L1724 712" fill="none" stroke="${C.hbmEdge}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1604" y="684" text-anchor="end" fill="${C.hbmEdge}" font-size="24" font-weight="820" letter-spacing="1.8">AUTOMATED TEST EQUIPMENT</text>
+  <text x="1604" y="722" text-anchor="end" fill="${C.ink}" font-size="23" font-weight="650">probe · electrical test · binning</text>
+  <g transform="translate(1274 748)">${supplierTag(0, 0, 'ADVANTEST · TERADYNE', C.hbmEdge)}</g>
+</g>
+
+<path d="M962 784V866" fill="none" stroke="${C.interposerEdge}" stroke-width="7" marker-end="url(#packageArrowCyan)"/>
+<rect x="672" y="884" width="580" height="86" rx="43" fill="${C.interposer}" opacity="0.34" stroke="${C.interposerEdge}" stroke-width="4"/>
+<circle cx="730" cy="927" r="22" fill="${C.interposerEdge}"/>
+<path d="M718 927L728 937L744 917" fill="none" stroke="${C.bg}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="784" y="937" fill="${C.ink}" font-size="29" font-weight="820" letter-spacing="1.5">QUALIFIED ACCELERATOR PACKAGE</text>
+<text x="960" y="992" text-anchor="middle" fill="${C.muted}" font-size="19" font-weight="620">Supplier roles vary by product and qualified route · ATE vendors supply the test platform</text>
+</svg>\n`
 }
 
 function svg(stage) {
@@ -214,10 +311,10 @@ function svg(stage) {
     1: 'A top-down locked view shows the organic package substrate and its copper traces.',
     2: 'The same view adds an RDL-based interposer with embedded local silicon interconnects above the organic substrate.',
     3: 'The same view adds two compute dies and eight 12-high HBM3E stacks on the interposer.',
-    4: 'The same view adds the thermal lid to complete the accelerator package.',
+    4: 'A side cross-section traces heat from the compute dies and HBM through the thermal interface material, lid, and cooler.',
   }
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-<title id="title">Accelerator package assembly, state ${stage} of 4</title>
+<title id="title">${stage === 4 ? 'Accelerator package heat-path cross-section' : `Accelerator package assembly, state ${stage} of 4`}</title>
 <desc id="desc">${descriptions[stage]}</desc>
 ${defs()}
 ${stage === 4 ? thermalSection() : scene(stage)}
@@ -239,6 +336,9 @@ export function generatePackageScenes(outDir) {
     writeFileSync(path, svg(stage))
     written.push(path)
   }
+  const ecosystemPath = join(outDir, 'package-ecosystem.svg')
+  writeFileSync(ecosystemPath, packageEcosystem())
+  written.push(ecosystemPath)
   return written
 }
 

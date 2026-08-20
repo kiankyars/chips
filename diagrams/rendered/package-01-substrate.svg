@@ -29,6 +29,9 @@
   <pattern id="microbumps" width="18" height="18" patternUnits="userSpaceOnUse">
     <circle cx="4" cy="4" r="1.7" fill="#a5f3fc" opacity="0.42"/>
   </pattern>
+  <pattern id="landingPads" width="34" height="34" patternUnits="userSpaceOnUse">
+    <circle cx="8" cy="8" r="3.2" fill="#fbbf24" opacity="0.38"/>
+  </pattern>
   <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
     <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.5"/>
   </filter>
@@ -39,6 +42,12 @@
   <marker id="heatArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
     <path d="M0 0L12 6L0 12Z" fill="#fbbf24"/>
   </marker>
+  <marker id="packageArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#526078"/>
+  </marker>
+  <marker id="packageArrowCyan" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#67e8f9"/>
+  </marker>
 </defs>
 <rect width="1920" height="1080" fill="#05080e"/>
 <rect width="1920" height="1080" fill="url(#spot)"/>
@@ -46,6 +55,7 @@
 <g filter="url(#shadow)">
   <rect x="330" y="300" width="1260" height="520" rx="42" fill="url(#substrateTop)" stroke="#f3b35f" stroke-width="5"/>
   <rect x="350" y="320" width="1220" height="480" rx="34" fill="#211813" opacity="0.2"/>
+  <rect x="455" y="345" width="1010" height="400" rx="24" fill="url(#landingPads)" stroke="#f3b35f" stroke-width="3" stroke-dasharray="12 10" opacity="0.62"/>
   <path d="M 390 420 H 560 L 690 520" fill="none" stroke="#fbbf24" stroke-width="4" opacity="0.34"/>
   <path d="M 1530 420 H 1360 L 1230 520" fill="none" stroke="#fbbf24" stroke-width="4" opacity="0.34"/>
   <path d="M 390 474 H 572 L 698 538" fill="none" stroke="#fbbf24" stroke-width="4" opacity="0.34"/>
@@ -88,7 +98,10 @@
   <circle cx="1442" cy="842" r="6" fill="#fbbf24" opacity="0.72"/>
   <circle cx="1488" cy="842" r="6" fill="#fbbf24" opacity="0.72"/>
 </g>
+<path d="M 729.5 252 L 505 350" fill="none" stroke="#f3b35f" stroke-width="2.5" opacity="0.76"/>
+<circle cx="505" cy="350" r="5" fill="#f3b35f"/>
+<text x="380" y="260" text-anchor="start" fill="#f3b35f" font-size="25" font-weight="760" letter-spacing="2">PACKAGE LANDING FIELD</text>
 <path d="M 1406 712 L 1390 736" fill="none" stroke="#f3b35f" stroke-width="2.5" opacity="0.76"/>
 <circle cx="1390" cy="736" r="5" fill="#f3b35f"/>
-<text x="1430" y="720" fill="#f3b35f" font-size="25" font-weight="760" letter-spacing="2">POWER + SIGNAL ROUTING</text>
+<text x="1430" y="720" text-anchor="start" fill="#f3b35f" font-size="25" font-weight="760" letter-spacing="2">POWER + SIGNAL ROUTING</text>
 </svg>

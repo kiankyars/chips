@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
-<title id="title">Accelerator package assembly, state 4 of 4</title>
-<desc id="desc">The same view adds the thermal lid to complete the accelerator package.</desc>
+<title id="title">Accelerator package heat-path cross-section</title>
+<desc id="desc">A side cross-section traces heat from the compute dies and HBM through the thermal interface material, lid, and cooler.</desc>
 <defs>
   <radialGradient id="spot" cx="50%" cy="48%" r="58%">
     <stop offset="0%" stop-color="#17304d" stop-opacity="0.58"/>
@@ -29,6 +29,9 @@
   <pattern id="microbumps" width="18" height="18" patternUnits="userSpaceOnUse">
     <circle cx="4" cy="4" r="1.7" fill="#a5f3fc" opacity="0.42"/>
   </pattern>
+  <pattern id="landingPads" width="34" height="34" patternUnits="userSpaceOnUse">
+    <circle cx="8" cy="8" r="3.2" fill="#fbbf24" opacity="0.38"/>
+  </pattern>
   <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
     <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.5"/>
   </filter>
@@ -38,6 +41,12 @@
   </filter>
   <marker id="heatArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
     <path d="M0 0L12 6L0 12Z" fill="#fbbf24"/>
+  </marker>
+  <marker id="packageArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#526078"/>
+  </marker>
+  <marker id="packageArrowCyan" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M0 0L12 6L0 12Z" fill="#67e8f9"/>
   </marker>
 </defs>
 <rect width="1920" height="1080" fill="#05080e"/>
@@ -66,25 +75,27 @@
 <path d="M700 616V330" fill="none" stroke="#fbbf24" stroke-width="7" stroke-linecap="round" marker-end="url(#heatArrow)"/>
 <path d="M960 616V330" fill="none" stroke="#fbbf24" stroke-width="7" stroke-linecap="round" marker-end="url(#heatArrow)"/>
 <path d="M1220 616V330" fill="none" stroke="#fbbf24" stroke-width="7" stroke-linecap="round" marker-end="url(#heatArrow)"/>
-<path d="M 1496 238 L 1400 286" fill="none" stroke="#e2e8f0" stroke-width="2.5" opacity="0.76"/>
+<path d="M435 566C435 506 560 502 570 440V330" fill="none" stroke="#fbbf24" stroke-width="5" stroke-linecap="round" marker-end="url(#heatArrow)" opacity="0.62"/>
+<path d="M1485 566C1485 506 1360 502 1350 440V330" fill="none" stroke="#fbbf24" stroke-width="5" stroke-linecap="round" marker-end="url(#heatArrow)" opacity="0.62"/>
+<path d="M 1516 238 L 1400 286" fill="none" stroke="#e2e8f0" stroke-width="2.5" opacity="0.76"/>
 <circle cx="1400" cy="286" r="5" fill="#e2e8f0"/>
-<text x="1520" y="246" fill="#e2e8f0" font-size="25" font-weight="760" letter-spacing="2">COOLER</text>
-<path d="M 1536 412 L 1470 442" fill="none" stroke="#e2e8f0" stroke-width="2.5" opacity="0.76"/>
+<text x="1540" y="246" text-anchor="start" fill="#e2e8f0" font-size="23" font-weight="760" letter-spacing="2">COOLER</text>
+<path d="M 1516 412 L 1470 442" fill="none" stroke="#e2e8f0" stroke-width="2.5" opacity="0.76"/>
 <circle cx="1470" cy="442" r="5" fill="#e2e8f0"/>
-<text x="1560" y="420" fill="#e2e8f0" font-size="25" font-weight="760" letter-spacing="2">THERMAL LID</text>
-<path d="M 1526 512 L 1458 504" fill="none" stroke="#f8fafc" stroke-width="2.5" opacity="0.76"/>
+<text x="1540" y="420" text-anchor="start" fill="#e2e8f0" font-size="23" font-weight="760" letter-spacing="2">THERMAL LID</text>
+<path d="M 1516 512 L 1458 504" fill="none" stroke="#f8fafc" stroke-width="2.5" opacity="0.76"/>
 <circle cx="1458" cy="504" r="5" fill="#f8fafc"/>
-<text x="1550" y="520" fill="#f8fafc" font-size="25" font-weight="760" letter-spacing="2">THERMAL INTERFACE MATERIAL</text>
+<text x="1540" y="520" text-anchor="start" fill="#f8fafc" font-size="22" font-weight="760" letter-spacing="2">THERMAL INTERFACE (TIM)</text>
 <path d="M 1516 622 L 1360 598" fill="none" stroke="#93c5fd" stroke-width="2.5" opacity="0.76"/>
 <circle cx="1360" cy="598" r="5" fill="#93c5fd"/>
-<text x="1540" y="630" fill="#93c5fd" font-size="25" font-weight="760" letter-spacing="2">COMPUTE DIES + HBM</text>
+<text x="1540" y="630" text-anchor="start" fill="#93c5fd" font-size="22" font-weight="760" letter-spacing="2">COMPUTE DIES + HBM</text>
 <path d="M 1516 714 L 1480 710" fill="none" stroke="#67e8f9" stroke-width="2.5" opacity="0.76"/>
 <circle cx="1480" cy="710" r="5" fill="#67e8f9"/>
-<text x="1540" y="722" fill="#67e8f9" font-size="25" font-weight="760" letter-spacing="2">INTERPOSER</text>
+<text x="1540" y="722" text-anchor="start" fill="#67e8f9" font-size="23" font-weight="760" letter-spacing="2">INTERPOSER</text>
 <path d="M 1516 842 L 1510 826" fill="none" stroke="#f3b35f" stroke-width="2.5" opacity="0.76"/>
 <circle cx="1510" cy="826" r="5" fill="#f3b35f"/>
-<text x="1540" y="850" fill="#f3b35f" font-size="25" font-weight="760" letter-spacing="2">ORGANIC SUBSTRATE</text>
-<path d="M 246 372 L 700 382" fill="none" stroke="#fbbf24" stroke-width="2.5" opacity="0.76"/>
+<text x="1540" y="850" text-anchor="start" fill="#f3b35f" font-size="23" font-weight="760" letter-spacing="2">ORGANIC SUBSTRATE</text>
+<path d="M 433.5 372 L 700 382" fill="none" stroke="#fbbf24" stroke-width="2.5" opacity="0.76"/>
 <circle cx="700" cy="382" r="5" fill="#fbbf24"/>
-<text x="270" y="380" fill="#fbbf24" font-size="25" font-weight="760" letter-spacing="2">HEAT FLOW</text>
+<text x="270" y="380" text-anchor="start" fill="#fbbf24" font-size="25" font-weight="760" letter-spacing="2">HEAT FLOW</text>
 </svg>

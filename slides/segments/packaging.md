@@ -41,25 +41,19 @@ sources: [research/packaging.md, research/nvidia.md]
 -->
 
 ---
+class: visual-sequence
+title: "Advanced packaging ecosystem"
+---
 
-# Advanced packaging still depends on substrates, assembly, and test
-
-<div class="grid grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-4 mt-14 items-center text-center">
-<div><div class="text-2xl font-bold">AJINOMOTO ABF</div><div class="opacity-60 mt-2">substrate build-up film</div></div>
-<div class="text-4xl opacity-35">→</div>
-<div><div class="text-2xl font-bold">TSMC CoWoS-L</div><div class="opacity-60 mt-2">package integration</div></div>
-<div class="text-4xl opacity-35">→</div>
-<div><div class="text-2xl font-bold">ASE · AMKOR · JCET</div><div class="opacity-60 mt-2">assembly</div></div>
-<div class="text-4xl opacity-35">→</div>
-<div><div class="text-2xl font-bold">ADVANTEST · TERADYNE</div><div class="opacity-60 mt-2">test equipment</div></div>
+<div class="visual-sequence__frame">
+  <img src="/diagrams/rendered/package-ecosystem.svg" alt="Substrate materials, advanced integration, assembly and test capacity, and automated test equipment converge on a qualified accelerator package" />
 </div>
-
-<div class="mt-12 border-t border-slate-600 pt-6 text-center text-xl opacity-75">A qualified package is a chain of materials, integration, assembly, and test.</div>
 
 <!--
 - GB300 uses CoWoS-L, not SoIC; SoIC is TSMC's adjacent copper-to-copper hybrid-bonding platform for denser three-dimensional stacking.
 - Organic substrates use Ajinomoto build-up film as an insulating layer around fine copper wiring.
-- OSATs assemble and test many packages, while Advantest and Teradyne supply the automated test equipment.
+- OSATs provide qualified assembly and test capacity; Advantest and Teradyne supply the automated test equipment rather than performing the terminal process step.
+- The exact division of work varies by product and qualified route, so these are capability lanes—not one universal vendor handoff.
 -->
 
 ---
@@ -118,7 +112,7 @@ title: "Package assembly · 3 / 4"
 
 </div>
 
-<div class="visual-sequence__source">GB300-class · arrangement simplified</div>
+<div class="visual-sequence__source">GB300-class · simplified layout</div>
 
 <!--
 - Two GPU dies and eight 12-high HBM3E stacks share one interposer.
@@ -133,15 +127,15 @@ transition: fade
 title: "Package assembly · 4 / 4"
 ---
 
-<div class="visual-sequence__kicker">THE LID CARRIES HEAT TO THE COOLER</div>
+<div class="visual-sequence__kicker">4 / 4 · CROSS-SECTION: HEAT PATH</div>
 
 <div class="visual-sequence__frame">
 
-![The completed accelerator package with its thermal lid](/diagrams/rendered/package-04-complete.svg)
+![A side cross-section traces heat from compute dies and HBM through the thermal interface material, lid, and cooler](/diagrams/rendered/package-04-complete.svg)
 
 </div>
 
-<div class="visual-sequence__source">Illustrative side section · geometry simplified</div>
+<div class="visual-sequence__source">Illustrative cross-section · not to scale</div>
 
 <!--
 - A thermal lid closes over the assembled logic and memory dies.
