@@ -38,7 +38,8 @@ title: "Replacement horizon"
 </div>
 
 <!--
-- Existing qualified capacity can sometimes be reallocated without recreating the underlying technology.
+- Existing qualified volume can sometimes be reallocated without recreating the underlying technology.
+- A new OSAT assembly-and-test route still requires package-specific processes, test programs, yield learning, and qualification; it is not equivalent to moving volume within an already qualified line.
 - Scaling HBM, materials, or process-control capability adds qualification, yield learning, and manufacturing depth.
 - EDA, CUDA, leading-edge foundries, and EUV depend on interlocking tools, suppliers, and accumulated know-how rather than one replaceable factory.
 -->

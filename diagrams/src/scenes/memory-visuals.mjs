@@ -253,51 +253,53 @@ ${text(735, 1008, 'advanced nodes only where they pay', { size: 25, fill: C.mute
 }
 
 function replacementHorizonScene() {
-  const columns = [
-    {
-      x: 90,
-      color: C.green,
-      title: 'SHIFT QUALIFIED CAPACITY',
-      sub: 'among already qualified sources',
-      items: ['OSAT assembly + test', 'allocation among qualified sources'],
-    },
-    {
-      x: 700,
-      color: C.violet,
-      title: 'SCALE MANUFACTURING CAPABILITY',
-      sub: 'qualification, yield, and manufacturing depth',
-      items: ['HBM manufacturing at scale', 'advanced materials', 'process-control tools'],
-    },
-    {
-      x: 1310,
-      color: C.amber,
-      title: 'RECREATE A COMPATIBLE STACK',
-      sub: 'tools, IP, suppliers, and know-how must align',
-      items: ['EDA + CUDA', 'leading-edge logic + CoWoS', 'EUV scanners + optics'],
-    },
-  ]
-
-  const columnSvg = columns.map(column => {
-    const itemSvg = column.items.map((item, index) => {
-      const y = 400 + index * 126
-      return `<rect x="${column.x + 42}" y="${y}" width="436" height="82" rx="20" fill="${column.color}" opacity="0.12" stroke="${column.color}" stroke-width="3"/>
-${text(column.x + 260, y + 51, item, { size: 24, fill: column.color, weight: 720, anchor: 'middle' })}`
-    }).join('\n')
-    return `${panel(column.x, 216, 520, 606)}
-${text(column.x + 260, 286, column.title, { size: 25, fill: column.color, weight: 820, anchor: 'middle', tracking: 1.2 })}
-${text(column.x + 260, 326, column.sub, { size: 18, fill: C.muted, weight: 560, anchor: 'middle' })}
-${itemSvg}`
-  }).join('\n')
+  const node = (x, y, title, sub, color, direction = 'down') => {
+    const labelY = direction === 'down' ? y + 112 : y - 106
+    const lineEnd = direction === 'down' ? labelY - 48 : labelY + 24
+    return `<g>
+<circle cx="${x}" cy="${y}" r="15" fill="${C.paper}" stroke="${color}" stroke-width="7"/>
+<path d="M${x} ${y + (direction === 'down' ? 22 : -22)}V${lineEnd}" stroke="${color}" stroke-width="3" stroke-dasharray="7 7"/>
+${text(x, labelY, title, { size: 21, fill: color, weight: 820, anchor: 'middle', tracking: 0.8 })}
+${text(x, labelY + 31, sub, { size: 16, fill: C.muted, weight: 600, anchor: 'middle' })}
+</g>`
+  }
 
   return svgDoc(
     'Relative replacement difficulty across semiconductor capabilities',
-    'Three categories distinguish shifting existing qualified capacity, scaling a competitive manufacturing capability, and recreating an interdependent technology stack. The ordering is qualitative rather than a forecast in years.',
+    'A continuous rising horizon distinguishes reallocating existing qualified volume, building and qualifying manufacturing capability, and recreating an interdependent technology stack. OSAT assembly and test sits in the qualification region rather than at the easiest endpoint.',
     `${text(960, 82, 'RELATIVE REPLACEMENT DIFFICULTY', { size: 26, fill: C.muted, weight: 800, anchor: 'middle', tracking: 2.4 })}
-${text(960, 132, 'Each step requires more capital, qualification, and accumulated know-how', { size: 25, fill: C.ink, weight: 650, anchor: 'middle' })}
-${columnSvg}
-<path d="M620 520H675" stroke="${C.line}" stroke-width="5" marker-end="url(#arrow-ink)"/>
-<path d="M1230 520H1285" stroke="${C.line}" stroke-width="5" marker-end="url(#arrow-ink)"/>
-${text(960, 920, 'Qualitative synthesis · actual substitution depends on the product, geography, qualification status, and starting capability', { size: 20, fill: C.muted, weight: 560, anchor: 'middle' })}`,
+${text(960, 132, 'Each step adds qualification, manufacturing depth, and interdependent know-how', { size: 25, fill: C.ink, weight: 650, anchor: 'middle' })}
+
+<path d="M142 724C420 724 540 686 730 630S1110 552 1300 492S1600 376 1778 304L1778 770H142Z" fill="${C.blueSoft}" opacity="0.34"/>
+<path d="M142 724C420 724 540 686 730 630" fill="none" stroke="${C.green}" stroke-width="17" stroke-linecap="round"/>
+<path d="M730 630C980 584 1110 552 1300 492" fill="none" stroke="${C.violet}" stroke-width="17" stroke-linecap="round"/>
+<path d="M1300 492C1510 426 1640 354 1744 318" fill="none" stroke="${C.amber}" stroke-width="17" stroke-linecap="round"/>
+<path d="M1740 288L1800 304L1754 346Z" fill="${C.amber}"/>
+
+${text(150, 230, 'REALLOCATE', { size: 22, fill: C.green, weight: 840, tracking: 2.1 })}
+${text(150, 265, 'existing qualified volume', { size: 18, fill: C.muted, weight: 620 })}
+<path d="M150 288H500" stroke="${C.green}" stroke-width="4" opacity="0.6"/>
+
+${text(740, 230, 'BUILD + QUALIFY', { size: 22, fill: C.violet, weight: 840, tracking: 2.1 })}
+${text(740, 265, 'process, yield, and manufacturing depth', { size: 18, fill: C.muted, weight: 620 })}
+<path d="M740 288H1215" stroke="${C.violet}" stroke-width="4" opacity="0.6"/>
+
+${text(1340, 230, 'RECREATE A STACK', { size: 22, fill: C.amber, weight: 840, tracking: 2.1 })}
+${text(1340, 265, 'tools, IP, suppliers, and know-how align', { size: 18, fill: C.muted, weight: 620 })}
+<path d="M1340 288H1778" stroke="${C.amber}" stroke-width="4" opacity="0.6"/>
+
+${node(260, 720, 'QUALIFIED ALLOCATION', 'reroute existing volume', C.green, 'down')}
+${node(565, 676, 'OSAT ASSEMBLY + TEST', 'a new route still needs qualification', C.teal, 'up')}
+${node(805, 617, 'ADVANCED MATERIALS', 'scale a controlled process', C.violet, 'down')}
+${node(1035, 568, 'HBM AT SCALE', 'capacity plus yield learning', C.violet, 'up')}
+${node(1240, 512, 'PROCESS CONTROL', 'tools plus application know-how', C.violet, 'down')}
+${node(1480, 425, 'LOGIC + COWOS', 'co-optimized manufacturing', C.amber, 'up')}
+${node(1700, 334, 'INTERDEPENDENT STACKS', 'EUV + optics · EDA + CUDA', C.amber, 'down')}
+
+<path d="M142 972H1778" stroke="${C.line}" stroke-width="4" marker-end="url(#arrow-ink)"/>
+${text(142, 1012, 'MORE SUBSTITUTABLE', { size: 17, fill: C.muted, weight: 760, tracking: 1.8 })}
+${text(1778, 1012, 'MORE INTERDEPENDENT', { size: 17, fill: C.muted, weight: 760, anchor: 'end', tracking: 1.8 })}
+${text(960, 1050, 'Qualitative synthesis · not a forecast in years', { size: 16, fill: C.muted, weight: 560, anchor: 'middle' })}`,
   )
 }
 

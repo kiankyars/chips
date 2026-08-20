@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
 <title id="title">Relative replacement difficulty across semiconductor capabilities</title>
-<desc id="desc">Three categories distinguish shifting existing qualified capacity, scaling a competitive manufacturing capability, and recreating an interdependent technology stack. The ordering is qualitative rather than a forecast in years.</desc>
+<desc id="desc">A continuous rising horizon distinguishes reallocating existing qualified volume, building and qualifying manufacturing capability, and recreating an interdependent technology stack. OSAT assembly and test sits in the qualification region rather than at the easiest endpoint.</desc>
 <defs>
   <filter id="shadow" x="-25%" y="-25%" width="150%" height="170%">
     <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#1f272d" flood-opacity="0.13"/>
@@ -20,33 +20,71 @@
 </defs>
 <rect width="1920" height="1080" fill="#f4efe6"/>
 <text x="960" y="82" fill="#74746f" font-size="26" font-weight="800" text-anchor="middle" letter-spacing="2.4">RELATIVE REPLACEMENT DIFFICULTY</text>
-<text x="960" y="132" fill="#1f272d" font-size="25" font-weight="650" text-anchor="middle" letter-spacing="0">Each step requires more capital, qualification, and accumulated know-how</text>
-<rect x="90" y="216" width="520" height="606" rx="34" fill="#fbf8f1" stroke="#ddd6c9" stroke-width="3"/>
-<text x="350" y="286" fill="#4f8064" font-size="25" font-weight="820" text-anchor="middle" letter-spacing="1.2">SHIFT QUALIFIED CAPACITY</text>
-<text x="350" y="326" fill="#74746f" font-size="18" font-weight="560" text-anchor="middle" letter-spacing="0">among already qualified sources</text>
-<rect x="132" y="400" width="436" height="82" rx="20" fill="#4f8064" opacity="0.12" stroke="#4f8064" stroke-width="3"/>
-<text x="350" y="451" fill="#4f8064" font-size="24" font-weight="720" text-anchor="middle" letter-spacing="0">OSAT assembly + test</text>
-<rect x="132" y="526" width="436" height="82" rx="20" fill="#4f8064" opacity="0.12" stroke="#4f8064" stroke-width="3"/>
-<text x="350" y="577" fill="#4f8064" font-size="24" font-weight="720" text-anchor="middle" letter-spacing="0">allocation among qualified sources</text>
-<rect x="700" y="216" width="520" height="606" rx="34" fill="#fbf8f1" stroke="#ddd6c9" stroke-width="3"/>
-<text x="960" y="286" fill="#7358a3" font-size="25" font-weight="820" text-anchor="middle" letter-spacing="1.2">SCALE MANUFACTURING CAPABILITY</text>
-<text x="960" y="326" fill="#74746f" font-size="18" font-weight="560" text-anchor="middle" letter-spacing="0">qualification, yield, and manufacturing depth</text>
-<rect x="742" y="400" width="436" height="82" rx="20" fill="#7358a3" opacity="0.12" stroke="#7358a3" stroke-width="3"/>
-<text x="960" y="451" fill="#7358a3" font-size="24" font-weight="720" text-anchor="middle" letter-spacing="0">HBM manufacturing at scale</text>
-<rect x="742" y="526" width="436" height="82" rx="20" fill="#7358a3" opacity="0.12" stroke="#7358a3" stroke-width="3"/>
-<text x="960" y="577" fill="#7358a3" font-size="24" font-weight="720" text-anchor="middle" letter-spacing="0">advanced materials</text>
-<rect x="742" y="652" width="436" height="82" rx="20" fill="#7358a3" opacity="0.12" stroke="#7358a3" stroke-width="3"/>
-<text x="960" y="703" fill="#7358a3" font-size="24" font-weight="720" text-anchor="middle" letter-spacing="0">process-control tools</text>
-<rect x="1310" y="216" width="520" height="606" rx="34" fill="#fbf8f1" stroke="#ddd6c9" stroke-width="3"/>
-<text x="1570" y="286" fill="#c3842e" font-size="25" font-weight="820" text-anchor="middle" letter-spacing="1.2">RECREATE A COMPATIBLE STACK</text>
-<text x="1570" y="326" fill="#74746f" font-size="18" font-weight="560" text-anchor="middle" letter-spacing="0">tools, IP, suppliers, and know-how must align</text>
-<rect x="1352" y="400" width="436" height="82" rx="20" fill="#c3842e" opacity="0.12" stroke="#c3842e" stroke-width="3"/>
-<text x="1570" y="451" fill="#c3842e" font-size="24" font-weight="720" text-anchor="middle" letter-spacing="0">EDA + CUDA</text>
-<rect x="1352" y="526" width="436" height="82" rx="20" fill="#c3842e" opacity="0.12" stroke="#c3842e" stroke-width="3"/>
-<text x="1570" y="577" fill="#c3842e" font-size="24" font-weight="720" text-anchor="middle" letter-spacing="0">leading-edge logic + CoWoS</text>
-<rect x="1352" y="652" width="436" height="82" rx="20" fill="#c3842e" opacity="0.12" stroke="#c3842e" stroke-width="3"/>
-<text x="1570" y="703" fill="#c3842e" font-size="24" font-weight="720" text-anchor="middle" letter-spacing="0">EUV scanners + optics</text>
-<path d="M620 520H675" stroke="#a8a49a" stroke-width="5" marker-end="url(#arrow-ink)"/>
-<path d="M1230 520H1285" stroke="#a8a49a" stroke-width="5" marker-end="url(#arrow-ink)"/>
-<text x="960" y="920" fill="#74746f" font-size="20" font-weight="560" text-anchor="middle" letter-spacing="0">Qualitative synthesis · actual substitution depends on the product, geography, qualification status, and starting capability</text>
+<text x="960" y="132" fill="#1f272d" font-size="25" font-weight="650" text-anchor="middle" letter-spacing="0">Each step adds qualification, manufacturing depth, and interdependent know-how</text>
+
+<path d="M142 724C420 724 540 686 730 630S1110 552 1300 492S1600 376 1778 304L1778 770H142Z" fill="#d6e7f1" opacity="0.34"/>
+<path d="M142 724C420 724 540 686 730 630" fill="none" stroke="#4f8064" stroke-width="17" stroke-linecap="round"/>
+<path d="M730 630C980 584 1110 552 1300 492" fill="none" stroke="#7358a3" stroke-width="17" stroke-linecap="round"/>
+<path d="M1300 492C1510 426 1640 354 1744 318" fill="none" stroke="#c3842e" stroke-width="17" stroke-linecap="round"/>
+<path d="M1740 288L1800 304L1754 346Z" fill="#c3842e"/>
+
+<text x="150" y="230" fill="#4f8064" font-size="22" font-weight="840" text-anchor="start" letter-spacing="2.1">REALLOCATE</text>
+<text x="150" y="265" fill="#74746f" font-size="18" font-weight="620" text-anchor="start" letter-spacing="0">existing qualified volume</text>
+<path d="M150 288H500" stroke="#4f8064" stroke-width="4" opacity="0.6"/>
+
+<text x="740" y="230" fill="#7358a3" font-size="22" font-weight="840" text-anchor="start" letter-spacing="2.1">BUILD + QUALIFY</text>
+<text x="740" y="265" fill="#74746f" font-size="18" font-weight="620" text-anchor="start" letter-spacing="0">process, yield, and manufacturing depth</text>
+<path d="M740 288H1215" stroke="#7358a3" stroke-width="4" opacity="0.6"/>
+
+<text x="1340" y="230" fill="#c3842e" font-size="22" font-weight="840" text-anchor="start" letter-spacing="2.1">RECREATE A STACK</text>
+<text x="1340" y="265" fill="#74746f" font-size="18" font-weight="620" text-anchor="start" letter-spacing="0">tools, IP, suppliers, and know-how align</text>
+<path d="M1340 288H1778" stroke="#c3842e" stroke-width="4" opacity="0.6"/>
+
+<g>
+<circle cx="260" cy="720" r="15" fill="#fbf8f1" stroke="#4f8064" stroke-width="7"/>
+<path d="M260 742V784" stroke="#4f8064" stroke-width="3" stroke-dasharray="7 7"/>
+<text x="260" y="832" fill="#4f8064" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0.8">QUALIFIED ALLOCATION</text>
+<text x="260" y="863" fill="#74746f" font-size="16" font-weight="600" text-anchor="middle" letter-spacing="0">reroute existing volume</text>
+</g>
+<g>
+<circle cx="565" cy="676" r="15" fill="#fbf8f1" stroke="#387d72" stroke-width="7"/>
+<path d="M565 654V594" stroke="#387d72" stroke-width="3" stroke-dasharray="7 7"/>
+<text x="565" y="570" fill="#387d72" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0.8">OSAT ASSEMBLY + TEST</text>
+<text x="565" y="601" fill="#74746f" font-size="16" font-weight="600" text-anchor="middle" letter-spacing="0">a new route still needs qualification</text>
+</g>
+<g>
+<circle cx="805" cy="617" r="15" fill="#fbf8f1" stroke="#7358a3" stroke-width="7"/>
+<path d="M805 639V681" stroke="#7358a3" stroke-width="3" stroke-dasharray="7 7"/>
+<text x="805" y="729" fill="#7358a3" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0.8">ADVANCED MATERIALS</text>
+<text x="805" y="760" fill="#74746f" font-size="16" font-weight="600" text-anchor="middle" letter-spacing="0">scale a controlled process</text>
+</g>
+<g>
+<circle cx="1035" cy="568" r="15" fill="#fbf8f1" stroke="#7358a3" stroke-width="7"/>
+<path d="M1035 546V486" stroke="#7358a3" stroke-width="3" stroke-dasharray="7 7"/>
+<text x="1035" y="462" fill="#7358a3" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0.8">HBM AT SCALE</text>
+<text x="1035" y="493" fill="#74746f" font-size="16" font-weight="600" text-anchor="middle" letter-spacing="0">capacity plus yield learning</text>
+</g>
+<g>
+<circle cx="1240" cy="512" r="15" fill="#fbf8f1" stroke="#7358a3" stroke-width="7"/>
+<path d="M1240 534V576" stroke="#7358a3" stroke-width="3" stroke-dasharray="7 7"/>
+<text x="1240" y="624" fill="#7358a3" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0.8">PROCESS CONTROL</text>
+<text x="1240" y="655" fill="#74746f" font-size="16" font-weight="600" text-anchor="middle" letter-spacing="0">tools plus application know-how</text>
+</g>
+<g>
+<circle cx="1480" cy="425" r="15" fill="#fbf8f1" stroke="#c3842e" stroke-width="7"/>
+<path d="M1480 403V343" stroke="#c3842e" stroke-width="3" stroke-dasharray="7 7"/>
+<text x="1480" y="319" fill="#c3842e" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0.8">LOGIC + COWOS</text>
+<text x="1480" y="350" fill="#74746f" font-size="16" font-weight="600" text-anchor="middle" letter-spacing="0">co-optimized manufacturing</text>
+</g>
+<g>
+<circle cx="1700" cy="334" r="15" fill="#fbf8f1" stroke="#c3842e" stroke-width="7"/>
+<path d="M1700 356V398" stroke="#c3842e" stroke-width="3" stroke-dasharray="7 7"/>
+<text x="1700" y="446" fill="#c3842e" font-size="21" font-weight="820" text-anchor="middle" letter-spacing="0.8">INTERDEPENDENT STACKS</text>
+<text x="1700" y="477" fill="#74746f" font-size="16" font-weight="600" text-anchor="middle" letter-spacing="0">EUV + optics · EDA + CUDA</text>
+</g>
+
+<path d="M142 972H1778" stroke="#a8a49a" stroke-width="4" marker-end="url(#arrow-ink)"/>
+<text x="142" y="1012" fill="#74746f" font-size="17" font-weight="760" text-anchor="start" letter-spacing="1.8">MORE SUBSTITUTABLE</text>
+<text x="1778" y="1012" fill="#74746f" font-size="17" font-weight="760" text-anchor="end" letter-spacing="1.8">MORE INTERDEPENDENT</text>
+<text x="960" y="1050" fill="#74746f" font-size="16" font-weight="560" text-anchor="middle" letter-spacing="0">Qualitative synthesis · not a forecast in years</text>
 </svg>
