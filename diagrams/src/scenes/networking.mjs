@@ -277,12 +277,70 @@ ${text(960, 948, 'HOST CPUS SET UP THE TRANSFER · THE PAYLOAD STAYS ON THE GPU-
   )
 }
 
+function throughputScene() {
+  const gate = (x, title, sub, color) => `<g>
+<path d="M${x} 376V648" stroke="${color}" stroke-width="4" stroke-dasharray="10 9" opacity="0.75"/>
+<circle cx="${x}" cy="668" r="7" fill="${color}"/>
+${text(x, 713, title, { size: 20, fill: color, weight: 820, anchor: 'middle', tracking: 1.1 })}
+${text(x, 745, sub, { size: 16, fill: C.muted, weight: 620, anchor: 'middle' })}
+</g>`
+
+  return svgDoc(
+    'Line rate is a ceiling, not training throughput',
+    'An 800 gigabit per second adapter converts to a 100 gigabyte per second raw ceiling. Protocol overhead, shared-path contention, and topology plus software narrow the useful collective rate. A separate synchronization timeline shows the slowest participant delaying the next compute step.',
+    `${header('Bandwidth budget', 'Line rate is a ceiling—not training throughput')}
+
+${text(132, 280, 'UNIT CONVERSION', { size: 18, fill: C.muted, weight: 780, tracking: 2.2 })}
+<g filter="url(#network-shadow)">
+  <path d="M132 354H424L488 512L424 670H132Z" fill="${C.green}" opacity="0.9"/>
+  ${text(280, 476, '800 Gb/s', { size: 52, fill: C.paper, weight: 840, anchor: 'middle' })}
+  ${text(280, 522, 'ADAPTER LINE RATE', { size: 18, fill: C.paper, weight: 760, anchor: 'middle', tracking: 1.7 })}
+</g>
+<circle cx="518" cy="512" r="58" fill="${C.paper}" stroke="${C.hairline}" stroke-width="3"/>
+${text(518, 506, '÷ 8', { size: 31, fill: C.ink, weight: 820, anchor: 'middle' })}
+${text(518, 538, 'bits / byte', { size: 15, fill: C.muted, weight: 620, anchor: 'middle' })}
+
+<defs>
+  <linearGradient id="throughput-band" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="${C.blue}" stop-opacity="0.92"/>
+    <stop offset="100%" stop-color="${C.violet}" stop-opacity="0.88"/>
+  </linearGradient>
+</defs>
+<path d="M604 378H792L1690 464V560L792 646H604Z" fill="url(#throughput-band)" filter="url(#network-shadow)"/>
+<path d="M604 378H792L1690 464" fill="none" stroke="${C.blue}" stroke-width="4" opacity="0.7"/>
+<path d="M604 646H792L1690 560" fill="none" stroke="${C.violet}" stroke-width="4" opacity="0.7"/>
+${text(704, 488, '100 GB/s', { size: 48, fill: C.paper, weight: 840, anchor: 'middle' })}
+${text(704, 532, 'RAW BYTE CEILING', { size: 17, fill: C.paper, weight: 760, anchor: 'middle', tracking: 1.5 })}
+${text(1540, 492, 'USEFUL COLLECTIVE', { size: 19, fill: C.paper, weight: 800, anchor: 'middle', tracking: 1.1 })}
+${text(1540, 529, 'THROUGHPUT', { size: 28, fill: C.paper, weight: 840, anchor: 'middle', tracking: 1.5 })}
+
+${gate(924, 'PROTOCOL', 'headers + encoding', C.rose)}
+${gate(1190, 'CONTENTION', 'shared paths', C.amber)}
+${gate(1450, 'TOPOLOGY + SOFTWARE', 'hops + collective mapping', C.violet)}
+${text(960, 782, 'QUALITATIVE NARROWING · NO FIXED LOSS SHARE', { size: 16, fill: C.muted, weight: 700, anchor: 'middle', tracking: 1.7 })}
+
+<path d="M132 842H1788" stroke="${C.hairline}" stroke-width="2"/>
+${text(132, 892, 'SYNCHRONIZATION LATENCY', { size: 18, fill: C.blue, weight: 820, tracking: 2 })}
+<path d="M444 885H1570" stroke="${C.graphite}" stroke-width="4" marker-end="url(#network-arrow)" opacity="0.62"/>
+${[690, 820, 950].map((x, index) => `<circle cx="${x}" cy="885" r="12" fill="${C.green}"/><path d="M${x} 885V${930 + index * 8}" stroke="${C.green}" stroke-width="3" opacity="0.62"/>`).join('\n')}
+<circle cx="1350" cy="885" r="14" fill="${C.rose}"/>
+<path d="M950 945H1350" stroke="${C.rose}" stroke-width="5" stroke-linecap="round"/>
+${text(820, 978, 'most participants ready', { size: 18, fill: C.green, weight: 720, anchor: 'middle' })}
+${text(1350, 978, 'slowest participant', { size: 18, fill: C.rose, weight: 760, anchor: 'middle' })}
+<path d="M1400 830V956" stroke="${C.rose}" stroke-width="3" stroke-dasharray="8 7"/>
+<rect x="1518" y="846" width="270" height="78" rx="18" fill="${C.blueSoft}" stroke="${C.blue}" stroke-width="3"/>
+${text(1653, 878, 'NEXT COMPUTE', { size: 18, fill: C.blue, weight: 820, anchor: 'middle', tracking: 1.1 })}
+${text(1653, 905, 'STEP RESUMES', { size: 18, fill: C.blue, weight: 820, anchor: 'middle', tracking: 1.1 })}`,
+  )
+}
+
 export function generateNetworkingScenes(outDir) {
   mkdirSync(outDir, { recursive: true })
   const scenes = {
     'networking-scale.svg': scaleScene(),
     'networking-allreduce.svg': allReduceScene(),
     'networking-path.svg': packetPathScene(),
+    'networking-throughput.svg': throughputScene(),
   }
   for (const [name, svg] of Object.entries(scenes)) {
     writeFileSync(join(outDir, name), svg)
