@@ -3,26 +3,40 @@
 A long-form, diagram-heavy course on how an AI accelerator moves from design to
 data center, and which companies control each step.
 
-View the published course at <https://kiankyars.github.io/chips/>.
+## Watch the course
+
+[**Inside the AI Hardware Engine — Full Semiconductor Supply Chain Course**](https://www.youtube.com/watch?v=FGT7LZbZe-g)
+is available free on the freeCodeCamp.org YouTube channel.
+
+You can also [browse the interactive slide deck](https://kiankyars.github.io/chips/).
 
 The course follows a 2025–26 Blackwell Ultra accelerator from design file to
-finished system. The current sequence is summarized in `curriculum.md`.
+finished system. The full sequence is summarized in [`curriculum.md`](curriculum.md).
 
-## Repository
+## Course status
 
-- `slides.md` sets the deck order and imports the segments.
-- `slides/segments/` contains the slides and speaker notes.
-- `research/` contains the evidence and source lists behind each segment.
-- `diagrams/src/` generates reusable SVG diagrams into `diagrams/rendered/`.
-- `public/assets/` contains photographs and other static assets.
-- `styles.css` contains course-wide Slidev styles.
-- `ATTRIBUTIONS.md` records third-party visual sources and licenses.
+The course is published and this repository is now maintained as its source and
+companion archive. Corrections and accessibility improvements are welcome. Some
+market figures and product roadmaps are time-sensitive; consult the dated source
+linked in the relevant research file before reusing them as current facts.
 
-## Work on the course
+## Explore the course materials
 
-Edit the layer that owns the thing you want to change. There is no required
-agent workflow, segment lifecycle, slide template, or visual formula. Existing
-slides are examples, not constraints.
+- [`slides.md`](slides.md) sets the deck order and imports the segments from
+  [`slides/segments/`](slides/segments/).
+- [`research/`](research/) contains the evidence and source lists behind each
+  segment.
+- [`diagrams/src/`](diagrams/src/) generates reusable SVG diagrams into
+  [`diagrams/rendered/`](diagrams/rendered/).
+- [`public/assets/`](public/assets/) contains photographs and other static assets.
+- [`styles.css`](styles.css) contains course-wide Slidev styles.
+- [`ATTRIBUTIONS.md`](ATTRIBUTIONS.md) records third-party visual sources and
+  licenses.
+
+## Contributing
+
+Edit the layer that owns the thing you want to change. Existing slides are
+examples rather than required templates.
 
 Each segment lists the research files it uses in its first-slide frontmatter:
 
@@ -39,7 +53,7 @@ trailing HTML comments in each slide. Unresolved claims can stay marked with a
 generated SVGs, edit the JavaScript in `diagrams/src/` and run `npm run diagrams`;
 other images can be placed directly in `diagrams/rendered/` or `public/assets/`.
 
-## Commands
+## Local development
 
 ```bash
 npm install              # install dependencies
@@ -52,3 +66,10 @@ npm run build:pages      # production build with the GitHub Pages base path
 ```
 
 Pushes to `main` deploy through `.github/workflows/deploy-pages.yml`.
+
+## License
+
+Original course content and visuals are available under CC BY 4.0, and the
+supporting source code is available under the MIT License. Third-party assets
+retain their original terms. See [`LICENSE.md`](LICENSE.md) for the boundaries
+and [`ATTRIBUTIONS.md`](ATTRIBUTIONS.md) for asset-specific details.
