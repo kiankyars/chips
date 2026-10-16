@@ -112,6 +112,6 @@
 10. ASML, High-NA readiness milestone with first high-volume logic product, July 15 2026 — https://www.asml.com/en/news/press-releases/2026/high-na-euv-reaches-new-readiness-milestone
 11. Government of the Netherlands, advanced-equipment export-control update, January 15 2025 — https://www.government.nl/latest/news/2025/01/15/klever-export-controls-on-advanced-semiconductor-manufacturing-equipment-to-be-tightened
 12. ASML, 2025 Annual Report, risk and security section — https://ourbrand.asml.com/m/71076aaad607de4d/original/Exhibit%252015.2.pdf
-14. ZEISS SMT, "EUV lithography and technology" — https://www.zeiss.com/semiconductor-manufacturing-technology/inspiring-technology/euv-lithography.html
-15. ASML, "EUV lithography systems," NXE optical-column illustration — https://www.asml.com/en/products/euv-lithography-systems
-16. ASML, "The Rayleigh criterion for resolution" — https://www.asml.com/en/technology/lithography-principles/rayleigh-criterion
+13. ZEISS SMT, "EUV lithography and technology" — https://www.zeiss.com/semiconductor-manufacturing-technology/inspiring-technology/euv-lithography.html
+14. ASML, "EUV lithography systems," NXE optical-column illustration — https://www.asml.com/en/products/euv-lithography-systems
+15. ASML, "The Rayleigh criterion for resolution" — https://www.asml.com/en/technology/lithography-principles/rayleigh-criterion
