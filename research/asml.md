@@ -104,15 +104,14 @@
 2. ASML, 2025 Annual Report (US GAAP) — https://www.sec.gov/Archives/edgar/data/937966/000162828026011377/asml-2025xannualxreportx.htm
 3. ASML, Q2 2026 investor-call transcript — https://ourbrand.asml.com/asset/1fd3908a-0381-47b5-9b69-a3094f656651/2026_07_15-ASML-Transcript-investor-call-Q2-2026.pdf
 4. ASML, Q4 and FY2025 financial results — https://www.asml.com/en/news/press-releases/2026/q4-2025-financial-results
-5. ASML, "Busting ASML myths" — https://www.asml.com/en/company/stories/2022/busting-asml-myths
-6. ASML, "Making EUV: from lab to fab" — https://www.asml.com/en/company/stories/2022/making-euv-lab-to-fab
-7. ASML, "Lenses & mirrors" and EUV-source principles — https://www.asml.com/en/technology/lithography-principles/lenses-and-mirrors
-8. Intel, High-NA EUV press kit — https://newsroom.intel.com/press-kit/intel-high-na-euv
-9. ASML, TWINSCAN EXE:5200B product page — https://www.asml.com/en/products/euv-lithography-systems/twinscan-exe-5200b
-10. ASML, 2026 AGM presentation, p. 15 — https://ourbrand.asml.com/asset/d5e933d7-78d0-406c-aed7-a46626e63381/2026_-AGM-_presentation.pdf
-11. ASML, High-NA readiness milestone with first high-volume logic product, July 15 2026 — https://www.asml.com/en/news/press-releases/2026/high-na-euv-reaches-new-readiness-milestone
-12. Government of the Netherlands, advanced-equipment export-control update, January 15 2025 — https://www.government.nl/latest/news/2025/01/15/klever-export-controls-on-advanced-semiconductor-manufacturing-equipment-to-be-tightened
-13. ASML, 2025 Annual Report, risk and security section — https://ourbrand.asml.com/m/71076aaad607de4d/original/Exhibit%252015.2.pdf
+5. ASML, "Making EUV: from lab to fab" — https://www.asml.com/en/company/stories/2022/making-euv-lab-to-fab
+6. ASML, "Lenses & mirrors" and EUV-source principles — https://www.asml.com/en/technology/lithography-principles/lenses-and-mirrors
+7. Intel, High-NA EUV press kit — https://newsroom.intel.com/press-kit/intel-high-na-euv
+8. ASML, TWINSCAN EXE:5200B product page — https://www.asml.com/en/products/euv-lithography-systems/twinscan-exe-5200b
+9. ASML, 2026 AGM presentation, p. 15 — https://ourbrand.asml.com/asset/d5e933d7-78d0-406c-aed7-a46626e63381/2026_-AGM-_presentation.pdf
+10. ASML, High-NA readiness milestone with first high-volume logic product, July 15 2026 — https://www.asml.com/en/news/press-releases/2026/high-na-euv-reaches-new-readiness-milestone
+11. Government of the Netherlands, advanced-equipment export-control update, January 15 2025 — https://www.government.nl/latest/news/2025/01/15/klever-export-controls-on-advanced-semiconductor-manufacturing-equipment-to-be-tightened
+12. ASML, 2025 Annual Report, risk and security section — https://ourbrand.asml.com/m/71076aaad607de4d/original/Exhibit%252015.2.pdf
 14. ZEISS SMT, "EUV lithography and technology" — https://www.zeiss.com/semiconductor-manufacturing-technology/inspiring-technology/euv-lithography.html
 15. ASML, "EUV lithography systems," NXE optical-column illustration — https://www.asml.com/en/products/euv-lithography-systems
 16. ASML, "The Rayleigh criterion for resolution" — https://www.asml.com/en/technology/lithography-principles/rayleigh-criterion
